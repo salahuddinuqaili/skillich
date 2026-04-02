@@ -3,9 +3,9 @@
   <p align="center"><strong>Know exactly which skills to invest in to become irreplaceable in the age of AI.</strong></p>
   <p align="center">The open-source career transformation guide for every knowledge worker.<br>68 roles. 815 skills. Each rated for AI impact. Free forever.</p>
   <p align="center">
-    <a href="https://skillich.github.io/skillich/"><strong>Get My Action Plan</strong></a> &nbsp;&middot;&nbsp;
+    <a href="https://salahuddinuqaili.github.io/skillich/"><strong>Get My Action Plan</strong></a> &nbsp;&middot;&nbsp;
     <a href="docs/playbook.md"><strong>Read the Playbook</strong></a> &nbsp;&middot;&nbsp;
-    <a href="https://github.com/skillich/skillich/issues/new?template=feedback.yml"><strong>Give Feedback</strong></a>
+    <a href="https://github.com/salahuddinuqaili/skillich/issues/new?template=feedback.yml"><strong>Give Feedback</strong></a>
   </p>
   <p align="center">
     <img alt="Roles" src="https://img.shields.io/badge/roles-68-blue">
@@ -32,7 +32,7 @@
 
 ## Try It Now -- No Install Required
 
-### [Get My Action Plan](https://skillich.github.io/skillich/)
+### [Get My Action Plan](https://salahuddinuqaili.github.io/skillich/)
 
 1. Type your job title (accountant, PM, backend engineer -- we cover 68 roles)
 2. Select your current level
@@ -55,7 +55,7 @@ For every role across **13 functions** -- engineering, product, design, data, ma
 
 ## Who This Is For
 
-**Wondering how AI changes your job?** [Get your action plan](https://skillich.github.io/skillich/). 60 seconds.
+**Wondering how AI changes your job?** [Get your action plan](https://salahuddinuqaili.github.io/skillich/). 60 seconds.
 
 **Building a team development plan?** `skillich export --function engineering --format csv` gives you a spreadsheet with every skill, rating, and proficiency level.
 
@@ -71,13 +71,13 @@ skillich was built from research and industry frameworks. **The ratings become t
 
 If you're an accountant, recruiter, PM, engineer, or anything in between -- your experience is the most valuable thing missing:
 
-**[Submit feedback](https://github.com/skillich/skillich/issues/new?template=feedback.yml)** -- 2 minutes, no coding. Tell us what matches your experience and what doesn't.
+**[Submit feedback](https://github.com/salahuddinuqaili/skillich/issues/new?template=feedback.yml)** -- 2 minutes, no coding. Tell us what matches your experience and what doesn't.
 
-**[Propose a rating change](https://github.com/skillich/skillich/discussions/new?category=rating-feedback)** -- share evidence from your work:
+**[Propose a rating change](https://github.com/salahuddinuqaili/skillich/discussions/new?category=rating-feedback)** -- share evidence from your work:
 
 > *"I've been a Controller for 8 years. The 'Month-End Close' rating of 0.4 is too high -- AI generates journal entries but someone still investigates every variance. I'd say 0.25."*
 
-**[Share your playbook story](https://github.com/skillich/skillich/issues/new?title=Playbook%20Story)** -- tried the [6-step playbook](docs/playbook.md)? Tell us what happened after 90 days.
+**[Share your playbook story](https://github.com/salahuddinuqaili/skillich/issues/new?title=Playbook%20Story)** -- tried the [6-step playbook](docs/playbook.md)? Tell us what happened after 90 days.
 
 **Star this repo** to get notified when ratings are updated for your function.
 
@@ -191,9 +191,9 @@ Every role has a `confidence` level (`low`/`medium`/`high`) and a `last_reviewed
 
 The most impactful contributions don't require code:
 
-1. **[Validate your role](https://github.com/skillich/skillich/issues/new?template=feedback.yml)** -- do the ratings match your experience?
-2. **[Share your story](https://github.com/skillich/skillich/issues/new?title=Playbook%20Story)** -- followed the playbook? Tell us what happened
-3. **[Propose changes](https://github.com/skillich/skillich/discussions/new?category=rating-feedback)** -- with evidence from your work
+1. **[Validate your role](https://github.com/salahuddinuqaili/skillich/issues/new?template=feedback.yml)** -- do the ratings match your experience?
+2. **[Share your story](https://github.com/salahuddinuqaili/skillich/issues/new?title=Playbook%20Story)** -- followed the playbook? Tell us what happened
+3. **[Propose changes](https://github.com/salahuddinuqaili/skillich/discussions/new?category=rating-feedback)** -- with evidence from your work
 4. **Add new roles** -- see [CONTRIBUTING.md](docs/CONTRIBUTING.md)
 
 ## License

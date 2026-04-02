@@ -4,7 +4,7 @@ This isn't a career ladder. It's a transformation guide. AI is reshaping every k
 
 ## Step 1: Find Your Role (2 minutes)
 
-Open the [skillich explorer](https://skillich.github.io/skillich/) and search for your current role. If you're a Product Manager, search "Product Manager." If you're an Accountant, search "Accountant." If you're somewhere between roles, pick the closest match.
+Open the [skillich explorer](https://salahuddinuqaili.github.io/skillich/) and search for your current role. If you're a Product Manager, search "Product Manager." If you're an Accountant, search "Accountant." If you're somewhere between roles, pick the closest match.
 
 What to look for:
 - **AI Impact Level** — is your role rated low, moderate, high, or very-high?
@@ -77,4 +77,4 @@ skillich gives you the map. The playbook gives you the route. But you have to wa
 
 One skill per quarter. Four skills per year. In two years, you'll have transformed your career while most people are still debating whether AI will take their job.
 
-Start now. [Find your role.](https://skillich.github.io/skillich/)
+Start now. [Find your role.](https://salahuddinuqaili.github.io/skillich/)

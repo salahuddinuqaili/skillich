@@ -211,7 +211,7 @@ footer a{color:var(--accent)}
   <div class="stats-row" id="stats"></div>
   <div class="cta-row">
     <button class="btn btn-primary" onclick="startWizard()">Get My Action Plan</button>
-    <a class="btn btn-secondary" href="https://github.com/skillich/skillich/blob/main/docs/playbook.md">Read the Playbook</a>
+    <a class="btn btn-secondary" href="https://github.com/salahuddinuqaili/skillich/blob/main/docs/playbook.md">Read the Playbook</a>
     <button class="btn btn-secondary" onclick="$('#glossary-modal').classList.add('active')">Glossary</button>
   </div>
 </div>
@@ -240,7 +240,7 @@ footer a{color:var(--accent)}
     <div style="margin-top:1rem;display:flex;gap:.5rem;flex-wrap:wrap">
       <button class="btn btn-primary" onclick="wizViewRole()">View Full Role Detail</button>
       <button class="btn btn-secondary" onclick="wizRestart()">Start Over</button>
-      <a class="btn btn-secondary" href="https://github.com/skillich/skillich/blob/main/docs/playbook.md">Read Full Playbook</a>
+      <a class="btn btn-secondary" href="https://github.com/salahuddinuqaili/skillich/blob/main/docs/playbook.md">Read Full Playbook</a>
     </div>
   </div>
 </div>
@@ -251,7 +251,7 @@ footer a{color:var(--accent)}
 <main id="main"></main>
 
 <!-- FEEDBACK BUTTON -->
-<a class="feedback-btn" href="https://github.com/skillich/skillich/issues/new?template=feedback.yml" target="_blank" rel="noopener">Is this accurate?</a>
+<a class="feedback-btn" href="https://github.com/salahuddinuqaili/skillich/issues/new?template=feedback.yml" target="_blank" rel="noopener">Is this accurate?</a>
 
 <!-- GLOSSARY MODAL -->
 <div class="modal-overlay" id="glossary-modal" onclick="if(event.target===this)this.classList.remove('active')">
@@ -281,7 +281,7 @@ footer a{color:var(--accent)}
 </div>
 
 <footer>
-  skillich &mdash; MIT License &mdash; <a href="https://github.com/skillich/skillich">GitHub</a> &mdash; <a href="https://github.com/skillich/skillich/blob/main/docs/playbook.md">Playbook</a> &mdash; <a href="https://github.com/skillich/skillich/blob/main/CHANGELOG.md">Changelog</a>
+  skillich &mdash; MIT License &mdash; <a href="https://github.com/salahuddinuqaili/skillich">GitHub</a> &mdash; <a href="https://github.com/salahuddinuqaili/skillich/blob/main/docs/playbook.md">Playbook</a> &mdash; <a href="https://github.com/salahuddinuqaili/skillich/blob/main/CHANGELOG.md">Changelog</a>
 </footer>
 </div>
 
