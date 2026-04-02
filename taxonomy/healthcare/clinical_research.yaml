@@ -1,0 +1,682 @@
+role:
+  id: clinical_research
+  function: healthcare
+  name: "Clinical Research Coordinator/Associate"
+  also_known_as:
+    - "Clinical Research Coordinator"
+    - "Clinical Research Associate"
+    - "Clinical Trial Coordinator"
+    - "Study Coordinator"
+    - "CRA"
+  description: >
+    Manages the operational execution of clinical trials and research studies,
+    ensuring regulatory compliance, patient safety, data integrity, and
+    protocol adherence. Clinical research coordinators and associates oversee
+    participant recruitment, informed consent, data collection, adverse event
+    reporting, and regulatory submissions while serving as the primary liaison
+    between investigators, sponsors, IRBs, and study participants. The role
+    demands meticulous attention to detail, deep knowledge of Good Clinical
+    Practice, and the ability to navigate complex regulatory frameworks.
+  ai_impact:
+    level: "moderate"
+    summary: >
+      AI is enhancing clinical research operations through automated
+      eligibility screening, intelligent data monitoring, and predictive
+      enrollment modeling. Electronic data capture systems are incorporating
+      AI-driven query generation and protocol deviation detection. However,
+      the heavily regulated nature of clinical research, the importance of
+      participant relationships, and the judgment required for safety
+      monitoring ensure that human coordinators and associates remain
+      essential. The role is evolving toward more strategic oversight of
+      AI-augmented research operations.
+    automating:
+      - "Automated eligibility pre-screening from EHR data"
+      - "Routine data query generation for missing or inconsistent entries"
+      - "Standard regulatory document preparation and tracking"
+      - "Enrollment forecasting and recruitment funnel analytics"
+      - "Protocol deviation categorization and trend reporting"
+    augmenting:
+      - "Adverse event signal detection and safety reporting"
+      - "Site monitoring visit preparation and finding prioritization"
+      - "Intelligent case report form validation and edit checks"
+      - "Literature search and evidence synthesis for protocol development"
+      - "Regulatory submission preparation with AI-drafted content"
+    preserving:
+      - "Patient-facing interactions, informed consent, and relationship management"
+      - "Safety judgment for serious adverse event reporting and escalation"
+      - "Investigator communication and clinical decision support"
+      - "IRB/ethics committee navigation and protocol amendment negotiation"
+      - "Site-level problem solving for recruitment and retention challenges"
+      - "Cross-functional coordination with sponsors, CROs, and internal teams"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "ACRP - Clinical Research Professional Competencies"
+        url: "https://acrpnet.org/certifications/"
+      - name: "O*NET - Clinical Research Coordinators"
+        url: "https://www.onetonline.org/link/summary/29-2011.01"
+      - name: "Tufts CSDD - Impact of Technology on Clinical Operations"
+        url: "https://csdd.tufts.edu/"
+  levels:
+    - id: junior
+      name: "Junior Clinical Research Coordinator"
+      years_experience: "0-2"
+      summary: >
+        Supports study operations by performing delegated tasks under
+        supervision including participant scheduling, document filing,
+        data entry, and regulatory binder maintenance. Learns GCP
+        principles, institutional policies, and protocol-specific
+        requirements. Assists with informed consent and study visits.
+    - id: mid
+      name: "Clinical Research Coordinator"
+      years_experience: "2-5"
+      summary: >
+        Independently manages study conduct for assigned protocols from
+        activation through close-out. Leads participant recruitment and
+        consent, performs study visits, collects and enters data, reports
+        adverse events, and maintains regulatory compliance. Coordinates
+        with sponsors and monitors during site visits.
+    - id: senior
+      name: "Senior Clinical Research Coordinator/Associate"
+      years_experience: "5-8"
+      summary: >
+        Manages complex, multi-arm, or high-risk clinical trials with
+        minimal oversight. Mentors junior staff, leads quality improvement
+        initiatives, and serves as primary liaison with sponsors and
+        regulatory bodies. Contributes to protocol development and
+        feasibility assessments. Drives best practices across the
+        research team.
+    - id: staff
+      name: "Staff Clinical Research Coordinator/Manager"
+      years_experience: "8-12"
+      summary: >
+        Sets operational standards and quality metrics for clinical research
+        across the organization. Manages research portfolios, establishes
+        training programs, and drives adoption of research technologies.
+        Partners with leadership to align research operations with
+        institutional strategic objectives and regulatory requirements.
+    - id: principal
+      name: "Principal Clinical Research Manager/Director"
+      years_experience: "12+"
+      summary: >
+        Defines the organization's clinical research operations strategy
+        and vision. Drives enterprise research infrastructure development,
+        evaluates emerging technologies including AI and decentralized
+        trial platforms, and advises executive leadership on research
+        program development, regulatory strategy, and industry partnerships.
+  skills:
+    - id: protocol_management
+      name: "Protocol Management"
+      category: technical
+      description: >
+        Understanding, implementing, and managing clinical trial protocols
+        including study design interpretation, eligibility criteria
+        application, visit schedule execution, and protocol deviation
+        identification and reporting, ensuring faithful execution of the
+        research plan as approved by regulatory authorities.
+      proficiency:
+        junior: >
+          Reads and understands assigned protocol requirements including
+          eligibility criteria, visit schedules, and required assessments.
+          Follows protocol-specific procedures with guidance and identifies
+          obvious deviations for escalation to senior staff and investigators.
+        mid: >
+          Independently manages all aspects of protocol execution for assigned
+          studies. Applies eligibility criteria accurately, ensures visit
+          windows are met, identifies and reports protocol deviations, and
+          implements corrective actions. Contributes to feasibility assessments
+          for new protocols.
+        senior: >
+          Manages protocol execution for the most complex studies including
+          adaptive designs, multi-site coordination, and protocol amendments.
+          Identifies systemic protocol execution challenges, designs preventive
+          strategies, and contributes to protocol development by providing
+          operational feasibility input.
+        staff: >
+          Establishes organizational standards for protocol management including
+          feasibility assessment frameworks, implementation workflows, and
+          deviation monitoring systems. Drives protocol execution quality
+          across the research portfolio and partners with sponsors on protocol
+          design optimization.
+        principal: >
+          Shapes the organization's approach to protocol management strategy,
+          evaluating emerging trial designs including adaptive, platform, and
+          decentralized models. Advises leadership on operational capabilities
+          required for evolving protocol complexity and drives industry
+          standards for protocol execution quality.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can automate eligibility screening, flag potential protocol
+          deviations, and track visit window compliance. However, interpreting
+          complex eligibility criteria in clinical context, managing protocol
+          amendments across active participants, and providing feasibility
+          input require experienced human coordinators.
+
+    - id: regulatory_submissions
+      name: "Regulatory Submissions (IRB, FDA)"
+      category: domain
+      description: >
+        Preparing, submitting, and managing regulatory documents required for
+        clinical research including IRB/ethics committee applications, FDA
+        IND/IDE submissions, continuing reviews, amendments, safety reports,
+        and study close-out documentation in compliance with federal
+        regulations and institutional policies.
+      proficiency:
+        junior: >
+          Assists with preparation of regulatory documents including consent
+          forms, protocol summaries, and continuing review applications using
+          established templates. Maintains regulatory files and tracks
+          submission timelines and approval expirations under supervision.
+        mid: >
+          Independently prepares and submits regulatory packages for IRB
+          review including initial applications, amendments, continuing
+          reviews, and reportable events. Manages regulatory timelines across
+          multiple studies and ensures all required approvals are current.
+        senior: >
+          Manages complex regulatory submissions including multi-site IRB
+          coordination, FDA communications, and DSMB interactions. Interprets
+          regulatory requirements for novel study designs, resolves regulatory
+          queries, and advises investigators on compliance strategies for
+          challenging regulatory scenarios.
+        staff: >
+          Establishes organizational regulatory submission standards including
+          template libraries, quality checklists, and timeline management
+          systems. Drives efficiency through regulatory technology adoption
+          and establishes relationships with IRBs and regulatory agencies
+          that facilitate smooth study conduct.
+        principal: >
+          Shapes the organization's regulatory strategy for clinical research
+          at the executive level. Navigates evolving FDA guidance, ICH
+          harmonization initiatives, and institutional compliance requirements.
+          Advises leadership on regulatory risk and positions the organization
+          for emerging regulatory frameworks including real-world evidence
+          and decentralized trials.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can automate regulatory document drafting, track submission
+          deadlines, and identify missing elements in regulatory packages.
+          However, interpreting regulatory requirements for novel scenarios,
+          navigating IRB reviewer concerns, and managing FDA communications
+          require experienced human judgment and relationship skills.
+
+    - id: patient_recruitment
+      name: "Patient Recruitment & Retention"
+      category: interpersonal
+      description: >
+        Designing and executing strategies to identify, recruit, enroll, and
+        retain study participants, including screening activities, community
+        outreach, EHR-based cohort identification, informed consent
+        discussions, and ongoing participant engagement to minimize dropout
+        and ensure diverse enrollment.
+      proficiency:
+        junior: >
+          Assists with participant screening activities, schedules recruitment
+          visits, and supports informed consent discussions under investigator
+          supervision. Maintains recruitment tracking logs and follows
+          established outreach procedures for assigned studies.
+        mid: >
+          Independently manages recruitment for assigned studies, developing
+          screening strategies, conducting informed consent discussions, and
+          implementing retention activities. Tracks enrollment metrics against
+          targets and adjusts recruitment approaches when enrollment lags.
+        senior: >
+          Designs comprehensive recruitment and retention strategies for
+          complex trials including hard-to-recruit populations. Leverages
+          EHR-based screening tools, community partnerships, and patient
+          registries. Analyzes enrollment barriers and implements creative
+          solutions that improve both recruitment rates and population
+          diversity.
+        staff: >
+          Establishes organizational recruitment and retention standards
+          including centralized screening infrastructure, diversity enrollment
+          programs, and patient engagement frameworks. Evaluates AI-powered
+          recruitment tools and establishes metrics that connect recruitment
+          performance to study feasibility.
+        principal: >
+          Drives the organization's participant engagement strategy at the
+          executive level, building community research partnerships, advancing
+          health equity in clinical trials, and evaluating emerging
+          recruitment technologies including decentralized trial platforms
+          and digital engagement tools.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI significantly enhances cohort identification through EHR screening
+          and predictive enrollment modeling. However, building trust with
+          potential participants, conducting sensitive informed consent
+          conversations, and designing culturally appropriate retention
+          strategies remain deeply human activities.
+
+    - id: data_collection_crf
+      name: "Data Collection & CRF Management"
+      category: technical
+      description: >
+        Collecting, entering, and managing clinical trial data using electronic
+        data capture (EDC) systems and case report forms (CRFs), ensuring data
+        accuracy, completeness, and compliance with the protocol and data
+        management plan, including query resolution and source data
+        verification.
+      proficiency:
+        junior: >
+          Enters data into EDC systems following CRF completion guidelines.
+          Performs basic source data verification by comparing CRF entries to
+          medical records. Resolves simple data queries following standard
+          procedures and maintains organized source document files.
+        mid: >
+          Manages end-to-end data collection for assigned studies, ensuring
+          timely and accurate CRF completion. Identifies data discrepancies
+          proactively, resolves complex queries with clinical context, and
+          contributes to edit check testing during study build. Trains new
+          staff on EDC systems.
+        senior: >
+          Leads data quality strategy for complex studies, designing source
+          data verification plans, managing query resolution workflows, and
+          ensuring data lock readiness. Partners with data management teams
+          on CRF design, edit check logic, and data review processes that
+          balance quality with operational efficiency.
+        staff: >
+          Establishes organizational data collection standards including EDC
+          platform governance, CRF design guidelines, and data quality
+          benchmarks. Drives adoption of risk-based monitoring approaches
+          and evaluates emerging data collection technologies including
+          eSource and direct EHR-to-EDC integration.
+        principal: >
+          Shapes the organization's clinical data strategy, evaluating emerging
+          paradigms including real-world data integration, wearable device
+          data capture, and AI-powered data monitoring. Advises leadership on
+          data infrastructure investment that positions the organization for
+          evolving regulatory expectations around data integrity.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI automates query generation, data reconciliation, and anomaly
+          detection in clinical trial datasets effectively. However, resolving
+          queries that require clinical judgment, ensuring source data
+          accuracy through patient interaction, and managing the nuances of
+          complex study data collection remain human responsibilities.
+
+    - id: adverse_event_reporting
+      name: "Adverse Event Reporting"
+      category: domain
+      description: >
+        Identifying, documenting, assessing, and reporting adverse events
+        and serious adverse events in clinical trials according to protocol
+        requirements, sponsor procedures, regulatory timelines, and ICH
+        guidelines, ensuring patient safety and regulatory compliance
+        throughout the study.
+      proficiency:
+        junior: >
+          Recognizes and documents adverse events reported by study
+          participants following protocol-specific definitions and grading
+          criteria. Reports events through established channels within
+          required timelines and maintains accurate AE logs with guidance
+          from senior coordinators.
+        mid: >
+          Independently manages adverse event reporting for assigned studies
+          including causality assessment support, SAE determination,
+          regulatory reporting timeline compliance, and follow-up
+          documentation. Communicates effectively with investigators about
+          safety findings and concomitant medication recording.
+        senior: >
+          Manages adverse event reporting for high-risk studies with complex
+          safety profiles. Identifies safety signals from aggregate AE data,
+          leads SUSAR reporting processes, and coordinates with DSMBs and
+          sponsor safety teams. Mentors staff on adverse event assessment
+          and develops safety monitoring standard operating procedures.
+        staff: >
+          Establishes organizational standards for adverse event reporting
+          including training programs, quality metrics, and safety reporting
+          infrastructure. Drives adoption of safety management technology,
+          ensures regulatory reporting compliance across the research
+          portfolio, and partners with pharmacovigilance teams on aggregate
+          safety monitoring.
+        principal: >
+          Shapes the organization's clinical trial safety strategy at the
+          executive level, evaluating AI-powered safety signal detection
+          tools, emerging pharmacovigilance requirements, and risk-based
+          safety monitoring approaches. Advises leadership on safety
+          infrastructure investments and regulatory strategy for safety
+          reporting.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can assist with adverse event coding, timeline tracking, and
+          signal detection from aggregate safety data. However, assessing
+          causality in individual cases, making clinical safety judgments, and
+          managing the sensitive communication required during serious adverse
+          events require experienced human coordinators with clinical knowledge.
+
+    - id: gcp_knowledge
+      name: "Good Clinical Practice (GCP)"
+      category: domain
+      description: >
+        Applying the principles and requirements of ICH Good Clinical Practice
+        guidelines, federal regulations (21 CFR Parts 50, 56, 312, 812), and
+        institutional policies to ensure that clinical trials are conducted
+        ethically, that data is reliable, and that participant rights and
+        safety are protected throughout the research process.
+      proficiency:
+        junior: >
+          Completes GCP training and demonstrates understanding of fundamental
+          principles including informed consent requirements, investigator
+          responsibilities, and essential document maintenance. Applies GCP
+          principles in daily study activities with guidance from experienced
+          staff members.
+        mid: >
+          Applies GCP requirements independently across all aspects of study
+          conduct. Identifies potential GCP violations and takes appropriate
+          corrective action. Maintains inspection-ready regulatory files and
+          ensures all study activities are documented in compliance with GCP
+          standards and federal regulations.
+        senior: >
+          Serves as a GCP subject matter expert, interpreting complex
+          regulatory scenarios and advising investigators and staff on
+          compliant approaches. Leads inspection preparation efforts,
+          develops GCP training content, and conducts internal quality
+          assurance reviews that assess GCP compliance across studies.
+        staff: >
+          Establishes organizational GCP compliance standards including
+          training requirements, quality assurance programs, and inspection
+          readiness frameworks. Drives a culture of GCP compliance across the
+          research organization and partners with institutional compliance
+          teams to align research practices with evolving regulatory
+          expectations.
+        principal: >
+          Shapes the organization's GCP compliance strategy at the executive
+          level, monitoring ICH guideline evolution, FDA enforcement trends,
+          and international harmonization efforts. Advises leadership on
+          regulatory risk, leads responses to regulatory inspection findings,
+          and positions the organization as a leader in research compliance.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can assist with GCP training delivery, compliance checklisting,
+          and document management. However, interpreting GCP requirements in
+          complex real-world scenarios, making ethical judgments about
+          participant safety, and navigating regulatory authority interactions
+          require deeply human expertise and ethical reasoning.
+
+    - id: ctms_systems
+      name: "CTMS & Research Systems"
+      category: technical
+      description: >
+        Using clinical trial management systems (CTMS), electronic data
+        capture (EDC) platforms, regulatory management systems, and other
+        research technology tools to manage study operations, track
+        milestones, and maintain compliance across the research portfolio.
+      proficiency:
+        junior: >
+          Uses CTMS and EDC systems to complete assigned tasks including data
+          entry, milestone tracking, and document management. Follows
+          established workflows for system use and reports technical issues
+          through appropriate support channels for timely resolution.
+        mid: >
+          Leverages CTMS capabilities to manage study operations efficiently
+          including enrollment tracking, regulatory deadline monitoring, and
+          financial milestone management. Configures study-specific workflows,
+          generates operational reports, and troubleshoots common system issues
+          independently.
+        senior: >
+          Optimizes CTMS utilization across the research portfolio, designing
+          workflows that improve operational efficiency and data quality.
+          Evaluates new system features, leads user acceptance testing for
+          upgrades, and trains staff on advanced system functionality and
+          reporting capabilities.
+        staff: >
+          Manages the organization's research technology ecosystem including
+          CTMS, EDC, regulatory, and financial systems. Drives system selection
+          and implementation decisions, establishes configuration governance,
+          and ensures research technology supports operational efficiency and
+          compliance requirements.
+        principal: >
+          Shapes the organization's research technology strategy, evaluating
+          emerging platforms including AI-powered trial management, integrated
+          research ecosystems, and decentralized trial technologies. Advises
+          leadership on technology investment priorities and drives digital
+          transformation of research operations.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI is being integrated into CTMS platforms for predictive enrollment,
+          automated milestone tracking, and intelligent workload management.
+          However, configuring systems for complex study requirements, making
+          workflow design decisions, and managing the organizational change
+          associated with technology adoption remain human-dependent activities.
+
+    - id: site_management
+      name: "Site Management"
+      category: interpersonal
+      description: >
+        Managing clinical research site operations including staff coordination,
+        resource allocation, sponsor and monitor relationships, institutional
+        compliance, and operational efficiency to ensure that the site delivers
+        high-quality research within timelines and budgets.
+      proficiency:
+        junior: >
+          Manages personal workload across assigned studies, maintaining
+          organized study files and meeting visit schedules. Communicates
+          effectively with site team members about study activities and
+          participates in team meetings and sponsor interactions.
+        mid: >
+          Coordinates site operations for a moderate study portfolio, managing
+          competing priorities across multiple concurrent protocols. Prepares
+          for and participates in monitoring visits, resolves site-level
+          operational issues, and communicates effectively with sponsors and
+          CROs about study conduct.
+        senior: >
+          Manages site operations for a complex research portfolio, overseeing
+          staff assignments, resource allocation, and quality metrics. Leads
+          sponsor relationship management, negotiates timelines and budgets,
+          and drives operational improvements that enhance site performance
+          and research quality.
+        staff: >
+          Establishes site management standards across the organization
+          including staffing models, performance metrics, and quality programs.
+          Manages multi-site coordination for institutional studies, negotiates
+          sponsor agreements, and drives operational efficiency through
+          standardized processes and technology adoption.
+        principal: >
+          Drives the organization's research site strategy at the executive
+          level, building institutional reputation as a high-performing
+          research site, developing strategic sponsor partnerships, and
+          positioning the organization for emerging research delivery models
+          including site networks and decentralized trial participation.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can assist with workload forecasting and resource allocation
+          modeling, but managing research teams, building sponsor relationships,
+          navigating institutional politics, and making judgment calls about
+          site priorities require human interpersonal and leadership skills.
+
+    - id: informed_consent
+      name: "Informed Consent"
+      category: domain
+      description: >
+        Conducting informed consent discussions with research participants
+        that ensure comprehension of study purpose, procedures, risks,
+        benefits, alternatives, and rights, while documenting the consent
+        process in compliance with federal regulations, IRB requirements,
+        and institutional policies.
+      proficiency:
+        junior: >
+          Observes and assists with informed consent discussions conducted by
+          experienced coordinators or investigators. Prepares consent documents,
+          ensures current approved versions are used, and maintains consent
+          documentation in regulatory files following institutional procedures.
+        mid: >
+          Independently conducts informed consent discussions with study
+          participants, explaining study requirements in accessible language and
+          assessing participant comprehension. Manages consent form version
+          control, re-consent processes for protocol amendments, and
+          documentation requirements across assigned studies.
+        senior: >
+          Leads informed consent processes for complex studies including those
+          involving vulnerable populations, genomic data, and high-risk
+          interventions. Designs consent process improvements, trains staff on
+          effective consent communication, and develops strategies for ensuring
+          genuine informed consent beyond regulatory minimum requirements.
+        staff: >
+          Establishes organizational informed consent standards including
+          consent document templates, comprehension assessment tools, and
+          quality monitoring programs. Drives innovation in consent processes
+          including eConsent platforms, multimedia consent tools, and language
+          accessibility programs.
+        principal: >
+          Shapes the organization's informed consent philosophy and strategy,
+          evaluating emerging consent models, health literacy considerations,
+          and evolving regulatory requirements. Advises leadership on consent-
+          related ethical issues and positions the organization as a leader in
+          participant-centered research practices.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can assist with consent document readability analysis and
+          translation, but the fundamentally human activities of building
+          rapport with potential participants, assessing comprehension, and
+          conducting sensitive consent discussions for complex or high-risk
+          research remain beyond AI capabilities.
+
+    - id: query_resolution
+      name: "Query Resolution & Data Cleaning"
+      category: technical
+      description: >
+        Investigating and resolving data queries generated by sponsors, data
+        management teams, and automated edit checks, including source data
+        verification, documentation review, and communication with
+        investigators to ensure data accuracy and completeness in clinical
+        trial databases.
+      proficiency:
+        junior: >
+          Resolves straightforward data queries by comparing CRF entries to
+          source documents and correcting data entry errors. Responds to
+          queries within required timelines, documents resolution rationale,
+          and escalates queries requiring clinical judgment to senior staff.
+        mid: >
+          Manages query resolution across assigned studies including complex
+          queries requiring clinical interpretation, source document research,
+          and investigator consultation. Identifies root causes of recurring
+          queries and implements preventive measures to reduce query volume.
+        senior: >
+          Leads data quality strategy including query trend analysis,
+          prevention programs, and quality metric monitoring. Designs query
+          resolution workflows that balance response timeliness with data
+          accuracy. Partners with data management teams on edit check
+          optimization and risk-based data review approaches.
+        staff: >
+          Establishes organizational standards for query management including
+          response time benchmarks, escalation pathways, and quality metrics.
+          Drives adoption of AI-powered data monitoring that reduces query
+          volume through proactive data quality checks at the point of
+          entry.
+        principal: >
+          Shapes the organization's clinical data quality strategy, evaluating
+          emerging approaches including risk-based monitoring, central
+          statistical monitoring, and AI-driven data surveillance. Advises
+          leadership on data quality infrastructure investments that
+          position the organization for evolving sponsor and regulatory
+          expectations.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI effectively generates queries, identifies data patterns requiring
+          investigation, and automates resolution of standard discrepancies.
+          However, resolving queries that require clinical judgment, navigating
+          complex source documentation, and communicating with investigators
+          about data issues remain human-dependent activities.
+
+    - id: literature_review
+      name: "Literature Review & Evidence Synthesis"
+      category: domain
+      description: >
+        Searching, evaluating, and synthesizing published clinical and
+        scientific literature to support protocol development, regulatory
+        submissions, investigator brochure updates, and evidence-based
+        clinical research practice, using systematic and targeted review
+        methodologies.
+      proficiency:
+        junior: >
+          Conducts basic literature searches using PubMed and other databases
+          following specified search strategies. Retrieves and organizes
+          relevant articles, creates reference lists, and summarizes key
+          findings from individual papers under guidance of senior staff.
+        mid: >
+          Designs and executes targeted literature searches to support specific
+          research questions. Critically evaluates study quality and relevance,
+          synthesizes findings across multiple sources, and produces literature
+          summaries that inform protocol development and regulatory submissions.
+        senior: >
+          Leads comprehensive literature reviews including systematic review
+          methodology for complex research questions. Evaluates evidence
+          quality using established frameworks, identifies gaps in existing
+          evidence, and produces synthesis documents that influence study
+          design decisions and regulatory strategy.
+        staff: >
+          Establishes organizational standards for literature review including
+          search strategy templates, evidence evaluation frameworks, and
+          knowledge management systems. Drives adoption of AI-powered
+          literature screening and evidence synthesis tools that accelerate
+          research processes.
+        principal: >
+          Shapes the organization's approach to evidence synthesis and
+          knowledge management, evaluating emerging AI tools for automated
+          literature analysis, horizon scanning for therapeutic area
+          intelligence, and integrating evidence synthesis into strategic
+          research planning at the enterprise level.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI tools are highly effective at literature search, screening, and
+          preliminary synthesis. However, critically evaluating evidence
+          quality, identifying methodological concerns, and synthesizing
+          findings into actionable research insights require human scientific
+          judgment and domain expertise.
+
+    - id: cross_functional_coordination
+      name: "Cross-Functional Coordination"
+      category: interpersonal
+      description: >
+        Coordinating effectively with investigators, sponsors, CROs, IRBs,
+        pharmacies, laboratories, and other departments to ensure smooth
+        clinical trial operations, clear communication, and timely resolution
+        of issues that span organizational boundaries.
+      proficiency:
+        junior: >
+          Communicates clearly with immediate team members and responds
+          professionally to sponsor and monitor requests. Coordinates basic
+          logistics including participant scheduling, lab specimen handling,
+          and pharmacy drug accountability with guidance from experienced
+          coordinators.
+        mid: >
+          Manages cross-functional coordination for assigned studies including
+          sponsor communications, monitor visit preparation, pharmacy
+          coordination, and lab specimen management. Proactively identifies
+          and resolves interdepartmental issues that affect study conduct.
+        senior: >
+          Leads cross-functional coordination for complex research programs
+          involving multiple departments, external partners, and regulatory
+          stakeholders. Facilitates resolution of escalated issues, negotiates
+          timelines and resource commitments, and builds collaborative
+          relationships that enhance research quality.
+        staff: >
+          Establishes organizational frameworks for cross-functional research
+          coordination including communication protocols, escalation pathways,
+          and partnership agreements with support departments. Drives
+          alignment between research operations and institutional priorities
+          across the organization.
+        principal: >
+          Drives strategic partnerships that advance the organization's
+          research mission, including sponsor relationship development,
+          research network participation, and academic-industry collaboration.
+          Builds an organizational culture that supports efficient cross-
+          functional research operations at the enterprise level.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          AI can assist with scheduling, communication tracking, and workflow
+          automation across research functions. However, building trust with
+          diverse stakeholders, navigating complex interpersonal dynamics, and
+          facilitating consensus across organizational boundaries are
+          fundamentally human capabilities.

@@ -1,0 +1,443 @@
+role:
+  id: data_analyst
+  function: data_analytics
+  name: "Data Analyst"
+  also_known_as:
+    - "Business Data Analyst"
+    - "Reporting Analyst"
+    - "Insights Analyst"
+    - "Quantitative Analyst"
+    - "Junior Data Scientist"
+  description: >
+    Collects, processes, and performs statistical analyses on structured and unstructured
+    data to help organizations make informed business decisions. Translates complex datasets
+    into clear visualizations, dashboards, and narrative reports that stakeholders at all
+    levels can act upon.
+  ai_impact:
+    level: moderate-high
+    summary: >
+      AI is significantly transforming data analysis by automating routine data cleaning,
+      exploratory analysis, and basic visualization tasks. Tools like AI-powered copilots
+      can generate SQL queries, build dashboards, and surface preliminary insights from
+      natural language prompts. However, the human ability to contextualize findings within
+      business strategy, ask the right questions, and communicate nuanced stories from
+      data remains essential.
+    automating:
+      - "Routine SQL query generation and optimization"
+      - "Basic exploratory data analysis and summary statistics"
+      - "Standard chart and visualization creation"
+      - "Data cleaning and formatting tasks"
+      - "Anomaly detection in recurring reports"
+    augmenting:
+      - "Advanced pattern recognition across large datasets"
+      - "Natural language querying of databases and data lakes"
+      - "Automated insight suggestion and hypothesis generation"
+      - "Real-time dashboard monitoring with intelligent alerting"
+    preserving:
+      - "Business context interpretation and strategic framing"
+      - "Stakeholder relationship management and communication"
+      - "Defining what questions to ask and which metrics matter"
+      - "Ethical judgment on data usage and privacy"
+      - "Cross-functional collaboration to drive data-informed culture"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "McKinsey - The State of AI in 2024"
+        url: "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai"
+      - name: "Harvard Business Review - AI-Augmented Analytics"
+        url: "https://hbr.org/2023/07/how-generative-ai-will-transform-knowledge-work"
+
+  levels:
+    - id: junior
+      name: "Junior Data Analyst"
+      years_experience: "0-2"
+      summary: >
+        Performs guided analyses under supervision, writes basic SQL queries, builds
+        simple visualizations, and learns to navigate organizational data sources and
+        business context.
+    - id: mid
+      name: "Data Analyst"
+      years_experience: "2-4"
+      summary: >
+        Independently conducts end-to-end analyses, designs dashboards, presents findings
+        to stakeholders, and proactively identifies trends and opportunities in data without
+        heavy supervision.
+    - id: senior
+      name: "Senior Data Analyst"
+      years_experience: "4-7"
+      summary: >
+        Leads complex analytical projects, mentors junior analysts, establishes analytical
+        standards and best practices, and partners with leadership to shape data strategy
+        and key business metrics.
+    - id: staff
+      name: "Staff Data Analyst"
+      years_experience: "7-10"
+      summary: >
+        Drives cross-organizational analytical initiatives, defines data governance and
+        quality standards, architects analytical frameworks, and influences executive
+        decision-making through strategic insights.
+    - id: principal
+      name: "Principal Data Analyst"
+      years_experience: "10+"
+      summary: >
+        Sets the strategic vision for analytics across the organization, shapes the data
+        culture, advises executive leadership on data-driven transformation, and represents
+        the company's analytical perspective externally.
+
+  skills:
+    - id: sql
+      name: "SQL"
+      category: technical
+      description: >
+        Writing and optimizing SQL queries to extract, transform, and analyze data from
+        relational databases and data warehouses.
+      proficiency:
+        junior: >
+          Writes basic SELECT statements with JOINs, WHERE clauses, and GROUP BY aggregations.
+          Can query single databases and produce simple result sets.
+        mid: >
+          Writes complex queries with subqueries, window functions, CTEs, and multi-table joins.
+          Understands query execution plans and basic optimization techniques.
+        senior: >
+          Designs and optimizes complex analytical queries across large datasets. Mentors others
+          on SQL best practices and writes performant queries against data warehouses.
+        staff: >
+          Architects SQL patterns and standards for the organization. Optimizes critical data
+          pipelines and advises on database design decisions that impact analytical workflows.
+        principal: >
+          Defines organizational SQL standards and data access patterns. Evaluates and selects
+          query engines and database technologies to support enterprise-scale analytics.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI copilots can generate SQL from natural language and suggest optimizations, but
+          understanding data models, business logic, and edge cases still requires human expertise.
+
+    - id: python_r
+      name: "Python/R for Analysis"
+      category: technical
+      description: >
+        Using Python or R programming languages for data manipulation, statistical analysis,
+        and building reproducible analytical workflows.
+      proficiency:
+        junior: >
+          Writes basic scripts using pandas or tidyverse for data loading, filtering, and
+          simple aggregations. Follows existing code patterns and templates.
+        mid: >
+          Builds complete analytical workflows with data cleaning, transformation, and
+          analysis. Uses libraries like scikit-learn for basic modeling and matplotlib or
+          ggplot2 for visualization.
+        senior: >
+          Develops robust, reusable analytical codebases. Implements advanced statistical
+          methods, builds custom functions and modules, and writes well-documented reproducible
+          analyses.
+        staff: >
+          Architects analytical code standards and shared libraries for the team. Reviews code
+          quality, establishes testing practices, and integrates analytical code into production
+          systems.
+        principal: >
+          Sets technical direction for analytical tooling and languages across the organization.
+          Evaluates emerging tools and frameworks, and guides adoption strategy.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI can generate boilerplate code and suggest transformations, but designing analytical
+          approaches, debugging domain-specific issues, and writing production-quality code
+          requires human judgment.
+
+    - id: statistical_analysis
+      name: "Statistical Analysis"
+      category: analytical
+      description: >
+        Applying statistical methods including hypothesis testing, regression analysis,
+        probability distributions, and inferential statistics to draw valid conclusions
+        from data.
+      proficiency:
+        junior: >
+          Understands basic descriptive statistics, simple hypothesis tests, and correlation
+          analysis. Can interpret p-values and confidence intervals with guidance.
+        mid: >
+          Independently applies regression analysis, ANOVA, chi-square tests, and other
+          common statistical methods. Understands assumptions and limitations of each technique.
+        senior: >
+          Selects and applies advanced statistical methods appropriate to complex business
+          problems. Identifies violations of assumptions and applies corrections or alternative
+          approaches.
+        staff: >
+          Establishes statistical standards and review processes for the organization. Advises
+          teams on appropriate methods for novel problems and ensures statistical rigor across
+          projects.
+        principal: >
+          Defines the organization's statistical methodology framework. Evaluates cutting-edge
+          statistical approaches for adoption and guides research partnerships.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can automate routine statistical tests and suggest methods, but selecting appropriate
+          approaches, validating assumptions, and interpreting results in context remain firmly
+          human skills.
+
+    - id: data_visualization
+      name: "Data Visualization"
+      category: analytical
+      description: >
+        Creating effective charts, graphs, and visual representations of data that communicate
+        patterns, trends, and insights clearly to diverse audiences.
+      proficiency:
+        junior: >
+          Creates basic charts and graphs using standard tools like Excel, Tableau, or matplotlib.
+          Follows established visualization templates and guidelines.
+        mid: >
+          Selects appropriate chart types for different data and audiences. Builds interactive
+          visualizations and applies design principles to improve clarity and impact.
+        senior: >
+          Designs complex, multi-layered visualizations for executive audiences. Establishes
+          visualization standards and style guides, and mentors others on effective visual
+          communication.
+        staff: >
+          Architects visualization strategies and platforms for the organization. Creates
+          reusable visualization frameworks and evaluates tools for enterprise adoption.
+        principal: >
+          Sets the vision for data communication across the organization. Influences industry
+          practices and evaluates emerging visualization technologies and paradigms.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI can auto-generate charts and suggest visualization types, but designing visualizations
+          that tell a compelling story and resonate with a specific audience requires human
+          creativity and judgment.
+
+    - id: dashboard_design
+      name: "Dashboard Design"
+      category: technical
+      description: >
+        Designing and building interactive dashboards that provide real-time or near-real-time
+        visibility into key business metrics and enable self-service exploration.
+      proficiency:
+        junior: >
+          Builds basic dashboards with standard filters and visualizations using tools like
+          Tableau or Power BI. Follows existing templates and design patterns.
+        mid: >
+          Designs user-friendly dashboards with thoughtful layout, interactivity, and drill-down
+          capabilities. Considers performance and data refresh requirements.
+        senior: >
+          Architects dashboard solutions for complex use cases with multiple data sources.
+          Establishes design standards and optimizes for performance at scale.
+        staff: >
+          Defines the organization's dashboard strategy and platform standards. Evaluates tools
+          and frameworks, and designs governance models for self-service analytics.
+        principal: >
+          Sets the strategic vision for self-service analytics and dashboard platforms across
+          the enterprise. Drives adoption and measures impact on organizational decision-making.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can suggest dashboard layouts and auto-generate basic dashboards, but understanding
+          user needs, designing for usability, and ensuring dashboards drive action requires
+          human design thinking.
+
+    - id: data_storytelling
+      name: "Data Storytelling"
+      category: communication
+      description: >
+        Crafting compelling narratives around data findings that connect analytical results
+        to business context, engage stakeholders, and drive action.
+      proficiency:
+        junior: >
+          Presents basic findings with supporting charts and written summaries. Follows
+          templates and guidance for structuring analytical reports.
+        mid: >
+          Structures clear analytical narratives with context, findings, and recommendations.
+          Tailors communication style to different audiences and presents with confidence.
+        senior: >
+          Crafts compelling data stories for executive audiences that drive strategic decisions.
+          Mentors others on narrative structure and persuasive data communication.
+        staff: >
+          Establishes data storytelling standards and training programs for the organization.
+          Presents complex analyses to board-level audiences and shapes strategic narratives.
+        principal: >
+          Defines the organization's approach to data communication and culture. Represents
+          the company externally and influences industry thinking on data-driven decision-making.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          While AI can draft summaries and suggest narrative structures, crafting stories that
+          resonate with specific audiences, incorporate political context, and drive action
+          remains a deeply human capability.
+
+    - id: business_acumen
+      name: "Business Acumen"
+      category: domain
+      description: >
+        Understanding business models, industry dynamics, organizational strategy, and
+        functional operations to ensure analytical work addresses the most impactful questions.
+      proficiency:
+        junior: >
+          Develops basic understanding of the company's business model, products, and key
+          metrics. Asks questions to connect analytical tasks to business objectives.
+        mid: >
+          Understands cross-functional business processes and can independently identify
+          analytical opportunities. Frames analyses in terms of business impact and ROI.
+        senior: >
+          Deeply understands industry dynamics and competitive landscape. Proactively identifies
+          high-impact analytical opportunities and connects findings to strategic priorities.
+        staff: >
+          Shapes analytical priorities based on deep business understanding. Advises leadership
+          on data-driven strategic opportunities and partners across functions to drive impact.
+        principal: >
+          Combines deep industry expertise with analytical leadership to influence corporate
+          strategy. Identifies emerging business trends and positions analytics to create
+          competitive advantage.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI cannot replicate the nuanced understanding of organizational politics, industry
+          relationships, and strategic context that makes business acumen valuable. This remains
+          a distinctly human skill.
+
+    - id: data_cleaning
+      name: "Data Cleaning & Preparation"
+      category: technical
+      description: >
+        Identifying and resolving data quality issues including missing values, duplicates,
+        inconsistencies, and formatting problems to prepare reliable datasets for analysis.
+      proficiency:
+        junior: >
+          Performs basic data cleaning tasks like removing duplicates, handling missing values,
+          and standardizing formats using guided procedures and checklists.
+        mid: >
+          Independently designs data cleaning workflows for messy datasets. Identifies subtle
+          quality issues and applies appropriate techniques for imputation, deduplication,
+          and validation.
+        senior: >
+          Architects robust data cleaning pipelines and quality frameworks. Defines data quality
+          standards and automated validation rules for recurring analytical workflows.
+        staff: >
+          Establishes organization-wide data quality standards and monitoring systems. Designs
+          automated data cleaning infrastructure and governance processes.
+        principal: >
+          Sets strategic direction for data quality across the enterprise. Defines quality
+          metrics and frameworks, and drives cultural emphasis on data reliability.
+      ai_impact:
+        rating: 0.8
+        detail: >
+          AI excels at automated data profiling, anomaly detection, and suggesting cleaning
+          transformations. However, understanding which data issues matter for a given business
+          context still requires human judgment.
+
+    - id: stakeholder_communication
+      name: "Stakeholder Communication"
+      category: communication
+      description: >
+        Effectively communicating with business stakeholders to understand their needs,
+        manage expectations, present findings, and ensure analytical work drives decisions.
+      proficiency:
+        junior: >
+          Communicates findings clearly in written and verbal formats. Asks clarifying questions
+          to understand requirements and responds to feedback constructively.
+        mid: >
+          Manages stakeholder relationships independently. Translates technical findings into
+          business language and proactively communicates progress and blockers.
+        senior: >
+          Navigates complex stakeholder landscapes with competing priorities. Influences
+          decision-making through trusted advisory relationships and strategic communication.
+        staff: >
+          Builds and maintains relationships with executive stakeholders across the organization.
+          Shapes how data and analytics is perceived and valued at the leadership level.
+        principal: >
+          Serves as the organizational voice for analytics at the highest levels. Influences
+          board-level conversations and external stakeholder relationships with data-driven
+          perspectives.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Stakeholder communication is fundamentally about human relationships, trust, empathy,
+          and organizational awareness. AI has minimal impact on this interpersonal skill.
+
+    - id: ab_testing
+      name: "A/B Testing & Experimentation"
+      category: analytical
+      description: >
+        Designing, executing, and analyzing controlled experiments to measure the causal
+        impact of changes to products, features, or business processes.
+      proficiency:
+        junior: >
+          Understands basic A/B testing concepts including control groups, sample sizes, and
+          statistical significance. Assists in analyzing experiment results.
+        mid: >
+          Designs and analyzes standard A/B tests independently. Calculates sample sizes,
+          monitors experiments, and interprets results with appropriate statistical rigor.
+        senior: >
+          Designs complex experiments including multi-variate tests and sequential testing.
+          Establishes experimentation frameworks and advises teams on best practices.
+        staff: >
+          Architects the organization's experimentation platform and culture. Defines
+          standards for experiment design, analysis, and decision-making based on results.
+        principal: >
+          Sets the strategic vision for experimentation across the organization. Drives
+          cultural adoption of evidence-based decision-making and evaluates emerging
+          methodologies.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can automate sample size calculations, monitor experiments, and flag significant
+          results, but designing meaningful experiments and interpreting results within
+          business context requires human expertise.
+
+    - id: excel_sheets
+      name: "Excel & Spreadsheets"
+      category: technical
+      description: >
+        Using spreadsheet tools like Microsoft Excel and Google Sheets for data analysis,
+        modeling, and reporting, including advanced formulas, pivot tables, and macros.
+      proficiency:
+        junior: >
+          Uses core spreadsheet functions including VLOOKUP, pivot tables, conditional
+          formatting, and basic charting. Builds simple models and reports.
+        mid: >
+          Creates advanced spreadsheet models with complex formulas, array functions, and
+          dynamic dashboards. Uses macros or Apps Script for automation.
+        senior: >
+          Builds sophisticated financial and analytical models in spreadsheets. Establishes
+          templates and standards, and knows when to migrate workloads to more scalable tools.
+        staff: >
+          Defines organizational standards for spreadsheet use and governance. Architects
+          migration strategies from spreadsheet-based workflows to scalable platforms.
+        principal: >
+          Evaluates the role of spreadsheets within the broader analytics tool ecosystem.
+          Guides strategic decisions about tool adoption and workflow modernization.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI copilots integrated into spreadsheets can generate formulas, create charts, and
+          perform analyses from natural language, significantly automating routine spreadsheet
+          tasks.
+
+    - id: data_modeling
+      name: "Data Modeling"
+      category: technical
+      description: >
+        Designing logical and physical data models that organize information for efficient
+        querying, analysis, and reporting across databases and data warehouses.
+      proficiency:
+        junior: >
+          Understands basic concepts of tables, relationships, and normalization. Can read
+          and navigate existing data models to find relevant data for analysis.
+        mid: >
+          Designs simple dimensional models and understands star and snowflake schemas.
+          Collaborates with data engineers on modeling decisions that impact analytical work.
+        senior: >
+          Designs comprehensive analytical data models for complex business domains. Evaluates
+          trade-offs between normalization and denormalization for different use cases.
+        staff: >
+          Architects enterprise data models and modeling standards. Guides teams on modeling
+          best practices and ensures consistency across organizational data assets.
+        principal: >
+          Defines the organization's data modeling strategy and governance framework. Evaluates
+          emerging modeling paradigms and guides long-term data architecture decisions.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can suggest schema designs and detect modeling patterns, but understanding business
+          semantics, navigating organizational data ownership, and making trade-off decisions
+          requires deep human knowledge.

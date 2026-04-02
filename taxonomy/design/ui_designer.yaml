@@ -1,0 +1,701 @@
+role:
+  id: ui_designer
+  function: design
+  name: "UI Designer"
+  also_known_as:
+    - "Visual Designer"
+    - "Interface Designer"
+    - "UI/UX Designer"
+    - "Digital Designer"
+    - "Visual Interface Designer"
+  description: >
+    Creates the visual layer of digital products, translating wireframes and
+    interaction specifications into polished, pixel-perfect interface designs
+    that communicate hierarchy, guide attention, and reinforce brand identity.
+    UI designers own typography, color, layout, iconography, motion, and
+    visual consistency across platforms, working closely with UX designers,
+    engineers, and brand teams to deliver interfaces that are both beautiful
+    and functional.
+
+  ai_impact:
+    level: high
+    summary: >
+      Generative AI tools are reshaping visual design workflows, with
+      features in Figma, Midjourney, and specialized design-AI producing
+      layout options, color palettes, and even complete screen designs from
+      prompts. Routine production tasks like asset resizing, icon generation,
+      and style-guide application are increasingly automated. However, the
+      craft of creating cohesive visual systems that communicate meaning,
+      reinforce brand identity, and delight users through intentional
+      aesthetic choices remains deeply human. Senior UI designers are
+      shifting toward visual strategy, brand stewardship, and design-system
+      governance, using AI to accelerate exploration while maintaining
+      creative control.
+    automating:
+      - "Generating color palette variations and typography pairings from brand guidelines"
+      - "Resizing and adapting designs across screen sizes and platforms"
+      - "Producing icon and illustration variations from style references"
+      - "Creating dark-mode and high-contrast theme variants from light-mode designs"
+      - "Generating visual assets like placeholder images and background patterns"
+    augmenting:
+      - "Exploring more visual directions in less time through AI-generated variations"
+      - "Checking visual designs against accessibility contrast and readability standards"
+      - "Generating production-ready CSS and design-token values from visual specs"
+      - "Rapidly iterating on motion design timings and easing curves"
+      - "Translating brand guidelines into systematic component-level specifications"
+    preserving:
+      - "Defining the visual identity and aesthetic direction for a product or brand"
+      - "Making subjective aesthetic judgments that balance trend, brand, and usability"
+      - "Designing novel visual treatments for unique product experiences"
+      - "Building and evolving design systems that maintain visual coherence at scale"
+      - "Mentoring junior designers and shaping the team's visual craft standards"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "AIGA Designer Career Framework"
+        url: "https://www.aiga.org/"
+      - name: "Figma AI Features and Design Automation"
+        url: "https://www.figma.com/ai/"
+      - name: "Nielsen Norman Group Visual Design Principles"
+        url: "https://www.nngroup.com/topic/visual-design/"
+
+  levels:
+    - id: junior
+      name: "Junior (L1-L2)"
+      years_experience: "0-2"
+      summary: >
+        Produces visual designs for well-defined features following
+        established style guides and component libraries. Focuses on
+        learning typography, color theory, and layout fundamentals while
+        building proficiency in design tools. Applies existing design
+        tokens and patterns consistently and iterates based on feedback
+        from senior designers.
+    - id: mid
+      name: "Mid-Level (L3)"
+      years_experience: "2-4"
+      summary: >
+        Independently creates polished UI designs for medium-complexity
+        features, making confident decisions about visual hierarchy,
+        spacing, and component styling. Contributes new components and
+        patterns to the design system, produces responsive designs
+        across breakpoints, and collaborates with engineers to ensure
+        visual fidelity in implementation.
+    - id: senior
+      name: "Senior (L4)"
+      years_experience: "4-8"
+      summary: >
+        Leads the visual direction for major product surfaces, defining
+        the aesthetic treatment, motion language, and visual patterns
+        that teams adopt. Ensures visual consistency across features,
+        drives design-system evolution, and mentors mid-level designers
+        on craft. Serves as the visual quality authority for the product
+        area.
+    - id: staff
+      name: "Staff (L5)"
+      years_experience: "8-12"
+      summary: >
+        Sets the visual design strategy across products or the entire
+        product line, aligning interface aesthetics with brand identity
+        and business positioning. Defines visual quality standards,
+        leads design-system visual direction, and resolves cross-team
+        visual consistency issues. Influences tooling and process
+        decisions that affect the visual design workflow.
+    - id: principal
+      name: "Principal (L6+)"
+      years_experience: "12+"
+      summary: >
+        Shapes the company's visual design culture and long-term
+        aesthetic direction, making decisions that define how the brand
+        is perceived across all digital touchpoints. Drives investment
+        in visual design capabilities, evaluates emerging visual
+        technologies and trends, and builds the company's reputation
+        for design excellence.
+
+  skills:
+    - id: visual_design
+      name: "Visual Design Fundamentals"
+      category: technical
+      description: >
+        Core visual design principles including hierarchy, contrast,
+        balance, alignment, proximity, repetition, and white space.
+        The foundation for creating interfaces that communicate clearly,
+        guide attention, and create aesthetic coherence.
+      proficiency:
+        junior: >
+          Applies basic visual design principles to create clean,
+          organized layouts. Understands hierarchy through size, weight,
+          and contrast and uses alignment and spacing consistently
+          within established grid systems.
+        mid: >
+          Creates visually compelling designs that use hierarchy,
+          contrast, and white space purposefully to guide user attention
+          and communicate content priority. Balances aesthetic appeal
+          with functional clarity across different content types and
+          densities.
+        senior: >
+          Defines visual design standards and principles for the team,
+          ensuring consistent application of hierarchy, rhythm, and
+          visual weight across product surfaces. Resolves complex visual
+          design challenges where multiple principles compete for
+          priority.
+        staff: >
+          Establishes organization-wide visual design principles that
+          bridge brand identity and product interface design. Coaches
+          teams on applying visual fundamentals to novel design
+          challenges and evaluates how emerging display technologies
+          affect visual design practice.
+        principal: >
+          Shapes the company's visual design philosophy and aesthetic
+          identity at the highest level. Drives the evolution of the
+          organization's visual language in response to platform changes,
+          cultural shifts, and competitive positioning, ensuring visual
+          design remains a strategic differentiator.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can generate layouts that follow basic visual design rules
+          and suggest improvements to hierarchy and spacing. However,
+          making intentional aesthetic choices that serve both functional
+          and emotional goals, and developing a distinctive visual
+          identity, require human creative judgment and cultural
+          awareness.
+
+    - id: typography_color
+      name: "Typography & Color Theory"
+      category: technical
+      description: >
+        Selecting, pairing, and applying typefaces and color palettes
+        to create readable, accessible, and emotionally resonant
+        interfaces. Includes type scale systems, font loading
+        strategies, color harmony, contrast accessibility, and
+        systematic color architecture for design tokens.
+      proficiency:
+        junior: >
+          Applies the product's established type scale and color palette
+          correctly. Understands basic typographic concepts (hierarchy,
+          line height, measure) and color fundamentals (contrast, hue,
+          saturation) and uses them consistently across designs.
+        mid: >
+          Makes informed typography decisions including typeface
+          pairing, type-scale construction, and responsive typography
+          adjustments. Creates color palettes with proper accessibility
+          contrast ratios and designs color systems that work across
+          light and dark themes.
+        senior: >
+          Defines typographic and color systems for product areas,
+          including type scales, color ramps, and semantic color tokens
+          that support theming and accessibility. Evaluates typeface
+          licensing, performance (font loading), and cross-platform
+          rendering to make strategic typography decisions.
+        staff: >
+          Establishes organization-wide typography and color standards
+          that align brand identity with interface usability. Leads
+          the development of color-token architectures and type-scale
+          systems that scale across products, themes, and platforms.
+        principal: >
+          Shapes the company's long-term typographic and color identity,
+          evaluating how variable fonts, color-font technology, wide-gamut
+          displays, and evolving accessibility standards affect the
+          visual design strategy. Positions the organization's type and
+          color approach for multi-year consistency and evolution.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI tools can generate accessible color palettes, suggest font
+          pairings, and produce theme variations effectively. However,
+          developing a typographic voice that reinforces brand identity,
+          creating color systems that balance aesthetic, functional, and
+          accessibility requirements, and making cultural color
+          associations require human expertise and aesthetic sensibility.
+
+    - id: layout_composition
+      name: "Layout & Composition"
+      category: technical
+      description: >
+        Organizing interface elements within a spatial framework using
+        grid systems, responsive layout patterns, content-density
+        management, and compositional techniques. Includes designing
+        for various viewport sizes, aspect ratios, and content
+        variability.
+      proficiency:
+        junior: >
+          Uses established grid systems to lay out content consistently.
+          Understands column grids, gutters, and margins and applies them
+          to create orderly, aligned compositions for standard screen
+          sizes.
+        mid: >
+          Designs flexible layouts that handle variable content lengths,
+          dynamic data, and multiple breakpoints gracefully. Creates
+          compositions that balance information density with visual
+          breathing room and adapts layouts for different device
+          categories and orientations.
+        senior: >
+          Defines grid systems and layout frameworks for product areas,
+          establishing spatial scales, responsive breakpoint strategies,
+          and density modes (compact, comfortable, spacious). Designs
+          layouts for complex data-heavy interfaces and unconventional
+          content structures.
+        staff: >
+          Establishes the organization's layout architecture, including
+          grid specifications, responsive strategy, and spatial token
+          systems that ensure layout consistency across products and
+          platforms. Evaluates how emerging form factors (foldables,
+          large screens, embedded displays) affect layout strategy.
+        principal: >
+          Shapes the company's spatial design philosophy as products
+          expand to new platforms and form factors. Drives the evolution
+          of layout systems to accommodate future device categories and
+          interaction paradigms while maintaining visual coherence across
+          the product portfolio.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can generate grid-based layouts and suggest responsive
+          adaptations for different screen sizes. However, designing
+          layouts that handle real-world content variability, balance
+          density with usability, and create meaningful spatial
+          relationships between content elements requires human
+          compositional judgment.
+
+    - id: design_tools
+      name: "Design Tools Proficiency"
+      category: technical
+      description: >
+        Expert-level proficiency in industry-standard design tools
+        including Figma (primary), Sketch, Adobe Creative Suite, and
+        emerging AI-assisted design tools. Encompasses component
+        creation, auto-layout, prototyping, design-token management,
+        and plugin/workflow customization.
+      proficiency:
+        junior: >
+          Uses Figma competently for screen design, basic component
+          creation, and auto-layout. Follows the team's file structure
+          and naming conventions and produces design files that are
+          organized and easy for others to navigate.
+        mid: >
+          Builds complex, well-structured Figma components with
+          variants, auto-layout nesting, and responsive constraints.
+          Creates interactive prototypes with transitions and
+          conditional flows, manages design files efficiently across
+          projects, and uses plugins to accelerate workflows.
+        senior: >
+          Architects Figma libraries with scalable component structures,
+          establishes file organization and naming standards for the
+          team, and builds advanced prototypes for user testing and
+          stakeholder communication. Evaluates and adopts new tools and
+          plugins that improve team productivity.
+        staff: >
+          Defines the organization's design-tool strategy including
+          Figma plan management, library architecture, branching
+          workflows, and integration with design-token pipelines and
+          development tools. Leads tool migrations and evaluates
+          emerging design tools for strategic adoption.
+        principal: >
+          Shapes the company's long-term design-tooling investment
+          strategy, evaluating how AI-powered design tools, real-time
+          collaboration features, and design-to-code pipelines are
+          changing the design workflow. Ensures tooling decisions support
+          the organization's design quality and velocity goals.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI features within design tools are automating routine tasks
+          like asset generation, layout suggestions, and component
+          variants. However, mastering tool capabilities to build
+          efficient, scalable design systems and making strategic tooling
+          decisions for an organization require deep expertise that
+          evolves with the tool ecosystem.
+
+    - id: responsive_design
+      name: "Responsive & Adaptive Design"
+      category: technical
+      description: >
+        Designing interfaces that adapt gracefully across viewport
+        sizes, device types, and input modalities. Includes mobile-first
+        design, breakpoint strategy, fluid and adaptive layout patterns,
+        touch-target sizing, and platform-appropriate design conventions.
+      proficiency:
+        junior: >
+          Designs for mobile and desktop viewports using the team's
+          established breakpoints and responsive patterns. Understands
+          the difference between fluid and fixed layouts and creates
+          designs that reflow content appropriately at standard screen
+          sizes.
+        mid: >
+          Creates comprehensive responsive designs that handle all major
+          breakpoints with intentional layout shifts, content
+          prioritization, and interaction adaptations (touch vs. mouse).
+          Designs for edge cases like ultra-wide screens, landscape
+          mobile, and tablet-specific layouts.
+        senior: >
+          Defines the responsive design strategy for product areas,
+          establishing breakpoint systems, content-priority frameworks,
+          and input-modality adaptation patterns. Designs responsive
+          solutions for complex interfaces like data tables, dashboards,
+          and multi-panel layouts.
+        staff: >
+          Sets organization-wide responsive design standards, balancing
+          design fidelity across devices with engineering feasibility and
+          maintenance cost. Evaluates emerging device categories and
+          their implications for responsive strategy, and establishes
+          device-testing requirements.
+        principal: >
+          Shapes the company's multi-device experience strategy,
+          anticipating how the device landscape will evolve and
+          positioning the design approach to accommodate emerging form
+          factors. Ensures responsive design thinking is embedded in the
+          organization's product and design processes.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI tools can generate responsive layout variations and suggest
+          breakpoint-specific adaptations. However, making strategic
+          decisions about what content and functionality to prioritize
+          across device categories, and designing adaptive experiences
+          that feel native to each platform, require understanding of
+          diverse usage contexts.
+
+    - id: motion_design
+      name: "Motion & Animation Design"
+      category: technical
+      description: >
+        Designing purposeful motion and animation for user interfaces,
+        including transitions, microinteractions, loading sequences,
+        and scroll-based animations. Encompasses timing, easing, motion
+        principles, and specifying animations for engineering
+        implementation.
+      proficiency:
+        junior: >
+          Understands basic motion principles (duration, easing, purpose)
+          and applies standard transitions from the design system.
+          Recognizes when motion enhances usability versus when it
+          creates distraction, and specifies simple hover and transition
+          animations.
+        mid: >
+          Designs purposeful motion for features including page
+          transitions, content reveals, loading sequences, and
+          microinteractions. Specifies animation timing, easing curves,
+          and trigger conditions with enough detail for engineering
+          implementation. Creates motion prototypes in Figma or
+          After Effects.
+        senior: >
+          Defines the motion-design language for product areas, including
+          timing scales, easing standards, and motion principles that
+          guide when and how to animate. Designs complex animation
+          sequences for high-visibility features and ensures motion
+          respects reduced-motion preferences for accessibility.
+        staff: >
+          Establishes organization-wide motion-design standards and token
+          systems (duration scales, easing libraries, motion principles).
+          Evaluates motion-design tools and animation runtime performance,
+          and aligns motion language with brand identity and platform
+          conventions.
+        principal: >
+          Shapes the company's motion-design philosophy as interfaces
+          evolve toward richer, more interactive experiences. Drives
+          investment in motion-design capabilities and evaluates how
+          emerging technologies (spatial computing, haptics, advanced
+          GPU rendering) expand the motion-design palette.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can suggest standard transition patterns and generate
+          animation keyframes from descriptions. However, designing
+          motion that enhances usability without causing distraction,
+          creating a cohesive motion language that reinforces brand
+          personality, and making performance-aware motion decisions
+          require human aesthetic judgment and technical understanding.
+
+    - id: iconography_illustration
+      name: "Iconography & Illustration"
+      category: technical
+      description: >
+        Creating and curating icon systems and illustrations that
+        communicate meaning clearly and reinforce visual identity.
+        Includes icon design, illustration style development, SVG
+        optimization, and maintaining visual consistency across
+        icon and illustration libraries.
+      proficiency:
+        junior: >
+          Uses the product's existing icon library correctly and
+          consistently. Understands icon sizing, optical alignment,
+          and usage conventions. Makes simple modifications to existing
+          icons and identifies when a new icon is needed.
+        mid: >
+          Creates custom icons that match the product's established
+          style, ensuring consistent stroke width, corner radius, and
+          optical balance. Designs simple illustrations for empty states,
+          onboarding, and feature marketing. Optimizes SVGs for web
+          delivery.
+        senior: >
+          Defines icon and illustration style guidelines for the product,
+          establishing grid systems, stroke conventions, and metaphor
+          principles. Creates comprehensive icon sets for new feature
+          areas and coaches other designers on maintaining visual
+          consistency in iconography.
+        staff: >
+          Establishes the organization's iconography and illustration
+          strategy, including style governance, production workflows,
+          and asset management systems. Evaluates when to build custom
+          icon libraries versus licensing existing sets, and aligns
+          illustration style with brand evolution.
+        principal: >
+          Shapes the company's visual asset strategy at the portfolio
+          level, ensuring iconography and illustration serve brand
+          recognition and user comprehension across all products and
+          platforms. Evaluates how AI illustration tools change the
+          economics of custom visual asset creation.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI tools are increasingly capable of generating icons and
+          illustrations from text descriptions, and can produce style-
+          consistent variations efficiently. However, designing icon
+          systems with clear metaphors, maintaining optical consistency
+          at small sizes, and developing an illustration style that
+          reinforces brand personality require human design expertise.
+
+    - id: brand_integration
+      name: "Brand Integration"
+      category: domain
+      description: >
+        Translating brand identity (values, personality, visual
+        language) into digital interface design. Includes applying
+        brand guidelines to UI, adapting brand elements for interactive
+        contexts, maintaining brand consistency across touchpoints, and
+        evolving the digital expression of the brand over time.
+      proficiency:
+        junior: >
+          Applies the product's brand guidelines accurately to interface
+          designs, using approved colors, typography, and visual elements
+          consistently. Recognizes when a design drifts from brand
+          standards and seeks guidance on brand application.
+        mid: >
+          Interprets brand guidelines for new interface contexts that
+          the guidelines don't explicitly cover, making informed
+          decisions about how brand personality should manifest in UI
+          details. Balances brand expression with interface usability
+          and platform conventions.
+        senior: >
+          Acts as a brand steward for the product, ensuring brand
+          consistency across features while adapting the brand
+          expression for different product contexts (onboarding,
+          transactional, marketing). Collaborates with brand teams to
+          evolve digital brand guidelines.
+        staff: >
+          Bridges brand strategy and product design at the organizational
+          level, ensuring the digital product experience authentically
+          represents the brand across all touchpoints. Leads digital
+          brand evolution initiatives and aligns design-system decisions
+          with brand direction.
+        principal: >
+          Shapes the relationship between brand and product design at
+          the strategic level, influencing how brand identity evolves
+          in response to product expansion, market positioning, and
+          cultural context. Ensures brand coherence across the product
+          portfolio while allowing appropriate variation.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can apply brand colors, typography, and basic guidelines
+          to generate on-brand design variations. However, interpreting
+          brand personality for novel contexts, making nuanced decisions
+          about brand expression versus usability, and evolving a
+          brand's digital identity require human understanding of
+          culture, emotion, and strategic positioning.
+
+    - id: handoff_documentation
+      name: "Design-Engineering Handoff"
+      category: communication
+      description: >
+        Preparing design specifications, annotations, and assets for
+        engineering implementation. Includes redlining, interaction
+        documentation, asset export, design-token specification, and
+        maintaining living documentation that keeps design and code
+        in sync.
+      proficiency:
+        junior: >
+          Organizes design files clearly and exports assets in correct
+          formats and resolutions. Adds basic annotations for spacing,
+          color values, and component states. Responds to engineering
+          questions about design intent promptly.
+        mid: >
+          Creates comprehensive design specifications covering all
+          states, interactions, responsive behavior, and edge cases.
+          Uses design-token references instead of hard-coded values,
+          documents animation specifications, and proactively addresses
+          engineering feasibility during the design phase.
+        senior: >
+          Defines the team's handoff standards and documentation
+          templates, ensuring consistent specification quality across
+          designers. Establishes processes for handling design-
+          engineering questions during implementation and conducts
+          visual QA reviews to verify implementation fidelity.
+        staff: >
+          Architects the organization's design-to-engineering handoff
+          workflow, including tooling integration (Figma-to-code
+          pipelines, design-token synchronization), documentation
+          standards, and quality checkpoints. Reduces handoff friction
+          through process and tooling improvements.
+        principal: >
+          Shapes the company's vision for design-engineering
+          collaboration, evaluating how AI-assisted code generation
+          from design files and emerging design-to-code tools will
+          transform the handoff process. Drives investment in
+          infrastructure that closes the gap between design and
+          production.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI tools are automating significant parts of design handoff,
+          including generating CSS from designs, extracting design tokens,
+          and producing implementation specifications. However, ensuring
+          that specifications capture design intent for complex
+          interactions and edge cases, and maintaining design-code
+          alignment over time, still requires human attention.
+
+    - id: multi_platform_design
+      name: "Multi-Platform Design"
+      category: technical
+      description: >
+        Designing interfaces for multiple platforms (iOS, Android, web,
+        desktop) while respecting platform conventions, human interface
+        guidelines, and material design principles. Includes adapting
+        designs for platform-specific patterns while maintaining cross-
+        platform brand and experience consistency.
+      proficiency:
+        junior: >
+          Understands the basic differences between iOS and Android
+          design conventions. Designs for the team's primary platform
+          and adapts simple components for a secondary platform with
+          guidance.
+        mid: >
+          Designs for multiple platforms with awareness of platform-
+          specific patterns (navigation, gestures, system controls,
+          typography). Creates designs that respect platform conventions
+          while maintaining visual brand consistency across iOS, Android,
+          and web.
+        senior: >
+          Defines the cross-platform design strategy for product areas,
+          deciding where to maintain platform-native patterns versus
+          custom cross-platform treatments. Establishes guidelines for
+          platform-specific adaptations and ensures a coherent user
+          experience across all supported platforms.
+        staff: >
+          Sets the organizational approach to multi-platform design,
+          including shared component specifications, platform-specific
+          design-system layers, and decision frameworks for platform
+          customization versus consistency. Evaluates cross-platform
+          design tools and workflows.
+        principal: >
+          Shapes the company's multi-platform experience strategy as
+          new platforms emerge (wearables, automotive, spatial computing).
+          Drives the organizational framework for deciding which
+          platforms to support and how to allocate design investment
+          across them.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can adapt designs for different platform conventions and
+          generate platform-specific component variations. However,
+          making strategic decisions about cross-platform consistency
+          versus platform-native experience, and designing for emerging
+          platforms with evolving conventions, requires human judgment
+          about user expectations and brand strategy.
+
+    - id: ui_patterns
+      name: "UI Pattern Libraries & Systems"
+      category: technical
+      description: >
+        Designing, documenting, and maintaining reusable interface
+        patterns that solve common design problems consistently.
+        Includes component design, pattern documentation, usage
+        guidelines, and governing the evolution of pattern libraries
+        within and across products.
+      proficiency:
+        junior: >
+          Uses existing UI patterns and components correctly, selecting
+          appropriate patterns for common interface needs. Understands
+          the difference between components (building blocks) and
+          patterns (assembled solutions) and follows usage guidelines.
+        mid: >
+          Designs new UI patterns for recurring interface problems,
+          documenting when and how to use each pattern. Contributes
+          well-structured components to pattern libraries with clear
+          variants, states, and usage guidelines.
+        senior: >
+          Curates and governs the pattern library for the product area,
+          identifying pattern gaps, consolidating redundant patterns,
+          and establishing quality criteria for pattern contributions.
+          Designs complex patterns (data tables, form systems, navigation
+          frameworks) that work across contexts.
+        staff: >
+          Defines the organization's pattern-library strategy, including
+          taxonomy, governance models, and contribution workflows that
+          balance consistency with team autonomy. Architects pattern
+          libraries that scale across products and platforms.
+        principal: >
+          Shapes the company's approach to design patterns as a
+          strategic asset, evaluating how pattern libraries evolve with
+          design trends, technology changes, and organizational growth.
+          Drives the vision for how patterns connect design intent with
+          engineering implementation at scale.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can suggest appropriate UI patterns for common scenarios and
+          generate component variations from existing pattern libraries.
+          However, identifying when a new pattern is needed, designing
+          patterns flexible enough to serve multiple contexts, and
+          governing pattern evolution across teams require human design
+          systems expertise.
+
+    - id: visual_qc
+      name: "Visual Quality Control"
+      category: analytical
+      description: >
+        Reviewing implemented interfaces against design specifications
+        to ensure visual fidelity, pixel accuracy, and consistent
+        application of the design system. Includes visual regression
+        detection, cross-browser visual testing, and maintaining
+        quality standards from design through production.
+      proficiency:
+        junior: >
+          Compares implemented features against design files, identifying
+          obvious visual discrepancies in spacing, color, typography,
+          and alignment. Documents issues with screenshots and specific
+          measurements for engineering follow-up.
+        mid: >
+          Conducts thorough visual QA reviews covering responsive
+          behavior, animation timing, component states, and edge cases
+          (long text, missing images, empty states). Establishes a
+          systematic review checklist and catches subtle inconsistencies
+          that affect perceived quality.
+        senior: >
+          Defines the team's visual QA process, including review
+          checklists, quality gates in the release process, and
+          automated visual-regression testing integration. Sets the
+          quality bar for visual fidelity and coaches engineers on
+          achieving pixel-perfect implementation.
+        staff: >
+          Establishes organization-wide visual QA standards, tooling,
+          and processes. Integrates visual regression testing into CI/CD
+          pipelines, defines acceptable deviation thresholds, and builds
+          a culture where visual quality is a shared responsibility
+          between design and engineering.
+        principal: >
+          Shapes the company's approach to visual quality as a product
+          differentiator, driving investment in visual QA infrastructure,
+          automated testing, and quality culture. Ensures visual
+          excellence is maintained as the product portfolio and team
+          scale grow.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI-powered visual regression testing tools are increasingly
+          effective at detecting layout shifts, color discrepancies,
+          and component inconsistencies automatically. However, judging
+          whether a visual deviation matters, understanding the design
+          intent behind a specification, and maintaining visual quality
+          standards across a growing product require human aesthetic
+          judgment.

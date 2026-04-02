@@ -1,0 +1,688 @@
+role:
+  id: customer_success
+  function: sales
+  name: "Customer Success Manager"
+  also_known_as:
+    - "CSM"
+    - "Client Success Manager"
+    - "Customer Relationship Manager"
+    - "Customer Experience Manager"
+    - "Post-Sales Account Manager"
+  description: >
+    Owns the post-sale customer relationship with the goal of driving product
+    adoption, ensuring retention, and expanding revenue within existing
+    accounts. Customer success managers onboard new customers, monitor
+    engagement and health metrics, facilitate business reviews, manage
+    renewals, identify upsell and cross-sell opportunities, and serve as the
+    customer's advocate within the organization. They combine relationship
+    management with data-driven account strategies to maximize customer
+    lifetime value and minimize churn.
+  ai_impact:
+    level: "moderate-high"
+    summary: >
+      AI is significantly augmenting customer success by automating health
+      scoring, predicting churn risk, personalizing engagement playbooks,
+      and generating QBR content from usage data. However, the relational
+      core of the role--building trust with stakeholders, navigating
+      organizational politics during at-risk situations, and driving
+      strategic conversations about business value--remains fundamentally
+      human. CSMs who leverage AI for data-driven insights while investing
+      their time in strategic relationship management will see their
+      impact per account increase substantially.
+    automating:
+      - "Health score calculation from usage and engagement data"
+      - "Renewal timeline tracking and notification"
+      - "Usage report generation and formatting"
+      - "Standard onboarding task management and checklists"
+      - "Customer communication drafting for routine touchpoints"
+      - "NPS and CSAT survey distribution and aggregation"
+    augmenting:
+      - "Churn prediction and early warning signal identification"
+      - "Personalized engagement playbook recommendations"
+      - "QBR content generation from usage analytics"
+      - "Expansion opportunity identification from usage patterns"
+      - "Product adoption gap analysis and recommendation"
+      - "Stakeholder sentiment analysis from interaction data"
+    preserving:
+      - "Building trusted advisor relationships with executive sponsors"
+      - "Navigating at-risk situations with empathy and creative solutions"
+      - "Facilitating strategic business conversations about value realization"
+      - "Cross-functional escalation and internal advocacy for customers"
+      - "Coaching customers through organizational change management"
+      - "Negotiating renewal and expansion terms that preserve relationships"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Gainsight - State of Customer Success Report"
+        url: "https://www.gainsight.com/guides/state-of-customer-success/"
+      - name: "McKinsey - The CEO Guide to Customer Experience"
+        url: "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-ceo-guide-to-customer-experience"
+      - name: "Totango - Customer Success Benchmarks"
+        url: "https://www.totango.com/resources"
+  levels:
+    - id: junior
+      name: "Customer Success Associate"
+      years_experience: "0-2"
+      summary: >
+        Manages a portfolio of lower-complexity accounts, executing
+        onboarding playbooks, monitoring health metrics, and handling
+        routine customer inquiries. Learns the product deeply, builds
+        foundational relationship skills, and follows established
+        processes for renewals and escalations.
+    - id: mid
+      name: "Customer Success Manager"
+      years_experience: "2-5"
+      summary: >
+        Owns a portfolio of mid-market accounts end-to-end, driving
+        adoption, managing renewals, and identifying expansion
+        opportunities. Builds multi-threaded relationships, facilitates
+        business reviews, and handles at-risk situations with increasing
+        independence and strategic thinking.
+    - id: senior
+      name: "Senior Customer Success Manager"
+      years_experience: "5-8"
+      summary: >
+        Manages strategic enterprise accounts with complex stakeholder
+        landscapes and high revenue impact. Drives executive-level
+        relationships, leads complex renewal and expansion negotiations,
+        and mentors junior CSMs. Contributes to customer success strategy
+        and process improvements.
+    - id: staff
+      name: "Principal CSM / Strategic CSM"
+      years_experience: "8-12"
+      summary: >
+        Owns the company's most valuable and strategically important
+        customer relationships. Operates as a trusted advisor to C-suite
+        stakeholders, designs multi-year success plans, and influences
+        product roadmap based on strategic account needs. Shapes customer
+        success methodology and best practices for the team.
+    - id: principal
+      name: "Director of Customer Success"
+      years_experience: "12+"
+      summary: >
+        Leads the customer success organization, setting strategy for
+        retention, expansion, and customer experience across all segments.
+        Defines team structure, compensation models, technology stack, and
+        engagement methodologies. Owns net revenue retention at the
+        executive level and partners with sales, product, and executive
+        leadership on company growth strategy.
+  skills:
+    - id: onboarding
+      name: "Onboarding"
+      category: execution
+      description: >
+        Guiding new customers through the initial product setup,
+        configuration, training, and early adoption phase to ensure they
+        achieve initial time-to-value and build the foundation for long-term
+        engagement and success.
+      proficiency:
+        junior: >
+          Executes standard onboarding playbooks including kickoff calls,
+          training sessions, and milestone tracking. Guides customers
+          through basic setup and configuration tasks. Follows up on
+          onboarding action items and escalates blockers to ensure timely
+          completion.
+        mid: >
+          Tailors onboarding plans to the customer's specific use cases,
+          technical environment, and success criteria. Identifies early
+          adoption risks and intervenes proactively. Facilitates training
+          sessions that engage different stakeholder groups effectively.
+        senior: >
+          Designs onboarding programs for complex enterprise deployments
+          spanning multiple teams and use cases. Creates customized
+          success milestones and tracks leading indicators of adoption.
+          Coaches junior CSMs on onboarding best practices and common
+          pitfalls that lead to early churn.
+        staff: >
+          Defines the organization's onboarding methodology across market
+          segments, including playbooks, milestones, automation, and
+          handoff processes from sales. Optimizes time-to-value metrics
+          and designs scalable onboarding approaches that maintain quality
+          as the customer base grows.
+        principal: >
+          Shapes the company's first-impression strategy, ensuring the
+          onboarding experience reflects brand values and sets the
+          foundation for long-term customer relationships. Connects
+          onboarding investment to downstream retention and expansion
+          metrics and influences product decisions that improve out-of-box
+          experience.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can automate onboarding task management, generate
+          personalized training content, and monitor adoption milestones
+          automatically. However, building the initial customer
+          relationship, adapting onboarding to organizational dynamics,
+          and coaching customers through change management challenges
+          require human empathy and judgment.
+
+    - id: adoption_engagement
+      name: "Adoption & Engagement"
+      category: execution
+      description: >
+        Driving ongoing product adoption by monitoring usage patterns,
+        identifying underutilized features, designing engagement strategies
+        that expand usage breadth and depth, and coaching customers on best
+        practices that maximize the value they derive from the product.
+      proficiency:
+        junior: >
+          Monitors basic usage metrics for assigned accounts and follows
+          up when engagement drops below thresholds. Shares relevant
+          training resources and best practices with customers. Tracks
+          feature adoption against the onboarding success plan.
+        mid: >
+          Analyzes usage data to identify adoption gaps and creates
+          targeted engagement plans that address specific underutilization
+          patterns. Facilitates enablement sessions for new features and
+          advanced use cases. Connects adoption metrics to the customer's
+          business outcomes.
+        senior: >
+          Designs adoption strategies for complex accounts with multiple
+          user groups and use cases. Creates executive-level narratives
+          that connect product usage to business value realization.
+          Influences product enablement content and in-app guidance based
+          on patterns observed across the customer portfolio.
+        staff: >
+          Defines the organization's adoption and engagement framework,
+          including health metrics, engagement playbooks, and digital
+          touchpoint strategies for different customer segments. Establishes
+          benchmarks for healthy adoption and designs intervention triggers
+          for at-risk patterns.
+        principal: >
+          Shapes the company's product adoption philosophy, ensuring the
+          customer success team, product design, and marketing collaborate
+          on driving engagement. Connects adoption metrics to company-level
+          retention and expansion goals and influences product decisions
+          that improve inherent product stickiness.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI excels at analyzing usage patterns, identifying adoption gaps,
+          and recommending targeted engagement actions. Automated digital
+          touchpoints can drive adoption at scale. Human value remains in
+          understanding the organizational context behind usage patterns
+          and coaching customers through behavior change.
+
+    - id: health_scoring
+      name: "Health Scoring"
+      category: analytical
+      description: >
+        Designing, maintaining, and interpreting customer health scoring
+        models that combine product usage data, engagement signals,
+        support interactions, and relationship quality indicators to
+        predict retention risk and prioritize CSM attention.
+      proficiency:
+        junior: >
+          Monitors customer health scores on the dashboard and understands
+          what each component measures. Follows prescribed playbooks when
+          a customer's health score drops below threshold. Updates
+          qualitative health inputs like relationship sentiment accurately.
+        mid: >
+          Interprets health score trends to identify emerging risks before
+          they become critical. Combines quantitative health data with
+          qualitative relationship knowledge to form a complete picture of
+          account health. Uses health insights to prioritize daily and
+          weekly engagement activities.
+        senior: >
+          Refines health scoring models based on correlation with actual
+          churn and expansion outcomes. Identifies gaps in existing health
+          metrics and proposes new signals that improve predictive accuracy.
+          Coaches the team on health score interpretation and appropriate
+          response playbooks.
+        staff: >
+          Designs the organization's health scoring framework, selecting
+          input signals, weighting factors, and threshold definitions.
+          Partners with data and product teams to instrument the data
+          pipelines that feed health models. Establishes processes for
+          regular model validation and refinement.
+        principal: >
+          Shapes the company's approach to predictive customer health
+          management, ensuring health scoring connects to broader business
+          intelligence and drives resource allocation decisions. Evaluates
+          emerging AI and analytics capabilities that enhance prediction
+          accuracy and actionability across the customer base.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          Health scoring is one of the most AI-enhanced CS capabilities.
+          Machine learning models can process vast amounts of usage,
+          engagement, and support data to predict churn with increasing
+          accuracy. Human value remains in interpreting health signals
+          within relationship context and deciding on the right
+          intervention strategy for each account.
+
+    - id: renewal_management
+      name: "Renewal Management"
+      category: execution
+      description: >
+        Managing the contract renewal process from early identification
+        of renewal risk through successful contract execution, including
+        timeline management, stakeholder alignment, pricing discussions,
+        and cross-functional coordination to achieve target renewal rates.
+      proficiency:
+        junior: >
+          Tracks upcoming renewals on the timeline and initiates the
+          renewal process according to prescribed cadences. Identifies
+          obvious renewal risks like low usage or open support escalations
+          and flags them to management. Coordinates renewal paperwork and
+          logistics.
+        mid: >
+          Manages the full renewal cycle independently, engaging
+          stakeholders early, addressing risks proactively, and
+          negotiating straightforward renewals. Achieves target renewal
+          rates and identifies when renewals require escalation or
+          executive involvement.
+        senior: >
+          Leads complex enterprise renewal negotiations involving
+          multi-year terms, pricing adjustments, and scope changes.
+          Develops renewal strategies for at-risk accounts that balance
+          retention with commercial viability. Coaches the team on
+          renewal best practices and forecasting accuracy.
+        staff: >
+          Defines the organization's renewal management methodology,
+          including timeline cadences, risk assessment frameworks, and
+          escalation processes. Optimizes renewal forecasting models and
+          designs commercial strategies that maximize gross renewal rates
+          while protecting margin.
+        principal: >
+          Shapes the company's renewal strategy at the executive level,
+          connecting renewal processes to overall revenue retention goals.
+          Influences pricing and packaging decisions that impact
+          renewability and ensures the organization's commercial policies
+          balance growth objectives with customer retention.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can predict renewal risk, automate renewal timeline
+          management, and generate renewal proposals from account data.
+          However, navigating the interpersonal dynamics of renewal
+          conversations, handling at-risk negotiations with empathy, and
+          crafting creative solutions for complex renewal situations
+          require human relationship skills.
+
+    - id: expansion_upsell
+      name: "Expansion & Upsell"
+      category: execution
+      description: >
+        Identifying and executing opportunities to expand revenue within
+        existing accounts through upselling additional features, cross-
+        selling new products, expanding user counts, or upgrading
+        subscription tiers based on demonstrated value and evolving
+        customer needs.
+      proficiency:
+        junior: >
+          Identifies basic expansion signals like usage approaching plan
+          limits or customers expressing interest in additional features.
+          Introduces expansion conversations when prompted by obvious
+          triggers and routes qualified expansion opportunities to the
+          appropriate sales resource.
+        mid: >
+          Proactively identifies expansion opportunities by analyzing
+          usage patterns, business changes, and stakeholder conversations.
+          Leads expansion discussions for straightforward upsells and
+          collaborates with account executives on larger expansion deals.
+        senior: >
+          Develops account expansion strategies that map product
+          capabilities to emerging business needs across the customer
+          organization. Leads complex expansion negotiations and builds
+          business cases that justify additional investment to economic
+          buyers. Mentors CSMs on consultative expansion selling.
+        staff: >
+          Defines the organization's expansion methodology, including
+          signal identification frameworks, playbooks for different
+          expansion motions, and collaboration models with sales teams.
+          Establishes expansion revenue targets and designs incentive
+          structures that align CSM behavior with growth objectives.
+        principal: >
+          Shapes the company's net revenue retention strategy, ensuring
+          expansion motions are embedded throughout the customer lifecycle.
+          Influences product packaging, pricing, and roadmap decisions
+          that create natural expansion paths and maximize customer
+          lifetime value.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can identify expansion signals from usage data, recommend
+          upsell timing, and generate business case content. However,
+          building the trust that makes expansion conversations welcomed
+          rather than resisted, understanding the customer's budget
+          cycles and political dynamics, and negotiating terms that
+          preserve the relationship require human judgment.
+
+    - id: churn_prevention
+      name: "Churn Prevention"
+      category: execution
+      description: >
+        Detecting early warning signals of customer attrition, diagnosing
+        root causes of dissatisfaction, and executing intervention
+        strategies that address customer concerns and restore confidence
+        in the product's value before the customer decides to leave.
+      proficiency:
+        junior: >
+          Recognizes common churn warning signs like declining usage,
+          unresponsive stakeholders, and negative support interactions.
+          Follows prescribed at-risk playbooks and escalates high-risk
+          situations to management with clear context on the account
+          situation.
+        mid: >
+          Identifies at-risk accounts proactively by combining health
+          score data with qualitative relationship signals. Develops and
+          executes save plans that address root causes of dissatisfaction.
+          Re-engages disengaged stakeholders and rebuilds momentum toward
+          value realization.
+        senior: >
+          Manages complex at-risk situations involving executive-level
+          escalations, competitive displacement threats, and deep product
+          dissatisfaction. Orchestrates cross-functional save efforts and
+          negotiates creative solutions that address customer concerns
+          while protecting commercial interests.
+        staff: >
+          Defines the organization's churn prevention framework, including
+          early warning systems, intervention playbooks, and escalation
+          processes. Analyzes churn patterns to identify systemic issues
+          and drives cross-functional initiatives that address root causes
+          at the product, service, and operational levels.
+        principal: >
+          Shapes the company's retention philosophy, connecting churn
+          prevention to product strategy, service quality, and customer
+          experience investments. Ensures the organization treats churn
+          as a leading indicator that drives strategic decisions rather
+          than a lagging metric that triggers reactive responses.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI is increasingly effective at predicting churn risk from
+          behavioral data and triggering automated interventions. However,
+          diagnosing the human and organizational factors behind
+          dissatisfaction, rebuilding damaged trust, and crafting creative
+          solutions that save at-risk accounts require empathy and
+          relationship skills that resist automation.
+
+    - id: qbr_facilitation
+      name: "QBR Facilitation"
+      category: execution
+      description: >
+        Planning and facilitating quarterly business reviews that
+        demonstrate product value, align on strategic objectives, review
+        success metrics, and strengthen executive relationships through
+        structured conversations about past performance and future
+        opportunity.
+      proficiency:
+        junior: >
+          Prepares QBR decks using templates, populating usage data and
+          support metrics for assigned accounts. Supports senior CSMs
+          during QBR delivery by managing logistics and taking notes.
+          Follows up on action items generated during review meetings.
+        mid: >
+          Plans and delivers QBRs independently, tailoring content to the
+          customer's strategic priorities and audience composition. Presents
+          usage data in the context of business outcomes and facilitates
+          discussions that surface new opportunities and address concerns.
+        senior: >
+          Facilitates executive-level QBRs that drive strategic
+          conversations about business transformation and long-term
+          partnership value. Creates compelling narratives that connect
+          product adoption to the customer's stated strategic objectives.
+          Coaches CSMs on QBR preparation and delivery excellence.
+        staff: >
+          Defines the organization's QBR methodology, including templates,
+          data requirements, and facilitation frameworks for different
+          customer segments. Establishes QBR quality standards and measures
+          the impact of business reviews on renewal and expansion outcomes.
+        principal: >
+          Shapes the company's approach to strategic customer engagement,
+          ensuring QBRs evolve from operational reviews into genuine
+          strategic conversations that deepen partnership and create
+          competitive advantage. Participates in QBRs for the company's
+          most strategic customers at the executive sponsor level.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI can generate QBR content from usage data, create
+          visualizations, and draft talking points automatically. This
+          significantly reduces preparation time. Human value remains in
+          facilitating the live conversation, reading the room, adapting
+          the discussion based on executive reactions, and building the
+          relationship through authentic strategic dialogue.
+
+    - id: product_feedback_loop
+      name: "Product Feedback Loop"
+      category: strategic
+      description: >
+        Systematically collecting, synthesizing, and communicating customer
+        feedback to product teams, translating individual customer requests
+        into actionable insights that inform product roadmap priorities
+        and improve the overall product experience.
+      proficiency:
+        junior: >
+          Documents customer feature requests and product feedback
+          accurately in the feedback tracking system. Categorizes feedback
+          by theme and severity. Communicates known product limitations
+          honestly to customers and shares relevant roadmap updates.
+        mid: >
+          Synthesizes feedback across multiple accounts to identify
+          patterns and common themes. Presents customer feedback to
+          product teams with business context including revenue at risk
+          and competitive implications. Manages customer expectations
+          about roadmap timelines realistically.
+        senior: >
+          Serves as a strategic voice of the customer in product planning
+          conversations, connecting individual requests to broader market
+          needs. Builds trusted relationships with product managers that
+          give customer success influence over roadmap priorities. Coaches
+          CSMs on effective feedback communication.
+        staff: >
+          Defines the organization's customer feedback framework, including
+          collection processes, categorization taxonomies, prioritization
+          criteria, and communication channels with product teams. Ensures
+          customer feedback is systematically incorporated into product
+          planning cycles with appropriate weighting.
+        principal: >
+          Shapes the company's approach to customer-driven product
+          development, ensuring the voice of existing customers is
+          balanced with new market requirements in strategic planning.
+          Builds executive-level feedback channels with strategic customers
+          that provide early signal on market-shaping needs.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can aggregate and categorize feedback at scale, identify
+          trending themes, and quantify the revenue impact of feature
+          requests. Human value remains in understanding the strategic
+          importance of specific requests, building the internal
+          relationships that give feedback influence, and translating
+          customer language into product requirements.
+
+    - id: success_planning
+      name: "Success Planning"
+      category: strategic
+      description: >
+        Creating and maintaining strategic success plans that define the
+        customer's desired outcomes, measurable success criteria, milestone
+        timelines, and the actions required from both the customer and the
+        vendor to achieve mutual goals throughout the relationship.
+      proficiency:
+        junior: >
+          Creates success plans using standard templates, documenting the
+          customer's stated objectives, key milestones, and assigned
+          responsibilities. Tracks progress against the plan and updates
+          it after each major customer interaction.
+        mid: >
+          Develops success plans that connect product adoption milestones
+          to the customer's specific business objectives and KPIs. Revisits
+          and updates plans regularly based on changing customer priorities.
+          Uses success plans as a framework for strategic customer
+          conversations.
+        senior: >
+          Creates multi-year success plans for enterprise accounts that
+          align product adoption with long-term business transformation
+          goals. Designs success metrics that demonstrate ROI to executive
+          sponsors and builds success plans that serve as the foundation
+          for renewal and expansion conversations.
+        staff: >
+          Defines the organization's success planning methodology,
+          including templates, review cadences, and integration with
+          health scoring and renewal processes. Establishes success plan
+          quality standards and measures the correlation between planning
+          maturity and retention outcomes.
+        principal: >
+          Shapes the company's approach to customer value management,
+          ensuring success planning is embedded as a strategic discipline
+          rather than an administrative exercise. Connects success plan
+          outcomes to company-level metrics and influences how the
+          organization measures and communicates customer value realization.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can generate success plan templates from account data, suggest
+          relevant milestones based on similar customers, and track
+          progress automatically. Human value remains in understanding the
+          customer's unique organizational context, defining meaningful
+          success criteria, and using the plan as a relationship-building
+          tool rather than a checkbox exercise.
+
+    - id: stakeholder_mapping
+      name: "Stakeholder Mapping"
+      category: strategic
+      description: >
+        Identifying, categorizing, and developing relationships with key
+        stakeholders across the customer organization, understanding their
+        roles, influence, priorities, and sentiment to build multi-threaded
+        engagement strategies that protect and grow the account.
+      proficiency:
+        junior: >
+          Identifies and documents key contacts at assigned accounts
+          including their roles and responsibilities. Tracks interaction
+          history and basic sentiment in the CRM. Recognizes when key
+          stakeholder changes occur and reports them to management.
+        mid: >
+          Maps stakeholder organizations comprehensively, identifying
+          decision-makers, influencers, champions, and detractors.
+          Develops multi-threaded engagement strategies that build
+          relationships across departments and seniority levels. Monitors
+          organizational changes that could impact account health.
+        senior: >
+          Creates sophisticated stakeholder maps for complex enterprise
+          accounts with multiple business units and overlapping influence
+          structures. Develops strategies to convert detractors, strengthen
+          champions, and build executive sponsor relationships that protect
+          against competitive displacement.
+        staff: >
+          Defines the organization's stakeholder mapping methodology,
+          including tools, frameworks, and review cadences. Establishes
+          best practices for multi-threading that improve account
+          resilience and creates training programs that develop the team's
+          organizational navigation skills.
+        principal: >
+          Shapes the company's approach to relationship depth and breadth
+          across the customer base. Ensures stakeholder mapping is
+          connected to account health scoring, renewal risk assessment,
+          and expansion opportunity identification at the portfolio level
+          to drive strategic resource allocation decisions.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can identify stakeholders from CRM data, LinkedIn, and
+          interaction history, and suggest relationship gaps in the org
+          chart. However, understanding political dynamics, assessing
+          stakeholder sentiment from nuanced interactions, and developing
+          strategies to navigate complex organizational structures
+          require human relationship intelligence.
+
+    - id: data_analysis_cs
+      name: "Data Analysis"
+      category: analytical
+      description: >
+        Analyzing customer usage data, engagement metrics, support trends,
+        and financial indicators to derive insights that inform account
+        strategy, demonstrate product value, predict risk, and identify
+        growth opportunities across the customer portfolio.
+      proficiency:
+        junior: >
+          Reads and interprets standard customer dashboards and reports.
+          Understands key metrics like DAU, feature adoption rates, and
+          NPS scores. Uses data to prepare for customer conversations
+          and identify accounts that need attention based on metric
+          thresholds.
+        mid: >
+          Conducts multi-dimensional analysis combining usage, support,
+          and financial data to form a complete picture of account health
+          and opportunity. Creates custom reports that tell a data-driven
+          story about customer value realization and presents findings to
+          customers in business context.
+        senior: >
+          Designs analytical frameworks that help the CS team systematically
+          identify risk and opportunity across the portfolio. Connects
+          customer data analysis to business outcomes like renewal
+          prediction and expansion timing. Mentors CSMs on data literacy
+          and analytical storytelling.
+        staff: >
+          Defines the organization's customer analytics strategy, including
+          key metrics, reporting architecture, and data quality standards.
+          Partners with data teams to build customer intelligence
+          capabilities that enable proactive and predictive account
+          management at scale.
+        principal: >
+          Shapes the company's approach to customer intelligence, ensuring
+          data capabilities support strategic decisions about segmentation,
+          resource allocation, and customer experience investment. Evaluates
+          emerging analytics and AI capabilities that enhance the team's
+          ability to manage customers proactively.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI significantly enhances customer data analysis through automated
+          pattern recognition, anomaly detection, and predictive modeling.
+          Human value remains in asking the right questions of the data,
+          interpreting insights within the context of specific customer
+          relationships, and translating analytical findings into
+          actionable account strategies.
+
+    - id: cross_functional_escalation
+      name: "Cross-Functional Escalation"
+      category: interpersonal
+      description: >
+        Identifying when customer issues require resources beyond the CS
+        team's direct control, orchestrating cross-functional responses
+        involving product, engineering, support, and executive leadership,
+        and managing the escalation process to resolution while maintaining
+        customer trust.
+      proficiency:
+        junior: >
+          Recognizes when a customer issue requires escalation beyond
+          standard CS processes. Files escalations with clear descriptions
+          of the customer impact, urgency, and requested action. Follows
+          up on escalated issues to ensure they progress toward resolution.
+        mid: >
+          Manages escalations effectively by engaging the right internal
+          stakeholders, providing comprehensive context, and maintaining
+          regular communication with both the customer and internal teams.
+          Balances customer urgency with realistic resolution timelines
+          and manages expectations on both sides.
+        senior: >
+          Orchestrates complex multi-team escalations for strategic
+          accounts, including executive-level interventions and
+          cross-functional war rooms. Navigates internal politics to
+          secure resources for critical customer issues and ensures
+          escalation processes result in systemic improvements.
+        staff: >
+          Defines the organization's escalation framework, including
+          severity definitions, routing rules, SLA expectations, and
+          executive engagement triggers. Establishes post-escalation
+          review processes that identify root causes and drive operational
+          improvements across functions.
+        principal: >
+          Shapes the company's approach to customer escalation management,
+          ensuring the organization responds to critical customer issues
+          with appropriate urgency and resources. Connects escalation
+          patterns to strategic decisions about product quality, service
+          capability, and infrastructure investment.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can route escalations based on severity and topic, suggest
+          relevant internal experts, and track resolution timelines.
+          However, navigating internal organizational dynamics, building
+          the cross-functional relationships that enable rapid response,
+          and managing the emotional dimensions of escalations with
+          customers require fundamentally human skills.

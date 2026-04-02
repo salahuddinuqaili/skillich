@@ -1,0 +1,24 @@
+function:
+  id: support
+  name: "Customer Support"
+  description: >
+    Customer support, technical assistance, and customer experience roles.
+    Encompasses the frontline resolution of customer issues, technical
+    troubleshooting, knowledge management, experience analysis, and the
+    leadership of support organizations that drive customer satisfaction,
+    retention, and product improvement through direct customer interaction.
+  roles:
+    - support_agent
+    - support_engineer
+    - support_manager
+    - knowledge_manager
+    - cx_analyst
+  sources:
+    - name: "Zendesk CX Trends Report"
+      url: "https://www.zendesk.com/cx-trends-report/"
+    - name: "Support Driven Community"
+      url: "https://supportdriven.com/"
+    - name: "HDI - Help Desk Institute Standards"
+      url: "https://www.thinkhdi.com/"
+    - name: "ICMI - International Customer Management Institute"
+      url: "https://www.icmi.com/"

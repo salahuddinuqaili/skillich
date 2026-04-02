@@ -1,0 +1,23 @@
+function:
+  id: marketing
+  name: "Marketing & Growth"
+  description: >
+    Digital marketing, growth engineering, content strategy, SEO, and
+    analytics roles within technology companies. Encompasses the planning,
+    execution, measurement, and optimization of customer acquisition,
+    engagement, and retention across paid, owned, and earned channels.
+  roles:
+    - digital_marketer
+    - seo_sem
+    - content_strategist
+    - marketing_analyst
+    - growth_engineer
+  sources:
+    - name: "HubSpot Marketing Career Paths"
+      url: "https://www.hubspot.com/marketing-careers"
+    - name: "Reforge Growth Series"
+      url: "https://www.reforge.com/growth-series"
+    - name: "Google Digital Marketing & E-commerce Certificate"
+      url: "https://grow.google/certificates/digital-marketing-ecommerce/"
+    - name: "Lenny's Newsletter – Growth & Marketing Roles"
+      url: "https://www.lennysnewsletter.com/"

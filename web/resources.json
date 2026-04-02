@@ -1,0 +1,108 @@
+{
+  "_comment": "Curated learning resources mapped by skill keyword. The web UI matches skill names against these keywords to surface relevant resources.",
+  "system design": [
+    {"type": "course", "name": "Grokking System Design (DesignGurus)", "url": "https://www.designgurus.io/course/grokking-the-system-design-interview"},
+    {"type": "book", "name": "Designing Data-Intensive Applications (Kleppmann)", "url": "https://dataintensive.net/"},
+    {"type": "free", "name": "System Design Primer (GitHub)", "url": "https://github.com/donnemartin/system-design-primer"}
+  ],
+  "api design": [
+    {"type": "free", "name": "Google API Design Guide", "url": "https://cloud.google.com/apis/design"},
+    {"type": "book", "name": "API Design Patterns (Manning)", "url": "https://www.manning.com/books/api-design-patterns"}
+  ],
+  "sql": [
+    {"type": "free", "name": "SQLBolt Interactive Tutorial", "url": "https://sqlbolt.com/"},
+    {"type": "course", "name": "Mode SQL Tutorial", "url": "https://mode.com/sql-tutorial/"}
+  ],
+  "python": [
+    {"type": "free", "name": "Python Official Tutorial", "url": "https://docs.python.org/3/tutorial/"},
+    {"type": "course", "name": "Real Python Tutorials", "url": "https://realpython.com/"}
+  ],
+  "javascript": [
+    {"type": "free", "name": "javascript.info", "url": "https://javascript.info/"},
+    {"type": "free", "name": "MDN Web Docs", "url": "https://developer.mozilla.org/"}
+  ],
+  "typescript": [
+    {"type": "free", "name": "TypeScript Handbook", "url": "https://www.typescriptlang.org/docs/handbook/"},
+    {"type": "course", "name": "Total TypeScript (Matt Pocock)", "url": "https://www.totaltypescript.com/"}
+  ],
+  "react": [
+    {"type": "free", "name": "React Official Docs", "url": "https://react.dev/learn"},
+    {"type": "course", "name": "Epic React (Kent C. Dodds)", "url": "https://epicreact.dev/"}
+  ],
+  "kubernetes": [
+    {"type": "free", "name": "Kubernetes Official Tutorial", "url": "https://kubernetes.io/docs/tutorials/"},
+    {"type": "course", "name": "KodeKloud Kubernetes", "url": "https://kodekloud.com/courses/kubernetes/"}
+  ],
+  "terraform": [
+    {"type": "free", "name": "HashiCorp Learn Terraform", "url": "https://developer.hashicorp.com/terraform/tutorials"},
+    {"type": "book", "name": "Terraform: Up & Running (Brikman)", "url": "https://www.terraformupandrunning.com/"}
+  ],
+  "docker": [
+    {"type": "free", "name": "Docker Getting Started", "url": "https://docs.docker.com/get-started/"},
+    {"type": "free", "name": "Play with Docker", "url": "https://labs.play-with-docker.com/"}
+  ],
+  "machine learning": [
+    {"type": "course", "name": "fast.ai Practical Deep Learning", "url": "https://course.fast.ai/"},
+    {"type": "free", "name": "Google ML Crash Course", "url": "https://developers.google.com/machine-learning/crash-course"}
+  ],
+  "leadership": [
+    {"type": "book", "name": "The Manager's Path (Fournier)", "url": "https://www.oreilly.com/library/view/the-managers-path/9781491973882/"},
+    {"type": "free", "name": "Lara Hogan's Management Resources", "url": "https://larahogan.me/management/"}
+  ],
+  "product management": [
+    {"type": "book", "name": "Inspired (Cagan)", "url": "https://www.svpg.com/inspired-how-to-create-tech-products-customers-love/"},
+    {"type": "course", "name": "Reforge Product Management", "url": "https://www.reforge.com/"}
+  ],
+  "ux design": [
+    {"type": "free", "name": "Nielsen Norman Group Articles", "url": "https://www.nngroup.com/articles/"},
+    {"type": "course", "name": "Google UX Design Certificate", "url": "https://www.coursera.org/professional-certificates/google-ux-design"}
+  ],
+  "data analysis": [
+    {"type": "free", "name": "Khan Academy Statistics", "url": "https://www.khanacademy.org/math/statistics-probability"},
+    {"type": "course", "name": "Google Data Analytics Certificate", "url": "https://www.coursera.org/professional-certificates/google-data-analytics"}
+  ],
+  "security": [
+    {"type": "free", "name": "OWASP Top 10", "url": "https://owasp.org/www-project-top-ten/"},
+    {"type": "course", "name": "PortSwigger Web Security Academy", "url": "https://portswigger.net/web-security"}
+  ],
+  "communication": [
+    {"type": "book", "name": "Crucial Conversations", "url": "https://cruciallearning.com/crucial-conversations-book/"},
+    {"type": "book", "name": "The Pyramid Principle (Minto)", "url": "https://www.barbaraminto.com/"}
+  ],
+  "negotiation": [
+    {"type": "book", "name": "Never Split the Difference (Voss)", "url": "https://www.blackswanltd.com/never-split-the-difference"},
+    {"type": "course", "name": "Harvard Negotiation Course", "url": "https://online.hbs.edu/courses/negotiation/"}
+  ],
+  "financial modeling": [
+    {"type": "free", "name": "Corporate Finance Institute Free Courses", "url": "https://corporatefinanceinstitute.com/resources/"},
+    {"type": "course", "name": "Wall Street Prep", "url": "https://www.wallstreetprep.com/"}
+  ],
+  "accounting": [
+    {"type": "free", "name": "AccountingCoach", "url": "https://www.accountingcoach.com/"},
+    {"type": "course", "name": "Coursera Financial Accounting", "url": "https://www.coursera.org/learn/wharton-accounting"}
+  ],
+  "recruiting": [
+    {"type": "free", "name": "LinkedIn Talent Blog", "url": "https://www.linkedin.com/business/talent/blog"},
+    {"type": "book", "name": "Who (Smart & Street)", "url": "https://whothebook.com/"}
+  ],
+  "agile": [
+    {"type": "free", "name": "Scrum Guide", "url": "https://scrumguides.org/"},
+    {"type": "book", "name": "Scrum: The Art of Doing Twice the Work in Half the Time", "url": "https://www.scruminc.com/new-scrum-the-book/"}
+  ],
+  "testing": [
+    {"type": "free", "name": "Test Automation University", "url": "https://testautomationu.applitools.com/"},
+    {"type": "book", "name": "The Art of Software Testing (Myers)", "url": "https://www.wiley.com/en-us/The+Art+of+Software+Testing"}
+  ],
+  "privacy": [
+    {"type": "free", "name": "IAPP Resources", "url": "https://iapp.org/resources/"},
+    {"type": "course", "name": "CIPP/E Certification", "url": "https://iapp.org/certify/cippe/"}
+  ],
+  "compliance": [
+    {"type": "free", "name": "SCCE Resources", "url": "https://www.corporatecompliance.org/resources"},
+    {"type": "course", "name": "Compliance & Ethics Professional Certification", "url": "https://www.corporatecompliance.org/certification"}
+  ],
+  "sales": [
+    {"type": "book", "name": "SPIN Selling (Rackham)", "url": "https://www.spinsellingbook.com/"},
+    {"type": "course", "name": "Pavilion Sales School", "url": "https://www.joinpavilion.com/"}
+  ]
+}

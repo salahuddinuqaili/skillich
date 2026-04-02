@@ -1,0 +1,680 @@
+role:
+  id: it_operations
+  function: operations
+  name: "IT Operations Engineer"
+  also_known_as:
+    - "IT Operations Analyst"
+    - "Systems Administrator"
+    - "Infrastructure Operations Engineer"
+    - "IT Service Manager"
+    - "Operations Engineer"
+  description: >
+    Manages and maintains the IT infrastructure, services, and operational
+    processes that keep an organization's technology environment running
+    reliably. IT Operations engineers handle incident response, change
+    management, system monitoring, disaster recovery, and service delivery,
+    ensuring business-critical systems meet availability, performance,
+    and security requirements.
+  ai_impact:
+    level: "moderate-high"
+    summary: >
+      AI is significantly transforming IT operations through intelligent
+      monitoring, automated incident triage, predictive capacity planning,
+      and self-healing infrastructure. Routine operational tasks such as
+      log analysis, ticket classification, and standard change execution
+      are increasingly automated. However, complex incident management,
+      architectural decision-making for infrastructure evolution, vendor
+      negotiations, and organizational change management remain firmly
+      human-driven. IT ops professionals who combine AI-powered tooling
+      with deep systems judgment will thrive.
+    automating:
+      - "Log analysis and anomaly detection"
+      - "Ticket classification and routing"
+      - "Standard change execution and validation"
+      - "Routine patch management and compliance scanning"
+      - "Basic capacity trend reporting"
+    augmenting:
+      - "Complex incident root-cause analysis"
+      - "Capacity planning and cost optimization modeling"
+      - "Security event correlation and threat assessment"
+      - "Infrastructure-as-code generation and review"
+      - "Disaster recovery testing and validation"
+    preserving:
+      - "Architectural decisions for infrastructure evolution"
+      - "Vendor relationship management and contract negotiation"
+      - "Crisis leadership during major incidents"
+      - "Organizational change management for new platforms"
+      - "Cross-team coordination and stakeholder communication"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "ITIL 4 Foundation"
+        url: "https://www.axelos.com/certifications/itil-service-management/itil-4-foundation"
+      - name: "O*NET - Network and Computer Systems Administrators"
+        url: "https://www.onetonline.org/link/summary/15-1244.00"
+      - name: "Gartner - IT Operations Management"
+        url: "https://www.gartner.com/en/information-technology/glossary/it-operations-management"
+  levels:
+    - id: junior
+      name: "Junior IT Operations Engineer"
+      years_experience: "0-2"
+      summary: >
+        Handles routine operational tasks including ticket resolution,
+        system monitoring, and basic troubleshooting under guidance.
+        Follows established runbooks and procedures for common issues,
+        escalates complex problems appropriately, and develops
+        foundational knowledge of the organization's infrastructure
+        and ITSM processes.
+    - id: mid
+      name: "IT Operations Engineer"
+      years_experience: "2-5"
+      summary: >
+        Manages day-to-day IT operations independently, resolving
+        moderate-complexity incidents, executing changes, and
+        maintaining infrastructure components. Participates in on-call
+        rotations, contributes to runbook development, and identifies
+        opportunities to automate repetitive tasks.
+    - id: senior
+      name: "Senior IT Operations Engineer"
+      years_experience: "5-8"
+      summary: >
+        Leads operational excellence initiatives across the IT
+        environment, designing monitoring strategies, improving
+        incident management processes, and architecting disaster
+        recovery solutions. Mentors junior team members, drives
+        automation adoption, and serves as a key escalation point
+        for complex incidents.
+    - id: staff
+      name: "Staff IT Operations Engineer"
+      years_experience: "8-12"
+      summary: >
+        Defines IT operations strategy and standards across the
+        organization, including tooling selection, process frameworks,
+        and service level management. Drives infrastructure
+        modernization programs, establishes operational best
+        practices, and partners with engineering and security teams
+        on cross-cutting initiatives.
+    - id: principal
+      name: "Principal IT Operations Engineer"
+      years_experience: "12+"
+      summary: >
+        Sets the vision for IT operations as a discipline, shaping
+        the organization's approach to reliability, service
+        management, and infrastructure evolution. Advises executive
+        leadership on technology operations strategy, drives
+        industry-leading practices, and ensures IT operations
+        capabilities support long-term business growth.
+  skills:
+    - id: service_management
+      name: "IT Service Management"
+      category: domain
+      description: >
+        Applying ITSM frameworks such as ITIL to design, deliver,
+        and continuously improve IT services that meet business
+        requirements, including service catalog management, SLA
+        definition, service desk operations, and service level
+        reporting.
+      proficiency:
+        junior: >
+          Follows ITSM processes for ticket handling, categorization,
+          and resolution. Understands basic ITIL concepts such as
+          incidents, problems, and changes. Uses the service desk
+          tool to log and track work.
+        mid: >
+          Manages service delivery for assigned areas including SLA
+          monitoring, service request fulfillment, and customer
+          communication. Contributes to service catalog maintenance
+          and identifies process improvement opportunities.
+        senior: >
+          Designs and improves ITSM processes across the organization.
+          Defines SLAs and OLAs in partnership with business
+          stakeholders, implements service level reporting, and
+          drives continual service improvement initiatives.
+        staff: >
+          Defines the organization's ITSM strategy and framework
+          adoption. Selects and integrates ITSM tooling, establishes
+          service management maturity models, and ensures ITSM
+          practices evolve with organizational needs.
+        principal: >
+          Shapes the enterprise service management vision, aligning
+          ITSM practices with digital transformation strategy. Advises
+          executive leadership on service management investments and
+          drives industry-leading service delivery capabilities.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can automate ticket routing, suggest resolutions from
+          knowledge bases, and generate service level reports, but
+          designing service management frameworks, negotiating SLAs
+          with business stakeholders, and driving process adoption
+          require human judgment and organizational skills.
+
+    - id: incident_management
+      name: "Incident Management"
+      category: domain
+      description: >
+        Detecting, responding to, and resolving service disruptions
+        to minimize business impact, including incident triage,
+        escalation, communication, resolution, and post-incident
+        review processes that drive continuous reliability improvement.
+      proficiency:
+        junior: >
+          Responds to alerts and tickets following established
+          runbooks. Performs initial triage, applies known fixes for
+          common issues, and escalates unfamiliar problems with
+          clear documentation of symptoms and troubleshooting steps.
+        mid: >
+          Manages incident response for moderate-severity events,
+          coordinating with relevant teams, communicating status to
+          stakeholders, and driving incidents to resolution. Conducts
+          post-incident reviews and contributes to runbook updates.
+        senior: >
+          Leads major incident response as incident commander,
+          maintaining calm coordination during high-pressure
+          situations. Designs incident management processes,
+          severity classifications, and escalation procedures.
+          Drives systemic improvements from post-incident reviews.
+        staff: >
+          Defines organizational incident management frameworks,
+          trains incident commanders, and establishes incident
+          metrics and reporting. Analyzes incident trends to
+          identify infrastructure investments that reduce incident
+          frequency and impact.
+        principal: >
+          Shapes the organization's incident management culture
+          and maturity, ensuring blameless post-mortems, effective
+          escalation chains, and continuous learning. Drives
+          executive-level discussions on reliability investment
+          and risk tolerance.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI excels at initial incident detection, log correlation,
+          and suggesting probable root causes from historical
+          patterns. However, coordinating cross-team response under
+          pressure, making judgment calls about workarounds versus
+          fixes, and leading blameless post-mortems require human
+          leadership.
+
+    - id: change_management
+      name: "Change Management"
+      category: domain
+      description: >
+        Managing the lifecycle of IT changes from request through
+        approval, implementation, and review, minimizing the risk
+        of service disruption while enabling the pace of change the
+        business requires, including change advisory boards, risk
+        assessment, and post-implementation validation.
+      proficiency:
+        junior: >
+          Submits change requests following established templates
+          and processes. Documents implementation and rollback plans
+          for standard changes and participates in change execution
+          under supervision.
+        mid: >
+          Manages the full change lifecycle for moderate-risk
+          changes, including risk assessment, stakeholder
+          communication, implementation coordination, and
+          post-implementation review. Identifies and resolves
+          change conflicts.
+        senior: >
+          Designs change management processes that balance risk
+          control with deployment velocity. Leads change advisory
+          board meetings, evaluates change risk models, and drives
+          adoption of automated change validation. Manages
+          emergency change procedures for critical situations.
+        staff: >
+          Defines organizational change management strategy,
+          including risk frameworks, approval workflows, and
+          change success metrics. Drives evolution toward
+          continuous delivery practices while maintaining
+          appropriate governance for regulated environments.
+        principal: >
+          Shapes the organization's approach to change velocity
+          and risk tolerance at the executive level. Ensures
+          change management practices evolve with infrastructure
+          modernization and support the organization's delivery
+          agility goals.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can assess change risk based on historical patterns,
+          detect scheduling conflicts, and validate implementation
+          plans, but making judgment calls about risk tolerance for
+          specific changes and navigating the organizational dynamics
+          of change approval require human experience.
+
+    - id: monitoring
+      name: "Monitoring & Observability"
+      category: technical
+      description: >
+        Designing and operating monitoring systems that provide
+        real-time visibility into infrastructure health, application
+        performance, and service availability, including alert
+        configuration, dashboard design, and integration of logs,
+        metrics, and traces for comprehensive operational awareness.
+      proficiency:
+        junior: >
+          Uses existing monitoring tools and dashboards to check
+          system health. Responds to alerts by following documented
+          procedures and escalates when symptoms do not match known
+          patterns.
+        mid: >
+          Configures monitoring for new infrastructure components
+          and applications. Designs dashboards for operational
+          visibility, tunes alert thresholds to minimize noise,
+          and implements basic synthetic monitoring and health checks.
+        senior: >
+          Designs comprehensive monitoring strategies across the
+          infrastructure stack including infrastructure metrics,
+          application performance monitoring, and end-user
+          experience monitoring. Implements correlation rules and
+          intelligent alerting that reduces mean time to detect.
+        staff: >
+          Defines organizational monitoring standards and tooling
+          strategy. Architects centralized monitoring platforms
+          that scale cost-effectively across the infrastructure.
+          Establishes monitoring-as-code practices and drives
+          adoption across teams.
+        principal: >
+          Shapes the organization's observability vision, evaluating
+          emerging technologies such as AIOps, eBPF-based monitoring,
+          and unified observability platforms. Drives investment
+          decisions that balance observability coverage with
+          operational cost.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI is rapidly advancing in anomaly detection, intelligent
+          alerting, and automated correlation of monitoring signals.
+          Routine alert triage is increasingly automated, but
+          designing monitoring strategies, determining what to
+          measure, and interpreting novel failure patterns require
+          human systems expertise.
+
+    - id: disaster_recovery
+      name: "Disaster Recovery & Business Continuity"
+      category: technical
+      description: >
+        Designing, implementing, and testing disaster recovery plans
+        and business continuity strategies that ensure the organization
+        can recover critical services within defined recovery time
+        and recovery point objectives following infrastructure
+        failures, security incidents, or natural disasters.
+      proficiency:
+        junior: >
+          Understands basic disaster recovery concepts including
+          RTO, RPO, and backup types. Participates in DR testing
+          exercises and follows recovery runbooks under supervision.
+        mid: >
+          Implements backup and recovery solutions for assigned
+          systems. Develops recovery runbooks, participates in DR
+          planning, and executes recovery procedures during testing
+          and real events. Documents recovery results and
+          improvement actions.
+        senior: >
+          Designs disaster recovery architectures for critical
+          systems including multi-site replication, automated
+          failover, and recovery orchestration. Leads DR testing
+          exercises, identifies gaps, and ensures recovery
+          capabilities meet business requirements.
+        staff: >
+          Defines organizational DR strategy and standards,
+          including BIA methodology, DR tier classifications, and
+          testing cadences. Architects cross-system recovery
+          solutions and ensures DR plans are integrated with cloud
+          and infrastructure modernization efforts.
+        principal: >
+          Shapes enterprise business continuity strategy in
+          partnership with executive leadership. Ensures DR
+          capabilities support regulatory compliance, customer
+          commitments, and organizational resilience goals.
+          Drives investment in infrastructure that minimizes
+          recovery time for critical services.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can help automate failover orchestration and validate
+          recovery procedures, but designing DR architectures that
+          account for complex interdependencies and making
+          high-stakes recovery decisions during real disasters
+          require experienced human judgment.
+
+    - id: asset_management
+      name: "IT Asset Management"
+      category: domain
+      description: >
+        Tracking, managing, and optimizing the lifecycle of IT
+        assets including hardware, software licenses, cloud
+        resources, and certificates, from procurement through
+        retirement, ensuring compliance, cost efficiency, and
+        accurate inventory.
+      proficiency:
+        junior: >
+          Maintains asset inventory records, processes asset
+          requests, and tracks hardware and software assignments.
+          Follows asset lifecycle procedures for deployment,
+          transfer, and decommissioning.
+        mid: >
+          Manages asset lifecycle processes including procurement
+          coordination, license compliance tracking, and renewal
+          management. Generates asset utilization reports and
+          identifies cost-saving opportunities through
+          consolidation or right-sizing.
+        senior: >
+          Designs asset management processes and tooling strategies.
+          Implements automated discovery and inventory reconciliation.
+          Leads software license optimization, cloud cost management,
+          and lifecycle planning for major infrastructure refresh
+          cycles.
+        staff: >
+          Defines organizational asset management strategy and
+          governance, including procurement standards, lifecycle
+          policies, and cost allocation models. Integrates asset
+          management with financial planning and IT service
+          management processes.
+        principal: >
+          Shapes the organization's approach to IT asset
+          investment, balancing total cost of ownership with
+          agility and innovation. Influences enterprise procurement
+          strategy, vendor consolidation, and technology refresh
+          cadences at the executive level.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI can automate asset discovery, license compliance
+          checking, and cost anomaly detection, significantly
+          reducing manual tracking effort. Strategic asset
+          management decisions involving vendor negotiations,
+          technology standardization, and investment trade-offs
+          still require human judgment.
+
+    - id: configuration_management
+      name: "Configuration Management"
+      category: technical
+      description: >
+        Maintaining accurate records of IT infrastructure
+        configurations and their relationships, ensuring consistency
+        across environments, and managing configuration drift
+        through infrastructure-as-code, CMDBs, and automated
+        configuration enforcement.
+      proficiency:
+        junior: >
+          Follows configuration standards when deploying or
+          modifying systems. Updates CMDB records and follows
+          configuration management procedures for changes.
+        mid: >
+          Manages configuration baselines for assigned systems,
+          implements infrastructure-as-code for standard
+          deployments, and detects and remediates configuration
+          drift. Maintains accurate CMDB data and relationship
+          mappings.
+        senior: >
+          Designs configuration management strategies including
+          baseline standards, drift detection automation, and
+          CMDB architecture. Implements infrastructure-as-code
+          practices across the organization and ensures
+          configuration consistency across environments.
+        staff: >
+          Defines organizational configuration management
+          standards and tooling strategy. Architects CMDB
+          solutions that provide reliable service dependency
+          mapping. Drives adoption of immutable infrastructure
+          and GitOps practices that reduce configuration-related
+          incidents.
+        principal: >
+          Shapes the organization's infrastructure management
+          philosophy, driving convergence toward declarative
+          configuration, automated enforcement, and self-healing
+          infrastructure. Ensures configuration management
+          practices support compliance and audit requirements
+          at the enterprise level.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can generate infrastructure-as-code, detect
+          configuration drift, and suggest remediation actions.
+          However, designing configuration standards that balance
+          consistency with flexibility and making architectural
+          decisions about configuration management tooling
+          require human expertise.
+
+    - id: capacity_planning
+      name: "Capacity Planning"
+      category: analytical
+      description: >
+        Forecasting infrastructure resource requirements based on
+        business growth projections, usage patterns, and performance
+        baselines, ensuring systems have sufficient capacity to
+        meet demand while optimizing cost through right-sizing
+        and efficient resource utilization.
+      proficiency:
+        junior: >
+          Monitors resource utilization metrics and flags systems
+          approaching capacity thresholds. Collects usage data and
+          prepares basic capacity reports under guidance.
+        mid: >
+          Performs capacity analysis for assigned systems, trending
+          resource utilization and projecting future needs based on
+          growth patterns. Recommends scaling actions and
+          right-sizing opportunities to optimize cost and
+          performance.
+        senior: >
+          Designs capacity planning processes and models for
+          complex infrastructure environments. Correlates capacity
+          needs with business projections, manages capacity across
+          on-premises and cloud resources, and leads capacity
+          review meetings with stakeholders.
+        staff: >
+          Defines organizational capacity planning standards and
+          methodologies. Architects capacity management tooling
+          and reporting that provides portfolio-level visibility.
+          Drives FinOps practices that optimize infrastructure
+          spend while maintaining performance headroom.
+        principal: >
+          Shapes enterprise capacity strategy, ensuring
+          infrastructure investment decisions align with
+          multi-year business growth plans. Advises executive
+          leadership on infrastructure economics, cloud
+          optimization, and technology refresh timing.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI is strong at capacity forecasting from usage patterns,
+          cost optimization recommendations, and anomaly detection
+          in resource utilization. However, correlating capacity
+          needs with uncertain business projections and making
+          investment decisions require strategic human judgment.
+
+    - id: vendor_management
+      name: "Vendor & Supplier Management"
+      category: domain
+      description: >
+        Managing relationships with technology vendors and service
+        providers including hardware suppliers, software vendors,
+        cloud providers, and managed service providers, ensuring
+        service quality, contract compliance, and cost-effective
+        procurement.
+      proficiency:
+        junior: >
+          Tracks vendor deliverables and SLA compliance. Logs
+          support tickets with vendors and follows up on
+          resolution. Maintains vendor documentation and
+          contact information.
+        mid: >
+          Manages day-to-day vendor relationships, conducts
+          regular service reviews, and monitors SLA performance.
+          Coordinates vendor support for incidents and changes.
+          Participates in procurement evaluations and contract
+          reviews.
+        senior: >
+          Leads vendor evaluations and selection processes.
+          Negotiates contract terms including SLAs, pricing,
+          and support provisions. Designs vendor governance
+          structures including performance scorecards and
+          escalation procedures.
+        staff: >
+          Defines organizational vendor management standards
+          and procurement processes. Conducts strategic vendor
+          assessments, drives consolidation decisions, and
+          manages enterprise-level vendor relationships across
+          the IT portfolio.
+        principal: >
+          Shapes enterprise vendor strategy including multi-cloud
+          positioning, strategic partnerships, and sourcing
+          models. Negotiates enterprise agreements and influences
+          vendor roadmaps. Ensures vendor strategy supports
+          long-term organizational technology goals.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can track vendor performance metrics, compare pricing
+          models, and flag SLA breaches, but building vendor
+          relationships, negotiating contracts, and making
+          strategic sourcing decisions require human interpersonal
+          and business skills.
+
+    - id: security_operations
+      name: "Security Operations"
+      category: technical
+      description: >
+        Implementing and maintaining operational security controls
+        including access management, vulnerability remediation,
+        security patch management, endpoint protection, and security
+        event monitoring to protect the organization's IT
+        infrastructure from threats.
+      proficiency:
+        junior: >
+          Follows security procedures for access provisioning,
+          password management, and endpoint compliance. Applies
+          security patches following established schedules and
+          escalates security alerts.
+        mid: >
+          Manages operational security tasks including access
+          reviews, vulnerability remediation, and security tool
+          administration. Responds to security events following
+          established procedures and coordinates with the security
+          team on remediation efforts.
+        senior: >
+          Designs operational security processes including
+          vulnerability management programs, access review
+          frameworks, and security hardening standards.
+          Implements security monitoring and integrates security
+          tooling with operational workflows. Leads security
+          incident response coordination.
+        staff: >
+          Defines organizational security operations standards
+          in partnership with the security team. Architects
+          integrated security monitoring and response capabilities.
+          Drives adoption of zero-trust principles and security
+          automation across the IT infrastructure.
+        principal: >
+          Shapes the organization's operational security posture
+          in partnership with CISO leadership. Ensures security
+          operations capabilities scale with infrastructure
+          growth and comply with evolving regulatory requirements.
+          Drives investment in security automation and advanced
+          threat detection.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI is increasingly effective at threat detection, alert
+          triage, and vulnerability prioritization. However,
+          designing defense-in-depth strategies, responding to
+          novel threats, and balancing security controls with
+          operational usability require experienced human judgment.
+
+    - id: documentation
+      name: "Operational Documentation"
+      category: communication
+      description: >
+        Creating and maintaining runbooks, standard operating
+        procedures, architecture diagrams, knowledge base articles,
+        and operational documentation that enable consistent,
+        reliable IT operations and reduce dependency on individual
+        knowledge.
+      proficiency:
+        junior: >
+          Documents troubleshooting steps and resolutions in the
+          knowledge base. Follows documentation templates and keeps
+          assigned runbooks up to date after procedure changes.
+        mid: >
+          Creates comprehensive runbooks and SOPs for operational
+          procedures. Writes knowledge base articles for common
+          issues and maintains architecture diagrams. Ensures
+          documentation is accurate, current, and accessible.
+        senior: >
+          Designs documentation standards and structures for the
+          operations team. Creates documentation review processes,
+          establishes knowledge management practices, and ensures
+          critical operational knowledge is captured and
+          maintainable.
+        staff: >
+          Defines organizational documentation strategy for IT
+          operations including tooling, standards, and governance.
+          Drives adoption of documentation-as-code practices and
+          ensures documentation scales with infrastructure
+          complexity.
+        principal: >
+          Shapes the organization's knowledge management strategy
+          for IT operations, ensuring institutional knowledge is
+          preserved, discoverable, and actionable. Integrates
+          documentation practices with automation and self-service
+          capabilities.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI excels at generating draft documentation from system
+          configurations, updating runbooks from incident records,
+          and maintaining knowledge base articles. However,
+          designing documentation architectures and ensuring
+          documentation captures the nuanced judgment needed for
+          complex operations still requires human expertise.
+
+    - id: automation
+      name: "Operations Automation"
+      category: technical
+      description: >
+        Automating repetitive operational tasks through scripting,
+        orchestration tools, and workflow automation platforms to
+        improve efficiency, reduce human error, and enable the
+        operations team to focus on higher-value work.
+      proficiency:
+        junior: >
+          Writes basic scripts to automate simple operational
+          tasks such as log rotation, user provisioning, and
+          health checks. Uses existing automation frameworks
+          and follows established patterns.
+        mid: >
+          Develops automation solutions for common operational
+          workflows using scripting languages and tools like
+          Ansible, Terraform, or PowerShell. Implements
+          scheduled jobs, automated remediation for known
+          issues, and self-service provisioning workflows.
+        senior: >
+          Designs automation strategies for the operations team
+          including prioritization frameworks for automation
+          investment, testing practices for automation code, and
+          integration of automation with ITSM workflows. Leads
+          automation initiatives that measurably reduce toil.
+        staff: >
+          Defines organizational automation standards and
+          platform strategy. Architects shared automation
+          frameworks and self-service platforms that enable
+          teams across the organization. Drives cultural shift
+          toward automation-first operational practices.
+        principal: >
+          Shapes the organization's vision for intelligent IT
+          operations, integrating automation with AI-driven
+          decision-making and self-healing infrastructure.
+          Drives executive investment in automation platforms
+          that transform operational capability and efficiency.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI can generate automation scripts, suggest automation
+          opportunities from repetitive patterns, and even
+          create self-remediation workflows. However, designing
+          reliable automation that handles edge cases safely and
+          deciding what should versus should not be automated
+          require operational wisdom.

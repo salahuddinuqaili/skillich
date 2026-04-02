@@ -1,0 +1,679 @@
+role:
+  id: sales_engineer
+  function: sales
+  name: "Sales Engineer"
+  also_known_as:
+    - "Solutions Consultant"
+    - "Solutions Engineer"
+    - "Pre-Sales Engineer"
+    - "Technical Account Manager"
+    - "Solutions Architect (Pre-Sales)"
+  description: >
+    Serves as the technical bridge between the sales team and prospective
+    customers, translating complex product capabilities into business value
+    during the pre-sales process. Sales engineers lead technical discovery,
+    deliver product demonstrations, design solution architectures, manage
+    proof-of-concept evaluations, and respond to technical requirements in
+    RFPs. They combine deep product and domain expertise with consultative
+    selling skills to remove technical barriers to purchase decisions.
+  ai_impact:
+    level: "moderate"
+    summary: >
+      AI is augmenting sales engineering by automating demo environment setup,
+      generating RFP responses from knowledge bases, and summarizing technical
+      requirements from call transcripts. However, the core of the role--
+      understanding a customer's unique technical landscape, designing
+      solutions that fit their architecture, and building the technical
+      credibility that earns buyer confidence--requires deep human expertise
+      and judgment. Sales engineers who leverage AI for preparation and
+      documentation will handle more deals with higher quality, but the
+      consultative and architectural dimensions of the role resist automation.
+    automating:
+      - "RFP/RFI response drafting from knowledge base"
+      - "Demo environment provisioning and reset"
+      - "Technical documentation generation"
+      - "Feature comparison matrix creation"
+      - "Meeting notes and action item extraction"
+      - "Standard integration documentation assembly"
+    augmenting:
+      - "Solution architecture design for common patterns"
+      - "Competitive technical analysis and differentiation"
+      - "Proof-of-concept success criteria definition"
+      - "Technical objection response preparation"
+      - "Customer environment analysis and compatibility assessment"
+      - "Post-demo follow-up content creation"
+    preserving:
+      - "Live technical discovery and consultative problem-solving"
+      - "Custom solution design for complex enterprise architectures"
+      - "Building technical credibility with engineering buyers"
+      - "Navigating ambiguous requirements with incomplete information"
+      - "Executive-level technical storytelling"
+      - "Cross-functional influence on product roadmap priorities"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "PreSales Collective - State of PreSales Report"
+        url: "https://www.presalescollective.com/"
+      - name: "Gartner - Technology Sales Roles"
+        url: "https://www.gartner.com/en/sales/insights/technology-sales"
+      - name: "Forrester - The Future of B2B Selling"
+        url: "https://www.forrester.com/report/the-future-of-b2b-selling"
+  levels:
+    - id: junior
+      name: "Associate Sales Engineer"
+      years_experience: "0-2"
+      summary: >
+        Supports senior sales engineers on deals by preparing demo
+        environments, drafting RFP responses, and handling standard technical
+        questions. Learns the product deeply, develops presentation skills,
+        and builds foundational knowledge of customer environments and
+        integration patterns.
+    - id: mid
+      name: "Sales Engineer"
+      years_experience: "2-5"
+      summary: >
+        Owns the technical pre-sales process for mid-market deals
+        independently. Delivers compelling product demonstrations, conducts
+        technical discovery, and designs solutions that address customer
+        requirements. Manages proof-of-concept evaluations and builds
+        trusted relationships with technical buyers.
+    - id: senior
+      name: "Senior Sales Engineer"
+      years_experience: "5-8"
+      summary: >
+        Leads technical pre-sales for complex enterprise deals involving
+        custom architectures, multi-product solutions, and large technical
+        evaluation committees. Mentors junior SEs, develops demo assets and
+        technical collateral, and provides strategic technical guidance that
+        influences deal strategy.
+    - id: staff
+      name: "Principal Sales Engineer"
+      years_experience: "8-12"
+      summary: >
+        Serves as a technical authority for the most complex and strategic
+        deals. Defines best practices for the SE team, creates reusable
+        solution frameworks, and bridges product engineering with field
+        requirements. Influences product roadmap through systematic customer
+        feedback and shapes the SE team's technical enablement program.
+    - id: principal
+      name: "Director of Solutions Engineering"
+      years_experience: "12+"
+      summary: >
+        Leads the solutions engineering organization, setting technical
+        pre-sales strategy, team structure, and enablement programs. Defines
+        how the SE team scales with the business, manages strategic customer
+        relationships at the executive level, and partners with product and
+        engineering leadership to align roadmap with market needs.
+  skills:
+    - id: technical_discovery
+      name: "Technical Discovery"
+      category: execution
+      description: >
+        Conducting structured technical conversations with prospects to
+        understand their current architecture, technology stack, integration
+        requirements, security constraints, and success criteria, enabling
+        solution design that addresses their specific environment.
+      proficiency:
+        junior: >
+          Follows a standard technical discovery questionnaire to gather
+          information about the prospect's environment. Documents responses
+          accurately and identifies obvious compatibility issues or
+          requirements gaps. Escalates complex technical questions to senior
+          team members.
+        mid: >
+          Leads technical discovery calls independently, adapting questions
+          based on the prospect's industry and technology context. Uncovers
+          implicit requirements and constraints beyond what the prospect
+          explicitly states. Synthesizes findings into solution design inputs.
+        senior: >
+          Conducts multi-session discovery for complex enterprise environments
+          spanning multiple technical stakeholders and system layers. Identifies
+          architectural risks and integration challenges early. Uses discovery
+          to build technical champion relationships and shape evaluation criteria
+          in the company's favor.
+        staff: >
+          Develops technical discovery frameworks and question banks for
+          different verticals and solution patterns. Trains the SE team on
+          discovery techniques that uncover strategic technical needs and
+          competitive vulnerabilities. Establishes standards for discovery
+          documentation quality.
+        principal: >
+          Defines the organization's technical discovery methodology, ensuring
+          it scales across market segments and product lines. Connects
+          discovery patterns to product strategy, identifying recurring
+          technical requirements that should influence roadmap priorities
+          and new market entry decisions.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can pre-populate discovery briefs from CRM data and public
+          technical information, suggest questions based on the prospect's
+          industry, and summarize discovery call notes. However, the
+          consultative skill of reading technical stakeholders, probing
+          deeper on vague answers, and connecting disparate requirements
+          into a coherent picture remains deeply human.
+
+    - id: solution_architecture
+      name: "Solution Architecture"
+      category: technical
+      description: >
+        Designing technical solutions that map the company's product
+        capabilities to the customer's architecture, requirements, and
+        constraints, including integration patterns, data flows, deployment
+        models, and migration approaches that make the product fit
+        seamlessly into the customer's environment.
+      proficiency:
+        junior: >
+          Creates basic architecture diagrams for standard deployment
+          patterns using approved templates. Understands the product's core
+          integration points and can explain standard data flows. Identifies
+          when a customer requirement falls outside standard patterns and
+          escalates appropriately.
+        mid: >
+          Designs solutions for mid-complexity environments including custom
+          integration patterns, data mapping, and deployment configurations.
+          Creates architecture diagrams and technical proposals that
+          communicate the solution clearly to both technical and business
+          stakeholders.
+        senior: >
+          Architects solutions for complex enterprise environments involving
+          multiple systems, hybrid cloud deployments, and custom security
+          requirements. Identifies creative approaches to non-standard
+          requirements and articulates technical trade-offs to help customers
+          make informed decisions.
+        staff: >
+          Creates reusable solution architecture patterns and reference
+          designs that the SE team uses for common customer scenarios. Defines
+          architectural best practices, reviews complex solution designs, and
+          provides guidance on edge cases that require creative problem
+          solving or product workarounds.
+        principal: >
+          Shapes the company's solution architecture strategy, ensuring
+          product capabilities and partner integrations support the most
+          common customer deployment patterns. Influences product
+          architecture decisions based on field-observed customer
+          requirements and competitive technical trends.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can generate initial architecture diagrams, suggest integration
+          patterns from a knowledge base, and identify standard deployment
+          configurations. However, designing solutions for unique customer
+          environments, navigating technical constraints creatively, and
+          making architecture trade-offs that account for organizational
+          context require experienced human judgment.
+
+    - id: product_demonstration
+      name: "Product Demonstration"
+      category: execution
+      description: >
+        Delivering compelling live product demonstrations that showcase
+        relevant capabilities in the context of the customer's specific use
+        cases, tell a coherent technical story, handle real-time questions,
+        and build confidence in the product's ability to solve the
+        customer's problems.
+      proficiency:
+        junior: >
+          Delivers standard product demos following established demo scripts
+          and environments. Practices demo flow to ensure smooth execution
+          and handles common audience questions with prepared responses.
+          Maintains demo environments in working condition.
+        mid: >
+          Tailors demos to the prospect's specific use cases and technical
+          context, weaving discovery findings into the demo narrative.
+          Handles unexpected questions and technical issues gracefully
+          during live presentations. Creates demo scenarios that resonate
+          with different audience personas.
+        senior: >
+          Delivers executive-level demonstrations that connect technical
+          capabilities to business outcomes. Orchestrates multi-product
+          demos with seamless transitions. Creates new demo environments
+          and scenarios for emerging use cases and competitive situations.
+        staff: >
+          Develops the organization's demo methodology, including demo
+          environment architecture, narrative frameworks, and best practices
+          for different deal types. Creates flagship demo assets used at
+          industry events, customer advisory boards, and strategic accounts.
+        principal: >
+          Defines the company's product demonstration strategy, aligning
+          demo investments with go-to-market priorities. Ensures demo
+          capabilities keep pace with product evolution and competitive
+          demands. Delivers keynote-level demonstrations at industry events
+          that shape market perception of the product.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can generate demo scripts, personalize demo environments with
+          customer data, and create pre-recorded demo content. However,
+          commanding a live audience, adapting the narrative in real time
+          based on audience reactions, and handling unexpected technical
+          questions with credibility require human presentation skills.
+
+    - id: proof_of_concept
+      name: "Proof of Concept"
+      category: execution
+      description: >
+        Planning, executing, and managing proof-of-concept or proof-of-value
+        evaluations that demonstrate the product's capabilities in the
+        customer's environment against agreed success criteria, advancing
+        the deal through technical validation.
+      proficiency:
+        junior: >
+          Supports POC execution by handling environment setup, data loading,
+          and basic configuration tasks. Documents test results and
+          communicates status updates to the deal team. Follows POC runbooks
+          and escalates technical blockers promptly.
+        mid: >
+          Manages POC projects independently, including success criteria
+          definition, timeline planning, environment provisioning, and
+          stakeholder communication. Troubleshoots technical issues during
+          POC execution and ensures results are documented clearly against
+          evaluation criteria.
+        senior: >
+          Designs POC methodologies that maximize win rates by framing
+          success criteria favorably, managing scope to avoid POC sprawl,
+          and building technical champion engagement throughout the
+          evaluation. Coaches the team on POC best practices and common
+          pitfalls to avoid.
+        staff: >
+          Defines the organization's POC strategy, including when to offer
+          POCs, standard frameworks for different product areas, and
+          resource allocation models. Establishes POC-to-close conversion
+          benchmarks and identifies process improvements that increase
+          technical win rates.
+        principal: >
+          Shapes the company's technical evaluation philosophy, balancing
+          POC investment against sales cycle velocity. Influences product
+          capabilities that improve POC success rates and defines the
+          strategic role of technical validation in the company's
+          go-to-market motion across different market segments.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can automate POC environment provisioning, generate test
+          scripts, and create results documentation. However, designing
+          evaluation criteria that showcase product strengths, managing
+          the political dynamics of a technical evaluation, and
+          troubleshooting novel issues in customer environments require
+          human expertise and judgment.
+
+    - id: technical_objection_handling
+      name: "Technical Objection Handling"
+      category: execution
+      description: >
+        Addressing technical concerns, feature gaps, security questions,
+        scalability doubts, and integration challenges raised by technical
+        evaluators during the sales process, providing credible responses
+        that maintain buyer confidence and advance the deal.
+      proficiency:
+        junior: >
+          Handles common technical objections using prepared responses from
+          the team's objection playbook. Recognizes when an objection
+          requires deeper investigation and escalates to senior team members
+          with clear context on the customer's concern.
+        mid: >
+          Addresses technical objections credibly by combining product
+          knowledge with understanding of the customer's specific
+          environment. Reframes feature gaps as roadmap opportunities and
+          proposes workarounds that satisfy requirements without custom
+          development.
+        senior: >
+          Navigates complex technical objections from senior engineering
+          stakeholders, including security reviews, scalability concerns,
+          and architectural fit questions. Turns objections into
+          opportunities to demonstrate deeper product capabilities and
+          build technical credibility.
+        staff: >
+          Develops the organization's technical objection handling playbook,
+          incorporating competitive intelligence, customer reference
+          stories, and architectural best practices. Trains the SE team on
+          handling the most challenging objections and provides real-time
+          support on strategic deals.
+        principal: >
+          Connects recurring technical objection patterns to product strategy,
+          influencing roadmap priorities that address the most common
+          barriers to technical wins. Shapes how the organization
+          communicates product limitations honestly while maintaining buyer
+          confidence and competitive positioning.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can surface relevant responses from knowledge bases, generate
+          technical comparison content, and draft initial responses to
+          common objections. However, establishing technical credibility
+          with engineering buyers, navigating the nuances of specific
+          customer environments, and turning objections into trust-building
+          moments require human expertise.
+
+    - id: rfp_rfi_response
+      name: "RFP/RFI Response"
+      category: execution
+      description: >
+        Responding to formal requests for proposals and information with
+        accurate, compelling, and timely answers that position the product
+        favorably against evaluation criteria while being honest about
+        capabilities and limitations.
+      proficiency:
+        junior: >
+          Drafts responses to standard RFP questions using the team's
+          response library and templates. Identifies questions that require
+          input from product or engineering teams and routes them
+          appropriately. Formats and assembles RFP documents according to
+          submission requirements.
+        mid: >
+          Manages mid-complexity RFP responses independently, tailoring
+          answers to the customer's specific requirements and evaluation
+          criteria. Writes compelling narratives that go beyond yes/no
+          answers to differentiate the product against competitors.
+        senior: >
+          Leads response strategy for complex enterprise RFPs, coordinating
+          inputs from multiple teams and crafting a coherent narrative
+          across hundreds of questions. Identifies opportunities to
+          influence evaluation criteria before formal RFP issuance and
+          shapes responses to maximize competitive advantage.
+        staff: >
+          Defines the organization's RFP response methodology, including
+          response libraries, quality standards, and workflow processes
+          that enable efficient, high-quality responses at scale. Evaluates
+          RFP automation tools and establishes governance for response
+          accuracy and currency.
+        principal: >
+          Shapes the company's RFP strategy at the executive level,
+          determining which RFPs to pursue based on win probability and
+          strategic value. Influences product capabilities and
+          certifications that improve RFP competitiveness across the
+          most common enterprise evaluation criteria.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          RFP response is one of the most AI-augmented SE activities. AI
+          can draft responses from knowledge bases, maintain response
+          libraries, and generate comparison content automatically.
+          Human value remains in tailoring narratives to specific
+          customer contexts, making strategic decisions about positioning,
+          and providing honest answers about edge-case capabilities.
+
+    - id: integration_assessment
+      name: "Integration Assessment"
+      category: technical
+      description: >
+        Evaluating the customer's existing technology ecosystem to identify
+        integration requirements, data flow patterns, API compatibility, and
+        technical dependencies, ensuring the proposed solution can connect
+        seamlessly with the customer's infrastructure.
+      proficiency:
+        junior: >
+          Documents the customer's existing technology stack and identifies
+          standard integration points with the product. Understands the
+          product's API capabilities and connector catalog. Flags
+          non-standard integration requirements for senior review.
+        mid: >
+          Assesses integration requirements independently, mapping data
+          flows between the product and customer systems. Identifies
+          integration risks, estimates implementation complexity, and
+          proposes integration architectures using available APIs and
+          connectors.
+        senior: >
+          Leads integration assessments for complex enterprise environments
+          with multiple systems, custom middleware, and stringent data
+          governance requirements. Designs creative integration approaches
+          for non-standard scenarios and articulates integration trade-offs
+          to technical and business stakeholders.
+        staff: >
+          Defines integration assessment frameworks and best practices for
+          the SE team. Creates reference architectures for common integration
+          patterns and influences product API strategy based on recurring
+          customer integration requirements observed in the field.
+        principal: >
+          Shapes the company's integration and ecosystem strategy, ensuring
+          product APIs and partner integrations support the customer
+          environments most commonly encountered in the field. Influences
+          build-versus-partner decisions for integration capabilities based
+          on market demand and competitive dynamics.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can map known integration patterns, generate API compatibility
+          assessments, and draft integration architecture diagrams.
+          However, understanding the nuances of a specific customer's
+          technical environment, identifying hidden dependencies, and
+          designing integration approaches for novel scenarios require
+          hands-on technical experience.
+
+    - id: competitive_technical_analysis
+      name: "Competitive Technical Analysis"
+      category: strategic
+      description: >
+        Evaluating competitors' products from a technical perspective to
+        identify strengths, weaknesses, and differentiation opportunities,
+        enabling the sales team to position effectively against alternative
+        solutions during technical evaluations.
+      proficiency:
+        junior: >
+          Uses competitive technical battlecards and comparison documents
+          provided by product marketing. Understands the key technical
+          differentiators against the top three to five competitors and
+          can articulate them during customer conversations.
+        mid: >
+          Conducts independent technical analysis of competitor products
+          using publicly available information, trial environments, and
+          customer feedback. Develops talking points that address specific
+          competitive scenarios encountered in active deals.
+        senior: >
+          Serves as the team's competitive technical expert, maintaining
+          deep knowledge of competitor architectures, limitations, and
+          roadmaps. Creates technical comparison content and coaches the
+          SE team on positioning strategies for competitive displacement
+          scenarios.
+        staff: >
+          Defines the organization's competitive technical analysis program,
+          establishing processes for gathering competitive intelligence,
+          maintaining battlecards, and distributing insights to the field.
+          Partners with product management to ensure competitive analysis
+          informs roadmap prioritization.
+        principal: >
+          Shapes the company's competitive technical strategy at the
+          executive level, connecting field competitive intelligence to
+          product investment decisions and market positioning. Identifies
+          emerging competitive threats from adjacent markets and advises
+          leadership on strategic responses.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can aggregate competitor information from public sources,
+          generate comparison matrices, and monitor competitive product
+          changes. However, understanding how technical differences matter
+          in specific customer contexts, developing credible positioning
+          strategies, and maintaining the nuanced competitive knowledge
+          that wins technical evaluations require human expertise.
+
+    - id: customer_advocacy
+      name: "Customer Advocacy"
+      category: interpersonal
+      description: >
+        Representing the customer's perspective within the organization by
+        communicating their technical requirements, feedback, and challenges
+        to product, engineering, and leadership teams, ensuring the product
+        evolves to meet market needs.
+      proficiency:
+        junior: >
+          Documents customer feature requests and technical feedback
+          accurately and submits them through the product feedback process.
+          Recognizes when customer needs align with existing product
+          capabilities that may not have been demonstrated effectively.
+        mid: >
+          Synthesizes feedback from multiple customer conversations into
+          actionable product insights. Articulates customer requirements
+          in terms product and engineering teams can act on. Advocates
+          for customer needs in internal discussions while maintaining
+          realistic expectations about roadmap priorities.
+        senior: >
+          Serves as a trusted voice of the customer in product planning
+          conversations, connecting individual customer requests to broader
+          market patterns. Influences roadmap priorities by presenting
+          compelling business cases that tie customer requirements to
+          revenue impact and competitive positioning.
+        staff: >
+          Establishes systematic processes for collecting, analyzing, and
+          routing customer feedback from the SE team to product leadership.
+          Creates frameworks that help prioritize feedback by strategic
+          importance and ensures the SE team's field perspective is
+          represented in product planning cycles.
+        principal: >
+          Shapes the organization's approach to customer-driven product
+          development, ensuring field intelligence systematically
+          influences strategic decisions. Builds executive relationships
+          with key customers that provide direct access to market-shaping
+          requirements and competitive intelligence.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can aggregate and categorize customer feedback, identify
+          trending themes, and draft product requirement summaries.
+          However, understanding the strategic importance of specific
+          customer requests, building the internal relationships that
+          give customer advocacy influence, and making judgment calls
+          about which feedback matters most require human context.
+
+    - id: cross_functional_collaboration
+      name: "Cross-Functional Collaboration"
+      category: interpersonal
+      description: >
+        Working effectively across sales, product, engineering, customer
+        success, and professional services teams to deliver coordinated
+        pre-sales experiences, share knowledge, and ensure smooth
+        transitions throughout the customer lifecycle.
+      proficiency:
+        junior: >
+          Participates in cross-functional deal team meetings and completes
+          assigned action items reliably. Communicates technical findings
+          clearly to non-technical team members and seeks input from other
+          functions when needed to address customer questions.
+        mid: >
+          Coordinates effectively with AEs, product managers, and
+          implementation teams on active deals. Proactively shares relevant
+          technical context with customer success during deal handoff and
+          contributes to internal knowledge sharing through documentation
+          and team presentations.
+        senior: >
+          Leads cross-functional coordination on complex deals, aligning
+          sales, product, and engineering resources around a cohesive
+          customer strategy. Builds strong working relationships across
+          functions and is sought out for input on deals requiring
+          multi-team collaboration.
+        staff: >
+          Defines collaboration frameworks and handoff processes between
+          the SE team and adjacent functions. Builds bridges between field
+          and product organizations that improve information flow and
+          mutual understanding. Resolves cross-functional friction points
+          that impede deal velocity or customer experience.
+        principal: >
+          Shapes the organization's cross-functional operating model for
+          technical sales, ensuring SE expertise is integrated effectively
+          into the broader go-to-market motion. Influences how teams are
+          structured and incentivized to collaborate across the customer
+          lifecycle from pre-sales through post-sale success.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can automate information sharing across teams, generate
+          handoff documentation, and surface relevant context for
+          cross-functional interactions. However, building trust across
+          organizational boundaries, navigating competing priorities,
+          and influencing peers without direct authority are fundamentally
+          human capabilities.
+
+    - id: industry_expertise
+      name: "Industry Expertise"
+      category: strategic
+      description: >
+        Developing deep knowledge of specific industries and verticals
+        including their business processes, regulatory requirements,
+        technology landscapes, and common challenges, enabling consultative
+        conversations that establish credibility with domain-expert buyers.
+      proficiency:
+        junior: >
+          Learns the basics of the company's primary target industries
+          including common terminology, key business processes, and typical
+          technology stacks. Uses industry context to make demos and
+          conversations more relevant to prospects.
+        mid: >
+          Demonstrates credible industry knowledge in customer conversations,
+          referencing relevant trends, regulatory requirements, and common
+          challenges. Tailors solution positioning to industry-specific use
+          cases and connects product capabilities to industry outcomes.
+        senior: >
+          Serves as a vertical subject matter expert, advising the sales
+          team on industry-specific deal strategies, compliance requirements,
+          and competitive dynamics. Creates industry-specific demo scenarios,
+          case studies, and technical content that strengthens positioning.
+        staff: >
+          Develops the organization's industry expertise strategy, defining
+          which verticals to prioritize and creating enablement programs
+          that build industry knowledge across the SE team. Builds
+          relationships with industry analysts and contributes to the
+          company's thought leadership in key verticals.
+        principal: >
+          Shapes the company's vertical go-to-market strategy from a
+          technical perspective, ensuring product capabilities, partner
+          ecosystem, and compliance certifications align with the
+          requirements of strategic target industries. Represents the
+          company as an industry thought leader at conferences and
+          advisory boards.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can aggregate industry research, summarize regulatory
+          requirements, and generate industry-specific talking points.
+          However, developing the deep contextual understanding that
+          earns credibility with industry-expert buyers and applying
+          industry knowledge creatively to novel customer situations
+          requires years of human experience and relationship building.
+
+    - id: post_sale_handoff
+      name: "Post-Sale Handoff"
+      category: execution
+      description: >
+        Transitioning technical knowledge, solution designs, and customer
+        context from the pre-sales process to implementation, customer
+        success, and support teams, ensuring continuity and setting the
+        foundation for successful product adoption.
+      proficiency:
+        junior: >
+          Completes post-sale handoff documentation including solution
+          architecture diagrams, configuration details, and known technical
+          requirements. Participates in kickoff meetings with implementation
+          teams and answers questions about pre-sales technical decisions.
+        mid: >
+          Manages post-sale handoffs independently, creating comprehensive
+          technical transition documents and participating in
+          implementation planning sessions. Ensures critical technical
+          context and customer expectations are transferred accurately
+          to post-sale teams.
+        senior: >
+          Designs handoff processes that maximize implementation success
+          by capturing not just technical details but strategic context
+          including customer priorities, political dynamics, and success
+          criteria. Coaches the SE team on handoff best practices and
+          maintains relationships with strategic customers through
+          initial deployment.
+        staff: >
+          Defines the organization's pre-to-post-sale handoff methodology,
+          ensuring technical knowledge transfer happens systematically and
+          consistently. Partners with professional services and customer
+          success leadership to optimize the transition process for both
+          customer satisfaction and operational efficiency.
+        principal: >
+          Shapes the company's approach to customer lifecycle continuity,
+          ensuring the technical expertise built during pre-sales is
+          leveraged throughout the customer relationship. Influences how
+          the organization structures roles and processes to maintain
+          technical context across the sales-to-success transition.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can generate handoff documents from pre-sales notes, CRM data,
+          and solution designs. Automated documentation transfer is
+          increasingly effective. Human value persists in capturing the
+          nuanced context--customer expectations, interpersonal dynamics,
+          and unspoken concerns--that determines implementation success.

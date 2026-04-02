@@ -1,0 +1,697 @@
+role:
+  id: support_engineer
+  function: support
+  name: "Technical Support Engineer"
+  also_known_as:
+    - "Technical Support Specialist"
+    - "Solutions Engineer (Support)"
+    - "Tier 2/3 Support Engineer"
+    - "Customer Engineer"
+    - "Product Support Engineer"
+  description: >
+    Handles complex technical issues that frontline support agents cannot
+    resolve, serving as the bridge between customer-facing support and
+    engineering teams. Technical support engineers diagnose intricate product
+    defects, analyze logs and system behavior, reproduce bugs, debug API
+    integrations, and work cross-functionally to drive permanent fixes.
+    They combine deep product and systems expertise with strong customer
+    communication skills to resolve high-severity issues efficiently while
+    maintaining customer trust.
+  ai_impact:
+    level: "moderate-high"
+    summary: >
+      AI is enhancing technical support engineering through intelligent log
+      analysis, automated pattern recognition across incidents, and AI-assisted
+      debugging suggestions. Routine log parsing and known-error matching are
+      increasingly automated, but the discipline's core value lies in
+      diagnosing novel, multi-system failures and exercising engineering
+      judgment on complex customer environments. Engineers who leverage AI
+      for faster pattern identification while applying deep systems thinking
+      to ambiguous problems will see significant productivity gains.
+    automating:
+      - "Parsing and summarizing log files for known error patterns"
+      - "Matching incoming issues to known bugs and existing fixes"
+      - "Generating initial bug reports from customer-provided diagnostics"
+      - "Routine API response validation and error code lookup"
+      - "Auto-categorization of technical issues by component and severity"
+      - "Basic system health checks and status verification"
+    augmenting:
+      - "Root cause analysis through AI-assisted log correlation"
+      - "Suggesting debugging approaches based on symptom patterns"
+      - "Drafting technical explanations for customer communication"
+      - "Identifying similar historical incidents and their resolutions"
+      - "Code snippet analysis for integration troubleshooting"
+      - "Performance anomaly detection across system metrics"
+    preserving:
+      - "Diagnosing novel failures in complex, multi-system environments"
+      - "Judgment calls on severity, workarounds, and escalation timing"
+      - "Building trust with technical customers through deep expertise"
+      - "Cross-team negotiation to prioritize fixes in engineering sprints"
+      - "Reproducing intermittent bugs that require creative test setups"
+      - "Assessing customer environment risks that logs alone cannot reveal"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "O*NET - Computer User Support Specialists"
+        url: "https://www.onetonline.org/link/summary/15-1232.00"
+      - name: "HDI Technical Support Practices"
+        url: "https://www.thinkhdi.com/library/supportworld/2023/technical-support-practices"
+      - name: "McKinsey - The Economic Potential of Generative AI"
+        url: "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier"
+  levels:
+    - id: junior
+      name: "Junior Technical Support Engineer"
+      years_experience: "0-2"
+      summary: >
+        Investigates escalated issues using documented diagnostic procedures
+        and standard tooling. Learns the product's technical architecture,
+        log formats, and common failure modes. Reproduces issues in test
+        environments with guidance and writes clear bug reports for
+        engineering review.
+    - id: mid
+      name: "Technical Support Engineer"
+      years_experience: "2-4"
+      summary: >
+        Independently diagnoses and resolves complex technical issues
+        spanning multiple product components. Analyzes logs, traces, and
+        system metrics to identify root causes. Communicates technical
+        findings clearly to both customers and engineering teams and
+        manages a caseload of high-severity issues to SLA targets.
+    - id: senior
+      name: "Senior Technical Support Engineer"
+      years_experience: "4-7"
+      summary: >
+        Leads resolution of the most critical and technically challenging
+        customer issues, often involving cross-team coordination and deep
+        systems investigation. Mentors junior engineers, identifies systemic
+        product weaknesses through case pattern analysis, and drives
+        improvements to diagnostic tooling and processes.
+    - id: staff
+      name: "Staff Technical Support Engineer"
+      years_experience: "7-10"
+      summary: >
+        Sets technical direction for the support engineering team, defining
+        diagnostic standards, escalation frameworks, and tooling strategy.
+        Solves cross-cutting problems that span organizational boundaries.
+        Influences product reliability roadmaps based on field-observed
+        failure patterns and serves as the final technical escalation point.
+    - id: principal
+      name: "Principal Technical Support Engineer"
+      years_experience: "10+"
+      summary: >
+        Defines the organization's technical support strategy and standards
+        at the highest level. Drives investment in supportability, diagnostic
+        infrastructure, and self-healing capabilities. Partners with
+        executive leadership on product reliability goals and customer
+        experience strategy. Represents the voice of the customer in
+        architectural decisions.
+  skills:
+    - id: technical_troubleshooting
+      name: "Technical Troubleshooting"
+      category: technical
+      description: >
+        Systematically diagnosing complex technical issues by formulating
+        hypotheses, isolating variables, testing theories, and identifying
+        root causes across application, infrastructure, and integration
+        layers, using a structured methodology that minimizes time to
+        resolution.
+      proficiency:
+        junior: >
+          Follows established troubleshooting procedures for known issue
+          types. Gathers relevant diagnostic data including error messages,
+          screenshots, and environment details. Identifies which product
+          component is likely involved and escalates with clear documentation
+          of steps already attempted.
+        mid: >
+          Diagnoses issues across multiple product components without relying
+          on pre-existing runbooks. Formulates and tests hypotheses
+          systematically, isolating variables through controlled reproduction.
+          Identifies workarounds when root cause resolution requires
+          engineering involvement and communicates trade-offs to customers.
+        senior: >
+          Resolves the most technically complex issues involving multi-system
+          interactions, race conditions, and environment-specific failures.
+          Develops diagnostic frameworks and decision trees for recurring
+          issue categories. Mentors others on structured troubleshooting
+          methodology and reviews their diagnostic approaches.
+        staff: >
+          Defines troubleshooting standards and diagnostic methodology across
+          the support engineering organization. Identifies systemic gaps in
+          diagnostic capability and drives tooling investments to address
+          them. Leads post-incident reviews that improve both product
+          reliability and team diagnostic skill.
+        principal: >
+          Shapes the organization's approach to supportability, ensuring that
+          products are designed with diagnosability in mind from the
+          architecture phase. Drives adoption of advanced diagnostic
+          capabilities such as distributed tracing, canary analysis, and
+          automated root cause detection across the engineering organization.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI accelerates pattern matching against known issues and suggests
+          diagnostic paths based on symptom similarity. However, novel
+          failures requiring creative hypothesis generation, multi-system
+          reasoning, and environment-specific judgment remain human-
+          dependent.
+
+    - id: log_analysis
+      name: "Log Analysis & System Diagnostics"
+      category: technical
+      description: >
+        Reading, searching, correlating, and interpreting application logs,
+        system metrics, and traces to understand system behavior and identify
+        anomalies, using tools like Splunk, Datadog, Kibana, CloudWatch, or
+        command-line log processing to extract actionable insights from large
+        volumes of operational data.
+      proficiency:
+        junior: >
+          Searches logs for specific error messages and timestamps using
+          established queries and dashboards. Understands basic log levels
+          and formats. Identifies obvious errors and exception patterns in
+          log output and includes relevant excerpts in escalation reports.
+        mid: >
+          Crafts custom log queries to correlate events across services and
+          time windows. Identifies anomalous patterns in metrics and traces
+          that point to root causes. Uses log analysis tools proficiently
+          including aggregation, filtering, and visualization features for
+          efficient investigation.
+        senior: >
+          Performs deep forensic analysis across distributed system logs,
+          correlating application events with infrastructure metrics and
+          network data. Identifies subtle patterns such as resource leaks,
+          thread contention, and cascading failures. Creates reusable
+          dashboards and saved queries for common diagnostic scenarios.
+        staff: >
+          Defines log analysis standards and diagnostic tooling strategy for
+          the organization. Drives improvements to application logging
+          practices, working with engineering to ensure logs contain the
+          information needed for efficient diagnosis. Evaluates and selects
+          log management platforms for cost and capability.
+        principal: >
+          Shapes the organization's observability strategy from the support
+          perspective, ensuring that diagnostic needs inform telemetry
+          architecture decisions. Drives investment in AI-assisted log
+          analysis, automated anomaly detection, and self-diagnosing systems
+          that reduce mean time to resolution at scale.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI is highly effective at log pattern recognition, anomaly
+          detection, and summarizing large log volumes. It accelerates
+          known-error identification dramatically. However, interpreting
+          novel failure modes, correlating across heterogeneous systems,
+          and contextualizing findings within customer environments still
+          require human expertise.
+
+    - id: api_debugging
+      name: "API Debugging & Integration Support"
+      category: technical
+      description: >
+        Diagnosing issues in API integrations by analyzing request/response
+        payloads, authentication flows, rate limiting behavior, webhook
+        delivery, and error responses, helping customers build and maintain
+        reliable integrations using tools like Postman, curl, browser
+        developer tools, and API monitoring platforms.
+      proficiency:
+        junior: >
+          Tests API endpoints using Postman or curl to reproduce customer-
+          reported errors. Understands HTTP methods, status codes, and basic
+          authentication headers. Compares customer requests against API
+          documentation to identify obvious misconfigurations in their
+          integration setup.
+        mid: >
+          Diagnoses complex API integration issues including authentication
+          flow failures, pagination edge cases, rate limiting impacts, and
+          webhook delivery problems. Reads customer code snippets to identify
+          integration bugs and provides corrected examples. Identifies API
+          behavior that deviates from documentation.
+        senior: >
+          Resolves the most intricate integration issues involving multi-step
+          API workflows, race conditions in webhook processing, and complex
+          OAuth token lifecycle problems. Develops API debugging guides and
+          reference implementations. Provides feedback to engineering on API
+          design issues surfaced through customer integration patterns.
+        staff: >
+          Defines API support standards and integration debugging methodology
+          across the team. Drives improvements to API error messages,
+          documentation, and developer experience based on support data.
+          Establishes reference architecture patterns for common customer
+          integration scenarios.
+        principal: >
+          Influences the organization's API strategy from the supportability
+          perspective, ensuring that API design considers debuggability, error
+          clarity, and customer self-service from the outset. Drives
+          investment in developer experience infrastructure such as sandbox
+          environments, API explorers, and integration health dashboards.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can identify common API misconfigurations, suggest fixes from
+          documentation, and generate code examples. However, debugging
+          complex integration flows involving customer-specific architectures,
+          OAuth edge cases, and race conditions requires deep understanding
+          of both the API and the customer's environment.
+
+    - id: escalation_management
+      name: "Escalation Management"
+      category: operational
+      description: >
+        Managing the process of escalating unresolved or high-severity
+        issues to appropriate internal teams, tracking progress, maintaining
+        customer communication throughout, and ensuring escalated issues
+        receive appropriate priority and timely resolution while preserving
+        customer trust during extended resolution timelines.
+      proficiency:
+        junior: >
+          Recognizes when an issue exceeds personal capability and follows
+          established escalation procedures. Writes clear escalation
+          summaries including symptoms, diagnostic steps taken, and customer
+          impact. Keeps customers informed of escalation status using
+          approved templates.
+        mid: >
+          Makes sound judgment calls on escalation timing, severity, and
+          routing to the appropriate engineering team. Manages multiple
+          concurrent escalations, tracking progress and following up
+          proactively. Maintains customer confidence through transparent
+          communication about timelines and workaround options.
+        senior: >
+          Manages critical escalations involving executive attention, major
+          customer revenue risk, or cross-team coordination. Drives urgency
+          within engineering teams through clear impact articulation. Designs
+          escalation playbooks for different severity levels and coaches
+          junior engineers on effective escalation practices.
+        staff: >
+          Defines escalation frameworks, severity criteria, and response
+          time expectations across the support engineering organization.
+          Establishes regular escalation review processes with engineering
+          leadership. Drives systemic improvements that reduce escalation
+          volume through better tooling, documentation, and product fixes.
+        principal: >
+          Shapes the organization's escalation culture and cross-functional
+          incident response model. Ensures executive alignment on escalation
+          handling expectations, drives investment in escalation reduction
+          initiatives, and partners with engineering leadership on
+          supportability requirements that prevent escalation-worthy issues.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can auto-route escalations based on classification and suggest
+          priority levels. However, judgment on escalation timing, navigating
+          organizational dynamics to drive urgency, and maintaining customer
+          trust during extended resolutions require human relationship skills
+          and contextual awareness.
+
+    - id: root_cause_analysis
+      name: "Root Cause Analysis"
+      category: technical
+      description: >
+        Investigating resolved incidents and recurring issues to identify
+        their true underlying causes, using structured methodologies such
+        as the Five Whys, fishbone diagrams, or fault tree analysis, and
+        driving corrective actions that prevent recurrence rather than
+        merely addressing symptoms.
+      proficiency:
+        junior: >
+          Participates in root cause analysis sessions and documents findings
+          clearly. Understands the difference between symptoms and root
+          causes. Applies basic techniques like the Five Whys with guidance
+          from senior engineers and tracks identified action items to closure.
+        mid: >
+          Conducts independent root cause analysis for moderate-complexity
+          issues, producing clear write-ups that identify the underlying
+          cause, contributing factors, and recommended preventive actions.
+          Distinguishes between product bugs, configuration issues, and
+          environmental causes effectively.
+        senior: >
+          Leads root cause analysis for complex, multi-factor incidents
+          involving cascading failures or subtle interaction effects. Uses
+          multiple analytical frameworks appropriately and drives cross-team
+          agreement on findings and remediation priorities. Identifies
+          systemic patterns across individual root cause analyses.
+        staff: >
+          Defines root cause analysis standards, templates, and review
+          processes for the organization. Synthesizes patterns across dozens
+          of individual analyses to identify systemic product or process
+          weaknesses. Drives strategic remediation initiatives that address
+          root cause categories rather than individual instances.
+        principal: >
+          Shapes the organization's approach to learning from failures,
+          connecting root cause analysis practices to product reliability
+          strategy and engineering quality standards. Drives cultural
+          adoption of blameless post-incident review and ensures insights
+          from support-led RCA influence architectural decisions.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can correlate incidents and suggest potential root causes based
+          on historical patterns. However, distinguishing true root causes
+          from correlated symptoms, navigating ambiguous multi-factor
+          failures, and driving organizational change based on findings
+          remain deeply human analytical and leadership skills.
+
+    - id: customer_communication_technical
+      name: "Technical Customer Communication"
+      category: interpersonal
+      description: >
+        Explaining complex technical concepts, diagnostic findings, and
+        resolution steps to customers with varying levels of technical
+        sophistication, balancing thoroughness with clarity, and maintaining
+        trust and confidence during extended troubleshooting engagements.
+      proficiency:
+        junior: >
+          Communicates technical findings in clear, jargon-free language
+          when working with non-technical customers. Provides step-by-step
+          instructions for resolution actions. Keeps customers updated on
+          investigation progress at regular intervals and sets realistic
+          expectations about timelines.
+        mid: >
+          Adapts communication depth based on customer technical level,
+          providing detailed technical explanations for developer audiences
+          and simplified summaries for business stakeholders. Manages
+          customer expectations effectively during complex investigations
+          and explains trade-offs between workarounds and permanent fixes.
+        senior: >
+          Communicates with confidence and authority during high-pressure
+          situations involving critical customer systems. Translates complex
+          engineering findings into business impact terms for executive
+          stakeholders. Writes comprehensive incident summaries that serve
+          both customer-facing and internal audiences with appropriate
+          detail levels.
+        staff: >
+          Defines communication standards for technical customer interactions
+          across the team. Develops templates and frameworks for common
+          communication scenarios including outage notifications, RCA
+          reports, and long-running investigation updates. Coaches engineers
+          on communication skills and reviews high-visibility responses.
+        principal: >
+          Represents the support engineering function in executive customer
+          conversations and strategic account reviews. Authors the most
+          sensitive customer communications including those with legal or
+          contractual implications. Shapes the organization's voice in
+          technical customer communication and incident transparency.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can draft technical explanations and adjust reading level
+          effectively. However, building trust through extended engagements,
+          reading customer frustration levels accurately, and making real-
+          time communication judgment calls during high-pressure situations
+          remain human strengths.
+
+    - id: internal_tooling
+      name: "Internal Tooling & Diagnostic Systems"
+      category: technical
+      description: >
+        Building, maintaining, and using internal tools, scripts, and
+        diagnostic systems that accelerate issue investigation and resolution,
+        including admin consoles, data lookup tools, feature flag management,
+        and custom debugging utilities specific to the product.
+      proficiency:
+        junior: >
+          Uses internal admin tools and diagnostic dashboards to look up
+          customer data, check feature flags, and verify system state.
+          Follows established procedures for safe use of internal tools and
+          understands the access controls and audit requirements associated
+          with customer data access.
+        mid: >
+          Navigates the full suite of internal diagnostic tools proficiently,
+          combining data from multiple sources to build a complete picture
+          of customer issues. Identifies gaps in tooling and submits clear
+          feature requests. Writes simple scripts to automate repetitive
+          diagnostic tasks.
+        senior: >
+          Develops custom diagnostic scripts and tools that meaningfully
+          improve team investigation efficiency. Identifies high-impact
+          tooling gaps and either builds solutions or writes detailed
+          specifications for engineering. Trains others on effective tool
+          usage and maintains documentation for internal diagnostic systems.
+        staff: >
+          Defines the internal tooling strategy for the support engineering
+          team, prioritizing investments that maximize diagnostic efficiency.
+          Partners with engineering on admin console development, ensuring
+          support needs are represented in tooling roadmaps. Evaluates
+          build-versus-buy decisions for diagnostic infrastructure.
+        principal: >
+          Shapes the organization's supportability tooling vision, ensuring
+          that internal tools evolve alongside the product architecture.
+          Drives investment in self-service diagnostic capabilities that
+          reduce engineering dependency. Champions tooling that enables
+          support engineers to resolve issues that previously required
+          engineering intervention.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can automate routine data lookups, generate diagnostic scripts,
+          and suggest tool usage based on issue type. However, designing
+          effective diagnostic tools, identifying the highest-impact tooling
+          gaps, and building solutions that work within complex internal
+          systems require human engineering judgment.
+
+    - id: bug_reproduction
+      name: "Bug Reproduction & Reporting"
+      category: technical
+      description: >
+        Reliably reproducing customer-reported defects in controlled
+        environments, documenting precise reproduction steps, isolating
+        contributing factors, and writing detailed bug reports that enable
+        engineering teams to understand and fix issues efficiently.
+      proficiency:
+        junior: >
+          Attempts to reproduce customer-reported issues following their
+          described steps. Documents reproduction attempts clearly including
+          environment details, exact steps, and observed versus expected
+          behavior. Files bug reports using the team's standard template
+          with all required fields populated.
+        mid: >
+          Reproduces complex issues by setting up test environments that
+          mirror customer configurations. Isolates contributing factors
+          through systematic variation of parameters. Writes bug reports
+          that include minimal reproduction steps, severity assessment,
+          customer impact scope, and suggested priority that engineering
+          teams find actionable.
+        senior: >
+          Reproduces intermittent and environment-specific bugs through
+          creative test setup including load simulation, timing manipulation,
+          and configuration edge cases. Provides initial technical analysis
+          of likely code paths involved. Writes bug reports that accelerate
+          engineering fix times measurably and includes impact data that
+          supports prioritization.
+        staff: >
+          Defines bug reporting standards and reproduction methodology for
+          the team. Establishes shared test environments and data sets that
+          enable efficient reproduction. Analyzes bug report quality metrics
+          and drives improvements to the reporting process that reduce
+          engineering back-and-forth cycles.
+        principal: >
+          Shapes the organization's approach to customer-reported defect
+          handling, ensuring tight feedback loops between support and
+          engineering. Drives investment in reproduction infrastructure
+          including automated test environments, customer configuration
+          mirroring, and AI-assisted reproduction that scale the team's
+          defect analysis capacity.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can suggest reproduction strategies based on similar bugs and
+          auto-generate structured bug reports from diagnostic data. However,
+          creative reproduction of intermittent issues, configuring test
+          environments to match customer setups, and assessing true customer
+          impact require human judgment and ingenuity.
+
+    - id: documentation_technical
+      name: "Technical Documentation"
+      category: operational
+      description: >
+        Creating and maintaining technical documentation including internal
+        runbooks, troubleshooting guides, architecture notes, and customer-
+        facing technical articles that capture diagnostic knowledge and make
+        it accessible to both support engineers and customers.
+      proficiency:
+        junior: >
+          Documents resolved cases with clear notes that enable other
+          engineers to understand the issue and solution. Contributes to
+          internal knowledge base articles following established formats and
+          flags documentation gaps encountered during investigations.
+        mid: >
+          Authors comprehensive troubleshooting guides and runbooks for
+          recurring technical issue categories. Writes customer-facing
+          technical articles that explain complex topics accessibly.
+          Maintains documentation proactively as product changes invalidate
+          existing content.
+        senior: >
+          Produces authoritative technical documentation for the most complex
+          product areas, including architecture overviews, failure mode
+          catalogs, and advanced debugging guides. Reviews and edits peer
+          documentation for technical accuracy and clarity. Designs
+          documentation structures for new product areas.
+        staff: >
+          Defines technical documentation standards and review processes for
+          the support engineering team. Ensures documentation coverage
+          across all supported product areas and drives content freshness
+          programs. Partners with engineering to ensure support documentation
+          stays synchronized with code changes.
+        principal: >
+          Shapes the organization's technical knowledge strategy, ensuring
+          that diagnostic knowledge is captured, maintained, and accessible
+          at scale. Drives investment in documentation tooling, content
+          management systems, and AI-assisted documentation that multiply
+          the team's knowledge sharing effectiveness.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI excels at drafting documentation from resolved case data and
+          generating runbooks from diagnostic procedures. However, ensuring
+          technical accuracy in complex areas, structuring documentation for
+          varied audience expertise levels, and maintaining content as
+          systems evolve still require human technical knowledge and
+          editorial judgment.
+
+    - id: cross_team_collaboration
+      name: "Cross-Team Collaboration"
+      category: interpersonal
+      description: >
+        Working effectively with engineering, product, sales, and other
+        internal teams to drive issue resolution, communicate customer impact,
+        influence product priorities, and ensure that customer perspectives
+        are represented in technical decisions and product roadmaps.
+      proficiency:
+        junior: >
+          Communicates clearly with engineering team members when escalating
+          issues, providing the information they need without unnecessary
+          back-and-forth. Participates in cross-functional meetings and
+          understands the roles and responsibilities of adjacent teams.
+        mid: >
+          Builds productive working relationships with engineering and product
+          counterparts. Communicates customer impact effectively to influence
+          fix prioritization. Participates in product feedback loops and
+          beta testing programs, representing the customer perspective with
+          concrete data from support cases.
+        senior: >
+          Navigates cross-functional dynamics to drive resolution of complex
+          issues involving multiple teams. Represents support in engineering
+          planning sessions, articulating customer pain points with data.
+          Builds trusted relationships that enable informal escalation paths
+          when formal channels are too slow for critical situations.
+        staff: >
+          Defines cross-team engagement models and communication protocols
+          for the support engineering organization. Establishes regular
+          syncs with engineering leadership, drives joint initiatives on
+          product quality and supportability, and ensures customer feedback
+          systematically reaches decision-makers.
+        principal: >
+          Shapes the organizational relationship between support and
+          engineering at the executive level, ensuring that customer
+          experience is a first-class input to product strategy. Drives
+          structural changes that improve cross-team feedback loops, shared
+          accountability for customer outcomes, and joint investment in
+          supportability.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can summarize case data for engineering consumption and identify
+          trending issues for cross-team review. However, building
+          relationships, navigating organizational dynamics, influencing
+          prioritization through persuasion, and driving cross-functional
+          alignment remain fundamentally human activities.
+
+    - id: product_expertise
+      name: "Deep Product Expertise"
+      category: domain
+      description: >
+        Developing and maintaining deep technical understanding of the
+        product's architecture, internals, failure modes, and behavior at
+        a level that enables investigation of issues beyond what user-facing
+        documentation covers, including knowledge of the codebase,
+        infrastructure, and design decisions.
+      proficiency:
+        junior: >
+          Builds working knowledge of the product's user-facing features,
+          common workflows, and known limitations. Understands the high-level
+          architecture and can identify which components are relevant to
+          different issue types. Studies internal documentation and product
+          design documents proactively.
+        mid: >
+          Possesses in-depth knowledge of product internals including data
+          flows, integration points, and common failure modes. Reads and
+          navigates the codebase at a basic level to understand behavior
+          when documentation is insufficient. Stays current with engineering
+          changes that affect support workflows.
+        senior: >
+          Holds expert-level knowledge of product architecture, design
+          decisions, and edge case behavior in their area of specialization.
+          Reads code to diagnose issues, understands deployment processes,
+          and can predict how system changes will affect customer experience.
+          Serves as the go-to expert for their product domain.
+        staff: >
+          Maintains broad technical expertise across the entire product
+          surface and deep expertise in critical systems. Influences product
+          design for supportability, reviews architecture proposals from a
+          customer impact perspective, and ensures knowledge transfer
+          processes keep the team current with engineering changes.
+        principal: >
+          Serves as the definitive product expert within the support
+          organization, often rivaling engineering leadership in breadth of
+          architectural knowledge. Influences product strategy by
+          connecting technical capabilities with customer needs at the
+          highest level and ensures the support team's expertise evolves
+          alongside the product.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can surface documentation and code references relevant to
+          specific issues, reducing the memorization burden. However,
+          developing the deep mental model of product behavior that enables
+          diagnosis of novel issues, predicting system interactions, and
+          influencing design decisions requires sustained human learning.
+
+    - id: automation_scripts
+      name: "Automation & Scripting"
+      category: technical
+      description: >
+        Writing scripts and building automations that streamline repetitive
+        support engineering tasks including data extraction, environment
+        setup, diagnostic data collection, bulk operations, and workflow
+        automation, using languages like Python, Bash, or PowerShell and
+        integration APIs.
+      proficiency:
+        junior: >
+          Runs existing scripts and automation tools following documented
+          procedures. Understands basic scripting concepts and can modify
+          simple scripts with guidance. Identifies repetitive manual tasks
+          that could benefit from automation and communicates those
+          observations to senior engineers.
+        mid: >
+          Writes scripts for common automation needs including data
+          extraction, bulk operations, and diagnostic data collection.
+          Integrates with product APIs and internal tools programmatically.
+          Maintains and improves existing automation scripts and shares
+          tools with the team.
+        senior: >
+          Develops sophisticated automation solutions that meaningfully
+          improve team efficiency, including diagnostic bots, automated
+          health checks, and self-service investigation tools. Writes clean,
+          documented code that others can maintain. Evaluates automation
+          opportunities based on time savings and frequency of use.
+        staff: >
+          Defines the automation strategy for the support engineering team,
+          prioritizing investments that maximize efficiency gains. Establishes
+          coding standards and review processes for support-authored tools.
+          Drives adoption of automation platforms and low-code solutions
+          that enable the broader team to build automations independently.
+        principal: >
+          Shapes the organization's approach to support automation at
+          scale, connecting tactical script development to strategic goals
+          around deflection, self-healing, and operational efficiency.
+          Drives investment in automation infrastructure that multiplies
+          the team's diagnostic and resolution capacity across the product
+          surface.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI code generation significantly accelerates script development
+          and can automate many routine data extraction and processing tasks.
+          However, identifying the highest-value automation opportunities,
+          designing solutions that handle edge cases safely, and building
+          tools that integrate cleanly with internal systems still require
+          human engineering judgment.

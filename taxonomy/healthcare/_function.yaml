@@ -1,0 +1,23 @@
+function:
+  id: healthcare
+  name: "Healthcare & Clinical"
+  description: >
+    Clinical, health informatics, and medical administration roles that manage
+    patient data, implement health IT systems, coordinate clinical research, and
+    deliver care through digital channels. AI is reshaping these roles by
+    automating coding workflows, accelerating clinical data analysis, and
+    enabling predictive population health models, while regulatory complexity
+    and patient safety imperatives ensure deep human oversight remains essential.
+  roles:
+    - clinical_data_analyst
+    - health_informatics
+    - medical_coder
+    - clinical_research
+    - telehealth_specialist
+  sources:
+    - name: "AHIMA - Health Information Careers"
+      url: "https://www.ahima.org/certification-careers/careers-in-health-information/"
+    - name: "AMIA - American Medical Informatics Association"
+      url: "https://amia.org/about-amia/why-informatics/informatics-researchers-and-health-it-professionals"
+    - name: "O*NET - Health Information Technologists and Medical Registrars"
+      url: "https://www.onetonline.org/link/summary/29-9021.00"

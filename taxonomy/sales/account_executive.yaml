@@ -1,0 +1,632 @@
+role:
+  id: account_executive
+  function: sales
+  name: "Account Executive"
+  also_known_as:
+    - "Closing Rep"
+    - "Sales Executive"
+    - "Enterprise Account Executive"
+    - "Strategic Account Executive"
+    - "Full-Cycle Sales Rep"
+  description: >
+    Owns the full sales cycle from qualified opportunity through closed-won
+    revenue. Account executives run discovery calls, deliver compelling
+    presentations, navigate multi-stakeholder buying committees, negotiate
+    commercial terms, and manage a pipeline of deals toward accurate forecasts.
+    They serve as the primary relationship between the company and prospective
+    buyers, translating product value into business outcomes that justify
+    purchasing decisions.
+  ai_impact:
+    level: "moderate-high"
+    summary: >
+      AI is reshaping how account executives work by automating prospect
+      research, generating personalized outreach, summarizing call transcripts,
+      and surfacing deal risk signals. However, the core of the role--building
+      trust with economic buyers, navigating political dynamics inside buying
+      committees, and exercising judgment in high-stakes negotiations--remains
+      fundamentally human. AEs who leverage AI for preparation and follow-up
+      will close more efficiently, but the interpersonal craft of selling
+      resists full automation.
+    automating:
+      - "Prospect and account research aggregation"
+      - "Call transcript summarization and action-item extraction"
+      - "CRM data entry and activity logging"
+      - "Follow-up email drafting after meetings"
+      - "Competitive battlecard generation from public sources"
+      - "Pipeline report generation and formatting"
+    augmenting:
+      - "Deal risk scoring and next-best-action recommendations"
+      - "Personalized proposal and business case generation"
+      - "Pricing scenario modeling and discount analysis"
+      - "Stakeholder mapping and org chart research"
+      - "Forecasting accuracy through pattern recognition"
+      - "Objection response coaching in real time"
+    preserving:
+      - "Building trust and rapport with economic buyers"
+      - "Navigating multi-stakeholder political dynamics"
+      - "High-stakes negotiation and creative deal structuring"
+      - "Executive-level storytelling and vision selling"
+      - "Judgment calls on when to walk away from a deal"
+      - "Mentoring junior sellers and shaping team culture"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Gartner - Future of Sales 2025"
+        url: "https://www.gartner.com/en/sales/trends/future-of-sales"
+      - name: "McKinsey - The Future of B2B Sales"
+        url: "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-future-of-b2b-sales"
+      - name: "HubSpot - State of Sales Report"
+        url: "https://www.hubspot.com/state-of-sales"
+  levels:
+    - id: junior
+      name: "Account Executive (Small Business / SMB)"
+      years_experience: "0-2"
+      summary: >
+        Manages a high-velocity pipeline of smaller deals with shorter sales
+        cycles. Learns the company's sales methodology, product positioning,
+        and CRM hygiene. Closes transactional deals and builds foundational
+        selling skills under guidance from sales leadership.
+    - id: mid
+      name: "Account Executive (Mid-Market)"
+      years_experience: "2-5"
+      summary: >
+        Runs full sales cycles with mid-market accounts involving multiple
+        stakeholders and moderate deal complexity. Manages pipeline with
+        disciplined forecasting, delivers tailored presentations, and
+        negotiates commercial terms with increasing independence.
+    - id: senior
+      name: "Senior Account Executive (Enterprise)"
+      years_experience: "5-8"
+      summary: >
+        Owns complex, high-value enterprise deals with long sales cycles and
+        large buying committees. Builds executive relationships, orchestrates
+        cross-functional resources, and consistently delivers against
+        ambitious quotas. Mentors junior AEs on deal strategy and craft.
+    - id: staff
+      name: "Strategic Account Executive / Named Accounts"
+      years_experience: "8-12"
+      summary: >
+        Manages a small portfolio of the company's most strategic accounts,
+        driving multi-year, multi-product land-and-expand strategies. Operates
+        as a trusted advisor to C-suite buyers. Shapes go-to-market strategy
+        through field insights and partners with product leadership on
+        roadmap priorities.
+    - id: principal
+      name: "Principal Account Executive / Sales Strategist"
+      years_experience: "12+"
+      summary: >
+        Closes the organization's largest and most complex deals, often
+        defining new markets or partnership structures. Influences company-wide
+        sales methodology, pricing strategy, and competitive positioning.
+        Serves as a player-coach whose deal experience shapes the playbook
+        for the entire sales organization.
+  skills:
+    - id: pipeline_management
+      name: "Pipeline Management"
+      category: execution
+      description: >
+        Building, maintaining, and progressing a healthy pipeline of qualified
+        opportunities through each stage of the sales process, with accurate
+        stage hygiene, weighted forecasting, and disciplined deal progression
+        cadences.
+      proficiency:
+        junior: >
+          Maintains CRM records for active deals and follows the prescribed
+          stage definitions. Tracks basic pipeline metrics like deal count and
+          total value. Relies on manager coaching to prioritize which
+          opportunities to advance or disqualify.
+        mid: >
+          Manages a balanced pipeline across stages with consistent hygiene and
+          accurate close-date estimates. Self-sources a portion of pipeline to
+          supplement inbound flow. Uses weighted pipeline analysis to identify
+          gaps and adjusts prospecting effort accordingly.
+        senior: >
+          Builds and manages a multi-quarter pipeline strategy that accounts
+          for deal velocity, average selling price, and win-rate assumptions.
+          Coaches junior AEs on pipeline discipline and leads weekly pipeline
+          reviews with actionable next steps for each deal.
+        staff: >
+          Maintains a complex pipeline spanning multiple product lines and
+          buying centers within strategic accounts. Uses pipeline analytics to
+          inform territory strategy and provides field intelligence that
+          shapes marketing campaign targeting and SDR outbound priorities.
+        principal: >
+          Defines pipeline management best practices for the organization,
+          including stage definitions, velocity benchmarks, and inspection
+          cadences. Influences CRM workflow design and reporting architecture
+          to enable accurate forecasting at scale across the sales team.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI can automate pipeline hygiene reminders, flag stalled deals, and
+          suggest next-best actions, but deciding which deals to invest time in
+          and when to walk away requires experienced human judgment about buyer
+          intent and competitive dynamics.
+
+    - id: discovery_qualification
+      name: "Discovery & Qualification"
+      category: execution
+      description: >
+        Conducting structured discovery conversations to uncover business pain,
+        decision criteria, buying process, and budget authority using frameworks
+        like MEDDIC, BANT, or SPICED, and qualifying opportunities based on
+        fit, urgency, and likelihood to close.
+      proficiency:
+        junior: >
+          Follows a standard discovery question framework and captures key
+          qualification criteria in the CRM. Identifies obvious deal-breakers
+          like budget absence or timeline mismatch. Relies on manager review
+          to validate qualification assessments.
+        mid: >
+          Runs discovery calls that uncover multi-layered business pain and
+          map it to product value. Uses qualification frameworks fluently to
+          assess deal viability. Identifies the economic buyer, champion, and
+          key influencers within the buying committee.
+        senior: >
+          Leads multi-call discovery processes for complex enterprise deals,
+          uncovering strategic business objectives beyond surface-level pain.
+          Adapts discovery approach based on persona and seniority of the
+          contact. Coaches team members on advanced questioning techniques.
+        staff: >
+          Designs discovery playbooks tailored to different market segments,
+          buyer personas, and competitive scenarios. Uses discovery insights
+          to shape account-level strategies that influence multi-year
+          relationship development and product adoption roadmaps.
+        principal: >
+          Defines the organization's qualification methodology, balancing rigor
+          against deal velocity. Trains the sales organization on discovery
+          excellence and partners with product marketing to ensure discovery
+          frameworks reflect evolving buyer priorities and market dynamics.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can pre-populate discovery briefs with account research, suggest
+          questions based on persona, and summarize call insights. However,
+          reading emotional cues, adapting in real time to what a prospect
+          reveals, and building the trust that unlocks honest answers remain
+          deeply human skills.
+
+    - id: presentation_demo
+      name: "Presentation & Demo"
+      category: execution
+      description: >
+        Delivering compelling product presentations and live demonstrations
+        tailored to the audience's role, industry, and business challenges,
+        translating technical capabilities into tangible business outcomes
+        and differentiating against competitive alternatives.
+      proficiency:
+        junior: >
+          Delivers standard product demos following a prescribed narrative and
+          demo environment. Handles common audience questions with prepared
+          responses. Practices demo flow to ensure smooth technical execution
+          and professional delivery.
+        mid: >
+          Tailors presentations to the audience's specific business challenges
+          and industry context. Weaves discovery findings into the demo
+          narrative to make the product feel relevant and urgent. Handles
+          unexpected questions and pivots smoothly during live demos.
+        senior: >
+          Delivers executive-level presentations that connect product
+          capabilities to strategic business outcomes and ROI. Orchestrates
+          multi-resource demos involving sales engineers and subject matter
+          experts. Adapts the story dynamically based on audience reactions.
+        staff: >
+          Creates presentation frameworks and demo playbooks that the broader
+          team uses for strategic accounts. Delivers keynote-quality demos at
+          industry events and customer advisory boards. Shapes how the company
+          tells its product story in competitive deal situations.
+        principal: >
+          Defines the organization's presentation methodology and demo
+          standards, aligning product storytelling with brand positioning and
+          competitive strategy. Coaches the sales team on executive presence,
+          narrative structure, and handling high-pressure demo situations.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can generate presentation outlines, personalize slide content
+          from CRM data, and build demo scripts based on discovery notes.
+          However, commanding a room, reading audience energy, and
+          spontaneously adapting the story to land an emotional impact remain
+          distinctly human capabilities.
+
+    - id: negotiation_closing
+      name: "Negotiation & Closing"
+      category: execution
+      description: >
+        Managing the commercial negotiation process including pricing,
+        contract terms, legal redlines, and procurement workflows, while
+        maintaining deal momentum, creating urgency, and guiding the buyer
+        through final approval steps to a signed agreement.
+      proficiency:
+        junior: >
+          Follows the company's pricing guidelines and discount approval
+          process. Recognizes when a deal is ready to close and initiates the
+          contract process. Escalates complex negotiation requests to
+          management with clear context on the deal dynamics.
+        mid: >
+          Negotiates pricing and commercial terms within approved thresholds,
+          trading concessions strategically rather than defaulting to
+          discounts. Manages procurement and legal review processes to
+          maintain deal velocity. Creates urgency through mutual action plans.
+        senior: >
+          Leads complex multi-party negotiations involving C-suite executives,
+          procurement teams, and legal counsel. Structures creative deal terms
+          such as phased rollouts, success-based pricing, and multi-year
+          commitments that maximize value for both sides.
+        staff: >
+          Negotiates the company's largest and most strategically important
+          deals, often setting precedents for pricing and contract structures.
+          Partners with finance and legal leadership to evolve commercial
+          frameworks and standard terms based on field experience.
+        principal: >
+          Shapes the organization's negotiation philosophy, pricing strategy,
+          and deal desk processes. Defines the boundaries within which the
+          sales team operates and escalation paths for non-standard terms.
+          Influences executive decisions on strategic pricing and packaging.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can model pricing scenarios, draft contract language, and
+          benchmark deal terms against historical data. However, the
+          interpersonal dynamics of negotiation--reading body language,
+          managing tension, building consensus, and knowing when to push
+          or concede--remain among the most human-dependent skills in sales.
+
+    - id: account_planning
+      name: "Account Planning"
+      category: strategic
+      description: >
+        Developing and executing strategic account plans that map stakeholder
+        relationships, identify expansion opportunities, align product value
+        to business priorities, and create multi-quarter engagement strategies
+        for target accounts.
+      proficiency:
+        junior: >
+          Researches assigned accounts using public sources and CRM history
+          to understand basic business context. Maintains account notes and
+          tracks key contacts. Follows account plan templates provided by
+          management for territory accounts.
+        mid: >
+          Creates account plans that identify key stakeholders, map
+          organizational structure, and outline a multi-touch engagement
+          strategy. Aligns product positioning to account-specific business
+          priorities and tracks progress against account-level revenue goals.
+        senior: >
+          Develops comprehensive strategic account plans for enterprise
+          customers that span multiple business units and buying centers.
+          Identifies white-space expansion opportunities, builds executive
+          sponsor relationships, and coordinates cross-functional resources
+          to execute the plan.
+        staff: >
+          Architects account strategies for the company's most valuable
+          customer relationships, influencing product roadmap conversations
+          and partnership structures. Uses account intelligence to anticipate
+          competitive threats and proactively position against displacement.
+        principal: >
+          Defines the organization's account planning methodology and
+          strategic account program structure. Establishes frameworks for
+          prioritizing accounts, allocating resources, and measuring the
+          long-term health and growth potential of the company's most
+          important customer relationships.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can aggregate account intelligence from multiple data sources,
+          surface org chart changes, and suggest engagement strategies based
+          on similar accounts. However, synthesizing political dynamics,
+          building genuine executive relationships, and crafting strategies
+          for unique competitive situations require human intuition.
+
+    - id: crm_mastery
+      name: "CRM Mastery (Salesforce, HubSpot)"
+      category: technical
+      description: >
+        Proficient use of CRM platforms to manage contacts, track
+        opportunities, log activities, generate reports, and maintain the
+        data quality that underpins accurate forecasting, territory
+        management, and cross-functional visibility into the revenue
+        pipeline.
+      proficiency:
+        junior: >
+          Logs activities, updates opportunity stages, and maintains contact
+          records in the CRM consistently. Navigates dashboards and reports
+          to track personal pipeline metrics. Follows CRM data entry
+          standards established by the team.
+        mid: >
+          Uses CRM workflows and automation features to streamline deal
+          management. Creates custom reports and list views to monitor
+          pipeline health. Ensures data quality across opportunities and
+          understands how CRM data feeds forecasting and territory analytics.
+        senior: >
+          Leverages advanced CRM features including custom objects, workflow
+          rules, and integration with sales engagement tools. Identifies
+          process improvements enabled by CRM capabilities and coaches the
+          team on CRM best practices that improve reporting accuracy.
+        staff: >
+          Partners with revenue operations to design CRM workflows that
+          support complex deal structures and multi-product sales motions.
+          Provides field perspective on CRM usability and data requirements
+          that influence system architecture decisions.
+        principal: >
+          Influences the organization's CRM strategy by providing executive
+          input on platform selection, customization priorities, and
+          integration architecture. Ensures CRM workflows align with the
+          company's evolving sales methodology and reporting requirements
+          at the board level.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI is rapidly automating CRM data entry, activity logging, and
+          report generation. Tools that auto-capture meeting notes and
+          update deal fields are reducing manual CRM work significantly.
+          The remaining human value lies in interpreting CRM data to make
+          strategic decisions about deal prioritization and resource
+          allocation.
+
+    - id: territory_management
+      name: "Territory Management"
+      category: strategic
+      description: >
+        Planning and executing a coverage strategy across a defined set of
+        accounts or geographic region, balancing time investment across
+        prospecting, active deals, and customer relationships to maximize
+        quota attainment and long-term territory growth.
+      proficiency:
+        junior: >
+          Works assigned accounts and follows the territory coverage plan
+          provided by management. Prioritizes daily activities based on deal
+          stage and urgency. Tracks territory metrics like account
+          penetration and activity volume using standard reports.
+        mid: >
+          Develops a territory plan that segments accounts by potential and
+          allocates time across new business, expansion, and retention
+          activities. Identifies underserved high-potential accounts and
+          builds engagement strategies. Manages time effectively across a
+          growing book of business.
+        senior: >
+          Creates data-driven territory strategies that balance short-term
+          quota attainment with long-term account development. Identifies
+          market trends within the territory and adapts coverage models
+          accordingly. Mentors junior AEs on territory planning discipline.
+        staff: >
+          Designs territory strategies for strategic accounts that span
+          multiple geographies and business units. Provides field input that
+          shapes company-wide territory carving, account assignment, and
+          resource allocation decisions.
+        principal: >
+          Defines the organization's territory design philosophy, including
+          account scoring models, coverage ratios, and alignment between
+          field and inside sales resources. Partners with operations to
+          optimize territory structures that maximize total addressable
+          revenue capture.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can analyze account data to suggest territory prioritization,
+          predict account propensity to buy, and optimize coverage models.
+          However, understanding local market nuances, managing relationship
+          dynamics across accounts, and making judgment calls about where
+          to invest limited time remain human-driven activities.
+
+    - id: competitive_intelligence
+      name: "Competitive Intelligence"
+      category: strategic
+      description: >
+        Gathering, analyzing, and applying knowledge about competitors'
+        products, pricing, positioning, and go-to-market strategies to
+        differentiate effectively in active deals and inform broader
+        competitive strategy.
+      proficiency:
+        junior: >
+          Uses competitive battlecards and positioning guides provided by
+          product marketing. Identifies which competitor is present in a deal
+          and applies the recommended differentiation talking points. Reports
+          competitive intelligence from customer conversations back to the
+          team.
+        mid: >
+          Articulates competitive differentiation fluently across multiple
+          competitors and can adapt positioning based on the specific buyer's
+          priorities. Proactively researches competitor product updates and
+          pricing changes to stay current during active deals.
+        senior: >
+          Develops competitive strategies for complex enterprise deals where
+          multiple competitors are entrenched. Coaches the team on
+          competitive positioning and contributes field intelligence that
+          shapes product marketing battlecards and win/loss analysis.
+        staff: >
+          Serves as a competitive subject matter expert for the sales
+          organization, advising on strategy for high-stakes competitive
+          displacement deals. Partners with product marketing to ensure
+          competitive messaging reflects real-world field dynamics.
+        principal: >
+          Influences the company's competitive strategy at the executive
+          level, connecting field competitive intelligence to product roadmap
+          decisions, pricing strategy, and market positioning. Shapes how the
+          organization responds to major competitive shifts.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI excels at monitoring competitor activity, aggregating public
+          information, and generating initial battlecard content. However,
+          interpreting how competitive dynamics play out in specific deal
+          contexts and crafting winning strategies against entrenched
+          incumbents requires human experience and creativity.
+
+    - id: pricing_strategy
+      name: "Pricing Strategy"
+      category: strategic
+      description: >
+        Understanding and applying the company's pricing model, packaging
+        options, and discounting framework to structure deals that maximize
+        revenue while meeting customer budget constraints and competitive
+        pressure.
+      proficiency:
+        junior: >
+          Understands the company's standard pricing tiers and packaging
+          options. Applies list pricing accurately in proposals and follows
+          the discount approval process when a customer requests a
+          concession. Escalates non-standard pricing requests to management.
+        mid: >
+          Structures pricing proposals that align product packaging with
+          customer use cases and budget. Uses discount levers strategically
+          rather than reflexively and justifies pricing to buyers by
+          anchoring on value delivered. Navigates the deal desk process
+          efficiently.
+        senior: >
+          Designs creative deal structures for complex enterprise
+          opportunities, including multi-year commitments, volume-based
+          pricing, and bundled solutions. Understands pricing elasticity
+          and uses competitive benchmarking to defend premium positioning.
+        staff: >
+          Shapes pricing strategy for the company's largest deals, often
+          setting precedents that influence the broader pricing framework.
+          Partners with finance and product leadership to test new packaging
+          models and provides field feedback on pricing competitiveness.
+        principal: >
+          Influences the organization's pricing philosophy, monetization
+          strategy, and packaging architecture at the executive level.
+          Connects pricing decisions to market positioning, competitive
+          dynamics, and long-term revenue growth objectives across the
+          entire product portfolio.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can model pricing scenarios, analyze win/loss data by price
+          point, and benchmark against market rates. However, understanding
+          a specific buyer's willingness to pay, crafting creative deal
+          structures for novel situations, and making strategic pricing
+          decisions that balance short-term revenue with long-term market
+          positioning require human judgment.
+
+    - id: cross_functional_selling
+      name: "Cross-Functional Selling"
+      category: execution
+      description: >
+        Orchestrating internal resources including sales engineers, product
+        specialists, customer success, executives, and partners to deliver a
+        coordinated buying experience that addresses all dimensions of a
+        complex sales cycle.
+      proficiency:
+        junior: >
+          Engages internal resources like sales engineers and managers when
+          prompted by deal complexity. Provides basic context when requesting
+          help and follows up on action items generated by cross-functional
+          deal support meetings.
+        mid: >
+          Proactively identifies when deals require cross-functional support
+          and orchestrates resources effectively. Briefs team members with
+          clear context on the deal, buyer personas, and desired outcomes.
+          Coordinates follow-ups to maintain deal momentum.
+        senior: >
+          Leads complex deal teams spanning sales engineering, product
+          management, executive sponsors, and professional services.
+          Orchestrates multi-resource customer engagements including
+          executive briefings, technical deep-dives, and site visits.
+        staff: >
+          Designs the cross-functional selling playbook for strategic
+          accounts, defining when and how to engage each resource type.
+          Builds relationships across the organization that enable rapid
+          resource mobilization for time-sensitive competitive situations.
+        principal: >
+          Shapes the organization's approach to team-based selling,
+          influencing how resources are allocated, how executive sponsors
+          are matched to accounts, and how the company structures its
+          go-to-market motions to leverage cross-functional expertise as
+          a competitive advantage.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can suggest which resources to engage based on deal
+          characteristics, automate briefing document creation, and
+          coordinate scheduling logistics. However, building internal
+          relationships, motivating cross-functional team members, and
+          orchestrating complex human interactions in real time require
+          interpersonal skills that resist automation.
+
+    - id: forecasting
+      name: "Forecasting"
+      category: execution
+      description: >
+        Predicting revenue outcomes with accuracy by assessing deal
+        probability, timing, and risk across the pipeline, and communicating
+        forecast commitments that leadership can rely on for business planning
+        and resource allocation decisions.
+      proficiency:
+        junior: >
+          Provides deal-level forecasts based on stage progression and
+          close-date estimates. Understands the difference between best-case,
+          commit, and pipeline categories. Updates forecasts weekly as deal
+          dynamics change.
+        mid: >
+          Delivers accurate personal forecasts by combining pipeline analysis
+          with qualitative deal assessment. Identifies forecast risks early
+          and communicates upside and downside scenarios. Uses historical
+          conversion rates to validate forecast assumptions.
+        senior: >
+          Provides highly accurate forecasts for a complex enterprise
+          pipeline, accounting for procurement cycles, budget timing, and
+          competitive risk. Coaches team members on forecast discipline and
+          participates in forecast roll-up calls with management.
+        staff: >
+          Delivers precise forecasts for strategic accounts with long,
+          multi-quarter sales cycles. Provides forecast intelligence that
+          informs company-level financial planning. Identifies systemic
+          forecasting biases and recommends process improvements.
+        principal: >
+          Shapes the organization's forecasting methodology, defining
+          categories, inspection cadences, and accuracy benchmarks. Partners
+          with finance and operations to ensure forecasting processes
+          support board-level reporting and long-term capacity planning.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI is increasingly effective at analyzing pipeline data, identifying
+          deal risk signals, and generating probability-weighted forecasts.
+          However, understanding the human factors that influence deal timing
+          --champion changes, budget shifts, executive priorities--and
+          exercising judgment about which deals will truly close requires
+          experienced sales intuition.
+
+    - id: relationship_building
+      name: "Relationship Building"
+      category: interpersonal
+      description: >
+        Developing and maintaining trusted, long-term relationships with
+        buyers, champions, executive sponsors, and partners that create
+        competitive advantage, accelerate deal cycles, and generate
+        referrals and expansion opportunities.
+      proficiency:
+        junior: >
+          Builds rapport with day-to-day contacts through consistent
+          follow-up, responsiveness, and reliability. Remembers personal
+          details and professional context that demonstrate genuine interest
+          in the buyer's success and build foundation-level trust.
+        mid: >
+          Develops multi-threaded relationships within accounts, connecting
+          with stakeholders across departments and seniority levels. Earns
+          trust by delivering value beyond the transaction, sharing industry
+          insights, and making relevant introductions within their network.
+        senior: >
+          Builds executive-level relationships grounded in strategic business
+          value rather than product features. Maintains a network of
+          champions and sponsors across accounts who provide competitive
+          intelligence, internal advocacy, and referrals to new opportunities.
+        staff: >
+          Cultivates C-suite relationships that position the company as a
+          strategic partner rather than a vendor. Leverages deep relationship
+          networks to open doors at new accounts, influence industry
+          conversations, and create partnership opportunities.
+        principal: >
+          Builds and maintains a broad industry network that creates
+          competitive advantage for the entire organization. Develops
+          relationships that influence market perception, generate strategic
+          partnerships, and attract top talent to the sales organization
+          through personal reputation and industry standing.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          AI can remind sellers about relationship touchpoints, surface
+          relevant news about contacts, and suggest personalized outreach
+          content. However, building genuine human trust, demonstrating
+          empathy, and creating the emotional bonds that drive loyalty and
+          advocacy remain the most automation-resistant skill in sales.

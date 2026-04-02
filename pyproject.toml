@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skillich"
+version = "0.1.0"
+description = "Know exactly which skills to invest in to become irreplaceable in the age of AI. 68 roles, 815 skills, each rated for AI impact."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    {name = "skillich contributors"},
+]
+keywords = ["ai", "career", "skills", "taxonomy", "automation", "future-of-work", "llm", "mcp", "agents", "career-development", "ai-impact", "knowledge-worker"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: End Users/Desktop",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "pyyaml>=6.0",
+]
+
+[project.scripts]
+skillich = "cli.main:app"
+skillich-mcp = "mcp_server.server:main"
+
+[project.optional-dependencies]
+cli = ["typer>=0.9"]
+mcp = ["mcp>=1.0"]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "ruff>=0.4",
+    "jsonschema>=4.0",
+]
+openai = ["openai>=1.0"]
+anthropic = ["anthropic>=0.30"]
+langchain = ["langchain-core>=0.2"]
+all = ["skillich[cli,mcp,openai,anthropic]"]
+
+[tool.setuptools.packages.find]
+include = ["core*", "skills*", "adapters*", "agents*", "taxonomy*", "mcp_server*", "cli*"]
+
+[tool.setuptools.package-data]
+taxonomy = ["**/*.yaml", "schemas/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100

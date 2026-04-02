@@ -1,0 +1,664 @@
+role:
+  id: marketing_analyst
+  function: marketing
+  name: "Marketing Analyst"
+  also_known_as:
+    - "Marketing Data Analyst"
+    - "Marketing Analytics Manager"
+    - "Growth Analyst"
+    - "Performance Marketing Analyst"
+    - "Marketing Intelligence Analyst"
+  description: >
+    Transforms marketing data into actionable insights that drive strategy
+    and optimize performance across channels. Marketing analysts build
+    attribution models, measure campaign ROI, forecast outcomes, and
+    communicate findings to stakeholders, serving as the analytical
+    backbone that connects marketing activity to business results.
+
+  ai_impact:
+    level: moderate-high
+    summary: >
+      AI is automating routine reporting, anomaly detection, and basic
+      data exploration, significantly accelerating the speed of marketing
+      analytics workflows. Tools like automated insight generation and
+      natural-language querying of marketing data are reducing the time
+      spent on data wrangling. However, the strategic interpretation of
+      data, causal reasoning about marketing effectiveness, and the
+      judgment to translate analysis into actionable recommendations
+      remain deeply human competencies.
+    automating:
+      - "Generating standard marketing performance reports and dashboards"
+      - "Detecting anomalies and trends in campaign data"
+      - "Writing SQL queries and data transformations from natural language"
+      - "Creating data visualizations from descriptive prompts"
+      - "Pulling and cleaning data from marketing platform APIs"
+    augmenting:
+      - "Building attribution models and interpreting multi-touch journeys"
+      - "Designing and analyzing A/B tests and experiments"
+      - "Forecasting campaign performance and budget scenarios"
+      - "Identifying customer segments and lifetime value patterns"
+      - "Conducting competitive intelligence and market analysis"
+    preserving:
+      - "Defining measurement frameworks that align with business objectives"
+      - "Making strategic recommendations based on nuanced data interpretation"
+      - "Navigating data quality issues and privacy constraints in measurement"
+      - "Communicating complex analytical findings to non-technical stakeholders"
+      - "Designing the marketing data architecture and analytics roadmap"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Marketing Analytics Association"
+        url: "https://www.marketinganalyticsassociation.org/"
+      - name: "Google Marketing Platform – Analytics"
+        url: "https://marketingplatform.google.com/about/analytics/"
+      - name: "Measure What Matters – Digital Analytics Framework"
+        url: "https://www.kaushik.net/avinash/"
+
+  levels:
+    - id: junior
+      name: "Junior (L1-L2)"
+      years_experience: "0-2"
+      summary: >
+        Pulls and organizes marketing data from platforms and databases,
+        builds basic reports and dashboards, and assists with data
+        quality tasks. Learns marketing measurement fundamentals and
+        develops proficiency in SQL and visualization tools under
+        the guidance of senior analysts.
+    - id: mid
+      name: "Mid-Level (L3)"
+      years_experience: "2-4"
+      summary: >
+        Independently conducts marketing analyses including campaign
+        performance reviews, funnel analysis, and basic attribution.
+        Builds dashboards for stakeholders, runs A/B test analyses,
+        and translates data findings into recommendations for
+        marketing teams.
+    - id: senior
+      name: "Senior (L4)"
+      years_experience: "4-8"
+      summary: >
+        Designs marketing measurement frameworks, builds sophisticated
+        attribution and forecasting models, and leads analytical
+        projects that influence marketing strategy. Mentors junior
+        analysts, partners with data engineering on marketing data
+        infrastructure, and presents strategic insights to leadership.
+    - id: staff
+      name: "Staff (L5)"
+      years_experience: "8-12"
+      summary: >
+        Defines the organization's marketing analytics strategy including
+        measurement methodology, tooling architecture, and team
+        structure. Leads cross-functional analytics initiatives, drives
+        adoption of advanced measurement techniques (MMM, incrementality),
+        and influences marketing investment decisions with data.
+    - id: principal
+      name: "Principal (L6+)"
+      years_experience: "12+"
+      summary: >
+        Shapes the company's marketing measurement philosophy and
+        analytical capabilities with multi-year strategic impact.
+        Navigates industry shifts in measurement (privacy, cookieless),
+        evaluates AI's role in marketing analytics, and advises
+        executive leadership on data-driven marketing strategy.
+
+  skills:
+    - id: attribution_modeling
+      name: "Attribution Modeling"
+      category: analytical
+      description: >
+        Designing, implementing, and evaluating models that assign
+        credit to marketing touchpoints across the customer journey,
+        including rule-based models (first-touch, last-touch, linear),
+        data-driven attribution, and multi-touch attribution (MTA)
+        approaches.
+      proficiency:
+        junior: >
+          Understands the concept of marketing attribution and common
+          models. Pulls attribution reports from analytics platforms
+          and compiles touchpoint data for analysis by senior team
+          members.
+        mid: >
+          Implements and compares rule-based attribution models,
+          analyzes multi-touch journey data, and presents attribution
+          insights to marketing teams. Configures data-driven
+          attribution in GA4 and interprets model outputs.
+        senior: >
+          Designs the attribution framework for the organization,
+          selecting appropriate models for different business
+          questions. Builds custom attribution models, evaluates
+          data-driven attribution outputs critically, and communicates
+          attribution limitations and confidence levels to stakeholders.
+        staff: >
+          Defines the organization's attribution strategy including
+          methodology, data requirements, and integration with budget
+          planning. Evaluates advanced approaches (Markov chains,
+          Shapley values) and drives the transition from rule-based
+          to data-driven attribution across teams.
+        principal: >
+          Shapes the company's measurement philosophy in the context
+          of attribution model limitations, privacy-driven signal
+          loss, and the convergence of MTA with marketing mix modeling.
+          Drives innovation in attribution approaches that reflect
+          the true complexity of customer journeys.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI enables more sophisticated data-driven attribution by
+          processing complex journey data. However, choosing attribution
+          approaches, interpreting model outputs in business context,
+          and communicating actionable insights from attribution data
+          require experienced analytical and strategic judgment.
+
+    - id: marketing_mix
+      name: "Marketing Mix Modeling"
+      category: analytical
+      description: >
+        Using statistical and econometric techniques to measure the
+        impact of marketing activities on business outcomes at an
+        aggregate level, including media mix modeling (MMM),
+        regression-based approaches, and Bayesian methods for
+        budget allocation optimization.
+      proficiency:
+        junior: >
+          Understands the concept of marketing mix modeling and its
+          role in measurement. Assists with data collection and
+          preparation for MMM inputs and reviews model outputs
+          with guidance.
+        mid: >
+          Prepares data for MMM analyses including marketing spend,
+          external factors, and business outcomes. Runs basic
+          regression analyses, interprets model coefficients, and
+          helps translate MMM results into budget recommendations.
+        senior: >
+          Builds and validates marketing mix models, selecting
+          appropriate methodologies and managing model assumptions.
+          Interprets diminishing returns curves, calculates optimal
+          budget allocations, and presents MMM-driven recommendations
+          to marketing leadership.
+        staff: >
+          Defines the organization's MMM program including methodology,
+          vendor evaluation (if using external tools like Meridian or
+          Robyn), data infrastructure requirements, and refresh
+          cadences. Integrates MMM insights with attribution data
+          for a unified measurement view.
+        principal: >
+          Shapes the company's investment in marketing mix modeling
+          as a strategic measurement capability. Evaluates open-source
+          MMM tools, drives adoption of Bayesian approaches, and
+          positions MMM as a core input to executive marketing
+          investment decisions.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI and open-source tools (Meta's Robyn, Google's Meridian)
+          are democratizing MMM. However, model specification,
+          assumption validation, interpreting results in business
+          context, and translating model outputs into actionable
+          budget decisions require deep statistical and marketing
+          expertise.
+
+    - id: customer_ltv
+      name: "Customer Lifetime Value Analysis"
+      category: analytical
+      description: >
+        Modeling and forecasting customer lifetime value (LTV/CLV)
+        using historical transaction data, cohort analysis,
+        probabilistic models (BG/NBD, Pareto/NBD), and predictive
+        analytics to inform acquisition, retention, and
+        segmentation strategies.
+      proficiency:
+        junior: >
+          Calculates basic LTV metrics using average revenue and
+          retention rates. Builds cohort analysis tables and assists
+          with data preparation for LTV modeling projects.
+        mid: >
+          Conducts cohort-based LTV analysis, segments customers by
+          value tiers, and calculates LTV-to-CAC ratios across
+          channels. Implements basic predictive LTV models and
+          presents findings to marketing teams.
+        senior: >
+          Builds sophisticated LTV models using probabilistic
+          approaches and predictive analytics. Designs LTV-based
+          segmentation strategies, calculates segment-level LTV
+          for budget optimization, and validates models against
+          actual customer behavior.
+        staff: >
+          Defines the organization's LTV modeling methodology
+          including model selection, data requirements, and
+          integration with marketing and product decisions.
+          Establishes LTV as a core metric for customer acquisition
+          and retention strategy across teams.
+        principal: >
+          Shapes the company's customer value strategy where LTV
+          is a foundational business metric. Drives innovation in
+          predictive LTV modeling, evaluates how LTV frameworks
+          evolve with product-led growth and usage-based models,
+          and influences executive investment decisions.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI tools can build and train LTV prediction models from
+          customer data efficiently. However, selecting appropriate
+          modeling approaches, interpreting results in business
+          context, and translating LTV insights into customer
+          strategy require human judgment about business dynamics
+          and customer behavior.
+
+    - id: campaign_roi
+      name: "Campaign ROI Analysis"
+      category: analytical
+      description: >
+        Measuring the return on investment for marketing campaigns
+        by tracking costs, conversions, revenue attribution, and
+        incremental lift, using controlled experiments, matched
+        market tests, and conversion value analysis.
+      proficiency:
+        junior: >
+          Calculates basic campaign ROI using spend and conversion
+          data from marketing platforms. Compiles campaign performance
+          summaries and tracks metrics against established benchmarks.
+        mid: >
+          Conducts comprehensive campaign ROI analysis incorporating
+          multiple cost components, conversion attribution, and
+          pipeline impact. Compares ROI across campaigns and channels,
+          identifies efficiency opportunities, and presents findings
+          to campaign managers.
+        senior: >
+          Designs campaign measurement frameworks that capture true
+          incremental impact, implementing holdout tests and geo-
+          experiments where possible. Builds ROI models that account
+          for lagged conversions, assisted attribution, and lifetime
+          value, and communicates ROI insights to leadership.
+        staff: >
+          Defines the organization's campaign measurement standard
+          including ROI calculation methodology, incrementality
+          testing frameworks, and reporting cadences. Drives
+          adoption of rigorous measurement practices across
+          marketing teams and influences budget allocation.
+        principal: >
+          Shapes the company's approach to marketing ROI measurement
+          at the executive level, balancing precision with
+          practicality. Drives investment in incrementality testing
+          and causal measurement that enables confident marketing
+          investment decisions.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI automates ROI calculations and can identify patterns
+          in campaign performance data. However, designing rigorous
+          measurement frameworks, interpreting incremental impact,
+          and making investment recommendations that account for
+          strategic context require experienced human judgment.
+
+    - id: funnel_metrics
+      name: "Funnel & Conversion Metrics"
+      category: analytical
+      description: >
+        Tracking, analyzing, and optimizing marketing and sales
+        funnel metrics from awareness through conversion and
+        retention, including conversion rates, drop-off analysis,
+        funnel velocity, and stage-specific optimization.
+      proficiency:
+        junior: >
+          Pulls funnel data from analytics and CRM platforms,
+          calculates stage-to-stage conversion rates, and creates
+          basic funnel visualization reports for team review.
+        mid: >
+          Conducts detailed funnel analysis identifying bottlenecks,
+          conversion anomalies, and segment-specific patterns.
+          Tracks funnel velocity, analyzes drop-off reasons, and
+          recommends optimization opportunities to marketing and
+          sales teams.
+        senior: >
+          Designs funnel measurement frameworks including stage
+          definitions, metric hierarchies, and alerting thresholds.
+          Builds predictive models for funnel conversion and
+          establishes the analytical foundation for funnel
+          optimization initiatives.
+        staff: >
+          Defines the organization's funnel analytics strategy
+          including cross-team metric alignment, funnel data
+          infrastructure, and integration with revenue forecasting.
+          Drives funnel measurement standardization across
+          product lines and markets.
+        principal: >
+          Shapes the company's funnel philosophy, evaluating how
+          product-led growth, self-serve conversion, and AI-driven
+          personalization transform traditional funnel models. Drives
+          the evolution of funnel metrics to reflect modern
+          customer journeys.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can identify funnel patterns, detect conversion
+          anomalies, and suggest optimization hypotheses from
+          funnel data. However, designing funnel frameworks that
+          reflect complex customer journeys, interpreting funnel
+          data in business context, and prioritizing optimization
+          efforts require human analytical judgment.
+
+    - id: sql_marketing
+      name: "SQL for Marketing Analytics"
+      category: technical
+      description: >
+        Writing SQL queries to extract, transform, and analyze
+        marketing data from data warehouses (BigQuery, Snowflake,
+        Redshift), including customer journey analysis, cohort
+        queries, funnel analysis, and marketing-specific data
+        transformations.
+      proficiency:
+        junior: >
+          Writes basic SELECT queries with JOINs, WHERE clauses,
+          and GROUP BY to extract marketing data from the warehouse.
+          Modifies existing queries to answer new questions and
+          troubleshoots common query errors.
+        mid: >
+          Writes complex queries involving window functions, CTEs,
+          subqueries, and multi-table joins for marketing analysis.
+          Builds reusable query templates for common analyses like
+          cohort retention, funnel conversion, and attribution data
+          extraction.
+        senior: >
+          Designs the SQL analytics layer for marketing data,
+          creating views, marts, and reusable query libraries.
+          Optimizes query performance for large marketing datasets
+          and establishes SQL coding standards for the analytics
+          team.
+        staff: >
+          Defines the marketing data model in the warehouse,
+          collaborating with data engineering to build marketing-
+          specific data marts, event schemas, and transformation
+          pipelines. Ensures marketing analytics queries scale
+          with data volume and complexity.
+        principal: >
+          Shapes the organization's marketing data architecture
+          strategy, evaluating how the analytics layer evolves
+          with new data warehouse capabilities, semantic layers,
+          and AI-powered query interfaces that may reduce direct
+          SQL usage.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI tools increasingly generate accurate SQL from natural
+          language descriptions, making data extraction more
+          accessible. However, designing marketing data models,
+          ensuring query efficiency at scale, and understanding the
+          nuances of marketing data schemas require human expertise.
+
+    - id: ab_testing_creative
+      name: "A/B Testing & Experimentation"
+      category: analytical
+      description: >
+        Designing, executing, and analyzing marketing experiments
+        including A/B tests on ad creative, email content, landing
+        pages, and messaging variants, using statistical methods
+        to determine significance and estimate effect sizes.
+      proficiency:
+        junior: >
+          Sets up basic A/B tests in marketing platforms following
+          documented procedures. Monitors test progress and pulls
+          results for review by senior analysts.
+        mid: >
+          Designs A/B tests with proper hypotheses, sample size
+          calculations, and success metrics. Analyzes test results
+          using statistical significance testing and confidence
+          intervals, and presents findings with clear
+          recommendations.
+        senior: >
+          Develops the experimentation framework for marketing
+          including testing roadmaps, prioritization methods
+          (ICE, PIE), and statistical standards. Designs multi-
+          variant tests, manages testing calendars, and builds
+          the experimentation culture within marketing teams.
+        staff: >
+          Defines the organization's marketing experimentation
+          program including methodology standards, tooling
+          infrastructure, and knowledge management. Drives
+          adoption of Bayesian testing approaches and integrates
+          experimentation into marketing decision-making processes.
+        principal: >
+          Shapes the company's experimentation philosophy across
+          marketing, balancing testing velocity with statistical
+          rigor. Evaluates emerging experimentation approaches
+          (multi-armed bandits, contextual bandits) and positions
+          the organization for a culture of continuous
+          evidence-based marketing.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI helps generate test hypotheses, calculate sample sizes,
+          and analyze results. However, designing meaningful
+          experiments, interpreting results in business context,
+          and building an experimentation culture require human
+          judgment and organizational leadership.
+
+    - id: data_visualization
+      name: "Data Visualization & Dashboards"
+      category: communication
+      description: >
+        Creating clear, insightful visualizations and interactive
+        dashboards using tools like Tableau, Looker, Power BI, or
+        Mode that communicate marketing performance, trends, and
+        insights to diverse stakeholder audiences.
+      proficiency:
+        junior: >
+          Builds basic charts and tables in visualization tools
+          following established templates and design guidelines.
+          Creates simple dashboards for campaign monitoring and
+          weekly reporting.
+        mid: >
+          Designs informative dashboards with appropriate chart
+          types, interactivity, and drill-down capabilities.
+          Creates visualizations that clearly communicate trends,
+          comparisons, and distributions to marketing stakeholders.
+        senior: >
+          Establishes the team's dashboard architecture including
+          metric hierarchies, design standards, and refresh
+          infrastructure. Creates executive-level visualizations
+          that tell compelling data stories and drive action.
+        staff: >
+          Defines the organization's marketing BI strategy including
+          platform selection, governance, and self-serve analytics
+          enablement. Builds dashboard templates and visualization
+          standards that scale across teams.
+        principal: >
+          Shapes the company's data communication philosophy,
+          evaluating how AI-generated insights, natural-language
+          dashboards, and embedded analytics change how marketing
+          organizations consume data. Drives investment in analytics
+          platforms that democratize data access.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI tools can auto-generate charts and suggest
+          visualizations from data. However, designing dashboards
+          that tell coherent stories, choosing the right
+          visualizations for different audiences, and creating
+          information hierarchies that drive action require human
+          communication and design skills.
+
+    - id: budget_optimization
+      name: "Budget Optimization & Forecasting"
+      category: analytical
+      description: >
+        Using data-driven approaches to optimize marketing budget
+        allocation across channels, campaigns, and time periods,
+        including diminishing returns modeling, scenario analysis,
+        and predictive forecasting for marketing outcomes.
+      proficiency:
+        junior: >
+          Tracks budget pacing and compiles spend-vs-plan reports.
+          Assists with data preparation for budget analysis and
+          pulls channel-level performance data for optimization
+          reviews.
+        mid: >
+          Analyzes channel and campaign efficiency to recommend
+          budget reallocations. Builds budget tracking models,
+          forecasts campaign outcomes based on historical data,
+          and presents optimization scenarios to marketing managers.
+        senior: >
+          Designs budget optimization models incorporating
+          diminishing returns, seasonality, and competitive factors.
+          Builds scenario planning tools for marketing leadership
+          and leads quarterly budget reallocation reviews with
+          data-driven recommendations.
+        staff: >
+          Defines the organization's budget optimization methodology
+          including modeling approaches, data inputs, and decision
+          frameworks. Integrates budget optimization with marketing
+          mix modeling and drives adoption of data-driven budget
+          allocation across the marketing organization.
+        principal: >
+          Shapes the company's marketing investment optimization
+          strategy, evaluating how AI-driven budget tools,
+          incrementality data, and market dynamics inform
+          enterprise-level marketing spend decisions. Drives
+          the development of financial models that connect
+          marketing investment to business growth.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI tools model budget scenarios and identify optimization
+          opportunities from performance data. However, making
+          budget allocation decisions that account for strategic
+          priorities, competitive dynamics, and organizational
+          constraints requires human judgment and stakeholder
+          alignment.
+
+    - id: competitive_intelligence
+      name: "Competitive Intelligence"
+      category: domain
+      description: >
+        Monitoring and analyzing competitor marketing strategies,
+        spending patterns, messaging, and market positioning using
+        tools like SEMrush, SimilarWeb, Pathmatics, and primary
+        research to inform strategic marketing decisions.
+      proficiency:
+        junior: >
+          Monitors competitor marketing activity including ad
+          campaigns, social content, and website changes. Compiles
+          competitive intelligence reports using established
+          templates and tools.
+        mid: >
+          Conducts structured competitive analyses covering
+          messaging, channel strategies, and estimated spend.
+          Identifies competitive trends and opportunities, and
+          presents actionable intelligence to marketing teams.
+        senior: >
+          Designs the competitive intelligence program including
+          monitoring frameworks, analysis methodology, and
+          reporting cadences. Synthesizes competitive data into
+          strategic insights that inform campaign strategy and
+          positioning.
+        staff: >
+          Defines the organization's competitive intelligence
+          infrastructure including tool selection, data integration,
+          and insights distribution. Integrates competitive
+          analysis with strategic planning and ensures intelligence
+          informs cross-functional decision-making.
+        principal: >
+          Shapes the company's competitive strategy from a marketing
+          perspective, evaluating market dynamics, emerging
+          competitors, and industry trends that impact long-term
+          marketing strategy. Drives competitive positioning
+          decisions at the executive level.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI tools efficiently gather and summarize competitor data
+          from multiple sources. However, interpreting competitive
+          moves in strategic context, identifying genuine threats
+          vs. noise, and translating intelligence into differentiated
+          strategy require human business judgment and industry
+          expertise.
+
+    - id: forecasting
+      name: "Marketing Forecasting"
+      category: analytical
+      description: >
+        Building predictive models to forecast marketing outcomes
+        including traffic, leads, pipeline, revenue, and customer
+        acquisition using time-series analysis, regression modeling,
+        and scenario planning techniques.
+      proficiency:
+        junior: >
+          Assists with data preparation for forecasting models and
+          maintains forecast tracking spreadsheets. Compares actual
+          results against forecasts and flags significant variances.
+        mid: >
+          Builds forecasting models using historical data, trend
+          analysis, and basic regression. Creates scenario analyses
+          for campaign planning and tracks forecast accuracy to
+          improve model calibration.
+        senior: >
+          Designs sophisticated forecasting methodologies
+          incorporating seasonality, market trends, and leading
+          indicators. Builds ensemble models, communicates forecast
+          uncertainty ranges, and integrates marketing forecasts
+          with business planning processes.
+        staff: >
+          Defines the organization's marketing forecasting
+          infrastructure including methodology, tools, and
+          governance. Establishes forecast accuracy standards and
+          drives adoption of advanced forecasting techniques
+          across marketing teams.
+        principal: >
+          Shapes the company's predictive analytics strategy for
+          marketing, evaluating how AI-powered forecasting,
+          real-time data, and market uncertainty change the role
+          of forecasting in marketing investment decisions.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI improves forecast accuracy through pattern recognition
+          and ensemble methods. However, selecting appropriate
+          modeling approaches, incorporating business judgment into
+          forecasts, and communicating uncertainty to decision-makers
+          require human analytical and communication skills.
+
+    - id: reporting_automation
+      name: "Reporting Automation"
+      category: technical
+      description: >
+        Building automated data pipelines and reporting systems that
+        collect, transform, and deliver marketing performance data
+        to stakeholders, using tools like dbt, Fivetran, Supermetrics,
+        and custom scripts to reduce manual reporting effort.
+      proficiency:
+        junior: >
+          Uses reporting tools to schedule and distribute standard
+          marketing reports. Assists with data connector setup and
+          troubleshoots common reporting pipeline failures.
+        mid: >
+          Builds automated reporting pipelines that pull data from
+          marketing platforms, transform it, and deliver dashboards
+          and alerts. Configures data connectors, writes transformation
+          logic, and maintains report accuracy.
+        senior: >
+          Designs the marketing reporting automation architecture
+          including data extraction, transformation pipelines,
+          alerting systems, and delivery mechanisms. Builds
+          self-serve reporting capabilities and reduces the team's
+          manual reporting burden.
+        staff: >
+          Defines the organization's marketing data pipeline
+          architecture, collaborating with data engineering on
+          extraction, loading, and transformation standards.
+          Evaluates reporting automation platforms and drives
+          the shift from manual to automated marketing analytics.
+        principal: >
+          Shapes the company's marketing data infrastructure
+          strategy, evaluating how AI-powered analytics, semantic
+          layers, and real-time data processing change the
+          reporting automation landscape. Drives investment in
+          infrastructure that enables self-serve, real-time
+          marketing intelligence.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI is rapidly automating report creation, data
+          transformation, and insight extraction. However,
+          designing reporting architectures that serve diverse
+          stakeholder needs, ensuring data quality and governance,
+          and making infrastructure decisions require human systems
+          thinking and organizational context.

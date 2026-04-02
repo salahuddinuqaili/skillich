@@ -1,0 +1,701 @@
+role:
+  id: cx_analyst
+  function: support
+  name: "Customer Experience Analyst"
+  also_known_as:
+    - "CX Analyst"
+    - "Voice of Customer Analyst"
+    - "Customer Insights Analyst"
+    - "Customer Experience Researcher"
+    - "Customer Intelligence Analyst"
+  description: >
+    Analyzes customer support data, feedback, and behavioral signals to
+    identify trends, uncover root causes of customer dissatisfaction, and
+    drive improvements to the overall customer experience. Customer
+    experience analysts design surveys, perform sentiment analysis, build
+    reports and dashboards, map customer journeys, and translate quantitative
+    and qualitative insights into actionable recommendations that influence
+    product, support, and business strategy. They serve as the analytical
+    backbone connecting customer voice to organizational decision-making.
+  ai_impact:
+    level: "moderate-high"
+    summary: >
+      AI is significantly enhancing CX analysis through automated sentiment
+      analysis at scale, pattern recognition across large feedback datasets,
+      predictive churn modeling, and natural language processing of
+      unstructured customer feedback. Routine data aggregation and trend
+      identification are increasingly automated, freeing analysts to focus
+      on insight interpretation, strategic recommendations, and driving
+      organizational change. Analysts who combine AI-powered data processing
+      with strong business acumen and stakeholder influence will see their
+      impact multiply as the volume of analyzable customer data grows.
+    automating:
+      - "Sentiment scoring of customer interactions and feedback"
+      - "Aggregation and summarization of survey responses"
+      - "Topic clustering from unstructured feedback data"
+      - "Basic trend detection in customer satisfaction metrics"
+      - "Automated report generation from standard data sources"
+      - "Real-time alerting on satisfaction metric anomalies"
+    augmenting:
+      - "Thematic analysis of large-volume qualitative feedback"
+      - "Predictive modeling of customer churn and satisfaction drivers"
+      - "AI-assisted journey mapping from behavioral and feedback data"
+      - "Natural language querying of customer experience databases"
+      - "Automated insight summarization for stakeholder consumption"
+      - "Correlation analysis across feedback channels and touchpoints"
+    preserving:
+      - "Strategic interpretation of insights within business context"
+      - "Designing research programs that ask the right questions"
+      - "Influencing stakeholders to act on customer experience findings"
+      - "Judgment on what insights matter versus statistical noise"
+      - "Navigating organizational politics to drive customer-centric change"
+      - "Ethical considerations in customer data analysis and privacy"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Qualtrics XM Institute"
+        url: "https://www.xminstitute.com/"
+      - name: "Forrester - Customer Experience Measurement"
+        url: "https://www.forrester.com/research/customer-experience/"
+      - name: "CXPA - Customer Experience Professionals Association"
+        url: "https://www.cxpa.org/"
+  levels:
+    - id: junior
+      name: "Junior CX Analyst"
+      years_experience: "0-2"
+      summary: >
+        Collects and organizes customer feedback data, generates standard
+        reports, and performs basic analysis of satisfaction metrics. Learns
+        analytical frameworks, survey methodology, and CX measurement
+        tools. Supports senior analysts with data preparation and
+        preliminary findings.
+    - id: mid
+      name: "CX Analyst"
+      years_experience: "2-5"
+      summary: >
+        Conducts independent analysis of customer experience data across
+        multiple sources, identifying trends, root causes, and improvement
+        opportunities. Designs surveys, builds dashboards, and presents
+        findings to stakeholders with clear recommendations. Manages
+        ongoing CX measurement programs.
+    - id: senior
+      name: "Senior CX Analyst"
+      years_experience: "5-8"
+      summary: >
+        Leads complex analytical projects including journey mapping,
+        driver analysis, and predictive modeling. Designs the CX
+        measurement framework and mentors junior analysts. Influences
+        product and support strategy through compelling data narratives
+        and builds relationships with senior stakeholders.
+    - id: lead
+      name: "Lead CX Analyst"
+      years_experience: "8-12"
+      summary: >
+        Sets the analytical direction for the CX function, defining
+        research priorities, methodology standards, and tool strategy.
+        Drives organizational adoption of customer-centric decision-making
+        through high-impact analyses and executive-level storytelling.
+        Manages the analyst team and develops analytical capabilities.
+    - id: director
+      name: "Director of Customer Insights"
+      years_experience: "12+"
+      summary: >
+        Owns the organization's customer intelligence strategy, connecting
+        CX analytics to business outcomes and executive decision-making.
+        Defines the customer voice program, drives cross-functional
+        customer-centric initiatives, and ensures CX insights influence
+        product roadmaps, support strategy, and company direction at the
+        highest level.
+  skills:
+    - id: data_analysis
+      name: "Data Analysis"
+      category: analytical
+      description: >
+        Collecting, cleaning, analyzing, and interpreting quantitative data
+        from support systems, surveys, product analytics, and CRM platforms
+        to identify patterns, trends, and actionable insights, using tools
+        such as Excel, SQL, Python, R, or BI platforms.
+      proficiency:
+        junior: >
+          Performs basic data analysis using spreadsheets and standard
+          reporting tools. Calculates key CX metrics such as CSAT, NPS,
+          and CES from raw data. Cleans and formats data for analysis,
+          identifies obvious trends and outliers, and creates simple
+          visualizations that communicate findings clearly.
+        mid: >
+          Conducts multi-source analysis combining survey data, ticket
+          data, and product analytics to build comprehensive customer
+          experience pictures. Writes SQL queries to extract data from
+          operational systems, performs segmented analysis, and identifies
+          statistically meaningful patterns that drive recommendations.
+        senior: >
+          Performs advanced analytical techniques including regression
+          analysis, cohort analysis, and predictive modeling to uncover
+          deep customer experience insights. Designs data pipelines that
+          automate recurring analyses and builds analytical frameworks
+          that the team uses for standardized CX measurement.
+        lead: >
+          Defines analytical standards and methodology for the CX function,
+          ensuring rigor and reproducibility in all analyses. Evaluates and
+          selects analytical tools and platforms. Mentors analysts on
+          advanced techniques and ensures the team's analytical capabilities
+          evolve with organizational needs and data complexity.
+        director: >
+          Sets the analytical vision for the customer insights organization,
+          connecting analytical investment to business impact. Drives
+          adoption of AI-powered analytics, real-time customer intelligence,
+          and predictive experience management. Ensures analytical rigor
+          underpins all customer experience decisions at the executive level.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI significantly accelerates data preparation, pattern detection,
+          and basic analysis tasks. However, framing the right analytical
+          questions, interpreting results within business context, and
+          ensuring analytical rigor in methodology and conclusions still
+          require human expertise.
+
+    - id: voice_of_customer
+      name: "Voice of Customer Programs"
+      category: strategic
+      description: >
+        Designing and managing programs that systematically capture,
+        analyze, and distribute customer feedback across the organization,
+        including feedback collection mechanisms, analysis frameworks,
+        insight distribution channels, and closed-loop processes that
+        ensure customer voice drives organizational action.
+      proficiency:
+        junior: >
+          Supports VoC program operations by monitoring feedback channels,
+          tagging and categorizing customer comments, and distributing
+          feedback summaries to internal stakeholders. Understands the
+          components of a VoC program and how feedback flows from
+          collection through analysis to action.
+        mid: >
+          Manages VoC program components including feedback collection
+          configuration, regular analysis cadences, and insight distribution.
+          Synthesizes feedback from multiple channels into coherent themes
+          and priorities. Tracks whether feedback insights result in
+          organizational action and reports on closed-loop rates.
+        senior: >
+          Designs and leads the VoC program end-to-end, including channel
+          strategy, analysis methodology, insight distribution framework,
+          and closed-loop accountability processes. Builds executive-level
+          VoC reporting that drives strategic decision-making and measures
+          program impact on customer outcomes.
+        lead: >
+          Defines the organizational VoC strategy, connecting feedback
+          programs to business outcomes and customer retention goals. Drives
+          adoption of real-time VoC capabilities and AI-powered feedback
+          analysis. Ensures VoC insights are embedded in product planning,
+          support strategy, and executive decision-making processes.
+        director: >
+          Positions the VoC program as a strategic organizational
+          capability at the executive level. Connects customer voice
+          insights to revenue, retention, and competitive positioning.
+          Ensures the VoC program evolves with customer expectations and
+          drives organizational transformation toward customer-centricity.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI automates feedback categorization, theme extraction, and
+          sentiment analysis at scale, making VoC programs dramatically
+          more efficient. However, designing programs that capture the
+          right signals, interpreting insights strategically, and driving
+          organizational action on findings remain human responsibilities.
+
+    - id: survey_design
+      name: "Survey Design & Methodology"
+      category: analytical
+      description: >
+        Designing effective customer surveys including question formulation,
+        scale selection, sampling strategy, distribution timing, and
+        response rate optimization, ensuring surveys produce valid,
+        actionable data while minimizing survey fatigue and bias.
+      proficiency:
+        junior: >
+          Creates simple surveys using templates and established question
+          banks. Understands basic survey principles including question
+          neutrality, response scale selection, and survey length
+          considerations. Distributes surveys through configured channels
+          and compiles response data for analysis.
+        mid: >
+          Designs custom surveys with well-crafted questions tailored to
+          specific research objectives. Selects appropriate question types,
+          scales, and branching logic. Manages sampling strategy, distribution
+          timing, and response rate optimization. Identifies and mitigates
+          common survey biases in question wording and structure.
+        senior: >
+          Designs sophisticated survey programs including relationship
+          surveys, transactional surveys, and pulse studies with rigorous
+          methodology. Applies advanced techniques such as conjoint analysis,
+          MaxDiff, and experimental design. Validates survey instruments
+          for reliability and validity.
+        lead: >
+          Defines the survey methodology standards for the CX function,
+          balancing research rigor with practical constraints. Designs the
+          overall customer listening program architecture, managing survey
+          frequency and coverage to maximize insight while minimizing
+          customer fatigue across all touchpoints.
+        director: >
+          Sets the organizational approach to customer listening, connecting
+          survey programs to broader VoC and research strategies. Ensures
+          survey methodology meets academic standards while remaining
+          practical. Drives adoption of modern listening approaches that
+          complement traditional surveys with behavioral and AI-derived
+          insights.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can suggest survey questions, optimize distribution timing,
+          and analyze open-ended responses automatically. However,
+          designing surveys that produce valid insights, avoiding
+          methodological biases, and selecting the right research approach
+          for each question require human research expertise.
+
+    - id: sentiment_analysis
+      name: "Sentiment Analysis"
+      category: analytical
+      description: >
+        Analyzing the emotional tone and sentiment expressed in customer
+        communications, reviews, social media mentions, and survey
+        responses, using both automated NLP tools and manual qualitative
+        analysis to understand customer feelings and identify experience
+        friction points.
+      proficiency:
+        junior: >
+          Uses configured sentiment analysis tools to generate sentiment
+          scores for customer interactions and feedback. Understands the
+          difference between positive, negative, and neutral sentiment
+          and reviews automated classifications for accuracy. Flags
+          sentiment trends that may indicate emerging customer issues.
+        mid: >
+          Configures and calibrates sentiment analysis tools for the
+          organization's specific domain and customer language. Combines
+          automated sentiment scoring with manual qualitative analysis
+          for nuanced understanding. Segments sentiment data by customer
+          type, product area, and channel to identify targeted insights.
+        senior: >
+          Designs the organization's sentiment analysis methodology,
+          including tool selection, model calibration, and validation
+          processes. Builds sentiment trending programs that detect shifts
+          in customer emotion over time. Integrates sentiment data with
+          other CX metrics to build comprehensive experience pictures.
+        lead: >
+          Defines the sentiment analytics strategy for the CX function,
+          evaluating AI-powered sentiment tools and determining the
+          appropriate balance between automated and human analysis. Drives
+          adoption of real-time sentiment monitoring and ensures sentiment
+          insights reach decision-makers in actionable formats.
+        director: >
+          Sets the organizational vision for emotion and sentiment
+          intelligence, connecting sentiment analytics to brand health,
+          customer retention, and product strategy. Ensures sentiment
+          analysis capabilities evolve with NLP technology advances and
+          expand across all customer touchpoints.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI-powered NLP excels at sentiment classification at scale and
+          handles the bulk of sentiment analysis work. However, calibrating
+          models for domain-specific language, interpreting sentiment
+          shifts within business context, and distinguishing meaningful
+          signal from noise require human analytical judgment.
+
+    - id: journey_mapping
+      name: "Customer Journey Mapping"
+      category: strategic
+      description: >
+        Visualizing and analyzing the end-to-end customer experience across
+        touchpoints, channels, and time, identifying moments of truth, pain
+        points, and opportunities for improvement, and using journey maps
+        to drive cross-functional alignment on customer experience
+        priorities.
+      proficiency:
+        junior: >
+          Contributes to journey mapping exercises by gathering data on
+          specific touchpoints and customer interactions. Documents customer
+          steps, channels, and emotions based on available data and
+          interviews. Creates basic journey map visualizations using
+          established templates and tools.
+        mid: >
+          Leads journey mapping projects for specific customer segments or
+          use cases, combining quantitative data with qualitative research
+          to create comprehensive journey maps. Identifies pain points and
+          moments of truth from the customer perspective and proposes
+          improvement priorities based on impact analysis.
+        senior: >
+          Designs and facilitates complex journey mapping programs spanning
+          the full customer lifecycle. Integrates behavioral data, feedback
+          data, and operational metrics into data-driven journey maps.
+          Identifies systemic journey friction patterns and drives cross-
+          functional improvement initiatives with measurable outcomes.
+        lead: >
+          Defines the journey mapping methodology and standards for the
+          organization. Builds journey mapping capabilities within the team
+          and establishes processes for keeping journey maps current as
+          products and experiences evolve. Connects journey insights to
+          strategic planning and investment prioritization.
+        director: >
+          Positions journey mapping as a strategic planning tool at the
+          executive level, connecting journey insights to product roadmap,
+          support model, and business strategy decisions. Ensures journey
+          understanding drives organizational transformation toward
+          seamless, customer-centric experiences across all touchpoints.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can assemble journey data from multiple sources and identify
+          common paths and drop-off points automatically. However,
+          interpreting journey patterns with empathy, facilitating cross-
+          functional alignment on priorities, and designing journey
+          improvements require human strategic and interpersonal skills.
+
+    - id: reporting_dashboards
+      name: "Reporting & Dashboard Design"
+      category: technical
+      description: >
+        Building reports, dashboards, and data visualizations that
+        communicate customer experience insights effectively to diverse
+        audiences, using tools such as Tableau, Looker, Power BI, or
+        Google Data Studio, and designing information hierarchies that
+        drive action rather than information overload.
+      proficiency:
+        junior: >
+          Creates basic reports and dashboards using established templates
+          and data sources. Understands fundamental visualization principles
+          including chart type selection, labeling, and color usage. Produces
+          regular CX metric reports and distributes them to stakeholders on
+          schedule.
+        mid: >
+          Builds custom dashboards that surface key CX insights for
+          specific audiences. Designs interactive visualizations with
+          appropriate drill-down capabilities and filters. Creates
+          executive summaries that distill complex data into clear
+          narratives and connects dashboard metrics to business context.
+        senior: >
+          Designs the CX reporting framework including metric hierarchies,
+          dashboard architecture, and distribution strategy for different
+          stakeholder levels. Builds self-service analytics capabilities
+          that enable stakeholders to explore CX data independently while
+          ensuring data accuracy and consistent definitions.
+        lead: >
+          Defines the CX reporting and visualization strategy for the
+          organization, selecting tools, establishing standards, and
+          building team capability. Creates executive-level reporting
+          frameworks that connect CX metrics to business KPIs and drive
+          investment decisions.
+        director: >
+          Sets the standard for customer intelligence communication at the
+          executive level, ensuring CX data reaches decision-makers in
+          formats that drive action. Drives investment in real-time
+          dashboards, AI-powered insight surfacing, and automated reporting
+          that scales with organizational complexity.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can auto-generate visualizations, suggest optimal chart types,
+          and build narrative summaries from data. However, designing
+          dashboards that drive action, selecting metrics that matter for
+          specific audiences, and crafting data narratives that influence
+          decisions require human communication and design judgment.
+
+    - id: statistical_methods
+      name: "Statistical Methods"
+      category: analytical
+      description: >
+        Applying statistical techniques to customer experience data
+        including hypothesis testing, regression analysis, correlation
+        analysis, significance testing, and sampling methodology, ensuring
+        that insights and recommendations are grounded in rigorous
+        quantitative evidence rather than anecdotal observation.
+      proficiency:
+        junior: >
+          Understands basic statistical concepts including mean, median,
+          standard deviation, and correlation. Calculates descriptive
+          statistics for CX datasets and understands when sample sizes
+          are insufficient for drawing conclusions. Applies basic
+          statistical functions in spreadsheets and reporting tools.
+        mid: >
+          Applies inferential statistics including hypothesis testing,
+          confidence intervals, and regression analysis to CX data.
+          Determines statistical significance of observed differences
+          and trends. Uses statistical software or programming languages
+          for analysis that exceeds spreadsheet capabilities.
+        senior: >
+          Applies advanced statistical techniques including multivariate
+          analysis, predictive modeling, and experimental design to complex
+          CX questions. Designs statistically rigorous measurement
+          frameworks and validates analytical approaches. Mentors the team
+          on statistical rigor and common methodological pitfalls.
+        lead: >
+          Defines statistical standards and methodology for the CX
+          analytics function, ensuring rigor across all analyses. Evaluates
+          when advanced techniques add value versus when simpler approaches
+          suffice. Builds statistical capabilities within the team through
+          training and method standardization.
+        director: >
+          Ensures the organization's customer experience decisions are
+          grounded in statistically sound evidence. Champions analytical
+          rigor at the executive level while translating statistical
+          findings into accessible language for non-technical stakeholders.
+          Drives adoption of advanced analytics and machine learning for
+          customer intelligence.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI automates many statistical procedures and can perform complex
+          analyses with minimal human guidance. However, selecting the
+          right statistical approach for each question, interpreting
+          results correctly, and ensuring methodological rigor in study
+          design still require human statistical expertise.
+
+    - id: root_cause_analysis_cx
+      name: "Root Cause Analysis"
+      category: analytical
+      description: >
+        Investigating the underlying causes of customer experience problems
+        by analyzing multiple data sources, interviewing stakeholders,
+        tracing issue origins across touchpoints, and distinguishing between
+        symptoms and root causes to ensure improvement efforts address
+        fundamental issues rather than surface manifestations.
+      proficiency:
+        junior: >
+          Supports root cause investigations by gathering data from
+          relevant sources and documenting findings. Applies basic
+          analytical frameworks like the Five Whys to understand issue
+          chains. Distinguishes between customer-reported symptoms and
+          underlying causes with guidance from senior analysts.
+        mid: >
+          Conducts independent root cause analysis for CX issues by
+          combining quantitative data analysis with qualitative
+          investigation. Traces customer pain points to their operational,
+          product, or process origins. Produces clear root cause
+          documentation with recommended corrective actions.
+        senior: >
+          Leads complex root cause investigations that span multiple
+          functions and data sources. Identifies systemic patterns across
+          individual root cause analyses that point to organizational or
+          product-level improvements. Drives cross-functional agreement on
+          findings and remediation priorities.
+        lead: >
+          Defines root cause analysis methodology and standards for the CX
+          function. Builds organizational capability for systematic issue
+          investigation and ensures root cause findings drive structural
+          improvements rather than surface-level fixes. Connects RCA
+          insights to strategic improvement roadmaps.
+        director: >
+          Ensures root cause analysis is embedded in the organization's
+          approach to customer experience management, driving a culture of
+          understanding causes rather than treating symptoms. Connects RCA
+          practices to continuous improvement strategy and executive
+          accountability for customer experience outcomes.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can correlate data across sources and suggest potential root
+          causes from pattern analysis. However, distinguishing true root
+          causes from correlated factors, investigating ambiguous multi-
+          cause problems, and driving organizational change based on
+          findings require human analytical and influence skills.
+
+    - id: presentation
+      name: "Presentation & Storytelling"
+      category: interpersonal
+      description: >
+        Presenting customer experience insights, research findings, and
+        recommendations to diverse audiences in compelling, actionable
+        formats, using data visualization, narrative structure, and
+        persuasion techniques to drive understanding and action.
+      proficiency:
+        junior: >
+          Presents basic analytical findings in structured formats using
+          slides and data visualizations. Organizes information logically
+          and speaks clearly about data and methodology. Responds to
+          questions about analysis with accurate, relevant detail and
+          practices delivery to improve presentation confidence.
+        mid: >
+          Creates compelling presentations that combine data, customer
+          stories, and clear recommendations. Structures narratives that
+          lead audiences from insight to action. Adapts presentation style
+          and depth for different audiences, from operational teams to
+          senior leadership, and handles challenging questions gracefully.
+        senior: >
+          Delivers high-impact presentations to senior leadership that
+          drive strategic decisions. Crafts data narratives that connect
+          customer experience insights to business outcomes. Uses
+          storytelling techniques to make complex analyses accessible
+          and memorable. Mentors analysts on presentation skills.
+        lead: >
+          Defines presentation standards and storytelling frameworks for
+          the CX team. Develops analysts' presentation capabilities through
+          coaching and review. Creates executive communication templates
+          that ensure consistent, high-quality delivery of customer
+          intelligence across the organization.
+        director: >
+          Presents customer intelligence at the board and executive level,
+          connecting CX insights to company strategy and financial
+          performance. Shapes the organizational narrative about customer
+          experience through compelling storytelling that drives investment
+          and cultural change toward customer-centricity.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can generate slide decks, suggest narrative structures, and
+          create data visualizations. However, reading audience reactions,
+          adapting delivery in real time, building credibility through
+          personal expertise, and persuading stakeholders to act on
+          findings remain distinctly human presentation skills.
+
+    - id: stakeholder_influence
+      name: "Stakeholder Influence"
+      category: interpersonal
+      description: >
+        Building relationships with and influencing decision-makers across
+        product, engineering, support, marketing, and executive leadership
+        to act on customer experience insights, driving organizational
+        change through credibility, persistence, and strategic communication
+        of customer voice data.
+      proficiency:
+        junior: >
+          Shares customer insights with immediate stakeholders in clear,
+          relevant formats. Builds working relationships with counterparts
+          in product and support teams. Responds to insight requests
+          promptly and accurately, establishing credibility as a reliable
+          source of customer data.
+        mid: >
+          Influences product and support decisions through well-supported
+          recommendations backed by customer data. Builds relationships
+          with mid-level stakeholders across functions. Presents insights
+          proactively rather than only on request and follows up to ensure
+          recommendations are considered in decision-making.
+        senior: >
+          Influences strategic decisions by building trusted relationships
+          with senior stakeholders across the organization. Connects
+          customer insights to stakeholders' specific priorities and goals.
+          Navigates organizational dynamics to ensure customer voice is
+          heard in forums where decisions are made, even without formal
+          authority.
+        lead: >
+          Defines the stakeholder engagement strategy for the CX function,
+          ensuring insights reach the right people in the right format at
+          the right time. Builds executive relationships that position the
+          CX team as a strategic partner. Drives adoption of customer-
+          centric decision-making processes across the organization.
+        director: >
+          Operates as a trusted advisor to the executive team on all
+          customer experience matters. Influences company strategy through
+          compelling customer intelligence and builds organizational
+          commitment to customer-centricity at the highest level. Shapes
+          the company culture around customer voice through persistent,
+          credible advocacy.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          AI can prepare stakeholder-ready reports and identify the most
+          impactful findings to share. However, building trust, navigating
+          organizational politics, adapting influence strategies to
+          individual stakeholders, and driving lasting organizational
+          change are fundamentally human relationship skills.
+
+    - id: ab_testing
+      name: "A/B Testing & Experimentation"
+      category: analytical
+      description: >
+        Designing, executing, and analyzing controlled experiments to test
+        hypotheses about customer experience improvements, including A/B
+        tests, multivariate tests, and pilot programs, ensuring
+        statistically valid results that de-risk experience changes before
+        broad rollout.
+      proficiency:
+        junior: >
+          Supports experimentation by tracking test results and compiling
+          data for analysis. Understands basic A/B testing concepts
+          including control groups, treatment groups, and sample size
+          requirements. Monitors active experiments for data quality
+          issues and reports on test progress.
+        mid: >
+          Designs and executes A/B tests for CX improvements including
+          hypothesis formulation, sample size calculation, randomization,
+          and statistical analysis of results. Manages test lifecycles from
+          design through execution to analysis and recommendation.
+          Identifies confounding variables and designs tests to control for
+          them.
+        senior: >
+          Leads complex experimentation programs including multivariate
+          tests and sequential experiments. Designs experimentation
+          frameworks that enable teams to test CX hypotheses rigorously.
+          Establishes statistical standards for experiment analysis and
+          mentors the team on experimental design methodology.
+        lead: >
+          Defines the experimentation strategy for the CX function,
+          building organizational capability for data-driven decision-
+          making through controlled tests. Evaluates experimentation
+          platforms and establishes governance for test prioritization,
+          execution, and knowledge sharing across teams.
+        director: >
+          Champions an experimentation culture at the executive level,
+          positioning rigorous testing as a strategic capability for
+          customer experience optimization. Drives investment in
+          experimentation infrastructure and ensures test results influence
+          strategic decisions about product, support, and customer
+          experience investment.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can automate experiment analysis, detect significance faster,
+          and suggest test designs based on historical patterns. However,
+          formulating meaningful hypotheses, designing experiments that
+          answer the right questions, and interpreting results within
+          business context require human analytical and strategic judgment.
+
+    - id: tool_proficiency_cx
+      name: "CX Analytics Tool Proficiency"
+      category: technical
+      description: >
+        Proficiency in customer experience analytics platforms such as
+        Qualtrics, Medallia, Tableau, Power BI, Looker, Gainsight, and
+        related tools for survey management, feedback analysis, data
+        visualization, and customer intelligence, leveraging platform
+        capabilities to maximize analytical efficiency and insight quality.
+      proficiency:
+        junior: >
+          Uses CX analytics platforms to run standard reports, view
+          dashboards, and extract basic data. Navigates survey tools to
+          create simple surveys and compile results. Understands the core
+          capabilities of the team's primary tools and completes platform
+          training certifications.
+        mid: >
+          Uses CX tools at an intermediate level, building custom reports,
+          configuring survey logic, and creating dashboards. Integrates
+          data across platforms for comprehensive analysis. Leverages
+          advanced platform features such as text analytics, automated
+          workflows, and API connections to improve analytical efficiency.
+        senior: >
+          Operates as a power user across the CX tool stack, configuring
+          advanced analytics, building complex integrations, and optimizing
+          platform usage for the team. Evaluates new tools and features,
+          provides training to colleagues, and drives adoption of
+          capabilities that improve insight quality and delivery speed.
+        lead: >
+          Defines the CX analytics technology strategy, selecting and
+          integrating platforms that support the team's analytical needs.
+          Manages vendor relationships and contract negotiations for CX
+          tools. Drives platform consolidation and optimization to maximize
+          return on technology investment.
+        director: >
+          Sets the organizational vision for CX analytics technology,
+          ensuring the tool stack supports current needs while evolving
+          with AI capabilities and data complexity. Manages the CX
+          technology budget and drives investment decisions that enable
+          the team to deliver increasingly sophisticated customer
+          intelligence at scale.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI features within CX platforms are automating many analysis
+          tasks and reducing the need for manual tool manipulation.
+          However, selecting the right tools, configuring complex
+          analytics, integrating across platforms, and designing workflows
+          that maximize insight quality still require human technical
+          expertise.

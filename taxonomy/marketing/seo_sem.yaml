@@ -1,0 +1,666 @@
+role:
+  id: seo_sem
+  function: marketing
+  name: "SEO / SEM Specialist"
+  also_known_as:
+    - "Search Engine Optimization Specialist"
+    - "Search Marketing Manager"
+    - "SEO Analyst"
+    - "Paid Search Manager"
+    - "SEM Specialist"
+  description: >
+    Drives organic and paid search visibility by optimizing website content,
+    technical infrastructure, and link authority for search engines while
+    managing paid search campaigns to capture high-intent demand. SEO/SEM
+    specialists combine technical website knowledge with keyword strategy,
+    content optimization, and data analysis to increase qualified traffic,
+    improve rankings, and maximize return on search investment.
+
+  ai_impact:
+    level: high
+    summary: >
+      AI is reshaping search marketing on both the organic and paid sides.
+      AI-generated content, Google's Search Generative Experience (SGE),
+      and automated bidding have changed the tactical landscape significantly.
+      However, search strategy, technical SEO architecture, content
+      differentiation, and adapting to algorithm changes remain deeply
+      expert-driven. The specialists who thrive will leverage AI tools
+      while focusing on strategic and technical judgment.
+    automating:
+      - "Generating keyword lists and search volume estimates from seed topics"
+      - "Writing initial meta descriptions and title tag variations"
+      - "Automating bid adjustments and keyword-level optimizations in paid search"
+      - "Crawling sites for technical SEO issues and generating fix recommendations"
+      - "Producing templated SEO performance reports"
+    augmenting:
+      - "Analyzing SERP features and competitive positioning to refine strategy"
+      - "Identifying content gaps and topical clusters for editorial planning"
+      - "Diagnosing complex technical SEO issues like crawl budget and rendering"
+      - "Optimizing landing pages for quality score and conversion rate"
+      - "Building and analyzing backlink profiles for authority development"
+    preserving:
+      - "Defining search strategy that aligns with business objectives and user intent"
+      - "Navigating algorithm updates and adapting SEO programs accordingly"
+      - "Making architectural decisions about site structure, URL taxonomy, and internationalization"
+      - "Building relationships for high-quality link acquisition and digital PR"
+      - "Balancing organic and paid search investment across the customer journey"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Google Search Central Documentation"
+        url: "https://developers.google.com/search/docs"
+      - name: "Moz Beginner's Guide to SEO"
+        url: "https://moz.com/beginners-guide-to-seo"
+      - name: "Search Engine Land – Industry News & Analysis"
+        url: "https://searchengineland.com/"
+
+  levels:
+    - id: junior
+      name: "Junior (L1-L2)"
+      years_experience: "0-2"
+      summary: >
+        Performs keyword research, writes basic meta tags, and monitors
+        search rankings under guidance. Assists with technical audits,
+        implements on-page optimizations, and supports paid search
+        campaigns by managing keyword lists and ad copy variants.
+    - id: mid
+      name: "Mid-Level (L3)"
+      years_experience: "2-4"
+      summary: >
+        Independently manages SEO programs for a site or product area,
+        executing technical audits, content optimization, and link
+        building initiatives. Runs paid search campaigns with budget
+        responsibility and uses analytics to identify and act on
+        search performance trends.
+    - id: senior
+      name: "Senior (L4)"
+      years_experience: "4-8"
+      summary: >
+        Develops comprehensive search strategies spanning organic and
+        paid channels. Leads technical SEO initiatives at the
+        infrastructure level, defines content SEO frameworks, and
+        manages significant paid search budgets. Mentors junior
+        specialists and influences product and engineering teams
+        on search-critical decisions.
+    - id: staff
+      name: "Staff (L5)"
+      years_experience: "8-12"
+      summary: >
+        Sets search marketing strategy across the organization,
+        defining the operating model for SEO and SEM that spans
+        multiple products, markets, or regions. Evaluates search
+        technology investments, establishes measurement frameworks,
+        and leads cross-functional initiatives with engineering
+        and content teams.
+    - id: principal
+      name: "Principal (L6+)"
+      years_experience: "12+"
+      summary: >
+        Shapes the company's long-term search and discovery strategy,
+        anticipating shifts in search behavior, AI-driven search
+        experiences, and zero-click trends. Advises executive
+        leadership on search investment and positions the organization
+        for sustainable organic growth in evolving search ecosystems.
+
+  skills:
+    - id: keyword_research
+      name: "Keyword Research"
+      category: analytical
+      description: >
+        Identifying and prioritizing search queries that represent
+        business-relevant user intent, using tools like Ahrefs,
+        SEMrush, and Google Keyword Planner to map keywords to
+        content opportunities, assess competition, and build
+        comprehensive keyword strategies.
+      proficiency:
+        junior: >
+          Uses keyword research tools to generate lists from seed terms,
+          gathers search volume and difficulty data, and organizes
+          keywords into basic thematic groups for review by senior
+          team members.
+        mid: >
+          Conducts thorough keyword research that maps queries to user
+          intent stages (informational, navigational, transactional).
+          Builds keyword universes, identifies long-tail opportunities,
+          and prioritizes targets based on volume, difficulty, and
+          business value.
+        senior: >
+          Develops keyword strategy frameworks that align with business
+          objectives, content capabilities, and competitive positioning.
+          Identifies emerging search trends, maps keyword clusters to
+          content architectures, and defines the prioritization model
+          the team uses.
+        staff: >
+          Defines the organization's keyword intelligence infrastructure
+          including tool selection, data pipelines, and integration with
+          content planning systems. Establishes keyword governance across
+          teams to prevent cannibalization and ensure strategic alignment.
+        principal: >
+          Shapes the company's search demand strategy, evaluating how
+          keyword research evolves with AI-driven search, voice search,
+          and multimodal queries. Drives the integration of keyword
+          intelligence into product strategy and content investment
+          decisions at the executive level.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI tools efficiently generate keyword suggestions, cluster
+          related terms, and estimate search volumes. However, mapping
+          keywords to business intent, prioritizing in competitive
+          contexts, and identifying emerging opportunities before
+          they appear in tools require strategic human judgment.
+
+    - id: technical_seo
+      name: "Technical SEO"
+      category: technical
+      description: >
+        Optimizing website infrastructure for search engine crawling,
+        indexing, and rendering, including site architecture, XML
+        sitemaps, robots.txt, structured data (Schema.org), page
+        speed, JavaScript rendering, and Core Web Vitals.
+      proficiency:
+        junior: >
+          Runs site crawls using tools like Screaming Frog and
+          identifies basic issues (broken links, missing meta tags,
+          duplicate content). Implements structured data from templates
+          and monitors crawl errors in Google Search Console.
+        mid: >
+          Conducts comprehensive technical audits covering crawl
+          efficiency, indexation, rendering, and site speed. Implements
+          structured data, manages canonical tags, configures hreflang
+          for internationalization, and works with engineering teams
+          to resolve technical SEO issues.
+        senior: >
+          Designs technical SEO architectures for large-scale sites
+          including URL structures, faceted navigation handling, crawl
+          budget optimization, and JavaScript rendering strategies.
+          Defines technical SEO standards for the engineering team
+          and leads migration planning for domain or platform changes.
+        staff: >
+          Establishes the organization's technical SEO infrastructure
+          including automated monitoring, CI/CD integration for SEO
+          checks, and architectural standards for new product surfaces.
+          Drives cross-team adoption of structured data strategies and
+          Core Web Vitals improvements.
+        principal: >
+          Shapes the company's technical search strategy, evaluating
+          the impact of emerging web standards, search engine rendering
+          capabilities, and new indexing paradigms on the organization's
+          technical SEO approach. Influences platform architecture
+          decisions with multi-year search visibility implications.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI crawl tools can identify technical issues and suggest fixes
+          efficiently. However, designing site architectures for search
+          engines, making rendering strategy decisions for JavaScript
+          frameworks, and planning complex migrations require deep
+          technical expertise and contextual judgment.
+
+    - id: on_page_optimization
+      name: "On-Page Optimization"
+      category: technical
+      description: >
+        Optimizing individual web pages for search relevance through
+        title tags, meta descriptions, header structure, content
+        quality, internal linking, image optimization, and user
+        experience signals that improve rankings and click-through
+        rates from search results.
+      proficiency:
+        junior: >
+          Writes and optimizes title tags and meta descriptions following
+          templates and keyword targets. Ensures proper header hierarchy,
+          adds alt text to images, and implements basic internal linking
+          as directed.
+        mid: >
+          Optimizes pages holistically considering keyword targeting,
+          content depth, user intent alignment, and SERP feature
+          opportunities. Implements internal linking strategies, optimizes
+          content structure for featured snippets, and uses A/B testing
+          to improve CTR from search results.
+        senior: >
+          Develops on-page optimization frameworks and templates that
+          scale across large content libraries. Defines content quality
+          standards, establishes review processes for SEO content, and
+          creates optimization playbooks for different page types
+          (product, category, editorial, landing).
+        staff: >
+          Sets organizational standards for on-page SEO across all
+          content types and platforms, ensuring consistency while allowing
+          for page-type-specific optimization. Drives integration of
+          on-page optimization into content management workflows and
+          editorial processes.
+        principal: >
+          Shapes the company's content optimization philosophy, balancing
+          search optimization with user experience and brand quality.
+          Evaluates how AI-generated search results and answer engines
+          change the value of on-page optimization and adapts the
+          organization's approach accordingly.
+      ai_impact:
+        rating: 0.75
+        detail: >
+          AI tools generate optimized meta tags, suggest content
+          improvements, and identify on-page issues at scale. However,
+          balancing search optimization with brand voice, designing
+          optimization frameworks for diverse content types, and
+          strategic decisions about content differentiation remain
+          human-driven.
+
+    - id: link_building
+      name: "Link Building & Digital PR"
+      category: domain
+      description: >
+        Acquiring high-quality backlinks through outreach, content
+        marketing, digital PR, broken link building, and strategic
+        partnerships to build domain authority and improve organic
+        search rankings.
+      proficiency:
+        junior: >
+          Researches link prospects, compiles outreach lists, and sends
+          templated outreach emails. Monitors backlink profiles using
+          tools like Ahrefs and flags toxic or lost links for review.
+        mid: >
+          Executes link building campaigns independently, crafting
+          personalized outreach, creating linkable assets, and building
+          relationships with publishers and bloggers. Analyzes competitor
+          backlink profiles to identify opportunity gaps.
+        senior: >
+          Develops the link building strategy including campaign types
+          (digital PR, content marketing, resource link building),
+          prospecting criteria, and quality standards. Builds
+          relationships with journalists and industry publications
+          for sustained link acquisition.
+        staff: >
+          Defines the organization's off-site authority strategy
+          spanning link building, digital PR, and brand mentions.
+          Establishes scalable outreach processes, evaluates link
+          building tools and agencies, and sets quality guidelines
+          that protect against algorithmic penalties.
+        principal: >
+          Shapes the company's authority and reputation strategy in
+          the context of evolving link signals and search engine
+          evaluation of E-E-A-T (Experience, Expertise,
+          Authoritativeness, Trustworthiness). Positions the
+          organization's content and PR strategy for long-term
+          authority building.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can help identify link prospects, draft outreach emails,
+          and analyze backlink profiles. However, building genuine
+          relationships with publishers, creating truly linkable
+          content, and executing digital PR campaigns require human
+          creativity, relationship skills, and editorial judgment.
+
+    - id: paid_search
+      name: "Paid Search (PPC)"
+      category: technical
+      description: >
+        Managing pay-per-click campaigns on search engines (Google Ads,
+        Microsoft Ads) including account structure, keyword targeting,
+        ad copy, bidding strategies, quality score optimization,
+        audience layering, and conversion tracking.
+      proficiency:
+        junior: >
+          Sets up campaigns and ad groups following established account
+          structures. Writes ad copy variants, adds negative keywords,
+          and monitors quality scores and cost-per-click metrics under
+          guidance.
+        mid: >
+          Manages paid search accounts independently, optimizing bids,
+          testing ad copy and extensions, and managing keyword match
+          types. Implements conversion tracking, builds remarketing
+          lists, and manages budgets to meet CPA or ROAS targets.
+        senior: >
+          Designs paid search account architecture for complex businesses
+          including campaign segmentation, bidding strategy selection
+          (manual vs. smart bidding), and audience layering. Develops
+          testing frameworks for ad copy, landing pages, and bidding
+          strategies, and manages significant budgets.
+        staff: >
+          Defines the organization's paid search strategy across products
+          and markets, including platform selection, automation rules,
+          and measurement standards. Evaluates new ad formats and
+          features, manages agency relationships, and drives
+          cross-channel integration.
+        principal: >
+          Sets the company's search advertising investment philosophy,
+          balancing automated bidding with strategic oversight. Navigates
+          the evolution of AI-driven search ads (Performance Max,
+          broad match expansion) and positions the organization for
+          sustainable returns from paid search.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          Google's Smart Bidding and automated campaign types increasingly
+          handle tactical PPC optimization. AI writes ad copy and manages
+          keyword expansion. However, account architecture decisions,
+          strategic bidding framework selection, and budget allocation
+          across campaigns require experienced human judgment.
+
+    - id: analytics_ga4
+      name: "Analytics (GA4 & Search Console)"
+      category: analytical
+      description: >
+        Using Google Analytics 4, Google Search Console, and
+        complementary analytics platforms to measure search performance,
+        track user behavior, diagnose ranking changes, and generate
+        insights that inform SEO and SEM strategy.
+      proficiency:
+        junior: >
+          Navigates GA4 and Search Console to pull standard reports on
+          organic traffic, queries, and click-through rates. Sets up
+          basic custom reports and monitors key metrics against
+          established benchmarks.
+        mid: >
+          Builds custom GA4 explorations and Search Console analyses to
+          diagnose traffic trends, identify ranking opportunities, and
+          measure content performance. Configures events and conversions
+          for search-specific goals and integrates search data into
+          marketing dashboards.
+        senior: >
+          Designs the search analytics framework including KPI
+          definitions, reporting cadences, and attribution models for
+          organic and paid search. Creates executive-level dashboards
+          connecting search performance to business outcomes and leads
+          data-driven strategy reviews.
+        staff: >
+          Defines the organization's search measurement infrastructure
+          including analytics platform configuration, data warehouse
+          integration, and automated alerting systems. Establishes
+          standards for search data governance and self-serve analytics
+          across teams.
+        principal: >
+          Shapes the company's search intelligence strategy, evaluating
+          how changes in analytics platforms (cookieless measurement,
+          consent frameworks) and AI-driven search impact measurement
+          accuracy. Drives innovation in search attribution and
+          incrementality testing.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI tools automate report generation, anomaly detection, and
+          basic trend analysis from search data. However, interpreting
+          ranking fluctuations in the context of algorithm updates,
+          designing measurement frameworks, and translating search
+          data into strategy require expert human analysis.
+
+    - id: content_seo
+      name: "Content SEO"
+      category: domain
+      description: >
+        Creating and optimizing content specifically for search
+        visibility, including topic cluster strategies, content gap
+        analysis, E-E-A-T optimization, content refreshing, and
+        alignment of editorial content with search intent and keyword
+        targets.
+      proficiency:
+        junior: >
+          Writes SEO-optimized content following keyword briefs and
+          templates. Ensures target keywords appear in appropriate
+          locations (title, headers, body) and follows on-page
+          optimization guidelines provided by senior team members.
+        mid: >
+          Creates comprehensive content briefs based on keyword research
+          and SERP analysis. Plans content that matches user intent,
+          implements topic cluster strategies, and identifies content
+          refresh opportunities based on performance data.
+        senior: >
+          Develops the content SEO strategy including topic cluster
+          architecture, content hub planning, and editorial calendar
+          integration. Defines content quality standards aligned with
+          E-E-A-T principles and creates scalable briefing processes
+          for writers and editors.
+        staff: >
+          Defines the organization's content-for-search strategy
+          across products and markets, integrating content SEO with
+          brand content, product marketing, and technical documentation.
+          Evaluates AI content tools and establishes quality frameworks
+          for AI-assisted content production.
+        principal: >
+          Shapes the company's content and search strategy in the
+          context of AI-generated search results, answer engines, and
+          evolving content quality signals. Positions the organization
+          to maintain content authority as search experiences
+          fundamentally transform.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI tools generate SEO content, create content briefs, and
+          identify optimization opportunities at scale. However,
+          developing content strategies that build genuine topical
+          authority, creating differentiated content that earns links
+          and engagement, and navigating E-E-A-T requirements demand
+          human expertise and editorial judgment.
+
+    - id: local_seo
+      name: "Local SEO"
+      category: technical
+      description: >
+        Optimizing for location-based search visibility through
+        Google Business Profile management, local citation building,
+        review management, local link building, and location-specific
+        content optimization for businesses with physical presences.
+      proficiency:
+        junior: >
+          Manages Google Business Profile listings including hours,
+          descriptions, and photos. Monitors reviews and responds
+          following templates. Submits business information to
+          local directories and citation sources.
+        mid: >
+          Optimizes Google Business Profiles for multiple locations,
+          manages citation consistency across directories, and
+          implements local schema markup. Develops review generation
+          strategies and analyzes local search performance.
+        senior: >
+          Designs local SEO strategies for multi-location businesses
+          including location page architecture, local content planning,
+          and review management programs. Establishes local citation
+          standards and builds relationships with local media for
+          link acquisition.
+        staff: >
+          Defines the organization's local search strategy at scale,
+          including technology for managing hundreds of locations,
+          integration with store locators and location data providers,
+          and local advertising coordination.
+        principal: >
+          Shapes the company's local presence strategy, evaluating
+          how AI-powered local search, Maps evolution, and local
+          advertising platforms change the value of local SEO
+          investment. Drives integration of local search with broader
+          omnichannel retail and service delivery strategies.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI assists with citation management, review response
+          generation, and local keyword research. However, developing
+          local search strategies for multi-location businesses,
+          managing reputation at scale, and integrating local SEO
+          with broader business operations require human strategic
+          thinking.
+
+    - id: competitive_analysis
+      name: "Competitive Analysis"
+      category: analytical
+      description: >
+        Analyzing competitor search strategies including keyword
+        portfolios, content approaches, backlink profiles, paid
+        search tactics, and SERP positioning to identify
+        opportunities, threats, and strategic gaps.
+      proficiency:
+        junior: >
+          Uses SEO tools to pull competitor data on rankings, keywords,
+          and backlinks. Compiles competitive comparison reports and
+          identifies basic areas where competitors rank and the
+          company does not.
+        mid: >
+          Conducts thorough competitive analyses that uncover content
+          gaps, keyword opportunities, and backlink strategies.
+          Benchmarks organic and paid search performance against key
+          competitors and translates findings into actionable
+          recommendations.
+        senior: >
+          Develops competitive intelligence frameworks that
+          systematically track and analyze competitor search strategies.
+          Identifies competitive moats and vulnerabilities, informs
+          strategic planning with competitive data, and defines the
+          competitive monitoring cadence for the team.
+        staff: >
+          Establishes the organization's competitive search intelligence
+          program including tool infrastructure, analysis methodology,
+          and integration with broader market intelligence. Uses
+          competitive insights to influence product and content
+          investment priorities.
+        principal: >
+          Shapes the company's competitive positioning strategy in
+          search, evaluating how AI, new entrants, and platform shifts
+          change the competitive landscape. Drives strategic decisions
+          about where to compete and where to differentiate based on
+          long-term search market analysis.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI tools efficiently gather competitive data and identify
+          gaps in keyword coverage and content topics. However,
+          interpreting competitive positions in strategic context,
+          identifying defensible advantages, and translating competitive
+          analysis into differentiated strategies require human
+          business judgment.
+
+    - id: serp_analysis
+      name: "SERP Analysis"
+      category: analytical
+      description: >
+        Analyzing search engine results pages to understand ranking
+        factors, SERP features (featured snippets, knowledge panels,
+        People Also Ask, video carousels), user intent signals, and
+        opportunities to capture visibility through different result
+        types.
+      proficiency:
+        junior: >
+          Reviews SERPs for target keywords and documents the types
+          of results displayed (organic, ads, snippets, images).
+          Identifies which competitors appear and notes SERP features
+          relevant to the company's content.
+        mid: >
+          Conducts systematic SERP analysis to identify intent patterns,
+          feature opportunities, and content format requirements.
+          Maps SERP features to content optimization strategies and
+          tracks SERP feature ownership over time.
+        senior: >
+          Develops SERP analysis methodologies that inform content
+          strategy, technical optimization, and competitive positioning.
+          Identifies emerging SERP features and adapts the SEO program
+          to capture new visibility opportunities ahead of competitors.
+        staff: >
+          Defines the organization's SERP monitoring and analysis
+          infrastructure, including automated SERP tracking, feature
+          detection, and competitive alerting. Uses SERP intelligence
+          to inform cross-team content and product strategies.
+        principal: >
+          Shapes the company's search visibility strategy in the
+          context of rapidly evolving SERPs, AI-generated results,
+          and zero-click search trends. Advises executive leadership
+          on how SERP evolution impacts the company's organic
+          acquisition strategy.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI tools can track SERP features and detect changes
+          automatically. However, interpreting what SERP changes mean
+          for strategy, identifying emerging feature opportunities,
+          and adapting content and technical approaches to SERP
+          evolution require expert human analysis and strategic
+          thinking.
+
+    - id: conversion_optimization
+      name: "Conversion Optimization"
+      category: analytical
+      description: >
+        Optimizing the conversion path from search click to desired
+        action through landing page optimization, A/B testing, user
+        experience improvements, and alignment of search intent with
+        page content and calls to action.
+      proficiency:
+        junior: >
+          Implements landing page changes based on optimization
+          recommendations. Sets up basic A/B tests, monitors conversion
+          metrics, and documents test results for the team.
+        mid: >
+          Designs and runs conversion optimization experiments on
+          landing pages, testing headlines, CTAs, page layouts, and
+          content. Analyzes test results with statistical rigor and
+          implements winning variants.
+        senior: >
+          Develops the conversion optimization strategy for search
+          traffic, including testing frameworks, hypothesis
+          prioritization, and landing page architecture. Aligns
+          landing page experiences with search intent and quality
+          score requirements across organic and paid channels.
+        staff: >
+          Defines the organization's conversion optimization program
+          across search channels, including testing infrastructure,
+          governance, and knowledge-sharing processes. Drives
+          integration of CRO with personalization platforms and
+          experimentation tools.
+        principal: >
+          Shapes the company's conversion optimization philosophy,
+          balancing testing velocity with user experience consistency.
+          Drives innovation in AI-powered personalization for search
+          traffic and positions the organization for evolving
+          landing page standards and Core Web Vitals requirements.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI tools generate landing page variants, suggest test
+          hypotheses, and analyze test results. However, understanding
+          the nuances of search intent, designing page experiences
+          that satisfy both users and quality score algorithms, and
+          prioritizing optimization efforts require human insight.
+
+    - id: programmatic_seo
+      name: "Programmatic SEO"
+      category: technical
+      description: >
+        Building scalable, data-driven page generation systems that
+        create large volumes of search-optimized pages from structured
+        data, templates, and content modules to capture long-tail
+        search traffic at scale.
+      proficiency:
+        junior: >
+          Assists with data preparation and template population for
+          programmatic SEO pages. Reviews generated pages for quality
+          issues and monitors indexation rates under guidance.
+        mid: >
+          Builds programmatic page templates that combine structured
+          data with content modules, implements internal linking logic,
+          and monitors page quality and performance at scale.
+          Troubleshoots indexation and crawl issues for large page
+          sets.
+        senior: >
+          Designs programmatic SEO architectures including data models,
+          template systems, quality controls, and scaling strategies.
+          Defines the content strategy for programmatic pages, ensuring
+          uniqueness and value at each URL, and manages the balance
+          between page volume and quality.
+        staff: >
+          Defines the organization's programmatic SEO strategy
+          including technology platforms, data pipelines, quality
+          frameworks, and integration with product engineering.
+          Evaluates the role of AI in content generation for
+          programmatic pages and establishes governance guardrails.
+        principal: >
+          Shapes the company's approach to scalable search content
+          in the context of Google's evolving quality standards,
+          AI content detection, and the shift toward helpful content.
+          Positions programmatic SEO as a sustainable competitive
+          advantage rather than a short-term traffic tactic.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI dramatically accelerates content generation for
+          programmatic pages and can help design template variations.
+          However, architecting programmatic systems that produce
+          genuinely useful pages, avoiding quality pitfalls at scale,
+          and navigating search engine policies on auto-generated
+          content require experienced human strategy and oversight.

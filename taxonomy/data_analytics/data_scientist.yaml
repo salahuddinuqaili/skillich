@@ -1,0 +1,484 @@
+role:
+  id: data_scientist
+  function: data_analytics
+  name: "Data Scientist"
+  also_known_as:
+    - "Machine Learning Scientist"
+    - "Applied Scientist"
+    - "Research Scientist"
+    - "ML Engineer"
+    - "Quantitative Researcher"
+  description: >
+    Applies advanced statistical methods, machine learning algorithms, and scientific
+    rigor to extract deep insights and build predictive models from complex datasets.
+    Combines programming expertise with mathematical foundations and domain knowledge
+    to solve ambiguous business problems that require experimentation and research.
+  ai_impact:
+    level: moderate
+    summary: >
+      AI is both the tool and the domain for data scientists, creating a unique dynamic
+      where the profession evolves alongside its primary subject matter. AutoML and
+      foundation models are automating routine modeling tasks, but the need to design
+      novel approaches, validate model behavior, ensure ethical deployment, and translate
+      complex results into business decisions keeps human data scientists essential. The
+      role is shifting toward higher-level orchestration of AI systems.
+    automating:
+      - "Hyperparameter tuning and model selection"
+      - "Feature engineering for tabular data"
+      - "Standard predictive modeling tasks"
+      - "Code generation for common ML patterns"
+      - "Routine data exploration and profiling"
+    augmenting:
+      - "Rapid prototyping with foundation models and transfer learning"
+      - "Automated experiment tracking and reproducibility"
+      - "AI-assisted literature review and method discovery"
+      - "Synthetic data generation for model training"
+    preserving:
+      - "Problem formulation and research question design"
+      - "Model interpretability and ethical AI assessment"
+      - "Novel algorithm development and research"
+      - "Cross-functional collaboration and stakeholder education"
+      - "Strategic decisions about what to model and why"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Stanford HAI - AI Index Report 2024"
+        url: "https://aiindex.stanford.edu/report/"
+      - name: "Nature - The future of data science"
+        url: "https://www.nature.com/articles/d41586-023-00316-4"
+
+  levels:
+    - id: junior
+      name: "Junior Data Scientist"
+      years_experience: "0-2"
+      summary: >
+        Implements standard machine learning models under guidance, cleans and prepares
+        datasets, and supports senior scientists with experimentation and analysis using
+        established frameworks and methods.
+    - id: mid
+      name: "Data Scientist"
+      years_experience: "2-5"
+      summary: >
+        Independently designs and executes modeling projects from problem definition
+        through deployment. Selects appropriate algorithms, validates results rigorously,
+        and communicates findings to technical and non-technical audiences.
+    - id: senior
+      name: "Senior Data Scientist"
+      years_experience: "5-8"
+      summary: >
+        Leads complex data science projects involving novel methods and ambiguous problem
+        spaces. Mentors junior scientists, establishes technical standards, and drives
+        research direction within the team.
+    - id: staff
+      name: "Staff Data Scientist"
+      years_experience: "8-12"
+      summary: >
+        Drives the technical vision for data science across the organization, architects
+        ML platforms and frameworks, leads cross-team research initiatives, and influences
+        product strategy with advanced analytical capabilities.
+    - id: principal
+      name: "Principal Data Scientist"
+      years_experience: "12+"
+      summary: >
+        Sets the strategic direction for data science and machine learning across the
+        enterprise. Establishes research agendas, represents the organization in the
+        scientific community, and advises executive leadership on AI strategy.
+
+  skills:
+    - id: machine_learning
+      name: "Machine Learning"
+      category: technical
+      description: >
+        Building, training, evaluating, and deploying machine learning models including
+        supervised and unsupervised learning algorithms for classification, regression,
+        clustering, and recommendation tasks.
+      proficiency:
+        junior: >
+          Implements standard ML algorithms using scikit-learn or similar frameworks.
+          Understands train-test splits, cross-validation, and common evaluation metrics
+          like accuracy, precision, and recall.
+        mid: >
+          Selects and tunes appropriate algorithms for different problem types. Handles
+          class imbalance, feature selection, and model comparison. Implements ensemble
+          methods and understands bias-variance trade-offs.
+        senior: >
+          Designs end-to-end ML systems for complex problems. Develops custom loss functions,
+          implements advanced ensemble strategies, and establishes model evaluation frameworks
+          that account for business impact.
+        staff: >
+          Architects the organization's ML infrastructure and methodology standards. Leads
+          research into novel modeling approaches and guides teams on when and how to apply
+          different ML paradigms.
+        principal: >
+          Sets the strategic direction for machine learning across the enterprise. Evaluates
+          emerging ML paradigms, establishes research partnerships, and advises leadership
+          on ML capabilities and limitations.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AutoML tools can automate model selection and tuning for standard tasks, but designing
+          ML systems for novel problems, ensuring robustness, and making architectural
+          decisions requires deep human expertise.
+
+    - id: statistical_modeling
+      name: "Statistical Modeling"
+      category: analytical
+      description: >
+        Applying formal statistical methods including regression analysis, Bayesian inference,
+        time series modeling, and survival analysis to draw rigorous conclusions from data.
+      proficiency:
+        junior: >
+          Fits basic linear and logistic regression models. Understands model assumptions,
+          interprets coefficients, and performs residual analysis with guidance.
+        mid: >
+          Applies a range of statistical models including generalized linear models, mixed
+          effects models, and time series methods. Validates assumptions rigorously and
+          selects appropriate techniques.
+        senior: >
+          Develops custom statistical models for complex problems. Applies Bayesian methods,
+          hierarchical models, and advanced time series techniques. Mentors others on
+          statistical rigor and methodology.
+        staff: >
+          Defines statistical methodology standards for the organization. Reviews modeling
+          approaches across teams and ensures analytical rigor in high-stakes applications.
+        principal: >
+          Sets the organization's statistical philosophy and methodology framework. Evaluates
+          emerging statistical methods for adoption and guides research direction.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can fit standard models and suggest techniques, but selecting appropriate
+          statistical frameworks, validating assumptions, and interpreting results in context
+          requires deep methodological understanding.
+
+    - id: python_advanced
+      name: "Advanced Python"
+      category: technical
+      description: >
+        Expert-level Python programming for data science including scientific computing,
+        ML frameworks, performance optimization, and production-quality code development.
+      proficiency:
+        junior: >
+          Writes functional Python scripts using NumPy, pandas, and scikit-learn. Follows
+          coding standards and uses Jupyter notebooks for exploratory analysis.
+        mid: >
+          Builds modular, well-tested Python packages for ML workflows. Uses advanced
+          features like decorators, generators, and context managers. Proficient with
+          PyTorch or TensorFlow.
+        senior: >
+          Develops production-quality Python libraries and frameworks. Optimizes performance
+          with profiling, vectorization, and parallelism. Establishes coding standards and
+          review processes.
+        staff: >
+          Architects Python-based ML platforms and shared infrastructure. Defines engineering
+          practices for the data science team and bridges the gap between research code and
+          production systems.
+        principal: >
+          Sets the technical direction for Python and ML tooling across the organization.
+          Evaluates frameworks and paradigms, and guides the evolution of the team's
+          technical capabilities.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI copilots can generate Python code and suggest optimizations, but architecting
+          ML systems, debugging complex issues, and writing robust production code requires
+          deep human expertise.
+
+    - id: experiment_design
+      name: "Experiment Design"
+      category: analytical
+      description: >
+        Designing rigorous experiments including A/B tests, multi-armed bandits, and
+        quasi-experimental methods to establish causal relationships and measure impact.
+      proficiency:
+        junior: >
+          Understands basic experimental design principles including randomization, control
+          groups, and statistical power. Assists in designing and analyzing simple A/B tests.
+        mid: >
+          Designs and analyzes complete experiments independently. Calculates sample sizes,
+          selects appropriate test statistics, and accounts for multiple comparisons and
+          novelty effects.
+        senior: >
+          Designs complex experimental frameworks including multi-armed bandits, factorial
+          designs, and quasi-experimental methods. Handles interference effects and designs
+          for long-term impact measurement.
+        staff: >
+          Architects the organization's experimentation platform and methodology. Defines
+          standards for experiment quality, establishes review processes, and drives a culture
+          of rigorous evidence-based decision-making.
+        principal: >
+          Sets the strategic vision for experimentation across the enterprise. Develops novel
+          experimental methodologies for challenging domains and guides the organization's
+          research ethics framework.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can automate power calculations and analysis, but designing experiments that
+          answer the right questions, account for real-world complexities, and yield
+          actionable results requires deep human insight.
+
+    - id: deep_learning
+      name: "Deep Learning"
+      category: technical
+      description: >
+        Designing, training, and deploying neural network architectures including CNNs,
+        RNNs, transformers, and generative models for complex pattern recognition and
+        generation tasks.
+      proficiency:
+        junior: >
+          Implements standard neural network architectures using PyTorch or TensorFlow.
+          Understands backpropagation, common layer types, and basic training procedures.
+        mid: >
+          Designs and trains custom architectures for specific problems. Applies transfer
+          learning, fine-tuning, and regularization techniques. Manages GPU resources and
+          training workflows.
+        senior: >
+          Develops novel architectures and training strategies for complex problems. Implements
+          advanced techniques like attention mechanisms, GANs, and diffusion models. Mentors
+          others on deep learning best practices.
+        staff: >
+          Architects the organization's deep learning infrastructure and methodology. Leads
+          research into novel architectures and evaluates emerging paradigms like foundation
+          models for enterprise applications.
+        principal: >
+          Sets the strategic direction for deep learning and neural network research across
+          the organization. Establishes research partnerships, publishes original work, and
+          advises leadership on deep learning capabilities.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          Pre-trained foundation models reduce the need to train from scratch, but designing
+          architectures for novel problems, fine-tuning for specific domains, and ensuring
+          responsible deployment requires expert human judgment.
+
+    - id: feature_engineering
+      name: "Feature Engineering"
+      category: technical
+      description: >
+        Creating, selecting, and transforming input variables to improve model performance
+        including domain-driven feature creation, automated feature generation, and
+        feature store design.
+      proficiency:
+        junior: >
+          Applies basic feature engineering techniques like encoding categoricals, scaling
+          numerics, and handling missing values. Uses standard feature selection methods.
+        mid: >
+          Creates domain-informed features that significantly improve model performance.
+          Applies advanced techniques like target encoding, feature interactions, and
+          time-based features.
+        senior: >
+          Designs comprehensive feature engineering pipelines for complex domains. Builds
+          reusable feature libraries and establishes feature governance practices. Leverages
+          automated feature generation tools.
+        staff: >
+          Architects enterprise feature stores and feature engineering platforms. Defines
+          standards for feature documentation, quality, and reuse across teams and models.
+        principal: >
+          Sets the strategic vision for feature engineering and management across the
+          organization. Evaluates feature platform technologies and guides investment in
+          feature infrastructure.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AutoML and foundation models are reducing the need for manual feature engineering
+          in many domains. However, domain-specific feature creation and feature store
+          architecture still benefit from human expertise.
+
+    - id: data_visualization
+      name: "Data Visualization for Science"
+      category: analytical
+      description: >
+        Creating scientific visualizations that effectively communicate model behavior,
+        experimental results, and complex analytical findings to technical and
+        non-technical audiences.
+      proficiency:
+        junior: >
+          Creates standard plots using matplotlib or seaborn for exploratory analysis.
+          Produces basic model evaluation visualizations like confusion matrices and ROC
+          curves.
+        mid: >
+          Builds comprehensive visualization suites for model diagnostics and results
+          communication. Creates interactive visualizations with Plotly or similar tools
+          for stakeholder exploration.
+        senior: >
+          Designs publication-quality visualizations for complex results. Creates visual
+          frameworks for model interpretability and builds interactive dashboards for model
+          monitoring.
+        staff: >
+          Establishes visualization standards for data science communication across the
+          organization. Creates reusable visualization libraries and guides teams on effective
+          scientific communication.
+        principal: >
+          Defines the organization's approach to communicating data science results visually.
+          Influences how complex AI outputs are presented to executive and external audiences.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can auto-generate standard plots, but creating visualizations that effectively
+          communicate complex scientific findings and model behavior requires human judgment
+          about what to show and how.
+
+    - id: business_translation
+      name: "Business Translation"
+      category: communication
+      description: >
+        Translating complex data science concepts, model outputs, and research findings
+        into actionable business recommendations that non-technical stakeholders can
+        understand and act upon.
+      proficiency:
+        junior: >
+          Explains basic model outputs and analytical findings in non-technical language.
+          Prepares clear documentation of methods and results with guidance.
+        mid: >
+          Independently communicates complex model results to business stakeholders. Frames
+          data science outputs in terms of business impact, risk, and recommended actions.
+        senior: >
+          Shapes how data science is understood and valued across the organization. Translates
+          ambiguous business problems into data science projects and presents results that
+          drive executive decision-making.
+        staff: >
+          Serves as the primary bridge between data science and business leadership. Shapes
+          product and business strategy through data science capabilities and influences
+          investment priorities.
+        principal: >
+          Defines how the organization communicates about AI and data science internally and
+          externally. Advises the executive team on strategic opportunities and risks from
+          data science and AI.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          Translating technical findings into business context requires understanding
+          organizational dynamics, stakeholder concerns, and strategic priorities, which
+          remain deeply human capabilities.
+
+    - id: model_deployment
+      name: "Model Deployment & MLOps"
+      category: technical
+      description: >
+        Deploying machine learning models to production environments including
+        containerization, API development, monitoring, model versioning, and CI/CD
+        pipelines for ML systems.
+      proficiency:
+        junior: >
+          Understands basic deployment concepts and can package models for simple serving.
+          Uses model registry tools and follows established deployment procedures.
+        mid: >
+          Deploys models to production using containerization and API frameworks. Implements
+          basic monitoring, logging, and A/B testing infrastructure for deployed models.
+        senior: >
+          Architects end-to-end MLOps pipelines including automated training, validation,
+          deployment, and monitoring. Implements canary deployments and automated rollback
+          mechanisms.
+        staff: >
+          Defines the organization's MLOps strategy and platform architecture. Establishes
+          standards for model governance, reproducibility, and production reliability across
+          all data science teams.
+        principal: >
+          Sets the strategic vision for ML infrastructure and operations across the enterprise.
+          Evaluates MLOps platforms and guides investment in production ML capabilities.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can automate aspects of deployment and monitoring, but designing robust MLOps
+          architectures, handling edge cases in production, and making deployment strategy
+          decisions requires human expertise.
+
+    - id: nlp
+      name: "Natural Language Processing"
+      category: technical
+      description: >
+        Applying computational techniques to analyze, understand, and generate human
+        language including text classification, named entity recognition, sentiment
+        analysis, and large language model applications.
+      proficiency:
+        junior: >
+          Implements basic NLP tasks like text classification and sentiment analysis using
+          pre-trained models and standard libraries like spaCy or Hugging Face.
+        mid: >
+          Fine-tunes language models for domain-specific tasks. Builds NLP pipelines for
+          entity extraction, topic modeling, and text summarization. Evaluates model
+          quality with appropriate metrics.
+        senior: >
+          Designs complex NLP systems combining multiple techniques. Develops strategies for
+          leveraging large language models, implements RAG architectures, and handles
+          multilingual and domain-specific challenges.
+        staff: >
+          Architects the organization's NLP and LLM strategy. Evaluates foundation models
+          for enterprise use cases, designs prompt engineering frameworks, and guides teams
+          on responsible AI use.
+        principal: >
+          Sets the strategic vision for language AI across the enterprise. Evaluates emerging
+          NLP paradigms, establishes partnerships with AI providers, and guides long-term
+          investment in language technology.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          Large language models have dramatically changed NLP, automating many tasks that
+          previously required custom models. However, designing NLP systems for specific
+          domains and ensuring quality and safety remains a human responsibility.
+
+    - id: causal_inference
+      name: "Causal Inference"
+      category: analytical
+      description: >
+        Applying methods to establish causal relationships from observational and
+        experimental data including instrumental variables, difference-in-differences,
+        propensity score matching, and structural causal models.
+      proficiency:
+        junior: >
+          Understands the difference between correlation and causation. Knows basic concepts
+          of confounding, selection bias, and when randomized experiments are needed.
+        mid: >
+          Applies standard causal inference methods including propensity score matching,
+          regression discontinuity, and difference-in-differences. Identifies threats to
+          causal validity.
+        senior: >
+          Designs and implements sophisticated causal inference strategies for complex
+          observational data. Applies instrumental variable methods, synthetic controls, and
+          structural equation models.
+        staff: >
+          Establishes causal inference methodology standards for the organization. Advises
+          teams on when and how to apply causal methods and reviews analyses for causal
+          validity.
+        principal: >
+          Defines the organization's approach to causal reasoning and evidence standards.
+          Develops novel causal methods for challenging domains and guides research direction
+          in causal AI.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          Causal inference requires deep methodological understanding and domain expertise
+          to identify valid causal strategies. AI can assist with computation but cannot
+          replace the human judgment needed for causal reasoning.
+
+    - id: research_communication
+      name: "Research Communication"
+      category: communication
+      description: >
+        Communicating data science research findings through technical publications,
+        presentations, and documentation that advance organizational knowledge and
+        contribute to the broader scientific community.
+      proficiency:
+        junior: >
+          Documents methods and results clearly in notebooks and internal reports. Presents
+          findings to the team with appropriate technical detail and structure.
+        mid: >
+          Writes clear technical reports and presents at team-wide meetings. Creates
+          documentation that enables others to reproduce and build upon analytical work.
+        senior: >
+          Publishes internal white papers and presents at company-wide forums. Writes
+          conference-quality papers and presents at external meetups or conferences.
+        staff: >
+          Establishes research communication standards and mentors others on technical
+          writing. Represents the team at major conferences and contributes to the
+          organization's external technical reputation.
+        principal: >
+          Leads the organization's external research presence through publications, keynotes,
+          and thought leadership. Shapes industry conversations and builds the company's
+          reputation as a leader in data science.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can assist with drafting and editing, but producing original research
+          communications that present novel findings, build credibility, and influence
+          the scientific community requires human expertise and reputation.

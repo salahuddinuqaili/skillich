@@ -1,0 +1,416 @@
+role:
+  id: engineering_manager
+  function: leadership
+  name: "Engineering Manager"
+  also_known_as:
+    - "EM"
+    - "Software Engineering Manager"
+    - "Dev Manager"
+    - "Team Lead (Management Track)"
+  description: >
+    Leads a team of engineers, balancing people management with technical guidance.
+    Responsible for hiring, performance, delivery, and team health while maintaining
+    enough technical depth to make sound architecture and process decisions.
+
+  ai_impact:
+    level: moderate
+    summary: >
+      AI assists with writing performance reviews, generating meeting summaries, and
+      drafting communications. However, the core of engineering management -- building
+      trust, coaching individuals, navigating organizational politics, and making
+      judgment calls about people -- remains deeply human. AI augments the administrative
+      aspects but cannot replace the relational ones.
+    automating:
+      - "Meeting notes and action item extraction"
+      - "Performance review draft generation"
+      - "Status report compilation from project tools"
+      - "Interview scheduling and candidate pipeline management"
+    augmenting:
+      - "1:1 preparation with context gathering"
+      - "Team health analysis from survey and engagement data"
+      - "Technical decision support with research"
+      - "Capacity planning and sprint analytics"
+    preserving:
+      - "Building trust and psychological safety"
+      - "Coaching and career development conversations"
+      - "Navigating organizational politics and conflict"
+      - "Hiring judgment and culture fit assessment"
+      - "Making difficult people decisions (PIPs, terminations, reorgs)"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Dropbox Engineering Career Framework - Management"
+        url: "https://dropbox.github.io/dbx-career-framework/"
+      - name: "Lara Hogan - Engineering Management Resources"
+        url: "https://larahogan.me/management/"
+
+  levels:
+    - id: junior
+      name: "Engineering Manager (M1)"
+      years_experience: "0-2 in management"
+      summary: "Manages a single team of 4-8 engineers. Focuses on delivery, hiring, and individual growth."
+    - id: mid
+      name: "Senior Engineering Manager (M2)"
+      years_experience: "2-5 in management"
+      summary: "Manages a larger or more complex team. Owns technical roadmap alongside product partner."
+    - id: senior
+      name: "Director of Engineering (M3)"
+      years_experience: "5-8 in management"
+      summary: "Manages multiple teams or managers. Responsible for organizational design and cross-team execution."
+    - id: staff
+      name: "Senior Director (M4)"
+      years_experience: "8-12 in management"
+      summary: "Leads a department. Drives engineering strategy, culture, and operational excellence at scale."
+    - id: principal
+      name: "VP Engineering (M5+)"
+      years_experience: "12+ in management"
+      summary: "Executive leadership. Sets engineering vision, manages directors, and represents engineering to the board."
+
+  skills:
+    - id: hiring
+      name: "Hiring & Team Building"
+      category: leadership
+      description: "Recruiting, interviewing, and assembling high-performing engineering teams."
+      proficiency:
+        junior: >
+          Conducts structured behavioral and technical interviews using rubrics, writes compelling job
+          descriptions tailored to the role, and participates actively in hiring committees. Closes
+          candidates by articulating team mission and growth opportunities clearly.
+        mid: >
+          Designs end-to-end interview loops with calibrated scorecards, builds diverse candidate
+          pipelines through sourcing partnerships and referral programs, and makes independent
+          hiring decisions. Tracks offer-accept rates and time-to-fill to improve the funnel.
+        senior: >
+          Sets hiring strategy and calibrates the hiring bar across multiple teams. Develops
+          interviewer training programs, conducts shadow-and-reverse-shadow cycles, and balances
+          the trade-off between speed-to-hire and quality when facing aggressive headcount targets.
+        staff: >
+          Defines the engineering hiring philosophy, employer brand narrative, and competency
+          frameworks that shape how the organization evaluates talent. Partners with recruiting
+          leadership on market compensation analysis and strategic university pipeline programs.
+        principal: >
+          Sets executive hiring strategy and personally recruits VP and director-level leaders.
+          Shapes the external engineering talent brand through conference presence, open-source
+          visibility, and published engineering culture content that attracts senior candidates.
+      ai_impact:
+        rating: 0.3
+        detail: "AI screens resumes and schedules interviews. Evaluating culture fit, assessing potential, and selling candidates on the team require human judgment."
+
+    - id: performance_management
+      name: "Performance Management"
+      category: leadership
+      description: "Setting expectations, giving feedback, conducting reviews, and managing underperformance."
+      proficiency:
+        junior: >
+          Runs weekly 1:1s with a consistent agenda, delivers written performance reviews with
+          specific examples tied to leveling rubrics, and provides real-time feedback within 48
+          hours of observed behavior. Tracks action items and follows up on growth commitments.
+        mid: >
+          Authors and manages performance improvement plans with clear milestones and timelines.
+          Leads calibration sessions across the team, defends ratings with documented evidence,
+          and adjusts stack rankings fairly. Navigates the tension between retaining and exiting.
+        senior: >
+          Designs leveling rubrics and performance review frameworks used across the org. Coaches
+          first-time managers through difficult feedback conversations, PIP execution, and
+          termination processes. Identifies systemic calibration drift across teams and corrects it.
+        staff: >
+          Sets the department-wide performance philosophy including review cadence, calibration
+          process, and promotion committee structure. Defines how performance ties to compensation
+          bands and equity refresh grants. Balances consistency with team-level context.
+        principal: >
+          Defines the organization's approach to performance, compensation, and recognition at
+          the executive level. Designs total rewards strategies that balance retention of top
+          performers against budget constraints and internal equity across the engineering function.
+      ai_impact:
+        rating: 0.2
+        detail: "AI drafts review summaries from notes. The judgment, empathy, and difficult conversations that define performance management are irreplaceably human."
+
+    - id: technical_leadership
+      name: "Technical Guidance"
+      category: technical
+      description: "Maintaining enough technical depth to guide architecture decisions, code review standards, and technical strategy."
+      proficiency:
+        junior: >
+          Reviews RFC documents and technical design proposals, asks clarifying questions in
+          architecture discussions, and unblocks engineers by connecting them with the right
+          subject-matter experts. Maintains enough code literacy to evaluate PR complexity.
+        mid: >
+          Guides the team's technical direction by facilitating build-vs-buy decisions, prioritizing
+          tech-debt sprints against feature work, and evaluating migration proposals. Maintains a
+          mental model of system dependencies and knows when to escalate architectural risk.
+        senior: >
+          Sets technical strategy across multiple teams, evaluating technology adoption proposals
+          against organizational readiness and migration cost. Chairs architecture review boards
+          and makes trade-off calls between platform convergence and team autonomy.
+        staff: >
+          Defines engineering-wide technical standards, code review policies, and quality gates.
+          Partners with staff-plus architects on the organizational technical vision, balancing
+          innovation investment against operational stability and developer experience metrics.
+        principal: >
+          Sets the organizational technical direction and evaluates emerging technologies for
+          strategic investment. Makes multi-year platform bets, weighing competitive advantage
+          against adoption risk, and communicates technical strategy to the board with clarity.
+      ai_impact:
+        rating: 0.25
+        detail: "AI provides technical analysis but cannot evaluate organizational readiness, team capabilities, or political dynamics that influence technical decisions."
+
+    - id: delivery_management
+      name: "Delivery & Execution"
+      category: leadership
+      description: "Ensuring the team ships quality work predictably through planning, process, and obstacle removal."
+      proficiency:
+        junior: >
+          Facilitates sprint planning, standups, and retrospectives. Tracks velocity and
+          commitment accuracy in Jira or Linear, identifies blockers daily, and escalates
+          cross-team dependencies before they become critical-path risks to the iteration goal.
+        mid: >
+          Plans quarterly roadmaps using OKRs or similar goal frameworks, manages cross-team
+          dependencies through explicit contracts and shared milestones, and makes deliberate
+          trade-offs between tech-debt paydown, feature velocity, and reliability investment.
+        senior: >
+          Coordinates delivery across multiple teams and complex cross-functional programs.
+          Implements program-level tracking with milestone reviews, manages scope negotiations
+          with product and business partners, and intervenes early when execution risk surfaces.
+        staff: >
+          Defines delivery processes, tooling standards, and release management practices for the
+          engineering organization. Creates frameworks that balance predictability with agility,
+          choosing where rigorous planning adds value versus where it creates unnecessary overhead.
+        principal: >
+          Sets the organizational delivery philosophy, deciding how to balance velocity with
+          quality, experimentation with predictability, and team autonomy with cross-org
+          coordination. Holds directors accountable to delivery outcomes through metric reviews.
+      ai_impact:
+        rating: 0.4
+        detail: "AI tracks progress and flags risks from project tools. Negotiating scope, managing dependencies between humans, and unblocking teams require human intervention."
+
+    - id: coaching_development
+      name: "Coaching & Career Development"
+      category: leadership
+      description: "Growing engineers through mentoring, stretch assignments, promotions, and career path guidance."
+      proficiency:
+        junior: >
+          Holds monthly career conversations, maps each report's strengths and growth areas to the
+          engineering ladder, and provides actionable written feedback tied to specific leveling
+          criteria. Identifies stretch projects that close skill gaps without overwhelming.
+        mid: >
+          Creates individualized development plans with quarterly milestones, sponsors promotion
+          cases with documented evidence packets, and designs stretch assignments that build
+          visibility. Knows when to coach directly versus connect reports with external mentors.
+        senior: >
+          Mentors first-time and struggling managers through skip-level 1:1s and manager cohort
+          programs. Builds career ladder frameworks, authors leveling guides, and creates growth
+          programs like tech-lead rotations that develop leadership bench strength across teams.
+        staff: >
+          Defines the department's career development philosophy, creates organization-wide
+          mentorship rings and sponsorship programs, and establishes internal mobility policies.
+          Balances investing in growing internal talent against the cost of slower external hiring.
+        principal: >
+          Sets the talent development strategy for the engineering function. Creates leadership
+          development pipelines including EM bootcamps and director readiness programs. Builds
+          succession plans for critical roles and cultivates the next generation of senior leaders.
+      ai_impact:
+        rating: 0.1
+        detail: "Career development is built on trust, empathy, and understanding individual motivations. This is among the most human-centric management skills."
+
+    - id: organizational_design
+      name: "Organizational Design"
+      category: leadership
+      description: "Structuring teams for effective delivery: team topologies, reporting structures, and communication patterns."
+      proficiency:
+        junior: >
+          Understands how Conway's Law shapes system architecture and provides input on team
+          composition and on-call boundaries. Recognizes when communication overhead signals a
+          team is too large and proposes splitting along domain boundaries.
+        mid: >
+          Proposes and executes team structure changes including splits, merges, and embedding
+          models. Manages the transition period with clear RACI charts and communication plans.
+          Evaluates stream-aligned versus platform team trade-offs for the product context.
+        senior: >
+          Designs organizational structures for multiple teams using team topology principles.
+          Applies inverse Conway maneuver to align team boundaries with desired architecture.
+          Balances team stability against the need to reorganize for strategic priorities.
+        staff: >
+          Architects department-level organization across 50-plus engineers, defining reporting
+          layers, span of control targets, and interaction modes between teams. Executes reorgs
+          with stakeholder alignment plans that minimize attrition and productivity disruption.
+        principal: >
+          Sets organizational design principles for the engineering function and executes
+          company-wide reorgs. Decides when to centralize versus federate capabilities, weighing
+          efficiency gains against team autonomy and innovation speed at each inflection point.
+      ai_impact:
+        rating: 0.15
+        detail: "Org design requires deep understanding of human dynamics, political landscapes, and informal communication networks that AI cannot observe or model."
+
+    - id: stakeholder_management
+      name: "Stakeholder & Cross-Functional Leadership"
+      category: communication
+      description: "Building productive relationships with product, design, business, and executive stakeholders."
+      proficiency:
+        junior: >
+          Shares weekly team status updates with product partners using clear RAG dashboards,
+          escalates cross-functional blockers with proposed solutions, and builds working
+          relationships with PMs and designers through regular sync meetings and shared rituals.
+        mid: >
+          Manages stakeholder expectations by negotiating scope, timelines, and resource trade-offs
+          with product and business partners. Proactively communicates risk, resets commitments
+          early, and builds enough trust that partners seek engineering input on strategy.
+        senior: >
+          Builds executive relationships through concise, data-backed briefings. Represents
+          engineering in cross-functional strategy discussions, influences product roadmap
+          priorities with technical insight, and resolves inter-department conflicts directly.
+        staff: >
+          Drives cross-functional alignment across departments by establishing shared OKRs,
+          joint planning ceremonies, and escalation frameworks. Influences business strategy with
+          technical perspective and creates forums where engineering has a seat at the table.
+        principal: >
+          Represents engineering at the executive and board level, translating technical strategy
+          into business impact narratives. Drives company-wide strategic initiatives and builds
+          the cross-functional trust that enables engineering to shape rather than just serve.
+      ai_impact:
+        rating: 0.1
+        detail: "Stakeholder management is relationship-driven. Trust, political awareness, and the ability to influence without authority are fundamentally human."
+
+    - id: culture_building
+      name: "Engineering Culture"
+      category: leadership
+      description: "Creating and maintaining a healthy engineering culture: psychological safety, inclusion, values, and norms."
+      proficiency:
+        junior: >
+          Models positive cultural behaviors by admitting mistakes openly, giving credit publicly,
+          and addressing toxic team dynamics directly. Runs retrospectives that surface honest
+          feedback and follows through on the action items that result from them.
+        mid: >
+          Defines explicit team norms and rituals such as demo days, learning hours, and
+          blameless post-mortems. Creates an inclusive environment where dissent is welcomed,
+          diverse perspectives shape decisions, and psychological safety is measured and tracked.
+        senior: >
+          Shapes culture across multiple teams by codifying values into hiring rubrics, promotion
+          criteria, and recognition programs. Designs org-wide initiatives for knowledge sharing,
+          cross-team collaboration, and inclusion that scale beyond individual manager effort.
+        staff: >
+          Defines engineering cultural values and creates accountability mechanisms that ensure
+          they are lived daily. Drives DEI initiatives with measurable goals, invests in ERGs,
+          and confronts cultural debt by addressing norms that no longer serve the organization.
+        principal: >
+          Sets the cultural vision for the engineering organization and makes it a strategic
+          asset. Treats culture as a long-term investment, making deliberate trade-offs between
+          cultural consistency and the autonomy needed to attract diverse leadership styles.
+      ai_impact:
+        rating: 0.05
+        detail: "Culture is built through daily human interactions, trust, and authentic leadership. This is the least automatable management skill."
+
+    - id: incident_management
+      name: "Incident & Crisis Management"
+      category: leadership
+      description: "Leading during production incidents, customer escalations, and team crises."
+      proficiency:
+        junior: >
+          Participates in incident response as communications lead or scribe, manages the on-call
+          rotation and PagerDuty escalation policies, and ensures runbooks are current. Runs
+          post-incident reviews that produce concrete follow-up items with owners and deadlines.
+        mid: >
+          Leads incident response for team-owned services as incident commander, making real-time
+          severity and communication calls. Conducts blameless post-mortems that identify systemic
+          causes and drives SLO-based reliability improvements into the quarterly roadmap.
+        senior: >
+          Manages complex cross-team incidents spanning multiple services and time zones. Designs
+          incident response processes, severity frameworks, and on-call training programs. Makes
+          the judgment call on when to escalate to executive communication and customer outreach.
+        staff: >
+          Builds the department-wide incident management program including tooling, war-room
+          protocols, and executive communication templates. Personally leads major outage
+          communications to C-suite and key customers while maintaining team composure under pressure.
+        principal: >
+          Sets crisis management strategy for the engineering organization. Represents engineering
+          to the board and media during major outages or security events. Balances transparency
+          with legal and reputational risk, and drives post-crisis systemic investment decisions.
+      ai_impact:
+        rating: 0.3
+        detail: "AI assists with log analysis and alert correlation during incidents. Leadership under pressure, communication to stakeholders, and blameless post-mortem facilitation are human skills."
+
+    - id: budget_resource
+      name: "Budget & Resource Management"
+      category: analytical
+      description: "Managing headcount, infrastructure costs, tooling budgets, and vendor relationships."
+      proficiency:
+        junior: >
+          Tracks team-level cloud and tooling costs, flags unexpected spend increases, and
+          provides data-backed input for annual headcount planning cycles. Understands how
+          team costs map to cost centers and can explain variances to finance partners.
+        mid: >
+          Manages team budget across headcount, tooling licenses, infrastructure, and contractor
+          spend. Produces quarterly forecasts, makes reallocation proposals when priorities shift,
+          and evaluates vendor renewals against total cost of ownership and switching risk.
+        senior: >
+          Plans headcount and operating budgets across multiple teams, making trade-off decisions
+          between hiring, contracting, and tooling investment. Builds ROI cases for new roles
+          and programs, and manages budget cuts with minimal impact to strategic priorities.
+        staff: >
+          Owns department-level budget including multi-year headcount plans, vendor contracts, and
+          infrastructure investment. Negotiates enterprise licensing agreements and makes portfolio
+          allocation decisions that balance growth investment against operational efficiency.
+        principal: >
+          Sets engineering budget strategy and presents investment cases to the board. Makes
+          capital allocation decisions across the engineering function, weighing build-vs-buy,
+          in-house-vs-outsource, and growth-vs-efficiency trade-offs at the organizational level.
+      ai_impact:
+        rating: 0.4
+        detail: "AI generates budget reports and cost projections. Strategic resource allocation, vendor negotiation, and investment prioritization require human judgment."
+
+    - id: strategic_thinking
+      name: "Strategic Thinking"
+      category: leadership
+      description: "Connecting team work to business outcomes, anticipating trends, and planning for the long term."
+      proficiency:
+        junior: >
+          Understands how the team's work maps to company OKRs and communicates that context in
+          sprint planning and 1:1s. Translates product roadmap items into engineering milestones
+          so the team sees the business impact of their daily contributions.
+        mid: >
+          Translates business strategy into team-level objectives and key results, identifying
+          opportunities for engineering-led impact such as automation or platform investment.
+          Builds quarterly plans that balance reactive work with proactive strategic initiatives.
+        senior: >
+          Develops multi-quarter engineering strategy aligned with business goals, anticipating
+          market and technology shifts that require early investment. Writes strategy documents
+          that articulate trade-offs and get buy-in from executive and cross-functional peers.
+        staff: >
+          Contributes to company strategy with an engineering perspective, participating in
+          annual planning and long-range forecasting. Drives strategic planning processes that
+          connect engineering investment to revenue outcomes and competitive differentiation.
+        principal: >
+          Shapes company strategy at the executive level, identifying market opportunities and
+          existential technical risks. Makes multi-year bets on technology direction, weighing
+          the cost of being wrong against the competitive advantage of moving early.
+      ai_impact:
+        rating: 0.15
+        detail: "AI provides data and analysis for strategic decisions. The synthesis of market dynamics, organizational capabilities, and leadership vision that defines strategy is deeply human."
+
+    - id: communication_writing
+      name: "Written & Verbal Communication"
+      category: communication
+      description: "Clear writing, effective presentations, transparent decision-making, and organizational communication."
+      proficiency:
+        junior: >
+          Writes clear weekly team updates and decision documents with explicit context and
+          rationale. Runs effective team meetings with agendas and time-boxes, and delivers
+          sprint demo presentations that connect shipped work to user and business outcomes.
+        mid: >
+          Communicates strategy and decisions to the team with transparency, sharing the why
+          behind prioritization changes. Authors RFCs and one-pagers that drive alignment, and
+          adapts messaging style for engineers, product partners, and leadership audiences.
+        senior: >
+          Presents to senior leadership with concise, data-backed narratives. Writes compelling
+          investment proposals and strategy documents. Communicates difficult decisions like
+          reorgs or project cancellations with empathy, clarity, and actionable next steps.
+        staff: >
+          Communicates at the organizational level through all-hands, written memos, and Slack
+          channels. Shapes messaging during periods of change and uncertainty, balancing
+          transparency with the need to avoid unnecessary alarm before decisions are final.
+        principal: >
+          Represents the engineering organization externally at conferences, in press, and to
+          the board. Communicates a technology vision that inspires and aligns, and sets the
+          standard for written communication quality across the engineering leadership team.
+      ai_impact:
+        rating: 0.4
+        detail: "AI drafts communications and presentations. Authentic voice, organizational sensitivity, and the ability to communicate difficult messages with empathy require human judgment."

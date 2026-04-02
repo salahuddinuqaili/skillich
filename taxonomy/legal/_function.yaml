@@ -1,0 +1,21 @@
+function:
+  id: legal
+  name: "Legal"
+  description: >
+    Legal advisory, compliance, contract management, and regulatory roles.
+    Encompasses the interpretation and application of law, risk mitigation,
+    policy development, and governance functions that protect organizations
+    and enable business operations within legal and ethical boundaries.
+  roles:
+    - corporate_counsel
+    - contract_manager
+    - compliance_officer
+    - paralegal
+    - privacy_counsel
+  sources:
+    - name: "ACC (Association of Corporate Counsel) Career Resources"
+      url: "https://www.acc.com/career-resources"
+    - name: "O*NET - Lawyers"
+      url: "https://www.onetonline.org/link/summary/23-1011.00"
+    - name: "Thomson Reuters Legal Executive Institute"
+      url: "https://www.thomsonreuters.com/en-us/posts/legal/"

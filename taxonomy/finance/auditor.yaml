@@ -1,0 +1,796 @@
+role:
+  id: auditor
+  function: finance
+  name: "Auditor"
+  also_known_as:
+    - "Internal Auditor"
+    - "External Auditor"
+    - "Compliance Auditor"
+    - "IT Auditor"
+    - "Audit Associate"
+  description: >
+    Evaluates the effectiveness of an organization's internal controls,
+    financial reporting, and compliance with laws and regulations through
+    systematic examination and testing. Auditors conduct risk assessments,
+    design and execute audit procedures, gather and analyze evidence, and
+    communicate findings and recommendations to management and governance
+    bodies. Whether operating in an internal or external capacity, auditors
+    serve as independent assessors whose work protects stakeholders by
+    ensuring accountability, transparency, and the integrity of financial
+    and operational information.
+  ai_impact:
+    level: "moderate-high"
+    summary: >
+      AI is reshaping audit work by automating data extraction, enabling
+      full-population transaction testing instead of sampling, and
+      accelerating the identification of anomalies and patterns in
+      financial data. Routine audit procedures that historically consumed
+      significant staff hours are increasingly executed by AI-powered
+      tools. However, the audit profession's foundational value lies in
+      professional skepticism, judgment about risk and materiality,
+      investigative interviewing, and the independent assessment of
+      qualitative factors that resist algorithmic evaluation. Auditors
+      who leverage AI for data-intensive procedures while focusing their
+      human expertise on judgment, investigation, and communication will
+      deliver significantly more value.
+    automating:
+      - "Data extraction and population analysis from financial systems"
+      - "Three-way matching and transaction testing at full population"
+      - "Standard audit workpaper preparation and documentation"
+      - "Compliance checklist execution against known regulatory requirements"
+      - "Recalculation and reperformance of mathematical computations"
+      - "Trend analysis and outlier identification across large datasets"
+    augmenting:
+      - "Risk assessment and audit scoping with data-driven insights"
+      - "Anomaly investigation with AI-generated hypotheses"
+      - "Audit report drafting and finding articulation"
+      - "Control effectiveness evaluation across process populations"
+      - "Continuous monitoring and real-time risk alerting"
+      - "Benchmarking organizational practices against industry standards"
+    preserving:
+      - "Professional skepticism and independent judgment"
+      - "Investigative interviewing and evidence corroboration"
+      - "Management and audit committee relationship management"
+      - "Ethical reasoning about independence and objectivity"
+      - "Fraud risk assessment requiring behavioral observation"
+      - "Contextual evaluation of organizational culture and tone at the top"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "O*NET - Accountants and Auditors"
+        url: "https://www.onetonline.org/link/summary/13-2011.00"
+      - name: "IIA - Global Internal Audit Standards"
+        url: "https://www.theiia.org/en/standards/global-internal-audit-standards/"
+      - name: "PCAOB - Auditing Standards"
+        url: "https://pcaobus.org/oversight/standards/auditing-standards"
+  levels:
+    - id: junior
+      name: "Junior Auditor"
+      years_experience: "0-2"
+      summary: >
+        Executes audit procedures under supervision, performing testing,
+        documenting results, and gathering evidence for assigned audit
+        sections. Develops foundational knowledge of auditing standards,
+        internal controls, and risk assessment. Builds professional
+        skepticism and attention to detail through hands-on engagement
+        with financial and operational data.
+    - id: mid
+      name: "Auditor"
+      years_experience: "2-5"
+      summary: >
+        Plans and executes audit engagements for moderate-complexity areas
+        with limited supervision. Designs test procedures, evaluates
+        evidence, identifies findings, and drafts audit reports. Manages
+        client or stakeholder relationships for assigned sections and
+        contributes to risk assessments and audit planning activities.
+    - id: senior
+      name: "Senior Auditor"
+      years_experience: "5-8"
+      summary: >
+        Leads audit engagements from planning through reporting, managing
+        teams, coordinating with stakeholders, and ensuring quality
+        standards are met. Evaluates complex control environments, makes
+        materiality and risk judgments, and delivers findings that drive
+        meaningful organizational improvement. Mentors junior team members.
+    - id: staff
+      name: "Staff Auditor Manager"
+      years_experience: "8-12"
+      summary: >
+        Directs the audit function across multiple engagement areas,
+        setting methodology, managing quality, and developing audit
+        professionals. Shapes the annual audit plan based on enterprise
+        risk assessment and stakeholder priorities. Builds the team's
+        capabilities in emerging areas such as data analytics, IT audit,
+        and continuous monitoring.
+    - id: principal
+      name: "Principal Auditor"
+      years_experience: "12+"
+      summary: >
+        Defines the strategic vision for the audit function, positioning
+        it as a trusted governance partner to the board and executive
+        leadership. Sets audit methodology and quality standards at the
+        organizational level. Engages with the audit committee, regulators,
+        and external auditors on the most significant risk and governance
+        matters.
+  skills:
+    - id: audit_planning
+      name: "Audit Planning"
+      category: technical
+      description: >
+        Developing comprehensive audit plans that define scope, objectives,
+        timing, resource allocation, and methodology for individual
+        engagements and the annual audit cycle. Includes risk-based audit
+        planning, materiality determination, stakeholder consultation,
+        and the alignment of audit coverage with organizational risk
+        priorities and governance expectations.
+      proficiency:
+        junior: >
+          Assists in audit planning by gathering background information,
+          reviewing prior-year workpapers, and documenting preliminary
+          risk factors for assigned areas. Learns the audit planning
+          process, including how risk assessment drives scope decisions
+          and how materiality thresholds are determined and applied to
+          engagement design.
+        mid: >
+          Develops audit plans for assigned engagements, defining scope,
+          objectives, and test procedures based on risk assessment.
+          Determines sample sizes, timing, and resource needs. Conducts
+          planning meetings with audit clients to understand business
+          changes and emerging risks. Prepares planning memos that clearly
+          document the audit approach and rationale.
+        senior: >
+          Leads audit planning for complex engagements spanning multiple
+          business units, systems, or geographic locations. Makes
+          materiality and risk judgments that focus audit effort on areas
+          of greatest significance. Designs innovative audit approaches
+          that incorporate data analytics and continuous monitoring.
+          Coordinates planning across concurrent engagements for resource
+          optimization.
+        staff: >
+          Defines the enterprise audit plan based on comprehensive risk
+          assessment, stakeholder input, and strategic priorities. Allocates
+          resources across the audit portfolio to maximize coverage and
+          impact. Develops the audit methodology framework, including
+          risk assessment tools, planning templates, and quality
+          standards that ensure consistency across the audit function.
+        principal: >
+          Shapes the audit function's strategic direction through the
+          annual planning process, ensuring audit coverage evolves with
+          organizational risk and business model changes. Presents the
+          audit plan to the audit committee, negotiating priorities and
+          resources. Drives innovation in audit methodology to maintain
+          relevance in a rapidly changing risk landscape.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can analyze historical data to identify risk patterns, suggest
+          focus areas, and optimize resource allocation. However,
+          exercising judgment about risk significance, navigating
+          stakeholder expectations, and designing audit approaches for
+          novel situations require experienced auditors with deep
+          organizational understanding.
+
+    - id: risk_assessment
+      name: "Risk Assessment"
+      category: technical
+      description: >
+        Identifying, evaluating, and prioritizing risks that could affect
+        the achievement of organizational objectives, the reliability of
+        financial reporting, or compliance with laws and regulations.
+        Includes enterprise risk assessment, process-level risk analysis,
+        inherent and residual risk evaluation, and the development of
+        risk-based audit responses that allocate resources proportionally
+        to risk significance.
+      proficiency:
+        junior: >
+          Assists in risk assessment activities by documenting identified
+          risks, gathering risk information from stakeholders, and
+          populating risk assessment templates. Understands basic risk
+          concepts including inherent risk, control risk, and residual
+          risk. Learns how risk ratings are determined and how they drive
+          audit scope and testing intensity.
+        mid: >
+          Conducts risk assessments for assigned areas by evaluating
+          inherent risks, assessing control effectiveness, and determining
+          residual risk levels. Identifies emerging risks through business
+          change analysis and industry trend monitoring. Translates risk
+          assessment results into audit scope decisions and communicates
+          risk priorities to engagement leadership.
+        senior: >
+          Leads enterprise or business-unit level risk assessments,
+          facilitating workshops with management and subject-matter experts.
+          Develops risk scoring methodologies that incorporate quantitative
+          and qualitative factors. Identifies cross-cutting risk themes
+          that affect multiple audit areas and designs integrated audit
+          responses that address systemic vulnerabilities.
+        staff: >
+          Defines the organization's audit risk assessment methodology,
+          including the risk universe, assessment frequency, and the
+          governance process for risk prioritization. Integrates risk
+          assessment with the organization's enterprise risk management
+          framework. Develops data-driven risk monitoring capabilities
+          that provide continuous visibility into the evolving risk
+          landscape.
+        principal: >
+          Shapes the organization's risk governance philosophy, ensuring
+          the audit function's risk assessment capabilities are recognized
+          as a strategic asset. Advises the audit committee and board on
+          emerging risk categories, risk appetite alignment, and the
+          adequacy of organizational risk responses. Drives industry
+          dialogue on evolving risk assessment practices.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI enhances risk assessment through data-driven risk scoring,
+          anomaly detection, and pattern recognition across large datasets.
+          However, evaluating the significance of qualitative risk factors,
+          assessing management integrity and organizational culture, and
+          making judgment calls about risk prioritization require
+          experienced human auditors.
+
+    - id: internal_controls_testing
+      name: "Internal Controls Testing"
+      category: technical
+      description: >
+        Designing and executing procedures to evaluate the design adequacy
+        and operating effectiveness of internal controls over financial
+        reporting and operations. Includes walkthrough procedures, test
+        of controls, sample selection, deficiency evaluation, and the
+        documentation of testing results in compliance with professional
+        auditing standards such as PCAOB AS 2201 and IIA standards.
+      proficiency:
+        junior: >
+          Executes control testing procedures as designed by senior
+          auditors, selecting samples, inspecting evidence, and
+          documenting results accurately. Identifies when controls have
+          not operated as designed and reports exceptions following
+          established protocols. Learns the distinction between design
+          and operating effectiveness testing.
+        mid: >
+          Designs and executes control testing programs for assigned
+          areas, selecting appropriate test approaches based on control
+          type and risk level. Performs walkthroughs to understand process
+          flows and identify key control points. Evaluates control
+          exceptions, determines whether they constitute deficiencies,
+          and drafts preliminary findings for review.
+        senior: >
+          Leads controls testing across complex processes and multi-system
+          environments. Designs testing strategies that balance assurance
+          with efficiency, leveraging data analytics for full-population
+          testing where appropriate. Evaluates the severity of control
+          deficiencies, distinguishing between significant deficiencies
+          and material weaknesses, and develops remediation guidance.
+        staff: >
+          Defines the organization's controls testing methodology,
+          including testing standards, documentation requirements, and
+          quality assurance processes. Implements continuous controls
+          monitoring programs that supplement periodic testing.
+          Coordinates with external auditors on integrated audit
+          approaches that reduce redundancy while maintaining assurance.
+        principal: >
+          Shapes the organization's approach to controls assurance,
+          driving evolution from periodic testing to continuous monitoring
+          and real-time controls evaluation. Advises the audit committee
+          on the effectiveness of the overall control environment and
+          drives investments in controls technology that improve both
+          assurance quality and organizational efficiency.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI transforms controls testing by enabling full-population
+          analysis, automated exception identification, and continuous
+          monitoring. However, evaluating control design adequacy,
+          assessing the root cause of control failures, and making
+          deficiency severity judgments require professional expertise
+          and organizational context.
+
+    - id: sampling_methodology
+      name: "Sampling Methodology"
+      category: technical
+      description: >
+        Applying statistical and non-statistical sampling techniques to
+        select representative items for audit testing. Includes sample
+        size determination, selection methods, evaluation of results,
+        projection of errors to the population, and the documentation
+        of sampling rationale in compliance with auditing standards such
+        as AU-C 530 and ISA 530.
+      proficiency:
+        junior: >
+          Applies basic sampling techniques under supervision, selecting
+          random samples from defined populations using established tools
+          and procedures. Documents sample selection rationale and tests
+          selected items against audit criteria. Understands the concept
+          of sampling risk and the difference between statistical and
+          non-statistical approaches.
+        mid: >
+          Designs sampling plans for assigned audit areas, determining
+          appropriate sample sizes based on confidence levels, tolerable
+          error rates, and population characteristics. Applies both
+          statistical and judgmental sampling methods and evaluates results
+          appropriately, projecting errors to the full population where
+          applicable. Documents sampling methodology thoroughly.
+        senior: >
+          Develops sophisticated sampling strategies for complex
+          populations, including stratified sampling, monetary unit
+          sampling, and multi-stage sampling approaches. Evaluates when
+          traditional sampling should be replaced by full-population
+          data analytics and designs hybrid approaches. Reviews sampling
+          plans prepared by junior auditors for methodological soundness.
+        staff: >
+          Defines the organization's sampling methodology standards,
+          including approved techniques, documentation requirements, and
+          quality assurance review processes. Drives the transition from
+          traditional sampling to data analytics-driven full-population
+          testing where appropriate, balancing statistical rigor with
+          practical efficiency across the audit function.
+        principal: >
+          Shapes the organization's audit evidence strategy, evaluating
+          how advances in data analytics and AI-powered testing should
+          fundamentally change the role of sampling in the audit process.
+          Advises on the regulatory acceptability of new evidence-
+          gathering techniques and drives innovation in audit methodology
+          that improves both assurance quality and efficiency.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI and data analytics are making traditional sampling less
+          relevant by enabling full-population testing for many audit
+          areas. However, designing appropriate sampling strategies for
+          areas that still require judgment-based selection, evaluating
+          results, and determining the sufficiency of audit evidence
+          require professional expertise.
+
+    - id: regulatory_frameworks
+      name: "Regulatory Frameworks (SOX, PCAOB)"
+      category: domain
+      description: >
+        Understanding and applying the regulatory requirements that govern
+        audit activities, including the Sarbanes-Oxley Act, PCAOB auditing
+        standards, IIA standards, and other applicable frameworks. Includes
+        staying current with regulatory changes, ensuring audit procedures
+        comply with professional standards, and interpreting regulatory
+        expectations for practical application.
+      proficiency:
+        junior: >
+          Understands the purpose and basic requirements of key regulatory
+          frameworks including SOX Sections 302 and 404, PCAOB standards
+          for public company audits, and IIA standards for internal audit.
+          Applies standard requirements in daily audit work and learns how
+          regulatory expectations shape audit scope, procedures, and
+          documentation.
+        mid: >
+          Applies regulatory frameworks to design and execute compliant
+          audit procedures, ensuring documentation meets professional
+          standards. Monitors regulatory updates and assesses their impact
+          on audit methodology. Understands the interplay between different
+          regulatory frameworks and how they affect audit scope and
+          reporting for various entity types.
+        senior: >
+          Interprets complex regulatory requirements and develops audit
+          approaches that satisfy multiple frameworks efficiently.
+          Evaluates regulatory expectations in areas of ambiguity and
+          develops defensible positions. Leads the team's response to
+          regulatory changes, including methodology updates, training
+          development, and client communication strategies.
+        staff: >
+          Defines the organization's regulatory compliance strategy for
+          audit activities, ensuring methodology and quality standards
+          meet or exceed professional requirements. Manages relationships
+          with regulators, including PCAOB inspection preparation and
+          response. Develops training programs that maintain team
+          proficiency in evolving regulatory expectations.
+        principal: >
+          Shapes the organization's engagement with audit regulators,
+          participating in industry dialogue, comment letter processes,
+          and standard-setting discussions. Ensures the audit function
+          is positioned to adapt proactively to regulatory evolution.
+          Advises the audit committee on the implications of regulatory
+          changes for governance and audit oversight.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can track regulatory changes, compare audit procedures
+          against standards, and flag potential compliance gaps. However,
+          interpreting regulatory intent, applying standards to ambiguous
+          situations, and managing regulatory relationships require deep
+          professional knowledge and judgment.
+
+    - id: data_analytics_audit
+      name: "Data Analytics for Audit"
+      category: technical
+      description: >
+        Applying data analytics techniques to audit procedures, including
+        data extraction from financial systems, population analysis,
+        anomaly detection, trend analysis, and continuous monitoring.
+        Encompasses the use of tools such as SQL, Python, ACL, IDEA, and
+        visualization platforms to enhance audit evidence quality and
+        enable insights that traditional testing methods cannot provide.
+      proficiency:
+        junior: >
+          Uses basic data analytics tools to extract and summarize audit
+          data, performing simple analyses such as aging, stratification,
+          and duplicate detection. Learns to write SQL queries for data
+          extraction and uses Excel or ACL for standard audit analytics.
+          Understands how data analytics supplements traditional testing
+          procedures.
+        mid: >
+          Designs and executes data analytics procedures for assigned
+          audit areas, including population profiling, Benford's Law
+          analysis, gap detection, and three-way matching. Writes SQL
+          queries for complex data extraction and uses visualization tools
+          to present analytical findings. Integrates analytics results
+          into audit workpapers with clear documentation of methodology.
+        senior: >
+          Develops advanced analytics approaches for complex audit
+          challenges, including predictive anomaly detection, network
+          analysis for related-party transactions, and journal entry
+          testing across full populations. Designs continuous monitoring
+          dashboards that provide ongoing audit intelligence. Trains
+          the audit team on analytics techniques and tool proficiency.
+        staff: >
+          Defines the audit function's data analytics strategy, including
+          tool selection, capability development, and the integration of
+          analytics into standard audit methodology. Builds reusable
+          analytics libraries and templates that the entire team can
+          deploy. Drives investment in analytics infrastructure and talent
+          development that positions the audit function competitively.
+        principal: >
+          Shapes the audit function's technology and analytics vision,
+          evaluating emerging capabilities in AI, machine learning, and
+          advanced analytics for audit application. Ensures the
+          organization's investment in audit analytics creates sustainable
+          competitive advantage and regulatory acceptance. Drives industry
+          dialogue on the role of technology in the future of audit.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI amplifies audit analytics by automating pattern detection,
+          generating hypotheses from anomalies, and processing volumes of
+          data that would be impossible manually. However, designing
+          meaningful analytics for specific audit objectives, validating
+          AI-generated findings, and integrating analytics insights with
+          professional judgment require skilled audit professionals.
+
+    - id: interview_investigation
+      name: "Interview & Investigation"
+      category: interpersonal
+      description: >
+        Conducting effective interviews and investigations to gather audit
+        evidence, understand process operations, corroborate management
+        representations, and investigate potential irregularities. Includes
+        interview preparation, questioning techniques, behavioral
+        observation, evidence preservation, and the ability to navigate
+        sensitive conversations with professionalism and objectivity.
+      proficiency:
+        junior: >
+          Conducts basic audit interviews to understand process flows and
+          control activities, using prepared questionnaires and taking
+          thorough notes. Asks clarifying questions to fill gaps in
+          understanding. Learns to listen actively, observe non-verbal
+          cues, and distinguish between factual descriptions and opinions
+          during stakeholder conversations.
+        mid: >
+          Plans and conducts interviews independently for audit
+          walkthroughs and inquiry procedures, developing targeted
+          questions that elicit useful evidence. Corroborates interview
+          responses with documentary evidence. Navigates sensitive topics
+          professionally, adapts questioning based on responses received,
+          and documents interview results accurately for workpaper support.
+        senior: >
+          Leads complex investigative interviews for fraud assessments,
+          whistleblower allegations, and significant audit findings.
+          Develops interview strategies that build rapport while
+          maintaining objectivity. Identifies inconsistencies across
+          multiple interview sources and designs corroborative procedures.
+          Mentors junior auditors on effective interviewing techniques.
+        staff: >
+          Designs the audit function's interview and investigation
+          methodology, including protocols for sensitive investigations,
+          legal coordination requirements, and evidence preservation
+          standards. Manages the most complex and politically sensitive
+          investigations. Develops training programs that build
+          interviewing skills across the audit team.
+        principal: >
+          Serves as the organization's authority on audit investigation
+          practices, advising the audit committee and legal counsel on
+          investigation scope, approach, and findings for the most
+          significant matters. Shapes investigation policies that
+          protect organizational interests while maintaining objectivity
+          and professional standards. Represents the function in
+          regulatory inquiries.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          Interviewing and investigation are fundamentally interpersonal
+          activities requiring empathy, behavioral observation, and
+          real-time adaptation. AI can help prepare interview guides
+          and analyze interview transcripts, but the human skills of
+          reading people, building rapport, and probing sensitively are
+          irreplaceable in audit investigation work.
+
+    - id: report_writing
+      name: "Report Writing"
+      category: interpersonal
+      description: >
+        Preparing clear, concise, and actionable audit reports that
+        communicate findings, recommendations, and management action plans
+        to stakeholders. Includes structuring reports for different
+        audiences, writing findings with appropriate condition-criteria-
+        cause-effect framing, and ensuring reports drive organizational
+        improvement rather than merely documenting observations.
+      proficiency:
+        junior: >
+          Drafts basic audit findings using the condition-criteria-cause-
+          effect framework under supervision. Writes clear, factual
+          descriptions of testing results and observations. Learns the
+          organization's report format standards, tone expectations, and
+          the review process. Develops concise writing skills by editing
+          drafts based on senior reviewer feedback.
+        mid: >
+          Writes complete audit findings and report sections independently,
+          articulating the business impact of observations and framing
+          actionable recommendations. Tailors language to the report
+          audience, balancing technical precision with accessibility.
+          Manages the finding validation process with audit clients,
+          ensuring accuracy and agreement on facts before finalization.
+        senior: >
+          Leads report writing for complex engagements, crafting
+          executive summaries that convey key messages efficiently and
+          detailed findings that drive remediation. Establishes report
+          quality standards and reviews drafts prepared by team members.
+          Manages sensitive communication about significant findings,
+          balancing transparency with constructive framing that motivates
+          improvement.
+        staff: >
+          Defines audit reporting standards for the function, including
+          templates, quality benchmarks, and the governance process for
+          report issuance. Designs report formats that serve diverse
+          stakeholder needs from operational management through audit
+          committee. Ensures reporting drives measurable organizational
+          improvement through effective finding articulation and follow-up.
+        principal: >
+          Shapes the audit function's communication strategy, ensuring
+          reports are positioned as valuable governance tools rather than
+          compliance documents. Crafts communications for the audit
+          committee and board that convey the most significant risk and
+          control matters with appropriate urgency and context. Influences
+          industry best practices for audit reporting.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can draft audit findings, suggest report structures, and
+          ensure consistency in writing style. However, framing findings
+          that motivate management action, navigating the political
+          dynamics of audit reporting, and crafting messages for sensitive
+          audiences require human judgment, empathy, and organizational
+          awareness.
+
+    - id: it_audit
+      name: "IT Audit (General Controls)"
+      category: technical
+      description: >
+        Evaluating the design and effectiveness of information technology
+        general controls including access management, change management,
+        computer operations, and program development. Encompasses
+        application controls assessment, IT risk evaluation, cybersecurity
+        audit considerations, and the integration of IT audit findings
+        into the overall audit opinion on financial reporting.
+      proficiency:
+        junior: >
+          Executes IT general control testing procedures under supervision,
+          including access reviews, change management ticket sampling, and
+          backup verification. Understands the major ITGC domains and their
+          relevance to financial reporting. Learns to use audit tools for
+          system access analysis and configuration review.
+        mid: >
+          Plans and executes IT audit procedures for assigned systems and
+          control domains, designing test programs for access management,
+          change management, and computer operations. Evaluates IT control
+          exceptions and their potential impact on financial reporting.
+          Understands the relationship between ITGCs and application
+          controls across key financial systems.
+        senior: >
+          Leads IT audit engagements across complex technology environments,
+          evaluating control effectiveness across multiple systems,
+          platforms, and service providers. Assesses emerging technology
+          risks including cloud security, third-party vendor management,
+          and cybersecurity posture. Integrates IT audit findings with
+          financial audit conclusions and advises on remediation priorities.
+        staff: >
+          Defines the IT audit methodology for the organization, including
+          risk assessment frameworks for technology risks, testing
+          approaches for emerging technologies, and the integration of IT
+          audit with financial and operational audit programs. Builds IT
+          audit capabilities within the team and manages relationships
+          with IT leadership and external technology auditors.
+        principal: >
+          Shapes the organization's IT governance and audit strategy,
+          ensuring technology risk assessment evolves with the digital
+          landscape. Advises the audit committee on cybersecurity risks,
+          technology governance maturity, and the adequacy of IT controls
+          supporting financial reporting. Drives adoption of advanced
+          audit techniques for cloud, AI, and emerging technology
+          environments.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI enhances IT audit through automated access analysis,
+          configuration compliance checking, and log review at scale.
+          However, evaluating IT control design adequacy, assessing
+          cybersecurity risk posture, and making judgment calls about the
+          impact of IT control weaknesses on financial reporting require
+          specialized expertise.
+
+    - id: fraud_detection
+      name: "Fraud Detection"
+      category: technical
+      description: >
+        Identifying indicators of fraud, corruption, and financial
+        misconduct through the application of forensic accounting
+        techniques, data analytics, behavioral observation, and
+        professional skepticism. Includes fraud risk assessment,
+        red flag identification, investigation procedures, and the
+        development of anti-fraud programs that deter and detect
+        misconduct across the organization.
+      proficiency:
+        junior: >
+          Understands common fraud schemes and their indicators, including
+          management override, asset misappropriation, and financial
+          statement fraud. Applies basic fraud detection techniques in
+          audit testing such as Benford's Law analysis and duplicate
+          payment detection. Maintains professional skepticism when
+          evaluating audit evidence.
+        mid: >
+          Conducts fraud risk assessments for assigned areas, identifying
+          high-risk scenarios and designing audit procedures that address
+          them. Performs data analytics focused on fraud indicators
+          including unusual journal entries, vendor anomalies, and
+          expense pattern irregularities. Understands the fraud triangle
+          and applies it to evaluate organizational fraud risk factors.
+        senior: >
+          Leads fraud risk assessment and detection activities across
+          the organization, designing comprehensive anti-fraud programs
+          that incorporate preventive, detective, and corrective controls.
+          Investigates complex fraud allegations, coordinating with legal
+          counsel and law enforcement when necessary. Develops fraud
+          awareness training for management and staff.
+        staff: >
+          Defines the organization's anti-fraud strategy, including risk
+          assessment methodology, detection analytics, whistleblower
+          program design, and investigation protocols. Builds forensic
+          capabilities within the audit function. Manages the most
+          sensitive fraud investigations and reports findings to the
+          audit committee and board with appropriate recommendations.
+        principal: >
+          Shapes the organization's fraud governance philosophy, ensuring
+          anti-fraud programs are embedded in organizational culture
+          rather than treated as compliance exercises. Advises the board
+          on fraud risk exposure, tone at the top, and the adequacy of
+          anti-fraud controls. Drives industry best practices in fraud
+          prevention and detection methodology.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI significantly enhances fraud detection through pattern
+          recognition, anomaly detection, and network analysis across
+          large transaction populations. However, assessing intent,
+          evaluating organizational culture, conducting sensitive
+          investigations, and making judgment calls about the significance
+          of fraud indicators require human expertise and professional
+          skepticism.
+
+    - id: professional_skepticism
+      name: "Professional Skepticism"
+      category: interpersonal
+      description: >
+        Maintaining an attitude of questioning mind and critical assessment
+        of audit evidence throughout the engagement. Includes challenging
+        management assertions, evaluating the sufficiency and
+        appropriateness of evidence, recognizing when additional
+        investigation is warranted, and maintaining independence and
+        objectivity in the face of organizational pressure or persuasive
+        management representations.
+      proficiency:
+        junior: >
+          Develops an awareness that audit evidence should be evaluated
+          objectively rather than accepted at face value. Asks clarifying
+          questions when information seems incomplete or inconsistent.
+          Learns to distinguish between sufficient and insufficient
+          evidence and escalates concerns to senior team members when
+          something does not seem right.
+        mid: >
+          Applies professional skepticism consistently, questioning
+          unusual transactions, challenging management explanations that
+          lack supporting evidence, and seeking corroboration from
+          independent sources. Recognizes common audit traps such as
+          anchoring to prior-year conclusions and familiarity bias.
+          Documents the basis for audit conclusions with sufficient rigor.
+        senior: >
+          Exercises heightened skepticism in high-risk areas, designing
+          audit procedures that address management override risk and
+          evaluate the reasonableness of complex estimates. Challenges
+          the team's conclusions when evidence is insufficient, even when
+          that creates timeline pressure. Models skeptical behavior that
+          establishes the standard for the engagement team.
+        staff: >
+          Cultivates a culture of professional skepticism across the
+          audit function through training, coaching, and quality review
+          processes. Designs engagement approaches that systematically
+          address skepticism risks such as familiarity and confirmation
+          bias. Evaluates whether audit conclusions across the portfolio
+          reflect appropriate skepticism, particularly in judgment areas.
+        principal: >
+          Champions professional skepticism as the foundation of audit
+          quality, ensuring organizational structures, incentives, and
+          culture support independent thinking. Addresses situations
+          where organizational pressure threatens audit objectivity.
+          Shapes industry dialogue on skepticism challenges and best
+          practices, and serves as an exemplar of independence and
+          integrity in all professional interactions.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Professional skepticism is an inherently human attitude
+          requiring independent judgment, ethical reasoning, and the
+          courage to challenge authority. AI can surface data that
+          triggers skeptical inquiry, but the disposition to question,
+          the judgment to determine when evidence is insufficient, and
+          the independence to resist organizational pressure are
+          irreplaceable human qualities.
+
+    - id: stakeholder_communication
+      name: "Stakeholder Communication"
+      category: interpersonal
+      description: >
+        Communicating audit plans, progress, findings, and recommendations
+        to diverse stakeholders including management, the audit committee,
+        board of directors, regulators, and external auditors. Encompasses
+        both written and verbal communication, with attention to audience
+        adaptation, message framing, expectation management, and the
+        ability to deliver difficult messages constructively.
+      proficiency:
+        junior: >
+          Communicates clearly with audit clients during fieldwork,
+          explaining testing procedures and information needs. Provides
+          timely status updates to engagement leadership and documents
+          communications for workpaper support. Learns to adapt
+          communication style to different stakeholder levels and
+          organizational contexts.
+        mid: >
+          Manages ongoing communication with audit clients for assigned
+          areas, setting expectations, providing progress updates, and
+          discussing preliminary findings. Presents audit results at
+          closing meetings for moderate-complexity engagements. Writes
+          clear, professional communications that maintain positive
+          relationships while delivering honest assessments.
+        senior: >
+          Leads stakeholder communication for complex engagements,
+          presenting findings to senior management and facilitating
+          constructive dialogue about remediation priorities. Navigates
+          difficult conversations about significant control weaknesses
+          or adverse findings with professionalism and diplomatic skill.
+          Manages expectations effectively throughout the engagement.
+        staff: >
+          Designs the audit function's stakeholder communication strategy,
+          including reporting cadences, relationship management protocols,
+          and escalation procedures. Manages communications with the
+          audit committee, preparing presentations that convey risk and
+          control matters effectively. Develops communication skills
+          across the audit team through training and coaching.
+        principal: >
+          Serves as the audit function's primary voice to the audit
+          committee, board, and senior executive team. Communicates the
+          most significant risk, control, and governance matters with
+          clarity, conviction, and appropriate urgency. Builds trusted
+          relationships that enable candid dialogue about organizational
+          challenges. Represents the audit function in external
+          engagements with regulators and industry peers.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          Stakeholder communication in audit requires trust, credibility,
+          and the ability to deliver difficult messages constructively.
+          AI can help prepare talking points and draft communications,
+          but the interpersonal skills needed to navigate sensitive
+          audit conversations and build lasting stakeholder relationships
+          are fundamentally human.

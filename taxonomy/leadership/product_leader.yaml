@@ -1,0 +1,536 @@
+role:
+  id: product_leader
+  function: leadership
+  name: "Product Leader"
+  also_known_as:
+    - VP of Product
+    - SVP of Product
+    - Chief Product Officer
+    - CPO
+    - Head of Product
+    - VP Product Management
+  description: >
+    The Product Leader is a senior executive responsible for the company's product strategy,
+    portfolio management, and the product management function. They translate business vision
+    into product direction, drive go-to-market strategy, and ensure the product organization
+    delivers outcomes that create customer value and drive business growth.
+  ai_impact:
+    level: moderate-high
+    summary: >
+      AI is transforming product leadership by providing deeper customer insights, enabling rapid
+      experimentation, and automating routine product management tasks. AI-powered analytics can
+      reveal usage patterns and market opportunities that were previously invisible. Product
+      leaders who master AI tools can make faster, more informed decisions. However, the role's
+      core value in setting product vision, building teams, and making strategic bets under
+      uncertainty remains fundamentally human.
+    automating:
+      - Product usage analytics and pattern identification
+      - Competitive intelligence gathering and monitoring
+      - Customer feedback aggregation and sentiment analysis
+      - Market sizing and opportunity scoring models
+      - Feature impact prediction and prioritization scoring
+    augmenting:
+      - Product strategy development with AI-powered market analysis
+      - Pricing optimization through AI-driven elasticity modeling
+      - Customer segmentation using ML-based clustering
+      - Roadmap planning with AI-assisted dependency and risk analysis
+      - A/B test design and analysis with AI-powered statistical tools
+    preserving:
+      - Setting product vision that inspires teams and excites markets
+      - Building and developing high-performing product teams
+      - Navigating organizational politics to secure resources and alignment
+      - Making high-stakes product bets that define the company's direction
+      - Building deep customer empathy and translating it into product strategy
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Reforge - AI and the Future of Product Management"
+        url: "https://www.reforge.com/blog/ai-product-management"
+      - name: "Silicon Valley Product Group - Transformed"
+        url: "https://www.svpg.com/transformed/"
+  levels:
+    - id: director_product
+      name: "Director of Product"
+      years_experience: "8-12"
+      summary: >
+        Leads product management for a significant product area, managing a team of product
+        managers. Owns product strategy and roadmap for their domain and partners with
+        engineering directors on execution. Drives product outcomes through their team
+        while maintaining close connection to customers and data.
+    - id: vp_product
+      name: "VP of Product"
+      years_experience: "12-18"
+      summary: >
+        Leads the product management function for a major business unit or the entire company
+        at a mid-stage organization. Sets product strategy across multiple product lines and
+        manages a team of directors and senior PMs. Partners with the executive team on
+        company strategy and go-to-market.
+    - id: svp_product
+      name: "SVP of Product"
+      years_experience: "16-22"
+      summary: >
+        Oversees the product function across a large organization or division. Manages a
+        portfolio of products at different lifecycle stages. Drives product strategy that
+        shapes the company's market position and competitive differentiation. Partners
+        directly with the CEO and board on product direction.
+    - id: cpo
+      name: "Chief Product Officer (CPO)"
+      years_experience: "18-25"
+      summary: >
+        Serves as the most senior product executive, responsible for the entire product
+        portfolio, product management function, and product strategy. Partners with the
+        CEO and CTO to set company direction. Represents the product perspective at the
+        board level and drives the company's product-led growth strategy.
+    - id: cpo_plus
+      name: "CPO / President of Product"
+      years_experience: "22+"
+      summary: >
+        Operates at the highest level of product leadership with P&L ownership and
+        general management responsibilities beyond the product function. Shapes company
+        strategy as a peer to the CEO. Often positioned for CEO succession or board
+        roles. Recognized as an industry-defining product leader.
+  skills:
+    - id: product_vision
+      name: "Product Vision"
+      category: domain
+      description: >
+        The ability to craft and communicate a compelling product vision that defines where
+        the product is headed, why it matters, and how it creates value for customers and the
+        business. Encompasses customer empathy, market understanding, and strategic foresight.
+      proficiency:
+        junior: >
+          Develops a clear product vision for a product area that aligns with the broader company
+          strategy. Communicates the vision in ways that motivate product managers and engineering
+          partners. Connects daily product decisions to the longer-term vision.
+        mid: >
+          Crafts a compelling product vision across multiple product lines that differentiates the
+          company in the market. Creates product narratives that excite customers, investors, and
+          internal teams. Translates abstract vision into concrete strategic initiatives.
+        senior: >
+          Defines the company's product vision in partnership with the CEO. Creates visions that
+          shape market expectations and attract top talent. Balances ambitious long-term vision
+          with pragmatic near-term execution. Inspires the entire organization.
+        staff: >
+          Sets product vision at the company level that defines the company's identity and market
+          position. Creates visions that reshape customer expectations and competitive dynamics.
+          Influences how the market thinks about the problem space the company addresses.
+        principal: >
+          Creates product visions that redefine entire categories. Recognized as a visionary
+          product leader whose perspectives shape how the industry thinks about product development
+          and customer value creation. Legacy includes products that changed how people live or work.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can help analyze market trends, customer data, and competitive positioning to inform
+          product vision. However, crafting a compelling vision that inspires people and creates
+          new market categories requires human creativity, empathy, and strategic imagination.
+
+    - id: portfolio_management
+      name: "Portfolio Management"
+      category: analytical
+      description: >
+        The ability to manage a portfolio of products at different lifecycle stages, making
+        strategic investment decisions about where to grow, maintain, harvest, or sunset
+        products to optimize overall business value and resource utilization.
+      proficiency:
+        junior: >
+          Manages a portfolio of features or sub-products within a product area. Makes tradeoff
+          decisions about investment allocation across their scope. Identifies which initiatives
+          to prioritize and which to defer based on impact and strategic alignment.
+        mid: >
+          Manages a multi-product portfolio, making strategic decisions about investment across
+          products at different lifecycle stages. Creates portfolio frameworks that help the
+          organization make consistent investment decisions. Identifies opportunities for
+          cross-product leverage.
+        senior: >
+          Drives portfolio strategy at the company level, managing products from inception through
+          end-of-life. Makes high-stakes decisions about which products to invest in, which to
+          maintain, and which to sunset. Creates portfolio analysis frameworks that inform
+          executive decision-making.
+        staff: >
+          Defines the company's portfolio management approach and governs portfolio-level
+          investment decisions. Manages complex product portfolios spanning different markets,
+          customer segments, and business models. Creates portfolio strategies that optimize
+          for long-term business value.
+        principal: >
+          Manages product portfolios at unprecedented scale and complexity. Creates portfolio
+          management approaches that become industry best practices. Makes portfolio decisions
+          that reshape the company's market position and competitive dynamics.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can significantly augment portfolio management through usage analytics, revenue
+          modeling, and investment optimization. AI tools can predict product lifecycle stages
+          and recommend investment shifts. However, making strategic portfolio bets that account
+          for market intuition and competitive positioning requires human judgment.
+
+    - id: go_to_market
+      name: "Go-to-Market Strategy"
+      category: domain
+      description: >
+        The ability to develop and execute go-to-market strategies that successfully launch
+        products, drive adoption, and capture market share. Encompasses positioning, messaging,
+        launch planning, channel strategy, and cross-functional coordination with sales and marketing.
+      proficiency:
+        junior: >
+          Develops go-to-market plans for product launches within their area. Coordinates with
+          marketing and sales on positioning and messaging. Ensures launches are well-coordinated
+          and achieve initial adoption targets.
+        mid: >
+          Drives go-to-market strategy across multiple product lines. Creates positioning
+          frameworks that differentiate the company in the market. Builds strong partnerships
+          with sales and marketing leadership to drive coordinated go-to-market execution.
+        senior: >
+          Sets go-to-market strategy at the company level. Creates market entry strategies for
+          new markets and customer segments. Drives cross-functional alignment on positioning,
+          pricing, and channel strategy. Manages complex, multi-product launch orchestrations.
+        staff: >
+          Defines the company's go-to-market philosophy and approach. Creates go-to-market
+          strategies that reshape market dynamics and competitive positioning. Builds go-to-market
+          capabilities that become organizational strengths and competitive advantages.
+        principal: >
+          Creates go-to-market approaches that define new categories and reshape markets.
+          Recognized as a master of product launch and market development. Creates frameworks
+          that other companies adopt for their go-to-market strategies.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can improve go-to-market through better market segmentation, predictive demand
+          modeling, and automated competitive monitoring. AI-powered tools can optimize messaging
+          and channel selection. However, crafting compelling market narratives and coordinating
+          cross-functional execution require human creativity and leadership.
+
+    - id: pricing_strategy
+      name: "Pricing Strategy"
+      category: analytical
+      description: >
+        The ability to develop pricing strategies that capture value, drive adoption, and
+        support business model goals. Encompasses pricing model design, price optimization,
+        packaging decisions, and the ability to balance growth and monetization objectives.
+      proficiency:
+        junior: >
+          Contributes to pricing decisions for their product area. Understands basic pricing
+          models and their tradeoffs. Analyzes pricing data to identify optimization opportunities
+          and makes recommendations to leadership.
+        mid: >
+          Develops pricing strategies across multiple products. Designs pricing models that
+          align with customer value and business goals. Runs pricing experiments and uses data
+          to optimize price points and packaging. Manages pricing changes with minimal customer
+          disruption.
+        senior: >
+          Sets pricing strategy at the company level. Creates pricing architectures that
+          support multiple products, customer segments, and business models. Makes strategic
+          pricing decisions that affect the company's competitive positioning and revenue trajectory.
+        staff: >
+          Defines the company's overall pricing philosophy and approach. Creates innovative
+          pricing models that become competitive advantages. Manages complex pricing strategies
+          across enterprise, mid-market, and self-serve channels with different value dynamics.
+        principal: >
+          Creates pricing strategies that reshape market economics. Develops pricing innovations
+          that other companies adopt. Recognized as an industry expert in technology pricing
+          and monetization strategy.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI is highly valuable for pricing optimization through elasticity modeling, willingness-
+          to-pay analysis, and dynamic pricing. AI can analyze competitive pricing data and
+          predict customer response to price changes. However, pricing strategy that accounts
+          for brand positioning, competitive signaling, and long-term market dynamics requires
+          human strategic judgment.
+
+    - id: market_analysis
+      name: "Market Analysis"
+      category: analytical
+      description: >
+        The ability to analyze markets, competitive landscapes, and customer needs to identify
+        opportunities, assess threats, and inform product strategy. Encompasses quantitative
+        market research, qualitative customer insight, and competitive intelligence.
+      proficiency:
+        junior: >
+          Conducts market analysis for their product area, identifying customer needs, competitive
+          threats, and market opportunities. Uses a mix of quantitative and qualitative research
+          methods. Translates market insights into product strategy recommendations.
+        mid: >
+          Drives market analysis across multiple product areas and market segments. Creates
+          competitive analysis frameworks that keep the organization informed about market
+          dynamics. Identifies emerging market opportunities and threats before they become
+          obvious.
+        senior: >
+          Sets the company's approach to market analysis and competitive intelligence. Identifies
+          macro market trends that shape the company's strategic direction. Creates market
+          models that inform major investment decisions and strategic pivots.
+        staff: >
+          Defines how the company understands and responds to market dynamics. Creates
+          market analysis capabilities that become competitive advantages. Identifies market
+          shifts years before competitors and positions the company to capitalize on them.
+        principal: >
+          Shapes how the industry thinks about the market through groundbreaking analysis
+          and insights. Identifies market opportunities that create entirely new categories.
+          Recognized as one of the foremost market analysts and strategists in the industry.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can significantly augment market analysis through automated competitive monitoring,
+          trend identification, and customer sentiment analysis. AI-powered tools can process
+          vast amounts of market data to identify patterns and opportunities. However,
+          interpreting market signals and making strategic decisions requires human judgment.
+
+    - id: team_building
+      name: "Team Building"
+      category: leadership
+      description: >
+        The ability to build, develop, and lead high-performing product management teams,
+        including hiring product talent, creating development programs, and establishing the
+        processes and culture that enable product teams to do their best work.
+      proficiency:
+        junior: >
+          Builds and leads a team of product managers for a product area. Hires effectively,
+          develops individual PMs, and creates team practices that drive strong product outcomes.
+          Establishes a positive team culture and manages performance constructively.
+        mid: >
+          Builds and leads a product management organization spanning multiple teams and levels.
+          Creates career frameworks and development programs for product managers. Builds a
+          product culture that attracts top talent and produces strong outcomes.
+        senior: >
+          Builds the company's product management function as an organizational capability.
+          Hires and develops directors and VPs of product. Creates a product management culture
+          that is a defining strength of the company. Develops future product leaders.
+        staff: >
+          Shapes the company's product management practice as an industry-leading discipline.
+          Creates innovative approaches to product team development. Builds product organizations
+          whose alumni are sought-after leaders across the industry.
+        principal: >
+          Recognized as an exceptional builder of product organizations. Creates product team
+          models that become industry standards. Develops product leaders who go on to be CPOs
+          and CEOs. Shapes how the industry thinks about product management as a discipline.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          Team building depends on human qualities including empathy, trust, and the ability to
+          develop others. AI can assist with hiring process optimization and performance data
+          analysis, but building teams that are motivated, aligned, and high-performing requires
+          deeply human leadership.
+
+    - id: stakeholder_alignment
+      name: "Stakeholder Alignment"
+      category: communication
+      description: >
+        The ability to build alignment across diverse stakeholders including engineering, design,
+        sales, marketing, customer success, and executive leadership, creating shared understanding
+        of priorities and tradeoffs to drive coordinated product outcomes.
+      proficiency:
+        junior: >
+          Builds alignment across stakeholders for their product area. Manages competing demands
+          from sales, marketing, and engineering. Communicates product decisions clearly and
+          builds buy-in through transparency and data.
+        mid: >
+          Drives alignment across the executive team on product strategy and priorities. Manages
+          complex stakeholder dynamics across multiple product areas. Creates communication
+          frameworks and governance structures that maintain alignment at scale.
+        senior: >
+          Operates as the central alignment point for product decisions across the company.
+          Builds consensus on the most contentious strategic decisions. Creates organizational
+          structures and processes that sustain alignment as the company grows.
+        staff: >
+          Drives alignment at the highest levels of the organization on product-related
+          strategic decisions. Resolves conflicts between the most senior stakeholders.
+          Creates alignment approaches that other leaders adopt across the organization.
+        principal: >
+          Masters the art of stakeholder alignment at the most complex organizational scale.
+          Creates alignment in situations others consider impossible. Develops frameworks for
+          stakeholder management that become organizational capabilities.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          Stakeholder alignment depends on interpersonal skills, trust, and the ability to
+          navigate organizational dynamics. AI can help prepare presentations and analyze
+          stakeholder positions, but building genuine alignment requires human relationship
+          skills and political acumen.
+
+    - id: data_driven_decisions
+      name: "Data-Driven Decision Making"
+      category: analytical
+      description: >
+        The ability to leverage quantitative and qualitative data to inform product decisions,
+        establishing measurement frameworks, running experiments, and building a culture of
+        evidence-based decision-making across the product organization.
+      proficiency:
+        junior: >
+          Uses data effectively to inform product decisions within their area. Establishes
+          metrics and measurement frameworks for their products. Runs A/B tests and uses
+          results to guide product direction. Balances data with qualitative customer insight.
+        mid: >
+          Drives a data-driven culture across multiple product teams. Creates measurement
+          frameworks that connect product metrics to business outcomes. Makes sophisticated
+          use of experimentation and analytics to inform strategic product decisions.
+        senior: >
+          Establishes the company's approach to data-driven product management. Creates
+          advanced experimentation and analytics capabilities. Develops product leaders who
+          combine rigorous data analysis with customer empathy and strategic intuition.
+        staff: >
+          Defines the company's data-driven decision-making philosophy and infrastructure.
+          Creates innovative approaches to measurement and experimentation that become
+          competitive advantages. Builds organizations where data and intuition reinforce
+          each other in product decision-making.
+        principal: >
+          Pioneers data-driven product management approaches that the industry adopts.
+          Creates measurement frameworks that reveal insights competitors miss. Develops
+          the most advanced experimentation and analytics capabilities in the industry.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI dramatically enhances data-driven decision-making through advanced analytics,
+          automated insight generation, and predictive modeling. AI tools can identify patterns
+          in product usage data that humans would miss. However, deciding which questions to
+          ask, interpreting results in context, and making final decisions require human judgment.
+
+    - id: customer_centricity
+      name: "Customer Centricity"
+      category: domain
+      description: >
+        The ability to build deep customer empathy throughout the product organization, ensuring
+        customer needs, pain points, and aspirations drive product decisions at every level.
+        Encompasses customer research, feedback systems, and the cultivation of customer-first
+        thinking across teams.
+      proficiency:
+        junior: >
+          Maintains close connection to customers within their product area. Establishes
+          regular customer research and feedback practices. Ensures product decisions are
+          grounded in real customer needs. Models customer-centric thinking for their team.
+        mid: >
+          Drives customer centricity across the product organization. Creates systematic
+          approaches to customer research and insight generation. Builds customer advisory
+          programs and ensures customer voice is present in all major product decisions.
+        senior: >
+          Establishes customer centricity as a core organizational value. Creates programs that
+          connect every employee to customer experiences. Develops sophisticated customer insight
+          capabilities that reveal unarticulated needs and emerging opportunities.
+        staff: >
+          Defines the company's approach to customer centricity as a competitive advantage.
+          Creates innovative approaches to understanding and serving customers that competitors
+          cannot easily replicate. Builds organizations where customer obsession drives every decision.
+        principal: >
+          Pioneers customer-centric product approaches that the industry adopts. Creates
+          frameworks for understanding customers that reveal insights others miss. Recognized
+          as one of the most customer-focused product leaders in the industry.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can significantly enhance customer understanding through sentiment analysis, behavior
+          prediction, and automated feedback aggregation. AI-powered tools can identify customer
+          needs at scale. However, building genuine customer empathy and translating it into
+          product decisions requires human intuition and emotional intelligence.
+
+    - id: platform_thinking
+      name: "Platform Thinking"
+      category: technical
+      description: >
+        The ability to think about products as platforms that create value through ecosystem
+        effects, developer engagement, and third-party integration. Encompasses API strategy,
+        marketplace dynamics, network effects, and the balance between platform openness and
+        product control.
+      proficiency:
+        junior: >
+          Understands platform concepts and identifies opportunities for platform thinking
+          within their product area. Makes decisions about API design and third-party integration
+          that create value for the product ecosystem.
+        mid: >
+          Develops platform strategies for product areas, identifying where platform approaches
+          create more value than point solutions. Manages the tradeoffs between platform openness
+          and product control. Builds partnership ecosystems that enhance product value.
+        senior: >
+          Drives platform strategy at the company level. Creates platform approaches that
+          generate network effects and ecosystem value. Makes strategic decisions about which
+          capabilities to platform and which to keep as proprietary product features.
+        staff: >
+          Defines the company's platform philosophy and strategy. Creates platform ecosystems
+          that become competitive moats. Manages complex multi-sided platform dynamics and
+          optimizes for ecosystem health and value creation.
+        principal: >
+          Creates platform strategies that reshape market dynamics. Builds platform ecosystems
+          at unprecedented scale. Recognized as an industry expert in platform strategy and
+          ecosystem development. Influences how the market thinks about platforms.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can help analyze platform usage, optimize marketplace dynamics, and identify
+          integration opportunities. However, platform strategy requires deep understanding of
+          ecosystem dynamics, developer psychology, and competitive positioning that depends
+          on human strategic judgment and market intuition.
+
+    - id: competitive_strategy
+      name: "Competitive Strategy"
+      category: analytical
+      description: >
+        The ability to analyze competitive dynamics, develop competitive positioning, and
+        create strategies that establish and defend market advantages. Encompasses competitive
+        intelligence, differentiation strategy, and the ability to anticipate and respond to
+        competitive moves.
+      proficiency:
+        junior: >
+          Monitors competitors within their product area and adjusts product strategy based
+          on competitive dynamics. Develops positioning that differentiates the product from
+          alternatives. Creates competitive battle cards and sales enablement materials.
+        mid: >
+          Drives competitive strategy across multiple product lines. Creates comprehensive
+          competitive analysis frameworks. Develops strategies that establish durable competitive
+          advantages. Anticipates competitive moves and positions the company to respond
+          or preempt them.
+        senior: >
+          Sets the company's competitive strategy in partnership with the CEO. Develops
+          competitive moats through product, technology, and ecosystem strategies. Makes
+          strategic decisions about which competitive battles to fight and which to avoid.
+        staff: >
+          Defines the company's competitive philosophy and approach. Creates competitive
+          strategies that reshape market dynamics in the company's favor. Anticipates
+          competitive shifts years ahead and positions the company to capitalize on them.
+        principal: >
+          Creates competitive strategies that define market categories. Recognized as a master
+          strategist whose competitive moves become case studies. Reshapes competitive dynamics
+          across the industry through innovative strategic approaches.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can significantly enhance competitive analysis through automated monitoring,
+          pattern detection, and scenario modeling. AI tools can predict competitive moves
+          and model strategic responses. However, developing competitive strategy that accounts
+          for market psychology, timing, and organizational capabilities requires human
+          strategic judgment.
+
+    - id: innovation_management
+      name: "Innovation Management"
+      category: leadership
+      description: >
+        The ability to create and manage innovation processes that systematically generate,
+        evaluate, and develop new product ideas and business models. Encompasses ideation,
+        incubation, validation, and the scaling of innovative products from concept to market.
+      proficiency:
+        junior: >
+          Fosters innovation within their product team through structured ideation, rapid
+          prototyping, and customer validation. Creates space for experimentation while
+          maintaining focus on core product execution. Identifies and nurtures promising
+          ideas from the team.
+        mid: >
+          Builds innovation programs across the product organization. Creates structured
+          processes for generating, evaluating, and incubating new ideas. Manages a portfolio
+          of innovation bets at different stages of validation. Balances innovation investment
+          with core product delivery.
+        senior: >
+          Drives innovation strategy at the company level. Creates organizational structures
+          and processes that systematically produce innovative products and features. Manages
+          the transition of innovations from incubation to mainstream product lines.
+        staff: >
+          Defines the company's innovation management approach as a core organizational
+          capability. Creates innovation ecosystems that include internal ideation, customer
+          co-creation, and strategic partnerships. Builds innovation into the company's DNA.
+        principal: >
+          Pioneers innovation management approaches that the industry adopts. Creates
+          innovation systems that consistently produce category-defining products. Recognized
+          as one of the most innovative product leaders in the industry.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can assist with idea generation, concept validation, and trend analysis. AI tools
+          can identify innovation opportunities by analyzing market gaps and customer needs.
+          However, innovation management requires human creativity, risk tolerance, and the
+          ability to inspire teams to pursue ambitious goals under uncertainty.

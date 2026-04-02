@@ -1,0 +1,414 @@
+role:
+  id: fullstack
+  function: engineering
+  name: "Full-Stack Engineer"
+  also_known_as:
+    - "Full-Stack Developer"
+    - "Generalist Engineer"
+    - "Product Engineer"
+  description: >
+    Owns features end-to-end across the entire stack -- from database schema to user
+    interface. Bridges frontend and backend concerns, enabling rapid iteration and
+    reducing hand-off overhead in product-focused teams.
+
+  ai_impact:
+    level: high
+    summary: >
+      AI coding assistants disproportionately benefit full-stack engineers by reducing
+      context-switching cost across languages and frameworks. Boilerplate generation,
+      CRUD scaffolding, and routine integration code are heavily automatable. The
+      premium shifts to architectural judgment, product intuition, and the ability to
+      evaluate AI-generated code across the entire stack.
+    automating:
+      - "CRUD endpoint and form scaffolding"
+      - "Database migration generation"
+      - "Boilerplate API client code"
+      - "Basic component creation from designs"
+    augmenting:
+      - "Cross-stack debugging and root cause analysis"
+      - "Performance profiling across client and server"
+      - "Dependency evaluation and upgrade planning"
+      - "Code review across multiple languages"
+    preserving:
+      - "Product intuition and feature scoping"
+      - "End-to-end system design decisions"
+      - "Cross-team technical communication"
+      - "Trade-off evaluation between frontend and backend approaches"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "GitHub Copilot Research 2024"
+        url: "https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/"
+      - name: "Stack Overflow Developer Survey 2024"
+        url: "https://survey.stackoverflow.co/2024/"
+
+  levels:
+    - id: junior
+      name: "Junior (L1-L2)"
+      years_experience: "0-2"
+      summary: "Implements well-scoped features across the stack with guidance. Follows established patterns."
+    - id: mid
+      name: "Mid-Level (L3)"
+      years_experience: "2-5"
+      summary: "Delivers features independently across frontend and backend. Owns small subsystems."
+    - id: senior
+      name: "Senior (L4)"
+      years_experience: "5-8"
+      summary: "Designs end-to-end features spanning multiple services. Mentors on cross-stack concerns."
+    - id: staff
+      name: "Staff (L5)"
+      years_experience: "8-12"
+      summary: "Defines technical direction for product areas. Makes build-vs-buy decisions spanning the stack."
+    - id: principal
+      name: "Principal (L6+)"
+      years_experience: "12+"
+      summary: "Sets architectural vision across the organization. Drives platform-level decisions."
+
+  skills:
+    - id: cross_stack_architecture
+      name: "Cross-Stack Architecture"
+      category: technical
+      description: "Designing systems that span frontend, backend, and data layers with coherent contracts."
+      proficiency:
+        junior: >
+          Reads existing architecture diagrams and traces request flows from UI
+          through API to database. Adds new components by following established
+          patterns in the codebase with guidance from senior engineers.
+        mid: >
+          Designs feature architectures spanning React/Vue frontend and backend
+          services, choosing appropriate data flow patterns like REST or GraphQL.
+          Produces clear design docs and handles client-server contract changes.
+        senior: >
+          Architects multi-service features with Redis caching layers, WebSocket
+          real-time updates, and graceful degradation paths. Weighs trade-offs
+          between server-side rendering and client-side hydration for each use case.
+        staff: >
+          Defines cross-stack architectural standards such as BFF patterns, API
+          gateway strategies, and shared contract schemas across the organization.
+          Balances consistency against team autonomy when setting these standards.
+        principal: >
+          Sets the multi-year technical vision for how the product stack evolves,
+          deciding when to consolidate monorepos or decompose into micro-frontends.
+          Aligns architecture direction with business growth and hiring strategy.
+      ai_impact:
+        rating: 0.2
+        detail: "AI can suggest patterns but cannot evaluate product context, team capabilities, or business constraints that drive architectural decisions."
+
+    - id: frontend_development
+      name: "Frontend Development"
+      category: technical
+      description: "Building user interfaces with modern frameworks, managing state, and ensuring responsive design."
+      proficiency:
+        junior: >
+          Implements UI components from Figma designs using React or Vue,
+          handling basic state with useState or Pinia. Follows existing component
+          library conventions and writes markup that passes accessibility linters.
+        mid: >
+          Builds complex interactive features with Redux, Zustand, or similar
+          state management. Optimizes rendering with React.memo and virtualized
+          lists, and writes responsive CSS using Tailwind or CSS modules.
+        senior: >
+          Architects frontend systems including design system integration, route-
+          based code splitting, and SSR/SSG strategies with Next.js or Nuxt.
+          Balances bundle size against developer experience when choosing patterns.
+        staff: >
+          Evaluates and selects frontend frameworks for new product surfaces,
+          weighing ecosystem maturity against performance characteristics. Defines
+          rendering strategies, build tooling standards, and shared component APIs.
+        principal: >
+          Shapes the frontend platform strategy across the organization, deciding
+          when micro-frontends justify their coordination cost versus monolithic
+          builds. Drives investments in design system infrastructure and web perf.
+      ai_impact:
+        rating: 0.6
+        detail: "AI generates component code effectively from designs. Complex state management, accessibility, and cross-browser edge cases still require human judgment."
+
+    - id: backend_development
+      name: "Backend Development"
+      category: technical
+      description: "Building server-side logic, APIs, data persistence, and background processing systems."
+      proficiency:
+        junior: >
+          Implements REST API endpoints and database queries using Express, Django,
+          or Rails following established patterns. Writes tests for new endpoints
+          and handles basic input validation and error responses.
+        mid: >
+          Designs services with structured error handling, request validation via
+          Zod or Pydantic, and N+1 query prevention. Implements background jobs
+          with Celery or BullMQ and monitors their failure modes.
+        senior: >
+          Architects backend systems choosing between Redis and Memcached caching,
+          selecting queue topologies, and designing horizontal scaling strategies.
+          Weighs consistency versus availability trade-offs for each service.
+        staff: >
+          Drives backend platform decisions including language migrations, framework
+          adoption, and service boundary definitions. Evaluates when to adopt Go
+          or Rust for performance-critical services versus Python for velocity.
+        principal: >
+          Defines the server-side technical strategy spanning runtime selection,
+          deployment topology, and infrastructure investment. Balances long-term
+          platform bets against near-term delivery pressure across the org.
+      ai_impact:
+        rating: 0.55
+        detail: "AI handles CRUD and glue code well. Database optimization, distributed system design, and security architecture remain human-intensive."
+
+    - id: database_design
+      name: "Database Design & Management"
+      category: technical
+      description: "Schema design, query optimization, migrations, and choosing between SQL and NoSQL solutions."
+      proficiency:
+        junior: >
+          Writes basic SQL queries and follows existing schema conventions using
+          an ORM like Prisma or SQLAlchemy. Runs migrations with guidance and
+          understands primary keys, foreign keys, and simple joins.
+        mid: >
+          Designs normalized schemas with proper indexing, writes migration
+          scripts for zero-downtime deploys, and reads EXPLAIN plans to identify
+          slow queries. Selects appropriate data types for the workload.
+        senior: >
+          Optimizes query performance for high-throughput workloads, selects
+          between PostgreSQL and DynamoDB based on access patterns, and designs
+          partitioning strategies. Weighs denormalization against write complexity.
+        staff: >
+          Defines data architecture strategy including sharding approaches,
+          read-replica topologies, and polyglot persistence patterns across teams.
+          Leads capacity planning and cost-optimization for database infrastructure.
+        principal: >
+          Sets organizational data platform strategy spanning storage, processing,
+          and governance. Evaluates emerging technologies like NewSQL and negotiates
+          vendor relationships aligned with multi-year scalability requirements.
+      ai_impact:
+        rating: 0.4
+        detail: "AI generates schema DDL and basic queries well. Index optimization, migration planning for live systems, and cost-performance trade-offs require human expertise."
+
+    - id: api_contract_design
+      name: "API Contract Design"
+      category: technical
+      description: "Designing API contracts that serve both frontend and external consumers effectively."
+      proficiency:
+        junior: >
+          Follows existing REST conventions for naming and status codes. Reads
+          OpenAPI specs and Postman collections to understand endpoints. Implements
+          endpoints from specifications with guidance on edge cases.
+        mid: >
+          Designs RESTful APIs with cursor-based pagination, structured error
+          envelopes, and versioning via URL or headers. Writes OpenAPI schemas and
+          generates TypeScript client types from API definitions.
+        senior: >
+          Establishes API design standards across teams, evaluating REST versus
+          GraphQL versus gRPC for specific use cases. Designs backward-compatible
+          evolution strategies and deprecation policies that minimize consumer pain.
+        staff: >
+          Drives API platform strategy including gateway configuration with Kong
+          or AWS API Gateway, automated SDK generation pipelines, and contract
+          testing with Pact. Reduces cross-team integration friction at scale.
+        principal: >
+          Sets API governance and evolution strategy across organizational
+          boundaries, treating APIs as products. Aligns public API architecture
+          with partner ecosystem goals and long-term business model.
+      ai_impact:
+        rating: 0.45
+        detail: "AI generates API scaffolding and OpenAPI specs effectively. Design decisions involving consumer ergonomics, evolution strategy, and backward compatibility are human-driven."
+
+    - id: devops_deployment
+      name: "DevOps & Deployment"
+      category: technical
+      description: "CI/CD pipelines, containerization, infrastructure management, and deployment strategies."
+      proficiency:
+        junior: >
+          Uses existing GitHub Actions or Jenkins pipelines to build and deploy.
+          Follows runbooks for production deploys and rollbacks. Writes basic
+          Dockerfiles and understands image layers and container networking basics.
+        mid: >
+          Configures CI/CD pipelines with parallel test stages, writes multi-stage
+          Dockerfiles, and manages Terraform modules for staging and production.
+          Debugs failed deploys using container logs and pipeline output.
+        senior: >
+          Designs deployment strategies including blue-green and canary rollouts
+          with Argo Rollouts or Flagger. Manages Kubernetes workloads and weighs
+          ECS Fargate simplicity against Kubernetes flexibility for each service.
+        staff: >
+          Defines the deployment platform strategy, evaluating build systems like
+          Bazel versus Turborepo and IaC approaches like Pulumi versus Terraform.
+          Establishes guardrails that enable fast deploys while limiting blast radius.
+        principal: >
+          Shapes the organization's deployment philosophy and platform investments,
+          balancing self-service developer velocity against operational safety.
+          Drives multi-region and disaster recovery architecture at the exec level.
+      ai_impact:
+        rating: 0.5
+        detail: "AI generates CI configs, Dockerfiles, and IaC templates effectively. Deployment strategy, incident response, and reliability engineering require human judgment."
+
+    - id: testing_fullstack
+      name: "Full-Stack Testing"
+      category: technical
+      description: "Testing across all layers: unit, integration, end-to-end, and contract testing."
+      proficiency:
+        junior: >
+          Writes unit tests for individual functions using Jest or pytest,
+          following existing test patterns. Understands the testing pyramid and
+          keeps tests deterministic and isolated from external services.
+        mid: >
+          Writes integration tests spanning frontend and backend with Playwright
+          or Cypress. Implements contract tests with Pact for API boundaries and
+          mocks external dependencies with MSW or WireMock.
+        senior: >
+          Designs test strategies for complex features including E2E smoke suites,
+          visual regression with Chromatic, and load tests with k6. Optimizes CI
+          test runtime and systematically eliminates flaky tests.
+        staff: >
+          Defines testing standards and shared infrastructure across the org,
+          balancing test pyramid economics against confidence. Introduces contract
+          testing pipelines and chaos engineering programs for critical paths.
+        principal: >
+          Sets quality engineering philosophy and investment strategy for testing
+          infrastructure. Champions practices like production canary testing and
+          AI-assisted test generation, connecting testing spend to business risk.
+      ai_impact:
+        rating: 0.65
+        detail: "AI generates unit and integration tests effectively from existing code. Test strategy design, edge case identification from domain knowledge, and flaky test debugging remain human tasks."
+
+    - id: performance_optimization
+      name: "Performance Optimization"
+      category: technical
+      description: "Profiling and optimizing application performance across frontend, backend, and network layers."
+      proficiency:
+        junior: >
+          Identifies obvious performance issues using Chrome DevTools and network
+          waterfall views. Recognizes when pages load slowly and flags large
+          bundle sizes or unoptimized images to senior teammates.
+        mid: >
+          Profiles specific bottlenecks with Lighthouse, React Profiler, or
+          server-side APM tools. Implements caching with Redis, lazy loading with
+          dynamic imports, and image optimization with CDN transforms.
+        senior: >
+          Conducts systematic performance analysis across client and server using
+          OpenTelemetry traces and Core Web Vitals. Sets performance budgets in
+          CI and weighs UX impact versus engineering effort for each optimization.
+        staff: >
+          Defines performance engineering standards including SLOs for latency and
+          throughput. Drives cross-team optimization initiatives and establishes
+          continuous profiling pipelines with tools like Pyroscope or Parca.
+        principal: >
+          Sets organizational performance philosophy, balancing user experience
+          targets against infrastructure cost. Invests in performance platforms
+          and champions a culture where perf regressions block deploys.
+      ai_impact:
+        rating: 0.35
+        detail: "AI identifies common anti-patterns but cannot replicate the system-wide reasoning needed to diagnose complex performance issues spanning multiple services and network boundaries."
+
+    - id: security_practices
+      name: "Security Practices"
+      category: technical
+      description: "Implementing secure coding practices across the full stack: input validation, auth, CORS, CSP."
+      proficiency:
+        junior: >
+          Follows secure coding guidelines using parameterized queries, input
+          sanitization, and helmet/CSP headers. Avoids common OWASP Top 10
+          vulnerabilities and stores secrets in environment variables, not code.
+        mid: >
+          Implements OAuth 2.0 and OIDC authentication flows, configures CORS
+          policies and Content-Security-Policy headers, and integrates Snyk or
+          Dependabot for dependency vulnerability scanning in CI pipelines.
+        senior: >
+          Conducts threat modeling for new features using STRIDE methodology.
+          Designs auth architectures with RBAC/ABAC enforcement across services
+          and weighs security hardening against developer experience friction.
+        staff: >
+          Defines application security standards and drives adoption of policy-as-
+          code frameworks like OPA. Conducts threat modeling for new systems and
+          establishes secure-by-default templates that teams inherit automatically.
+        principal: >
+          Sets organization-wide application security strategy in partnership
+          with the security team. Aligns security architecture with compliance
+          requirements across jurisdictions and evaluates emerging threat landscapes.
+      ai_impact:
+        rating: 0.3
+        detail: "AI detects known vulnerability patterns but cannot evaluate business-specific threat models, compliance requirements, or the security implications of architectural decisions."
+
+    - id: product_collaboration
+      name: "Product & Design Collaboration"
+      category: communication
+      description: "Working effectively with product managers and designers to translate requirements into technical solutions."
+      proficiency:
+        junior: >
+          Asks clarifying questions about requirements in ticket grooming. Provides
+          basic effort estimates using story points and flags scope ambiguities
+          before starting implementation rather than making assumptions.
+        mid: >
+          Proposes technical approaches to product problems, identifying where
+          scope can be cut for faster delivery. Creates working prototypes to
+          validate UX assumptions and communicates trade-offs in non-technical terms.
+        senior: >
+          Partners with PM and design to shape feature direction, translating
+          business KPIs into technical roadmaps. Pushes back on scope when
+          engineering cost outweighs user value, citing data from analytics.
+        staff: >
+          Drives technical strategy alongside product strategy, influencing
+          roadmap priorities with technical insights. Identifies product
+          opportunities enabled by platform capabilities others have not noticed.
+        principal: >
+          Shapes the product-engineering partnership model across the organization.
+          Aligns multi-year technical vision with company strategy and represents
+          engineering perspective in executive-level product decisions.
+      ai_impact:
+        rating: 0.1
+        detail: "Deeply human skill. AI cannot replicate the trust, context, and judgment required for effective cross-functional partnership."
+
+    - id: technical_communication
+      name: "Technical Communication"
+      category: communication
+      description: "Writing documentation, RFCs, ADRs, and communicating technical decisions clearly."
+      proficiency:
+        junior: >
+          Documents code with clear inline comments and writes PR descriptions
+          that explain the what and why of changes. Keeps README files current
+          when modifying setup steps or configuration values.
+        mid: >
+          Writes technical design docs for features with diagrams, alternatives
+          considered, and trade-off analysis. Communicates decisions effectively
+          in Slack threads and sprint demos to mixed-technical audiences.
+        senior: >
+          Authors RFCs and ADRs that drive alignment across teams. Presents
+          technical decisions to non-engineering stakeholders, translating system
+          constraints into business impact they can act on.
+        staff: >
+          Establishes documentation standards including RFC templates, ADR
+          processes, and runbook formats. Communicates technical strategy to
+          leadership using narratives that connect architecture to business goals.
+        principal: >
+          Represents the organization's technical direction externally at
+          conferences and in blog posts. Authors influential technical content
+          that shapes industry conversation and strengthens recruiting brand.
+      ai_impact:
+        rating: 0.5
+        detail: "AI drafts documentation and READMEs effectively. Persuasive writing, stakeholder-aware communication, and architectural decision framing require human nuance."
+
+    - id: code_quality
+      name: "Code Quality & Maintainability"
+      category: technical
+      description: "Writing clean, readable, and maintainable code. Code review, refactoring, and technical debt management."
+      proficiency:
+        junior: >
+          Follows ESLint and Prettier rules consistently. Responds constructively
+          to code review feedback and applies suggestions in subsequent PRs.
+          Names variables and functions descriptively without abbreviations.
+        mid: >
+          Reviews others' code for correctness, readability, and edge cases.
+          Identifies and addresses technical debt in owned areas using refactoring
+          patterns like extract-method and replace-conditional-with-polymorphism.
+        senior: >
+          Establishes code quality standards including linter configs, pre-commit
+          hooks, and review checklists. Leads large refactoring efforts across
+          services, weighing cleanup scope against delivery risk for each phase.
+        staff: >
+          Defines engineering quality culture through tooling, processes, and
+          incentives. Creates shared libraries, code generators, and architecture
+          decision records that sustain code health as the organization scales.
+        principal: >
+          Sets organizational standards for engineering excellence and technical
+          debt management. Allocates strategic investment in platform quality
+          that compounds over time, balancing cleanup against feature velocity.
+      ai_impact:
+        rating: 0.5
+        detail: "AI detects style violations and suggests refactors. Evaluating readability in context, managing tech debt strategically, and mentoring through code review are human skills."

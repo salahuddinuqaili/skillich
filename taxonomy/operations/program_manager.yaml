@@ -1,0 +1,592 @@
+role:
+  id: program_manager
+  function: operations
+  name: "Program Manager"
+  also_known_as:
+    - "Program Lead"
+    - "Senior Program Manager"
+    - "Program Director"
+    - "Portfolio Manager"
+    - "Delivery Manager"
+  description: >
+    Drives the planning, execution, and delivery of complex, cross-functional
+    programs spanning multiple teams, workstreams, and stakeholders. Program
+    managers establish governance structures, manage interdependencies, mitigate
+    risks, and ensure that strategic initiatives are delivered on time, within
+    budget, and aligned to business objectives.
+  ai_impact:
+    level: "moderate"
+    summary: >
+      AI is beginning to automate routine program management tasks such as
+      status report generation, schedule variance detection, and meeting
+      summarization. However, the core of program management, including
+      navigating organizational politics, resolving ambiguity across teams,
+      and making judgment calls under uncertainty, remains deeply human.
+      PMs who leverage AI for administrative efficiency will free capacity
+      for higher-value strategic coordination.
+    automating:
+      - "Status report compilation and dashboard generation"
+      - "Meeting note summarization and action-item extraction"
+      - "Schedule variance detection and critical-path alerts"
+      - "Resource utilization tracking and capacity forecasting"
+    augmenting:
+      - "Risk identification and scenario modeling"
+      - "Stakeholder communication drafting and alignment"
+      - "Dependency mapping and impact analysis"
+      - "Budget forecasting and cost-trend analysis"
+    preserving:
+      - "Cross-functional negotiation and conflict resolution"
+      - "Organizational change leadership and influence"
+      - "Executive stakeholder trust-building and escalation judgment"
+      - "Strategic alignment of programs to business outcomes"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "PMI - The Project Management Body of Knowledge"
+        url: "https://www.pmi.org/pmbok-guide-standards/foundational/pmbok"
+      - name: "Dropbox Engineering Career Framework"
+        url: "https://dropbox.github.io/dbx-career-framework/"
+      - name: "McKinsey - The Economic Potential of Generative AI"
+        url: "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier"
+  levels:
+    - id: junior
+      name: "Junior Program Manager"
+      years_experience: "0-2"
+      summary: >
+        Supports program execution by tracking tasks, maintaining schedules,
+        and coordinating logistics for a single workstream or project.
+        Prepares status updates, schedules meetings, and follows up on
+        action items under guidance from senior program managers.
+    - id: mid
+      name: "Program Manager"
+      years_experience: "2-5"
+      summary: >
+        Manages end-to-end delivery of a program with multiple workstreams,
+        owning the schedule, risk register, and stakeholder communications.
+        Drives regular cadences, identifies blockers proactively, and
+        escalates issues with clear context and recommended actions.
+    - id: senior
+      name: "Senior Program Manager"
+      years_experience: "5-8"
+      summary: >
+        Leads complex, cross-organizational programs with significant
+        ambiguity and interdependencies. Designs program governance
+        structures, negotiates resource allocation across teams, and
+        influences leadership on scope and priority trade-offs. Mentors
+        junior PMs and raises the bar on program management practices.
+    - id: staff
+      name: "Staff Program Manager"
+      years_experience: "8-12"
+      summary: >
+        Drives portfolio-level program strategy spanning multiple teams
+        and business units. Defines and evolves program management
+        frameworks, tooling, and best practices for the organization.
+        Partners with senior leadership to align program execution with
+        company strategy and operational goals.
+    - id: principal
+      name: "Principal Program Manager"
+      years_experience: "12+"
+      summary: >
+        Sets the vision for program management as a discipline across the
+        organization. Leads the most critical, company-wide strategic
+        initiatives. Shapes executive decision-making on portfolio
+        prioritization, organizational design for delivery, and
+        operational transformation.
+  skills:
+    - id: program_planning
+      name: "Program Planning & Scheduling"
+      category: analytical
+      description: >
+        Creating and maintaining comprehensive program plans including
+        work breakdown structures, milestones, timelines, critical-path
+        analysis, and dependency mapping to ensure predictable delivery
+        of complex initiatives.
+      proficiency:
+        junior: >
+          Maintains project schedules in tools like Jira, Asana, or
+          Microsoft Project. Updates task statuses and flags overdue
+          items to the program lead.
+        mid: >
+          Builds end-to-end program plans with milestones, dependencies,
+          and buffer allocations. Identifies the critical path and
+          adjusts schedules proactively when risks materialize.
+        senior: >
+          Designs planning frameworks for complex programs with multiple
+          parallel workstreams. Conducts scenario planning for schedule
+          compression and scope trade-offs, and communicates plan
+          changes effectively to leadership.
+        staff: >
+          Defines organizational standards for program planning including
+          estimation techniques, planning cadences, and tooling. Drives
+          adoption of portfolio-level planning practices that connect
+          team execution to strategic objectives.
+        principal: >
+          Shapes the company's approach to long-horizon strategic
+          planning, integrating program timelines with annual planning
+          cycles, OKR frameworks, and investment decision-making at the
+          executive level.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can generate draft plans, detect scheduling conflicts, and
+          forecast completion dates from historical velocity data, but
+          determining realistic scope, negotiating commitments across
+          teams, and adapting plans to organizational context requires
+          human judgment.
+
+    - id: stakeholder_management
+      name: "Stakeholder Management"
+      category: communication
+      description: >
+        Identifying, engaging, and managing relationships with all parties
+        who have an interest in or influence over the program, including
+        sponsors, executives, cross-functional partners, and external
+        vendors, to maintain alignment and secure support.
+      proficiency:
+        junior: >
+          Identifies key stakeholders and maintains a stakeholder list.
+          Prepares meeting agendas and distributes notes to relevant
+          parties under guidance.
+        mid: >
+          Maps stakeholder interests and influence levels, tailors
+          communications to different audiences, and proactively manages
+          expectations. Builds productive working relationships across
+          teams.
+        senior: >
+          Navigates competing stakeholder priorities and negotiates
+          trade-offs that balance business needs. Builds trust with
+          senior leadership through transparent communication and
+          reliable delivery. Manages escalations diplomatically.
+        staff: >
+          Orchestrates stakeholder alignment across business units and
+          executive sponsors for portfolio-level initiatives. Coaches
+          other PMs on effective stakeholder engagement strategies and
+          conflict resolution.
+        principal: >
+          Serves as a trusted advisor to C-level executives on strategic
+          program decisions. Influences organizational direction through
+          stakeholder relationships built on deep business understanding
+          and a track record of delivery.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          Stakeholder management depends on emotional intelligence,
+          political awareness, and trust built over time. AI can draft
+          communications and summarize stakeholder feedback, but the
+          core relationship and negotiation work remains fundamentally
+          human.
+
+    - id: risk_management
+      name: "Risk Management"
+      category: analytical
+      description: >
+        Systematically identifying, assessing, prioritizing, and mitigating
+        risks across a program's lifecycle, including maintaining risk
+        registers, defining escalation triggers, and developing contingency
+        plans that protect program objectives.
+      proficiency:
+        junior: >
+          Documents risks identified by the team in the risk register.
+          Follows up on assigned mitigation actions and reports status
+          during program reviews.
+        mid: >
+          Proactively identifies risks through stakeholder conversations
+          and dependency analysis. Assesses probability and impact,
+          develops mitigation plans, and escalates high-severity risks
+          with clear recommendations.
+        senior: >
+          Designs risk management frameworks for complex programs
+          including quantitative risk scoring, trigger-based escalation
+          paths, and contingency budget reserves. Conducts regular risk
+          reviews and ensures mitigations are actionable.
+        staff: >
+          Defines organizational risk management standards and templates.
+          Conducts portfolio-level risk assessments that surface systemic
+          risks across programs. Trains PMs on advanced risk
+          identification and mitigation techniques.
+        principal: >
+          Advises executive leadership on enterprise risk posture for
+          strategic programs. Integrates program risk management with
+          business continuity, compliance, and strategic planning
+          frameworks at the organizational level.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can surface risk patterns from historical project data and
+          flag common risk categories, but assessing the true likelihood
+          and organizational impact of novel risks and crafting
+          politically viable mitigation strategies requires experienced
+          human judgment.
+
+    - id: cross_functional_coordination
+      name: "Cross-Functional Coordination"
+      category: leadership
+      description: >
+        Orchestrating work across engineering, product, design, marketing,
+        legal, and other functions to ensure aligned execution, clear
+        handoffs, and coherent delivery of program outcomes that span
+        organizational boundaries.
+      proficiency:
+        junior: >
+          Coordinates logistics for cross-team meetings, tracks action
+          items across groups, and follows up to ensure commitments are
+          met. Maintains shared documentation and communication channels.
+        mid: >
+          Facilitates cross-functional working sessions, resolves minor
+          coordination conflicts, and ensures teams have the context
+          they need to deliver their workstreams. Maintains a clear
+          picture of inter-team dependencies.
+        senior: >
+          Designs coordination structures for complex cross-functional
+          programs including RACI matrices, integration milestones, and
+          decision-rights frameworks. Resolves resource conflicts and
+          priority disputes across teams.
+        staff: >
+          Establishes scalable coordination patterns for the organization
+          such as program increment planning, cross-team syncs, and
+          integration testing cadences. Influences functional leaders to
+          align capacity with program needs.
+        principal: >
+          Shapes organizational structures and processes that enable
+          effective cross-functional delivery at scale. Advises
+          leadership on team topology and communication architecture
+          for strategic initiatives.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          Cross-functional coordination requires navigating organizational
+          dynamics, building trust across teams, and making real-time
+          judgment calls about escalation. AI can track dependencies and
+          surface conflicts, but human facilitation and influence remain
+          essential.
+
+    - id: status_reporting
+      name: "Status Reporting & Communication"
+      category: communication
+      description: >
+        Creating clear, concise, and actionable program status
+        communications tailored to different audiences, from team-level
+        updates to executive dashboards, ensuring transparency on
+        progress, risks, blockers, and decisions needed.
+      proficiency:
+        junior: >
+          Prepares weekly status reports from team updates using
+          established templates. Distributes reports on schedule and
+          follows up on outstanding items.
+        mid: >
+          Crafts audience-appropriate status communications that
+          highlight key decisions, risks, and milestones. Builds and
+          maintains dashboards that provide real-time program visibility
+          to stakeholders.
+        senior: >
+          Designs reporting frameworks that balance transparency with
+          signal-to-noise ratio. Creates executive-level summaries that
+          drive action and decision-making. Coaches teams on effective
+          status communication practices.
+        staff: >
+          Standardizes reporting practices across the program management
+          function including templates, cadences, and escalation formats.
+          Implements portfolio-level dashboards that connect program
+          execution to strategic metrics.
+        principal: >
+          Defines the organization's program transparency culture,
+          establishing norms for candid reporting that enable early
+          course correction. Presents program portfolio status and
+          strategic recommendations to the executive team and board.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI excels at aggregating data, generating status summaries, and
+          highlighting variances from plan. Routine status compilation
+          is highly automatable, though framing narratives for executive
+          audiences and deciding what to emphasize still requires human
+          judgment.
+
+    - id: resource_management
+      name: "Resource Management"
+      category: analytical
+      description: >
+        Planning, allocating, and optimizing human and financial resources
+        across program workstreams, including capacity planning, skill-gap
+        identification, and workload balancing to ensure teams are
+        staffed appropriately for delivery.
+      proficiency:
+        junior: >
+          Tracks team allocation and availability in resource management
+          tools. Flags capacity conflicts and over-allocations to the
+          program lead.
+        mid: >
+          Develops resource plans for program workstreams, identifies
+          skill gaps, and coordinates with functional managers to secure
+          needed capacity. Balances workloads across team members.
+        senior: >
+          Leads resource negotiation across multiple teams and programs,
+          making trade-off recommendations when demand exceeds supply.
+          Forecasts resource needs for upcoming phases and builds
+          contingency plans for key-person dependencies.
+        staff: >
+          Designs resource management processes and tools for the
+          program management function. Conducts portfolio-level capacity
+          planning that informs hiring, contractor engagement, and
+          program sequencing decisions.
+        principal: >
+          Partners with executive leadership on workforce strategy for
+          strategic programs, including build-versus-buy decisions,
+          organizational design, and long-term capability development
+          investments.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can optimize resource allocation models and forecast
+          capacity needs from historical patterns, but negotiating
+          resource commitments across organizations and making judgment
+          calls about team composition require human relationship
+          management.
+
+    - id: process_design
+      name: "Process Design & Governance"
+      category: analytical
+      description: >
+        Designing, implementing, and continuously improving program
+        governance structures, decision-making frameworks, and operational
+        processes that enable efficient, transparent, and accountable
+        delivery across teams.
+      proficiency:
+        junior: >
+          Follows established program processes and governance
+          structures. Documents process steps and helps maintain
+          runbooks and checklists.
+        mid: >
+          Identifies process gaps and inefficiencies within a program.
+          Proposes and implements improvements to meeting cadences,
+          decision-making workflows, and documentation practices.
+        senior: >
+          Designs governance structures for complex programs including
+          steering committees, decision-rights frameworks, and stage-gate
+          processes. Balances process rigor with team agility based on
+          program context.
+        staff: >
+          Defines organizational program governance standards, templates,
+          and maturity models. Drives adoption of practices that improve
+          delivery predictability while minimizing bureaucratic overhead
+          across the PM function.
+        principal: >
+          Shapes the organization's operating model for program delivery,
+          integrating governance with agile practices, compliance
+          requirements, and cultural norms. Advises leadership on
+          organizational design for effective execution.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can analyze process performance data and suggest
+          optimizations based on industry frameworks, but designing
+          governance structures that fit organizational culture and
+          navigating the politics of process change require human
+          insight.
+
+    - id: change_management
+      name: "Change Management"
+      category: leadership
+      description: >
+        Leading organizational and process changes associated with program
+        delivery, including stakeholder buy-in, communication planning,
+        training, adoption tracking, and resistance management to ensure
+        changes are sustainably embedded.
+      proficiency:
+        junior: >
+          Supports change management activities by preparing
+          communication materials, scheduling training sessions, and
+          tracking adoption metrics under guidance.
+        mid: >
+          Develops change management plans for program-level changes
+          including impact assessments, communication schedules, and
+          training programs. Monitors adoption and addresses resistance
+          proactively.
+        senior: >
+          Leads change management for complex, cross-organizational
+          transformations. Designs multi-phase rollout strategies,
+          builds champion networks, and measures change effectiveness
+          through behavioral metrics.
+        staff: >
+          Defines the organization's change management methodology and
+          toolkit. Coaches PMs and leaders on effective change
+          leadership practices. Drives cultural shifts that enable
+          continuous improvement.
+        principal: >
+          Sponsors enterprise-level transformation programs, aligning
+          change management strategy with business vision and
+          organizational culture. Influences executive commitment and
+          resource allocation for sustainable change.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          Change management depends on empathy, influence, and trust
+          built through human interaction. AI can draft communications
+          and track adoption metrics, but leading people through
+          uncertainty and resistance is a fundamentally human capability.
+
+    - id: vendor_management
+      name: "Vendor Management"
+      category: domain
+      description: >
+        Managing relationships with external vendors, contractors, and
+        service providers involved in program delivery, including contract
+        negotiation, performance monitoring, SLA management, and ensuring
+        vendor deliverables integrate smoothly with internal workstreams.
+      proficiency:
+        junior: >
+          Tracks vendor deliverables against timelines and escalates
+          delays. Maintains vendor contact lists and contract
+          documentation.
+        mid: >
+          Manages day-to-day vendor relationships, monitors SLA
+          compliance, and coordinates integration of vendor deliverables
+          with internal teams. Participates in contract reviews and
+          renewal discussions.
+        senior: >
+          Leads vendor selection processes, negotiates contract terms,
+          and designs vendor governance structures including performance
+          scorecards and escalation paths. Manages complex multi-vendor
+          programs.
+        staff: >
+          Defines organizational vendor management standards and
+          procurement processes for program-related engagements. Conducts
+          strategic vendor assessments and drives consolidation or
+          diversification decisions across the portfolio.
+        principal: >
+          Shapes the organization's vendor and partner strategy for
+          program delivery, including build-versus-buy frameworks and
+          strategic partnership development. Negotiates enterprise-level
+          agreements with executive counterparts.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can track vendor performance metrics and flag SLA breaches,
+          but negotiating contracts, building vendor relationships, and
+          making strategic sourcing decisions require human judgment and
+          interpersonal skill.
+
+    - id: budget_tracking
+      name: "Budget & Financial Tracking"
+      category: analytical
+      description: >
+        Planning, tracking, and reporting on program budgets including
+        cost estimation, variance analysis, forecasting, and financial
+        governance to ensure programs are delivered within approved
+        financial constraints.
+      proficiency:
+        junior: >
+          Tracks expenses against budget in spreadsheets or financial
+          tools. Flags variances and prepares basic financial summaries
+          for the program lead.
+        mid: >
+          Develops program budgets with cost breakdowns by workstream.
+          Performs monthly variance analysis, forecasts spend trends,
+          and prepares financial reports for stakeholders.
+        senior: >
+          Designs budget governance structures for complex programs
+          including contingency reserves, approval workflows, and
+          cost-benefit analysis for scope change requests. Presents
+          financial health to steering committees.
+        staff: >
+          Defines financial management standards for the program
+          management function. Conducts portfolio-level financial
+          analysis and advises leadership on investment allocation
+          across programs.
+        principal: >
+          Partners with finance leadership on strategic program
+          investment decisions, ROI modeling, and multi-year budget
+          planning. Influences executive resource allocation through
+          data-driven business cases.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI is effective at automating expense tracking, variance
+          detection, and financial forecasting from historical data.
+          However, developing persuasive business cases and making
+          strategic investment trade-offs require human business
+          acumen.
+
+    - id: communication
+      name: "Executive Communication"
+      category: communication
+      description: >
+        Crafting clear, persuasive, and audience-appropriate
+        communications for program stakeholders at all levels, from
+        team-level updates to board-level presentations, including
+        written documents, presentations, and facilitated discussions.
+      proficiency:
+        junior: >
+          Writes clear meeting notes, email updates, and basic
+          presentations. Communicates task-level status accurately
+          and escalates issues with relevant context.
+        mid: >
+          Tailors communication style and content to different
+          stakeholder levels. Writes concise program updates that
+          highlight decisions needed and risks. Facilitates effective
+          team meetings.
+        senior: >
+          Crafts executive-level communications that frame complex
+          situations clearly and drive decision-making. Facilitates
+          difficult conversations and steering committee meetings.
+          Coaches team members on communication effectiveness.
+        staff: >
+          Sets communication standards for the program management
+          function. Creates templates and frameworks that elevate
+          communication quality across PMs. Presents portfolio-level
+          narratives to senior leadership.
+        principal: >
+          Communicates program strategy and organizational change
+          narratives to the executive team and board with authority
+          and clarity. Shapes the organization's culture of
+          transparent, effective program communication.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can draft communications, summarize complex information,
+          and suggest framing strategies, but calibrating tone for
+          sensitive organizational situations and building credibility
+          through authentic executive presence remain human strengths.
+
+    - id: strategic_alignment
+      name: "Strategic Alignment"
+      category: leadership
+      description: >
+        Ensuring that program goals, scope, and execution priorities are
+        continuously aligned with organizational strategy, business
+        objectives, and market conditions, including translating strategic
+        direction into actionable program roadmaps.
+      proficiency:
+        junior: >
+          Understands the business context and strategic goals behind
+          assigned programs. Connects daily work to program objectives
+          when communicating with team members.
+        mid: >
+          Maps program deliverables to business outcomes and OKRs.
+          Identifies when program direction may be drifting from
+          strategic intent and raises concerns with appropriate
+          context.
+        senior: >
+          Ensures program scope and priority decisions are grounded in
+          strategic value. Facilitates trade-off discussions that
+          balance tactical delivery with long-term strategic goals.
+          Adapts program roadmaps as strategy evolves.
+        staff: >
+          Drives alignment across a portfolio of programs with
+          organizational strategy. Develops frameworks for evaluating
+          program investments based on strategic fit, risk, and
+          expected business impact.
+        principal: >
+          Partners with executive leadership to translate corporate
+          strategy into program portfolios. Influences strategic
+          direction based on program execution insights and market
+          intelligence. Ensures the program portfolio maximizes
+          long-term organizational value.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          Strategic alignment requires deep understanding of business
+          context, organizational priorities, and market dynamics. AI
+          can surface relevant data and competitive intelligence, but
+          synthesizing this into actionable program strategy requires
+          human strategic thinking.

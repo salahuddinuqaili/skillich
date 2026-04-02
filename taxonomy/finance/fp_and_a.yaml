@@ -1,0 +1,765 @@
+role:
+  id: fp_and_a
+  function: finance
+  name: "FP&A Analyst"
+  also_known_as:
+    - "Financial Planning Analyst"
+    - "Financial Planning & Analysis Analyst"
+    - "Business Finance Partner"
+    - "Finance Business Partner"
+    - "Corporate Planning Analyst"
+  description: >
+    Drives an organization's financial planning, budgeting, and forecasting
+    processes while providing strategic analysis that connects financial
+    performance to business operations. FP&A analysts build models that
+    project revenue, costs, and profitability across multiple scenarios,
+    perform variance analysis to explain actual-versus-plan deviations, and
+    partner with business leaders to translate data into strategic decisions.
+    They sit at the intersection of accounting, operations, and strategy,
+    serving as the analytical engine that informs capital allocation,
+    pricing, and investment decisions.
+  ai_impact:
+    level: "moderate-high"
+    summary: >
+      AI is meaningfully reshaping FP&A by automating data consolidation from
+      disparate systems, accelerating baseline forecast generation, and
+      producing first-draft variance commentary from structured data. The
+      traditional cycle of collecting budget inputs, building consolidation
+      models, and preparing management reports is becoming significantly faster
+      with AI assistance. However, the strategic heart of FP&A, including
+      challenging business assumptions, facilitating cross-functional trade-off
+      discussions, and translating numbers into executive-ready narratives,
+      remains deeply human and relational.
+    automating:
+      - "Data consolidation from multiple ERP and operational systems"
+      - "Baseline forecast generation from historical patterns"
+      - "Standard variance calculations and initial commentary drafting"
+      - "KPI dashboard population and routine management reporting"
+      - "Budget template distribution and input collection tracking"
+      - "Trend identification and anomaly flagging in financial data"
+    augmenting:
+      - "Scenario modeling with rapid sensitivity analysis"
+      - "Revenue and cost driver analysis across business segments"
+      - "Executive presentation development and data storytelling"
+      - "What-if analysis for capital allocation decisions"
+      - "Competitive benchmarking and market intelligence synthesis"
+      - "Rolling forecast accuracy improvement through ML-based adjustments"
+    preserving:
+      - "Cross-functional partnership and assumption challenging"
+      - "Strategic narrative development connecting numbers to business context"
+      - "Executive influence and trust-based advisory relationships"
+      - "Organizational change management during planning cycles"
+      - "Judgment about qualitative factors affecting forecasts"
+      - "Facilitation of trade-off discussions between competing priorities"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "O*NET - Financial Analysts"
+        url: "https://www.onetonline.org/link/summary/13-2051.00"
+      - name: "AFP - FP&A Trends Survey"
+        url: "https://www.afponline.org/publications-data-tools/reports/survey-research-reports"
+      - name: "McKinsey - Finance 2030: Four Imperatives"
+        url: "https://www.mckinsey.com/capabilities/operations/our-insights/finance-2030-four-imperatives-for-the-next-decade"
+  levels:
+    - id: junior
+      name: "Junior FP&A Analyst"
+      years_experience: "0-2"
+      summary: >
+        Supports the planning cycle by gathering data, maintaining models,
+        and preparing standard reports. Learns the organization's financial
+        structure, business drivers, and planning processes. Builds
+        foundational skills in forecasting methodology, variance analysis,
+        and business partnering under close supervision.
+    - id: mid
+      name: "FP&A Analyst"
+      years_experience: "2-5"
+      summary: >
+        Owns the planning and analysis process for assigned business units
+        or cost centers, from data collection through insight delivery.
+        Builds and maintains forecasting models, performs variance analysis
+        with meaningful commentary, and partners with operational leaders
+        to understand business performance. Manages multiple deliverables
+        within tight planning cycles.
+    - id: senior
+      name: "Senior FP&A Analyst"
+      years_experience: "5-8"
+      summary: >
+        Leads complex planning and analysis initiatives spanning multiple
+        business segments or the entire enterprise. Develops sophisticated
+        scenario models, drives the budgeting process, and presents strategic
+        recommendations to senior leadership. Mentors junior analysts and
+        improves analytical methodologies and tools used across the team.
+    - id: staff
+      name: "Staff FP&A Analyst"
+      years_experience: "8-12"
+      summary: >
+        Defines analytical frameworks and planning methodologies for the
+        organization, shaping how the enterprise measures, plans, and
+        optimizes financial performance. Leads high-stakes analyses for
+        strategic initiatives and serves as a trusted advisor to the CFO
+        and business unit leaders on resource allocation and strategic
+        trade-offs.
+    - id: principal
+      name: "Principal FP&A Analyst"
+      years_experience: "12+"
+      summary: >
+        Establishes the strategic vision for the FP&A function, defining how
+        financial planning drives enterprise value creation. Advises the
+        C-suite and board on capital allocation, long-range planning, and
+        performance management philosophy. Shapes the profession's evolution
+        within the organization, connecting planning discipline to
+        competitive advantage.
+  skills:
+    - id: budgeting_forecasting
+      name: "Budgeting & Forecasting"
+      category: technical
+      description: >
+        Designing and executing the organization's budgeting and forecasting
+        processes, including annual operating plans, rolling forecasts, capital
+        budgets, and long-range plans. Encompasses methodology selection,
+        driver identification, assumption management, and the iterative
+        alignment of financial plans with strategic objectives.
+      proficiency:
+        junior: >
+          Collects budget inputs from business units using established
+          templates and consolidates data into planning models under
+          supervision. Prepares basic forecast updates by extending
+          historical trends and adjusting for known changes. Learns the
+          organization's planning calendar, account structure, and
+          consolidation hierarchy.
+        mid: >
+          Owns the budget and forecast process for assigned areas, building
+          driver-based models that link operational assumptions to financial
+          outcomes. Prepares monthly or quarterly forecast updates with clear
+          bridge analyses showing key changes. Identifies risks and
+          opportunities that should be reflected in the outlook and
+          communicates them proactively.
+        senior: >
+          Leads enterprise-wide budgeting or forecasting processes,
+          coordinating cross-functional inputs, challenging unrealistic
+          assumptions, and ensuring alignment with strategic priorities.
+          Develops rolling forecast methodologies that improve timeliness
+          and accuracy. Presents budget recommendations and forecast risks
+          to executive leadership with clear scenario analyses.
+        staff: >
+          Defines the organization's planning philosophy, including the
+          appropriate balance between annual budgets and rolling forecasts,
+          the granularity required at each level, and the technology platforms
+          that enable the process. Drives continuous improvement in forecast
+          accuracy through bias analysis and methodology refinement across
+          the entire planning ecosystem.
+        principal: >
+          Shapes the executive conversation about financial planning, ensuring
+          the process drives strategic decisions rather than just producing
+          numbers. Connects budgeting methodology to investor guidance,
+          capital allocation strategy, and long-term value creation. Advises
+          the board on planning rigor and the organization's ability to
+          execute against its financial commitments.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI automates data collection, generates baseline forecasts, and
+          flags budget anomalies effectively. However, challenging business
+          assumptions, negotiating budget trade-offs across departments, and
+          maintaining the relationships that produce honest planning inputs
+          require human expertise and organizational influence.
+
+    - id: variance_analysis
+      name: "Variance Analysis"
+      category: technical
+      description: >
+        Systematically comparing actual financial results to budgets, forecasts,
+        and prior periods to identify, quantify, and explain deviations.
+        Includes decomposition of variances into volume, price, mix, and timing
+        components, root-cause investigation, and the translation of variance
+        insights into actionable management recommendations.
+      proficiency:
+        junior: >
+          Calculates basic variances between actual results, budget, and prior
+          year for assigned accounts or cost centers. Prepares variance
+          schedules using standard templates and drafts initial commentary by
+          identifying the largest deviations. Learns to distinguish between
+          meaningful and immaterial variances.
+        mid: >
+          Performs detailed variance analysis decomposing deviations into
+          volume, price, mix, and timing components. Investigates root causes
+          by engaging with business partners and operational data. Prepares
+          variance reports with clear, insightful commentary that goes beyond
+          restating the numbers to explain the business drivers behind them.
+        senior: >
+          Designs variance analysis frameworks that focus management attention
+          on the most actionable deviations rather than comprehensive number
+          recitations. Identifies patterns across multiple periods that
+          indicate systemic issues or emerging trends. Coaches business
+          leaders on interpreting variances and taking corrective action
+          based on financial insights.
+        staff: >
+          Establishes enterprise-wide variance analysis standards including
+          materiality thresholds, commentary quality benchmarks, and
+          automated alerting for significant deviations. Develops analytical
+          approaches that connect financial variances to operational KPIs,
+          enabling faster root-cause identification and driving accountability
+          across the organization.
+        principal: >
+          Defines how the organization learns from variance analysis,
+          embedding feedback loops between forecasting accuracy and planning
+          methodology. Shapes the executive dialogue around performance
+          management, ensuring variance discussions drive strategic
+          adjustments rather than blame assignment, and connecting variance
+          patterns to long-term business trajectory.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI can automate variance calculations, generate initial commentary,
+          and identify anomalies across large datasets quickly. However,
+          interpreting variances in business context, facilitating productive
+          management discussions about performance deviations, and driving
+          corrective action require experienced judgment and influence.
+
+    - id: scenario_modeling
+      name: "Scenario Modeling"
+      category: technical
+      description: >
+        Building analytical models that evaluate multiple possible future
+        outcomes under different assumptions about key business drivers,
+        market conditions, and strategic choices. Includes best-case,
+        worst-case, and most-likely scenarios, sensitivity analysis, Monte
+        Carlo simulation, and decision-tree frameworks that support
+        risk-aware strategic planning.
+      proficiency:
+        junior: >
+          Assists in building scenario models by adjusting assumptions in
+          existing templates and tabulating outputs across scenarios. Creates
+          basic sensitivity tables showing how changes in individual
+          variables affect key outcomes. Learns to identify which assumptions
+          have the greatest impact on model outputs through guided analysis.
+        mid: >
+          Builds multi-scenario models independently, defining assumption
+          sets that represent realistic alternative futures. Creates tornado
+          charts, sensitivity matrices, and scenario comparison summaries
+          that highlight key decision points. Links scenario outputs to
+          financial statements and KPIs to show the full impact of each
+          path on organizational performance.
+        senior: >
+          Designs sophisticated scenario frameworks incorporating correlated
+          assumptions, Monte Carlo simulation, and probability-weighted
+          outcomes for major strategic decisions. Facilitates scenario
+          planning sessions with leadership, framing trade-offs clearly and
+          helping decision-makers understand the range of outcomes. Integrates
+          qualitative factors into quantitative models.
+        staff: >
+          Defines the organization's scenario planning methodology, ensuring
+          it is rigorous enough to support major capital allocation and
+          strategic decisions while practical enough for routine use.
+          Develops reusable scenario frameworks that can be deployed rapidly
+          for emerging business questions and trains the FP&A team on advanced
+          modeling techniques.
+        principal: >
+          Shapes the organization's approach to uncertainty and strategic
+          optionality, embedding scenario thinking into executive decision-
+          making culture. Advises the board and C-suite on enterprise risk
+          scenarios including macroeconomic, competitive, and disruption
+          analyses that inform long-range strategic positioning and capital
+          allocation priorities.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI accelerates scenario computation, generates alternative
+          assumption sets, and can run simulations faster than manual methods.
+          However, defining meaningful scenarios that capture real strategic
+          uncertainties, facilitating executive discussions about uncertain
+          futures, and making judgment calls about probability weights require
+          experienced human insight.
+
+    - id: revenue_modeling
+      name: "Revenue Modeling"
+      category: technical
+      description: >
+        Building detailed models that project revenue across products,
+        services, customer segments, and geographies, incorporating drivers
+        such as pricing, volume, retention, expansion, and market dynamics.
+        Includes cohort analysis, funnel modeling, contract-based revenue
+        projections, and the alignment of revenue forecasts with go-to-market
+        strategy.
+      proficiency:
+        junior: >
+          Assists in maintaining revenue models by updating inputs for pricing
+          changes, volume adjustments, and new product launches. Understands
+          the organization's revenue streams and basic revenue recognition
+          concepts. Prepares revenue summary reports and tracks key metrics
+          like average selling price and unit volume.
+        mid: >
+          Builds revenue models for assigned segments incorporating drivers
+          such as pipeline conversion, retention rates, pricing tiers, and
+          seasonal patterns. Performs cohort analysis to understand customer
+          lifetime value dynamics. Reconciles revenue forecasts to booking
+          forecasts and contract schedules to ensure consistency across
+          the planning framework.
+        senior: >
+          Designs comprehensive revenue modeling frameworks that capture the
+          full complexity of the business including new customer acquisition,
+          expansion revenue, churn, and pricing optimization. Challenges
+          commercial team assumptions with data-driven perspectives and
+          integrates market intelligence into revenue projections. Presents
+          revenue outlook and risks to executive leadership.
+        staff: >
+          Defines the enterprise revenue modeling methodology, ensuring
+          alignment between finance projections, sales forecasts, and product
+          roadmap assumptions. Develops proprietary analytical approaches that
+          improve forecast accuracy and provide competitive intelligence.
+          Leads the revenue component of long-range planning and investor
+          guidance development.
+        principal: >
+          Shapes the organization's revenue strategy through analytical
+          frameworks that connect pricing philosophy, market positioning, and
+          product portfolio decisions to financial outcomes. Advises the CEO
+          and board on revenue trajectory, market opportunity sizing, and the
+          financial implications of strategic pivots in the go-to-market
+          approach.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI enhances revenue modeling through pattern recognition in customer
+          data, automated cohort analysis, and real-time pipeline scoring.
+          However, incorporating market judgment, challenging commercial team
+          assumptions, and building revenue models for new business lines with
+          limited historical data require experienced financial analysts.
+
+    - id: cost_analysis
+      name: "Cost Analysis"
+      category: technical
+      description: >
+        Analyzing the organization's cost structure to identify efficiency
+        opportunities, support pricing decisions, and inform profitability
+        management. Includes fixed versus variable cost decomposition,
+        activity-based costing, margin analysis by product and customer,
+        cost benchmarking, and the development of actionable cost reduction
+        recommendations.
+      proficiency:
+        junior: >
+          Assists in cost analysis by compiling expense data, categorizing
+          costs by type and department, and calculating basic cost metrics
+          such as cost per unit and gross margin percentages. Prepares cost
+          trend reports using established templates and learns the
+          organization's cost structure, allocation methods, and key expense
+          categories.
+        mid: >
+          Performs detailed cost analysis including margin decomposition by
+          product or service line, fixed versus variable cost breakdowns,
+          and cost benchmarking against internal and external standards.
+          Identifies cost trends and anomalies, investigates root causes,
+          and prepares actionable recommendations for cost optimization that
+          quantify the expected financial impact.
+        senior: >
+          Designs cost analysis frameworks that provide ongoing visibility
+          into profitability drivers and cost efficiency across the
+          organization. Leads cost reduction initiatives by identifying
+          structural opportunities, modeling financial impact, and tracking
+          execution against targets. Advises business leaders on cost-
+          conscious decision-making for major operational changes.
+        staff: >
+          Defines the organization's approach to cost transparency and
+          profitability management, including allocation methodologies,
+          transfer pricing frameworks, and cost benchmarking standards.
+          Develops analytical tools that enable business leaders to understand
+          their cost drivers and make informed trade-offs between investment
+          and efficiency across the enterprise.
+        principal: >
+          Shapes the organization's cost strategy at the executive level,
+          connecting cost structure analysis to competitive positioning,
+          margin expansion goals, and long-term business model evolution.
+          Advises the CEO and board on transformative cost initiatives,
+          outsourcing strategies, and the financial implications of
+          operational restructuring.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI automates cost data aggregation, identifies spending anomalies,
+          and performs allocation calculations efficiently. However,
+          interpreting cost patterns in operational context, facilitating
+          cost reduction discussions with business leaders, and making
+          strategic trade-offs between efficiency and growth require human
+          business judgment.
+
+    - id: kpi_development
+      name: "KPI Development"
+      category: technical
+      description: >
+        Designing, implementing, and governing key performance indicators
+        that measure organizational health, operational efficiency, and
+        strategic progress. Includes metric selection aligned to business
+        objectives, target-setting methodology, measurement infrastructure,
+        and the creation of balanced scorecards that drive accountability
+        and performance improvement.
+      proficiency:
+        junior: >
+          Tracks and reports on established KPIs by extracting data from
+          source systems, updating dashboards, and flagging metrics that
+          fall outside target ranges. Understands the difference between
+          leading and lagging indicators and the concept of cascading goals.
+          Learns the organization's KPI framework and reporting cadences.
+        mid: >
+          Develops KPIs for assigned business areas by collaborating with
+          operational leaders to identify the metrics that matter most.
+          Ensures KPIs are specific, measurable, and actionable with clear
+          data sources, calculation methodologies, and update frequencies.
+          Creates automated KPI reporting that highlights trends and
+          exceptions for management review.
+        senior: >
+          Designs comprehensive KPI frameworks that align organizational
+          measurement to strategic objectives, balancing financial and
+          operational metrics across business units. Leads target-setting
+          processes that are ambitious yet achievable, and develops
+          accountability mechanisms that connect KPI performance to decision-
+          making. Coaches business leaders on metric interpretation.
+        staff: >
+          Defines the enterprise KPI governance model, including metric
+          approval processes, data quality standards, and the cadence of
+          metric review and refinement. Ensures KPIs are consistently
+          defined across the organization and that measurement infrastructure
+          supports timely and accurate reporting. Drives the evolution from
+          backward-looking metrics to predictive indicators.
+        principal: >
+          Shapes the organization's performance management philosophy,
+          ensuring metrics drive the right behaviors and decisions. Advises
+          the board and executive team on the metrics that matter for
+          long-term value creation, industry benchmarking, and investor
+          communication. Leads the design of incentive structures that align
+          organizational effort with strategic priorities.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can automate KPI tracking, identify correlations between metrics,
+          and generate exception-based reporting. However, selecting the
+          metrics that truly matter, setting appropriate targets, and
+          designing measurement systems that drive desired behaviors require
+          strategic thinking and organizational understanding.
+
+    - id: executive_reporting
+      name: "Executive Reporting"
+      category: interpersonal
+      description: >
+        Creating and delivering financial reports and presentations tailored
+        for executive audiences including the C-suite, board of directors,
+        and investors. Encompasses the distillation of complex analyses into
+        clear narratives, the selection of appropriate visualizations, and
+        the ability to anticipate and address executive questions about
+        performance, risk, and strategic direction.
+      proficiency:
+        junior: >
+          Assists in preparing executive reports by compiling data, populating
+          templates, and formatting presentations. Learns the organization's
+          executive reporting calendar, standards, and audience preferences.
+          Develops accuracy and attention to detail in materials that will be
+          reviewed at the highest levels of the organization.
+        mid: >
+          Prepares complete sections of executive reporting packages
+          independently, including performance summaries, variance
+          explanations, and forward-looking commentary. Creates visualizations
+          that highlight key insights and ensures data accuracy through
+          thorough review processes. Anticipates common executive questions
+          and prepares supporting detail.
+        senior: >
+          Leads the creation of executive reporting packages, crafting
+          narratives that connect financial performance to strategic context.
+          Designs report formats that enable efficient executive decision-
+          making, balancing comprehensiveness with clarity. Presents directly
+          to senior leadership and adapts messaging in real time based on
+          audience reaction and follow-up questions.
+        staff: >
+          Defines executive reporting standards for the finance organization,
+          including format templates, quality benchmarks, and the review
+          process that ensures accuracy and consistency. Architects the
+          information flow from operational data through to board-level
+          presentations, ensuring the right story reaches the right audience
+          at the right level of detail.
+        principal: >
+          Shapes how the organization communicates financial performance and
+          strategic direction to its most senior stakeholders. Serves as a
+          trusted communication partner to the CFO for board meetings,
+          investor presentations, and strategic reviews. Ensures financial
+          narratives are consistent, credible, and strategically aligned
+          across all executive channels.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can draft report content, generate charts, and suggest narrative
+          structures. However, crafting stories that resonate with specific
+          executive audiences, navigating sensitive topics, and adapting
+          presentations in real time based on room dynamics require
+          interpersonal skills and organizational context.
+
+    - id: data_visualization
+      name: "Data Visualization (Tableau, Power BI)"
+      category: technical
+      description: >
+        Creating impactful visual representations of financial and operational
+        data using tools such as Tableau, Power BI, Looker, and Excel
+        charting. Includes dashboard design, interactive report building,
+        visual best practices, and the ability to select chart types and
+        layouts that communicate analytical findings clearly and drive
+        action from stakeholders.
+      proficiency:
+        junior: >
+          Creates basic charts and dashboards using Tableau, Power BI, or
+          Excel, following team templates and visualization standards.
+          Understands fundamental chart types and when to use each one.
+          Connects to data sources and builds simple visualizations that
+          accurately represent the underlying data with appropriate labels
+          and formatting.
+        mid: >
+          Builds interactive dashboards with filters, drill-downs, and
+          calculated fields that enable self-service analysis for business
+          users. Applies data visualization best practices including
+          appropriate color schemes, minimal chart junk, and clear data-ink
+          ratios. Designs dashboards that answer specific business questions
+          and maintains them as data sources and requirements evolve.
+        senior: >
+          Designs enterprise-grade visualization solutions that integrate
+          multiple data sources into cohesive analytical experiences. Creates
+          executive dashboards that distill complex performance data into
+          intuitive views. Establishes visualization standards and best
+          practices for the FP&A team, mentoring analysts on effective data
+          communication techniques and tool proficiency.
+        staff: >
+          Defines the organization's data visualization strategy, including
+          platform selection, governance standards, and the integration
+          architecture that connects visualization tools to underlying data
+          infrastructure. Drives adoption of self-service analytics
+          capabilities that empower business users while maintaining data
+          quality and security controls.
+        principal: >
+          Shapes the organization's analytical culture by championing
+          data-driven decision-making through effective visualization and
+          reporting infrastructure. Evaluates emerging visualization
+          technologies and AI-powered analytics platforms, ensuring the
+          organization's investment in analytical tools creates sustainable
+          competitive advantage in decision-making speed and quality.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can suggest chart types, generate dashboard layouts, and write
+          visualization code automatically. However, designing visualizations
+          that tell a compelling story, understanding what the audience needs
+          to see versus what the data can show, and building analytical
+          cultures require creative and interpersonal human capabilities.
+
+    - id: cross_functional_partnership
+      name: "Cross-Functional Partnership"
+      category: interpersonal
+      description: >
+        Building and maintaining productive working relationships with
+        business leaders, department heads, and operational teams to ensure
+        financial planning is grounded in operational reality and financial
+        insights drive better business decisions. Includes active listening,
+        assumption challenging, trust building, and the ability to translate
+        between financial and operational language.
+      proficiency:
+        junior: >
+          Builds initial relationships with contacts in assigned business
+          units, learning their operational context and information needs.
+          Communicates respectfully and clearly when requesting data or
+          clarifying assumptions. Demonstrates reliability by meeting
+          deadlines and following through on commitments during the planning
+          process.
+        mid: >
+          Maintains productive partnerships with business unit leaders for
+          assigned areas, serving as a reliable point of contact for
+          financial questions and planning support. Challenges assumptions
+          constructively when warranted, using data to support alternative
+          perspectives. Understands the operational drivers behind financial
+          results and uses that knowledge to improve analysis quality.
+        senior: >
+          Serves as a trusted finance partner to senior business leaders,
+          earning a seat at the table for strategic discussions beyond pure
+          financial topics. Facilitates cross-functional alignment during
+          planning cycles, navigating competing priorities diplomatically.
+          Proactively brings financial insights to operational decisions
+          and helps business leaders understand financial implications.
+        staff: >
+          Builds the finance business partnering capability across the
+          organization, training analysts to operate as strategic advisors
+          rather than report generators. Manages relationships with the most
+          senior business leaders and facilitates enterprise-wide alignment
+          on financial trade-offs. Designs partnership models that scale
+          with organizational complexity.
+        principal: >
+          Shapes the organization's model for finance-business partnership
+          at the executive level, positioning FP&A as an indispensable
+          strategic function. Builds trusted advisory relationships with
+          the CEO and board, ensuring financial perspectives are integrated
+          into the most consequential business decisions. Influences
+          organizational design to strengthen finance-operations alignment.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          Cross-functional partnership is fundamentally relational, requiring
+          trust, empathy, organizational awareness, and the ability to
+          navigate interpersonal dynamics. AI can provide supporting data
+          and analysis, but the human skills of influence, negotiation, and
+          relationship building are irreplaceable.
+
+    - id: capital_allocation
+      name: "Capital Allocation"
+      category: technical
+      description: >
+        Evaluating and recommending how the organization deploys financial
+        resources across competing investment opportunities, including organic
+        growth initiatives, M&A, capital expenditures, dividends, share
+        repurchases, and debt repayment. Encompasses ROI analysis, hurdle
+        rate frameworks, portfolio optimization, and governance processes
+        for investment decisions.
+      proficiency:
+        junior: >
+          Assists in preparing capital allocation analyses by gathering
+          project data, calculating basic return metrics like ROI, NPV, and
+          payback period, and populating investment proposal templates.
+          Understands the concept of opportunity cost and the time value of
+          money in the context of investment evaluation under guidance.
+        mid: >
+          Builds complete investment analysis packages for moderate-scale
+          projects, including financial projections, return calculations,
+          risk assessments, and recommendation summaries. Applies the
+          organization's hurdle rate framework and compares competing
+          investments on consistent metrics. Tracks post-implementation
+          results against original projections.
+        senior: >
+          Leads capital allocation analysis for major investments and
+          strategic initiatives, developing comprehensive business cases
+          with multiple scenarios and sensitivity analyses. Challenges
+          proposal assumptions and ensures consistent evaluation
+          methodology across the portfolio. Presents recommendations to
+          investment committees and executive leadership with clear trade-off
+          analyses.
+        staff: >
+          Defines the organization's capital allocation framework, including
+          hurdle rates, evaluation criteria, governance processes, and
+          portfolio optimization methodology. Develops tools that enable
+          consistent investment evaluation across business units and drives
+          post-implementation review processes that improve future capital
+          deployment decisions.
+        principal: >
+          Shapes the organization's capital allocation philosophy at the
+          board level, connecting investment decisions to long-term value
+          creation strategy and shareholder returns. Advises on optimal
+          capital structure, dividend policy, and the strategic balance
+          between organic investment, acquisitions, and capital returns.
+          Ensures capital discipline is maintained during both growth and
+          contraction cycles.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can automate return calculations, generate scenario analyses,
+          and benchmark investments against historical outcomes. However,
+          making judgment calls about strategic fit, assessing management
+          capability to execute, and balancing portfolio risk across
+          competing opportunities require experienced financial leadership.
+
+    - id: strategic_planning_support
+      name: "Strategic Planning Support"
+      category: domain
+      description: >
+        Providing financial analytical support for the organization's
+        strategic planning process, including long-range financial modeling,
+        market opportunity sizing, competitive analysis, and the financial
+        evaluation of strategic alternatives. Bridges the gap between
+        qualitative strategic vision and quantitative financial feasibility.
+      proficiency:
+        junior: >
+          Assists in strategic planning by gathering market data, preparing
+          competitive landscape summaries, and populating long-range model
+          templates. Learns how financial projections extend beyond the
+          annual budget horizon and understands the relationship between
+          strategic choices and financial outcomes at a foundational level.
+        mid: >
+          Builds long-range financial models that translate strategic
+          assumptions into projected financial outcomes. Sizes market
+          opportunities by synthesizing industry data with internal
+          capability assessments. Prepares strategic option analyses
+          comparing financial implications of different growth paths,
+          including organic expansion, partnerships, and acquisitions.
+        senior: >
+          Leads the financial workstream of strategic planning exercises,
+          developing comprehensive models that evaluate multiple strategic
+          scenarios over multi-year horizons. Challenges strategic
+          assumptions with data-driven perspectives and helps leadership
+          understand the financial trade-offs inherent in different
+          strategic directions. Presents at strategic planning offsites.
+        staff: >
+          Defines how finance supports the strategic planning process,
+          ensuring financial rigor without constraining strategic creativity.
+          Develops reusable frameworks for evaluating strategic alternatives,
+          market entry decisions, and portfolio rationalization. Drives
+          integration between strategic planning outputs and annual
+          budgeting processes.
+        principal: >
+          Serves as a key architect of the organization's strategic planning
+          process, ensuring financial discipline and analytical rigor inform
+          long-term direction. Advises the CEO and board on the financial
+          feasibility and risk profiles of transformative strategic
+          initiatives. Shapes the organization's long-range vision by
+          connecting financial capability to market opportunity.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can accelerate market research, generate baseline long-range
+          projections, and model multiple strategic scenarios rapidly.
+          However, evaluating strategic fit, assessing execution feasibility,
+          and advising leadership on ambiguous, high-stakes strategic choices
+          require deep business understanding and human judgment.
+
+    - id: systems_tools
+      name: "Systems & Tools (Anaplan, Adaptive)"
+      category: technical
+      description: >
+        Proficiency in enterprise planning and analytics platforms such as
+        Anaplan, Workday Adaptive Planning, Oracle PBCS, SAP BPC, and
+        Planful. Includes model building within these platforms, data
+        integration configuration, workflow design, and the ability to
+        evaluate and implement technology solutions that improve planning
+        effectiveness and efficiency.
+      proficiency:
+        junior: >
+          Navigates the organization's FP&A platform to input data, run
+          reports, and extract information for analyses. Uses established
+          models and templates within the planning system. Learns the
+          platform's basic functionality including data entry forms, report
+          views, and user administration under guidance from senior team
+          members.
+        mid: >
+          Builds and maintains planning models within the FP&A platform,
+          including dimension structures, calculation rules, and reporting
+          views. Configures data integrations from ERP and operational
+          systems. Designs workflows for budget input collection and
+          approval routing. Troubleshoots common system issues and supports
+          end-user training.
+        senior: >
+          Designs complex planning models that handle multi-dimensional
+          analysis, driver-based forecasting, and scenario management within
+          enterprise platforms. Leads system enhancements and optimization
+          initiatives. Evaluates new platform features and capabilities,
+          implementing those that improve planning effectiveness. Serves
+          as the technical lead for platform-related decisions.
+        staff: >
+          Defines the organization's FP&A technology strategy, including
+          platform selection, implementation approach, and integration
+          architecture with the broader financial technology ecosystem.
+          Manages vendor relationships and license optimization. Develops
+          the technology roadmap that supports evolving planning
+          requirements and drives adoption across the enterprise.
+        principal: >
+          Shapes the organization's financial technology architecture at
+          the strategic level, evaluating next-generation planning platforms,
+          AI-embedded analytics, and the convergence of planning and
+          operational systems. Advises the CFO on technology investment
+          priorities that will differentiate the finance function's
+          analytical capability and decision-support effectiveness.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI is increasingly embedded within FP&A platforms for automated
+          forecasting and anomaly detection. However, designing planning
+          models that reflect business complexity, managing platform
+          implementations, and ensuring technology serves strategic planning
+          objectives require deep functional expertise and organizational
+          understanding.

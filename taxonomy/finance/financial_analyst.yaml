@@ -1,0 +1,705 @@
+role:
+  id: financial_analyst
+  function: finance
+  name: "Financial Analyst"
+  also_known_as:
+    - "Finance Analyst"
+    - "Investment Analyst"
+    - "Corporate Finance Analyst"
+    - "Equity Research Analyst"
+    - "Business Finance Analyst"
+  description: >
+    Evaluates investment opportunities, builds financial models, and advises
+    stakeholders on capital allocation and strategic financial decisions.
+    Financial analysts collect and synthesize data from markets, financial
+    statements, and industry research to produce forecasts, valuations, and
+    recommendations that drive corporate strategy, M&A activity, and portfolio
+    management. They translate complex quantitative findings into clear
+    narratives for decision-makers across the organization.
+  ai_impact:
+    level: "high"
+    summary: >
+      AI is significantly transforming financial analysis by automating data
+      gathering from disparate sources, accelerating model building through
+      template generation and formula auditing, and drafting routine reports
+      and presentations. However, the discipline's core value lies in judgment
+      about assumptions, narrative framing for stakeholders, and navigating
+      ambiguous strategic questions where quantitative models alone are
+      insufficient. Analysts who leverage AI to compress research cycles while
+      sharpening their strategic insight will become substantially more
+      productive.
+    automating:
+      - "Data aggregation from financial databases and market feeds"
+      - "Routine financial model construction and template generation"
+      - "Standardized report drafting and formatting"
+      - "Ratio analysis and peer comparison calculations"
+      - "Earnings transcript summarization and sentiment analysis"
+      - "Historical trend identification and charting"
+    augmenting:
+      - "Scenario analysis and sensitivity modeling"
+      - "Valuation assumption validation and stress testing"
+      - "Industry research synthesis across multiple sources"
+      - "Presentation narrative development and data storytelling"
+      - "Anomaly detection in financial statements"
+      - "Real-time market monitoring and alert generation"
+    preserving:
+      - "Investment thesis development and strategic judgment"
+      - "Stakeholder relationship management and trust building"
+      - "Negotiation support during M&A and capital raises"
+      - "Ethical reasoning about conflicts of interest and fiduciary duty"
+      - "Cross-functional influence and executive communication"
+      - "Contextual interpretation of qualitative business factors"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "O*NET - Financial Analysts"
+        url: "https://www.onetonline.org/link/summary/13-2051.00"
+      - name: "McKinsey - The Economic Potential of Generative AI"
+        url: "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier"
+      - name: "CFA Institute - AI in Investment Management"
+        url: "https://www.cfainstitute.org/en/research/ai-in-investment-management"
+  levels:
+    - id: junior
+      name: "Junior Financial Analyst"
+      years_experience: "0-2"
+      summary: >
+        Supports senior analysts by gathering data, maintaining models, and
+        preparing routine analyses. Builds foundational skills in financial
+        modeling, accounting, and industry research. Follows established
+        methodologies and templates while developing attention to detail and
+        accuracy in quantitative work.
+    - id: mid
+      name: "Financial Analyst"
+      years_experience: "2-5"
+      summary: >
+        Owns complete analyses end-to-end, from data collection through
+        recommendation delivery. Builds and maintains financial models with
+        moderate complexity, prepares client-ready presentations, and
+        contributes independent viewpoints to investment decisions. Manages
+        multiple projects with limited oversight.
+    - id: senior
+      name: "Senior Financial Analyst"
+      years_experience: "5-8"
+      summary: >
+        Leads complex financial analyses spanning multiple business lines or
+        investment opportunities. Develops sophisticated models incorporating
+        advanced scenarios and sensitivities. Mentors junior analysts, presents
+        findings to senior leadership, and influences strategic decisions
+        through well-constructed financial narratives.
+    - id: staff
+      name: "Staff Financial Analyst"
+      years_experience: "8-12"
+      summary: >
+        Drives analytical standards and methodology across the finance
+        organization. Leads high-stakes analyses for major transactions,
+        strategic initiatives, or enterprise-wide planning. Shapes the
+        analytical toolkit and frameworks used by the team and serves as a
+        trusted advisor to senior leadership on complex financial questions.
+    - id: principal
+      name: "Principal Financial Analyst"
+      years_experience: "12+"
+      summary: >
+        Defines the analytical vision and methodology for the organization,
+        setting standards that shape how financial decisions are evaluated and
+        communicated. Advises C-suite on capital allocation, strategic
+        transactions, and long-term financial positioning. Recognized as a
+        subject-matter authority whose judgment carries weight in the most
+        consequential financial decisions.
+  skills:
+    - id: financial_modeling
+      name: "Financial Modeling"
+      category: technical
+      description: >
+        Building structured, dynamic spreadsheet or software-based models that
+        project financial performance, value assets, and evaluate business
+        scenarios. Includes three-statement models, DCF models, LBO models, and
+        merger models with appropriate assumptions, error checks, and sensitivity
+        analysis capabilities.
+      proficiency:
+        junior: >
+          Builds simple financial models from templates, populating historical data
+          and basic projections under direct supervision. Understands the
+          mechanics of linking income statement, balance sheet, and cash flow
+          statement but requires guidance on assumption selection and model
+          architecture decisions.
+        mid: >
+          Constructs three-statement models independently with well-documented
+          assumptions, toggle-based scenarios, and built-in error checks.
+          Performs DCF valuations with appropriate discount rate selection and
+          terminal value methodologies. Models are clean, auditable, and
+          presentation-ready.
+        senior: >
+          Designs complex models for M&A, LBO, and multi-entity consolidation
+          scenarios with dynamic capital structures, tax optimization features,
+          and Monte Carlo simulation capabilities. Establishes modeling standards
+          and reviews junior analysts' work for structural integrity and
+          assumption quality.
+        staff: >
+          Creates enterprise-grade modeling frameworks that standardize
+          methodology across the organization while accommodating diverse use
+          cases. Develops proprietary analytical tools that integrate with
+          data pipelines and automate recurring analyses. Advises on model
+          governance and version control practices.
+        principal: >
+          Defines the organization's financial modeling philosophy, balancing
+          precision against speed and ensuring models serve as decision-support
+          tools rather than false precision generators. Evaluates emerging
+          modeling platforms and AI-augmented approaches, and sets standards
+          adopted across the enterprise.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI tools can generate model templates, populate historical data, and
+          audit formula logic effectively. However, selecting meaningful
+          assumptions, structuring models for the specific decision context, and
+          interpreting outputs to form actionable recommendations still require
+          experienced financial judgment.
+
+    - id: valuation_methods
+      name: "Valuation Methods"
+      category: technical
+      description: >
+        Applying established and emerging techniques to determine the intrinsic
+        or relative value of companies, assets, and securities. Encompasses
+        discounted cash flow analysis, comparable company analysis, precedent
+        transactions, asset-based valuation, and option-pricing methods with
+        rigorous attention to input quality and methodological appropriateness.
+      proficiency:
+        junior: >
+          Understands the conceptual basis of DCF and comparable company analysis.
+          Gathers trading multiples and precedent transaction data from standard
+          databases. Applies basic valuation formulas under supervision, learning
+          to identify which methodology fits different asset types and business
+          contexts.
+        mid: >
+          Performs DCF, comparable company, and precedent transaction analyses
+          independently, selecting appropriate peer sets, adjusting for
+          non-recurring items, and triangulating across methods to arrive at a
+          defensible valuation range. Clearly communicates assumptions and
+          limitations in written deliverables.
+        senior: >
+          Leads valuation work for complex situations including distressed
+          assets, early-stage companies, and cross-border transactions where
+          standard multiples break down. Applies option-pricing models, sum-of-
+          the-parts analysis, and probability-weighted scenarios. Reviews and
+          challenges valuation work from external advisors.
+        staff: >
+          Establishes valuation standards and governance across the organization,
+          ensuring methodological consistency while allowing flexibility for
+          unique situations. Advises on fair value determinations for financial
+          reporting, tax, and regulatory purposes. Develops proprietary
+          approaches for hard-to-value assets.
+        principal: >
+          Recognized as the organization's valuation authority, consulted on
+          the most consequential transactions and fairness opinions. Shapes
+          valuation policy that balances rigor with practicality, and engages
+          with regulators, auditors, and boards on valuation-related matters
+          at the highest level.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI accelerates data gathering for comparable analysis and can
+          generate preliminary valuations from templates. However, judgment
+          about peer selection, assumption calibration for unique business
+          models, and defending valuations to sophisticated counterparties
+          requires deep expertise that resists automation.
+
+    - id: data_analysis_sql
+      name: "Data Analysis & SQL"
+      category: technical
+      description: >
+        Extracting, transforming, and analyzing financial data using SQL,
+        Python, R, or similar tools to uncover trends, validate assumptions,
+        and generate insights from structured and semi-structured datasets.
+        Includes database querying, data cleaning, statistical analysis, and
+        automated reporting workflows.
+      proficiency:
+        junior: >
+          Writes basic SQL queries to extract data from financial databases
+          and ERP systems. Uses Excel pivot tables and simple formulas for
+          data summarization. Follows established data extraction procedures
+          and templates to support recurring analyses with guidance on data
+          quality validation.
+        mid: >
+          Writes complex SQL queries with joins, subqueries, window functions,
+          and aggregations to analyze large financial datasets. Uses Python or
+          R for data cleaning, statistical analysis, and visualization. Builds
+          automated data pipelines that reduce manual data gathering for
+          recurring reports and analyses.
+        senior: >
+          Designs analytical frameworks that combine data from multiple sources
+          including ERP, CRM, market data, and alternative datasets. Applies
+          regression analysis, time-series forecasting, and clustering to
+          generate proprietary insights. Mentors analysts on best practices for
+          data integrity, reproducibility, and documentation.
+        staff: >
+          Defines the organization's financial data architecture and analytics
+          standards, ensuring data quality, governance, and accessibility
+          across teams. Builds reusable analytical tools and libraries that
+          democratize data access while maintaining appropriate controls and
+          audit trails throughout the data lifecycle.
+        principal: >
+          Shapes the organization's data strategy for financial analysis,
+          evaluating emerging technologies like AI-powered analytics platforms
+          and alternative data sources. Drives investment in data infrastructure
+          that creates sustainable competitive advantages in analytical speed,
+          depth, and accuracy.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI excels at generating SQL queries from natural language, automating
+          data cleaning workflows, and identifying patterns in large datasets.
+          However, framing the right analytical questions, validating data
+          quality in context, and translating statistical findings into
+          actionable business recommendations require human financial acumen.
+
+    - id: financial_reporting
+      name: "Financial Reporting"
+      category: technical
+      description: >
+        Preparing, interpreting, and presenting financial statements and
+        management reports that communicate organizational performance to
+        internal and external stakeholders. Includes understanding of GAAP/IFRS
+        presentation requirements, MD&A narratives, earnings releases, and
+        board-level financial communications.
+      proficiency:
+        junior: >
+          Assists in preparing standard financial reports by compiling data
+          from accounting systems, verifying figures against source documents,
+          and formatting outputs according to team templates. Understands
+          the structure and purpose of income statements, balance sheets,
+          and cash flow statements.
+        mid: >
+          Prepares complete financial reports independently, including variance
+          commentary, trend analysis, and KPI dashboards. Ensures accuracy
+          and consistency across reporting periods, identifies and investigates
+          anomalies, and tailors report depth and language to the target
+          audience.
+        senior: >
+          Designs reporting frameworks that provide actionable insights rather
+          than raw data, incorporating leading indicators and forward-looking
+          commentary. Reviews external filings for accuracy and compliance.
+          Leads the development of executive-level presentations that connect
+          financial results to strategic narratives and business drivers.
+        staff: >
+          Defines reporting standards and cadences across the organization,
+          balancing detail with clarity. Architects reporting infrastructure
+          that automates routine outputs while preserving flexibility for
+          ad-hoc analysis. Ensures alignment between internal management
+          reporting and external financial disclosures across all entities.
+        principal: >
+          Shapes the organization's financial communication strategy at the
+          board and investor level. Defines what gets measured and reported,
+          influencing how the organization understands its own performance.
+          Drives innovation in financial reporting practices including real-time
+          dashboards and integrated ESG reporting.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI can automate routine report generation, draft variance commentary,
+          and format presentations from templates. However, crafting narratives
+          that accurately convey business context, ensuring compliance with
+          evolving reporting standards, and tailoring messages for different
+          stakeholder audiences require experienced human judgment.
+
+    - id: excel_spreadsheet
+      name: "Excel & Spreadsheet Mastery"
+      category: technical
+      description: >
+        Advanced proficiency in spreadsheet tools, primarily Microsoft Excel and
+        Google Sheets, including complex formulas, array functions, pivot tables,
+        Power Query, VBA macros, and data visualization. Also encompasses
+        spreadsheet governance practices such as version control, error checking,
+        and model audit techniques.
+      proficiency:
+        junior: >
+          Uses core Excel functions including VLOOKUP, SUMIFS, INDEX-MATCH, and
+          pivot tables to organize and analyze data. Formats workbooks
+          professionally and follows team conventions for layout, naming, and
+          color coding. Builds simple charts and learns keyboard shortcuts for
+          productivity.
+        mid: >
+          Builds complex spreadsheets with dynamic named ranges, array formulas,
+          nested conditionals, and data validation controls. Uses Power Query
+          for ETL workflows, creates interactive dashboards with slicers and
+          conditional formatting, and writes basic VBA macros to automate
+          repetitive tasks across workbooks.
+        senior: >
+          Designs enterprise-grade spreadsheet solutions with robust error
+          handling, circular reference management, and optimization for large
+          datasets. Implements custom VBA applications and Power Query M-code
+          transformations. Establishes spreadsheet standards, conducts model
+          audits, and mentors analysts on efficiency techniques.
+        staff: >
+          Evaluates and implements spreadsheet governance frameworks including
+          version control, change tracking, and risk management for critical
+          financial models. Identifies when processes should migrate from
+          spreadsheets to dedicated platforms and leads those transitions while
+          preserving institutional knowledge embedded in legacy models.
+        principal: >
+          Defines the organization's spreadsheet strategy within the broader
+          financial technology stack, balancing the flexibility of spreadsheets
+          against governance and scalability concerns. Champions the adoption of
+          modern alternatives where appropriate while ensuring continuity of
+          critical spreadsheet-based processes.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI tools can write Excel formulas, generate VBA code, debug
+          spreadsheet errors, and suggest data transformations effectively.
+          However, designing model architectures that balance flexibility with
+          auditability, and understanding the business context that determines
+          appropriate model structure, still require experienced analysts.
+
+    - id: presentation_communication
+      name: "Presentation & Communication"
+      category: interpersonal
+      description: >
+        Creating clear, compelling financial presentations and communicating
+        complex quantitative insights to diverse audiences including executives,
+        board members, investors, and cross-functional partners. Encompasses
+        slide design, data visualization, narrative construction, and the
+        ability to adapt technical depth to audience sophistication.
+      proficiency:
+        junior: >
+          Creates functional slides using team templates, populating them with
+          charts and data tables that accurately represent underlying analyses.
+          Presents findings clearly in team settings, using notes and scripts.
+          Learns to distinguish between essential and supplementary information
+          for each audience type.
+        mid: >
+          Builds polished presentations that tell a coherent story with data,
+          selecting the right chart types and emphasizing key takeaways.
+          Presents confidently to senior stakeholders and handles follow-up
+          questions with composure. Writes clear memos that summarize findings
+          and recommendations concisely.
+        senior: >
+          Crafts executive-level presentations that frame complex analyses
+          within strategic context, using data visualization to drive specific
+          decisions. Adapts communication style to different audiences from
+          technical peers to board members. Coaches junior analysts on
+          narrative structure and presentation delivery techniques.
+        staff: >
+          Defines communication standards for the finance organization,
+          including template libraries, style guides, and quality benchmarks
+          for deliverables. Creates high-stakes presentations for board
+          meetings, investor days, and strategic reviews. Influences how
+          financial information flows across the organization through format
+          and cadence design.
+        principal: >
+          Shapes the organization's financial narrative at the highest level,
+          crafting the story told to investors, regulators, and the board.
+          Serves as a trusted communication advisor to the CFO and executive
+          team, ensuring financial messages are clear, consistent, and
+          strategically aligned across all channels.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can draft slide content, suggest visualizations, and generate
+          presentation outlines. However, crafting narratives that persuade
+          sophisticated audiences, reading the room during live presentations,
+          and adapting messaging to political and strategic context remain
+          fundamentally human capabilities.
+
+    - id: industry_research
+      name: "Industry Research"
+      category: technical
+      description: >
+        Conducting systematic research on industries, markets, competitors, and
+        macroeconomic trends to inform financial analysis and investment
+        decisions. Includes primary and secondary research methods, information
+        synthesis from diverse sources, and the development of informed market
+        perspectives that enhance analytical rigor.
+      proficiency:
+        junior: >
+          Gathers industry data from standard sources including SEC filings,
+          industry reports, earnings transcripts, and financial databases.
+          Summarizes key findings and maintains organized research files.
+          Learns to distinguish between reliable and unreliable sources and
+          identifies basic industry dynamics and competitive positioning.
+        mid: >
+          Conducts comprehensive industry analyses covering market size, growth
+          drivers, competitive dynamics, regulatory environment, and technology
+          trends. Synthesizes information from multiple sources into coherent
+          perspectives that directly inform financial models and valuation
+          assumptions. Tracks and reports on industry developments proactively.
+        senior: >
+          Develops proprietary industry frameworks that identify underappreciated
+          trends, structural shifts, and investment implications ahead of
+          consensus. Conducts primary research through expert networks and
+          management conversations. Challenges conventional wisdom with
+          data-driven contrarian perspectives when warranted.
+        staff: >
+          Builds the organization's industry research capability, defining
+          coverage priorities, information workflows, and knowledge management
+          systems. Develops repeatable research methodologies that produce
+          consistent, high-quality outputs. Cultivates external expert
+          relationships that provide differentiated insight across sectors.
+        principal: >
+          Shapes the organization's macro research perspective, connecting
+          industry-level insights to enterprise-wide strategic positioning.
+          Advises senior leadership on secular trends, disruptive forces, and
+          long-term industry evolution. Influences capital allocation decisions
+          through deep, forward-looking market understanding.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI dramatically accelerates data gathering, document summarization,
+          and trend identification across large volumes of industry content.
+          However, developing differentiated perspectives, assessing the
+          credibility and relevance of disparate sources, and translating
+          research into actionable investment themes require experienced
+          human judgment and creativity.
+
+    - id: risk_analysis
+      name: "Risk Analysis"
+      category: technical
+      description: >
+        Identifying, quantifying, and communicating financial risks including
+        market risk, credit risk, operational risk, and strategic risk. Applies
+        quantitative techniques such as Value-at-Risk, scenario analysis, stress
+        testing, and sensitivity analysis to assess downside exposure and inform
+        risk management strategies.
+      proficiency:
+        junior: >
+          Understands basic risk concepts and common risk categories in finance.
+          Runs sensitivity analyses on existing models by varying key assumptions
+          and documents results. Assists in compiling risk reports using
+          established templates and learns to identify data anomalies that may
+          signal risk events.
+        mid: >
+          Conducts independent risk analyses using scenario modeling, sensitivity
+          tables, and basic Value-at-Risk calculations. Identifies key risk
+          factors for investment proposals and business cases. Quantifies
+          downside exposure and communicates risk-reward trade-offs clearly
+          to stakeholders with appropriate visual aids.
+        senior: >
+          Designs comprehensive risk assessment frameworks incorporating
+          stress testing, Monte Carlo simulation, and tail-risk analysis for
+          complex portfolios or business units. Evaluates correlation between
+          risk factors, identifies concentration risks, and develops mitigation
+          strategies. Presents risk findings to senior leadership with actionable
+          recommendations.
+        staff: >
+          Defines enterprise-wide risk analysis standards and governance
+          processes, ensuring consistency across business lines. Develops
+          proprietary risk models and tools that capture institution-specific
+          exposures. Advises on risk appetite frameworks and contributes to
+          board-level risk reporting that connects quantitative measures to
+          strategic implications.
+        principal: >
+          Shapes the organization's risk philosophy at the executive level,
+          balancing risk management rigor against growth ambitions and
+          competitive dynamics. Evaluates systemic and emerging risks including
+          climate, geopolitical, and technology disruption scenarios that
+          impact long-term enterprise value and strategic positioning.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI enhances risk analysis through faster scenario generation, pattern
+          recognition in historical data, and real-time monitoring. However,
+          identifying novel risk factors, calibrating models to unprecedented
+          conditions, and making judgment calls about acceptable risk levels
+          require deep financial expertise and institutional context.
+
+    - id: budgeting_forecasting
+      name: "Budgeting & Forecasting"
+      category: technical
+      description: >
+        Developing, maintaining, and analyzing operating and capital budgets
+        and financial forecasts. Includes bottom-up and top-down budgeting
+        methodologies, rolling forecasts, variance analysis, and the iterative
+        process of aligning financial plans with strategic objectives across
+        the organization.
+      proficiency:
+        junior: >
+          Assists in the budgeting process by collecting inputs from business
+          units, populating budget templates, and performing basic variance
+          calculations. Understands the difference between budgets, forecasts,
+          and actuals. Learns the organization's planning calendar, chart of
+          accounts structure, and reporting hierarchies.
+        mid: >
+          Owns the budget and forecast process for assigned business units or
+          cost centers, gathering assumptions, building projections, and
+          analyzing variances against prior periods and plan. Produces monthly
+          or quarterly forecast updates with clear explanations of key drivers
+          and changes. Identifies trends that warrant management attention.
+        senior: >
+          Leads the enterprise budgeting or forecasting process, coordinating
+          across departments and ensuring alignment with strategic priorities.
+          Develops driver-based forecasting models that improve accuracy over
+          time. Presents budget recommendations and forecast risks to senior
+          leadership with clear scenarios and contingency plans.
+        staff: >
+          Defines the organization's planning methodology, including the
+          balance between annual budgeting and rolling forecasts, the level
+          of granularity required, and the technology platforms that support
+          the process. Drives continuous improvement in forecast accuracy and
+          reduces cycle time through process redesign and automation.
+        principal: >
+          Shapes the organization's financial planning philosophy at the
+          executive level, ensuring planning processes drive better decisions
+          rather than just producing numbers. Connects budgeting and
+          forecasting to capital allocation strategy, investor guidance, and
+          long-term value creation in partnership with the CFO and board.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can automate data collection, generate baseline forecasts from
+          historical patterns, and flag budget anomalies. However, incorporating
+          strategic context into forecasts, negotiating budget trade-offs
+          across business units, and maintaining the organizational
+          relationships that produce honest inputs require human expertise.
+
+    - id: accounting_fundamentals
+      name: "Accounting Fundamentals"
+      category: technical
+      description: >
+        Understanding core accounting principles, standards, and practices
+        including GAAP and IFRS, double-entry bookkeeping, accrual accounting,
+        revenue recognition, and financial statement articulation. Provides
+        the foundation for interpreting financial data accurately and ensuring
+        analyses are grounded in sound accounting logic.
+      proficiency:
+        junior: >
+          Understands double-entry bookkeeping, the accounting equation, and
+          how the three financial statements connect. Recognizes common
+          accounting treatments for revenue, expenses, depreciation, and
+          working capital items. Can read and interpret basic financial
+          statements to extract relevant data for analytical work.
+        mid: >
+          Applies accounting concepts to enhance financial analysis, including
+          understanding of accrual versus cash impacts, non-cash adjustments,
+          and common areas of management judgment. Identifies accounting policy
+          choices that affect comparability across companies and adjusts
+          analyses accordingly. Comfortable with footnote analysis.
+        senior: >
+          Navigates complex accounting topics including revenue recognition
+          under ASC 606, lease accounting under ASC 842, stock-based
+          compensation, and business combination accounting. Identifies
+          potential accounting red flags in financial statements and
+          incorporates accounting quality assessments into investment analysis.
+        staff: >
+          Serves as a bridge between finance and accounting teams, ensuring
+          analytical frameworks properly reflect accounting realities. Advises
+          on the analytical implications of accounting policy changes,
+          restatements, and new standards. Develops training programs that
+          strengthen accounting literacy across the finance organization.
+        principal: >
+          Provides authoritative guidance on complex accounting matters as
+          they impact financial analysis, valuation, and strategic decision-
+          making. Engages with external auditors and regulators on accounting
+          interpretation questions. Shapes organizational policies that ensure
+          financial analyses are built on rigorous accounting foundations.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can quickly reference accounting standards, classify transactions,
+          and flag inconsistencies in financial statements. However, applying
+          judgment to complex accounting estimates, interpreting the spirit of
+          standards in novel situations, and assessing the quality of reported
+          earnings require deep professional expertise.
+
+    - id: business_acumen
+      name: "Business Acumen"
+      category: interpersonal
+      description: >
+        Understanding how businesses create, deliver, and capture value across
+        different industries, business models, and competitive environments.
+        Includes the ability to connect financial analysis to operational
+        realities, strategic priorities, and market dynamics, enabling
+        recommendations that are both analytically sound and commercially
+        relevant.
+      proficiency:
+        junior: >
+          Learns the fundamentals of the organization's business model, revenue
+          streams, cost structure, and competitive landscape. Asks questions
+          to understand how financial metrics connect to operational activities.
+          Reads earnings calls, industry reports, and business news to build
+          contextual knowledge relevant to assigned coverage areas.
+        mid: >
+          Demonstrates working knowledge of how key business drivers affect
+          financial performance, including pricing dynamics, customer
+          acquisition costs, unit economics, and competitive positioning.
+          Incorporates business context into financial analyses, making
+          recommendations that reflect operational realities and strategic
+          priorities rather than purely numerical outputs.
+        senior: >
+          Applies deep business understanding to challenge assumptions, identify
+          strategic risks, and frame financial analyses within broader industry
+          and competitive context. Builds trusted relationships with business
+          unit leaders, earning a seat at the table for strategic discussions.
+          Connects financial performance to operational levers for improvement.
+        staff: >
+          Operates as a strategic thought partner to senior leadership,
+          translating financial analysis into actionable business insights
+          that influence resource allocation, market entry, and competitive
+          strategy. Identifies emerging business model disruptions and their
+          financial implications, and helps the organization adapt proactively.
+        principal: >
+          Serves as a trusted advisor to the CEO and board on the financial
+          implications of strategic decisions, drawing on deep cross-industry
+          knowledge and pattern recognition. Shapes the organization's
+          strategic direction by connecting financial capabilities to market
+          opportunities, ensuring capital is deployed where it creates the
+          greatest long-term value.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          Business acumen requires lived experience, relationship context,
+          and the ability to synthesize qualitative and quantitative signals
+          that AI cannot replicate. While AI can provide data and surface
+          patterns, the judgment to connect financial analysis to real-world
+          business strategy remains deeply human.
+
+    - id: regulatory_knowledge
+      name: "Regulatory Knowledge"
+      category: domain
+      description: >
+        Understanding the regulatory frameworks that govern financial markets,
+        corporate reporting, and investment activities, including SEC
+        regulations, Dodd-Frank provisions, Sarbanes-Oxley requirements, and
+        industry-specific compliance obligations. Includes staying current with
+        regulatory changes and understanding their operational and analytical
+        implications.
+      proficiency:
+        junior: >
+          Aware of major regulatory bodies and frameworks relevant to the
+          organization including SEC, FINRA, and SOX requirements. Understands
+          basic compliance obligations such as insider trading restrictions,
+          filing deadlines, and confidentiality requirements. Follows team
+          protocols for regulatory compliance diligently.
+        mid: >
+          Applies regulatory knowledge to day-to-day work, ensuring analyses
+          and recommendations comply with relevant frameworks. Monitors
+          regulatory developments that may impact the organization or its
+          investments. Understands how regulations affect financial reporting,
+          capital requirements, and transaction structures.
+        senior: >
+          Navigates complex regulatory intersections affecting strategic
+          initiatives, including cross-border transactions, industry-specific
+          compliance, and new regulatory proposals. Assesses the financial
+          impact of regulatory changes and advises leadership on positioning
+          and risk mitigation strategies with quantified scenario analyses.
+        staff: >
+          Develops the organization's regulatory monitoring and response
+          capabilities for finance-related regulations. Collaborates with
+          legal and compliance teams to ensure analytical frameworks
+          incorporate regulatory constraints. Leads impact assessments for
+          major regulatory changes and designs compliance-integrated workflows.
+        principal: >
+          Engages with regulators, industry groups, and policymakers on
+          matters affecting the organization's financial activities. Shapes
+          the enterprise response to transformative regulatory changes and
+          ensures the organization's financial strategy is resilient across
+          plausible regulatory scenarios. Advises the board on regulatory
+          risk posture.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can track regulatory changes, summarize new rules, and flag
+          potential compliance gaps against known frameworks. However,
+          interpreting regulatory intent in ambiguous situations, assessing
+          enforcement risk, and developing strategic responses to regulatory
+          shifts require experienced professional judgment and relationship
+          context.

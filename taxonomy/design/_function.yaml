@@ -1,0 +1,24 @@
+function:
+  id: design
+  name: "Design"
+  description: >
+    User experience, user interface, research, and design systems roles
+    responsible for shaping how people interact with digital products.
+    Encompasses the end-to-end practice of understanding user needs,
+    defining interaction patterns, crafting visual interfaces, and
+    maintaining the systematic foundations that ensure coherent
+    experiences at scale.
+  roles:
+    - ux_designer
+    - ui_designer
+    - ux_researcher
+    - design_systems
+  sources:
+    - name: "Drawbackwards UX Designer 12 Competencies"
+      url: "https://www.drawbackwards.com/ux-designer-competencies"
+    - name: "Cieden UX Competency Matrix"
+      url: "https://www.cieden.com/competency-matrix"
+    - name: "Nielsen Norman Group UX Career Guide"
+      url: "https://www.nngroup.com/articles/ux-career/"
+    - name: "progression.fyi"
+      url: "https://progression.fyi/"

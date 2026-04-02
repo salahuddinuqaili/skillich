@@ -1,0 +1,682 @@
+role:
+  id: paralegal
+  function: legal
+  name: "Paralegal / Legal Operations Specialist"
+  also_known_as:
+    - "Legal Assistant"
+    - "Litigation Paralegal"
+    - "Corporate Paralegal"
+    - "Legal Operations Coordinator"
+    - "Legal Support Specialist"
+  description: >
+    Provides critical support to attorneys and legal departments by conducting
+    legal research, managing case files, preparing documents for filings and
+    transactions, coordinating e-discovery processes, and maintaining case
+    management systems. Paralegals and legal operations specialists serve as
+    the operational backbone of legal teams, ensuring deadlines are met,
+    documents are accurate, and workflows run efficiently while increasingly
+    leveraging technology to streamline legal service delivery.
+  ai_impact:
+    level: "very-high"
+    summary: >
+      AI is fundamentally reshaping paralegal and legal operations work by
+      automating document review, legal research, citation checking, and
+      routine filing tasks that historically consumed the majority of paralegal
+      time. AI-powered e-discovery platforms, contract analysis tools, and
+      automated docketing systems are reducing the volume of manual work by
+      orders of magnitude. Paralegals who develop expertise in AI-assisted
+      workflows and legal technology management will remain valuable, but
+      those relying solely on traditional manual skills face significant
+      displacement as AI handles high-volume, pattern-based legal tasks with
+      increasing accuracy and speed.
+    automating:
+      - "Keyword-based and predictive coding document review in e-discovery"
+      - "Citation format checking and Shepardizing case references"
+      - "Standard court filing preparation from templates"
+      - "Docket calendar generation and deadline tracking from court rules"
+      - "Initial document categorization and privilege screening"
+      - "Boilerplate legal document assembly from clause libraries"
+    augmenting:
+      - "Complex legal research requiring source evaluation and synthesis"
+      - "Deposition preparation including exhibit organization and witness outlines"
+      - "Case management system configuration and workflow optimization"
+      - "Regulatory filing compilation across multiple jurisdictions"
+      - "Client communication drafting and intake coordination"
+      - "Project management for multi-workstream legal matters"
+    preserving:
+      - "Attorney-client relationship support requiring confidentiality judgment"
+      - "Courtroom and deposition logistics requiring real-time adaptation"
+      - "Cross-functional coordination with courts, agencies, and opposing counsel"
+      - "Quality assurance review of AI-generated legal work product"
+      - "Mentoring junior staff and managing legal support teams"
+      - "Navigating ambiguous procedural situations with court clerks and officials"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "O*NET - Paralegals and Legal Assistants"
+        url: "https://www.onetonline.org/link/summary/23-2011.00"
+      - name: "Thomson Reuters Future of Professionals Report 2024"
+        url: "https://www.thomsonreuters.com/en-us/posts/technology/future-of-professionals-2024/"
+      - name: "Goldman Sachs - The Potentially Large Effects of AI on Economic Growth"
+        url: "https://www.gspublishing.com/content/research/en/reports/2023/03/27/d64e052b-0f6e-45d7-967b-d7be35fabd16.html"
+  levels:
+    - id: junior
+      name: "Junior Paralegal"
+      years_experience: "0-2"
+      summary: >
+        Performs foundational legal support tasks under close supervision,
+        including document organization, basic legal research, filing
+        preparation, and calendar management. Learns the firm or department's
+        practice areas, filing systems, and procedural requirements while
+        building proficiency with legal technology tools.
+    - id: mid
+      name: "Paralegal"
+      years_experience: "2-5"
+      summary: >
+        Manages a portfolio of cases or matters independently, conducting
+        substantive legal research, preparing filings and discovery documents,
+        and coordinating with attorneys on case strategy execution. Handles
+        client communications, maintains docketing calendars, and ensures
+        compliance with court rules and filing deadlines.
+    - id: senior
+      name: "Senior Paralegal"
+      years_experience: "5-10"
+      summary: >
+        Leads complex legal support workstreams including large-scale
+        e-discovery projects, multi-jurisdictional regulatory filings, and
+        trial preparation. Serves as the subject matter expert on procedural
+        requirements and legal technology. Mentors junior paralegals and
+        develops standard operating procedures for the legal team.
+    - id: staff
+      name: "Lead Paralegal / Legal Operations Manager"
+      years_experience: "10-15"
+      summary: >
+        Manages the paralegal team or legal operations function, setting
+        workflow standards, technology strategy, and quality benchmarks.
+        Oversees resource allocation across matters, manages vendor
+        relationships for legal technology and services, and drives process
+        improvements that increase legal department efficiency and reduce
+        outside counsel spend.
+    - id: principal
+      name: "Director of Legal Operations"
+      years_experience: "15+"
+      summary: >
+        Leads the organization's legal operations strategy, defining the
+        technology stack, operational metrics, and service delivery model for
+        the legal department. Partners with the general counsel on budget
+        management, outside counsel governance, and legal department
+        transformation initiatives. Drives adoption of AI and automation
+        tools that reshape how legal services are delivered.
+  skills:
+    - id: legal_research
+      name: "Legal Research"
+      category: technical
+      description: >
+        Conducting legal research using Westlaw, LexisNexis, public legal
+        databases, and AI-powered research tools to locate statutes,
+        regulations, case law, and secondary sources, synthesizing findings
+        into memoranda, case summaries, and research reports that support
+        attorney decision-making and case strategy.
+      proficiency:
+        junior: >
+          Performs directed legal research using online databases and public
+          sources, locating statutes, regulations, and case law on assigned
+          topics. Summarizes findings in structured memoranda following
+          department templates with proper citation formatting under review.
+        mid: >
+          Conducts independent legal research across multiple jurisdictions
+          and practice areas, identifying controlling and persuasive authority.
+          Produces well-organized research memoranda with clear analysis of
+          how authorities apply to specific fact patterns for attorney review.
+        senior: >
+          Designs research strategies for complex legal questions involving
+          novel issues or conflicting authority across jurisdictions. Evaluates
+          AI-generated research for accuracy and completeness, and trains
+          junior staff on advanced research techniques and source evaluation.
+        staff: >
+          Establishes research standards, preferred databases, and AI tool
+          protocols for the legal support team. Develops knowledge management
+          systems that capture institutional research and reduce duplicative
+          efforts across matters and practice areas throughout the department.
+        principal: >
+          Shapes the organization's legal research technology strategy,
+          evaluating emerging AI research platforms and negotiating enterprise
+          licenses. Defines quality benchmarks for research work product and
+          ensures research capabilities scale with departmental growth needs.
+      ai_impact:
+        rating: 0.75
+        detail: >
+          AI legal research tools now surface relevant authorities and generate
+          summaries in seconds. However, evaluating the weight and applicability
+          of authorities to specific fact patterns and ensuring comprehensive
+          coverage of novel issues still require trained paralegal judgment.
+
+    - id: document_review
+      name: "Document Review"
+      category: technical
+      description: >
+        Reviewing documents for relevance, privilege, confidentiality, and
+        responsiveness in litigation, regulatory investigations, and
+        transactional due diligence contexts, applying coding decisions
+        consistently across large document populations while maintaining
+        quality standards and defensible review protocols.
+      proficiency:
+        junior: >
+          Reviews documents for relevance and privilege using established coding
+          protocols and review guidelines. Applies consistent tagging decisions
+          across assigned document batches and escalates ambiguous documents to
+          senior reviewers following quality control procedures.
+        mid: >
+          Manages document review workflows for standard matters, developing
+          coding protocols, training review teams, and conducting quality
+          assurance sampling. Identifies key documents and privilege issues
+          independently and prepares privilege logs with accurate descriptions.
+        senior: >
+          Designs and oversees document review strategies for complex matters
+          involving millions of documents, integrating technology-assisted
+          review with human quality checks. Develops defensible review
+          protocols and manages review metrics to ensure cost-effective and
+          thorough document analysis across workstreams.
+        staff: >
+          Defines the organization's document review methodology, vendor
+          selection criteria, and quality standards across all matters.
+          Evaluates and deploys AI-powered review platforms, establishes
+          defensibility frameworks, and manages review budgets to optimize
+          cost and accuracy at enterprise scale.
+        principal: >
+          Sets the strategic direction for document review operations,
+          integrating advanced AI classification tools with human oversight
+          models. Develops industry-leading review protocols that withstand
+          judicial scrutiny, and advises leadership on technology investments
+          that transform document review economics.
+      ai_impact:
+        rating: 0.8
+        detail: >
+          AI-powered predictive coding and classification have dramatically
+          reduced the volume of documents requiring human review. However,
+          training AI models, validating outputs, handling nuanced privilege
+          determinations, and maintaining defensible processes still require
+          experienced paralegal oversight.
+
+    - id: e_discovery
+      name: "E-Discovery"
+      category: technical
+      description: >
+        Managing the electronic discovery lifecycle from preservation through
+        production, including litigation hold implementation, data collection,
+        processing, review platform administration, production formatting,
+        and coordination with vendors, opposing counsel, and courts on
+        discovery protocols and dispute resolution.
+      proficiency:
+        junior: >
+          Assists with e-discovery tasks including litigation hold distribution,
+          custodian interviews, data collection tracking, and document load file
+          preparation. Learns review platform functionality and basic processing
+          workflows under direction from experienced team members.
+        mid: >
+          Manages e-discovery workflows for standard matters, coordinating
+          data preservation, collection, processing, and production timelines.
+          Administers review platforms, creates search terms and analytics
+          workflows, and prepares meet-and-confer materials for discovery
+          negotiations with opposing counsel.
+        senior: >
+          Leads e-discovery strategy for complex, high-volume matters including
+          cross-border collections, multi-platform data sources, and novel data
+          types. Develops defensible collection and processing protocols,
+          manages vendor relationships, and advises attorneys on proportionality
+          arguments and technology-assisted review validation.
+        staff: >
+          Defines the organization's e-discovery standards, preferred vendor
+          panel, and technology architecture. Manages e-discovery budgets
+          across the litigation portfolio and implements process improvements
+          that reduce cost per gigabyte while maintaining defensibility and
+          quality benchmarks for all active matters.
+        principal: >
+          Sets the enterprise e-discovery and information governance strategy,
+          aligning litigation readiness with data management policies. Engages
+          with industry groups on e-discovery best practices, evaluates
+          emerging technologies, and ensures the organization's discovery
+          capabilities support evolving regulatory and litigation demands.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI has transformed e-discovery through predictive coding, concept
+          clustering, and automated classification. However, developing
+          defensible discovery strategies, managing complex vendor relationships,
+          and navigating proportionality disputes with courts and opposing
+          counsel require experienced human professionals.
+
+    - id: filing_docketing
+      name: "Filing & Docketing"
+      category: technical
+      description: >
+        Managing court filings, regulatory submissions, and docketing
+        calendars to ensure all deadlines are met and documents comply with
+        applicable court rules, formatting requirements, and filing
+        procedures across federal, state, and administrative tribunals,
+        maintaining accurate records of all filings and proceedings.
+      proficiency:
+        junior: >
+          Prepares court filings following formatting checklists and court
+          rules, assembles exhibits and attachments, and files documents
+          through electronic filing systems. Maintains docketing calendars
+          by entering deadlines from court orders and rules under supervision.
+        mid: >
+          Manages filing and docketing independently across multiple matters
+          and jurisdictions, calculating procedural deadlines from court rules
+          and ensuring timely service on all parties. Resolves routine filing
+          rejections and coordinates with court clerks on procedural questions.
+        senior: >
+          Oversees filing and docketing operations for complex litigation
+          portfolios spanning multiple jurisdictions and tribunals. Develops
+          docketing protocols, conducts deadline audits, and trains staff on
+          jurisdiction-specific filing requirements and electronic filing
+          platform nuances for high-stakes matters.
+        staff: >
+          Manages the organization's docketing function, selecting and
+          configuring docketing software, establishing quality control
+          procedures, and ensuring redundant deadline tracking systems prevent
+          missed filings. Develops enterprise filing standards and oversees
+          compliance with evolving court e-filing requirements.
+        principal: >
+          Sets the strategic direction for docketing and court filing
+          operations, integrating automated deadline calculation tools with
+          human verification workflows. Ensures the filing function scales
+          with litigation volume growth and engages with court technology
+          committees on electronic filing modernization initiatives.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI can automate deadline calculation from court rules and generate
+          filing checklists effectively. However, navigating ambiguous
+          procedural situations, resolving filing rejections requiring clerk
+          interaction, and ensuring accuracy for jurisdictions with unique
+          local rules still require experienced paralegal judgment.
+
+    - id: deposition_preparation
+      name: "Deposition Preparation"
+      category: technical
+      description: >
+        Supporting attorneys in preparing for depositions by organizing
+        exhibits, creating witness outlines, compiling relevant documents,
+        preparing deposition notices, coordinating logistics with court
+        reporters and videographers, and summarizing prior testimony to
+        identify key themes, contradictions, and areas for examination.
+      proficiency:
+        junior: >
+          Assists with deposition logistics including scheduling court reporters
+          and videographers, preparing deposition notices, and organizing
+          exhibit binders. Compiles relevant documents for attorney review and
+          creates basic document chronologies under direction from the team.
+        mid: >
+          Prepares comprehensive deposition packages including exhibit sets,
+          witness chronologies, and prior testimony summaries. Drafts deposition
+          outlines highlighting key documents and suggested areas of inquiry.
+          Manages deposition logistics and coordinates with opposing counsel on
+          scheduling and exhibit exchanges.
+        senior: >
+          Develops deposition preparation strategies for complex matters
+          involving multiple witnesses and voluminous records. Creates detailed
+          analytical summaries that identify contradictions across testimony
+          and documents, enabling attorneys to conduct more effective
+          examinations. Manages deposition databases and transcript repositories.
+        staff: >
+          Establishes deposition preparation standards and workflows for the
+          legal team, including template outlines, exhibit management protocols,
+          and transcript analysis procedures. Oversees preparation for the most
+          significant depositions and develops training programs for junior
+          paralegals on effective deposition support techniques.
+        principal: >
+          Defines the organization's deposition support methodology, integrating
+          AI transcript analysis and exhibit management tools into preparation
+          workflows. Ensures deposition preparation capabilities scale across
+          the litigation portfolio and develops metrics to measure preparation
+          quality and its impact on case outcomes.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can summarize transcripts, identify testimony themes, and organize
+          exhibits efficiently. However, assessing witness credibility patterns,
+          crafting examination strategies, and making judgment calls about which
+          documents and themes are most significant require experienced
+          paralegal and attorney collaboration.
+
+    - id: citation_checking
+      name: "Citation Checking"
+      category: technical
+      description: >
+        Verifying the accuracy, validity, and proper formatting of legal
+        citations in briefs, memoranda, and other legal documents, including
+        Shepardizing or KeyCiting case references to confirm they remain
+        good law, checking quotation accuracy against source materials, and
+        ensuring compliance with applicable citation format rules such as
+        the Bluebook or jurisdiction-specific style guides.
+      proficiency:
+        junior: >
+          Checks citation formatting against Bluebook or applicable style
+          guide rules and verifies basic case information including party
+          names, reporters, and page numbers. Runs Shepard's or KeyCite
+          reports to flag negative treatment under supervision from attorneys.
+        mid: >
+          Conducts thorough citation verification for briefs and memoranda,
+          confirming quotation accuracy against source materials, validating
+          that cited authorities support the propositions asserted, and
+          identifying superseded or overruled authorities requiring updated
+          citations or alternative references.
+        senior: >
+          Performs comprehensive cite-checking for high-stakes filings
+          including appellate briefs and dispositive motions, ensuring every
+          authority is current, accurately quoted, and properly formatted.
+          Develops citation standards for the department and trains junior
+          staff on jurisdiction-specific formatting requirements.
+        staff: >
+          Establishes citation quality standards and verification workflows
+          across the legal team, deploying AI-assisted citation tools while
+          maintaining human oversight for accuracy. Manages cite-checking
+          processes for the organization's most significant filings and
+          develops efficiency metrics for citation verification operations.
+        principal: >
+          Defines the organization's citation accuracy strategy, integrating
+          automated verification tools with human review protocols. Ensures
+          citation practices meet the highest professional standards across
+          all jurisdictions and evaluates emerging AI citation tools for
+          enterprise deployment and quality assurance improvements.
+      ai_impact:
+        rating: 0.8
+        detail: >
+          AI citation tools can now verify formatting, check case validity,
+          and flag negative treatment with high accuracy. However, confirming
+          that cited authorities genuinely support the legal propositions
+          asserted and identifying the most persuasive alternative authorities
+          still require trained legal judgment.
+
+    - id: legal_writing
+      name: "Legal Writing"
+      category: technical
+      description: >
+        Drafting, editing, and proofreading legal documents including
+        correspondence, memoranda, pleadings, discovery responses, contracts,
+        corporate resolutions, and regulatory submissions, ensuring clarity,
+        accuracy, proper legal terminology, and compliance with applicable
+        formatting and procedural requirements.
+      proficiency:
+        junior: >
+          Drafts routine legal correspondence, simple memoranda, and standard
+          form documents using templates and established formats. Proofreads
+          documents for spelling, grammar, and formatting errors, and ensures
+          consistency with department style guidelines under attorney review.
+        mid: >
+          Drafts substantive legal documents including discovery responses,
+          motion shells, contract summaries, and compliance reports
+          independently. Edits attorney work product for clarity, consistency,
+          and procedural compliance, and adapts writing style to match the
+          requirements of different courts and audiences.
+        senior: >
+          Produces high-quality legal drafts on complex matters including
+          multi-issue memoranda, regulatory submissions, and transaction
+          documents that require minimal attorney revision. Develops document
+          templates and style guides for the department, and mentors junior
+          staff on effective legal writing techniques.
+        staff: >
+          Establishes legal writing standards, template libraries, and quality
+          assurance processes for the legal support team. Oversees production
+          of the organization's most critical documents and evaluates AI
+          drafting tools for integration into legal writing workflows while
+          maintaining accuracy and professional standards.
+        principal: >
+          Defines the organization's legal document strategy, including
+          template governance, AI-assisted drafting protocols, and quality
+          benchmarks. Ensures legal writing capabilities scale with department
+          growth and that document production processes leverage technology
+          to maximize consistency, speed, and professional quality.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI drafting tools can generate competent first drafts of many legal
+          documents and significantly accelerate editing and proofreading.
+          However, ensuring legal accuracy, adapting tone for specific
+          audiences and strategic objectives, and producing persuasive writing
+          for high-stakes matters still require skilled human judgment.
+
+    - id: case_management_systems
+      name: "Case Management Systems"
+      category: technical
+      description: >
+        Administering and optimizing legal case management, matter management,
+        and practice management software platforms, including system
+        configuration, data entry standards, reporting, user training, and
+        integration with other legal technology tools to ensure accurate
+        matter tracking, efficient workflows, and reliable data for legal
+        department metrics and reporting.
+      proficiency:
+        junior: >
+          Enters and maintains matter data in case management systems following
+          established data entry standards. Generates standard reports on
+          matter status, deadlines, and assignments. Learns system navigation
+          and basic configuration under guidance from experienced team members.
+        mid: >
+          Administers case management platforms including user setup, workflow
+          configuration, and custom report development. Trains new users on
+          system functionality and enforces data quality standards. Identifies
+          opportunities to improve matter tracking and reporting through
+          system feature utilization.
+        senior: >
+          Leads case management system optimization initiatives including
+          advanced workflow automation, integration with e-billing and
+          document management systems, and development of executive dashboards.
+          Manages system upgrades and configuration changes, and serves as
+          the primary liaison with software vendors.
+        staff: >
+          Defines the organization's legal technology architecture, selecting
+          and implementing case management platforms that integrate with the
+          broader technology stack. Manages vendor relationships, negotiates
+          contracts, and develops technology adoption strategies that drive
+          user compliance and maximize system value across the department.
+        principal: >
+          Sets the strategic vision for legal technology operations, evaluating
+          emerging platforms and AI-powered case management tools. Develops
+          the business case for technology investments, defines success
+          metrics, and ensures legal technology capabilities support the
+          department's operational excellence and data-driven management goals.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can automate data entry, generate intelligent reports, and
+          predict matter outcomes from historical data. However, configuring
+          systems to match complex organizational workflows, driving user
+          adoption, and making strategic technology decisions require human
+          expertise in both legal operations and change management.
+
+    - id: client_communication
+      name: "Client Communication"
+      category: interpersonal
+      description: >
+        Managing communications with internal business clients and external
+        parties including opposing counsel, court personnel, regulatory
+        agencies, and vendors, ensuring timely and professional interactions
+        that maintain confidentiality, support matter progression, and build
+        productive working relationships across all stakeholder groups.
+      proficiency:
+        junior: >
+          Handles routine client communications including scheduling, document
+          requests, and status updates following established protocols. Drafts
+          correspondence for attorney review and maintains organized
+          communication logs for assigned matters ensuring confidentiality.
+        mid: >
+          Manages client communications independently for a portfolio of
+          matters, providing timely updates, gathering information needed for
+          case progression, and coordinating with opposing counsel on
+          procedural matters. Builds productive relationships with court
+          clerks, agency staff, and vendor contacts.
+        senior: >
+          Serves as the primary client contact for complex matters, managing
+          expectations, escalating sensitive issues appropriately, and
+          coordinating multi-party communications across stakeholder groups.
+          Develops communication templates and protocols that ensure consistent
+          and professional client interactions across the team.
+        staff: >
+          Establishes client communication standards and service level
+          expectations for the legal support team. Manages the most sensitive
+          client relationships and develops training programs that build
+          communication skills across the paralegal team, ensuring consistent
+          professional quality in all external interactions.
+        principal: >
+          Defines the legal department's client service model and communication
+          strategy, integrating technology tools for client portals and
+          automated status updates while maintaining the personal relationships
+          that drive client satisfaction. Measures and improves communication
+          quality through client feedback and service level metrics.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can draft routine correspondence and automate status updates
+          effectively. However, managing sensitive client relationships,
+          exercising judgment about what to communicate and when, and
+          navigating complex multi-party dynamics require interpersonal skills
+          and emotional intelligence that resist automation.
+
+    - id: regulatory_filing
+      name: "Regulatory Filing"
+      category: technical
+      description: >
+        Preparing and submitting regulatory filings, corporate registrations,
+        annual reports, and compliance documents to federal, state, and local
+        government agencies, ensuring accuracy, completeness, and timely
+        submission in compliance with applicable regulations, filing
+        requirements, and agency-specific procedures.
+      proficiency:
+        junior: >
+          Prepares standard regulatory filings and corporate registrations
+          using established checklists and templates. Gathers required
+          information from internal stakeholders and assembles filing packages
+          ensuring all required forms and attachments are included and current.
+        mid: >
+          Manages regulatory filing calendars across multiple jurisdictions
+          and agencies independently, ensuring timely submissions and fee
+          payments. Resolves filing deficiencies and agency inquiries, and
+          maintains organized records of all submissions, approvals, and
+          correspondence with regulatory bodies.
+        senior: >
+          Oversees complex multi-jurisdictional regulatory filing programs
+          including SEC filings, state licensing renewals, and industry-specific
+          compliance submissions. Develops filing calendars and tracking
+          systems, trains staff on agency-specific requirements, and manages
+          relationships with regulatory filing agents and service providers.
+        staff: >
+          Defines the organization's regulatory filing strategy and vendor
+          relationships, establishing standards for accuracy, timeliness, and
+          record-keeping across all filing obligations. Manages the filing
+          function budget and implements technology solutions that automate
+          tracking and reduce the risk of missed deadlines.
+        principal: >
+          Sets the enterprise regulatory filing and entity management strategy,
+          integrating automated compliance tracking with human oversight.
+          Ensures filing operations scale with organizational growth and
+          geographic expansion, and advises leadership on regulatory filing
+          implications of corporate restructurings and transactions.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI can automate filing deadline tracking, pre-populate forms from
+          entity data, and flag missing information effectively. However,
+          interpreting ambiguous filing requirements, resolving agency
+          deficiency notices, and managing filings for complex multi-entity
+          structures still require experienced paralegal expertise.
+
+    - id: project_management
+      name: "Project Management"
+      category: interpersonal
+      description: >
+        Planning, coordinating, and tracking legal projects including
+        litigation matters, transactions, regulatory investigations, and
+        departmental initiatives, using project management methodologies
+        and tools to ensure timely completion, resource optimization, budget
+        adherence, and effective communication across legal and business
+        stakeholders.
+      proficiency:
+        junior: >
+          Assists with project coordination tasks including meeting scheduling,
+          action item tracking, and status report preparation. Maintains
+          project timelines and task lists using department tools and
+          templates, and follows up on outstanding deliverables under guidance.
+        mid: >
+          Manages legal projects independently, developing work plans with
+          milestones and dependencies, tracking progress against deadlines,
+          and coordinating deliverables across team members. Prepares status
+          reports and escalates risks to project leads, ensuring matters stay
+          on schedule and within budget.
+        senior: >
+          Leads complex multi-workstream legal projects including large
+          litigation matters, multi-jurisdictional compliance initiatives,
+          and department transformation programs. Develops resource plans,
+          manages project budgets, and implements project management
+          methodologies tailored to legal work across the organization.
+        staff: >
+          Establishes project management standards and tools for the legal
+          department, driving consistent execution across all major matters
+          and initiatives. Manages portfolio-level resource allocation, vendor
+          coordination, and budget tracking, and develops project management
+          capabilities across the legal support team.
+        principal: >
+          Defines the legal department's project management strategy and
+          operational framework, aligning project delivery capabilities with
+          business demands. Drives adoption of project management tools and
+          methodologies that improve transparency, predictability, and cost
+          management across the entire legal portfolio.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can automate task tracking, predict project timelines from
+          historical data, and generate status reports. However, managing
+          stakeholder expectations, adapting plans to unexpected developments,
+          and leading cross-functional coordination require human leadership
+          and interpersonal skills.
+
+    - id: technology_adoption
+      name: "Technology Adoption"
+      category: technical
+      description: >
+        Evaluating, implementing, and driving adoption of legal technology
+        tools including AI-powered research platforms, contract analysis
+        software, e-discovery tools, practice management systems, and
+        workflow automation solutions, ensuring the legal team leverages
+        technology to improve efficiency, accuracy, and service delivery.
+      proficiency:
+        junior: >
+          Learns and becomes proficient with the department's legal technology
+          tools, including document management, case management, and research
+          platforms. Identifies basic workflow inefficiencies and suggests
+          technology solutions based on available tools and emerging features.
+        mid: >
+          Evaluates new legal technology tools for specific use cases,
+          conducting demonstrations and pilot programs. Develops user guides
+          and training materials, and serves as a technology resource for the
+          team. Implements workflow automations using existing platform
+          capabilities to improve team productivity.
+        senior: >
+          Leads legal technology implementation projects including requirements
+          gathering, vendor evaluation, system configuration, user training,
+          and adoption tracking. Develops the business case for technology
+          investments and measures return on investment through efficiency
+          metrics and user satisfaction assessments.
+        staff: >
+          Defines the legal technology roadmap and manages vendor relationships
+          across the department's technology stack. Leads evaluation and
+          deployment of AI-powered tools, establishes data governance
+          standards for legal technology, and develops change management
+          strategies that drive adoption across diverse user populations.
+        principal: >
+          Sets the strategic vision for legal technology innovation, aligning
+          the technology roadmap with the department's operational goals and
+          the organization's digital transformation strategy. Advises
+          leadership on emerging legal technology trends and ensures the
+          department maintains a competitive advantage through strategic
+          technology adoption.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          While AI is the very technology being adopted, the skills of
+          evaluating tools, managing implementations, driving organizational
+          change, and ensuring responsible AI deployment require human
+          judgment, change management expertise, and strategic thinking that
+          are not themselves automatable.

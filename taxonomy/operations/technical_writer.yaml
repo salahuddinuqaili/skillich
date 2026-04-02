@@ -1,0 +1,701 @@
+role:
+  id: technical_writer
+  function: operations
+  name: "Technical Writer"
+  also_known_as:
+    - "Documentation Engineer"
+    - "Technical Author"
+    - "Content Developer"
+    - "Information Developer"
+    - "Documentation Specialist"
+  description: >
+    Creates clear, accurate, and user-centered documentation for
+    technical products, APIs, and systems. Technical writers translate
+    complex technical concepts into accessible content for diverse
+    audiences including developers, end users, and administrators,
+    working across formats such as reference documentation, tutorials,
+    guides, and in-product content to improve product usability and
+    reduce support burden.
+  ai_impact:
+    level: "very-high"
+    summary: >
+      AI is profoundly transforming technical writing by automating
+      first-draft generation, content summarization, and routine
+      documentation updates. AI-powered tools can generate API
+      reference documentation from code, draft tutorials from
+      specifications, and maintain content freshness through
+      automated detection of outdated material. However, the
+      strategic aspects of documentation including information
+      architecture, audience analysis, content quality standards,
+      and the editorial judgment to determine what to document and
+      how deeply remain human-driven. Writers who become skilled AI
+      collaborators will see dramatically increased output.
+    automating:
+      - "API reference documentation generation from code"
+      - "Changelog and release note generation"
+      - "Content formatting, style checking, and linting"
+      - "Translation of documentation between formats"
+      - "Routine content updates from code changes"
+    augmenting:
+      - "Tutorial and guide first-draft generation"
+      - "Content gap analysis and coverage reporting"
+      - "Terminology consistency checking across documentation"
+      - "Accessibility and readability scoring"
+      - "User feedback analysis and content prioritization"
+    preserving:
+      - "Information architecture and content strategy"
+      - "Audience analysis and empathy-driven content design"
+      - "Editorial judgment on clarity, accuracy, and completeness"
+      - "Cross-functional collaboration with engineering and product"
+      - "Documentation culture advocacy and organizational influence"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Write the Docs Community"
+        url: "https://www.writethedocs.org/"
+      - name: "Google Developer Documentation Style Guide"
+        url: "https://developers.google.com/style"
+      - name: "O*NET - Technical Writers"
+        url: "https://www.onetonline.org/link/summary/27-3042.00"
+      - name: "The Good Docs Project"
+        url: "https://thegooddocsproject.dev/"
+  levels:
+    - id: junior
+      name: "Junior Technical Writer"
+      years_experience: "0-2"
+      summary: >
+        Creates and updates documentation for well-defined topics
+        under guidance from senior writers. Follows established style
+        guides and templates, learns the product domain, and develops
+        foundational skills in technical communication, tool usage,
+        and working with engineering teams as information sources.
+    - id: mid
+      name: "Technical Writer"
+      years_experience: "2-5"
+      summary: >
+        Owns documentation for a product area or set of features,
+        producing accurate, well-structured content across multiple
+        formats. Plans documentation for new features in collaboration
+        with product and engineering teams, maintains content freshness,
+        and contributes to style guide evolution and documentation
+        tooling improvements.
+    - id: senior
+      name: "Senior Technical Writer"
+      years_experience: "5-8"
+      summary: >
+        Leads documentation strategy for a major product or platform,
+        designing information architecture, establishing content
+        standards, and mentoring other writers. Drives documentation
+        quality improvements, manages complex multi-format
+        documentation projects, and influences product teams to
+        prioritize documentation as a product quality indicator.
+    - id: staff
+      name: "Staff Technical Writer"
+      years_experience: "8-12"
+      summary: >
+        Defines documentation strategy and standards across the
+        organization, including tooling, workflows, and quality
+        metrics. Drives adoption of docs-as-code practices, builds
+        documentation infrastructure, and partners with product and
+        engineering leadership to embed documentation into the
+        development lifecycle.
+    - id: principal
+      name: "Principal Technical Writer"
+      years_experience: "12+"
+      summary: >
+        Sets the vision for technical communication across the
+        organization, shaping how documentation contributes to
+        product success, developer experience, and customer
+        satisfaction. Influences executive leadership on
+        documentation investment, drives industry-leading practices,
+        and serves as the authoritative voice on content strategy
+        and information design.
+  skills:
+    - id: technical_writing
+      name: "Technical Writing"
+      category: communication
+      description: >
+        Producing clear, concise, and accurate technical content
+        that explains complex concepts, procedures, and systems
+        to target audiences, using appropriate structure, tone,
+        and terminology while maintaining consistency with
+        organizational style standards.
+      proficiency:
+        junior: >
+          Writes clear, grammatically correct documentation for
+          well-defined topics. Follows the team style guide for
+          formatting, terminology, and voice. Incorporates
+          feedback from reviewers to improve content quality.
+        mid: >
+          Produces polished documentation across multiple content
+          types including conceptual overviews, procedural guides,
+          and reference material. Explains complex technical
+          topics clearly without oversimplifying. Develops a
+          consistent authorial voice aligned with brand standards.
+        senior: >
+          Crafts documentation that serves as a model of clarity
+          and precision for the team. Handles highly complex
+          technical subjects and makes sophisticated editorial
+          decisions about depth, structure, and presentation.
+          Provides substantive editorial feedback to other writers.
+        staff: >
+          Defines organizational writing standards and style
+          guides. Drives consistency and quality across all
+          documentation through editorial review processes,
+          training programs, and quality metrics. Establishes
+          the organization's technical writing voice and brand.
+        principal: >
+          Shapes the organization's approach to technical
+          communication as a discipline. Sets the standard for
+          writing excellence, influences industry practices through
+          external engagement, and ensures documentation quality
+          scales with organizational growth.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI can generate competent first drafts, rephrase content
+          for clarity, and enforce style guide rules. However,
+          crafting documentation that truly serves the reader by
+          anticipating questions, choosing the right level of
+          detail, and maintaining a coherent narrative across a
+          documentation set requires skilled human judgment.
+
+    - id: documentation_architecture
+      name: "Documentation Architecture"
+      category: analytical
+      description: >
+        Designing the overall structure, organization, and navigation
+        of documentation sets including site architecture, content
+        taxonomy, cross-referencing strategies, and progressive
+        disclosure patterns that help users find and understand
+        the information they need efficiently.
+      proficiency:
+        junior: >
+          Understands the existing documentation structure and
+          places new content appropriately within it. Follows
+          established navigation patterns and cross-references
+          related content as directed.
+        mid: >
+          Designs documentation structure for new product areas,
+          organizing content into logical categories with clear
+          navigation paths. Implements cross-referencing and
+          progressive disclosure to guide users from overview
+          to detail.
+        senior: >
+          Architects documentation systems for large products or
+          platforms, designing information hierarchies, content
+          types, and navigation patterns that scale with product
+          complexity. Conducts content audits and restructures
+          documentation to improve findability and coherence.
+        staff: >
+          Defines organizational standards for documentation
+          architecture across products. Establishes content
+          models, metadata schemas, and taxonomy standards that
+          enable consistent structure and cross-product content
+          discovery.
+        principal: >
+          Shapes the organization's information architecture
+          vision, ensuring documentation structures support
+          multi-product ecosystems, developer portals, and
+          diverse user journeys. Drives adoption of structured
+          content practices that enable content reuse and
+          multichannel publishing.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can suggest organizational structures and identify
+          content gaps, but designing information architectures
+          that match user mental models, scale with product
+          growth, and serve diverse audience needs requires deep
+          understanding of users, products, and content strategy.
+
+    - id: api_documentation
+      name: "API Documentation"
+      category: technical
+      description: >
+        Creating comprehensive, developer-focused API documentation
+        including reference documentation, getting-started guides,
+        code samples, authentication guides, and interactive API
+        explorers that enable developers to integrate and use APIs
+        effectively.
+      proficiency:
+        junior: >
+          Documents API endpoints following established templates
+          and OpenAPI specifications. Writes accurate parameter
+          descriptions, response examples, and basic code samples
+          by working closely with engineering teams.
+        mid: >
+          Creates complete API documentation sets including
+          reference docs, quickstart guides, and authentication
+          walkthroughs. Reviews OpenAPI specs for completeness,
+          writes idiomatic code samples in multiple languages,
+          and maintains accuracy through API change cycles.
+        senior: >
+          Designs API documentation strategies that serve diverse
+          developer audiences from beginners to advanced users.
+          Establishes API documentation standards, implements
+          automated documentation generation pipelines, and
+          ensures documentation is tightly integrated with the
+          developer experience.
+        staff: >
+          Defines organizational standards for API documentation
+          across all public and internal APIs. Architects
+          documentation toolchains that generate reference docs
+          from API specifications while enabling rich narrative
+          content. Drives developer experience improvements
+          through documentation.
+        principal: >
+          Shapes the organization's developer documentation
+          strategy as a product differentiator. Influences API
+          design practices to improve documentability and
+          developer experience. Drives industry-leading API
+          documentation practices that set competitive standards.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI can generate API reference documentation from OpenAPI
+          specs and produce code samples across languages with
+          high accuracy. However, crafting getting-started
+          experiences, explaining design rationale, and creating
+          documentation that helps developers succeed with complex
+          integrations still require human empathy and editorial
+          skill.
+
+    - id: user_documentation
+      name: "User Documentation"
+      category: communication
+      description: >
+        Creating end-user-facing documentation including product
+        guides, help articles, tutorials, FAQs, and in-product
+        content that enables users to accomplish their goals
+        effectively, reducing support burden and improving
+        product adoption.
+      proficiency:
+        junior: >
+          Writes help articles and how-to guides for
+          straightforward product features following established
+          templates. Uses screenshots and step-by-step procedures
+          to guide users through common tasks.
+        mid: >
+          Creates comprehensive user documentation including
+          task-based guides, conceptual overviews, and
+          troubleshooting content. Organizes content around user
+          goals rather than product features and tests
+          documentation accuracy by following procedures.
+        senior: >
+          Designs user documentation strategies that support the
+          full user journey from onboarding through advanced usage.
+          Conducts user research to identify documentation needs,
+          implements feedback loops, and optimizes content based
+          on usage analytics and support ticket analysis.
+        staff: >
+          Defines organizational standards for user documentation
+          across products. Establishes content reuse strategies,
+          in-product content frameworks, and measurement systems
+          that demonstrate documentation's impact on user success
+          and support deflection.
+        principal: >
+          Shapes the organization's approach to user-facing
+          content as a product experience layer. Influences
+          product design to improve self-service documentation
+          effectiveness and drives strategic investment in
+          content that differentiates the product experience.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI can generate first drafts of user documentation and
+          maintain content freshness, but creating documentation
+          that truly helps users requires understanding their
+          context, anticipating confusion points, and designing
+          content experiences that build user confidence, all
+          of which require human empathy.
+
+    - id: content_strategy
+      name: "Content Strategy"
+      category: analytical
+      description: >
+        Planning, creating, delivering, and governing documentation
+        content in alignment with product goals and user needs,
+        including content lifecycle management, editorial calendars,
+        content reuse strategies, and measurement of content
+        effectiveness.
+      proficiency:
+        junior: >
+          Follows the established content strategy and editorial
+          calendar. Understands content priorities and contributes
+          to planning discussions with input on documentation
+          needs for their assigned areas.
+        mid: >
+          Develops content plans for product areas, prioritizing
+          documentation work based on user impact, product
+          roadmaps, and support ticket analysis. Manages content
+          lifecycle including creation, review, publication, and
+          retirement.
+        senior: >
+          Designs content strategies for major products or
+          platforms, defining content types, governance processes,
+          and success metrics. Conducts content audits, identifies
+          strategic content gaps, and aligns documentation
+          investment with product and business priorities.
+        staff: >
+          Defines organizational content strategy across products,
+          establishing content governance, reuse frameworks, and
+          measurement systems. Drives alignment between
+          documentation strategy and product strategy at the
+          leadership level.
+        principal: >
+          Shapes the organization's content strategy vision,
+          ensuring documentation contributes measurably to product
+          success, developer experience, and customer satisfaction.
+          Influences executive decisions on content investment
+          and organizational structure for content teams.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can analyze content performance data and suggest
+          prioritization based on usage patterns, but developing
+          content strategies that align with business goals,
+          navigate organizational priorities, and anticipate
+          future content needs requires strategic human thinking.
+
+    - id: tools_platforms
+      name: "Documentation Tools & Platforms"
+      category: technical
+      description: >
+        Proficiency with documentation authoring, publishing, and
+        management tools including static site generators, CMS
+        platforms, version control systems, API documentation tools,
+        and content delivery systems, along with the ability to
+        evaluate and implement tooling that supports the
+        documentation workflow.
+      proficiency:
+        junior: >
+          Uses the team's documentation tools including the
+          authoring environment, version control, and publishing
+          pipeline. Writes in Markdown or the team's markup
+          language and follows established tooling workflows.
+        mid: >
+          Configures and customizes documentation tools for
+          specific needs. Troubleshoots publishing pipeline
+          issues, implements templates and components, and
+          evaluates new tools for specific workflow improvements.
+        senior: >
+          Selects and implements documentation toolchains for
+          product areas. Designs publishing workflows,
+          integrates documentation into CI/CD pipelines, and
+          implements automated quality checks such as link
+          validation and style linting.
+        staff: >
+          Defines organizational tooling strategy for
+          documentation, selecting and standardizing platforms
+          that scale across teams. Architects documentation
+          infrastructure including build systems, content
+          delivery, and analytics integration.
+        principal: >
+          Shapes the organization's documentation technology
+          vision, evaluating emerging tools and platforms
+          including AI-powered authoring and automated
+          content generation. Drives investment in
+          documentation infrastructure that supports
+          long-term content strategy.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can assist with tool configuration, pipeline
+          troubleshooting, and migration between formats, but
+          selecting the right toolchain for an organization's
+          needs and designing workflows that support efficient
+          collaboration requires understanding of team dynamics
+          and organizational context.
+
+    - id: information_design
+      name: "Information Design"
+      category: analytical
+      description: >
+        Designing the visual and structural presentation of
+        technical information including diagrams, tables, code
+        samples, callouts, and interactive elements to maximize
+        comprehension, scanability, and usability of documentation
+        content.
+      proficiency:
+        junior: >
+          Applies established formatting standards to documentation
+          content. Uses headings, lists, tables, and code blocks
+          appropriately. Creates simple diagrams and screenshots
+          following team guidelines.
+        mid: >
+          Designs clear, scanable page layouts that guide readers
+          through complex content. Creates effective diagrams,
+          flowcharts, and visual aids. Implements progressive
+          disclosure patterns and uses callouts and admonitions
+          to highlight important information.
+        senior: >
+          Establishes information design patterns for the
+          documentation set, including page templates, component
+          libraries, and visual standards. Designs interactive
+          content elements and ensures visual consistency across
+          the documentation experience.
+        staff: >
+          Defines organizational information design standards
+          in partnership with design teams. Establishes component
+          libraries, visual language standards, and accessibility
+          requirements for documentation across products.
+        principal: >
+          Shapes the organization's approach to information
+          design as a core documentation competency. Drives
+          innovation in documentation presentation including
+          interactive documentation, video integration, and
+          adaptive content delivery based on user context.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can generate diagrams from descriptions, suggest
+          layouts, and create visual assets, but designing
+          information presentations that truly aid comprehension
+          for specific audiences and use cases requires human
+          understanding of cognitive load and visual communication.
+
+    - id: audience_analysis
+      name: "Audience Analysis"
+      category: analytical
+      description: >
+        Researching and understanding the needs, technical
+        backgrounds, goals, and contexts of documentation audiences
+        to create content that meets them where they are, using
+        appropriate terminology, depth, and examples for each
+        audience segment.
+      proficiency:
+        junior: >
+          Understands the primary audience for assigned
+          documentation and adjusts language and detail level
+          accordingly. Seeks feedback from representative users
+          to validate content appropriateness.
+        mid: >
+          Conducts audience analysis for documentation projects,
+          defining user personas and their information needs.
+          Creates content tailored to different skill levels and
+          use cases. Uses analytics and feedback to validate
+          audience assumptions.
+        senior: >
+          Designs audience-driven documentation strategies that
+          serve multiple user segments with appropriate content
+          pathways. Conducts user research including interviews,
+          surveys, and usability testing to deeply understand
+          audience needs and content effectiveness.
+        staff: >
+          Defines organizational practices for audience analysis
+          in documentation, including persona development
+          frameworks, user research methodologies, and feedback
+          integration processes that keep documentation aligned
+          with evolving audience needs.
+        principal: >
+          Shapes the organization's commitment to user-centered
+          documentation, ensuring audience understanding drives
+          all content decisions. Influences product and
+          engineering teams to incorporate documentation user
+          research into product development processes.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can analyze user behavior data and segment audiences,
+          but truly understanding user motivations, frustrations,
+          and mental models requires human empathy and direct
+          user research that goes beyond data analysis.
+
+    - id: review_editing
+      name: "Review & Editing"
+      category: communication
+      description: >
+        Reviewing and editing documentation for technical accuracy,
+        clarity, consistency, completeness, and adherence to style
+        standards, including peer review processes, technical review
+        coordination with subject-matter experts, and editorial
+        quality assurance.
+      proficiency:
+        junior: >
+          Reviews own work for grammar, spelling, and formatting
+          errors before submission. Incorporates feedback from
+          technical and editorial reviewers, learning to
+          self-assess content quality over time.
+        mid: >
+          Conducts peer reviews of other writers' documentation,
+          providing constructive feedback on clarity, structure,
+          and accuracy. Coordinates technical reviews with
+          engineers and incorporates feedback efficiently while
+          maintaining content quality.
+        senior: >
+          Provides expert editorial review across the
+          documentation set, catching issues in structure,
+          consistency, and technical accuracy that others miss.
+          Designs review workflows that balance thoroughness
+          with velocity. Mentors writers on self-editing
+          techniques and quality standards.
+        staff: >
+          Defines organizational review standards and processes
+          including review checklists, quality gates, and
+          automated quality checks. Trains reviewers across the
+          organization and establishes editorial governance that
+          ensures consistent quality at scale.
+        principal: >
+          Sets the quality bar for documentation across the
+          organization. Shapes editorial culture and ensures
+          review processes evolve to maintain quality standards
+          as the documentation team and content volume grow.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI is strong at grammar checking, style guide
+          enforcement, and consistency verification. However,
+          assessing whether documentation truly communicates
+          complex ideas effectively and providing developmental
+          editorial feedback to writers requires human editorial
+          judgment and communication skill.
+
+    - id: docs_as_code
+      name: "Docs-as-Code"
+      category: technical
+      description: >
+        Applying software development practices to documentation
+        including version control with Git, pull request review
+        workflows, continuous integration for documentation builds,
+        automated testing, and treating documentation source files
+        as first-class code artifacts.
+      proficiency:
+        junior: >
+          Uses Git for documentation version control, creates
+          branches, and submits pull requests following team
+          workflow. Writes documentation in markup languages
+          like Markdown or reStructuredText.
+        mid: >
+          Manages documentation in Git repositories with
+          confidence, including branching strategies, merge
+          conflict resolution, and collaboration workflows.
+          Implements basic CI checks for documentation such as
+          link validation and build verification.
+        senior: >
+          Designs docs-as-code workflows for documentation
+          teams including branching strategies, review processes,
+          and CI/CD pipelines. Implements automated quality
+          checks, preview deployments, and contribution workflows
+          that enable engineering teams to contribute documentation.
+        staff: >
+          Defines organizational docs-as-code standards and
+          infrastructure. Architects documentation build and
+          deployment pipelines that serve multiple teams and
+          products. Drives adoption of docs-as-code practices
+          across the organization.
+        principal: >
+          Shapes the organization's documentation engineering
+          vision, integrating docs-as-code with broader developer
+          platform strategy. Drives innovation in documentation
+          automation, AI-assisted authoring, and continuous
+          documentation delivery.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can generate markup, fix CI issues, and automate
+          routine pipeline tasks, but designing effective
+          docs-as-code workflows that encourage contribution
+          from engineers while maintaining quality standards
+          requires understanding of both documentation and
+          software engineering cultures.
+
+    - id: localization
+      name: "Localization & Internationalization"
+      category: domain
+      description: >
+        Preparing documentation for translation and adaptation to
+        different languages and cultural contexts, including writing
+        for translatability, managing localization workflows, working
+        with translation tools and vendors, and ensuring localized
+        content maintains accuracy and usability.
+      proficiency:
+        junior: >
+          Writes content following internationalization guidelines
+          such as avoiding idioms, culturally specific references,
+          and ambiguous pronouns. Supports localization workflows
+          by preparing content for handoff to translation.
+        mid: >
+          Manages localization workflows for assigned content
+          areas including translation handoff, review coordination,
+          and quality validation. Works with translation tools
+          and vendors to ensure accurate, timely translations.
+          Writes content optimized for machine translation.
+        senior: >
+          Designs localization strategies and workflows for
+          documentation sets including content prioritization for
+          translation, quality assurance processes, and translation
+          memory management. Evaluates and integrates localization
+          tools with documentation pipelines.
+        staff: >
+          Defines organizational localization standards and
+          infrastructure including tool selection, vendor
+          management, and quality frameworks. Drives adoption of
+          efficient localization practices such as continuous
+          localization and AI-assisted translation review.
+        principal: >
+          Shapes the organization's globalization strategy for
+          documentation, aligning localization investment with
+          market expansion goals. Evaluates emerging translation
+          technologies and drives strategic decisions about which
+          content to localize and to what depth.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI-powered translation has improved dramatically, making
+          first-pass translation highly automatable. However,
+          ensuring localized technical content is accurate, natural,
+          and culturally appropriate for specialized domains still
+          requires human linguistic and cultural expertise for
+          quality assurance.
+
+    - id: accessibility_writing
+      name: "Accessibility in Documentation"
+      category: domain
+      description: >
+        Ensuring documentation is accessible to users with
+        disabilities, including writing effective alt text,
+        structuring content for screen readers, using inclusive
+        language, meeting WCAG standards, and designing content
+        experiences that work for all users regardless of ability.
+      proficiency:
+        junior: >
+          Follows accessibility guidelines when creating content,
+          including writing alt text for images, using proper
+          heading hierarchy, and providing text alternatives for
+          visual content.
+        mid: >
+          Applies WCAG guidelines systematically to documentation,
+          ensuring content is navigable by screen readers,
+          keyboard-accessible, and written in clear language.
+          Tests documentation with accessibility tools and
+          addresses identified issues.
+        senior: >
+          Designs accessibility standards for documentation
+          including image description guidelines, content
+          structure requirements, and inclusive language policies.
+          Conducts accessibility audits, implements automated
+          accessibility checks, and trains writers on accessible
+          content creation.
+        staff: >
+          Defines organizational accessibility standards for all
+          documentation content. Integrates accessibility testing
+          into documentation CI/CD pipelines. Partners with
+          product accessibility teams to ensure documentation
+          meets the same standards as the product itself.
+        principal: >
+          Champions documentation accessibility at the
+          organizational level, ensuring it is treated as a
+          non-negotiable quality requirement. Influences industry
+          practices through external engagement and drives
+          innovation in accessible content delivery including
+          multi-modal documentation experiences.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can generate alt text, check heading structure, and
+          flag accessibility issues automatically. However,
+          writing truly effective descriptions of complex technical
+          visuals and designing documentation experiences that
+          serve users with diverse abilities require human empathy
+          and contextual understanding.

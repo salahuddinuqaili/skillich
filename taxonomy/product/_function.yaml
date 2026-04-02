@@ -1,0 +1,20 @@
+function:
+  id: product
+  name: "Product"
+  description: >
+    The Product function is responsible for discovering, defining, and delivering products
+    and features that create value for users and the business. It encompasses strategic
+    planning, user research, data analysis, and growth optimization to guide a product
+    from conception through launch and iterative improvement.
+  roles:
+    - product_manager
+    - product_analyst
+    - user_researcher
+    - growth_pm
+  sources:
+    - name: "Reforge Product Management Frameworks"
+      url: "https://www.reforge.com/blog/product-management-skills"
+    - name: "Ravi Mehta PM Competency Model"
+      url: "https://www.ravi-mehta.com/product-manager-skills/"
+    - name: "Lenny Rachitsky Product Newsletter"
+      url: "https://www.lennysnewsletter.com/"

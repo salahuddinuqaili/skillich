@@ -1,0 +1,592 @@
+role:
+  id: data_engineering
+  function: engineering
+  name: "Data Engineer"
+  also_known_as:
+    - "Analytics Engineer"
+    - "Data Platform Engineer"
+    - "Data Infrastructure Engineer"
+    - "ETL Developer"
+    - "ELT Developer"
+    - "Big Data Engineer"
+    - "Data Pipeline Engineer"
+  description: >
+    Designs, builds, and maintains the infrastructure and pipelines that
+    collect, store, transform, and serve data at scale. Data engineers bridge
+    the gap between raw data sources and the analysts, scientists, and
+    applications that consume clean, reliable, well-modeled datasets. The
+    role spans batch and streaming architectures, warehouse and lakehouse
+    design, data quality assurance, and governance — increasingly leveraging
+    declarative transformation tools like dbt alongside cloud-native
+    platforms.
+  ai_impact:
+    level: "high"
+    summary: >
+      AI is reshaping data engineering by automating routine pipeline
+      construction, schema inference, and data-quality rule generation.
+      LLM-powered tools can draft SQL transformations, generate dbt models
+      from natural language, and auto-document lineage. However, the role's
+      core value — designing reliable, scalable, governed data systems that
+      serve diverse stakeholders — remains deeply human. Senior-level
+      architecture, cross-team data contracts, and compliance strategy are
+      augmented rather than replaced. Net effect is a shift from hand-coding
+      boilerplate to curating, reviewing, and orchestrating AI-generated
+      artifacts within well-governed frameworks.
+    automating:
+      - "Boilerplate SQL and transformation code generation"
+      - "Schema inference and initial data-model scaffolding"
+      - "Automated data-quality rule suggestion from profiling"
+      - "Pipeline documentation and column-level lineage description"
+      - "Simple source-to-staging ingestion pipeline creation"
+      - "Routine data-format conversion and normalization scripts"
+    augmenting:
+      - "Complex data-model design and dimensional modeling"
+      - "Pipeline performance tuning and cost optimization"
+      - "Incident root-cause analysis across multi-hop lineage"
+      - "Data contract negotiation between producer and consumer teams"
+      - "Migration planning across warehouse platforms"
+      - "Streaming architecture design and exactly-once semantics"
+    preserving:
+      - "Cross-functional stakeholder communication and requirements gathering"
+      - "Data governance policy design and regulatory interpretation"
+      - "Organizational data strategy and platform roadmap ownership"
+      - "Production incident response and on-call triage"
+      - "Mentoring junior engineers and building team culture"
+      - "Vendor evaluation and build-vs-buy decisions"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "dbt Labs - Analytics Engineering Guide"
+        url: "https://www.getdbt.com/analytics-engineering/start-here"
+      - name: "Snowflake Data Engineering Best Practices"
+        url: "https://www.snowflake.com/guides/"
+      - name: "Fundamentals of Data Engineering (O'Reilly, Reis & Housley)"
+        url: "https://www.oreilly.com/library/view/fundamentals-of-data/9781098108298/"
+      - name: "a16z Emerging Architectures for Modern Data Infrastructure"
+        url: "https://a16z.com/emerging-architectures-for-modern-data-infrastructure/"
+      - name: "Data Engineering Weekly"
+        url: "https://www.dataengineeringweekly.com/"
+  levels:
+    - id: junior
+      name: "Junior Data Engineer"
+      years_experience: "0-2"
+      summary: >
+        Writes and maintains individual SQL transformations and ingestion
+        scripts under guidance. Learns warehouse conventions, source-system
+        quirks, and team coding standards. Focuses on well-scoped tasks such
+        as adding a new staging model, writing data-quality tests, or
+        investigating a broken DAG node.
+    - id: mid
+      name: "Data Engineer"
+      years_experience: "2-5"
+      summary: >
+        Independently owns end-to-end pipelines from ingestion through
+        serving. Designs dimensional and normalized models for defined
+        business domains. Handles orchestration, monitoring, and alerting
+        for production workloads. Contributes to data-platform tooling and
+        begins mentoring junior teammates.
+    - id: senior
+      name: "Senior Data Engineer"
+      years_experience: "5-8"
+      summary: >
+        Leads the design of complex, cross-domain data architectures and
+        sets modeling standards. Drives performance optimization, cost
+        management, and reliability across the data platform. Defines data
+        contracts, quality SLAs, and testing strategies. Mentors the team
+        and represents data engineering in cross-functional planning.
+    - id: staff
+      name: "Staff Data Engineer"
+      years_experience: "8-12"
+      summary: >
+        Sets the technical direction for the organization's data platform
+        spanning multiple teams and domains. Designs migration strategies,
+        evaluates emerging technologies, and architects governance
+        frameworks. Balances build-vs-buy decisions, influences engineering
+        culture, and drives adoption of best practices such as data mesh
+        or lakehouse patterns across the company.
+    - id: principal
+      name: "Principal Data Engineer"
+      years_experience: "12+"
+      summary: >
+        Defines the enterprise data strategy and shapes industry standards.
+        Accountable for platform reliability, cost efficiency, and
+        regulatory compliance at organizational scale. Engages with
+        executive leadership to align data investments with business
+        outcomes. Publishes thought leadership, contributes to open-source
+        data tooling, and represents the company in the broader data
+        engineering community.
+  skills:
+    - id: sql_advanced
+      name: "Advanced SQL"
+      category: technical
+      description: >
+        Proficiency in complex SQL including window functions, CTEs,
+        recursive queries, query optimization, and the ability to write
+        performant analytical queries across petabyte-scale datasets in
+        modern columnar warehouses.
+      proficiency:
+        junior: >
+          Writes correct joins, aggregations, and subqueries. Understands
+          GROUP BY, HAVING, and basic filtering across multiple tables.
+        mid: >
+          Uses window functions, CTEs, and QUALIFY clauses fluently.
+          Understands query plans and can optimize slow queries by
+          adjusting clustering keys or reducing scan volume.
+        senior: >
+          Designs reusable SQL patterns and macro-driven templates for the
+          team. Diagnoses complex performance issues involving spilling,
+          partition pruning, and warehouse sizing across Snowflake or
+          BigQuery.
+        staff: >
+          Establishes SQL style guides and review standards across teams.
+          Evaluates SQL dialect trade-offs during platform migration and
+          architects cross-database query federation strategies.
+        principal: >
+          Shapes the organization's SQL strategy including dialect
+          selection, query governance policies, and cost-attribution models
+          for compute-intensive analytical workloads at enterprise scale.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          LLMs can generate correct SQL for most common patterns and
+          explain query plans. However, performance tuning against specific
+          warehouse internals, cost-aware query design, and understanding
+          business semantics behind complex joins remain human-driven.
+
+    - id: python_data
+      name: "Python for Data Engineering"
+      category: technical
+      description: >
+        Using Python for data extraction, transformation, pipeline
+        scripting, custom operators, and integration glue code. Includes
+        proficiency with pandas, PySpark, and data-engineering-specific
+        libraries.
+      proficiency:
+        junior: >
+          Writes Python scripts for file parsing, API calls, and basic
+          data transformations using pandas. Follows existing code patterns
+          and virtual-environment conventions.
+        mid: >
+          Builds reusable Python packages for ingestion connectors, custom
+          Airflow operators, and data-validation utilities. Comfortable
+          with PySpark for distributed transformations.
+        senior: >
+          Architects Python codebases for the data platform with proper
+          packaging, CI/CD integration, and testing. Optimizes PySpark
+          jobs for shuffle reduction and memory management.
+        staff: >
+          Defines the Python standards, dependency-management strategy,
+          and internal-library architecture for the data engineering org.
+          Evaluates trade-offs between Python, JVM, and Rust-based tools.
+        principal: >
+          Guides language and runtime strategy at the organizational level,
+          influencing decisions such as adopting Polars over Spark or
+          investing in Rust-based connectors for performance-critical
+          paths.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI code-generation tools accelerate boilerplate Python scripting
+          and can scaffold connectors quickly. Complex performance tuning
+          of distributed workloads and architectural decisions around
+          framework selection remain expert-driven tasks.
+
+    - id: data_modeling
+      name: "Data Modeling & Schema Design"
+      category: technical
+      description: >
+        Designing logical and physical data models including star schemas,
+        snowflake schemas, Data Vault, wide denormalized tables, and
+        activity schemas. Encompasses entity-relationship design, slowly
+        changing dimensions, and schema evolution strategies.
+      proficiency:
+        junior: >
+          Understands the difference between normalized and denormalized
+          models. Can create basic staging and dimension tables following
+          team conventions.
+        mid: >
+          Designs star schemas and fact tables for defined business
+          domains. Implements slowly changing dimensions (Type 1/2) and
+          understands grain, conformance, and surrogate key strategies.
+        senior: >
+          Leads enterprise data-model design across multiple domains.
+          Evaluates Data Vault vs. dimensional modeling trade-offs and
+          designs schema evolution strategies that minimize downstream
+          breakage.
+        staff: >
+          Defines the organization's modeling methodology and naming
+          conventions. Architects domain-oriented data products in a data
+          mesh topology and establishes model governance review processes.
+        principal: >
+          Sets the long-term data-architecture vision spanning operational,
+          analytical, and AI/ML data stores. Publishes modeling standards
+          that influence industry practice and align with regulatory
+          requirements.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can suggest initial schema designs and detect normalization
+          issues, but modeling requires deep understanding of business
+          processes, query access patterns, and organizational data
+          strategy that remains fundamentally human judgment.
+
+    - id: etl_elt
+      name: "ETL/ELT Pipeline Design"
+      category: technical
+      description: >
+        Designing and implementing extract-load-transform and
+        extract-transform-load data pipelines. Covers ingestion patterns,
+        incremental loading strategies, idempotency, backfill logic, and
+        pipeline reliability at scale.
+      proficiency:
+        junior: >
+          Builds simple extract-and-load pipelines using managed tools
+          like Fivetran or Airbyte. Understands full-refresh vs.
+          incremental load patterns for well-defined sources.
+        mid: >
+          Designs idempotent, incremental ELT pipelines with proper
+          watermarking, merge logic, and error handling. Implements
+          backfill strategies and handles schema drift from source systems.
+        senior: >
+          Architects multi-source, multi-destination pipeline topologies
+          with SLA guarantees. Designs patterns for late-arriving data,
+          out-of-order events, and cross-pipeline dependency management.
+        staff: >
+          Defines the organization's ingestion architecture and
+          build-vs-buy strategy across dozens of data sources. Establishes
+          pipeline-reliability standards including idempotency contracts,
+          retry policies, and dead-letter queue patterns.
+        principal: >
+          Drives enterprise integration strategy across business units.
+          Evaluates emerging ingestion paradigms such as change data
+          capture at scale, reverse ETL, and real-time feature-store
+          population against organizational needs.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI tools can generate standard ingestion code and suggest
+          incremental-load patterns. Designing fault-tolerant, SLA-bound
+          pipelines across heterogeneous sources with complex business
+          rules requires experienced human judgment.
+
+    - id: data_warehousing
+      name: "Data Warehousing (Snowflake, BigQuery, Redshift)"
+      category: technical
+      description: >
+        Administering and optimizing cloud data warehouses including
+        Snowflake, Google BigQuery, and Amazon Redshift. Encompasses
+        storage design, compute management, access control, cost
+        optimization, and platform-specific feature utilization.
+      proficiency:
+        junior: >
+          Navigates the warehouse UI, runs queries, and understands basic
+          concepts like schemas, roles, and virtual warehouses or slots.
+          Follows established access and naming conventions.
+        mid: >
+          Configures warehouse compute sizing, clustering keys, and
+          materialized views for performance. Manages role-based access
+          control and monitors query costs using platform tooling.
+        senior: >
+          Optimizes warehouse spend through workload isolation, auto-scaling
+          policies, and storage lifecycle management. Designs multi-cluster
+          architectures and zero-copy cloning strategies for development
+          and CI/CD environments.
+        staff: >
+          Leads platform selection and migration between warehouse
+          technologies. Architects multi-region or multi-cloud warehouse
+          deployments and establishes cost-attribution frameworks across
+          business units.
+        principal: >
+          Defines the enterprise warehouse strategy including vendor
+          negotiation, capacity planning, and long-term platform roadmap.
+          Engages with warehouse vendors at an architectural level to
+          influence product direction.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI assists with query optimization recommendations and cost
+          anomaly detection. Platform architecture, multi-tenant design,
+          and vendor-strategy decisions require deep expertise and
+          organizational context that AI cannot replicate.
+
+    - id: stream_processing
+      name: "Stream Processing (Kafka, Flink)"
+      category: technical
+      description: >
+        Building and operating real-time and near-real-time data pipelines
+        using stream-processing frameworks. Includes Apache Kafka, Apache
+        Flink, Kafka Streams, Spark Structured Streaming, and managed
+        equivalents such as Confluent Cloud and Amazon Kinesis.
+      proficiency:
+        junior: >
+          Understands the difference between batch and streaming. Can
+          produce and consume Kafka messages and monitor basic consumer
+          lag using existing tooling.
+        mid: >
+          Builds streaming pipelines with proper serialization (Avro,
+          Protobuf), partitioning strategies, and consumer-group
+          management. Implements simple Flink or Kafka Streams jobs with
+          windowed aggregations.
+        senior: >
+          Designs end-to-end streaming architectures with exactly-once
+          semantics, schema registry governance, and back-pressure
+          handling. Tunes Flink checkpointing, state backends, and
+          parallelism for production workloads.
+        staff: >
+          Architects the organization's real-time data platform including
+          Kafka cluster topology, multi-datacenter replication, and hybrid
+          batch-streaming (lambda/kappa) architecture decisions.
+        principal: >
+          Sets the enterprise streaming strategy, evaluating trade-offs
+          between self-managed Kafka, Confluent Cloud, and serverless
+          streaming. Drives adoption of event-driven architecture patterns
+          across the organization.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          Stream processing involves complex distributed-systems reasoning,
+          exactly-once semantics, and stateful computation that AI tools
+          handle poorly. AI can assist with boilerplate consumer/producer
+          code but not with architectural decisions or production tuning.
+
+    - id: orchestration
+      name: "Workflow Orchestration (Airflow, Dagster)"
+      category: technical
+      description: >
+        Designing, deploying, and operating workflow orchestration systems
+        that schedule, monitor, and manage dependencies across data
+        pipelines. Covers Apache Airflow, Dagster, Prefect, and managed
+        orchestration services.
+      proficiency:
+        junior: >
+          Writes simple DAGs with linear task dependencies. Understands
+          scheduling, retries, and how to investigate failed task runs in
+          the Airflow or Dagster UI.
+        mid: >
+          Designs modular, parameterized DAGs with dynamic task generation,
+          branching logic, and cross-DAG dependencies. Implements custom
+          operators and sensors for organization-specific data sources.
+        senior: >
+          Architects the orchestration platform including executor
+          configuration (Kubernetes, Celery), resource management, and
+          multi-environment promotion workflows. Establishes DAG
+          development standards and testing patterns.
+        staff: >
+          Evaluates and drives orchestrator selection or migration (e.g.,
+          Airflow to Dagster). Designs organization-wide orchestration
+          patterns including asset-based scheduling, data-aware triggering,
+          and SLA-monitoring frameworks.
+        principal: >
+          Defines the enterprise orchestration strategy spanning data,
+          ML, and application workflows. Influences open-source
+          orchestration projects and shapes the team's approach to
+          declarative pipeline-as-code versus imperative DAG definitions.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can generate standard DAG boilerplate and suggest dependency
+          structures. Designing resilient orchestration architectures,
+          debugging complex scheduling interactions, and managing
+          cross-team DAG ownership require human orchestration expertise.
+
+    - id: data_quality
+      name: "Data Quality & Testing"
+      category: analytical
+      description: >
+        Implementing systematic data-quality validation including schema
+        tests, freshness checks, volume anomaly detection, statistical
+        profiling, and integration testing for data pipelines. Encompasses
+        tools like dbt tests, Great Expectations, Soda, and Monte Carlo.
+      proficiency:
+        junior: >
+          Writes basic not-null, unique, and accepted-values tests in dbt
+          or equivalent. Can interpret test failures and trace them back
+          to source-data issues.
+        mid: >
+          Designs comprehensive test suites covering referential integrity,
+          row-count thresholds, distribution checks, and freshness SLAs.
+          Implements custom data-quality macros and alerting integrations.
+        senior: >
+          Architects the organization's data-quality framework including
+          anomaly-detection pipelines, data-observability tooling
+          selection, and quality-score dashboards for stakeholder
+          visibility.
+        staff: >
+          Defines data-quality SLAs and incident-response processes across
+          the data platform. Drives adoption of data contracts between
+          producer and consumer teams with automated enforcement.
+        principal: >
+          Establishes enterprise data-quality governance that ties quality
+          metrics to business outcomes. Shapes organizational culture
+          around data reliability, influencing engineering incentives and
+          executive reporting.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI excels at profiling datasets and suggesting quality rules
+          from observed distributions. Defining business-meaningful quality
+          thresholds, designing incident-response processes, and
+          negotiating data contracts across teams remain human-driven.
+
+    - id: data_governance
+      name: "Data Governance & Compliance"
+      category: domain
+      description: >
+        Establishing and enforcing policies for data access control,
+        privacy, lineage, cataloging, retention, and regulatory compliance
+        (GDPR, CCPA, HIPAA). Includes metadata management, data
+        classification, and audit frameworks.
+      proficiency:
+        junior: >
+          Follows established access-control procedures and tagging
+          conventions. Understands why PII masking and role-based access
+          matter within the data platform.
+        mid: >
+          Implements column-level masking policies, row-level security,
+          and dynamic data-access controls in the warehouse. Maintains
+          data-catalog entries and lineage documentation.
+        senior: >
+          Designs the data-governance framework including classification
+          taxonomies, retention policies, and automated PII detection
+          pipelines. Ensures compliance with GDPR, CCPA, and industry-
+          specific regulations.
+        staff: >
+          Drives cross-organizational governance strategy, balancing data
+          democratization with regulatory constraints. Architects consent-
+          management and right-to-deletion pipelines that operate across
+          all data stores.
+        principal: >
+          Owns the enterprise data-governance vision and represents the
+          organization to regulators and auditors. Shapes industry
+          governance standards and advises executive leadership on
+          data-privacy risk and strategy.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can assist with automated PII detection and classification,
+          but interpreting regulations, designing governance policies, and
+          making compliance-risk trade-offs require deep legal and
+          organizational context that remains human-dependent.
+
+    - id: cloud_data_services
+      name: "Cloud Data Services"
+      category: technical
+      description: >
+        Provisioning, configuring, and operating cloud-native data services
+        across AWS, GCP, and Azure. Includes object storage (S3, GCS),
+        serverless compute (Lambda, Cloud Functions), managed databases,
+        IAM, networking, and infrastructure-as-code for data platforms.
+      proficiency:
+        junior: >
+          Uses cloud console and CLI to manage storage buckets, IAM roles,
+          and basic service configuration. Understands the shared-
+          responsibility model and follows team infrastructure patterns.
+        mid: >
+          Provisions data services using infrastructure-as-code (Terraform,
+          Pulumi). Configures VPC peering, private endpoints, and
+          cross-account access for secure data movement.
+        senior: >
+          Architects multi-service cloud data platforms with proper
+          network isolation, encryption, and cost controls. Designs
+          disaster-recovery and cross-region replication strategies for
+          critical data assets.
+        staff: >
+          Leads multi-cloud or cloud-migration strategy for the data
+          platform. Establishes FinOps practices, reserved-capacity
+          planning, and cloud-governance policies across engineering teams.
+        principal: >
+          Defines the enterprise cloud-data strategy including vendor
+          relationships, egress-cost management at scale, and long-term
+          platform bets. Negotiates enterprise agreements and shapes the
+          organization's cloud-native architecture principles.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI tools can generate Terraform modules and suggest service
+          configurations. Multi-cloud architecture decisions, security
+          posture design, and cost optimization at organizational scale
+          require experienced human judgment and contextual understanding.
+
+    - id: dbt
+      name: "dbt & Analytics Engineering"
+      category: technical
+      description: >
+        Building and maintaining transformation layers using dbt (data
+        build tool). Encompasses dbt project structure, model design,
+        Jinja macros, incremental materialization strategies, testing,
+        documentation, and the analytics-engineering workflow of
+        version-controlled, tested, documented transformations.
+      proficiency:
+        junior: >
+          Writes basic dbt models (staging and intermediate) following
+          existing project conventions. Adds schema tests, writes source
+          definitions, and generates documentation using dbt docs.
+        mid: >
+          Designs dbt project structure with proper staging, intermediate,
+          and mart layers. Writes reusable Jinja macros, implements
+          incremental models with merge strategies, and configures
+          CI/CD-driven dbt runs.
+        senior: >
+          Architects multi-project dbt deployments using dbt Mesh and
+          cross-project references. Optimizes model materialization
+          strategies, implements unit testing, and designs macro libraries
+          that serve as internal dbt packages.
+        staff: >
+          Defines the organization's dbt standards and governance model
+          spanning multiple teams. Evaluates dbt Cloud vs. dbt Core
+          trade-offs, designs semantic-layer strategy, and establishes
+          model-ownership and deprecation processes.
+        principal: >
+          Shapes the enterprise analytics-engineering strategy and
+          influences how dbt fits within the broader data platform.
+          Engages with the dbt community and dbt Labs to influence product
+          direction based on large-scale production experience.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI tools can generate dbt models, tests, and documentation from
+          natural language descriptions. Complex macro engineering,
+          incremental-model optimization, multi-project architecture, and
+          semantic-layer design still require deep dbt expertise.
+
+    - id: api_integration
+      name: "Data API Integration & Extraction"
+      category: technical
+      description: >
+        Extracting data from external and internal APIs including REST,
+        GraphQL, webhook-based, and file-based integrations. Covers
+        authentication, rate limiting, pagination, error handling, schema
+        mapping, and building reliable extraction pipelines for SaaS and
+        internal service data sources.
+      proficiency:
+        junior: >
+          Writes scripts to extract data from well-documented REST APIs
+          with pagination and basic error handling. Understands OAuth,
+          API keys, and rate-limit response codes.
+        mid: >
+          Builds robust, production-grade extraction connectors with
+          exponential backoff, incremental cursor-based extraction, and
+          schema-drift detection. Integrates with managed ingestion tools
+          (Fivetran, Airbyte) for standard SaaS sources.
+        senior: >
+          Designs the organization's API-extraction framework including
+          connector abstractions, secret management, and monitoring.
+          Evaluates build-vs-buy for custom connectors and architects
+          webhook ingestion pipelines with guaranteed delivery.
+        staff: >
+          Defines integration standards and data-contract patterns between
+          internal services and the data platform. Architects change-data-
+          capture strategies and reverse-ETL pipelines that push
+          transformed data back to operational systems.
+        principal: >
+          Sets the enterprise data-integration strategy spanning hundreds
+          of sources. Drives API-first data-sharing standards across
+          business units and evaluates emerging integration paradigms
+          such as data-sharing marketplaces and zero-copy data exchange.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI can generate API client code and parse documentation to build
+          extraction scripts quickly. Handling complex authentication
+          flows, designing resilient connector frameworks, and making
+          build-vs-buy integration decisions require human expertise.

@@ -1,0 +1,697 @@
+role:
+  id: support_manager
+  function: support
+  name: "Customer Support Manager"
+  also_known_as:
+    - "Support Team Lead"
+    - "Customer Service Manager"
+    - "Head of Support"
+    - "Support Operations Manager"
+    - "Client Services Manager"
+  description: >
+    Leads and manages a customer support team, setting performance standards,
+    defining service level agreements, coaching agents, and driving operational
+    excellence. Customer support managers balance team productivity with agent
+    well-being, design training programs, manage vendor relationships for
+    outsourced support, and use data-driven insights to continuously improve
+    customer satisfaction, first-contact resolution, and operational efficiency.
+    They serve as the strategic link between frontline support execution and
+    organizational customer experience goals.
+  ai_impact:
+    level: "moderate"
+    summary: >
+      AI is augmenting support management by automating quality scoring,
+      providing real-time performance dashboards, and enabling predictive
+      workforce planning. Routine reporting and basic performance monitoring
+      are increasingly handled by AI systems, freeing managers to focus on
+      coaching, strategic planning, and organizational development. However,
+      the fundamentally human aspects of leadership including motivation,
+      judgment on personnel decisions, cultural development, and navigating
+      organizational politics remain firmly in the human domain.
+    automating:
+      - "Routine performance report generation and distribution"
+      - "Basic quality scoring of agent interactions"
+      - "Schedule generation based on volume forecasting"
+      - "SLA compliance monitoring and alerting"
+      - "Survey result aggregation and trend summaries"
+      - "Standard meeting agenda preparation from metrics dashboards"
+    augmenting:
+      - "Coaching recommendations based on agent performance patterns"
+      - "Predictive workforce planning and capacity modeling"
+      - "Real-time queue management and staffing adjustment suggestions"
+      - "Identification of training gaps from quality evaluation patterns"
+      - "Customer satisfaction driver analysis and prioritization"
+      - "Benchmarking against industry standards and peer organizations"
+    preserving:
+      - "Team motivation, morale, and culture development"
+      - "Judgment on hiring, promotion, and performance management decisions"
+      - "Navigating organizational politics and securing resources"
+      - "Coaching agents through personal and professional growth challenges"
+      - "Strategic decision-making on support model and vendor relationships"
+      - "Managing sensitive situations involving agent performance or conduct"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "ICMI Contact Center Management Practices"
+        url: "https://www.icmi.com/resources"
+      - name: "Harvard Business Review - Managing Customer Service Teams"
+        url: "https://hbr.org/topic/subject/customer-service"
+      - name: "Gartner - Customer Service and Support Leaders"
+        url: "https://www.gartner.com/en/customer-service-support"
+  levels:
+    - id: junior
+      name: "Team Lead"
+      years_experience: "2-4"
+      summary: >
+        Supervises a small team of support agents, managing daily operations
+        including queue coverage, real-time escalations, and schedule
+        adherence. Conducts quality reviews and one-on-one coaching sessions.
+        Ensures team meets basic performance targets while learning
+        management fundamentals.
+    - id: mid
+      name: "Support Manager"
+      years_experience: "4-7"
+      summary: >
+        Manages a full support team or shift, owning performance metrics,
+        quality programs, and agent development. Designs and executes
+        training programs, manages SLA compliance, and drives process
+        improvements. Collaborates with product and engineering on customer
+        feedback and issue trends.
+    - id: senior
+      name: "Senior Support Manager"
+      years_experience: "7-10"
+      summary: >
+        Leads multiple teams or a large support function, setting strategic
+        direction for operations, quality, and workforce management. Manages
+        vendor relationships for outsourced support, drives significant
+        process transformations, and mentors team leads. Owns department-
+        level metrics and reports to senior leadership.
+    - id: director
+      name: "Director of Support"
+      years_experience: "10-15"
+      summary: >
+        Owns the entire support organization's strategy, budget, and
+        performance. Defines the support model including channel strategy,
+        tier structure, and vendor mix. Drives cross-functional initiatives
+        that improve customer experience at the organizational level.
+        Manages a team of managers and sets the cultural tone for the
+        department.
+    - id: vp
+      name: "VP of Customer Support"
+      years_experience: "15+"
+      summary: >
+        Sets the executive vision for customer support as a strategic
+        function, aligning support investment with company growth and
+        retention goals. Represents support at the executive table,
+        drives organizational transformation initiatives, and ensures
+        the support function evolves alongside product, market, and
+        technology changes.
+  skills:
+    - id: team_leadership
+      name: "Team Leadership & Management"
+      category: leadership
+      description: >
+        Building, leading, and developing high-performing support teams
+        through clear goal-setting, regular feedback, performance management,
+        and creation of a positive team culture that balances productivity
+        with agent well-being and professional growth.
+      proficiency:
+        junior: >
+          Manages a small team with daily oversight including attendance,
+          queue management, and basic performance tracking. Conducts regular
+          one-on-ones and provides timely feedback on quality and
+          productivity. Builds rapport with team members and creates an
+          approachable leadership presence.
+        mid: >
+          Leads a full team with clear performance expectations, development
+          plans, and regular calibration. Manages underperformance
+          constructively through coaching plans and progressive action when
+          needed. Creates team rituals and recognition practices that
+          sustain motivation and reduce attrition.
+        senior: >
+          Leads multiple teams or manages through team leads, setting
+          strategic direction while empowering direct reports to own
+          execution. Develops leadership capability in team leads through
+          mentoring and delegation. Navigates complex personnel situations
+          with empathy and sound judgment.
+        director: >
+          Builds and evolves the organizational structure of the support
+          function, defining roles, career paths, and reporting lines.
+          Manages a team of managers, setting leadership expectations and
+          driving consistent management practices. Creates a department
+          culture that attracts and retains top talent.
+        vp: >
+          Sets the leadership philosophy for the entire support organization,
+          modeling the behaviors and values expected at every level. Develops
+          succession plans for key leadership roles, drives diversity and
+          inclusion initiatives, and ensures the organizational structure
+          scales with company growth.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          AI can surface performance data and suggest coaching topics, but
+          motivating individuals, navigating interpersonal dynamics, making
+          judgment calls on personnel decisions, and building team culture
+          remain fundamentally human leadership responsibilities.
+
+    - id: sla_management
+      name: "SLA Management"
+      category: operational
+      description: >
+        Defining, implementing, monitoring, and optimizing service level
+        agreements that set clear expectations for response times, resolution
+        times, and service quality across customer tiers, channels, and
+        issue types, ensuring contractual compliance and driving operational
+        discipline.
+      proficiency:
+        junior: >
+          Monitors SLA compliance for the team using existing dashboards
+          and alerts. Identifies tickets at risk of SLA breach and takes
+          action to reassign or escalate. Understands the team's SLA
+          tiers and the business implications of missed targets.
+        mid: >
+          Designs SLA structures appropriate for the business including
+          tier definitions, response and resolution time targets, and
+          escalation triggers. Manages SLA compliance actively, adjusting
+          staffing and priorities to maintain targets during volume spikes
+          and analyzes breach patterns to drive improvements.
+        senior: >
+          Optimizes SLA frameworks across the department, balancing
+          customer expectations with operational capacity and cost. Defines
+          SLA reporting for executive consumption, negotiates SLA terms
+          in enterprise contracts, and drives systemic changes that improve
+          compliance through process rather than heroics.
+        director: >
+          Sets SLA strategy for the organization, aligning service level
+          commitments with business strategy, competitive positioning, and
+          customer segmentation. Manages SLA performance across multiple
+          teams and vendors, driving accountability through clear metrics
+          and regular operational reviews.
+        vp: >
+          Defines the company's customer service commitment philosophy,
+          connecting SLA strategy to brand promise and customer retention
+          economics. Negotiates service level expectations with the board
+          and executive peers, ensuring support investment is calibrated to
+          the service levels the business requires.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI excels at SLA monitoring, breach prediction, and automated
+          alerting, reducing the manual effort needed for compliance
+          tracking. However, designing SLA structures that balance customer
+          needs with operational reality and negotiating SLA terms in
+          contracts require human strategic judgment.
+
+    - id: quality_assurance_mgmt
+      name: "Quality Assurance Program Management"
+      category: operational
+      description: >
+        Designing and running the quality assurance program for the support
+        team, including defining evaluation rubrics, conducting calibration
+        sessions, reviewing agent interactions, identifying improvement
+        areas, and connecting quality insights to coaching and training
+        programs.
+      proficiency:
+        junior: >
+          Conducts quality reviews of agent interactions using the
+          established rubric. Provides specific, actionable feedback to
+          agents based on evaluation findings. Participates in calibration
+          sessions to maintain scoring consistency and identifies common
+          quality issues in the team.
+        mid: >
+          Manages the full quality assurance cycle including evaluation
+          scheduling, sampling methodology, calibration cadence, and
+          feedback delivery. Designs rubrics that measure dimensions most
+          impactful to customer satisfaction and adapts evaluation criteria
+          as products and processes evolve.
+        senior: >
+          Leads the quality program across multiple teams, ensuring
+          consistent standards and calibration. Analyzes quality data to
+          identify systemic trends, designs targeted improvement initiatives,
+          and measures the impact of quality programs on CSAT and resolution
+          metrics. Partners with training on curriculum development.
+        director: >
+          Defines the department's quality philosophy and investment level.
+          Evaluates AI-assisted quality scoring tools and decides on the
+          human-to-automated quality review balance. Ensures quality insights
+          drive strategic decisions about product, process, and people
+          development across the organization.
+        vp: >
+          Sets the organizational standard for customer interaction quality,
+          connecting quality program outcomes to brand reputation, customer
+          lifetime value, and competitive differentiation. Ensures quality
+          assurance practices scale with organizational growth while
+          maintaining meaningful impact on customer experience.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI can automate quality scoring for tone, completeness, and
+          procedural adherence at scale, dramatically expanding review
+          coverage. However, evaluating nuanced judgment calls, designing
+          rubrics that capture what matters, and connecting quality insights
+          to coaching remain human-driven.
+
+    - id: workforce_planning
+      name: "Workforce Planning & Scheduling"
+      category: operational
+      description: >
+        Forecasting support volume, planning staffing levels, creating
+        schedules, and managing real-time adherence to ensure adequate
+        coverage across channels, time zones, and skill requirements while
+        optimizing labor costs and maintaining agent satisfaction with
+        scheduling fairness.
+      proficiency:
+        junior: >
+          Creates team schedules based on established staffing models and
+          manages basic schedule changes including swaps and time-off
+          requests. Monitors real-time queue metrics and adjusts coverage
+          when agents are unexpectedly absent, maintaining service levels
+          during the shift.
+        mid: >
+          Develops staffing models using historical volume data and seasonal
+          patterns. Creates optimized schedules that balance coverage
+          requirements with agent preferences and labor regulations.
+          Forecasts short-term volume for upcoming weeks and adjusts
+          staffing plans accordingly.
+        senior: >
+          Builds sophisticated workforce models incorporating multi-channel
+          volume forecasting, skill-based routing requirements, and
+          shrinkage assumptions. Manages workforce planning for a large
+          team or multiple time zones. Drives efficiency improvements that
+          reduce cost-per-contact while maintaining service levels.
+        director: >
+          Defines the workforce planning strategy for the department,
+          including decisions on in-house versus outsourced staffing, global
+          site strategy, and technology investment for workforce management.
+          Manages the overall labor budget and headcount allocation across
+          teams and channels.
+        vp: >
+          Sets the organizational workforce strategy, aligning headcount
+          investment with business growth projections, AI-driven deflection
+          goals, and customer experience targets. Makes strategic decisions
+          on support model evolution as AI handles increasing ticket volume
+          and the required agent skillset shifts accordingly.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI-powered workforce management tools generate accurate volume
+          forecasts and optimized schedules automatically. However,
+          strategic decisions about staffing model evolution, managing
+          the human impacts of schedule changes, and balancing cost
+          optimization with agent satisfaction require management judgment.
+
+    - id: coaching
+      name: "Coaching & Agent Development"
+      category: leadership
+      description: >
+        Developing individual agents through regular coaching sessions,
+        performance feedback, skill development planning, and career
+        conversations that improve both job performance and professional
+        growth, creating a culture of continuous learning and development
+        within the support team.
+      proficiency:
+        junior: >
+          Conducts regular one-on-one coaching sessions with agents focused
+          on specific, observable behaviors. Delivers feedback that is
+          timely, specific, and actionable. Supports agent development
+          through task delegation and stretch assignments. Tracks coaching
+          topics and follows up on improvement areas.
+        mid: >
+          Creates individualized development plans for each team member
+          aligned with both performance gaps and career aspirations. Uses
+          multiple coaching techniques including side-by-side observation,
+          role-playing, and data-driven feedback. Measures coaching
+          effectiveness through performance improvement over time.
+        senior: >
+          Coaches team leads on their coaching skills, building management
+          capability throughout the organization. Designs coaching
+          frameworks and calibration exercises that ensure consistent
+          development quality across the team. Identifies and develops
+          high-potential agents for leadership roles.
+        director: >
+          Defines the department's coaching philosophy and investment level.
+          Ensures coaching is embedded in management expectations rather
+          than treated as optional. Creates career path frameworks that
+          give agents visibility into growth opportunities and drives
+          mentorship programs that cross team boundaries.
+        vp: >
+          Sets the organizational standard for people development within
+          support, connecting coaching investment to retention, quality,
+          and customer satisfaction outcomes. Ensures the organization
+          develops internal talent pipelines that reduce dependency on
+          external hiring and builds a reputation as a career-launching
+          function.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can identify coaching topics from performance data and suggest
+          development resources. However, motivating individuals, adapting
+          coaching style to personality, navigating sensitive performance
+          conversations, and building genuine developmental relationships
+          remain deeply human leadership skills.
+
+    - id: csat_nps
+      name: "Customer Satisfaction (CSAT/NPS) Management"
+      category: analytical
+      description: >
+        Measuring, analyzing, and improving customer satisfaction and loyalty
+        through CSAT, NPS, CES, and other feedback metrics, designing survey
+        programs, analyzing results, identifying improvement drivers, and
+        connecting satisfaction metrics to business outcomes like retention
+        and expansion.
+      proficiency:
+        junior: >
+          Monitors team CSAT and NPS scores using existing dashboards and
+          reports. Reviews individual customer feedback to understand
+          satisfaction drivers. Follows up on low-scoring interactions to
+          address customer concerns and incorporates satisfaction feedback
+          into coaching conversations.
+        mid: >
+          Analyzes CSAT and NPS trends to identify root causes of
+          satisfaction changes. Designs and implements improvement
+          initiatives targeting specific satisfaction drivers. Manages
+          survey distribution, response rates, and reporting cadence.
+          Connects satisfaction metrics to team performance management.
+        senior: >
+          Develops the department's customer satisfaction measurement
+          strategy including metric selection, survey design, and analysis
+          methodology. Builds models connecting satisfaction scores to
+          business outcomes like churn and expansion. Drives cross-functional
+          initiatives to improve the largest satisfaction detractors.
+        director: >
+          Owns the organization's customer satisfaction strategy, setting
+          targets that balance aspiration with achievability. Presents
+          satisfaction analysis to executive leadership with clear
+          recommendations on investment priorities. Manages the
+          relationship between satisfaction measurement and compensation.
+        vp: >
+          Positions customer satisfaction as a strategic business metric
+          at the executive level, connecting support-driven satisfaction
+          to revenue retention and growth. Defines the organization's
+          voice-of-customer program and ensures satisfaction insights
+          drive product, marketing, and sales strategy alongside support
+          operations.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI excels at sentiment analysis, survey result aggregation, and
+          identifying satisfaction drivers from unstructured feedback.
+          However, designing satisfaction strategies, interpreting results
+          within business context, and driving cross-functional improvement
+          initiatives require human strategic and relationship skills.
+
+    - id: process_improvement
+      name: "Process Improvement"
+      category: operational
+      description: >
+        Identifying, designing, implementing, and measuring improvements to
+        support processes and workflows that increase efficiency, reduce
+        costs, improve customer experience, or enhance agent experience,
+        using structured methodologies and data-driven decision-making.
+      proficiency:
+        junior: >
+          Identifies process inefficiencies through daily observation and
+          suggests improvements to manager. Helps implement process changes
+          by updating documentation, training the team, and tracking
+          adoption. Measures basic outcomes of implemented changes against
+          stated goals.
+        mid: >
+          Leads end-to-end process improvement projects including problem
+          identification, root cause analysis, solution design,
+          implementation, and measurement. Uses data to prioritize
+          improvement opportunities and quantifies the impact of changes
+          on key metrics like handle time and resolution rate.
+        senior: >
+          Drives strategic process improvements that span multiple teams
+          or significantly change how support operates. Applies structured
+          methodologies such as Lean or Six Sigma to complex operational
+          challenges. Manages change management aspects of process
+          transformations and measures long-term sustainability of changes.
+        director: >
+          Defines the department's continuous improvement strategy and
+          investment level. Prioritizes improvement initiatives based on
+          business impact and feasibility. Creates a culture where process
+          improvement is everyone's responsibility and empowers managers to
+          drive changes within their scope.
+        vp: >
+          Sets the organizational transformation agenda for the support
+          function, driving major operational changes such as AI adoption,
+          channel strategy shifts, and support model evolution. Ensures
+          process improvement capability is built into the organization
+          rather than dependent on individual initiative.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can identify process bottlenecks from operational data, suggest
+          improvements from industry benchmarks, and model the impact of
+          proposed changes. However, designing solutions that account for
+          human factors, managing change adoption, and prioritizing
+          improvements strategically remain human responsibilities.
+
+    - id: vendor_management
+      name: "Vendor & BPO Management"
+      category: operational
+      description: >
+        Managing relationships with outsourced support vendors and BPO
+        partners including contract negotiation, performance management,
+        quality standards, training, and operational alignment, ensuring
+        external teams deliver service that meets the same standards as
+        internal teams.
+      proficiency:
+        junior: >
+          Coordinates day-to-day operations with vendor team leads including
+          schedule alignment, quality feedback sharing, and escalation
+          handling. Monitors vendor performance metrics against contractual
+          targets and flags deviations for management attention.
+        mid: >
+          Manages the operational relationship with one or more vendor
+          partners including regular business reviews, quality calibration,
+          training coordination, and performance improvement plans.
+          Identifies and resolves service delivery issues through
+          collaborative problem-solving with vendor counterparts.
+        senior: >
+          Leads vendor relationships at a strategic level, managing contract
+          performance, renegotiating terms, and making recommendations on
+          vendor portfolio changes. Designs vendor quality and performance
+          frameworks that align outsourced teams with internal standards
+          and drives vendor integration with internal processes and tools.
+        director: >
+          Defines the organization's vendor strategy including sourcing
+          decisions, geographic distribution, and the mix of internal
+          versus outsourced support. Manages vendor contracts and budgets,
+          conducts vendor selection processes, and ensures the vendor
+          portfolio aligns with the support model and customer experience
+          goals.
+        vp: >
+          Sets the strategic direction for the support vendor ecosystem,
+          making decisions about insourcing versus outsourcing as AI and
+          automation change the support landscape. Negotiates enterprise-
+          level vendor partnerships and ensures the vendor strategy supports
+          the company's growth trajectory and customer experience
+          aspirations.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can aggregate vendor performance data and flag compliance
+          issues automatically. However, negotiating contracts, managing
+          vendor relationships, making strategic sourcing decisions, and
+          driving quality alignment across organizational boundaries remain
+          human-dependent management activities.
+
+    - id: reporting_analytics
+      name: "Reporting & Analytics"
+      category: analytical
+      description: >
+        Collecting, analyzing, and presenting support operational data to
+        drive informed decisions, including building dashboards, designing
+        reports for various audiences, identifying trends, and translating
+        data insights into actionable recommendations for improving
+        team performance and customer experience.
+      proficiency:
+        junior: >
+          Generates standard reports from existing dashboards and report
+          templates. Understands key support metrics including ticket
+          volume, first response time, resolution time, and CSAT. Presents
+          team performance data in regular meetings with clear narrative
+          context around the numbers.
+        mid: >
+          Builds custom reports and dashboards that surface insights beyond
+          standard operational metrics. Analyzes data to identify trends,
+          correlations, and anomalies. Creates executive summaries that
+          translate operational data into strategic recommendations for
+          improvement priorities.
+        senior: >
+          Designs the department's analytics framework including metric
+          definitions, data collection standards, and reporting cadence.
+          Builds advanced analyses that connect operational metrics to
+          business outcomes. Partners with data teams on data warehouse
+          integration and automated reporting infrastructure.
+        director: >
+          Defines the analytics strategy for the support organization,
+          ensuring data-driven decision-making is embedded in management
+          practices. Invests in analytics capability and tooling. Presents
+          departmental performance to executive leadership with strategic
+          framing that connects support metrics to company goals.
+        vp: >
+          Sets the standard for data-driven support management across the
+          organization. Defines the metrics that matter at the board and
+          executive level, ensuring support performance is measured and
+          communicated in terms of business impact rather than operational
+          activity. Drives investment in analytics maturity.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI can generate reports, identify trends, and surface anomalies
+          from operational data automatically, reducing manual reporting
+          effort significantly. However, defining which metrics matter,
+          interpreting results within business context, and making
+          strategic decisions based on data insights require human judgment.
+
+    - id: hiring
+      name: "Hiring & Team Building"
+      category: leadership
+      description: >
+        Recruiting, interviewing, selecting, and onboarding support team
+        members, including defining role requirements, designing interview
+        processes, assessing candidates, managing the hiring pipeline, and
+        building diverse teams with the right mix of skills and experience.
+      proficiency:
+        junior: >
+          Participates in interview panels and provides structured feedback
+          on candidates. Supports onboarding of new hires by pairing them
+          with experienced agents and ensuring they complete required
+          training. Screens resumes against established criteria.
+        mid: >
+          Manages the hiring process for the team including writing job
+          descriptions, screening candidates, conducting structured
+          interviews, and making hiring recommendations. Designs onboarding
+          programs that ramp new agents to productivity efficiently and
+          builds diverse candidate pipelines.
+        senior: >
+          Leads hiring strategy for a larger team or multiple roles,
+          optimizing the interview process for predictive validity and
+          candidate experience. Develops assessment exercises tailored to
+          support competencies. Builds talent pipelines through employer
+          branding and community engagement.
+        director: >
+          Defines hiring standards, processes, and target profiles for the
+          department. Manages headcount planning and budget allocation for
+          hiring. Drives diversity and inclusion in hiring practices and
+          ensures the hiring process scales with organizational growth
+          without compromising quality.
+        vp: >
+          Sets the talent strategy for the support organization, defining
+          the evolving profile of support professionals as AI changes the
+          skill requirements. Builds the employer brand for support careers,
+          creates career paths that attract top talent, and ensures the
+          organization's hiring practices support its long-term strategic
+          direction.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can screen resumes, schedule interviews, and identify candidate
+          patterns from hiring data. However, assessing cultural fit,
+          evaluating soft skills in interviews, making final hiring
+          decisions, and building diverse teams require human judgment and
+          relationship skills.
+
+    - id: training_program
+      name: "Training Program Design"
+      category: leadership
+      description: >
+        Designing, implementing, and measuring training programs that develop
+        support team skills including onboarding curricula, product training,
+        soft skills development, and ongoing learning programs, ensuring
+        training investment translates into measurable performance
+        improvement.
+      proficiency:
+        junior: >
+          Delivers training sessions using existing materials and curricula.
+          Provides hands-on coaching during nesting periods for new hires.
+          Collects feedback from trainees to improve session delivery and
+          flags gaps in training materials based on common new-hire
+          struggles.
+        mid: >
+          Designs training curricula for specific skill areas or product
+          updates, incorporating varied learning methods such as classroom,
+          e-learning, role-play, and on-the-job practice. Measures training
+          effectiveness through pre- and post-assessments and adjusts
+          content based on performance data.
+        senior: >
+          Manages the department's training program end-to-end including
+          needs analysis, curriculum design, delivery, and effectiveness
+          measurement. Develops trainer capability within the team and
+          creates continuous learning programs that maintain skill
+          relevance as products and processes evolve.
+        director: >
+          Defines the training strategy and investment level for the
+          organization. Evaluates learning management platforms and
+          training delivery models. Ensures training programs align with
+          strategic goals, career path requirements, and quality standards.
+          Measures training ROI through impact on operational metrics.
+        vp: >
+          Sets the organizational learning philosophy for the support
+          function, connecting training investment to business outcomes.
+          Ensures the training strategy evolves with the changing skill
+          requirements of AI-augmented support and creates development
+          pathways that prepare the team for the future of customer service.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can personalize learning paths, generate training content,
+          simulate customer interactions for practice, and identify skill
+          gaps from performance data. However, designing training programs
+          that motivate engagement, coaching through complex skill
+          development, and adapting curricula to organizational context
+          remain human responsibilities.
+
+    - id: escalation_handling
+      name: "Escalation Handling & Crisis Management"
+      category: operational
+      description: >
+        Managing customer escalations that require management intervention,
+        including direct customer interaction for de-escalation, coordination
+        of cross-functional response for critical issues, and crisis
+        management during major incidents or outages that affect large
+        numbers of customers.
+      proficiency:
+        junior: >
+          Handles customer escalations that require management presence,
+          using empathy and authority to resolve situations agents could
+          not. Makes reasonable judgment calls on exceptions, refunds, and
+          credits within delegated authority. Documents escalation patterns
+          for trend analysis.
+        mid: >
+          Manages complex escalations involving significant business risk or
+          multi-department coordination. Designs escalation procedures and
+          empowerment frameworks that reduce the volume of escalations
+          requiring management intervention. Communicates with customers
+          at a senior level during incidents and outages.
+        senior: >
+          Leads crisis response for major incidents affecting large customer
+          populations, coordinating communication, staffing, and customer
+          outreach. Manages executive escalations with composure and
+          business acumen. Designs crisis playbooks and runs regular
+          simulation exercises to ensure team readiness.
+        director: >
+          Defines the organization's escalation and crisis management
+          framework, including severity definitions, response protocols,
+          and communication templates. Serves as the executive point of
+          contact for the highest-severity customer situations and post-
+          incident reviews that drive systemic improvements.
+        vp: >
+          Represents the company in the most critical customer situations,
+          often involving C-level customer counterparts, legal implications,
+          or public reputation risk. Sets the organizational tone for how
+          the company responds to crises and ensures the support function
+          is integrated into the company's broader crisis management and
+          business continuity frameworks.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can detect escalation patterns and suggest response strategies
+          from historical data. However, de-escalating angry customers in
+          real time, making judgment calls on exceptions and concessions,
+          coordinating cross-functional crisis response, and representing
+          the company in high-stakes situations are fundamentally human
+          leadership activities.

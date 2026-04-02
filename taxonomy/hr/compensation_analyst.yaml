@@ -1,0 +1,674 @@
+role:
+  id: compensation_analyst
+  function: hr
+  name: "Compensation & Benefits Analyst"
+  also_known_as:
+    - "Total Rewards Analyst"
+    - "Compensation Specialist"
+    - "Benefits Analyst"
+    - "Rewards Consultant"
+    - "Pay & Benefits Administrator"
+  description: >
+    Designs, analyzes, and administers compensation and benefits programs that
+    attract, retain, and motivate employees while maintaining internal equity
+    and external competitiveness. Compensation analysts conduct market
+    benchmarking, build pay structures, model total rewards scenarios, ensure
+    regulatory compliance, and advise leadership on compensation strategy,
+    serving as the analytical backbone of the organization's total rewards
+    function.
+  ai_impact:
+    level: "high"
+    summary: >
+      AI is substantially transforming compensation analysis by automating
+      market data aggregation, pay equity calculations, salary range modeling,
+      and benefits cost projections. Machine learning models can identify
+      pay anomalies, predict attrition due to compensation gaps, and generate
+      scenario analyses in seconds. However, designing compensation
+      philosophies, navigating the political dynamics of pay decisions,
+      communicating sensitive changes to employees, and exercising judgment
+      on edge cases where data conflicts with organizational values remain
+      deeply human. Analysts who combine AI-powered analytics with strategic
+      advisory skills will be most valuable.
+    automating:
+      - "Market data aggregation and survey participation"
+      - "Standard pay range calculations and midpoint adjustments"
+      - "Benefits enrollment processing and eligibility verification"
+      - "Routine pay equity statistical analyses"
+      - "Job matching to benchmark surveys"
+      - "Compensation report generation and data visualization"
+    augmenting:
+      - "Complex pay equity analysis with intersectional factors"
+      - "Total rewards scenario modeling for organizational changes"
+      - "Executive compensation benchmarking and proxy analysis"
+      - "Benefits plan design optimization and cost modeling"
+      - "Geographic pay differential analysis for remote work"
+      - "Attrition prediction linked to compensation competitiveness"
+    preserving:
+      - "Compensation philosophy design aligned with business strategy"
+      - "Sensitive communication of pay decisions to employees and managers"
+      - "Political navigation of executive compensation decisions"
+      - "Judgment on edge cases in job evaluation and leveling"
+      - "Vendor negotiation for benefits and compensation survey providers"
+      - "Ethical reasoning about pay transparency and fairness"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "O*NET - Compensation and Benefits Managers"
+        url: "https://www.onetonline.org/link/summary/11-3111.00"
+      - name: "WorldatWork - Total Rewards Model"
+        url: "https://worldatwork.org/total-rewards-model"
+      - name: "Mercer - Global Compensation Planning"
+        url: "https://www.mercer.com/en-us/solutions/total-rewards/compensation/"
+  levels:
+    - id: junior
+      name: "Compensation Analyst I"
+      years_experience: "0-2"
+      summary: >
+        Supports compensation processes by collecting market data, maintaining
+        salary structures in HRIS, and generating standard compensation
+        reports. Assists with benefits administration, processes routine pay
+        actions, and learns job evaluation methodologies under guidance from
+        senior analysts.
+    - id: mid
+      name: "Compensation Analyst II"
+      years_experience: "2-5"
+      summary: >
+        Manages core compensation processes including market benchmarking,
+        pay range development, and annual merit cycle administration.
+        Conducts pay equity analyses, advises HR partners on offer
+        positioning, and maintains job architecture documentation. Handles
+        benefits plan administration and vendor coordination.
+    - id: senior
+      name: "Senior Compensation Analyst"
+      years_experience: "5-8"
+      summary: >
+        Leads complex compensation projects such as pay structure redesigns,
+        equity refresh programs, and multi-country compensation harmonization.
+        Develops advanced analytical models, presents recommendations to
+        senior leadership, and serves as the subject matter expert for
+        compensation policy interpretation across the organization.
+    - id: staff
+      name: "Compensation Manager / Total Rewards Lead"
+      years_experience: "8-12"
+      summary: >
+        Manages the compensation function for a large organization or
+        business unit, overseeing a team of analysts and setting the
+        compensation strategy roadmap. Designs total rewards programs that
+        balance competitiveness with cost management, leads executive
+        compensation processes, and partners with finance on labor cost
+        planning.
+    - id: principal
+      name: "Director / VP of Total Rewards"
+      years_experience: "12+"
+      summary: >
+        Defines the organization's total rewards philosophy and strategy at
+        the executive level, aligning compensation, benefits, equity, and
+        recognition programs with business objectives and talent strategy.
+        Advises the board compensation committee, manages enterprise-wide
+        rewards budgets, and ensures the organization's pay practices support
+        regulatory compliance and employer brand positioning.
+  skills:
+    - id: job_architecture
+      name: "Job Architecture & Evaluation"
+      category: technical
+      description: >
+        Designing and maintaining a structured framework of job families,
+        levels, and career paths that provides internal consistency and
+        supports compensation decisions, including job evaluation methodologies
+        such as point-factor, market pricing, and hybrid approaches.
+      proficiency:
+        junior: >
+          Maintains job description databases and assists with job matching
+          exercises for market surveys. Understands basic job evaluation
+          concepts such as job families, grades, and FLSA classification and
+          applies established criteria under guidance from senior analysts.
+        mid: >
+          Conducts job evaluations using established methodologies, maps roles
+          to job families and levels, and identifies classification
+          inconsistencies. Drafts job descriptions that support accurate
+          market pricing and maintains the job architecture documentation
+          with attention to internal equity.
+        senior: >
+          Designs and refines job architecture frameworks including level
+          definitions, career path documentation, and evaluation criteria.
+          Leads cross-functional job evaluation committees, resolves complex
+          classification disputes, and ensures the architecture scales with
+          organizational growth and evolving roles.
+        staff: >
+          Defines the organization's job architecture strategy and governance,
+          establishing evaluation methodology, leveling standards, and
+          maintenance processes. Leads large-scale architecture redesigns
+          supporting reorganizations or acquisitions and trains HRBPs on
+          consistent job evaluation practices.
+        principal: >
+          Shapes the company's approach to work architecture at the executive
+          level, ensuring job frameworks support evolving work models including
+          gig, contract, and AI-augmented roles. Influences industry standards
+          through thought leadership and ensures architecture enables
+          strategic workforce planning and pay transparency.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can match job descriptions to standard taxonomies and suggest
+          level placements based on content analysis. However, designing
+          architectures that account for organizational culture, career
+          development philosophy, and strategic workforce needs requires
+          human judgment about work design.
+
+    - id: market_benchmarking
+      name: "Market Benchmarking"
+      category: technical
+      description: >
+        Conducting systematic analyses of external compensation data from
+        surveys, public filings, and proprietary sources to determine
+        competitive pay positioning, including survey selection, job matching,
+        data aging, geographic adjustments, and percentile analysis.
+      proficiency:
+        junior: >
+          Assists with survey submissions by gathering incumbent data and
+          matching jobs to survey descriptions. Pulls standard market data
+          reports and organizes benchmark results in spreadsheets following
+          established templates and processes.
+        mid: >
+          Manages the annual survey participation process, conducts accurate
+          job matching across multiple surveys, and synthesizes results into
+          market composites. Applies data aging factors, geographic
+          differentials, and scope adjustments to produce reliable benchmarks
+          for standard roles.
+        senior: >
+          Designs benchmarking strategies for complex and emerging roles where
+          survey data is limited, using creative data triangulation across
+          sources. Evaluates survey methodology quality, presents market
+          positioning analyses to leadership, and recommends pay structure
+          adjustments based on competitive intelligence.
+        staff: >
+          Defines the organization's benchmarking methodology including survey
+          portfolio strategy, peer group selection, and data quality standards.
+          Negotiates survey vendor relationships, evaluates emerging
+          compensation data sources, and establishes governance for how market
+          data informs pay decisions across the enterprise.
+        principal: >
+          Shapes the company's competitive positioning philosophy at the
+          executive level, determining target percentiles by talent segment
+          and geography. Influences survey design through vendor advisory
+          boards, evaluates real-time compensation data platforms, and ensures
+          benchmarking practices support pay transparency and equity goals.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI excels at aggregating survey data, identifying comparable roles
+          across taxonomies, and applying statistical adjustments. However,
+          selecting appropriate peer groups, interpreting conflicting data
+          sources, and making strategic positioning decisions still require
+          experienced compensation judgment.
+
+    - id: pay_equity_analysis
+      name: "Pay Equity Analysis"
+      category: technical
+      description: >
+        Conducting statistical analyses to identify and remediate
+        unjustified pay disparities based on gender, race, ethnicity, or
+        other protected characteristics, including regression modeling,
+        cohort analysis, remediation budgeting, and ongoing monitoring
+        frameworks.
+      proficiency:
+        junior: >
+          Supports pay equity projects by preparing data extracts, cleaning
+          employee demographic and compensation files, and generating basic
+          descriptive statistics. Understands the conceptual difference between
+          raw and adjusted pay gaps and assists with documentation.
+        mid: >
+          Conducts standard pay equity analyses using regression models and
+          cohort comparisons, identifying statistically significant disparities
+          and preparing remediation cost estimates. Documents methodology and
+          findings for management review and tracks remediation implementation.
+        senior: >
+          Designs comprehensive pay equity audit methodologies incorporating
+          intersectional analysis, job group definitions, and legitimate factor
+          controls. Presents findings and remediation recommendations to senior
+          leadership, partners with legal counsel on risk assessment, and
+          establishes ongoing monitoring frameworks.
+        staff: >
+          Defines the organization's pay equity strategy, methodology standards,
+          and audit cadence. Manages relationships with external pay equity
+          consultants, establishes proactive monitoring systems that flag
+          emerging disparities before they become systemic, and advises on
+          pay transparency legislation compliance.
+        principal: >
+          Shapes the company's pay equity philosophy and public commitment at
+          the executive level. Oversees enterprise-wide equity programs across
+          all jurisdictions, advises the board on equity risk exposure, and
+          positions the organization as an industry leader in fair pay
+          practices through transparent reporting and advocacy.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI significantly accelerates pay equity analysis through automated
+          regression modeling and anomaly detection. However, defining
+          appropriate job groupings, selecting legitimate factors, interpreting
+          results in legal and organizational context, and designing
+          remediation strategies require human expertise.
+
+    - id: compensation_modeling
+      name: "Compensation Modeling"
+      category: technical
+      description: >
+        Building quantitative models to project compensation costs, simulate
+        pay structure changes, forecast merit and promotion budgets, and
+        evaluate the financial impact of total rewards decisions, using
+        spreadsheet modeling, statistical analysis, and scenario planning.
+      proficiency:
+        junior: >
+          Builds basic compensation models in spreadsheets for merit increase
+          distribution and range adjustment calculations. Follows established
+          templates and formulas, validates outputs against historical data,
+          and generates summary reports for review by senior analysts.
+        mid: >
+          Develops compensation models for annual planning cycles including
+          merit budgets, promotion pools, and market adjustment scenarios.
+          Creates what-if analyses showing cost impacts of alternative
+          approaches and presents tradeoffs to HR leadership with clear
+          assumptions documented.
+        senior: >
+          Builds sophisticated compensation models incorporating attrition
+          projections, hiring plans, promotion velocity, and pay mix scenarios.
+          Designs dynamic models that leadership can use for real-time
+          decision-making and leads the annual compensation planning process
+          with finance partnership.
+        staff: >
+          Defines compensation modeling standards and tools for the
+          organization, establishing assumptions governance, model validation
+          processes, and integration with financial planning systems. Builds
+          models that inform executive compensation decisions, M&A due
+          diligence, and long-term labor cost strategy.
+        principal: >
+          Shapes the company's approach to total rewards financial planning at
+          the executive level, ensuring compensation models inform board-level
+          decisions on labor investment, equity dilution, and competitive
+          positioning. Drives adoption of advanced analytics platforms that
+          replace manual spreadsheet modeling at scale.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI dramatically accelerates scenario modeling, sensitivity analysis,
+          and cost projection. However, defining the right scenarios to model,
+          setting appropriate assumptions, and translating model outputs into
+          strategic recommendations require compensation expertise and
+          business context.
+
+    - id: benefits_administration
+      name: "Benefits Administration"
+      category: technical
+      description: >
+        Managing employee benefits programs including health insurance,
+        retirement plans, wellness programs, leave policies, and voluntary
+        benefits, encompassing plan design, vendor management, enrollment
+        processes, compliance reporting, and employee communication.
+      proficiency:
+        junior: >
+          Processes benefits enrollments, changes, and terminations in the
+          benefits administration system. Answers routine employee questions
+          about plan details, eligibility, and claims procedures. Assists
+          with open enrollment logistics and documentation.
+        mid: >
+          Manages day-to-day benefits operations including vendor coordination,
+          invoice reconciliation, and compliance filings such as ACA reporting
+          and 5500 forms. Resolves escalated employee benefits issues and
+          supports open enrollment design and communication campaigns.
+        senior: >
+          Leads benefits plan evaluation and design recommendations based on
+          utilization data, cost trends, and competitive benchmarking. Manages
+          vendor RFP processes, negotiates renewal terms, and designs
+          communication strategies that drive employee understanding and
+          engagement with benefits offerings.
+        staff: >
+          Defines the organization's benefits strategy balancing employee
+          value, cost management, and competitive positioning. Oversees the
+          full benefits portfolio including health, retirement, wellness, and
+          voluntary programs. Manages broker relationships and drives
+          innovation in benefits design and delivery.
+        principal: >
+          Shapes the company's benefits philosophy at the executive level,
+          ensuring programs support talent attraction, retention, and
+          organizational values. Evaluates emerging benefits trends such as
+          family-forming, mental health, and financial wellness. Advises the
+          board on healthcare cost strategy and fiduciary responsibilities.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI automates enrollment processing, eligibility verification, and
+          employee FAQ responses effectively. However, designing benefits
+          programs that balance cost with employee value, negotiating vendor
+          contracts, and navigating complex compliance requirements still
+          require human expertise.
+
+    - id: total_rewards_strategy
+      name: "Total Rewards Strategy"
+      category: technical
+      description: >
+        Developing holistic reward frameworks that integrate compensation,
+        benefits, equity, recognition, career development, and work-life
+        programs into a cohesive value proposition that supports talent
+        strategy and organizational objectives.
+      proficiency:
+        junior: >
+          Understands the components of total rewards and how they interconnect.
+          Supports total rewards communications by gathering program details
+          and helping create total compensation statements that show employees
+          their full rewards package value.
+        mid: >
+          Analyzes individual total rewards components and their relative
+          effectiveness in attracting and retaining different employee
+          segments. Contributes to total rewards communication campaigns and
+          helps design total compensation statements that articulate the full
+          value proposition.
+        senior: >
+          Designs integrated total rewards strategies for specific business
+          units or employee segments, balancing cash compensation, equity,
+          benefits, and non-monetary rewards. Presents total rewards analyses
+          to leadership demonstrating ROI and competitive positioning across
+          all reward elements.
+        staff: >
+          Defines the organization's total rewards philosophy and framework,
+          establishing principles that guide investment decisions across all
+          reward components. Leads annual total rewards planning integrating
+          compensation, benefits, equity, and recognition budgets into a
+          unified strategy aligned with talent objectives.
+        principal: >
+          Shapes the company's total rewards vision at the executive level,
+          positioning the rewards portfolio as a strategic enabler of talent
+          strategy and business performance. Advises the board on total
+          rewards investment, evaluates emerging reward models for the future
+          of work, and ensures the philosophy resonates across global markets.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can model total rewards scenarios and benchmark component mixes
+          against market data. However, designing a rewards philosophy that
+          aligns with organizational values and culture, communicating
+          sensitive pay information, and balancing competing stakeholder
+          interests are fundamentally human activities.
+
+    - id: hris_systems
+      name: "HRIS & Compensation Systems"
+      category: technical
+      description: >
+        Proficiency in human resources information systems and compensation
+        management platforms such as Workday, SAP SuccessFactors, Oracle HCM,
+        ADP, and specialized tools like PayScale, Radford, and CompAnalyst for
+        data management, reporting, and compensation process execution.
+      proficiency:
+        junior: >
+          Navigates HRIS systems to pull compensation reports, update employee
+          records, and process standard pay actions. Uses compensation survey
+          tools to extract market data following established procedures and
+          maintains data accuracy in assigned areas.
+        mid: >
+          Configures compensation modules within HRIS for annual processes
+          including merit cycles, bonus calculations, and equity grants.
+          Builds custom reports and dashboards, troubleshoots data issues,
+          and ensures system configurations reflect current compensation
+          policies accurately.
+        senior: >
+          Optimizes HRIS compensation workflows and system architecture to
+          improve accuracy and efficiency. Leads system implementation and
+          upgrade projects, designs integration points between compensation
+          and payroll systems, and establishes data governance standards for
+          compensation data.
+        staff: >
+          Defines the organization's compensation technology strategy,
+          managing vendor selection, system architecture, and integration
+          roadmap. Ensures compensation systems support global operations,
+          regulatory compliance, and advanced analytics capabilities while
+          driving adoption across HR teams.
+        principal: >
+          Shapes the company's HR technology vision as it relates to total
+          rewards, ensuring platform investments enable strategic capabilities
+          such as real-time pay transparency, AI-powered benchmarking, and
+          global pay management. Influences vendor product roadmaps through
+          strategic partnership and advisory board participation.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI is being embedded into HRIS platforms for automated data
+          validation, anomaly detection, and intelligent workflow routing.
+          However, designing system architectures that support complex
+          compensation programs, ensuring data integrity, and managing change
+          adoption still require human expertise.
+
+    - id: regulatory_compliance
+      name: "Regulatory Compliance (FLSA, ACA, Pay Transparency)"
+      category: technical
+      description: >
+        Ensuring compensation and benefits programs comply with applicable
+        federal, state, and international regulations including FLSA
+        classification, ACA reporting, pay transparency laws, equal pay
+        legislation, and international compensation regulations.
+      proficiency:
+        junior: >
+          Understands basic compensation regulations such as FLSA exempt versus
+          non-exempt classification and minimum wage requirements. Follows
+          established compliance checklists and escalates questions about
+          regulatory applicability to senior analysts or legal counsel.
+        mid: >
+          Applies FLSA classification criteria accurately, manages ACA
+          reporting processes, and monitors state and local compensation
+          regulations for the organization's operating locations. Identifies
+          potential compliance gaps and recommends corrective actions with
+          appropriate documentation.
+        senior: >
+          Leads compliance programs for complex regulatory environments
+          including multi-state pay transparency requirements, international
+          pay regulations, and equal pay legislation. Designs audit processes,
+          partners with legal counsel on regulatory interpretation, and
+          ensures compensation practices withstand regulatory scrutiny.
+        staff: >
+          Defines the organization's compensation compliance framework across
+          all jurisdictions, establishing monitoring systems, audit cadences,
+          and escalation protocols. Manages relationships with external
+          counsel and regulatory advisors, and leads readiness programs for
+          new legislation impacting compensation practices.
+        principal: >
+          Shapes the company's regulatory compliance strategy at the executive
+          level, ensuring global compensation practices meet requirements
+          across all operating jurisdictions. Advises the board on regulatory
+          risk exposure, influences policy through industry association
+          participation, and positions the organization ahead of regulatory
+          trends.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can monitor regulatory changes, flag classification
+          inconsistencies, and automate compliance reporting. However,
+          interpreting complex regulations in specific organizational contexts,
+          designing compliant program structures, and making judgment calls on
+          ambiguous requirements require human legal and compensation expertise.
+
+    - id: executive_compensation
+      name: "Executive Compensation"
+      category: technical
+      description: >
+        Designing, benchmarking, and administering compensation programs for
+        senior executives including base salary, annual incentives, long-term
+        incentives, equity grants, severance, and change-in-control provisions,
+        with attention to governance, proxy disclosure, and shareholder
+        alignment.
+      proficiency:
+        junior: >
+          Supports executive compensation processes by gathering data for
+          proxy filings, maintaining executive pay records, and preparing
+          standard reports. Understands basic concepts of executive pay
+          components and assists with tally sheet preparation.
+        mid: >
+          Conducts executive compensation benchmarking against proxy data and
+          survey sources, prepares tally sheets and wealth accumulation
+          analyses, and supports the annual incentive plan administration.
+          Assists with compensation committee materials and meeting preparation.
+        senior: >
+          Leads executive compensation analysis including peer group design,
+          pay-for-performance alignment studies, and long-term incentive plan
+          modeling. Prepares compensation committee presentations and CD&A
+          drafts, and advises on executive offer packages with attention to
+          governance and shareholder perspectives.
+        staff: >
+          Manages the executive compensation function, overseeing annual
+          planning cycles, compensation committee relationships, and proxy
+          disclosure processes. Designs incentive plan structures, manages
+          external consultant relationships, and ensures executive pay
+          programs align with business strategy and governance best practices.
+        principal: >
+          Shapes the company's executive compensation philosophy as a trusted
+          advisor to the board compensation committee. Navigates complex
+          stakeholder dynamics between management, board, shareholders, and
+          proxy advisors. Designs innovative incentive structures that drive
+          long-term value creation while maintaining competitive positioning.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI accelerates proxy data analysis, peer benchmarking, and incentive
+          plan modeling. However, navigating board dynamics, designing
+          governance-compliant pay structures, and making judgment calls on
+          executive pay that balance competitiveness with shareholder
+          expectations require deep human expertise.
+
+    - id: equity_stock_programs
+      name: "Equity & Stock Programs"
+      category: technical
+      description: >
+        Administering and designing equity compensation programs including
+        stock options, restricted stock units, employee stock purchase plans,
+        and performance shares, encompassing grant processing, vesting
+        schedules, tax implications, dilution analysis, and participant
+        communication.
+      proficiency:
+        junior: >
+          Processes equity grant transactions in the stock plan administration
+          system, maintains participant records, and responds to routine
+          employee inquiries about vesting schedules and tax withholding.
+          Assists with annual equity cycle logistics and documentation.
+        mid: >
+          Manages equity program administration including grant processing,
+          vesting events, termination treatments, and ESPP enrollment cycles.
+          Prepares equity usage reports, supports annual refresh planning, and
+          coordinates with payroll and finance on tax withholding and
+          accounting requirements.
+        senior: >
+          Leads equity program design and analysis including dilution modeling,
+          burn rate calculations, and competitive benchmarking of equity
+          programs. Designs grant guidelines, manages equity plan amendments,
+          and advises leadership on equity strategy for retention and
+          recruitment of key talent.
+        staff: >
+          Defines the organization's equity compensation strategy, managing
+          share pool utilization, board approval processes, and plan design
+          evolution. Oversees relationships with stock plan administrators
+          and transfer agents, ensures SEC and tax compliance, and drives
+          equity program communication and education.
+        principal: >
+          Shapes the company's equity philosophy at the executive and board
+          level, balancing dilution management with talent competitiveness
+          and employee ownership culture. Designs innovative equity vehicles
+          for different organizational stages, advises on equity implications
+          of M&A and IPO transactions, and influences industry practices.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can automate grant processing, model dilution scenarios, and
+          generate participant communications. However, designing equity
+          strategies that balance competing stakeholder interests, navigating
+          complex tax and regulatory requirements, and making judgment calls
+          on equity allocation require specialized human expertise.
+
+    - id: communication_change_mgmt
+      name: "Compensation Communication & Change Management"
+      category: interpersonal
+      description: >
+        Designing and delivering clear, compelling communications about
+        compensation programs, pay decisions, and total rewards changes to
+        employees, managers, and executives, including managing sensitive
+        transitions such as pay structure redesigns or benefits changes.
+      proficiency:
+        junior: >
+          Drafts routine compensation communications using approved templates
+          and messaging frameworks. Prepares FAQs for open enrollment and
+          merit cycle, and responds to standard employee inquiries about pay
+          and benefits with accuracy and appropriate confidentiality.
+        mid: >
+          Creates comprehensive communication materials for annual compensation
+          processes including manager guidelines, employee letters, and
+          presentation decks. Trains managers on compensation conversation
+          techniques and handles escalated employee questions about pay
+          decisions sensitively.
+        senior: >
+          Designs communication strategies for significant compensation changes
+          such as pay structure redesigns, benefits plan modifications, or
+          equity program introductions. Coaches senior leaders on compensation
+          messaging, manages employee town halls, and develops change
+          management plans that build understanding and acceptance.
+        staff: >
+          Defines the organization's compensation communication philosophy and
+          standards, establishing manager training programs, pay transparency
+          guidelines, and communication cadences. Leads enterprise-wide change
+          management for major total rewards transformations and measures
+          communication effectiveness through employee feedback.
+        principal: >
+          Shapes the company's pay transparency and communication strategy at
+          the executive level, ensuring compensation narratives support
+          employer brand, culture, and trust. Advises the board on public
+          disclosure approaches, manages media inquiries about compensation
+          practices, and positions the organization as a leader in pay equity.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can draft communication templates and personalize compensation
+          statements at scale. However, crafting messaging for sensitive pay
+          changes, coaching managers through difficult compensation
+          conversations, and managing emotional reactions to pay decisions
+          require human empathy and communication expertise.
+
+    - id: vendor_management
+      name: "Vendor Management"
+      category: interpersonal
+      description: >
+        Selecting, contracting, and managing relationships with compensation
+        and benefits vendors including survey providers, benefits carriers,
+        brokers, consultants, and technology platforms, ensuring service
+        quality, cost effectiveness, and strategic alignment.
+      proficiency:
+        junior: >
+          Coordinates with vendors on routine tasks such as data submissions,
+          invoice processing, and meeting scheduling. Maintains vendor contact
+          information and contract documentation, and escalates service issues
+          to senior analysts for resolution.
+        mid: >
+          Manages ongoing vendor relationships for assigned programs, monitors
+          service level performance, and resolves operational issues. Supports
+          RFP processes by gathering requirements, evaluating proposals, and
+          coordinating vendor presentations with appropriate stakeholders.
+        senior: >
+          Leads vendor selection processes for significant compensation and
+          benefits programs including RFP design, evaluation criteria,
+          negotiation, and contracting. Manages strategic vendor relationships,
+          conducts performance reviews, and drives continuous improvement in
+          service delivery and cost effectiveness.
+        staff: >
+          Defines the organization's vendor management framework for total
+          rewards including procurement standards, performance measurement,
+          and relationship governance. Negotiates enterprise agreements,
+          manages the broker and consultant portfolio, and evaluates
+          build-versus-buy decisions for compensation capabilities.
+        principal: >
+          Shapes the company's total rewards vendor strategy at the executive
+          level, building strategic partnerships with key providers and
+          influencing vendor product development through advisory
+          relationships. Manages multi-million dollar vendor portfolios and
+          ensures partnerships support the organization's long-term total
+          rewards vision.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can assist with vendor comparison analysis, contract review, and
+          performance monitoring. However, building strategic vendor
+          partnerships, negotiating complex agreements, evaluating service
+          quality, and managing relationship dynamics require human judgment
+          and interpersonal skills.

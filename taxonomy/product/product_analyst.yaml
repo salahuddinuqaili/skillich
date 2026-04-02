@@ -1,0 +1,234 @@
+role:
+  id: product_analyst
+  function: product
+  name: "Product Analyst"
+  also_known_as:
+    - "Product Data Analyst"
+    - "Growth Analyst"
+    - "Analytics Engineer (Product)"
+    - "Product Insights Analyst"
+  description: >
+    Product Analysts transform raw product data into actionable insights that drive feature
+    decisions, measure outcomes, and surface opportunities for improvement. They partner
+    closely with product managers, engineers, and designers to instrument products, design
+    experiments, and build the quantitative foundation for evidence-based product development.
+  ai_impact:
+    level: high
+    summary: >
+      AI is significantly transforming product analytics by automating query generation, anomaly
+      detection, and routine reporting. Natural-language-to-SQL tools and AI-powered dashboards
+      are democratizing data access, reducing demand for routine data pulls. However, the analyst's
+      role is evolving toward more strategic insight synthesis, experiment design, and data
+      governance where human judgment remains critical.
+    automating:
+      - "Writing routine SQL queries and data pulls"
+      - "Generating standard dashboards and recurring reports"
+      - "Detecting metric anomalies and alerting stakeholders"
+      - "Summarizing A/B test results and statistical outputs"
+    augmenting:
+      - "Exploratory data analysis with AI-assisted pattern discovery"
+      - "Complex experiment design with AI-powered sample size and power calculators"
+      - "Predictive modeling for user behavior and churn"
+      - "Natural language interfaces for ad-hoc data exploration"
+    preserving:
+      - "Defining the right metrics and ensuring they measure what matters"
+      - "Designing instrumentation strategies for new features"
+      - "Synthesizing multiple data sources into strategic narratives"
+      - "Ensuring data quality, governance, and ethical use"
+      - "Translating statistical nuance for non-technical stakeholders"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Amplitude - Future of Product Analytics"
+        url: "https://amplitude.com/blog/future-of-product-analytics"
+      - name: "Locally Optimistic - AI and Analytics"
+        url: "https://locallyoptimistic.com/"
+  levels:
+    - id: junior
+      name: "Junior/Associate"
+      years_experience: "0-2"
+      summary: "Writes SQL queries, builds dashboards from templates, supports senior analysts on experiments, and develops foundational skills in product metrics and statistical reasoning."
+    - id: mid
+      name: "Mid-Level"
+      years_experience: "2-5"
+      summary: "Independently owns analytics for a product area, designs and analyzes experiments, builds self-serve dashboards, and translates data into recommendations for product teams."
+    - id: senior
+      name: "Senior"
+      years_experience: "5-8"
+      summary: "Leads analytics strategy for a major product area, defines metric frameworks, mentors junior analysts, and drives complex analyses that influence product direction."
+    - id: staff
+      name: "Staff/Lead Analyst"
+      years_experience: "8-12"
+      summary: "Shapes analytics practices across the organization, drives data infrastructure investments, establishes experimentation standards, and partners with product leadership on strategy."
+    - id: principal
+      name: "Principal/Head of Product Analytics"
+      years_experience: "12+"
+      summary: "Defines the company-wide analytics vision, builds and scales analytics teams, drives data culture at the executive level, and ensures analytics investment aligns with business strategy."
+  skills:
+    - id: sql_analytics
+      name: "SQL & Data Querying"
+      category: technical
+      description: "Proficiency in writing SQL queries across data warehouses to extract, transform, and analyze product data at scale for ad-hoc analysis and production pipelines."
+      proficiency:
+        junior: "Writes basic SELECT queries with JOINs, WHERE clauses, and GROUP BY aggregations. Can query pre-built data models and troubleshoot simple errors."
+        mid: "Writes complex queries with window functions, CTEs, subqueries, and performance optimization. Understands data warehouse architecture and query execution plans."
+        senior: "Authors production-grade SQL for data pipelines, optimizes expensive queries across large datasets, and mentors others on advanced query patterns and best practices."
+        staff: "Designs data modeling conventions and SQL style guides for the analytics organization, evaluates data warehouse technologies, and drives query infrastructure improvements."
+        principal: "Sets the technical vision for analytics data infrastructure, partners with data engineering leadership on platform strategy, and ensures SQL practices scale with organizational growth."
+      ai_impact:
+        rating: 0.7
+        detail: "AI copilots can generate accurate SQL from natural language for many common query patterns. Complex multi-table queries, performance tuning, and data modeling still require deep human expertise."
+
+    - id: statistical_analysis
+      name: "Statistical Analysis"
+      category: analytical
+      description: "The application of statistical methods including hypothesis testing, regression analysis, and probability distributions to draw valid conclusions from product data."
+      proficiency:
+        junior: "Understands basic descriptive statistics, can calculate means, medians, and standard deviations, and recognizes common distributions. Applies statistical tests with guidance."
+        mid: "Independently conducts hypothesis tests, confidence interval estimation, and basic regression analysis. Understands assumptions behind common tests and recognizes violations."
+        senior: "Applies advanced methods such as multivariate regression, survival analysis, and Bayesian inference. Designs statistical approaches for complex product questions."
+        staff: "Establishes statistical standards across the analytics organization, reviews methodologies used by other analysts, and introduces new statistical techniques when appropriate."
+        principal: "Defines the company's approach to statistical rigor, builds partnerships with academic researchers, and ensures statistical methods evolve with product and data complexity."
+      ai_impact:
+        rating: 0.5
+        detail: "AI can automate routine statistical computations and suggest appropriate tests, but selecting the right method, validating assumptions, and interpreting results in context require trained statistical judgment."
+
+    - id: ab_testing
+      name: "A/B Testing & Experimentation"
+      category: analytical
+      description: "The end-to-end practice of designing, executing, and analyzing controlled experiments to measure the causal impact of product changes on user behavior and business metrics."
+      proficiency:
+        junior: "Understands the purpose of A/B tests, reads experiment results with guidance, and can verify that experiments are logging correctly. Knows basic concepts like control and treatment groups."
+        mid: "Designs experiments with proper hypotheses, calculates required sample sizes, selects primary and guardrail metrics, and interprets results with awareness of common pitfalls like peeking."
+        senior: "Runs sophisticated experiments including multi-armed bandits and sequential testing, handles network effects and interference, and makes nuanced ship decisions on ambiguous results."
+        staff: "Builds the experimentation framework and review process for the organization, defines guardrail metrics, and establishes standards for experiment quality and rigor."
+        principal: "Champions experimentation culture at the executive level, drives investment in experimentation infrastructure, and shapes the company philosophy on when to experiment versus when to make conviction-based decisions."
+      ai_impact:
+        rating: 0.5
+        detail: "AI can automate experiment analysis, monitor metrics, and flag significance. Designing meaningful experiments, handling edge cases, and making judgment calls on rollout remain human-driven."
+
+    - id: funnel_analysis
+      name: "Funnel Analysis"
+      category: analytical
+      description: "The ability to map, measure, and optimize user flows through key product funnels, identifying drop-off points and quantifying opportunities for conversion improvement."
+      proficiency:
+        junior: "Builds basic funnel visualizations from existing data, calculates step-by-step conversion rates, and identifies the largest drop-off points in a user flow."
+        mid: "Conducts segmented funnel analysis by user cohort, device, or acquisition channel. Identifies root causes of drop-off and proposes hypotheses for improvement."
+        senior: "Designs end-to-end funnel measurement frameworks for complex multi-step flows, quantifies revenue impact of conversion improvements, and drives funnel optimization roadmaps."
+        staff: "Establishes funnel analysis standards across product teams, builds self-serve funnel tools, and ensures consistent funnel definitions across the organization."
+        principal: "Drives company-wide conversion optimization strategy, aligns funnel metrics with business objectives, and invests in tooling that makes funnel analysis accessible to all teams."
+      ai_impact:
+        rating: 0.5
+        detail: "AI can automate funnel visualization and flag anomalies in conversion trends. Diagnosing why users drop off and designing interventions requires human understanding of user psychology and product context."
+
+    - id: metric_definition
+      name: "Metric Definition & Frameworks"
+      category: domain
+      description: "The practice of selecting, defining, and structuring product metrics into coherent frameworks that align team behavior with business outcomes and enable effective decision-making."
+      proficiency:
+        junior: "Understands common product metrics like DAU, retention, and conversion rate. Can articulate the difference between leading and lagging indicators."
+        mid: "Defines feature-level success metrics with clear operational definitions, builds metric trees that connect feature metrics to team-level OKRs, and identifies counter-metrics."
+        senior: "Designs comprehensive metric frameworks for a product area including input metrics, output metrics, and guardrails. Resolves conflicting metric signals and advises PMs on measurement strategy."
+        staff: "Establishes metric standards and naming conventions across the analytics organization, builds the company metric hierarchy, and ensures metrics drive aligned behavior across teams."
+        principal: "Defines the company-level KPI framework reported to leadership and the board, ensures metric literacy across the organization, and evolves the measurement approach as the business scales."
+      ai_impact:
+        rating: 0.3
+        detail: "AI can suggest metrics based on industry patterns, but defining what matters for a specific product in its specific context requires deep business understanding and strategic judgment."
+
+    - id: data_visualization
+      name: "Data Visualization & Dashboarding"
+      category: communication
+      description: "The ability to design clear, effective visualizations and dashboards that communicate data insights to diverse audiences and enable self-serve exploration of product metrics."
+      proficiency:
+        junior: "Creates basic charts and dashboards in tools like Looker, Tableau, or Metabase using established templates. Understands when to use different chart types."
+        mid: "Designs intuitive self-serve dashboards that answer stakeholder questions, applies visualization best practices for clarity and accuracy, and builds monitoring views with alerts."
+        senior: "Architects dashboard ecosystems for a product area with logical hierarchy and drill-down paths. Creates compelling data narratives for executive presentations."
+        staff: "Establishes visualization standards and style guides across the organization, evaluates BI tools, and builds a self-serve analytics culture that reduces ad-hoc request volume."
+        principal: "Defines the company's data communication strategy, ensures executive-level dashboards drive the right conversations, and invests in visualization infrastructure that scales."
+      ai_impact:
+        rating: 0.5
+        detail: "AI can auto-generate charts and suggest visualization types, but designing dashboards that tell the right story for the right audience requires human communication and design sensibility."
+
+    - id: cohort_analysis
+      name: "Cohort Analysis"
+      category: analytical
+      description: "The technique of grouping users by shared characteristics or time windows to track behavior patterns over time, essential for understanding retention, engagement, and lifecycle dynamics."
+      proficiency:
+        junior: "Builds basic time-based cohort tables, calculates week-over-week retention curves, and compares cohort performance using provided templates."
+        mid: "Designs cohort analyses segmented by acquisition source, user behavior, or product features. Identifies meaningful cohort differences and proposes targeted interventions."
+        senior: "Conducts advanced cohort analysis including behavioral cohorts, predictive cohort modeling, and long-horizon retention studies. Connects cohort insights to strategic product decisions."
+        staff: "Establishes cohort analysis frameworks and standards across the organization, builds automated cohort tracking systems, and drives retention strategy based on cohort insights."
+        principal: "Shapes the company's approach to customer lifecycle measurement, integrates cohort analysis into board-level reporting, and ensures cohort insights inform company strategy."
+      ai_impact:
+        rating: 0.5
+        detail: "AI can automate cohort segmentation and surface interesting patterns, but selecting meaningful cohort definitions and translating patterns into product strategy require human insight."
+
+    - id: product_instrumentation
+      name: "Product Instrumentation"
+      category: technical
+      description: "The practice of designing and implementing event tracking, logging, and data collection within products to ensure comprehensive, accurate, and reliable data capture for analysis."
+      proficiency:
+        junior: "Implements basic event tracking following established taxonomy and naming conventions. Tests that events fire correctly and data appears in the warehouse."
+        mid: "Designs event schemas for new features, defines tracking plans with properties and contexts, and partners with engineering to ensure clean data capture."
+        senior: "Architects instrumentation strategies for complex product areas, establishes naming conventions and governance processes, and ensures data quality through validation pipelines."
+        staff: "Defines the organization-wide instrumentation strategy and taxonomy, evaluates tracking infrastructure, and builds processes that prevent data debt from accumulating."
+        principal: "Sets the company-wide data collection philosophy including privacy and consent frameworks, drives investment in tracking infrastructure, and ensures instrumentation keeps pace with product evolution."
+      ai_impact:
+        rating: 0.4
+        detail: "AI can suggest event schemas and auto-generate tracking code, but designing a coherent instrumentation strategy that balances completeness, performance, and privacy requires human architectural thinking."
+
+    - id: business_intelligence
+      name: "Business Intelligence"
+      category: technical
+      description: "The ability to build and maintain BI systems that transform raw data into structured, reliable, and accessible information for decision-making across the product organization."
+      proficiency:
+        junior: "Uses BI tools to explore existing data models, builds reports from pre-defined datasets, and understands the difference between raw event data and modeled data."
+        mid: "Creates data models and transforms in dbt or similar tools, builds production dashboards with reliable data pipelines, and troubleshoots data quality issues."
+        senior: "Designs the BI layer architecture for a product domain, establishes data modeling standards, and ensures analytical data is trustworthy, well-documented, and performant."
+        staff: "Shapes the BI strategy across the organization, evaluates and selects BI tools and data platforms, and drives the semantic layer that ensures consistent metric definitions."
+        principal: "Defines the company's BI vision and roadmap, ensures BI infrastructure scales with data volume and team growth, and aligns BI investment with strategic analytics priorities."
+      ai_impact:
+        rating: 0.6
+        detail: "AI is rapidly improving BI tools through auto-generated models, natural language querying, and smart suggestions. Designing reliable, governed BI architecture still requires experienced human judgment."
+
+    - id: stakeholder_reporting
+      name: "Stakeholder Reporting"
+      category: communication
+      description: "The ability to tailor data insights into clear narratives and recommendations for different audiences, from product teams to executives, ensuring analysis drives action."
+      proficiency:
+        junior: "Writes clear analysis summaries with key takeaways, presents findings to the immediate product team, and responds to follow-up questions with additional data."
+        mid: "Creates structured analysis documents with recommendations, presents insights to director-level stakeholders, and adapts communication depth to audience technical sophistication."
+        senior: "Delivers executive-ready analyses that connect data to strategic implications, proactively surfaces insights before stakeholders ask, and influences product direction through data storytelling."
+        staff: "Establishes reporting standards and cadences across the analytics organization, coaches analysts on effective communication, and ensures insights reach the right decision-makers."
+        principal: "Shapes how the company uses data in executive decision-making, designs board-level analytics narratives, and builds a culture where data fluency is expected at all levels."
+      ai_impact:
+        rating: 0.4
+        detail: "AI can draft report summaries and suggest narrative structures, but understanding audience needs, navigating political context, and crafting persuasive recommendations remain human skills."
+
+    - id: experiment_design
+      name: "Experiment Design"
+      category: analytical
+      description: "The science of structuring controlled experiments with proper randomization, sample sizing, metric selection, and validity safeguards to generate trustworthy causal evidence."
+      proficiency:
+        junior: "Understands randomized controlled trial concepts, assists in drafting experiment plans, and knows the importance of pre-registration and avoiding peeking."
+        mid: "Independently designs experiments with appropriate sample sizes, power calculations, and stratification. Identifies threats to internal validity and proposes mitigations."
+        senior: "Designs experiments for complex scenarios including network effects, switchback designs, and synthetic controls. Advises product teams on when experimentation is appropriate versus other methods."
+        staff: "Establishes the experiment design review process for the organization, builds experiment design tools and calculators, and trains teams on rigorous experimental methodology."
+        principal: "Defines the company's experimentation philosophy including ethical guidelines, drives investment in experimentation platform capabilities, and publishes internal guidance on causal inference methods."
+      ai_impact:
+        rating: 0.4
+        detail: "AI tools can calculate sample sizes and suggest experimental setups, but identifying the right question, anticipating validity threats, and designing for real-world complexity require human expertise."
+
+    - id: insight_synthesis
+      name: "Insight Synthesis"
+      category: analytical
+      description: "The ability to combine quantitative data, qualitative research, and contextual knowledge into coherent, actionable insights that drive product decisions beyond what any single data source reveals."
+      proficiency:
+        junior: "Summarizes findings from individual analyses clearly, connects results to the original question, and identifies obvious follow-up analyses to strengthen conclusions."
+        mid: "Integrates data from multiple sources including product metrics, surveys, and user research to form holistic insights. Identifies patterns across datasets and flags contradictions."
+        senior: "Synthesizes complex, multi-source analyses into strategic recommendations, identifies non-obvious connections between data patterns, and frames insights in terms of business impact."
+        staff: "Establishes synthesis frameworks that combine quantitative and qualitative inputs, drives cross-team insight sharing, and ensures insights accumulate into organizational knowledge."
+        principal: "Shapes the company's approach to evidence-based decision-making, ensures insights from analytics, research, and market intelligence are integrated at the strategic level, and builds institutional learning systems."
+      ai_impact:
+        rating: 0.3
+        detail: "AI can surface patterns and summarize data, but synthesizing diverse inputs into novel strategic insights requires creativity, domain expertise, and the judgment to weigh conflicting evidence."

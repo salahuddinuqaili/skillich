@@ -1,0 +1,565 @@
+role:
+  id: technical_architect
+  function: leadership
+  name: "Technical Architect"
+  also_known_as:
+    - Principal Architect
+    - Chief Architect
+    - Enterprise Architect
+    - Solutions Architect (senior)
+    - Distinguished Architect
+    - Staff Architect
+  description: >
+    The Technical Architect is a senior individual contributor who provides architectural leadership
+    across the engineering organization without direct management responsibilities. They set technical
+    direction, govern architecture decisions, and influence engineering outcomes through expertise,
+    mentorship, and the quality of their technical judgment rather than positional authority.
+  ai_impact:
+    level: moderate-high
+    summary: >
+      AI is significantly augmenting the Technical Architect role by automating architectural analysis,
+      generating design options, and evaluating tradeoffs more quickly. AI-powered tools can analyze
+      codebases for architectural patterns, identify technical debt, and suggest migration paths.
+      However, the core of the role requires contextual judgment about organizational capabilities,
+      business constraints, and long-term strategic positioning that AI cannot replicate. Architects
+      who leverage AI effectively will dramatically increase their impact and scope.
+    automating:
+      - Architecture diagram generation and documentation
+      - Codebase analysis for architectural pattern compliance
+      - Dependency mapping and impact analysis
+      - Performance bottleneck identification through automated profiling
+      - Security vulnerability scanning and compliance checking
+    augmenting:
+      - Architecture decision evaluation with AI-assisted tradeoff analysis
+      - Migration planning with AI-powered risk and effort estimation
+      - Technology evaluation with AI-assisted benchmark generation
+      - Technical debt quantification and prioritization
+      - API design review with AI-powered consistency checking
+    preserving:
+      - Making contextual architecture decisions that account for team capabilities
+      - Building consensus across teams on architectural direction
+      - Mentoring engineers on architectural thinking and system design
+      - Navigating the politics of architectural governance
+      - Translating business strategy into technical architecture decisions
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "ThoughtWorks Technology Radar"
+        url: "https://www.thoughtworks.com/radar"
+      - name: "IEEE Software Architecture in Practice"
+        url: "https://www.sei.cmu.edu/our-work/software-architecture/"
+  levels:
+    - id: senior_architect
+      name: "Senior Architect"
+      years_experience: "8-12"
+      summary: >
+        Provides architectural leadership for a product area or major system, making design
+        decisions that affect multiple teams. Evaluates technology options and drives
+        architectural standards within their domain. Mentors senior engineers on architectural
+        thinking and system design. Recognized as the go-to person for architectural questions
+        in their area.
+    - id: staff_architect
+      name: "Staff Architect"
+      years_experience: "12-16"
+      summary: >
+        Sets architectural direction across multiple product areas or a significant platform
+        domain. Drives cross-team architectural decisions and resolves technical conflicts
+        between teams. Creates architectural patterns and frameworks that other teams adopt.
+        Influences engineering culture through the quality of their technical judgment.
+    - id: principal_architect
+      name: "Principal Architect"
+      years_experience: "15-20"
+      summary: >
+        Provides architectural leadership at the organizational level, setting direction that
+        affects the entire engineering organization. Drives the most complex and consequential
+        architectural decisions. Partners with VP and director-level leaders to align
+        architecture with business strategy. Recognized as one of the top technical leaders.
+    - id: distinguished_architect
+      name: "Distinguished Architect"
+      years_experience: "18-25"
+      summary: >
+        Operates at the highest level of architectural leadership, setting direction for the
+        company's most critical systems and platforms. Influences industry practices through
+        thought leadership and open source contributions. Partners directly with C-level
+        executives on technology strategy. Recognized externally as a leading architect.
+    - id: fellow_architect
+      name: "Fellow Architect"
+      years_experience: "20+"
+      summary: >
+        The pinnacle of the individual contributor architecture track, with company-wide
+        influence equivalent to a VP or SVP. Shapes the company's architectural philosophy
+        and long-term technical direction. Recognized as one of the leading architects in the
+        industry. Influences how the broader community thinks about system design and architecture.
+  skills:
+    - id: system_design
+      name: "System Design"
+      category: technical
+      description: >
+        The ability to design large-scale distributed systems that meet functional and
+        non-functional requirements while remaining maintainable, scalable, and evolvable.
+        Encompasses requirements analysis, component design, interaction patterns, and
+        the ability to reason about system behavior at scale.
+      proficiency:
+        junior: >
+          Designs complex systems within a product area, making sound decisions about data
+          models, service boundaries, and interaction patterns. Produces clear design
+          documents that teams can implement effectively. Considers failure modes and
+          scalability requirements in designs.
+        mid: >
+          Designs systems that span multiple product areas and require coordination across
+          teams. Creates reference architectures and design patterns that other engineers
+          adopt. Evaluates system designs produced by others and provides constructive
+          feedback that improves quality.
+        senior: >
+          Designs the most complex systems in the organization, those that cross organizational
+          boundaries, involve novel technical challenges, or have extreme scale requirements.
+          Creates system design approaches and principles that guide the entire engineering
+          organization.
+        staff: >
+          Designs systems at unprecedented scale and complexity. Creates new approaches to
+          system design that address challenges not covered by existing patterns. Defines the
+          company's system design philosophy and mentors the next generation of architects.
+        principal: >
+          Designs systems that push the boundaries of what the industry considers possible.
+          Creates system design principles and patterns that influence how the broader
+          engineering community thinks about distributed systems. Recognized as one of the
+          foremost system designers in the industry.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can generate initial design proposals, evaluate designs against quality attributes,
+          and identify potential issues. AI tools can model system behavior and predict scaling
+          challenges. However, designing systems that account for organizational context, team
+          capabilities, and evolving business needs requires deep human judgment.
+
+    - id: technology_evaluation
+      name: "Technology Evaluation"
+      category: analytical
+      description: >
+        The ability to evaluate technologies, frameworks, and platforms for adoption, making
+        informed recommendations based on technical merit, organizational fit, ecosystem maturity,
+        and strategic alignment. Encompasses proof-of-concept development, risk assessment,
+        and total cost of ownership analysis.
+      proficiency:
+        junior: >
+          Evaluates technologies for adoption within their domain, developing proof-of-concept
+          implementations and assessing fit against requirements. Creates evaluation frameworks
+          that consider technical merit, team capability, and operational impact.
+        mid: >
+          Drives technology evaluation across multiple domains, creating consistent evaluation
+          frameworks and processes. Makes recommendations with significant organizational impact.
+          Evaluates technologies not just for technical merit but for strategic alignment and
+          ecosystem trajectory.
+        senior: >
+          Sets the organization's technology evaluation standards and processes. Evaluates
+          technologies for the most critical and consequential adoption decisions. Creates
+          technology radar processes that keep the organization informed about the evolving
+          technology landscape.
+        staff: >
+          Defines the company's approach to technology evaluation as an organizational capability.
+          Evaluates emerging technologies at a strategic level, identifying which warrant
+          investment before their value becomes widely recognized. Creates evaluation frameworks
+          adopted across the industry.
+        principal: >
+          Evaluates technologies at the frontier of what is possible. Identifies technology
+          shifts before the broader market recognizes them. Shapes how the industry evaluates
+          and adopts new technologies. Recognized as a definitive voice on technology maturity
+          and adoption readiness.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can automate much of technology evaluation through benchmark generation, ecosystem
+          analysis, and compatibility testing. AI tools can compare technologies against requirements
+          and predict ecosystem trajectories. However, evaluating strategic fit and organizational
+          readiness requires human judgment about context-specific factors.
+
+    - id: architecture_governance
+      name: "Architecture Governance"
+      category: leadership
+      description: >
+        The ability to establish and maintain architecture governance processes that ensure
+        consistency, quality, and strategic alignment across the engineering organization without
+        creating bureaucratic bottlenecks or stifling innovation.
+      proficiency:
+        junior: >
+          Participates in architecture governance processes, reviewing designs and providing
+          feedback. Helps maintain architecture decision records and design standards for their
+          domain. Ensures teams within their area follow established architectural patterns.
+        mid: >
+          Establishes architecture governance processes for multiple teams. Creates architecture
+          decision records, design review processes, and quality gates that maintain consistency
+          without slowing teams down. Balances standardization with team autonomy.
+        senior: >
+          Drives architecture governance at the organizational level. Creates governance
+          frameworks that scale across hundreds of engineers while remaining lightweight and
+          enabling. Establishes architecture review boards and decision-making processes that
+          produce high-quality outcomes.
+        staff: >
+          Defines the company's architecture governance philosophy and approach. Creates
+          governance systems that maintain architectural coherence at enterprise scale.
+          Develops governance models that other organizations adopt as best practices.
+        principal: >
+          Creates architecture governance approaches that become industry standards. Balances
+          governance rigor with organizational agility at unprecedented scale. Shapes how the
+          industry thinks about architecture governance in modern engineering organizations.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can automate architectural compliance checking, detect pattern violations, and
+          ensure consistency across codebases. AI-powered tools can maintain living architecture
+          documentation. However, governance requires navigating human dynamics, building
+          consensus, and exercising judgment about exceptions that remain human responsibilities.
+
+    - id: technical_debt_strategy
+      name: "Technical Debt Strategy"
+      category: analytical
+      description: >
+        The ability to identify, quantify, prioritize, and manage technical debt across the
+        engineering organization, making strategic decisions about when to invest in debt
+        reduction versus when to accept debt in service of business objectives.
+      proficiency:
+        junior: >
+          Identifies and categorizes technical debt within their domain. Creates inventories
+          of significant debt items and estimates their impact on development velocity and
+          system quality. Proposes and prioritizes debt reduction initiatives.
+        mid: >
+          Develops technical debt strategies across multiple teams and systems. Creates
+          frameworks for quantifying debt impact in business terms. Balances debt reduction
+          investment with feature delivery. Makes strategic decisions about which debt to
+          address and which to accept.
+        senior: >
+          Drives technical debt strategy at the organizational level. Creates sophisticated
+          approaches to debt quantification that inform executive investment decisions. Develops
+          strategies for managing debt across large, complex codebases. Builds organizational
+          practices that prevent debt accumulation.
+        staff: >
+          Defines the company's approach to technical debt as a strategic concern. Creates debt
+          management frameworks that balance long-term technical health with business velocity.
+          Develops innovative approaches to debt measurement and reduction that become
+          organizational capabilities.
+        principal: >
+          Creates technical debt management approaches that become industry best practices.
+          Develops new frameworks for thinking about technical debt that advance the state of
+          the art. Shapes how the industry quantifies and manages technical debt at scale.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can significantly enhance technical debt management through automated code analysis,
+          debt quantification, and impact estimation. AI tools can identify debt patterns and
+          prioritize reduction efforts. However, making strategic decisions about debt acceptance
+          versus reduction requires understanding business context and organizational priorities.
+
+    - id: api_platform_strategy
+      name: "API and Platform Strategy"
+      category: technical
+      description: >
+        The ability to design and evolve API ecosystems and platform architectures that create
+        leverage, enable ecosystem growth, and provide consistent, developer-friendly interfaces
+        across the organization's technology surface.
+      proficiency:
+        junior: >
+          Designs APIs and platform interfaces within their domain that are consistent, well-
+          documented, and developer-friendly. Applies API design best practices and creates
+          standards that teams in their area follow. Evaluates API designs for usability
+          and consistency.
+        mid: >
+          Develops API strategy across multiple domains, creating consistent design patterns
+          and governance processes. Designs platform architectures that enable cross-team
+          reuse and ecosystem integration. Creates API design guidelines and review processes
+          adopted across teams.
+        senior: >
+          Drives API and platform strategy at the organizational level. Creates API ecosystems
+          that enable external developer engagement and partnership integration. Designs
+          platform architectures that provide leverage across the entire engineering organization.
+        staff: >
+          Defines the company's API and platform philosophy. Creates platform strategies that
+          generate ecosystem network effects and competitive moats. Develops API governance
+          approaches that maintain quality and consistency at enterprise scale.
+        principal: >
+          Creates API and platform strategies that become industry reference implementations.
+          Designs platform architectures at unprecedented scale. Influences how the industry
+          thinks about API design and platform strategy. Shapes API standards and protocols.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can assist with API design consistency checking, documentation generation, and
+          usage pattern analysis. AI tools can suggest API improvements based on developer
+          usage data. However, API and platform strategy requires understanding of ecosystem
+          dynamics and developer experience that depends on human judgment.
+
+    - id: migration_planning
+      name: "Migration Planning"
+      category: technical
+      description: >
+        The ability to plan and execute large-scale technology migrations including platform
+        changes, architecture evolutions, cloud migrations, and system consolidations while
+        minimizing risk, maintaining business continuity, and delivering the expected benefits.
+      proficiency:
+        junior: >
+          Plans and executes migrations within their domain, including database migrations,
+          service extractions, and platform transitions. Creates migration plans with clear
+          milestones, rollback procedures, and risk mitigations. Coordinates migration
+          execution across teams in their area.
+        mid: >
+          Drives complex migrations spanning multiple teams and systems. Creates migration
+          strategies that balance risk with velocity. Develops patterns for strangler fig
+          migrations, parallel running, and phased rollouts that minimize business disruption.
+        senior: >
+          Leads the most complex migrations in the organization, those involving multiple
+          systems, teams, and business-critical services. Creates migration playbooks and
+          frameworks that the organization reuses. Manages executive stakeholder expectations
+          throughout long-running migrations.
+        staff: >
+          Defines the company's approach to large-scale technology migrations. Creates migration
+          strategies for the most consequential platform transitions. Develops innovative
+          migration approaches that minimize risk and maximize value capture throughout
+          the transition.
+        principal: >
+          Plans and executes migrations at unprecedented scale and complexity. Creates migration
+          approaches that become industry reference models. Shapes how the industry thinks about
+          technology transitions and platform evolution at scale.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can significantly assist with migration planning through automated dependency
+          analysis, risk assessment, and effort estimation. AI tools can identify migration
+          patterns and suggest optimal sequencing. However, managing the human dimensions of
+          migration including stakeholder management, risk tolerance, and organizational change
+          requires human leadership.
+
+    - id: performance_architecture
+      name: "Performance Architecture"
+      category: technical
+      description: >
+        The ability to design systems that meet demanding performance requirements including
+        latency, throughput, scalability, and resource efficiency. Encompasses performance
+        modeling, capacity planning, and the ability to diagnose and resolve complex
+        performance issues in distributed systems.
+      proficiency:
+        junior: >
+          Designs systems with sound performance characteristics within their domain. Conducts
+          performance modeling and capacity planning. Diagnoses and resolves complex performance
+          issues. Establishes performance budgets and monitoring for their systems.
+        mid: >
+          Drives performance architecture across multiple systems and teams. Creates performance
+          testing strategies and establishes organizational standards for performance. Designs
+          systems that meet demanding performance requirements at significant scale.
+        senior: >
+          Sets performance architecture standards for the organization. Resolves the most
+          challenging performance issues across complex distributed systems. Creates performance
+          modeling approaches that accurately predict system behavior at scale. Mentors engineers
+          on performance thinking.
+        staff: >
+          Defines the company's performance architecture philosophy and practices. Designs
+          systems that operate at the extreme end of performance requirements. Creates
+          performance engineering capabilities that become organizational strengths.
+        principal: >
+          Pushes the boundaries of what is achievable in system performance. Creates performance
+          architecture approaches that the industry adopts. Recognized as one of the leading
+          experts in high-performance system design. Contributes to the state of the art in
+          performance engineering.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can significantly aid performance architecture through automated profiling, anomaly
+          detection, and predictive capacity modeling. AI tools can identify performance
+          bottlenecks and suggest optimizations. However, designing systems that balance
+          performance with other quality attributes requires human architectural judgment.
+
+    - id: security_architecture
+      name: "Security Architecture"
+      category: technical
+      description: >
+        The ability to design systems with robust security properties, establishing security
+        patterns, threat models, and defense-in-depth strategies that protect the organization's
+        assets and customer data while supporting business agility.
+      proficiency:
+        junior: >
+          Designs systems with sound security properties within their domain. Conducts threat
+          modeling and establishes security patterns for their area. Ensures systems meet
+          security compliance requirements and follows secure design principles.
+        mid: >
+          Drives security architecture across multiple systems and teams. Creates security
+          patterns and frameworks that teams adopt. Designs defense-in-depth strategies that
+          protect critical systems. Partners with security teams to establish organizational
+          security standards.
+        senior: >
+          Sets security architecture standards for the organization. Designs security
+          architectures for the most sensitive and critical systems. Creates threat modeling
+          approaches and security review processes that scale across the engineering organization.
+        staff: >
+          Defines the company's security architecture philosophy and practices. Creates security
+          architecture frameworks that balance protection with agility at enterprise scale.
+          Develops innovative approaches to security design that become organizational capabilities.
+        principal: >
+          Shapes security architecture practices at an industry level. Creates security design
+          approaches that advance the state of the art. Influences security standards and
+          regulations through thought leadership and direct engagement with the security community.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI is transforming security architecture through automated threat detection, vulnerability
+          analysis, and security pattern enforcement. AI tools can continuously assess security
+          posture and identify risks. However, designing security architectures that balance
+          protection with usability and agility requires human judgment about risk tolerance
+          and business context.
+
+    - id: data_architecture
+      name: "Data Architecture"
+      category: technical
+      description: >
+        The ability to design data systems, models, and pipelines that support the organization's
+        analytical and operational needs. Encompasses data modeling, storage strategy, data
+        governance, privacy compliance, and the design of data platforms that enable insight
+        generation and AI/ML capabilities.
+      proficiency:
+        junior: >
+          Designs data architectures within their domain, including data models, storage
+          strategies, and integration patterns. Ensures data quality and consistency within
+          their systems. Considers privacy and compliance requirements in data design.
+        mid: >
+          Drives data architecture across multiple domains, creating consistent data models
+          and governance practices. Designs data platforms that support analytics and machine
+          learning use cases. Establishes data quality standards and monitoring across teams.
+        senior: >
+          Sets data architecture direction for the organization. Designs enterprise data
+          platforms that support diverse analytical and operational needs. Creates data governance
+          frameworks that ensure quality, privacy, and compliance at scale. Drives the
+          organization's data strategy.
+        staff: >
+          Defines the company's data architecture philosophy and practices. Creates data
+          platforms that provide competitive advantage through superior analytics and AI
+          capabilities. Develops innovative approaches to data management that become
+          organizational strengths.
+        principal: >
+          Creates data architecture approaches that advance the state of the art. Designs data
+          systems at unprecedented scale and complexity. Shapes how the industry thinks about
+          data architecture in the context of AI and machine learning. Influences data standards
+          and practices across the community.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI significantly augments data architecture through automated schema optimization,
+          data quality monitoring, and pipeline optimization. AI tools can suggest data models
+          and identify integration opportunities. However, designing data architectures that
+          support diverse organizational needs while maintaining governance requires human
+          strategic judgment.
+
+    - id: developer_experience
+      name: "Developer Experience"
+      category: domain
+      description: >
+        The ability to design and improve the developer experience across the engineering
+        organization, creating tools, platforms, and processes that make engineers more productive,
+        reduce cognitive load, and enable teams to focus on delivering business value rather
+        than fighting infrastructure.
+      proficiency:
+        junior: >
+          Identifies and addresses developer experience pain points within their domain. Designs
+          tools, automation, and workflows that improve developer productivity. Advocates for
+          developer experience as a priority alongside feature delivery.
+        mid: >
+          Drives developer experience improvements across multiple teams. Creates internal
+          platforms and tools that significantly improve engineering productivity. Establishes
+          developer experience metrics and uses them to prioritize investment.
+        senior: >
+          Sets the organization's developer experience strategy. Designs internal developer
+          platforms that provide significant productivity gains. Creates developer experience
+          standards and practices that the entire engineering organization benefits from.
+        staff: >
+          Defines the company's developer experience philosophy and approach. Creates internal
+          platforms that become competitive advantages in engineering productivity. Develops
+          innovative approaches to developer experience that become industry models.
+        principal: >
+          Creates developer experience innovations that reshape how engineers work across the
+          industry. Designs internal platforms at unprecedented scale. Contributes open source
+          tools and frameworks that improve developer experience globally. Shapes how the
+          industry thinks about developer productivity.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI is dramatically transforming developer experience through AI-powered coding
+          assistants, automated testing, and intelligent IDE features. AI tools can automate
+          routine development tasks and reduce cognitive load. However, designing holistic
+          developer experiences that account for team workflows and organizational needs
+          requires human understanding of how engineers work.
+
+    - id: technical_mentorship
+      name: "Technical Mentorship"
+      category: leadership
+      description: >
+        The ability to develop the architectural and system design capabilities of other engineers
+        through mentorship, teaching, and the creation of learning resources. Encompasses one-on-
+        one mentoring, design review feedback, and building an organization's overall technical
+        judgment and maturity.
+      proficiency:
+        junior: >
+          Mentors senior engineers on architectural thinking and system design. Provides
+          constructive feedback in design reviews that helps engineers grow. Creates learning
+          resources and documentation that help teams make better architectural decisions.
+        mid: >
+          Develops the architectural capabilities of engineers across multiple teams. Creates
+          mentorship programs and learning curricula for system design. Establishes design review
+          practices that serve as teaching moments. Builds a community of practice around
+          architectural excellence.
+        senior: >
+          Drives technical mentorship at the organizational level. Develops the next generation
+          of architects and technical leaders. Creates programs that systematically improve the
+          architectural judgment of engineers across the organization.
+        staff: >
+          Defines the organization's approach to developing architectural talent. Creates
+          mentorship and development programs that produce exceptional architects. Builds a
+          culture of continuous technical learning and growth that becomes an organizational
+          strength.
+        principal: >
+          Shapes how the industry develops architectural talent. Creates learning resources and
+          programs that influence technical education globally. Mentors architects who go on to
+          be the leading technical leaders at other organizations. Recognized as one of the most
+          effective technical mentors in the industry.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can assist with creating learning materials, providing automated feedback on designs,
+          and personalizing learning paths. However, technical mentorship depends on human
+          relationships, contextual feedback, and the ability to develop judgment through shared
+          experience, aspects that remain fundamentally human.
+
+    - id: architecture_communication
+      name: "Architecture Communication"
+      category: communication
+      description: >
+        The ability to communicate architectural decisions, strategies, and tradeoffs effectively
+        to diverse audiences ranging from individual engineers to executive leadership. Encompasses
+        technical writing, presentation skills, and the ability to build consensus around
+        architectural direction.
+      proficiency:
+        junior: >
+          Communicates architectural decisions clearly through well-written design documents and
+          presentations. Explains complex technical concepts in accessible terms. Builds consensus
+          within their domain by articulating the reasoning behind architectural choices.
+        mid: >
+          Communicates architectural direction across multiple teams, adapting messaging for
+          different audiences. Creates compelling narratives about architectural strategy that
+          build organizational alignment. Presents to executive audiences with clarity and
+          confidence.
+        senior: >
+          Sets the standard for architecture communication across the organization. Creates
+          compelling architectural narratives that influence executive investment decisions.
+          Communicates complex architectural strategies in ways that build broad organizational
+          support.
+        staff: >
+          Defines how the organization communicates about architecture. Creates communication
+          frameworks and templates that other architects adopt. Communicates architectural
+          vision to the board and external stakeholders with authority and clarity.
+        principal: >
+          Communicates architectural ideas with mastery across all audiences. Creates
+          architectural narratives that influence the industry. Publishes and speaks on
+          architecture topics that shape how the community thinks about system design.
+          Recognized as one of the most effective architecture communicators in the industry.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can help generate architecture diagrams, draft documentation, and prepare
+          presentations. AI-powered tools can ensure consistency in architecture communication.
+          However, building consensus around architectural decisions and inspiring teams to
+          embrace architectural change requires human persuasion and relationship skills.

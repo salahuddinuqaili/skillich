@@ -1,0 +1,722 @@
+role:
+  id: devops_sre
+  function: engineering
+  name: "DevOps / Site Reliability Engineer"
+  also_known_as:
+    - "Site Reliability Engineer"
+    - "SRE"
+    - "DevOps Engineer"
+    - "Platform Engineer"
+    - "Infrastructure Engineer"
+    - "Production Engineer"
+    - "Cloud Reliability Engineer"
+    - "Systems Engineer"
+  description: >
+    Bridges software engineering and operations by applying engineering practices
+    to infrastructure, deployment, and production reliability. Responsible for
+    building and maintaining CI/CD pipelines, managing cloud infrastructure,
+    defining and enforcing service level objectives, responding to incidents,
+    and reducing operational toil through automation. Works at the intersection
+    of development velocity and system reliability, ensuring that services are
+    scalable, observable, resilient, and cost-effective. Increasingly leverages
+    AI-assisted tooling for anomaly detection, auto-remediation, and
+    intelligent capacity planning.
+
+  ai_impact:
+    level: "moderate-high"
+    summary: >
+      AI is transforming DevOps and SRE work by automating routine operational
+      tasks such as log analysis, alert correlation, runbook execution, and
+      configuration generation. Tools like GitHub Copilot, AWS CodeWhisperer,
+      and AIOps platforms can draft Terraform modules, generate pipeline
+      configurations, and identify anomalous patterns faster than manual review.
+      However, the judgment-heavy aspects of the role -- incident command during
+      novel outages, architectural trade-off decisions, organizational
+      reliability culture, and cross-team negotiation of error budgets -- remain
+      firmly human. The net effect is that junior toil-heavy tasks shrink while
+      senior strategic responsibilities expand.
+    automating:
+      - "Boilerplate infrastructure-as-code generation"
+      - "Log pattern recognition and alert correlation"
+      - "Runbook execution for known failure modes"
+      - "Dependency vulnerability scanning and patching"
+      - "Cost anomaly detection and right-sizing recommendations"
+      - "Basic deployment rollback decisions based on metrics"
+    augmenting:
+      - "Incident root-cause analysis with AI-suggested hypotheses"
+      - "Capacity forecasting using ML-based demand modeling"
+      - "SLO threshold tuning informed by historical error budgets"
+      - "Chaos experiment design guided by topology analysis"
+      - "Pipeline optimization recommendations"
+      - "Security policy generation and compliance auditing"
+    preserving:
+      - "Incident command and cross-team coordination during novel outages"
+      - "Architectural decisions on reliability vs. velocity trade-offs"
+      - "Organizational culture building around production ownership"
+      - "Error budget negotiation with product stakeholders"
+      - "Mentorship and team development"
+      - "Ethical judgment in automated remediation boundaries"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Google SRE Book"
+        url: "https://sre.google/sre-book/table-of-contents/"
+      - name: "Google SRE Workbook"
+        url: "https://sre.google/workbook/table-of-contents/"
+      - name: "DORA State of DevOps Reports"
+        url: "https://dora.dev/research/"
+      - name: "Spread SRE Competency Matrix"
+        url: "https://roadmap.sh/devops"
+      - name: "The Phoenix Project"
+        url: "https://itrevolution.com/product/the-phoenix-project/"
+      - name: "Accelerate (Forsgren, Humble, Kim)"
+        url: "https://itrevolution.com/product/accelerate/"
+
+  levels:
+    - id: junior
+      name: "Junior DevOps / SRE"
+      years_experience: "0-2"
+      summary: >
+        Learns foundational infrastructure concepts, follows established
+        runbooks, and contributes to existing CI/CD pipelines under supervision.
+        Handles well-documented on-call incidents by following playbooks and
+        escalating when needed. Builds familiarity with cloud consoles,
+        containerization basics, and monitoring dashboards.
+
+    - id: mid
+      name: "Mid-Level DevOps / SRE"
+      years_experience: "2-5"
+      summary: >
+        Independently designs and maintains CI/CD pipelines and infrastructure
+        modules. Participates in on-call rotations, drives post-incident
+        reviews, and contributes to SLO definitions. Automates repetitive
+        operational work and begins mentoring junior engineers on tooling
+        and processes.
+
+    - id: senior
+      name: "Senior DevOps / SRE"
+      years_experience: "5-8"
+      summary: >
+        Owns reliability for critical production services end to end. Designs
+        observability strategies, leads incident response for complex outages,
+        and architects infrastructure for scale and resilience. Drives adoption
+        of SRE practices across multiple teams and shapes the organization's
+        deployment and reliability standards.
+
+    - id: staff
+      name: "Staff DevOps / SRE"
+      years_experience: "8-12"
+      summary: >
+        Sets technical direction for platform and reliability engineering across
+        the organization. Defines error budget policies, leads cross-functional
+        reliability initiatives, and architects multi-region or multi-cloud
+        strategies. Mentors senior engineers, influences vendor and tooling
+        decisions, and bridges the gap between engineering leadership and
+        operational realities.
+
+    - id: principal
+      name: "Principal DevOps / SRE"
+      years_experience: "12+"
+      summary: >
+        Shapes the company's reliability philosophy and engineering culture at
+        the executive level. Drives industry-wide best practices, publishes
+        thought leadership, and makes strategic decisions about build-vs-buy
+        for core infrastructure. Accountable for organizational reliability
+        posture, disaster recovery strategy, and the long-term evolution of
+        the platform engineering function.
+
+  skills:
+    - id: ci_cd
+      name: "CI/CD Pipeline Design"
+      category: technical
+      description: >
+        Design, implement, and optimize continuous integration and continuous
+        delivery pipelines that enable fast, safe, and repeatable software
+        releases. Encompasses build systems, test automation integration,
+        artifact management, release gating, and pipeline-as-code practices
+        aligned with DORA deployment frequency and lead-time metrics.
+      proficiency:
+        junior: >
+          Understands basic CI/CD concepts and can modify existing pipeline
+          configurations. Runs builds, reads logs to diagnose simple failures,
+          and follows established branching and merge strategies.
+        mid: >
+          Designs and implements multi-stage pipelines with automated testing,
+          artifact publishing, and environment promotion. Configures pipeline
+          triggers, caching strategies, and parallelization for faster feedback.
+        senior: >
+          Architects organization-wide CI/CD standards including shared pipeline
+          libraries, reusable templates, and release governance. Optimizes
+          pipeline performance at scale and integrates advanced gating such as
+          security scanning, compliance checks, and progressive rollouts.
+        staff: >
+          Defines the strategic CI/CD platform vision across the company,
+          evaluating build systems and orchestrators for long-term
+          maintainability. Drives adoption of trunk-based development,
+          continuous deployment, and measured delivery performance aligned with
+          DORA elite-performer benchmarks.
+        principal: >
+          Influences industry practices in continuous delivery and shapes the
+          company's release engineering philosophy. Makes build-vs-buy decisions
+          for CI/CD infrastructure, sets organizational policies on deployment
+          risk tolerance, and mentors staff engineers on pipeline architecture.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI tools can generate pipeline configurations from natural-language
+          descriptions, suggest optimization opportunities, and auto-fix common
+          build failures. However, designing pipeline architectures that balance
+          speed, safety, and organizational workflow requires human judgment
+          about team structure and risk appetite.
+
+    - id: containerization
+      name: "Containerization & Orchestration"
+      category: technical
+      description: >
+        Build, manage, and orchestrate containerized workloads using Docker,
+        Kubernetes, and related ecosystem tools. Covers image optimization,
+        container security, cluster management, service meshes, auto-scaling
+        policies, and workload scheduling for production reliability and
+        resource efficiency.
+      proficiency:
+        junior: >
+          Writes basic Dockerfiles, builds and runs containers locally, and
+          deploys to existing Kubernetes clusters using provided manifests.
+          Understands pods, services, and deployments at a conceptual level.
+        mid: >
+          Designs multi-container applications with proper networking, storage,
+          and resource limits. Writes Helm charts or Kustomize overlays,
+          configures health checks, and manages rolling updates in Kubernetes
+          production environments.
+        senior: >
+          Architects Kubernetes cluster strategies including namespace
+          isolation, RBAC policies, network policies, and multi-tenancy.
+          Implements service meshes, custom operators, and advanced scheduling
+          constraints for reliability and performance.
+        staff: >
+          Defines the container platform strategy across the organization,
+          evaluating managed vs. self-hosted Kubernetes, multi-cluster
+          federation, and service mesh architectures. Drives standardization of
+          base images, security scanning policies, and runtime enforcement.
+        principal: >
+          Shapes the company's compute platform vision, making strategic
+          decisions about container orchestration evolution, serverless
+          integration, and workload placement across hybrid environments.
+          Contributes to open-source container ecosystem projects and
+          influences vendor roadmaps.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can generate Dockerfiles, suggest Kubernetes manifest
+          configurations, and identify resource optimization opportunities.
+          Architectural decisions about cluster topology, multi-tenancy
+          boundaries, and platform evolution require deep understanding of
+          organizational needs and operational trade-offs that remain human-led.
+
+    - id: infrastructure_as_code
+      name: "Infrastructure as Code"
+      category: technical
+      description: >
+        Define, provision, and manage cloud and on-premises infrastructure
+        through declarative or imperative code using tools such as Terraform,
+        Pulumi, CloudFormation, or Crossplane. Encompasses module design, state
+        management, drift detection, policy-as-code, and infrastructure testing
+        to ensure reproducible, auditable, and version-controlled environments.
+      proficiency:
+        junior: >
+          Writes simple Terraform resources or CloudFormation templates by
+          following existing patterns. Understands state files, plan/apply
+          workflows, and basic variable parameterization for single-environment
+          deployments.
+        mid: >
+          Designs reusable IaC modules with proper input validation, output
+          contracts, and documentation. Implements remote state backends,
+          workspace strategies, and integrates IaC into CI/CD pipelines with
+          automated plan reviews.
+        senior: >
+          Architects IaC module libraries and provider abstractions that serve
+          the entire engineering organization. Implements policy-as-code with
+          OPA or Sentinel, designs state management for large-scale
+          multi-account environments, and establishes infrastructure testing
+          strategies using tools like Terratest.
+        staff: >
+          Defines the organizational IaC strategy including tooling choices,
+          module registry governance, and migration paths between providers.
+          Drives adoption of GitOps workflows, evaluates emerging tools like
+          Pulumi and Crossplane, and establishes patterns for managing hundreds
+          of interconnected infrastructure modules.
+        principal: >
+          Sets the technical vision for how the company provisions and manages
+          all infrastructure, balancing declarative purity with operational
+          pragmatism. Makes strategic vendor and tooling decisions, influences
+          open-source IaC projects, and guides the industry on infrastructure
+          management at scale.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI excels at generating boilerplate IaC modules, converting between
+          providers, and suggesting security best practices for resource
+          configurations. The code-like nature of IaC makes it highly amenable
+          to AI assistance. Module architecture design, state management
+          strategy, and organizational governance still require experienced
+          human judgment.
+
+    - id: monitoring_observability
+      name: "Monitoring & Observability"
+      category: technical
+      description: >
+        Design and implement comprehensive observability systems encompassing
+        metrics, logs, and traces to provide deep visibility into system
+        behavior. Covers instrumentation strategy, dashboard design, alerting
+        philosophy, distributed tracing, and the cultural practices that turn
+        telemetry data into actionable operational intelligence.
+      proficiency:
+        junior: >
+          Configures basic monitoring agents and reads existing dashboards to
+          understand system health. Sets up simple threshold-based alerts and
+          learns to navigate log aggregation tools to troubleshoot reported
+          issues.
+        mid: >
+          Designs monitoring coverage for services including custom metrics
+          instrumentation, structured logging, and meaningful alerting with
+          appropriate severity levels. Implements distributed tracing and builds
+          dashboards that surface actionable signals for on-call engineers.
+        senior: >
+          Architects the organization's observability platform including tool
+          selection, data pipeline design, and retention strategies. Defines
+          alerting philosophy that minimizes noise while catching real issues,
+          implements SLI-based monitoring, and drives adoption of observability
+          best practices across engineering teams.
+        staff: >
+          Defines the strategic observability vision spanning multiple products
+          and platforms. Evaluates and integrates AIOps capabilities for anomaly
+          detection and alert correlation. Drives cost optimization of
+          telemetry data pipelines and establishes observability standards that
+          scale with organizational growth.
+        principal: >
+          Shapes the company's observability culture and philosophy at the
+          executive level. Makes strategic build-vs-buy decisions for
+          observability infrastructure, drives industry thought leadership on
+          modern observability practices, and ensures observability investment
+          aligns with business reliability requirements.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI significantly enhances anomaly detection, log pattern recognition,
+          and alert correlation, reducing mean time to detection. Automated
+          dashboarding and metric suggestion are improving rapidly. However,
+          designing the overall observability strategy, choosing what to
+          instrument, and defining meaningful SLIs requires deep domain
+          knowledge and human judgment about system behavior.
+
+    - id: incident_response
+      name: "Incident Response & Management"
+      category: domain
+      description: >
+        Lead and participate in the detection, triage, mitigation, and
+        resolution of production incidents. Encompasses incident command
+        structures, communication protocols, escalation procedures,
+        post-incident reviews, and the organizational practices that build
+        a learning culture around failures, aligned with the Google SRE
+        approach to blameless postmortems.
+      proficiency:
+        junior: >
+          Follows incident runbooks and escalation procedures when paged.
+          Documents timeline entries during incidents, communicates status
+          updates to designated channels, and participates in post-incident
+          reviews as an observer to build pattern recognition.
+        mid: >
+          Acts as incident commander for moderate-severity incidents, triaging
+          effectively and coordinating responders. Writes thorough post-incident
+          reviews with actionable follow-up items and drives remediation work
+          to completion. Identifies recurring incident patterns.
+        senior: >
+          Leads incident response for critical outages affecting major services,
+          coordinating across multiple teams and managing executive
+          communication. Designs incident management processes, trains teams
+          on incident command, and drives systemic improvements from
+          post-incident analysis.
+        staff: >
+          Defines the organization's incident management framework including
+          severity levels, escalation matrices, communication templates, and
+          review processes. Identifies cross-cutting reliability risks from
+          incident trend analysis and drives architectural changes to eliminate
+          classes of incidents.
+        principal: >
+          Shapes the company's incident response culture and philosophy,
+          ensuring incidents are treated as learning opportunities rather than
+          blame events. Advises executive leadership during critical incidents,
+          drives industry best practices in incident management, and makes
+          strategic investments in response tooling and readiness programs.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can assist with initial log correlation, suggest potential root
+          causes based on historical incidents, and auto-generate postmortem
+          drafts. However, incident command during novel outages demands rapid
+          human judgment, cross-team coordination, real-time communication,
+          and contextual decision-making under pressure that AI cannot
+          reliably replicate.
+
+    - id: slo_sli_sla
+      name: "SLOs, SLIs, and Error Budgets"
+      category: domain
+      description: >
+        Define, measure, and manage service level indicators, service level
+        objectives, and error budgets to quantify and govern system reliability.
+        Encompasses SLI selection methodology, SLO target setting, error budget
+        policies, burn-rate alerting, and the organizational negotiation
+        required to balance reliability investment against feature velocity,
+        as described in the Google SRE framework.
+      proficiency:
+        junior: >
+          Understands the conceptual difference between SLIs, SLOs, and SLAs.
+          Reads error budget dashboards and can explain current reliability
+          status for services they support. Assists in collecting data needed
+          for SLO decisions.
+        mid: >
+          Defines meaningful SLIs for services they own, proposes appropriate
+          SLO targets based on user expectations, and implements error budget
+          tracking dashboards. Configures multi-window burn-rate alerts and
+          participates in error budget policy discussions with product teams.
+        senior: >
+          Architects the SLO framework across multiple services, selecting
+          SLIs that accurately reflect user experience. Designs error budget
+          policies that drive engineering prioritization and leads negotiations
+          between product and engineering on reliability targets and
+          consequences of budget exhaustion.
+        staff: >
+          Defines the organizational SLO strategy, establishing standards for
+          SLI selection, target-setting methodology, and error budget
+          governance. Drives alignment between business KPIs and reliability
+          metrics, and ensures SLO practices scale across dozens of teams
+          and hundreds of services.
+        principal: >
+          Champions the SLO-driven reliability culture at the executive level,
+          connecting error budgets to business outcomes and investment
+          decisions. Publishes thought leadership on reliability measurement,
+          influences industry standards for SLO practices, and advises
+          leadership on acceptable risk thresholds for the business.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can analyze historical data to suggest SLO targets, detect error
+          budget burn-rate anomalies, and generate SLI candidates from service
+          telemetry. The core challenge of SLO work -- negotiating reliability
+          targets with product stakeholders, setting organizational error
+          budget policies, and balancing competing priorities -- is inherently
+          a human and organizational activity.
+
+    - id: capacity_planning
+      name: "Capacity Planning & Cost Optimization"
+      category: analytical
+      description: >
+        Forecast infrastructure demand, plan capacity to meet growth
+        projections, and optimize cloud spending to maximize value. Encompasses
+        demand modeling, resource right-sizing, reserved instance strategy,
+        spot/preemptible usage, FinOps practices, and the analytical rigor
+        needed to balance performance headroom against cost efficiency.
+      proficiency:
+        junior: >
+          Reads cost dashboards and identifies obvious waste such as idle
+          resources or oversized instances. Follows established right-sizing
+          recommendations and understands basic cloud pricing models including
+          on-demand, reserved, and spot tiers.
+        mid: >
+          Performs capacity analysis using historical usage data and growth
+          projections. Implements auto-scaling policies, recommends reserved
+          instance purchases, and produces monthly cost reports with
+          optimization recommendations for their team's infrastructure.
+        senior: >
+          Designs capacity planning processes for critical services, building
+          demand models that account for traffic patterns, seasonal variation,
+          and business growth. Leads FinOps initiatives, implements cost
+          allocation tagging strategies, and architects infrastructure for
+          cost-efficient scaling.
+        staff: >
+          Defines the organizational FinOps strategy, establishing cost
+          governance policies, chargeback models, and optimization targets.
+          Evaluates multi-cloud cost arbitrage opportunities, drives adoption
+          of commitment-based pricing, and builds capacity planning into the
+          product development lifecycle.
+        principal: >
+          Sets the company's infrastructure economics strategy, advising
+          executive leadership on cloud spend trajectory and optimization
+          levers. Negotiates enterprise-level cloud contracts, makes strategic
+          decisions about data center vs. cloud placement, and drives the
+          industry conversation on sustainable infrastructure economics.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI-powered demand forecasting and cost optimization tools are
+          maturing rapidly, offering automated right-sizing, anomaly detection
+          in spending, and predictive capacity models. Strategic decisions
+          about commitment purchases, multi-cloud placement, vendor
+          negotiation, and aligning capacity investment with business strategy
+          still require experienced human judgment and organizational context.
+
+    - id: automation_toil
+      name: "Automation & Toil Reduction"
+      category: technical
+      description: >
+        Identify, measure, and systematically eliminate operational toil through
+        automation, self-service tooling, and process improvement. As defined
+        by Google SRE, toil is manual, repetitive, automatable work that scales
+        linearly with service growth. Encompasses scripting, workflow
+        orchestration, self-service platform engineering, and the discipline
+        of tracking toil budgets to keep engineering teams focused on
+        high-value work.
+      proficiency:
+        junior: >
+          Writes basic automation scripts for repetitive tasks such as log
+          rotation, certificate renewal, or environment cleanup. Identifies
+          personal toil and documents manual procedures as candidates for
+          future automation.
+        mid: >
+          Designs and implements automation workflows for common operational
+          tasks using tools like Ansible, Python, or workflow orchestration
+          platforms. Measures toil reduction impact, builds self-service
+          interfaces for developer teams, and prioritizes automation
+          opportunities by frequency and effort.
+        senior: >
+          Architects automation platforms and self-service portals that
+          empower development teams to perform operational tasks independently.
+          Establishes toil tracking practices, sets team-level toil budgets
+          aligned with the Google SRE 50% cap, and drives cultural change
+          around automation-first thinking.
+        staff: >
+          Defines the organizational automation strategy, evaluating platform
+          engineering investments and internal developer experience tooling.
+          Drives adoption of self-service infrastructure across the company
+          and ensures that automation investments are prioritized based on
+          organizational toil analysis and strategic impact.
+        principal: >
+          Shapes the company's philosophy on developer productivity and
+          operational efficiency at the executive level. Makes strategic
+          investments in internal platform engineering, drives industry thought
+          leadership on toil reduction, and ensures that automation culture
+          is embedded in engineering hiring, training, and performance
+          evaluation.
+      ai_impact:
+        rating: 0.75
+        detail: >
+          AI is a natural accelerator for toil reduction, capable of generating
+          automation scripts, converting runbooks into executable workflows,
+          and suggesting automation candidates from operational patterns.
+          This is one of the highest AI-impact areas in SRE. Strategic
+          decisions about which toil to automate, platform architecture
+          choices, and organizational change management remain human-driven.
+
+    - id: deployment_strategies
+      name: "Deployment Strategies"
+      category: technical
+      description: >
+        Design and implement deployment methodologies that minimize risk and
+        maximize release velocity. Encompasses blue-green deployments, canary
+        releases, rolling updates, feature flags, traffic shifting, and
+        automated rollback mechanisms. Aligns with DORA change failure rate
+        and deployment frequency metrics to achieve continuous delivery with
+        confidence.
+      proficiency:
+        junior: >
+          Understands the concepts behind common deployment strategies such as
+          blue-green, canary, and rolling updates. Executes deployments using
+          established procedures and monitors basic health checks during
+          rollouts.
+        mid: >
+          Implements blue-green and canary deployment pipelines with automated
+          health verification and rollback triggers. Configures feature flags
+          for progressive rollouts and designs deployment procedures that
+          minimize user-facing impact during releases.
+        senior: >
+          Architects deployment strategies for complex distributed systems,
+          designing traffic-shifting policies, automated canary analysis, and
+          multi-region release sequencing. Establishes deployment standards
+          that achieve elite DORA metrics for change failure rate and
+          recovery time.
+        staff: >
+          Defines the organizational deployment strategy, evaluating
+          progressive delivery platforms, feature management systems, and
+          release orchestration tools. Drives adoption of automated canary
+          analysis and establishes deployment governance that balances release
+          velocity with risk management across the company.
+        principal: >
+          Sets the company's release engineering philosophy, making strategic
+          decisions about deployment infrastructure and progressive delivery
+          platforms. Drives industry best practices for safe continuous
+          deployment at scale and advises executive leadership on deployment
+          risk tolerance and release cadence strategy.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can automate canary analysis by comparing metrics between
+          deployment cohorts, suggest rollback decisions based on error
+          patterns, and optimize traffic-shifting schedules. Designing the
+          overall deployment strategy, deciding risk tolerance for different
+          services, and architecting multi-region release sequencing require
+          human judgment about business impact and system dependencies.
+
+    - id: cloud_platforms
+      name: "Cloud Platform Management"
+      category: technical
+      description: >
+        Design, operate, and optimize infrastructure across major cloud
+        providers including AWS, Azure, and Google Cloud Platform. Encompasses
+        account and project structure, networking architecture, identity and
+        access management, managed service selection, multi-cloud strategy,
+        and the operational practices needed to run reliable and
+        cost-effective workloads in public cloud environments.
+      proficiency:
+        junior: >
+          Navigates cloud provider consoles and CLI tools to manage basic
+          resources. Understands core services such as compute, storage,
+          networking, and managed databases. Follows established cloud
+          architecture patterns and security guidelines for their team's
+          resources.
+        mid: >
+          Designs cloud architectures for production workloads, selecting
+          appropriate managed services and configuring networking, IAM, and
+          security groups. Implements multi-environment strategies and manages
+          cloud resources through infrastructure-as-code with proper access
+          controls and auditing.
+        senior: >
+          Architects cloud infrastructure for scale, resilience, and
+          cost-efficiency across multiple accounts or projects. Designs
+          networking topologies including VPCs, transit gateways, and
+          hybrid connectivity. Evaluates and adopts managed services
+          strategically, balancing operational simplicity against vendor
+          lock-in risk.
+        staff: >
+          Defines the organizational cloud strategy including provider
+          selection, account structure, landing zone architecture, and
+          governance frameworks. Evaluates multi-cloud approaches, drives
+          cloud center-of-excellence practices, and establishes architectural
+          standards that enable teams to self-serve while maintaining
+          security and cost controls.
+        principal: >
+          Shapes the company's cloud infrastructure vision at the executive
+          level, making strategic decisions about provider relationships,
+          hybrid cloud positioning, and data sovereignty compliance.
+          Negotiates enterprise cloud agreements, drives industry thought
+          leadership on cloud architecture, and ensures infrastructure
+          strategy aligns with long-term business objectives.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI assistants can generate cloud resource configurations, suggest
+          architecture patterns for common use cases, and identify security
+          misconfigurations. Cloud providers increasingly offer AI-powered
+          advisory services for optimization. Strategic decisions about
+          provider selection, multi-cloud positioning, and enterprise
+          architecture trade-offs require organizational context and business
+          judgment that remains human-driven.
+
+    - id: reliability_engineering
+      name: "Reliability & Chaos Engineering"
+      category: domain
+      description: >
+        Proactively improve system resilience through chaos engineering,
+        failure injection, game days, and systematic reliability improvement
+        programs. Encompasses fault tolerance design, disaster recovery
+        planning, chaos experiment methodology, blast radius analysis, and
+        the engineering culture needed to embrace controlled failure as a
+        path to stronger systems, drawing on principles from Netflix's
+        Chaos Monkey and the broader chaos engineering discipline.
+      proficiency:
+        junior: >
+          Understands basic fault tolerance concepts such as redundancy,
+          retries, and circuit breakers. Participates in game days as an
+          observer, documents system behavior during failure scenarios, and
+          learns to identify single points of failure in architectures.
+        mid: >
+          Designs and executes chaos experiments for services they own,
+          including network partition simulation, dependency failure injection,
+          and load spike testing. Implements circuit breakers, retry policies,
+          and fallback mechanisms. Documents resilience gaps and drives
+          remediation work.
+        senior: >
+          Architects chaos engineering programs for critical production
+          systems, designing experiment frameworks with proper blast radius
+          controls and abort conditions. Leads game days across multiple
+          teams, drives disaster recovery testing, and establishes
+          reliability improvement roadmaps based on systematic failure
+          analysis.
+        staff: >
+          Defines the organizational chaos engineering strategy, selecting
+          tools, establishing safety protocols, and building chaos experiments
+          into the software delivery lifecycle. Drives reliability standards
+          across the company and ensures that disaster recovery capabilities
+          meet business continuity requirements for all critical systems.
+        principal: >
+          Champions a culture of proactive reliability engineering at the
+          executive level, making strategic investments in resilience
+          infrastructure and chaos engineering platforms. Drives industry
+          thought leadership on reliability practices, advises leadership
+          on acceptable risk levels, and ensures the company's reliability
+          posture aligns with business criticality and customer expectations.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can assist in identifying potential failure points through
+          topology analysis, suggesting chaos experiment designs based on
+          architectural patterns, and analyzing experiment results for
+          unexpected correlations. The core of reliability engineering --
+          deciding what to test, setting organizational risk appetite, leading
+          game days, and driving cultural adoption of failure-embracing
+          practices -- requires human leadership, judgment, and
+          organizational influence.
+
+    - id: security_automation
+      name: "Security Automation & Compliance"
+      category: technical
+      description: >
+        Integrate security practices into the DevOps lifecycle through
+        automated scanning, policy enforcement, compliance-as-code, and
+        secure supply chain management. Encompasses SAST/DAST integration,
+        container image scanning, secrets management, infrastructure security
+        posture management, and the DevSecOps practices that shift security
+        left without sacrificing delivery velocity.
+      proficiency:
+        junior: >
+          Follows secure development practices such as secrets management
+          and least-privilege access. Runs security scanning tools in CI
+          pipelines and triages findings with guidance. Understands basic
+          compliance requirements relevant to their team's services.
+        mid: >
+          Integrates SAST, DAST, and dependency scanning into CI/CD pipelines
+          with appropriate gating policies. Implements secrets management
+          solutions, configures container image scanning, and remediates
+          security findings within established SLAs. Assists in audit
+          preparation and evidence collection.
+        senior: >
+          Architects the DevSecOps pipeline including tool selection,
+          policy-as-code frameworks, and automated compliance evidence
+          generation. Designs security guardrails that enable developer
+          self-service while enforcing organizational security standards.
+          Leads security incident response and drives secure supply chain
+          practices.
+        staff: >
+          Defines the organizational DevSecOps strategy, establishing security
+          automation standards, compliance frameworks, and risk assessment
+          methodologies. Drives adoption of zero-trust infrastructure
+          patterns, evaluates security tooling investments, and ensures that
+          security practices scale with engineering team growth without
+          becoming a velocity bottleneck.
+        principal: >
+          Shapes the company's security automation philosophy at the executive
+          level, aligning security investment with business risk tolerance
+          and regulatory requirements. Drives industry best practices in
+          DevSecOps, advises leadership on emerging threat landscapes, and
+          makes strategic decisions about security infrastructure that
+          balance protection, compliance, and engineering productivity.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI is rapidly improving vulnerability detection, code security
+          analysis, and compliance policy generation. Automated security
+          scanning tools increasingly use ML to reduce false positives and
+          prioritize findings by exploitability. Strategic decisions about
+          security architecture, organizational risk tolerance, regulatory
+          interpretation, and the balance between security controls and
+          developer productivity remain areas requiring experienced human
+          judgment and accountability.

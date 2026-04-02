@@ -1,0 +1,479 @@
+role:
+  id: analytics_engineer
+  function: data_analytics
+  name: "Analytics Engineer"
+  also_known_as:
+    - "Analytics Developer"
+    - "Data Transformation Engineer"
+    - "BI Engineer"
+    - "Data Modeler"
+    - "Metrics Engineer"
+  description: >
+    Builds and maintains the transformation layer between raw data and analytical
+    consumption, creating clean, tested, and documented data models that analysts and
+    business users can trust. Combines software engineering best practices with deep
+    understanding of data modeling and business metrics to create reliable analytical
+    infrastructure.
+  ai_impact:
+    level: moderate
+    summary: >
+      AI is accelerating analytics engineering by generating SQL transformations, suggesting
+      data model designs, and automating documentation and testing. Tools like AI-powered
+      dbt assistants can scaffold models and write tests from natural language descriptions.
+      However, understanding business semantics, designing scalable data architectures,
+      and ensuring data quality and governance at the organizational level remain essential
+      human responsibilities that grow in importance as data complexity increases.
+    automating:
+      - "Boilerplate SQL transformation generation"
+      - "Standard data quality test creation"
+      - "Schema documentation and column descriptions"
+      - "Basic data model scaffolding from source schemas"
+      - "Routine dependency and lineage mapping"
+    augmenting:
+      - "AI-assisted data model design and optimization"
+      - "Intelligent data quality monitoring and anomaly detection"
+      - "Automated impact analysis for schema changes"
+      - "Natural language to transformation code generation"
+    preserving:
+      - "Business logic translation and metric definition"
+      - "Cross-team data contract negotiation"
+      - "Data architecture and modeling strategy"
+      - "Organizational data quality culture and governance"
+      - "Stakeholder collaboration on evolving business requirements"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "dbt Labs - Analytics Engineering Guide"
+        url: "https://www.getdbt.com/analytics-engineering/"
+      - name: "Atlan - State of Data Engineering"
+        url: "https://atlan.com/state-of-data-engineering/"
+
+  levels:
+    - id: junior
+      name: "Junior Analytics Engineer"
+      years_experience: "0-2"
+      summary: >
+        Builds and tests basic data transformations under guidance, learns the organization's
+        data warehouse and modeling conventions, and contributes to documentation and
+        data quality testing.
+    - id: mid
+      name: "Analytics Engineer"
+      years_experience: "2-4"
+      summary: >
+        Independently designs and builds data models for analytical use cases, writes
+        comprehensive tests and documentation, and collaborates with analysts and
+        stakeholders to understand data requirements.
+    - id: senior
+      name: "Senior Analytics Engineer"
+      years_experience: "4-7"
+      summary: >
+        Leads complex data modeling projects across business domains, mentors junior
+        engineers, establishes best practices for the team, and drives data quality
+        and governance initiatives.
+    - id: staff
+      name: "Staff Analytics Engineer"
+      years_experience: "7-10"
+      summary: >
+        Defines the analytics engineering strategy and architecture for the organization,
+        establishes data modeling standards and governance frameworks, and influences
+        cross-functional data platform decisions.
+    - id: principal
+      name: "Principal Analytics Engineer"
+      years_experience: "10+"
+      summary: >
+        Sets the strategic vision for the organization's analytical data layer, evaluates
+        and adopts emerging tools and paradigms, represents the company in the analytics
+        engineering community, and advises leadership on data infrastructure investments.
+
+  skills:
+    - id: dbt
+      name: "dbt (Data Build Tool)"
+      category: technical
+      description: >
+        Using dbt to define, test, document, and orchestrate SQL-based data transformations
+        in modern data warehouses following software engineering best practices.
+      proficiency:
+        junior: >
+          Writes basic dbt models with simple SELECT transformations. Understands the concept
+          of refs, sources, and the dbt DAG. Runs and debugs dbt builds locally.
+        mid: >
+          Builds complex dbt projects with staging, intermediate, and mart layers. Uses macros,
+          packages, and custom tests. Implements incremental models and snapshot strategies.
+        senior: >
+          Architects large-scale dbt projects with multiple domains and team contributions.
+          Designs custom macros, implements advanced testing patterns, and optimizes build
+          performance across hundreds of models.
+        staff: >
+          Defines the organization's dbt standards, project structure, and development workflow.
+          Evaluates dbt Cloud versus Core, manages CI/CD pipelines, and guides adoption
+          of new dbt features.
+        principal: >
+          Sets the strategic direction for transformation tooling with dbt as a core component.
+          Evaluates dbt against emerging alternatives, engages with the dbt community at a
+          leadership level, and guides long-term tooling investments.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI can generate dbt model code, tests, and documentation from natural language,
+          but designing project architecture, defining business logic, and ensuring
+          organizational data quality standards requires human expertise.
+
+    - id: sql_transformation
+      name: "SQL Transformations"
+      category: technical
+      description: >
+        Writing complex SQL transformations that clean, reshape, and aggregate data from
+        raw sources into analytical models optimized for downstream consumption.
+      proficiency:
+        junior: >
+          Writes basic transformation queries with JOINs, aggregations, and type casting.
+          Follows established patterns for staging and cleaning raw data sources.
+        mid: >
+          Designs complex transformations using CTEs, window functions, and conditional logic.
+          Handles slowly changing dimensions, deduplication, and data type standardization.
+        senior: >
+          Architects transformation patterns for complex business domains. Optimizes query
+          performance for large-scale transformations and designs reusable SQL patterns
+          that the team adopts.
+        staff: >
+          Defines SQL transformation standards and review processes for the organization.
+          Designs patterns that balance readability, performance, and maintainability across
+          cloud warehouse platforms.
+        principal: >
+          Sets the strategic direction for transformation approaches across the organization.
+          Evaluates SQL-based versus alternative transformation paradigms and guides technology
+          adoption.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI tools can generate SQL transformations from descriptions and optimize existing
+          queries. However, understanding business semantics and designing transformation
+          logic for complex domains requires human knowledge.
+
+    - id: data_modeling
+      name: "Dimensional Data Modeling"
+      category: technical
+      description: >
+        Designing data models including star schemas, snowflake schemas, wide tables, and
+        activity schemas that organize data for efficient analytical querying and business
+        understanding.
+      proficiency:
+        junior: >
+          Understands basic dimensional modeling concepts including facts, dimensions, and
+          grain. Can implement simple star schemas following established patterns.
+        mid: >
+          Designs dimensional models for business domains including slowly changing dimensions,
+          bridge tables, and factless fact tables. Makes informed trade-offs between
+          normalization and query performance.
+        senior: >
+          Architects enterprise-scale data models spanning multiple business domains. Designs
+          conformed dimensions, handles complex many-to-many relationships, and establishes
+          modeling standards.
+        staff: >
+          Defines the organization's data modeling philosophy and standards. Evaluates modeling
+          paradigms like Data Vault, activity schema, and wide table approaches for different
+          use cases.
+        principal: >
+          Sets the long-term vision for data modeling across the enterprise. Guides the
+          evolution of modeling approaches as business complexity and data volumes grow, and
+          evaluates emerging modeling paradigms.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can suggest model structures and identify relationships, but designing models
+          that accurately capture business semantics and serve diverse analytical needs
+          requires deep human understanding of the business domain.
+
+    - id: data_quality_testing
+      name: "Data Quality Testing"
+      category: technical
+      description: >
+        Designing and implementing automated tests that validate data accuracy, completeness,
+        consistency, and freshness throughout the transformation pipeline.
+      proficiency:
+        junior: >
+          Writes basic data quality tests for null checks, uniqueness, and accepted values.
+          Understands the importance of testing and follows established testing patterns.
+        mid: >
+          Designs comprehensive test suites including referential integrity checks, custom
+          business rule validations, and freshness monitoring. Implements testing frameworks
+          and alerts.
+        senior: >
+          Architects data quality testing strategies for complex pipelines. Implements
+          statistical data quality monitoring, designs anomaly detection for data drift, and
+          establishes testing standards for the team.
+        staff: >
+          Defines the organization's data quality strategy including metrics, SLAs, and
+          incident response processes. Architects monitoring platforms and drives cultural
+          adoption of data quality practices.
+        principal: >
+          Sets the strategic vision for data quality and reliability across the enterprise.
+          Defines organizational data quality metrics and frameworks, and guides investment
+          in testing infrastructure.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI can auto-generate tests based on data profiling and detect anomalies, but defining
+          what quality means for specific business contexts and setting appropriate thresholds
+          requires human judgment.
+
+    - id: version_control
+      name: "Version Control & Git"
+      category: technical
+      description: >
+        Using Git and version control workflows to manage code changes, collaborate with
+        team members, review code, and maintain history of data transformation logic.
+      proficiency:
+        junior: >
+          Uses basic Git operations including commit, push, pull, and branch creation.
+          Follows established branching strategies and participates in code review processes.
+        mid: >
+          Manages complex branching workflows including feature branches, rebasing, and
+          conflict resolution. Reviews pull requests and maintains clean commit histories.
+        senior: >
+          Designs Git workflows and branching strategies for data teams. Implements CI/CD
+          pipelines for data transformations and establishes code review standards.
+        staff: >
+          Defines the organization's version control strategy for data assets including
+          transformation code, configuration, and schema definitions. Architects CI/CD
+          platforms for analytics engineering.
+        principal: >
+          Sets the strategic direction for data code management and deployment practices.
+          Evaluates tools and workflows that bridge software engineering and data engineering
+          practices.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can suggest commit messages and assist with merge conflicts, but Git workflow
+          design, code review practices, and collaboration patterns remain human-driven
+          processes.
+
+    - id: documentation
+      name: "Data Documentation"
+      category: communication
+      description: >
+        Creating and maintaining comprehensive documentation for data models, transformations,
+        metrics, and data dictionaries that enable data discovery and self-service analytics.
+      proficiency:
+        junior: >
+          Writes clear descriptions for models and columns following established templates.
+          Maintains documentation alongside code changes and understands the value of
+          discoverability.
+        mid: >
+          Creates comprehensive documentation including data dictionaries, lineage diagrams,
+          and usage guides. Designs documentation structures that serve both technical and
+          business audiences.
+        senior: >
+          Establishes documentation standards and automation for the team. Implements data
+          catalog integrations, designs metadata management workflows, and mentors others
+          on effective documentation.
+        staff: >
+          Defines the organization's data documentation strategy and tooling. Architects
+          data catalog and metadata management platforms that scale across teams and domains.
+        principal: >
+          Sets the vision for data discoverability and knowledge management across the
+          enterprise. Evaluates emerging data catalog technologies and guides investments in
+          metadata infrastructure.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI can auto-generate documentation from code, suggest descriptions, and maintain
+          data dictionaries. However, ensuring documentation accurately reflects business
+          context and stays current requires human oversight.
+
+    - id: metric_definition
+      name: "Metric Definition & Semantic Layer"
+      category: analytical
+      description: >
+        Defining, standardizing, and governing business metrics with clear logic, ownership,
+        and documentation to ensure consistent measurement across the organization.
+      proficiency:
+        junior: >
+          Understands how metrics are calculated and documented. Implements metric definitions
+          in code following established patterns and raises questions about ambiguities.
+        mid: >
+          Defines metrics for business domains with clear calculation logic, grain, and
+          dimensional breakdowns. Resolves conflicting metric definitions across teams.
+        senior: >
+          Designs comprehensive metric frameworks for complex business domains. Implements
+          semantic layers and establishes metric governance processes including certification
+          and change management.
+        staff: >
+          Architects the organization's metric layer strategy including semantic layer
+          technology selection, metric governance, and cross-team standardization. Defines
+          how metrics flow from definition to consumption.
+        principal: >
+          Sets the strategic vision for organizational measurement and metric governance.
+          Evaluates emerging semantic layer technologies and guides long-term investment in
+          metric infrastructure.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can suggest metric calculations and detect inconsistencies, but defining metrics
+          that accurately reflect business intent and drive appropriate behavior requires
+          deep human understanding of the business.
+
+    - id: pipeline_design
+      name: "Pipeline Design & Orchestration"
+      category: technical
+      description: >
+        Designing data transformation pipelines with appropriate dependencies, scheduling,
+        error handling, and monitoring to ensure reliable and timely data delivery.
+      proficiency:
+        junior: >
+          Understands basic pipeline concepts including DAGs, dependencies, and scheduling.
+          Configures simple pipeline runs and troubleshoots failures with guidance.
+        mid: >
+          Designs transformation pipelines with proper dependency management, error handling,
+          and alerting. Configures scheduling and manages pipeline performance.
+        senior: >
+          Architects complex pipeline topologies across multiple data sources and destinations.
+          Implements advanced orchestration patterns including conditional execution, dynamic
+          pipelines, and SLA monitoring.
+        staff: >
+          Defines the organization's pipeline architecture and orchestration strategy.
+          Evaluates orchestration tools, designs patterns for reliability at scale, and
+          establishes operational standards.
+        principal: >
+          Sets the strategic direction for data pipeline infrastructure across the enterprise.
+          Evaluates emerging orchestration paradigms and guides long-term investment in
+          pipeline technology.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can suggest pipeline configurations and automate monitoring, but designing
+          resilient pipeline architectures that handle complex dependencies and failure
+          modes requires human engineering judgment.
+
+    - id: semantic_layer
+      name: "Semantic Layer Design"
+      category: technical
+      description: >
+        Building and maintaining a semantic layer that provides a consistent, business-friendly
+        interface to analytical data, abstracting away physical data complexities.
+      proficiency:
+        junior: >
+          Understands the purpose of a semantic layer and how it abstracts data complexity.
+          Contributes to semantic definitions following established patterns and conventions.
+        mid: >
+          Builds semantic layer definitions including dimensions, measures, and hierarchies.
+          Configures access controls and ensures definitions align with business terminology.
+        senior: >
+          Architects semantic layer solutions for complex business domains. Designs governance
+          workflows, manages version control for semantic definitions, and optimizes query
+          performance through the semantic layer.
+        staff: >
+          Defines the organization's semantic layer strategy including technology selection,
+          governance model, and integration architecture. Leads adoption across business
+          domains and BI tools.
+        principal: >
+          Sets the long-term vision for how the organization abstracts and governs analytical
+          data through semantic layers. Evaluates emerging technologies and guides strategic
+          investment.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can suggest semantic definitions and detect inconsistencies, but designing a
+          semantic layer that accurately represents business concepts and serves diverse
+          user needs requires deep organizational knowledge.
+
+    - id: stakeholder_collaboration
+      name: "Stakeholder Collaboration"
+      category: communication
+      description: >
+        Working effectively with data analysts, business stakeholders, and data engineers
+        to understand requirements, align on definitions, and deliver data models that
+        meet organizational needs.
+      proficiency:
+        junior: >
+          Communicates clearly with team members about requirements and progress. Asks
+          questions to understand how data models will be used and responds to feedback.
+        mid: >
+          Manages relationships with analysts and business users independently. Translates
+          analytical requirements into data modeling decisions and communicates trade-offs
+          effectively.
+        senior: >
+          Navigates complex stakeholder landscapes across data engineering, analytics, and
+          business teams. Leads data modeling discussions and drives consensus on definitions
+          and standards.
+        staff: >
+          Builds strategic relationships across the data organization and business leadership.
+          Shapes how analytics engineering is understood and valued, and drives cross-functional
+          alignment on data practices.
+        principal: >
+          Serves as the organizational voice for analytical data infrastructure. Influences
+          enterprise data strategy and builds alignment between technology investments and
+          business outcomes.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Stakeholder collaboration depends on trust, empathy, negotiation skills, and
+          organizational awareness that remain fundamentally human capabilities.
+
+    - id: python_automation
+      name: "Python Automation"
+      category: technical
+      description: >
+        Using Python to automate data engineering tasks, build custom tooling, extend
+        transformation frameworks, and create utilities that improve team productivity.
+      proficiency:
+        junior: >
+          Writes basic Python scripts for data validation, file processing, and simple
+          automation tasks. Uses standard libraries and follows existing code patterns.
+        mid: >
+          Builds custom Python tools and utilities for the analytics engineering workflow.
+          Creates automated testing scripts, data validation frameworks, and integration
+          helpers.
+        senior: >
+          Develops sophisticated Python applications for data pipeline management, custom
+          dbt integrations, and team productivity tools. Writes well-tested, maintainable
+          code with proper error handling.
+        staff: >
+          Architects Python-based tooling and automation strategy for the analytics engineering
+          team. Builds internal frameworks and evaluates when custom tooling versus
+          third-party solutions is appropriate.
+        principal: >
+          Sets the technical direction for automation and tooling across the data organization.
+          Evaluates emerging Python frameworks and tools, and guides investment in developer
+          productivity.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI copilots can generate Python automation scripts and suggest improvements, but
+          designing automation strategies and building tools that serve specific organizational
+          needs requires human judgment.
+
+    - id: cloud_warehouses
+      name: "Cloud Data Warehouses"
+      category: technical
+      description: >
+        Working with cloud data warehouse platforms like Snowflake, BigQuery, Databricks,
+        and Redshift including performance optimization, cost management, and
+        platform-specific features.
+      proficiency:
+        junior: >
+          Understands basic cloud warehouse concepts including compute-storage separation,
+          clustering, and partitioning. Writes queries and runs transformations on at least
+          one major platform.
+        mid: >
+          Optimizes transformations for specific cloud warehouse platforms. Understands
+          cost-performance trade-offs, manages warehouse sizing, and uses platform-specific
+          features like materialized views.
+        senior: >
+          Architects cloud warehouse configurations for complex analytical workloads.
+          Implements cost optimization strategies, designs multi-cluster architectures, and
+          establishes platform best practices.
+        staff: >
+          Defines the organization's cloud data warehouse strategy including platform
+          selection, cost governance, and architecture standards. Evaluates emerging platforms
+          and guides migration strategies.
+        principal: >
+          Sets the long-term vision for the organization's cloud data platform strategy.
+          Evaluates the evolving data warehouse and lakehouse landscape and guides strategic
+          technology partnerships.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can suggest warehouse optimizations and automate cost monitoring, but selecting
+          platforms, designing architectures, and managing the trade-offs of cloud data
+          warehousing requires human strategic judgment.

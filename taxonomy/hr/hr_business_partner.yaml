@@ -1,0 +1,658 @@
+role:
+  id: hr_business_partner
+  function: hr
+  name: "HR Business Partner"
+  also_known_as:
+    - "People Partner"
+    - "People Business Partner"
+    - "Strategic HR Advisor"
+    - "HR Generalist (Senior)"
+    - "Employee Relations Partner"
+  description: >
+    Serves as a strategic advisor to business unit leaders, aligning people
+    strategy with organizational objectives. HR Business Partners translate
+    business needs into talent, organizational design, and culture initiatives
+    while managing employee relations, performance processes, and change
+    management. They bridge the gap between HR centers of excellence and
+    front-line leaders, ensuring people programs drive measurable business
+    outcomes.
+  ai_impact:
+    level: "moderate"
+    summary: >
+      AI is augmenting HRBP work by automating routine employee inquiries,
+      generating workforce analytics dashboards, and drafting policy documents.
+      Predictive models surface attrition risks and engagement patterns.
+      However, the role's core value lies in trusted advisory relationships,
+      navigating sensitive employee situations, coaching leaders through
+      ambiguous organizational challenges, and influencing culture, all of
+      which require emotional intelligence and contextual judgment that AI
+      cannot replicate. HRBPs who leverage AI for data-driven insights while
+      focusing on strategic partnership will become more impactful.
+    automating:
+      - "Routine employee policy inquiries and FAQ responses"
+      - "Standard HR report generation and data compilation"
+      - "Drafting of routine communications and policy updates"
+      - "Calendar scheduling for performance review cycles"
+      - "Basic workforce demographic and headcount reporting"
+      - "Exit interview summarization and theme extraction"
+    augmenting:
+      - "Attrition risk prediction and early warning identification"
+      - "Engagement survey analysis and action plan recommendations"
+      - "Organizational network analysis for restructuring decisions"
+      - "Performance review calibration with data-driven comparisons"
+      - "Compensation equity analysis within supported business units"
+      - "Change impact assessment and stakeholder mapping"
+    preserving:
+      - "Trusted advisory relationships with business leaders"
+      - "Sensitive employee relations investigations and resolution"
+      - "Coaching leaders through difficult conversations and decisions"
+      - "Navigating organizational politics and cultural dynamics"
+      - "Ethical judgment in complex termination and restructuring decisions"
+      - "Building psychological safety and team health within organizations"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "O*NET - Human Resources Managers"
+        url: "https://www.onetonline.org/link/summary/11-3121.00"
+      - name: "SHRM - The HRBP Role"
+        url: "https://www.shrm.org/topics-tools/news/hr-magazine/hr-business-partner"
+      - name: "McKinsey - The New Possible for HR"
+        url: "https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights"
+  levels:
+    - id: junior
+      name: "HR Generalist"
+      years_experience: "0-2"
+      summary: >
+        Supports HRBP activities by handling routine employee inquiries,
+        maintaining HR records, and coordinating people processes such as
+        onboarding, benefits enrollment, and performance review logistics.
+        Learns business context and builds foundational HR knowledge under
+        guidance from senior partners.
+    - id: mid
+      name: "HR Business Partner"
+      years_experience: "2-5"
+      summary: >
+        Partners with managers in a defined client group to address day-to-day
+        people matters including employee relations cases, performance
+        management, and talent reviews. Executes people programs, provides
+        policy guidance, and escalates complex issues to senior HRBPs while
+        building credibility as a trusted advisor.
+    - id: senior
+      name: "Senior HR Business Partner"
+      years_experience: "5-8"
+      summary: >
+        Serves as the primary people strategy advisor for a business unit or
+        large functional area. Leads workforce planning, organizational
+        design, and change management initiatives. Coaches senior leaders on
+        talent decisions, manages complex employee relations cases, and
+        connects business needs with HR center-of-excellence solutions.
+    - id: staff
+      name: "Lead HRBP / HR Director"
+      years_experience: "8-12"
+      summary: >
+        Leads a team of HRBPs supporting a major business division, setting
+        people strategy priorities aligned with business objectives. Drives
+        cross-functional talent initiatives, organizational restructuring,
+        and culture transformation programs. Partners with HR leadership to
+        shape enterprise-wide people policies and programs.
+    - id: principal
+      name: "VP of People / Chief People Officer"
+      years_experience: "12+"
+      summary: >
+        Defines the organization's people strategy at the executive level,
+        integrating talent, culture, and organizational effectiveness into
+        business strategy. Advises the CEO and board on workforce risks and
+        opportunities, leads enterprise-wide transformation programs, and
+        shapes the HR function's operating model and strategic direction.
+  skills:
+    - id: strategic_workforce_planning
+      name: "Strategic Workforce Planning"
+      category: technical
+      description: >
+        Analyzing current and future workforce needs in alignment with business
+        strategy, including headcount forecasting, skills gap analysis,
+        succession planning, and scenario modeling to ensure the organization
+        has the right talent in the right roles at the right time.
+      proficiency:
+        junior: >
+          Supports workforce planning by maintaining headcount trackers,
+          compiling organizational charts, and gathering data for planning
+          exercises. Understands basic concepts of supply and demand in talent
+          planning and assists with data entry for planning tools.
+        mid: >
+          Conducts workforce analyses for a client group, identifying current
+          gaps and projecting future needs based on business plans. Creates
+          headcount forecasts, supports succession planning discussions, and
+          presents findings to managers with clear recommendations.
+        senior: >
+          Leads workforce planning for a business unit, integrating financial
+          forecasts, attrition modeling, and skills assessments into
+          comprehensive talent strategies. Facilitates succession planning for
+          critical roles and partners with finance on headcount budgeting and
+          scenario planning exercises.
+        staff: >
+          Defines the organization's workforce planning methodology and tools,
+          establishing cadences for planning cycles, data standards, and
+          governance processes. Drives enterprise-wide strategic workforce
+          initiatives and connects planning outcomes to business performance.
+        principal: >
+          Shapes the company's long-term workforce strategy at the executive
+          level, integrating workforce planning with M&A due diligence,
+          market expansion, and technology transformation decisions. Advises
+          the board on workforce risks and builds organizational capabilities
+          for adaptive talent planning.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI significantly enhances workforce planning through predictive
+          attrition models, skills gap analysis, and scenario simulations.
+          However, interpreting model outputs in the context of business
+          strategy, organizational politics, and human dynamics requires
+          experienced HRBP judgment.
+
+    - id: employee_relations
+      name: "Employee Relations"
+      category: interpersonal
+      description: >
+        Managing workplace conflicts, conducting investigations, advising on
+        disciplinary actions, and fostering a positive employee experience
+        through fair and consistent application of policies, grievance
+        procedures, and resolution of sensitive interpersonal situations.
+      proficiency:
+        junior: >
+          Handles straightforward employee inquiries about policies and
+          procedures. Documents employee concerns accurately and escalates
+          issues requiring investigation to senior HR professionals while
+          maintaining strict confidentiality throughout.
+        mid: >
+          Manages routine employee relations cases including performance
+          improvement plans, attendance issues, and interpersonal conflicts.
+          Conducts basic investigations following established protocols and
+          recommends appropriate actions in consultation with senior HRBPs.
+        senior: >
+          Leads complex investigations involving harassment, discrimination,
+          or policy violations. Advises senior leaders on progressive
+          discipline, termination decisions, and risk mitigation. Mediates
+          difficult workplace conflicts and ensures consistent, fair outcomes
+          that balance employee and organizational interests.
+        staff: >
+          Establishes employee relations frameworks, investigation protocols,
+          and case management systems across the organization. Trains HRBPs
+          on investigation techniques, reviews high-risk cases, and partners
+          with legal counsel on matters with litigation exposure or regulatory
+          implications.
+        principal: >
+          Defines the company's employee relations philosophy, ensuring
+          practices are fair, legally compliant, and culturally aligned across
+          all jurisdictions. Manages enterprise-level workplace crises, advises
+          the executive team on sensitive workforce matters, and shapes
+          policies that prevent systemic issues proactively.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          Employee relations is deeply human, requiring empathy, judgment, and
+          the ability to navigate emotional and legally sensitive situations.
+          AI can help with case management and pattern identification, but
+          investigations, mediation, and trust-building remain firmly human.
+
+    - id: performance_management
+      name: "Performance Management"
+      category: technical
+      description: >
+        Designing, implementing, and coaching leaders through performance
+        management processes including goal setting, continuous feedback,
+        performance reviews, calibration sessions, and performance improvement
+        plans that drive accountability, development, and fair evaluation.
+      proficiency:
+        junior: >
+          Supports performance review cycles by coordinating timelines,
+          distributing materials, and tracking completion rates. Assists
+          managers with system navigation and answers basic process questions
+          during review periods with guidance from senior partners.
+        mid: >
+          Guides managers through performance conversations, goal-setting
+          frameworks, and rating calibration. Drafts performance improvement
+          plans with appropriate documentation and milestones. Identifies
+          patterns in performance data that suggest coaching opportunities
+          for people managers.
+        senior: >
+          Leads calibration sessions across large teams, ensuring fair and
+          consistent performance evaluations. Coaches senior leaders on
+          differentiated performance management, designs improvement strategies
+          for underperforming teams, and connects performance outcomes to
+          compensation and development decisions.
+        staff: >
+          Defines the organization's performance management philosophy and
+          process design, including rating scales, calibration methodology,
+          and technology platform requirements. Drives continuous improvement
+          based on manager and employee feedback and measures process
+          effectiveness against retention and engagement outcomes.
+        principal: >
+          Shapes the company's performance culture at the executive level,
+          balancing accountability with development and ensuring the
+          performance system supports business strategy. Evaluates emerging
+          approaches like continuous feedback and OKR frameworks and makes
+          enterprise-wide adoption decisions.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can generate performance review drafts, identify rating
+          inconsistencies, and surface calibration data. However, having
+          nuanced performance conversations, coaching managers through
+          difficult feedback, and designing systems that motivate diverse
+          workforces require human expertise.
+
+    - id: organizational_design
+      name: "Organizational Design"
+      category: technical
+      description: >
+        Structuring teams, roles, reporting relationships, and decision rights
+        to optimize organizational effectiveness, including span of control
+        analysis, role clarity frameworks, restructuring execution, and
+        alignment of organizational structure with strategic objectives.
+      proficiency:
+        junior: >
+          Maintains organizational charts and role documentation. Supports
+          restructuring projects by updating HRIS records, drafting
+          communication materials, and coordinating logistics for
+          organizational changes under direction of senior partners.
+        mid: >
+          Analyzes organizational structures for a client group, identifying
+          span-of-control issues, role overlaps, and reporting inefficiencies.
+          Supports restructuring initiatives by drafting role descriptions,
+          mapping transitions, and coordinating change communications.
+        senior: >
+          Leads organizational design initiatives for business units including
+          restructuring proposals, role architecture, and team composition
+          recommendations. Facilitates leadership alignment on design trade-offs
+          and manages the people impact of organizational changes with care.
+        staff: >
+          Defines organizational design principles and frameworks for the
+          enterprise, establishing governance for restructuring decisions,
+          leveling standards, and role architecture. Leads large-scale
+          reorganization programs spanning multiple business units with
+          attention to change management and cultural impact.
+        principal: >
+          Shapes the company's organizational philosophy at the executive
+          level, advising the CEO and board on structure decisions for mergers,
+          acquisitions, and strategic pivots. Designs operating models that
+          balance agility with accountability and ensures organizational
+          structure enables long-term strategy execution.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can model organizational scenarios and analyze span-of-control
+          data, but designing structures that account for leadership
+          capabilities, cultural dynamics, political realities, and strategic
+          ambiguity requires experienced human judgment and stakeholder
+          navigation.
+
+    - id: change_management
+      name: "Change Management"
+      category: interpersonal
+      description: >
+        Planning and executing organizational change initiatives by assessing
+        impact, building stakeholder alignment, designing communication
+        strategies, managing resistance, and supporting leaders and employees
+        through transitions to ensure adoption and minimize disruption.
+      proficiency:
+        junior: >
+          Supports change initiatives by drafting communications, coordinating
+          town halls, and collecting employee feedback through surveys. Tracks
+          change milestones and escalates resistance signals to senior change
+          leads while maintaining a positive and supportive demeanor.
+        mid: >
+          Develops change management plans for medium-sized initiatives
+          including stakeholder analysis, communication calendars, and training
+          schedules. Coaches first-line managers on leading change conversations
+          and monitors adoption metrics to identify areas requiring support.
+        senior: >
+          Leads change management for significant business transformations
+          including technology implementations, restructuring, and process
+          overhauls. Designs multi-channel communication strategies, builds
+          change champion networks, and advises senior leaders on managing
+          resistance and maintaining engagement through transitions.
+        staff: >
+          Establishes the organization's change management methodology and
+          capability, building a community of practice, training programs,
+          and assessment tools. Oversees multiple concurrent change initiatives,
+          managing interdependencies and ensuring organizational capacity for
+          change is not exceeded.
+        principal: >
+          Shapes the company's change leadership philosophy at the executive
+          level, building organizational resilience and adaptability as
+          strategic capabilities. Leads enterprise-wide transformations,
+          advises the executive team on change sequencing and capacity, and
+          ensures change management is integrated into strategic planning.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can analyze sentiment data and draft change communications, but
+          building genuine buy-in, navigating emotional resistance, coaching
+          leaders through uncertainty, and adapting strategies to evolving
+          organizational dynamics are fundamentally human capabilities.
+
+    - id: coaching_advisory
+      name: "Coaching & Advisory"
+      category: interpersonal
+      description: >
+        Providing strategic counsel and developmental coaching to leaders at
+        all levels on people management, team effectiveness, career development,
+        and leadership challenges, building the managerial capability of the
+        organization through trusted partnership and evidence-based guidance.
+      proficiency:
+        junior: >
+          Provides basic guidance to managers on HR policies, procedures, and
+          available resources. Answers straightforward questions about people
+          processes and directs managers to appropriate tools, templates, and
+          HR specialists for more complex needs.
+        mid: >
+          Coaches managers on common people challenges including difficult
+          conversations, team dynamics, and development planning. Provides
+          data-informed guidance on engagement and retention issues, building
+          credibility as a reliable partner for day-to-day management support.
+        senior: >
+          Serves as a trusted advisor to senior leaders on complex people
+          strategy including succession planning, leadership development, and
+          team effectiveness. Uses coaching frameworks to develop leader
+          capabilities and provides candid, evidence-based counsel on sensitive
+          organizational decisions.
+        staff: >
+          Coaches executive leaders on organizational health, team composition,
+          and leadership effectiveness. Builds coaching capabilities across the
+          HRBP team through training, frameworks, and supervision. Designs
+          leader development programs that scale organizational management
+          capability systematically.
+        principal: >
+          Serves as a strategic advisor and executive coach to C-suite leaders,
+          providing counsel on leadership transitions, board dynamics, and
+          organizational transformation. Shapes the company's leadership
+          philosophy and builds a coaching culture that elevates people
+          management as a core organizational competency.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          Coaching and advisory work is among the most human-dependent HRBP
+          capabilities. AI can provide background data and suggest frameworks,
+          but building trust, reading emotional context, asking powerful
+          questions, and navigating the nuances of human development require
+          deep interpersonal skills.
+
+    - id: employment_law
+      name: "Employment Law & Compliance"
+      category: technical
+      description: >
+        Applying knowledge of employment legislation, regulations, and case
+        law to advise on workplace policies, employee actions, and risk
+        mitigation, including labor standards, anti-discrimination laws,
+        leave management, workplace safety, and data privacy requirements.
+      proficiency:
+        junior: >
+          Understands foundational employment laws such as FMLA, ADA, Title
+          VII, and FLSA at a conceptual level. Applies basic compliance
+          requirements to routine HR activities and knows when to escalate
+          legal questions to senior HR professionals or counsel.
+        mid: >
+          Advises managers on common employment law issues including leave
+          management, reasonable accommodations, and documentation requirements
+          for performance actions. Ensures HR processes comply with applicable
+          regulations and identifies situations requiring legal counsel review.
+        senior: >
+          Provides expert guidance on complex employment law matters including
+          multi-state compliance, international employment considerations,
+          and high-risk terminations. Partners with legal counsel on
+          investigations, litigation holds, and regulatory responses while
+          managing risk for the business unit.
+        staff: >
+          Defines compliance frameworks and policy standards for the
+          organization, ensuring practices meet requirements across all
+          operating jurisdictions. Leads regulatory change readiness programs,
+          manages relationships with employment counsel, and drives compliance
+          training and audit processes.
+        principal: >
+          Shapes the company's employment compliance strategy at the executive
+          level, navigating complex multi-jurisdiction requirements for global
+          operations. Advises the board on employment risk exposure, influences
+          industry advocacy on regulatory matters, and ensures the compliance
+          framework scales with organizational growth.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can rapidly surface relevant regulations, flag compliance gaps,
+          and draft policy language. However, applying legal principles to
+          nuanced workplace situations, assessing litigation risk, and making
+          judgment calls in ambiguous cases require experienced human expertise
+          and legal counsel partnership.
+
+    - id: talent_development
+      name: "Talent Development"
+      category: interpersonal
+      description: >
+        Identifying, developing, and retaining high-potential employees through
+        career pathing, stretch assignments, mentoring programs, talent reviews,
+        and development planning that builds organizational bench strength and
+        supports individual career growth aspirations.
+      proficiency:
+        junior: >
+          Supports talent development activities by coordinating mentor
+          matching, tracking development plan completion, and maintaining
+          talent review documentation. Assists employees with navigating
+          available learning resources and career development tools.
+        mid: >
+          Facilitates talent review discussions with managers, helps create
+          individual development plans for high-potential employees, and
+          coordinates stretch assignment opportunities. Monitors development
+          plan progress and connects employees with relevant programs and
+          mentors within the organization.
+        senior: >
+          Leads talent review and succession planning processes for a business
+          unit, identifying critical roles, high-potential talent, and
+          development gaps. Designs targeted development strategies combining
+          formal learning, experiential opportunities, and coaching that
+          accelerate readiness for next-level roles.
+        staff: >
+          Defines the organization's talent development framework including
+          talent review methodology, high-potential identification criteria,
+          and succession planning governance. Builds enterprise-wide programs
+          for leadership pipelines and drives cross-business talent mobility
+          to accelerate development and retention.
+        principal: >
+          Shapes the company's talent strategy at the executive level, ensuring
+          leadership pipeline strength supports long-term business objectives.
+          Advises the board on CEO and executive succession planning, drives
+          enterprise-wide talent mobility, and builds an organizational culture
+          of continuous development and internal career growth.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can identify skill gaps, recommend development resources, and
+          predict flight risk for key talent. However, building meaningful
+          development relationships, calibrating potential assessments, and
+          designing experiential development paths require deep organizational
+          knowledge and human judgment.
+
+    - id: data_driven_decisions
+      name: "Data-Driven Decision Making"
+      category: technical
+      description: >
+        Using people analytics, workforce metrics, and business data to inform
+        HR recommendations and measure program effectiveness, including
+        dashboarding, trend analysis, benchmarking, and translating data
+        insights into actionable strategies for business leaders.
+      proficiency:
+        junior: >
+          Pulls standard reports from HRIS and engagement survey tools.
+          Understands basic people metrics such as turnover rate, headcount,
+          and time-to-fill. Presents data in simple formats and asks questions
+          to understand what metrics mean for the business.
+        mid: >
+          Analyzes people data to identify trends in attrition, engagement,
+          and performance across a client group. Creates dashboards and
+          presentations that translate metrics into insights, and uses data
+          to support recommendations to hiring managers and business leaders.
+        senior: >
+          Designs people analytics approaches for complex business questions,
+          combining multiple data sources to generate predictive insights.
+          Presents data-driven narratives to senior leaders that drive action
+          and measures the effectiveness of HR programs against business
+          outcomes with statistical rigor.
+        staff: >
+          Establishes people analytics standards and self-service capabilities
+          across the HRBP function, defining key metrics, data governance, and
+          reporting frameworks. Partners with people analytics specialists to
+          build advanced models that inform enterprise-wide talent strategies.
+        principal: >
+          Shapes the company's people analytics vision at the executive level,
+          ensuring data capabilities support strategic workforce decisions.
+          Drives organizational adoption of evidence-based people practices,
+          establishes analytics ethics standards, and connects people metrics
+          to board-level business performance reporting.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI dramatically accelerates data analysis, visualization, and
+          pattern detection in people data. However, framing the right
+          questions, interpreting results within organizational context,
+          navigating data privacy considerations, and translating insights
+          into actions that leaders will adopt require human expertise.
+
+    - id: conflict_resolution
+      name: "Conflict Resolution"
+      category: interpersonal
+      description: >
+        Mediating workplace disputes, facilitating difficult conversations,
+        and resolving interpersonal conflicts between employees, between
+        employees and managers, or across teams, using active listening,
+        empathy, neutrality, and structured resolution techniques.
+      proficiency:
+        junior: >
+          Identifies signs of workplace conflict and escalates concerns to
+          senior HR professionals. Listens empathetically to employee concerns,
+          documents issues accurately, and provides basic guidance on available
+          conflict resolution resources and processes.
+        mid: >
+          Mediates straightforward interpersonal conflicts using active
+          listening and structured conversation frameworks. Coaches managers
+          on addressing team tensions, facilitates difficult conversations
+          between parties, and documents resolution agreements with clear
+          follow-up expectations.
+        senior: >
+          Manages complex multi-party conflicts involving power dynamics,
+          cultural differences, or historical grievances. Designs and
+          facilitates structured mediation sessions, advises leaders on
+          systemic conflict patterns, and implements team-level interventions
+          that address root causes.
+        staff: >
+          Establishes conflict resolution frameworks and training programs for
+          the organization, building internal mediation capabilities and
+          escalation protocols. Handles high-stakes conflicts involving senior
+          leaders and designs organizational interventions for teams in
+          persistent dysfunction.
+        principal: >
+          Shapes the company's approach to healthy conflict and psychological
+          safety at the executive level. Mediates executive-level disagreements,
+          builds a culture where constructive conflict is valued, and ensures
+          organizational systems support fair and timely resolution of
+          workplace disputes at all levels.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Conflict resolution is one of the most deeply human skills in HR,
+          requiring empathy, emotional regulation, cultural sensitivity, and
+          real-time adaptation to dynamic interpersonal situations. AI has
+          minimal applicability beyond providing background information.
+
+    - id: culture_building
+      name: "Culture Building"
+      category: interpersonal
+      description: >
+        Shaping and sustaining organizational culture through values alignment,
+        rituals, recognition programs, communication practices, and behavioral
+        norms that support business objectives, employee engagement, and a
+        sense of belonging across the organization.
+      proficiency:
+        junior: >
+          Supports culture initiatives by coordinating team events, recognition
+          programs, and employee engagement activities. Gathers feedback
+          through surveys and informal channels and contributes positively to
+          team culture through consistent professional behavior.
+        mid: >
+          Implements culture programs within a client group, connecting
+          organizational values to team practices and behaviors. Analyzes
+          engagement survey results to identify cultural strengths and gaps,
+          and facilitates team discussions on norms and working agreements.
+        senior: >
+          Designs and leads culture initiatives for a business unit, diagnosing
+          cultural dynamics, identifying misalignment with stated values, and
+          implementing interventions that shift behaviors. Coaches leaders on
+          modeling desired culture and measures cultural health through
+          multiple quantitative and qualitative indicators.
+        staff: >
+          Defines the organization's culture strategy, establishing cultural
+          assessment frameworks, values integration processes, and recognition
+          systems. Leads cross-functional culture transformation programs and
+          ensures sub-cultures across business units align with enterprise
+          values while respecting functional diversity.
+        principal: >
+          Shapes the company's cultural identity at the executive level,
+          ensuring culture supports strategic objectives and attracts the
+          talent needed for long-term success. Advises the CEO on cultural
+          implications of strategic decisions, manages culture through M&A
+          integration, and builds culture as a sustainable competitive
+          advantage.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          Culture building is inherently about human connection, shared
+          meaning, and behavioral modeling. AI can analyze engagement data
+          and generate communication drafts, but creating authentic cultural
+          experiences, modeling values, and navigating the subtle dynamics of
+          organizational identity are irreplaceable human activities.
+
+    - id: executive_influence
+      name: "Executive Influence"
+      category: interpersonal
+      description: >
+        Building credibility and exercising influence with senior leaders to
+        ensure people considerations are integrated into business decisions,
+        including executive communication, strategic framing, business acumen,
+        and the ability to challenge leaders constructively with data and
+        insight.
+      proficiency:
+        junior: >
+          Communicates HR information to managers clearly and professionally.
+          Prepares materials for senior leader meetings with accurate data
+          and follows organizational communication norms. Begins building
+          credibility through reliable execution and responsiveness.
+        mid: >
+          Presents people insights to director-level leaders with clear
+          business context and actionable recommendations. Builds credibility
+          through consistent follow-through, proactive problem-solving, and
+          demonstrating understanding of business priorities alongside people
+          expertise.
+        senior: >
+          Influences VP-level decisions by framing people strategies in
+          business terms, using data to challenge assumptions, and providing
+          candid counsel on talent and organizational risks. Earns a seat at
+          business planning discussions through demonstrated strategic value
+          and trusted partnership.
+        staff: >
+          Operates as a strategic partner to senior executives, shaping
+          business unit strategy through people lens integration. Builds
+          coalitions across leadership teams to drive enterprise initiatives,
+          navigates organizational politics effectively, and develops other
+          HRBPs in executive communication skills.
+        principal: >
+          Influences C-suite and board-level decisions on workforce strategy,
+          organizational transformation, and leadership effectiveness. Serves
+          as a thought partner to the CEO on people matters, shapes investor
+          narratives around human capital, and positions the HR function as
+          a strategic driver of business performance.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Executive influence is built on trust, credibility, political
+          acumen, and the ability to read rooms and adapt messages in real
+          time. AI can prepare supporting data and draft communications, but
+          the relational and persuasive elements of influencing senior leaders
+          are entirely human capabilities.

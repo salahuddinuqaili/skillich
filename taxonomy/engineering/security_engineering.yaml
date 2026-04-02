@@ -1,0 +1,467 @@
+role:
+  id: security_engineering
+  function: engineering
+  name: "Security Engineer"
+  also_known_as:
+    - "Application Security Engineer"
+    - "Cybersecurity Engineer"
+    - "InfoSec Engineer"
+    - "Security Architect"
+  description: >
+    Protects systems, data, and users by identifying vulnerabilities, designing
+    secure architectures, responding to incidents, and building security into the
+    development lifecycle. Bridges engineering and compliance functions.
+
+  ai_impact:
+    level: moderate
+    summary: >
+      AI accelerates vulnerability scanning, log analysis, and threat detection
+      pattern matching. However, security is fundamentally adversarial -- attackers
+      adapt, and the contextual judgment needed for threat modeling, incident response
+      leadership, and security architecture remains deeply human. AI creates new
+      attack surfaces even as it helps defend existing ones.
+    automating:
+      - "Vulnerability scanning and triage of known CVEs"
+      - "Log analysis and anomaly detection"
+      - "Security policy template generation"
+      - "Basic code security review for known patterns"
+    augmenting:
+      - "Threat hunting and advanced persistent threat detection"
+      - "Incident forensics and root cause analysis"
+      - "Penetration testing with AI-assisted reconnaissance"
+      - "Security architecture review for complex systems"
+    preserving:
+      - "Threat modeling in novel application domains"
+      - "Security incident leadership and crisis communication"
+      - "Regulatory interpretation and compliance strategy"
+      - "Adversarial thinking and red team creativity"
+      - "Trust and relationship building with engineering teams"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "NICE Workforce Framework for Cybersecurity"
+        url: "https://niccs.cisa.gov/tools/nice-framework"
+      - name: "ISC2 Cybersecurity Workforce Study"
+        url: "https://www.isc2.org/Research/Workforce-Study"
+
+  levels:
+    - id: junior
+      name: "Junior (L1-L2)"
+      years_experience: "0-2"
+      summary: "Runs security tools and triages findings. Follows security procedures and escalates issues."
+    - id: mid
+      name: "Mid-Level (L3)"
+      years_experience: "2-5"
+      summary: "Conducts security assessments independently. Implements security controls and responds to incidents."
+    - id: senior
+      name: "Senior (L4)"
+      years_experience: "5-8"
+      summary: "Designs security architectures. Leads incident response and threat modeling for complex systems."
+    - id: staff
+      name: "Staff (L5)"
+      years_experience: "8-12"
+      summary: "Defines organizational security strategy. Builds security programs and drives security culture."
+    - id: principal
+      name: "Principal (L6+)"
+      years_experience: "12+"
+      summary: "Sets enterprise security vision. Interfaces with executives, regulators, and the security community."
+
+  skills:
+    - id: threat_modeling
+      name: "Threat Modeling"
+      category: technical
+      description: "Systematically identifying and prioritizing security threats using frameworks like STRIDE, DREAD, and attack trees."
+      proficiency:
+        junior: >
+          Participates in STRIDE-based threat modeling sessions, documenting
+          identified threats in a shared tracker. Recognizes basic threat
+          categories like spoofing and tampering for single-service systems.
+        mid: >
+          Leads threat modeling for new features using STRIDE and Microsoft
+          Threat Modeling Tool, producing data flow diagrams and ranked threat
+          lists. Documents mitigations and tracks residual risk in Jira.
+        senior: >
+          Conducts threat modeling for complex distributed systems, building
+          attack trees that map chained exploits across service boundaries.
+          Balances depth of analysis against delivery timelines and creates
+          reusable threat libraries for the organization.
+        staff: >
+          Integrates threat modeling checkpoints into the SDLC via automated
+          gates in CI/CD. Trains engineering teams on STRIDE and DREAD,
+          choosing which framework fits each product's risk profile and
+          regulatory context.
+        principal: >
+          Defines the organization's threat modeling methodology, deciding
+          when lightweight STRIDE reviews suffice versus full attack-tree
+          analysis. Evaluates emerging threat landscapes and adjusts the
+          program to counter novel adversarial techniques.
+      ai_impact:
+        rating: 0.25
+        detail: "AI suggests common threats but cannot understand business-specific attack motivation, novel system interactions, or organizational risk appetite."
+
+    - id: secure_code_review
+      name: "Secure Code Review"
+      category: technical
+      description: "Reviewing code for security vulnerabilities including injection, XSS, SSRF, and logic flaws."
+      proficiency:
+        junior: >
+          Runs SAST scans with SonarQube and Semgrep, triaging findings by
+          severity. Identifies basic injection and XSS patterns in pull
+          requests and documents reproduction steps for confirmed issues.
+        mid: >
+          Reviews code for OWASP Top 10 vulnerabilities using Snyk and
+          SonarQube, catching authentication bypasses and authorization
+          flaws. Writes custom Semgrep rules to enforce secure patterns
+          specific to the team's stack.
+        senior: >
+          Discovers complex logic vulnerabilities, race conditions, and SSRF
+          chains that automated tools miss. Mentors developers on secure
+          coding, balancing thoroughness of review against release velocity
+          without letting critical flaws pass.
+        staff: >
+          Defines secure coding standards and selects the SAST/DAST toolchain
+          (e.g., Checkmarx, Snyk, OWASP ZAP), tuning rulesets to maximize
+          signal-to-noise ratio. Designs exception workflows that balance
+          risk acceptance against engineering friction.
+        principal: >
+          Sets the organization's application security program strategy
+          spanning prevention, detection, and response. Decides investment
+          allocation between tooling, training, and manual review based on
+          threat intelligence and defect trend data.
+      ai_impact:
+        rating: 0.5
+        detail: "AI detects known vulnerability patterns in code effectively. Business logic flaws, complex race conditions, and context-dependent security issues require human review."
+
+    - id: penetration_testing
+      name: "Penetration Testing"
+      category: technical
+      description: "Simulating attacks against systems to discover vulnerabilities before adversaries do."
+      proficiency:
+        junior: >
+          Runs automated scanners like Nessus and Burp Suite against target
+          systems. Documents findings with clear reproduction steps, CVSS
+          scores, and screenshots for developer handoff.
+        mid: >
+          Conducts manual penetration tests of web applications and APIs
+          using Burp Suite and OWASP ZAP, chaining vulnerabilities like IDOR
+          plus SSRF to demonstrate real-world impact beyond scanner output.
+        senior: >
+          Performs advanced testing across infrastructure, mobile, and cloud
+          environments using Metasploit and custom scripts. Writes executive
+          reports that translate technical findings into business risk,
+          weighing remediation cost against exploit likelihood.
+        staff: >
+          Designs the penetration testing program including scope, frequency,
+          rules of engagement, and red team operations using Cobalt Strike.
+          Decides when internal testing suffices versus when external firms
+          provide better coverage for audit credibility.
+        principal: >
+          Sets offensive security strategy, building red team capability and
+          managing external testing partnerships. Balances investment between
+          continuous automated testing and periodic deep-dive engagements
+          based on organizational threat posture.
+      ai_impact:
+        rating: 0.4
+        detail: "AI assists with reconnaissance and known exploit identification. Creative attack chaining, social engineering, and adapting to target-specific defenses require human adversarial thinking."
+
+    - id: incident_response
+      name: "Incident Response"
+      category: technical
+      description: "Detecting, containing, investigating, and recovering from security incidents."
+      proficiency:
+        junior: >
+          Follows incident response runbooks, collecting forensic evidence
+          using tools like Velociraptor and osquery. Escalates according to
+          severity matrix and preserves chain of custody for artifacts.
+        mid: >
+          Leads incident response for common incident types such as phishing
+          and malware. Performs initial forensics in Splunk and CrowdStrike,
+          executes containment actions, and writes post-incident timelines.
+        senior: >
+          Manages complex incidents involving multiple compromised systems,
+          conducting advanced forensics with Volatility and ELK. Makes
+          real-time containment trade-offs between stopping spread and
+          preserving evidence for root cause analysis.
+        staff: >
+          Builds the incident response program including playbooks, SOAR
+          automation in Splunk or Palo Alto XSOAR, and tabletop exercises.
+          Defines severity tiers and escalation paths that balance response
+          speed against alert fatigue.
+        principal: >
+          Sets crisis management strategy, interfacing with legal,
+          communications, and executive leadership during major breaches.
+          Decides when to disclose, when to engage law enforcement, and how
+          to balance transparency against legal exposure.
+      ai_impact:
+        rating: 0.3
+        detail: "AI accelerates log correlation and IOC detection. Incident leadership, communication under pressure, and strategic containment decisions require human judgment."
+
+    - id: security_architecture
+      name: "Security Architecture"
+      category: technical
+      description: "Designing systems with security built in: zero trust, defense in depth, secure defaults."
+      proficiency:
+        junior: >
+          Understands basic security architecture patterns like network
+          segmentation and TLS termination. Follows existing security
+          reference architectures when deploying new components to staging
+          and production environments.
+        mid: >
+          Designs security controls for new services including WAF rules,
+          mTLS between services, and secrets injection via HashiCorp Vault.
+          Implements defense-in-depth layers for specific components with
+          documented rationale.
+        senior: >
+          Architects zero-trust networks using BeyondCorp principles and
+          secure service meshes with Istio or Linkerd. Defines security
+          reference architectures, weighing usability and developer
+          experience against hardening depth for each tier.
+        staff: >
+          Sets security architecture standards across the organization,
+          evaluating platform investments like CrowdStrike and Wiz. Decides
+          build-versus-buy for security infrastructure based on team
+          capability, integration cost, and coverage gaps.
+        principal: >
+          Defines the organization's security architecture vision, aligning
+          security posture with business risk appetite and regulatory
+          requirements. Navigates trade-offs between defense investment and
+          product velocity at the executive level.
+      ai_impact:
+        rating: 0.2
+        detail: "Security architecture requires understanding organizational risk appetite, regulatory context, and attacker economics. AI suggests patterns but cannot make strategic security decisions."
+
+    - id: identity_access
+      name: "Identity & Access Management"
+      category: technical
+      description: "Authentication, authorization, SSO, MFA, RBAC/ABAC, and identity federation."
+      proficiency:
+        junior: >
+          Implements authentication flows using existing IdP integrations
+          with Okta or Azure AD. Configures basic RBAC policies and
+          provisions user accounts following established least-privilege
+          templates.
+        mid: >
+          Designs AWS IAM policies enforcing least privilege and implements
+          SSO via SAML/OIDC with MFA enforcement. Configures service-to-
+          service auth using short-lived tokens from HashiCorp Vault or
+          AWS STS.
+        senior: >
+          Architects identity systems with cross-domain federation, SCIM
+          provisioning, and fine-grained ABAC using OPA or Cedar. Balances
+          user friction from strict MFA policies against security posture
+          improvement for each user population.
+        staff: >
+          Defines IAM strategy including identity governance, privileged
+          access management with CyberArk or Vault, and vendor selection.
+          Decides centralization trade-offs between consistency and team
+          autonomy for access control policies.
+        principal: >
+          Sets organizational identity architecture spanning workforce,
+          customer, and machine identities. Navigates trade-offs between
+          federated and centralized identity models considering M&A
+          integration, compliance, and platform scalability.
+      ai_impact:
+        rating: 0.35
+        detail: "AI configures IAM policies and detects over-provisioned access. Identity architecture spanning organizational boundaries and compliance requirements needs human design."
+
+    - id: vulnerability_management
+      name: "Vulnerability Management"
+      category: technical
+      description: "Discovering, prioritizing, tracking, and remediating vulnerabilities across the technology stack."
+      proficiency:
+        junior: >
+          Runs vulnerability scanners like Qualys and Nessus, triaging
+          results by CVSS score. Tracks remediation progress in Jira and
+          follows up with asset owners on overdue patches.
+        mid: >
+          Prioritizes vulnerabilities using CVSS, EPSS, and business context
+          from asset inventories. Coordinates remediation with engineering
+          teams using Snyk for dependency vulnerabilities and Qualys for
+          infrastructure findings.
+        senior: >
+          Designs vulnerability management workflows with SLA-based tracking
+          in tools like Kenna or Nucleus. Implements risk-based prioritization
+          that weighs exploitability, asset criticality, and compensating
+          controls against raw CVSS scores.
+        staff: >
+          Builds the vulnerability management program, selecting tooling
+          across Tenable, Snyk, and Wiz. Defines risk acceptance criteria
+          and exception processes that balance remediation burden against
+          organizational risk tolerance.
+        principal: >
+          Sets organizational vulnerability management strategy, defining
+          risk tolerance thresholds and remediation economics. Decides when
+          to accept, transfer, or mitigate risk based on threat intelligence,
+          business context, and resource constraints.
+      ai_impact:
+        rating: 0.55
+        detail: "AI excels at scanning and CVSS-based prioritization. Contextual risk assessment considering exploitability, business impact, and remediation cost requires human judgment."
+
+    - id: compliance_frameworks
+      name: "Compliance & Regulatory Frameworks"
+      category: domain
+      description: "Implementing controls for SOC 2, ISO 27001, GDPR, HIPAA, PCI-DSS, and other regulatory requirements."
+      proficiency:
+        junior: >
+          Follows compliance procedures and collects evidence for audit
+          requests using GRC tools like Drata or Vanta. Completes control
+          questionnaires and maintains evidence repositories on schedule.
+        mid: >
+          Maps security controls to SOC 2 and ISO 27001 requirements,
+          identifying gaps. Prepares audit evidence packages in Drata and
+          coordinates remediation of control deficiencies with engineering
+          teams before auditor walkthroughs.
+        senior: >
+          Designs compliance programs for frameworks like PCI-DSS and HIPAA,
+          leading audit preparations and remediation efforts. Balances
+          control rigor against implementation cost, choosing compensating
+          controls where direct compliance is impractical.
+        staff: >
+          Manages multi-framework compliance programs across SOC 2, ISO
+          27001, and GDPR. Selects GRC tooling like ServiceNow or OneTrust
+          and automates evidence collection to reduce audit burden while
+          maintaining control effectiveness.
+        principal: >
+          Sets regulatory strategy, interfacing with auditors, regulators,
+          and legal counsel on compliance posture. Decides which frameworks
+          to pursue based on customer requirements, market access, and the
+          cost-benefit of incremental certifications.
+      ai_impact:
+        rating: 0.4
+        detail: "AI maps controls to frameworks and generates evidence documentation. Regulatory interpretation, risk-based control selection, and auditor relationship management are human tasks."
+
+    - id: cryptography
+      name: "Cryptography & Data Protection"
+      category: technical
+      description: "Implementing encryption, key management, hashing, digital signatures, and data protection controls."
+      proficiency:
+        junior: >
+          Uses standard libraries like libsodium and OpenSSL for encryption
+          and hashing. Avoids custom cryptography, applies bcrypt or Argon2
+          for password storage, and follows team guidelines for TLS
+          configuration.
+        mid: >
+          Implements encryption at rest using AWS KMS or HashiCorp Vault and
+          in transit via mTLS. Manages key rotation schedules, certificate
+          lifecycle with Let's Encrypt or internal CA, and handles envelope
+          encryption patterns.
+        senior: >
+          Designs key management architectures with HSM-backed roots of
+          trust. Evaluates cryptographic protocols for specific use cases,
+          choosing between AES-GCM, ChaCha20, and XSalsa20 based on
+          performance constraints and threat model requirements.
+        staff: >
+          Defines data protection standards spanning classification,
+          encryption, tokenization, and data loss prevention. Plans
+          post-quantum cryptography migration timelines, weighing adoption
+          cost against harvest-now-decrypt-later threat scenarios.
+        principal: >
+          Sets cryptographic strategy across the organization, evaluating
+          emerging threats from quantum computing and side-channel attacks.
+          Decides investment in crypto-agility infrastructure versus
+          targeted algorithm replacement based on risk horizon.
+      ai_impact:
+        rating: 0.3
+        detail: "AI suggests standard encryption patterns. Cryptographic protocol selection, key management architecture, and post-quantum planning require deep expertise."
+
+    - id: cloud_security
+      name: "Cloud Security"
+      category: technical
+      description: "Securing cloud environments: CSPM, workload protection, cloud-native security controls."
+      proficiency:
+        junior: >
+          Follows cloud security best practices and reviews findings from
+          CSPM tools like AWS Security Hub or Prowler. Remediates basic
+          misconfigurations such as public S3 buckets and overly permissive
+          security groups.
+        mid: >
+          Configures cloud-native security controls including AWS
+          GuardDuty, VPC flow logs, and Azure Defender. Implements secure
+          networking with private endpoints and writes IAM policies
+          enforcing least privilege per workload.
+        senior: >
+          Designs cloud security architectures using tools like Wiz and
+          Prisma Cloud for CSPM and CWPP. Balances security control
+          strictness against developer self-service speed, using
+          policy-as-code with OPA to enforce guardrails without blocking
+          deployments.
+        staff: >
+          Defines multi-cloud security strategy spanning AWS, GCP, and
+          Azure. Builds cloud security programs covering prevention,
+          detection, and response, choosing between native tools and
+          third-party platforms based on coverage gaps and operational cost.
+        principal: >
+          Sets cloud security vision, driving shared responsibility model
+          understanding across the organization. Navigates trade-offs between
+          cloud-native and vendor-agnostic security tooling based on
+          multi-cloud strategy and long-term platform direction.
+      ai_impact:
+        rating: 0.45
+        detail: "AI detects cloud misconfigurations effectively. Multi-cloud security strategy, shared responsibility interpretation, and cloud-specific threat modeling require human expertise."
+
+    - id: security_automation
+      name: "Security Automation & DevSecOps"
+      category: technical
+      description: "Integrating security into CI/CD pipelines: SAST, DAST, SCA, container scanning, policy-as-code."
+      proficiency:
+        junior: >
+          Uses security scanning tools like Snyk and Trivy in CI/CD
+          pipelines. Triages automated findings, filters false positives,
+          and files tickets for confirmed vulnerabilities with reproduction
+          context.
+        mid: >
+          Integrates SAST, DAST, and SCA scanning into GitHub Actions or
+          GitLab CI pipelines using Snyk, OWASP ZAP, and Grype. Configures
+          quality gates and designs exception workflows for accepted risks.
+        senior: >
+          Designs the DevSecOps pipeline architecture, selecting and tuning
+          tools like SonarQube, Checkmarx, and Aqua for signal quality.
+          Balances pipeline scan depth against build time, choosing async
+          scans for thorough checks and inline gates for critical blockers.
+        staff: >
+          Builds the security automation platform with policy-as-code using
+          OPA or Kyverno. Defines the organization's shift-left strategy,
+          deciding which checks belong in IDE, pre-commit, CI, and
+          deployment stages based on feedback loop speed.
+        principal: >
+          Sets the DevSecOps vision, driving security engineering culture
+          across development teams. Evaluates emerging approaches like
+          runtime application self-protection and eBPF-based observability,
+          deciding adoption timing based on maturity and operational cost.
+      ai_impact:
+        rating: 0.55
+        detail: "AI-powered scanning tools are increasingly effective at finding known vulnerability patterns. Tool selection, pipeline architecture, and balancing security friction with developer velocity are human decisions."
+
+    - id: security_communication
+      name: "Security Communication & Culture"
+      category: communication
+      description: "Communicating security risks to stakeholders, training developers, and building security culture."
+      proficiency:
+        junior: >
+          Writes clear vulnerability reports with severity, impact, and
+          remediation guidance. Communicates findings to developers
+          constructively in pull request comments and triage meetings
+          without creating adversarial dynamics.
+        mid: >
+          Presents security assessment results to engineering teams using
+          risk matrices and CVSS context. Creates security training content
+          such as CTF challenges and lunch-and-learn sessions tailored to
+          the team's tech stack.
+        senior: >
+          Communicates security risk to non-technical stakeholders using
+          business impact framing and risk heat maps. Leads security
+          awareness programs, balancing urgency of threat messaging against
+          alert fatigue and team morale.
+        staff: >
+          Builds organizational security culture through security champion
+          programs and gamified training platforms. Designs incentive
+          structures that reward secure-by-default behaviors rather than
+          relying solely on compliance mandates.
+        principal: >
+          Represents security at the executive and board level, translating
+          threat intelligence into business risk language. Shapes the
+          organization's security narrative, deciding when to publicize
+          security investments versus maintaining operational secrecy.
+      ai_impact:
+        rating: 0.15
+        detail: "Security communication requires trust, organizational context, and the ability to translate technical risk into business terms. This is fundamentally human."

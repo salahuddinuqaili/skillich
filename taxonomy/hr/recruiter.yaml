@@ -1,0 +1,630 @@
+role:
+  id: recruiter
+  function: hr
+  name: "Recruiter / Talent Acquisition Specialist"
+  also_known_as:
+    - "Talent Acquisition Partner"
+    - "Recruiting Coordinator"
+    - "Sourcer"
+    - "Headhunter"
+    - "Staffing Specialist"
+  description: >
+    Drives the end-to-end hiring process from workforce planning through offer
+    acceptance, partnering with hiring managers to identify talent needs, source
+    and engage candidates, manage interview processes, and close hires. Recruiters
+    balance speed, quality, diversity, and candidate experience while serving as
+    the company's front-line brand ambassadors in the talent market.
+  ai_impact:
+    level: "high"
+    summary: >
+      AI is transforming talent acquisition by automating candidate sourcing,
+      resume screening, interview scheduling, and initial outreach at scale.
+      Chatbots handle candidate FAQs and status updates, while predictive
+      models score candidate-role fit. However, the deeply human elements of
+      relationship building, cultural assessment, nuanced negotiation, and
+      sell-side storytelling remain essential. Recruiters who leverage AI to
+      eliminate administrative overhead and focus on strategic advisory and
+      candidate experience will thrive.
+    automating:
+      - "Resume parsing and keyword-based screening"
+      - "Interview scheduling and calendar coordination"
+      - "Candidate status notifications and FAQ responses"
+      - "Boolean search string generation for sourcing"
+      - "Job description drafting from intake notes"
+      - "Market salary range lookups for offer benchmarking"
+    augmenting:
+      - "Candidate sourcing across platforms and passive talent identification"
+      - "Pipeline analytics and bottleneck detection"
+      - "Diversity sourcing strategy and bias detection in job postings"
+      - "Offer competitiveness analysis and counter-offer modeling"
+      - "Hiring manager intake and role scoping"
+      - "Employer brand content creation and campaign optimization"
+    preserving:
+      - "Relationship building and trust with candidates through the process"
+      - "Cultural and values alignment assessment during interviews"
+      - "Complex offer negotiation involving relocation, equity, and exceptions"
+      - "Hiring manager coaching and calibration on selection criteria"
+      - "Candidate experience design for high-touch executive searches"
+      - "Ethical judgment on candidate privacy and fair hiring practices"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "O*NET - Human Resources Specialists"
+        url: "https://www.onetonline.org/link/summary/13-1071.00"
+      - name: "LinkedIn Global Talent Trends 2024"
+        url: "https://business.linkedin.com/talent-solutions/global-talent-trends"
+      - name: "SHRM - AI in Talent Acquisition"
+        url: "https://www.shrm.org/topics-tools/news/talent-acquisition/ai-recruiting"
+  levels:
+    - id: junior
+      name: "Recruiting Coordinator"
+      years_experience: "0-2"
+      summary: >
+        Supports the recruiting process by scheduling interviews, maintaining
+        ATS records, and coordinating logistics. Screens inbound applicants
+        against basic qualifications, drafts initial outreach messages, and
+        ensures a positive candidate experience at each touchpoint.
+    - id: mid
+      name: "Recruiter"
+      years_experience: "2-5"
+      summary: >
+        Manages full-cycle recruiting for individual contributor roles across
+        one or two functions. Conducts intake meetings, builds sourcing
+        strategies, screens and interviews candidates, and manages offers.
+        Maintains healthy pipeline metrics and develops hiring manager
+        relationships.
+    - id: senior
+      name: "Senior Recruiter"
+      years_experience: "5-8"
+      summary: >
+        Leads recruiting for senior and specialized roles requiring advanced
+        sourcing and sell-side skills. Coaches hiring managers on interview
+        best practices, designs structured interview panels, and drives
+        improvements to funnel conversion rates. Mentors junior recruiters
+        and contributes to process optimization.
+    - id: staff
+      name: "Lead Recruiter / Recruiting Manager"
+      years_experience: "8-12"
+      summary: >
+        Owns recruiting strategy for a business unit or function, managing
+        a team of recruiters and setting quarterly hiring targets. Designs
+        end-to-end hiring workflows, establishes sourcing channel strategies,
+        and partners with HR leadership on workforce planning. Drives
+        diversity hiring initiatives and vendor relationships.
+    - id: principal
+      name: "Head of Talent Acquisition"
+      years_experience: "12+"
+      summary: >
+        Defines the company-wide talent acquisition vision and strategy,
+        aligning hiring programs with long-term business objectives.
+        Establishes employer brand positioning, builds executive recruiting
+        capabilities, and drives organizational adoption of recruiting
+        technology and analytics. Represents talent acquisition at the
+        executive leadership level.
+  skills:
+    - id: sourcing
+      name: "Sourcing"
+      category: technical
+      description: >
+        Identifying, engaging, and attracting passive and active candidates
+        through multiple channels including LinkedIn, GitHub, job boards,
+        referral networks, events, and niche communities, using Boolean
+        search, talent mapping, and creative outreach techniques.
+      proficiency:
+        junior: >
+          Uses basic Boolean searches on LinkedIn and job boards to identify
+          candidates matching posted requirements. Sends templated outreach
+          messages and tracks response rates in the ATS with guidance from
+          senior recruiters on search strategy.
+        mid: >
+          Builds multi-channel sourcing strategies combining LinkedIn Recruiter,
+          GitHub, Stack Overflow, and niche communities. Crafts personalized
+          outreach sequences with strong response rates and develops talent
+          maps for recurring hiring needs.
+        senior: >
+          Designs creative sourcing campaigns for hard-to-fill and senior roles
+          using competitive intelligence, alumni networks, and event-based
+          strategies. Coaches hiring managers on referral activation and builds
+          sustained pipelines for future hiring needs.
+        staff: >
+          Establishes organization-wide sourcing playbooks, vendor partnerships,
+          and channel ROI measurement frameworks. Evaluates and implements new
+          sourcing technologies, drives referral program design, and builds
+          talent intelligence capabilities for strategic workforce planning.
+        principal: >
+          Shapes the company's employer value proposition and talent market
+          positioning at the executive level. Builds relationships with key
+          talent communities and academic institutions, defines long-term
+          talent pipeline strategies, and influences industry sourcing trends.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI dramatically accelerates candidate identification through semantic
+          search and profile matching, but crafting compelling personalized
+          outreach, building genuine relationships with passive talent, and
+          evaluating cultural nuance in candidate profiles remain human skills.
+
+    - id: screening_assessment
+      name: "Screening & Assessment"
+      category: technical
+      description: >
+        Evaluating candidates against role requirements through resume review,
+        phone screens, technical assessments, and structured evaluation
+        frameworks, ensuring consistent and fair assessment of qualifications,
+        motivation, and potential across the candidate pool.
+      proficiency:
+        junior: >
+          Reviews resumes against clearly defined must-have criteria and
+          conducts initial phone screens using standardized question sets.
+          Documents candidate responses accurately in the ATS and flags
+          qualified candidates for recruiter review.
+        mid: >
+          Conducts comprehensive phone screens assessing technical
+          qualifications, career motivations, and role fit. Designs basic
+          scorecards and ensures consistent evaluation criteria across
+          candidates. Identifies red flags and distinguishes strong from
+          marginal candidates reliably.
+        senior: >
+          Designs structured assessment frameworks for complex roles including
+          competency-based scorecards, take-home projects, and panel interview
+          guides. Calibrates hiring managers on evaluation standards and
+          identifies bias patterns in assessment data across the pipeline.
+        staff: >
+          Establishes organization-wide assessment methodology including
+          standardized rubrics, interviewer certification programs, and
+          assessment validity measurement. Evaluates third-party assessment
+          tools and drives adoption of evidence-based selection practices
+          across all recruiting teams.
+        principal: >
+          Defines the company's talent assessment philosophy, ensuring selection
+          processes are predictive, legally defensible, fair, and aligned with
+          organizational values. Partners with legal and I/O psychology experts
+          to validate assessment approaches at scale and industry benchmarks.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI excels at resume parsing, skills matching, and flagging candidates
+          who meet objective criteria, but assessing soft skills, cultural
+          alignment, growth potential, and nuanced motivations during live
+          conversations requires human judgment and emotional intelligence.
+
+    - id: interviewing
+      name: "Interviewing"
+      category: interpersonal
+      description: >
+        Conducting effective interviews that accurately assess candidate
+        capabilities while providing a positive experience, including behavioral
+        interviewing, competency-based questioning, structured formats, and
+        calibration techniques that minimize bias and maximize signal.
+      proficiency:
+        junior: >
+          Conducts basic screening interviews using prepared question guides
+          and takes structured notes. Provides candidate summaries to hiring
+          managers with factual observations, maintaining a professional and
+          welcoming demeanor throughout the conversation.
+        mid: >
+          Leads behavioral and competency-based interviews with well-crafted
+          follow-up questions that probe beyond surface-level answers. Manages
+          interview logistics for multi-round processes and delivers clear
+          written debriefs with evidence-based recommendations.
+        senior: >
+          Designs interview plans for complex and senior roles with targeted
+          competency coverage across panelists. Trains hiring teams on
+          structured interviewing techniques, identifies and mitigates
+          interviewer bias, and leads calibration sessions post-interview.
+        staff: >
+          Establishes interviewing standards and training programs across the
+          organization including interview question banks, certification
+          requirements, and debrief protocols. Measures interview quality
+          metrics and drives continuous improvement in signal-to-noise ratio.
+        principal: >
+          Shapes the company's interviewing philosophy and candidate experience
+          standards at the executive level. Ensures interview processes scale
+          with growth while maintaining quality, legal compliance, and alignment
+          with employer brand. Benchmarks practices against industry leaders.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can assist with question generation and note-taking during
+          interviews, but the core skill of building rapport, reading
+          non-verbal cues, probing authentically, and making holistic
+          assessments of candidates remains fundamentally human.
+
+    - id: pipeline_management
+      name: "Pipeline Management"
+      category: technical
+      description: >
+        Building, tracking, and optimizing candidate pipelines from initial
+        sourcing through offer acceptance, using data-driven approaches to
+        manage funnel health, forecast hiring timelines, identify bottlenecks,
+        and ensure sufficient candidate volume and quality at each stage.
+      proficiency:
+        junior: >
+          Maintains accurate candidate records and stage progression in the ATS.
+          Tracks basic pipeline metrics like time-in-stage and provides weekly
+          status updates to recruiters and hiring managers on open requisitions
+          with guidance on prioritization.
+        mid: >
+          Manages end-to-end pipelines for multiple requisitions simultaneously,
+          monitoring conversion rates at each stage and proactively addressing
+          bottlenecks. Forecasts time-to-fill based on historical data and
+          adjusts sourcing effort to maintain adequate pipeline coverage.
+        senior: >
+          Designs pipeline management frameworks with stage-specific SLAs,
+          automated alerts for aging candidates, and conversion benchmarks by
+          role type. Uses analytics to diagnose systemic pipeline issues and
+          recommends process changes that improve throughput and quality.
+        staff: >
+          Establishes organization-wide pipeline health standards, reporting
+          dashboards, and forecasting models that connect recruiting capacity
+          to business hiring plans. Drives adoption of pipeline analytics
+          across recruiting teams and optimizes resource allocation by channel.
+        principal: >
+          Defines the company's recruiting operations strategy, integrating
+          pipeline intelligence with workforce planning and financial forecasting.
+          Builds predictive models for talent market dynamics and ensures
+          recruiting infrastructure scales to support rapid organizational growth.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI automates much of pipeline tracking, bottleneck detection, and
+          forecasting through pattern recognition in ATS data. However,
+          strategic decisions about pipeline prioritization, candidate
+          re-engagement timing, and resource reallocation require recruiter
+          judgment and stakeholder context.
+
+    - id: ats_systems
+      name: "ATS & Recruiting Technology"
+      category: technical
+      description: >
+        Proficiency in applicant tracking systems such as Greenhouse, Lever,
+        Workday Recruiting, iCIMS, and related recruiting technologies
+        including CRM tools, sourcing platforms, scheduling automation, and
+        analytics dashboards that support the talent acquisition workflow.
+      proficiency:
+        junior: >
+          Navigates the ATS to create requisitions, log candidate activities,
+          advance candidates through stages, and generate basic reports. Uses
+          scheduling tools and email templates as configured by the recruiting
+          operations team.
+        mid: >
+          Configures ATS workflows for new role types, creates custom reports
+          and dashboards, and integrates sourcing tools with the ATS pipeline.
+          Troubleshoots common issues and maintains data hygiene standards
+          across requisitions.
+        senior: >
+          Optimizes ATS configuration to improve recruiter productivity and
+          candidate experience, including custom scorecards, approval workflows,
+          and automated stage transitions. Evaluates new recruiting technologies
+          and leads pilot implementations for the team.
+        staff: >
+          Defines the recruiting technology stack strategy, managing vendor
+          relationships, integration architecture, and migration planning.
+          Designs system configurations that enforce compliance, standardize
+          processes, and enable robust reporting across the entire organization.
+        principal: >
+          Shapes the company's recruiting technology vision, aligning tool
+          investments with long-term talent acquisition strategy and broader HR
+          technology ecosystem. Negotiates enterprise agreements and drives
+          build-versus-buy decisions for recruiting infrastructure at scale.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI-powered ATS features increasingly automate candidate matching,
+          duplicate detection, and workflow recommendations. However, designing
+          system architectures that support complex hiring processes, ensuring
+          data quality, and driving user adoption require human expertise.
+
+    - id: employer_branding
+      name: "Employer Branding"
+      category: interpersonal
+      description: >
+        Developing and communicating the company's employer value proposition
+        through career pages, social media, events, employee testimonials, and
+        content marketing to attract talent and differentiate the organization
+        in competitive talent markets.
+      proficiency:
+        junior: >
+          Supports employer branding efforts by coordinating social media posts,
+          employee spotlight content, and event logistics. Maintains career page
+          content and gathers employee testimonials using established templates
+          and brand guidelines.
+        mid: >
+          Creates compelling employer brand content across multiple channels
+          including blog posts, social campaigns, and recruiting event
+          presentations. Tailors messaging by audience segment and tracks
+          engagement metrics to refine content strategy.
+        senior: >
+          Designs employer branding campaigns targeting specific talent segments
+          with differentiated messaging. Partners with marketing on brand
+          consistency, measures brand perception through candidate surveys and
+          Glassdoor analytics, and coaches the team on authentic storytelling.
+        staff: >
+          Defines the organization's employer brand strategy, aligning talent
+          messaging with corporate brand and business objectives. Manages
+          agency relationships, event sponsorship portfolios, and content
+          calendars. Establishes measurement frameworks tying brand investment
+          to sourcing outcomes.
+        principal: >
+          Shapes the company's employer brand at the executive level, ensuring
+          talent positioning reflects organizational values and supports
+          long-term talent strategy. Represents the company at industry
+          conferences, builds thought leadership platforms, and influences
+          public perception in target talent markets.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI accelerates content generation, social media scheduling, and
+          audience targeting for employer branding. However, crafting an
+          authentic employer narrative, aligning brand with lived employee
+          experience, and building genuine community connections require
+          human creativity and organizational insight.
+
+    - id: offer_negotiation
+      name: "Offer Negotiation"
+      category: interpersonal
+      description: >
+        Structuring and negotiating job offers including base salary, equity,
+        bonuses, benefits, start dates, and special accommodations, balancing
+        candidate expectations against internal equity, budget constraints,
+        and compensation philosophy while maintaining positive relationships.
+      proficiency:
+        junior: >
+          Prepares offer letters using approved templates and compensation bands.
+          Communicates standard offer details to candidates clearly and
+          escalates negotiation requests to senior recruiters or hiring managers
+          with relevant context.
+        mid: >
+          Manages straightforward offer negotiations independently, presenting
+          total compensation packages persuasively and handling common
+          counter-offer scenarios. Understands internal equity considerations
+          and escalates complex cases with well-reasoned recommendations.
+        senior: >
+          Navigates complex negotiations involving competing offers, relocation
+          packages, equity structures, and role-level discussions. Coaches
+          hiring managers on negotiation strategy, balances candidate advocacy
+          with internal equity, and achieves high offer-acceptance rates.
+        staff: >
+          Defines offer negotiation frameworks and approval workflows for the
+          organization, establishing guidelines for exception handling, sign-on
+          bonuses, and retention counter-offers. Trains recruiters on advanced
+          negotiation techniques and monitors offer competitiveness metrics.
+        principal: >
+          Shapes the company's offer philosophy and competitive positioning in
+          the talent market, partnering with compensation leadership to align
+          offer practices with total rewards strategy. Handles executive-level
+          negotiations and approves significant exceptions to standard packages.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can provide market data and model offer scenarios, but the
+          interpersonal dynamics of negotiation including reading candidate
+          motivations, building trust, managing emotional responses, and
+          finding creative solutions to competing constraints remain deeply
+          human skills.
+
+    - id: diversity_inclusion
+      name: "Diversity & Inclusion in Hiring"
+      category: interpersonal
+      description: >
+        Designing and executing inclusive hiring practices that attract diverse
+        candidate pools, minimize bias throughout the selection process, and
+        support the organization's diversity goals, including sourcing strategy,
+        job description optimization, structured interviews, and data tracking.
+      proficiency:
+        junior: >
+          Follows established inclusive hiring guidelines such as using
+          gender-neutral language in communications and ensuring diverse
+          candidate slates. Tracks diversity metrics in the ATS as directed
+          and participates in bias awareness training sessions.
+        mid: >
+          Implements inclusive sourcing strategies targeting underrepresented
+          talent pools through community partnerships and specialized platforms.
+          Reviews job descriptions for exclusionary language and ensures
+          interview panels reflect diversity. Reports on pipeline diversity.
+        senior: >
+          Designs diversity hiring programs including partnerships with HBCUs,
+          professional associations, and diversity-focused organizations.
+          Analyzes pipeline and conversion data by demographic to identify
+          systemic barriers and leads initiatives to address them effectively.
+        staff: >
+          Establishes organization-wide inclusive hiring standards, sets
+          diversity sourcing targets, and builds accountability frameworks for
+          hiring managers. Partners with ERGs and DEI leadership to align
+          recruiting practices with broader organizational inclusion strategy
+          and measures program effectiveness.
+        principal: >
+          Shapes the company's diversity talent strategy at the executive level,
+          ensuring hiring practices support representation goals across all
+          levels. Influences industry standards through thought leadership,
+          partners with external organizations, and drives systemic changes
+          to talent pipelines through education and community investment.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can flag biased language in job postings and identify diverse
+          sourcing channels, but designing inclusive hiring programs, building
+          authentic community relationships, and navigating the nuanced
+          cultural dynamics of diversity work require deep human understanding.
+
+    - id: stakeholder_management
+      name: "Stakeholder Management"
+      category: interpersonal
+      description: >
+        Building effective partnerships with hiring managers, business leaders,
+        HR partners, and cross-functional teams to align on hiring needs,
+        calibrate expectations, maintain communication throughout the recruiting
+        process, and drive timely decision-making.
+      proficiency:
+        junior: >
+          Communicates candidate status updates to hiring managers on a regular
+          cadence and escalates scheduling conflicts or process questions
+          promptly. Maintains professional relationships with internal
+          stakeholders and responds to requests within agreed timelines.
+        mid: >
+          Conducts effective intake meetings to clarify role requirements and
+          hiring criteria. Manages hiring manager expectations on timeline
+          and market conditions, provides regular pipeline updates, and
+          facilitates debrief discussions that drive clear hiring decisions.
+        senior: >
+          Serves as a trusted talent advisor to senior hiring managers,
+          providing market intelligence and challenging unrealistic
+          expectations with data. Navigates competing priorities across
+          multiple stakeholders and resolves conflicts in hiring processes.
+        staff: >
+          Builds strategic partnerships with business unit leaders, aligning
+          recruiting capacity with organizational priorities and workforce
+          plans. Establishes stakeholder engagement frameworks including SLAs,
+          satisfaction surveys, and executive reporting cadences across teams.
+        principal: >
+          Operates as a strategic partner to C-suite executives on talent
+          strategy, influencing organizational design and workforce planning
+          decisions. Builds executive-level relationships that position talent
+          acquisition as a competitive advantage rather than a support function.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          Stakeholder management is fundamentally about human relationships,
+          trust-building, and navigating organizational politics. AI can
+          support with data and communication drafting, but the influence,
+          negotiation, and advisory aspects require interpersonal skills that
+          remain firmly in the human domain.
+
+    - id: market_intelligence
+      name: "Market Intelligence"
+      category: technical
+      description: >
+        Gathering, analyzing, and applying talent market data including
+        compensation trends, competitor hiring activity, skill availability,
+        geographic talent density, and industry trends to inform sourcing
+        strategies, offer competitiveness, and workforce planning decisions.
+      proficiency:
+        junior: >
+          Gathers basic market data from job boards, salary sites, and
+          LinkedIn Talent Insights to support recruiter decision-making.
+          Compiles competitive intelligence reports using templates and
+          tracks competitor job postings for key roles.
+        mid: >
+          Conducts talent market analyses for specific roles and geographies,
+          synthesizing data from multiple sources into actionable insights.
+          Advises hiring managers on realistic expectations based on supply
+          and demand dynamics and compensation benchmarks.
+        senior: >
+          Develops comprehensive talent market intelligence for strategic
+          hiring initiatives including competitor organizational mapping,
+          talent flow analysis, and emerging skill trend identification.
+          Presents market insights to senior leadership to influence hiring
+          strategy and location planning.
+        staff: >
+          Builds talent intelligence capabilities for the organization
+          including data partnerships, competitive analysis frameworks, and
+          market monitoring dashboards. Integrates market intelligence into
+          workforce planning processes and location strategy discussions
+          across the company.
+        principal: >
+          Shapes the company's talent intelligence strategy, building
+          partnerships with research firms and industry groups. Provides
+          executive-level briefings on labor market trends, informs M&A
+          talent due diligence, and influences long-term talent supply
+          chain decisions through data-driven market analysis.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI excels at aggregating and analyzing large volumes of market data,
+          identifying compensation trends, and tracking competitor activity.
+          However, interpreting market signals in the context of specific
+          organizational needs and translating data into strategic talent
+          decisions still requires experienced human judgment.
+
+    - id: candidate_experience
+      name: "Candidate Experience"
+      category: interpersonal
+      description: >
+        Designing and delivering a positive, transparent, and respectful
+        experience for all candidates throughout the recruiting process, from
+        initial contact through onboarding, including communication cadence,
+        feedback delivery, process efficiency, and brand-consistent interactions.
+      proficiency:
+        junior: >
+          Maintains prompt and professional communication with candidates at
+          each stage. Ensures scheduling is smooth, provides clear next-step
+          information, and follows up on outstanding items. Gathers basic
+          candidate feedback through post-interview surveys.
+        mid: >
+          Manages the full candidate journey ensuring consistent, timely, and
+          transparent communication. Delivers constructive feedback to rejected
+          candidates, personalizes interactions beyond templates, and monitors
+          candidate satisfaction scores to identify improvement areas.
+        senior: >
+          Designs candidate experience workflows that differentiate the company
+          in competitive talent markets. Maps the candidate journey to identify
+          friction points, implements experience improvements based on survey
+          data and NPS scores, and coaches recruiters on empathetic
+          communication during difficult conversations.
+        staff: >
+          Establishes organization-wide candidate experience standards including
+          communication SLAs, feedback policies, and experience measurement
+          frameworks. Partners with marketing and operations to ensure brand
+          consistency across all candidate touchpoints from career site through
+          day-one onboarding.
+        principal: >
+          Shapes the company's candidate experience philosophy as a strategic
+          differentiator, ensuring every interaction reflects organizational
+          values. Benchmarks against industry leaders, invests in experience
+          technology, and builds a candidate-centric culture that turns even
+          rejected candidates into brand advocates.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI chatbots and automation improve response times and provide
+          24/7 candidate support for routine questions. However, delivering
+          empathetic communication, handling sensitive situations like
+          rejections, and creating memorable human connections throughout the
+          hiring process remain distinctly human capabilities.
+
+    - id: closing_selling
+      name: "Closing & Selling"
+      category: interpersonal
+      description: >
+        Persuading top candidates to accept offers by articulating compelling
+        value propositions tailored to individual motivations, addressing
+        concerns, managing competing offers, and orchestrating the final stages
+        of the hiring process to maximize acceptance rates.
+      proficiency:
+        junior: >
+          Communicates offer details clearly and enthusiastically, answering
+          straightforward candidate questions about compensation, benefits,
+          and start dates. Escalates candidate hesitations to senior recruiters
+          and follows up promptly to maintain engagement momentum.
+        mid: >
+          Identifies candidate motivations and tailors the company pitch to
+          address individual priorities such as career growth, impact,
+          flexibility, or compensation. Manages standard counter-offer
+          scenarios and maintains candidate enthusiasm through the decision
+          period with strategic touchpoints.
+        senior: >
+          Orchestrates complex closing strategies for senior candidates facing
+          multiple competing offers. Coordinates executive sell calls, team
+          meet-and-greets, and site visits. Reads candidate signals accurately,
+          anticipates objections, and crafts creative solutions to close
+          difficult hires consistently.
+        staff: >
+          Defines closing playbooks and training programs for the recruiting
+          organization, establishing best practices for different candidate
+          segments and seniority levels. Analyzes offer decline data to
+          identify systemic competitiveness gaps and partners with compensation
+          to address them proactively.
+        principal: >
+          Personally closes executive and critical leadership hires, partnering
+          with C-suite sponsors to deliver compelling visions of impact and
+          opportunity. Shapes the organization's closing philosophy, ensuring
+          recruiters can articulate authentic and differentiated value
+          propositions that resonate in competitive talent markets.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          Closing candidates is fundamentally about human persuasion, empathy,
+          and relationship management. AI can provide data to support closing
+          arguments and suggest optimal timing, but reading candidate emotions,
+          building genuine excitement, and navigating personal decision
+          dynamics remain irreplaceable human skills.

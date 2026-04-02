@@ -1,0 +1,656 @@
+role:
+  id: frontend
+  function: engineering
+  name: "Frontend Engineer"
+  also_known_as:
+    - "Frontend Developer"
+    - "UI Engineer"
+    - "Client-Side Developer"
+    - "Web Developer"
+    - "UI Developer"
+  description: >
+    Designs, builds, and maintains the user-facing layers of web applications,
+    translating product requirements and design specifications into performant,
+    accessible, and maintainable browser-based experiences. Frontend engineers
+    own the full client-side stack from markup and styling through JavaScript
+    application logic, state management, and API integration, while
+    collaborating closely with designers, backend engineers, and product
+    managers to deliver cohesive products.
+
+  ai_impact:
+    level: high
+    summary: >
+      AI code-generation tools (Copilot, Cursor, v0, Claude) are rapidly
+      absorbing boilerplate UI work: scaffolding components, writing CSS,
+      generating test stubs, and converting designs to code. However, the
+      craft of building coherent, accessible, performant user experiences
+      that serve real human needs remains deeply judgment-driven. Senior
+      frontend engineers are shifting toward architecture, design-system
+      governance, and performance strategy, using AI as a productivity
+      multiplier rather than a replacement.
+    automating:
+      - "Generating boilerplate component markup and styling from design mockups"
+      - "Writing unit and snapshot tests for presentational components"
+      - "Converting Figma frames to initial component code via design-to-code tools"
+      - "Scaffolding CRUD forms, data tables, and standard UI patterns"
+      - "Auto-fixing common accessibility lint violations"
+    augmenting:
+      - "Debugging complex cross-browser rendering and layout issues"
+      - "Refactoring large component trees and migrating between frameworks"
+      - "Writing integration and end-to-end tests for stateful user flows"
+      - "Optimizing bundle size, code splitting, and Core Web Vitals"
+      - "Reviewing pull requests for performance regressions and accessibility gaps"
+    preserving:
+      - "Defining frontend architecture and module boundaries for large applications"
+      - "Making nuanced UX trade-offs that balance business goals, user needs, and technical constraints"
+      - "Establishing and evolving design-system APIs and component contracts"
+      - "Mentoring junior engineers and shaping team coding standards"
+      - "Navigating ambiguous product requirements and driving technical strategy"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "GitHub Copilot Research on Developer Productivity"
+        url: "https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/"
+      - name: "GreatFrontEnd Frontend Engineering Framework"
+        url: "https://www.greatfrontend.com/front-end-interview-guidebook"
+      - name: "Vercel v0 and AI-Assisted UI Generation"
+        url: "https://v0.dev/"
+
+  levels:
+    - id: junior
+      name: "Junior (L1-L2)"
+      years_experience: "0-2"
+      summary: >
+        Builds well-defined features within an existing codebase under
+        guidance. Writes semantic HTML, functional CSS, and straightforward
+        component logic. Learns team patterns, follows established
+        conventions, and ships incremental improvements with code-review
+        support from senior peers.
+    - id: mid
+      name: "Mid-Level (L3)"
+      years_experience: "2-4"
+      summary: >
+        Independently owns medium-complexity features end-to-end, from
+        technical design through production deployment. Writes reliable
+        tests, proactively addresses accessibility and performance, and
+        contributes to shared component libraries. Begins mentoring junior
+        engineers and participating in architectural discussions.
+    - id: senior
+      name: "Senior (L4)"
+      years_experience: "4-8"
+      summary: >
+        Drives technical design for major product surfaces and cross-cutting
+        frontend concerns. Establishes patterns for state management,
+        testing strategy, and build optimization that the team adopts. Owns
+        performance budgets, leads accessibility audits, and shapes the
+        frontend roadmap. Regularly unblocks others and elevates team-wide
+        code quality.
+    - id: staff
+      name: "Staff (L5)"
+      years_experience: "8-12"
+      summary: >
+        Sets frontend architectural direction across multiple teams or a
+        product area. Defines design-system governance, migration
+        strategies, and platform-level infrastructure (mono-repo tooling,
+        CI/CD for frontend, micro-frontend boundaries). Influences
+        organization-wide technical standards and represents frontend
+        engineering in cross-functional leadership forums.
+    - id: principal
+      name: "Principal (L6+)"
+      years_experience: "12+"
+      summary: >
+        Shapes the company's long-term frontend technology strategy and
+        makes decisions with multi-year impact. Drives adoption of
+        emerging web-platform capabilities, evaluates build-vs-buy for
+        frontend infrastructure, and mentors staff engineers. Recognized
+        externally as a domain expert and contributes back to the broader
+        frontend community through talks, standards work, or open source.
+
+  skills:
+    - id: html_css
+      name: "HTML & CSS"
+      category: technical
+      description: >
+        Semantic HTML5 markup, CSS3 layout systems (Flexbox, Grid),
+        responsive design primitives, modern styling approaches (CSS
+        custom properties, container queries, cascade layers), and
+        CSS-in-JS or utility-first methodologies.
+      proficiency:
+        junior: >
+          Writes valid, semantic HTML and uses Flexbox or Grid for common
+          layouts. Applies existing utility classes or component styles
+          and fixes basic responsiveness issues with guidance.
+        mid: >
+          Structures markup for accessibility and SEO, builds complex
+          responsive layouts without reliance on frameworks, and uses CSS
+          custom properties and media queries to maintain consistent
+          theming across breakpoints.
+        senior: >
+          Defines CSS architecture conventions (naming, layering, scoping)
+          for the team. Leverages advanced features like container queries,
+          cascade layers, and subgrid to solve non-trivial layout problems
+          while keeping specificity manageable at scale.
+        staff: >
+          Establishes organization-wide CSS strategy including tooling
+          choices (CSS modules, Tailwind, vanilla-extract), token systems,
+          and migration paths. Evaluates emerging CSS specifications and
+          determines adoption timelines.
+        principal: >
+          Influences cross-company standards for markup and styling that
+          ensure long-term maintainability across dozens of teams. Drives
+          platform-level decisions such as moving to CSS-layer-based
+          architecture or native CSS nesting across the entire product
+          surface.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI tools reliably generate correct HTML structure and CSS for
+          standard layouts and can convert designs to markup. However,
+          crafting scalable CSS architecture, resolving subtle cross-browser
+          rendering bugs, and making informed decisions about styling
+          methodology at scale remain human-driven.
+
+    - id: javascript_typescript
+      name: "JavaScript & TypeScript"
+      category: technical
+      description: >
+        Core language proficiency in modern JavaScript (ES2020+) and
+        TypeScript, including type-system design, async patterns,
+        closures, prototypal inheritance, module systems, and runtime
+        behavior across browser environments.
+      proficiency:
+        junior: >
+          Writes clear, functional JavaScript using modern syntax (arrow
+          functions, destructuring, async/await). Uses basic TypeScript
+          types and interfaces to annotate component props and function
+          signatures.
+        mid: >
+          Leverages advanced TypeScript features (generics, discriminated
+          unions, mapped types) to build type-safe APIs. Understands the
+          event loop, common memory-leak patterns, and writes idiomatic
+          async code with proper error handling.
+        senior: >
+          Designs complex type architectures that enforce domain invariants
+          at compile time. Debugs subtle runtime issues (race conditions,
+          memory leaks, prototype pollution) and establishes TypeScript
+          configuration and strictness standards for the codebase.
+        staff: >
+          Defines the TypeScript strategy across multiple packages or a
+          monorepo, including shared type libraries, custom ESLint rules,
+          and compiler-plugin usage. Evaluates and adopts new ECMAScript
+          proposals and TypeScript releases with clear migration guides.
+        principal: >
+          Drives language-level decisions with multi-year impact, such as
+          adopting new module systems or runtime targets. Contributes to
+          internal or external TypeScript tooling and shapes the
+          organization's approach to type safety as a quality lever.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI excels at generating syntactically correct JavaScript and
+          TypeScript for well-defined problems, but struggles with complex
+          type-system design, subtle async bugs, and architectural
+          decisions about module boundaries and type-safety trade-offs that
+          require deep contextual understanding.
+
+    - id: frontend_frameworks
+      name: "Frontend Frameworks"
+      category: technical
+      description: >
+        Proficiency in modern component-based frameworks (React, Vue,
+        Angular, Svelte, Solid) including their rendering models,
+        lifecycle management, server-side rendering (SSR), and
+        meta-frameworks (Next.js, Nuxt, Remix, SvelteKit).
+      proficiency:
+        junior: >
+          Builds features using the team's primary framework, understands
+          the component lifecycle, and follows established patterns for
+          props, state, and event handling. Creates simple reusable
+          components following existing conventions.
+        mid: >
+          Writes performant components with proper memoization and
+          rendering optimizations. Understands SSR/SSG trade-offs and
+          configures routing, data fetching, and error boundaries in the
+          meta-framework the team uses.
+        senior: >
+          Makes informed framework-level decisions (client vs. server
+          components, streaming SSR, partial hydration) and designs
+          component APIs that scale across the application. Leads framework
+          version upgrades and manages breaking-change migrations.
+        staff: >
+          Evaluates and selects frameworks for new product surfaces,
+          balancing team expertise, ecosystem maturity, and performance
+          characteristics. Architects multi-app or micro-frontend
+          solutions and defines shared rendering infrastructure.
+        principal: >
+          Shapes the organization's long-term framework strategy, including
+          when to adopt, migrate, or sunset frameworks. Engages with
+          framework maintainers, anticipates paradigm shifts (e.g., React
+          Server Components, signals-based reactivity), and positions the
+          company's frontend stack for the next 3-5 years.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI tools can scaffold components, generate hooks, and implement
+          standard patterns within popular frameworks effectively. However,
+          choosing the right rendering strategy, designing component
+          boundaries, managing complex framework migrations, and making
+          SSR/hydration trade-offs require experienced human judgment.
+
+    - id: state_management
+      name: "State Management"
+      category: technical
+      description: >
+        Patterns and tools for managing client-side application state,
+        including local component state, global stores (Redux, Zustand,
+        Pinia), server-state synchronization (React Query, SWR), URL
+        state, and form state management.
+      proficiency:
+        junior: >
+          Uses local component state (useState, ref) and follows existing
+          patterns for accessing global state. Understands the difference
+          between local and shared state and can wire up basic form state.
+        mid: >
+          Selects appropriate state-management approaches for different
+          concerns (server cache vs. UI state vs. URL state). Implements
+          normalized data stores and uses server-state libraries to handle
+          caching, revalidation, and optimistic updates.
+        senior: >
+          Designs state architecture for complex features (real-time
+          collaboration, multi-step wizards, offline-first flows) and
+          establishes team conventions for state placement, naming, and
+          selector patterns to prevent prop-drilling and unnecessary
+          re-renders.
+        staff: >
+          Defines state-management strategy across multiple products,
+          evaluating trade-offs between co-located server state, global
+          client stores, and URL-driven state. Leads migrations between
+          state-management paradigms (e.g., Redux to Zustand, REST to
+          React Query).
+        principal: >
+          Sets the organizational philosophy on state management,
+          balancing consistency across teams with the freedom to choose the
+          right tool. Anticipates shifts in the ecosystem (signals, fine-
+          grained reactivity) and guides adoption of emerging patterns.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can generate standard Redux slices, Zustand stores, and React
+          Query hooks, but designing coherent state architecture for
+          complex applications with multiple data sources, real-time
+          updates, and offline requirements remains a deeply contextual
+          human skill.
+
+    - id: performance_optimization
+      name: "Performance Optimization"
+      category: technical
+      description: >
+        Measuring and improving frontend performance using Core Web Vitals
+        (LCP, INP, CLS), Lighthouse auditing, bundle analysis, code
+        splitting, lazy loading, runtime profiling, and rendering
+        optimization techniques.
+      proficiency:
+        junior: >
+          Understands basic performance concepts (bundle size, image
+          optimization, lazy loading). Runs Lighthouse audits and
+          interprets scores with guidance. Avoids obvious anti-patterns
+          like blocking renders or loading unnecessary polyfills.
+        mid: >
+          Profiles rendering performance using browser DevTools, implements
+          code splitting and dynamic imports, and optimizes images with
+          modern formats (WebP, AVIF) and responsive srcsets. Monitors
+          Core Web Vitals and addresses regressions.
+        senior: >
+          Establishes performance budgets and CI-integrated monitoring for
+          LCP, INP, and CLS. Implements advanced optimizations such as
+          streaming SSR, selective hydration, resource hints (preload,
+          prefetch), and virtual scrolling for large datasets.
+        staff: >
+          Defines the organization's performance strategy including RUM
+          tooling, synthetic monitoring infrastructure, and performance
+          review gates in the deployment pipeline. Drives cross-team
+          initiatives to improve site-wide Core Web Vitals.
+        principal: >
+          Shapes the company's performance culture and investment
+          priorities, translating performance metrics into business impact
+          (conversion, SEO, user retention). Evaluates emerging platform
+          APIs (Speculation Rules, View Transitions) for performance
+          leverage.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can suggest common performance fixes and identify obvious
+          bottlenecks from code review, but diagnosing real-world
+          performance issues requires interpreting RUM data, understanding
+          user behavior patterns, and making trade-offs between loading
+          strategies that depend heavily on application-specific context.
+
+    - id: accessibility
+      name: "Accessibility (WCAG)"
+      category: technical
+      description: >
+        Building inclusive web experiences that conform to WCAG 2.2
+        guidelines (A, AA, AAA), ARIA specification, assistive technology
+        compatibility, keyboard navigation, focus management, and
+        accessibility testing with screen readers.
+      proficiency:
+        junior: >
+          Uses semantic HTML elements correctly (headings, landmarks,
+          buttons vs. links). Adds alt text to images, ensures basic
+          keyboard navigability, and runs automated accessibility linting
+          tools like axe-core.
+        mid: >
+          Implements ARIA roles, states, and properties for custom
+          interactive widgets (modals, dropdowns, tabs). Tests with screen
+          readers (VoiceOver, NVDA), manages focus correctly on route
+          changes, and ensures color contrast meets WCAG AA requirements.
+        senior: >
+          Leads accessibility audits against WCAG 2.2 AA criteria and
+          remediates complex violations. Establishes team-level
+          accessibility testing standards (automated and manual) and
+          designs accessible component APIs that make the inaccessible
+          path harder than the accessible one.
+        staff: >
+          Defines the organization's accessibility strategy including
+          compliance targets, testing infrastructure (CI integration, user
+          testing with disabled users), and training programs. Partners
+          with legal and product to manage accessibility risk.
+        principal: >
+          Champions accessibility as a core engineering value at the
+          executive level. Drives adoption of emerging accessibility
+          standards, evaluates assistive-technology trends, and represents
+          the company in industry accessibility initiatives.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI tools can catch common accessibility violations (missing alt
+          text, low contrast, missing labels) and suggest ARIA attributes,
+          but understanding the lived experience of users with
+          disabilities, designing truly inclusive interaction patterns, and
+          making nuanced ARIA decisions for complex widgets requires human
+          empathy and expertise.
+
+    - id: testing
+      name: "Frontend Testing"
+      category: technical
+      description: >
+        Testing strategies and tools for frontend applications including
+        unit tests (Jest, Vitest), component tests (Testing Library),
+        integration tests, end-to-end tests (Playwright, Cypress),
+        visual regression testing, and test architecture.
+      proficiency:
+        junior: >
+          Writes unit tests for utility functions and simple component
+          rendering using Testing Library. Follows existing test patterns
+          and achieves adequate coverage for assigned features with
+          guidance on what to test.
+        mid: >
+          Writes component tests that verify user interactions and
+          accessibility, uses mocking strategies for API calls and
+          dependencies, and contributes to end-to-end tests for critical
+          user flows. Understands the testing pyramid and chooses
+          appropriate test types.
+        senior: >
+          Defines the team's testing strategy across unit, integration,
+          and end-to-end layers. Sets up visual regression testing,
+          establishes test-data factories, and creates custom test
+          utilities that make writing good tests easier. Reduces flaky
+          tests and optimizes CI test runtime.
+        staff: >
+          Architects testing infrastructure that scales across multiple
+          teams, including shared test utilities, parallel execution
+          pipelines, and test-environment management. Evaluates and adopts
+          testing tools and establishes coverage and quality gates.
+        principal: >
+          Sets the organizational testing philosophy, balancing confidence
+          and speed. Drives investment in testing infrastructure, evaluates
+          emerging approaches (AI-generated tests, mutation testing,
+          contract testing for micro-frontends), and ensures testing
+          practices evolve with the architecture.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI is increasingly effective at generating unit and component
+          tests from existing code, especially for well-typed functions
+          and presentational components. However, designing meaningful
+          test strategies, writing integration tests for complex stateful
+          flows, and eliminating flaky tests require understanding of the
+          system's behavior and failure modes.
+
+    - id: build_tooling
+      name: "Build Tools & Bundlers"
+      category: technical
+      description: >
+        Configuration and optimization of frontend build pipelines
+        including bundlers (Vite, webpack, Turbopack, esbuild), package
+        managers (npm, pnpm, yarn), transpilation, module resolution,
+        development servers, and monorepo tooling (Nx, Turborepo).
+      proficiency:
+        junior: >
+          Uses the project's existing build tooling and development server
+          comfortably. Understands basic concepts like transpilation, hot
+          module replacement, and environment variables. Troubleshoots
+          common build errors with documentation and search.
+        mid: >
+          Configures bundler settings for code splitting, aliasing, and
+          environment-specific builds. Manages dependencies, resolves
+          version conflicts, and optimizes the development server for
+          fast iteration. Sets up basic CI build steps.
+        senior: >
+          Optimizes build performance (parallelization, caching, tree
+          shaking), configures advanced code-splitting strategies, and
+          migrates between build tools (e.g., webpack to Vite). Designs
+          the CI/CD pipeline for frontend assets including CDN deployment,
+          cache busting, and source-map management.
+        staff: >
+          Architects monorepo build infrastructure using Nx or Turborepo,
+          implementing remote caching, affected-based testing, and shared
+          configuration packages. Evaluates new bundlers and build tools,
+          running benchmarks and leading organization-wide migrations.
+        principal: >
+          Defines the organization's build-infrastructure strategy,
+          balancing developer experience, CI cost, and build reliability.
+          Anticipates ecosystem shifts (e.g., native ESM, WebAssembly
+          toolchains) and positions the build pipeline for long-term
+          evolution.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can generate standard build configurations and troubleshoot
+          common bundler errors, but designing build pipelines for large
+          monorepos, diagnosing obscure module-resolution issues, and
+          making strategic tooling migration decisions require deep
+          understanding of the JavaScript module ecosystem and
+          organizational constraints.
+
+    - id: api_integration
+      name: "API Integration & Data Fetching"
+      category: technical
+      description: >
+        Connecting frontend applications to backend services via REST,
+        GraphQL, gRPC-Web, or WebSocket APIs. Includes data-fetching
+        patterns, caching strategies, error handling, authentication
+        token management, and real-time data synchronization.
+      proficiency:
+        junior: >
+          Makes API calls using fetch or axios, handles loading and error
+          states in the UI, and displays paginated data. Follows existing
+          patterns for authentication headers and response parsing.
+        mid: >
+          Implements robust data-fetching layers with proper caching,
+          retry logic, and optimistic updates using libraries like React
+          Query or SWR. Handles authentication flows (OAuth, JWT refresh)
+          and designs API error-handling strategies that surface meaningful
+          feedback to users.
+        senior: >
+          Designs the frontend's API integration architecture, including
+          API client abstractions, request deduplication, and type-safe
+          API contracts (generated types from OpenAPI or GraphQL schemas).
+          Implements real-time features using WebSockets or Server-Sent
+          Events with proper reconnection and state reconciliation.
+        staff: >
+          Defines cross-team standards for API consumption, including
+          shared client libraries, contract-testing practices, and
+          backend-for-frontend (BFF) patterns. Drives adoption of
+          type-safe API boundaries and coordinates frontend-backend
+          interface evolution across teams.
+        principal: >
+          Shapes the organization's API strategy from the frontend
+          perspective, influencing API design standards, versioning
+          policies, and the adoption of emerging protocols. Evaluates
+          trade-offs between GraphQL federation, REST, and RPC approaches
+          at organizational scale.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI effectively generates API client code, data-fetching hooks,
+          and type definitions from API schemas. However, designing
+          resilient data-fetching architectures, handling complex
+          real-time synchronization, and making protocol-level decisions
+          require understanding of both the frontend application's needs
+          and the backend system's characteristics.
+
+    - id: responsive_design
+      name: "Responsive & Cross-Browser Design"
+      category: technical
+      description: >
+        Building interfaces that work seamlessly across viewport sizes
+        (mobile, tablet, desktop), input modalities (touch, mouse,
+        keyboard), and browser engines (Chromium, WebKit, Gecko),
+        including progressive enhancement and graceful degradation
+        strategies.
+      proficiency:
+        junior: >
+          Implements mobile-first responsive layouts using media queries
+          and flexible units (rem, %, vw/vh). Tests across major browsers
+          and fixes obvious rendering differences with guidance.
+        mid: >
+          Designs fluid layouts that adapt gracefully across breakpoints
+          using container queries, clamp(), and modern CSS layout
+          techniques. Implements touch-friendly interactions, manages
+          browser-specific quirks, and uses feature detection for
+          progressive enhancement.
+        senior: >
+          Establishes the team's responsive-design strategy including
+          breakpoint systems, fluid typography scales, and input-modality
+          detection. Defines browser-support matrices and sets up
+          cross-browser testing infrastructure (BrowserStack, Playwright
+          multi-browser).
+        staff: >
+          Defines organization-wide responsive-design standards that
+          balance design fidelity, engineering cost, and device coverage.
+          Drives adoption of modern CSS features with appropriate
+          fallback strategies and coordinates browser-support policies
+          across product lines.
+        principal: >
+          Anticipates shifts in the device and browser landscape (foldable
+          devices, new viewport APIs, emerging browser engines) and
+          positions the organization's responsive-design approach for
+          long-term relevance. Influences the design organization's
+          approach to adaptive design systems.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI tools can generate responsive CSS and suggest breakpoint-
+          specific adjustments effectively. However, designing coherent
+          responsive experiences that account for real-world device
+          diversity, interaction patterns, and progressive-enhancement
+          strategies requires design sensibility and cross-device testing
+          expertise.
+
+    - id: design_system_integration
+      name: "Design System Integration"
+      category: technical
+      description: >
+        Working with and contributing to design systems including
+        component libraries, design tokens, theming infrastructure,
+        documentation (Storybook), and the bridge between design tools
+        (Figma) and production code.
+      proficiency:
+        junior: >
+          Consumes existing design-system components correctly, follows
+          token usage guidelines for spacing, color, and typography, and
+          references Storybook documentation when building features.
+        mid: >
+          Contributes new components to the design system following
+          established API patterns. Writes Storybook stories with
+          meaningful states and variants, implements theming via design
+          tokens, and flags design-code inconsistencies to the design
+          team.
+        senior: >
+          Designs component APIs that balance flexibility, consistency,
+          and accessibility. Establishes contribution guidelines, review
+          processes, and versioning strategies for the component library.
+          Architects the token pipeline from Figma to code and manages
+          the Storybook documentation infrastructure.
+        staff: >
+          Owns the design-system platform architecture including package
+          distribution, multi-framework support, visual regression testing,
+          and automated Figma-to-code synchronization. Defines governance
+          models for design-system evolution across multiple consuming
+          teams.
+        principal: >
+          Sets the strategic vision for the organization's design-system
+          investment, balancing build-vs-buy decisions, evaluating
+          headless component libraries, and ensuring the design system
+          scales with organizational growth. Aligns design-system
+          direction with brand, product, and engineering leadership.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can generate component variations, write Storybook stories,
+          and convert Figma designs into initial component implementations.
+          However, designing composable and accessible component APIs,
+          establishing governance models, and making strategic design-
+          system decisions that balance consistency with team autonomy
+          are deeply human activities.
+
+    - id: frontend_architecture
+      name: "Frontend Architecture & System Design"
+      category: technical
+      description: >
+        High-level structural decisions for frontend applications
+        including module boundaries, rendering strategies (CSR, SSR,
+        SSG, ISR), micro-frontend architecture, monorepo structure,
+        code organization patterns, and technical decision-making
+        frameworks.
+      proficiency:
+        junior: >
+          Understands the project's folder structure and module
+          organization. Follows established architectural patterns for
+          feature development and recognizes when a task may require
+          architectural guidance before implementation.
+        mid: >
+          Makes sound local architectural decisions about component
+          composition, module organization, and data flow within a
+          feature area. Evaluates trade-offs between different
+          implementation approaches and documents technical decisions
+          in design documents.
+        senior: >
+          Designs the architecture for major features or application
+          areas, choosing appropriate rendering strategies, defining
+          module boundaries, and establishing patterns that other
+          engineers follow. Writes technical RFCs and leads architecture
+          reviews for frontend changes with cross-cutting impact.
+        staff: >
+          Architects frontend systems that span multiple teams, including
+          micro-frontend boundaries, shared platform layers, and
+          cross-cutting concerns (authentication, analytics, error
+          tracking). Defines the monorepo structure, package boundaries,
+          and dependency management strategy for the frontend platform.
+        principal: >
+          Sets the long-term frontend architecture vision for the
+          organization, making decisions about rendering infrastructure,
+          build vs. buy for platform capabilities, and technology bets
+          with multi-year horizons. Evaluates emerging architectural
+          patterns (islands architecture, resumability, edge rendering)
+          and guides adoption when appropriate.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          Frontend architecture is the skill least susceptible to AI
+          automation. It requires understanding organizational context,
+          team capabilities, product direction, and technical trade-offs
+          that span multiple systems. AI can help explore options and
+          document decisions, but the judgment to choose the right
+          architecture for a specific context remains fundamentally human.

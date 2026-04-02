@@ -1,0 +1,689 @@
+role:
+  id: ux_designer
+  function: design
+  name: "UX Designer"
+  also_known_as:
+    - "Product Designer"
+    - "Experience Designer"
+    - "Interaction Designer"
+    - "UX/UI Designer"
+    - "Digital Product Designer"
+  description: >
+    Designs end-to-end user experiences for digital products by translating
+    user needs, business goals, and technical constraints into intuitive
+    interaction patterns, information structures, and interface flows. UX
+    designers lead the process from discovery and research synthesis through
+    wireframing, prototyping, and usability validation, collaborating closely
+    with product managers, engineers, and researchers to deliver experiences
+    that are useful, usable, and delightful.
+
+  ai_impact:
+    level: moderate-high
+    summary: >
+      AI tools are accelerating wireframing and prototyping workflows, with
+      generative-AI features in Figma and specialized tools like Galileo AI
+      producing layout suggestions and screen variants from text prompts.
+      Routine deliverables such as user-flow diagrams and low-fidelity
+      wireframes are increasingly automatable. However, the core of UX
+      design -- understanding nuanced human behavior, synthesizing ambiguous
+      research into coherent mental models, and navigating complex
+      stakeholder trade-offs -- remains deeply human. Senior UX designers
+      are leveraging AI to explore more options faster while focusing their
+      own energy on strategic framing and design judgment.
+    automating:
+      - "Generating low-fidelity wireframe variations from text descriptions"
+      - "Producing user-flow diagrams from feature requirements"
+      - "Creating first-draft screen layouts based on common UX patterns"
+      - "Auto-suggesting microcopy and UX writing alternatives"
+    augmenting:
+      - "Exploring a wider solution space by rapidly generating design alternatives"
+      - "Synthesizing large volumes of user research notes into themes and patterns"
+      - "Analyzing usability test recordings for friction points and drop-offs"
+      - "Generating accessibility audit reports from design files"
+      - "Translating wireframes into higher-fidelity prototypes faster"
+    preserving:
+      - "Defining product strategy and experience vision that align business and user goals"
+      - "Facilitating cross-functional workshops and resolving stakeholder conflicts"
+      - "Making nuanced trade-offs between usability, feasibility, and business value"
+      - "Building deep empathy through direct user engagement and contextual inquiry"
+      - "Mentoring junior designers and shaping team design culture"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Drawbackwards UX Designer 12 Competencies"
+        url: "https://www.drawbackwards.com/ux-designer-competencies"
+      - name: "Cieden UX Competency Matrix"
+        url: "https://www.cieden.com/competency-matrix"
+      - name: "Nielsen Norman Group AI and UX"
+        url: "https://www.nngroup.com/articles/ai-ux/"
+
+  levels:
+    - id: junior
+      name: "Junior (L1-L2)"
+      years_experience: "0-2"
+      summary: >
+        Executes well-scoped design tasks under guidance, producing
+        wireframes, user flows, and simple prototypes that follow
+        established design patterns. Learns the team's design system and
+        research methods, participates in usability sessions as a note-taker,
+        and iterates on designs based on feedback from senior designers.
+    - id: mid
+      name: "Mid-Level (L3)"
+      years_experience: "2-4"
+      summary: >
+        Independently owns the design for medium-complexity features from
+        discovery through delivery. Conducts lightweight research, creates
+        comprehensive interaction specifications, and collaborates directly
+        with engineers to resolve implementation questions. Begins
+        contributing to design-system components and facilitating design
+        reviews.
+    - id: senior
+      name: "Senior (L4)"
+      years_experience: "4-8"
+      summary: >
+        Leads design for major product areas, defining the interaction
+        model and information architecture for complex workflows. Drives
+        design quality standards, mentors mid-level designers, and
+        translates research insights into strategic design directions.
+        Operates as a key partner to product management and engineering
+        leadership in roadmap planning.
+    - id: staff
+      name: "Staff (L5)"
+      years_experience: "8-12"
+      summary: >
+        Sets the UX vision across multiple product areas or an entire
+        product line. Defines experience principles, establishes design
+        quality frameworks, and resolves cross-team design conflicts.
+        Influences organizational design practices, introduces new methods
+        and tools, and represents design in executive-level product
+        strategy discussions.
+    - id: principal
+      name: "Principal (L6+)"
+      years_experience: "12+"
+      summary: >
+        Shapes the company's overall experience strategy and design
+        culture, making decisions with multi-year impact on how users
+        perceive and interact with the product portfolio. Drives
+        organizational investment in design maturity, builds relationships
+        with industry leaders, and contributes thought leadership that
+        elevates the broader UX community.
+
+  skills:
+    - id: information_architecture
+      name: "Information Architecture"
+      category: technical
+      description: >
+        Structuring and organizing content, navigation systems, and
+        labeling schemes so that users can find information and complete
+        tasks efficiently. Includes card sorting, tree testing, sitemap
+        design, and taxonomy development.
+      proficiency:
+        junior: >
+          Understands basic IA concepts such as hierarchies, labels, and
+          navigation patterns. Creates simple sitemaps for well-defined
+          sections and participates in card-sorting exercises under
+          guidance.
+        mid: >
+          Designs information architectures for medium-complexity products
+          with multiple content types and user roles. Conducts card sorts
+          and tree tests independently, and iterates on navigation
+          structures based on findability metrics.
+        senior: >
+          Defines IA strategy for large-scale products with deep content
+          hierarchies, faceted navigation, and cross-linked information
+          spaces. Establishes naming conventions and taxonomy governance
+          that scale across product areas and content teams.
+        staff: >
+          Sets IA standards and principles across the organization,
+          ensuring consistent mental models across product lines. Leads
+          IA audits for major redesigns and coaches teams on structuring
+          information for discoverability at scale.
+        principal: >
+          Drives the organizational approach to information architecture
+          as products grow in complexity, influencing content strategy,
+          search infrastructure, and cross-product navigation. Shapes
+          how the company thinks about findability as a core product
+          quality.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can suggest category structures and generate sitemap drafts
+          from content inventories, but crafting information architectures
+          that match users' mental models requires deep understanding of
+          user behavior, domain terminology, and organizational context
+          that remains a human-judgment activity.
+
+    - id: interaction_design
+      name: "Interaction Design"
+      category: technical
+      description: >
+        Defining how users interact with a product through behavior
+        patterns, microinteractions, transitions, feedback mechanisms,
+        and gestural or input-based controls. Encompasses both the
+        logic of interactive flows and the moment-to-moment feel of
+        using an interface.
+      proficiency:
+        junior: >
+          Applies standard interaction patterns (buttons, forms, modals,
+          dropdowns) correctly and consistently. Documents basic
+          interaction states (default, hover, active, disabled, error)
+          and follows established conventions for feedback and transitions.
+        mid: >
+          Designs multi-step interactive flows with clear state management,
+          error recovery, and progressive disclosure. Creates
+          microinteraction specifications that communicate system status
+          and guide user attention. Handles edge cases like empty states,
+          loading states, and offline conditions.
+        senior: >
+          Defines interaction models for complex product domains such as
+          data-heavy dashboards, collaborative editing, or multi-device
+          workflows. Establishes interaction-design patterns and
+          principles that the broader team adopts, ensuring consistency
+          across features and surfaces.
+        staff: >
+          Sets the organization's interaction-design philosophy and
+          pattern vocabulary, bridging design and engineering to ensure
+          feasibility. Leads the development of interaction-pattern
+          libraries and evaluates emerging input modalities (voice,
+          gesture, spatial) for strategic fit.
+        principal: >
+          Shapes the company's long-term interaction paradigm as platforms
+          and input modalities evolve. Drives investment in interaction
+          innovation, evaluates the impact of emerging technologies like
+          spatial computing on product interaction models, and
+          establishes the company as a leader in interaction quality.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI tools can suggest standard interaction patterns and generate
+          state diagrams, but designing interactions that feel intuitive,
+          handle complex state transitions gracefully, and adapt to
+          novel input modalities requires deep human understanding of
+          cognitive ergonomics and contextual user behavior.
+
+    - id: wireframing_prototyping
+      name: "Wireframing & Prototyping"
+      category: technical
+      description: >
+        Creating low-to-high fidelity representations of interfaces to
+        explore, communicate, and validate design solutions. Includes
+        paper sketches, digital wireframes, clickable prototypes, and
+        production-fidelity interactive prototypes using tools like
+        Figma, Sketch, or code-based prototyping.
+      proficiency:
+        junior: >
+          Creates clean wireframes using standard components in Figma or
+          similar tools. Builds simple click-through prototypes that
+          demonstrate primary user flows and presents them to the team
+          for feedback.
+        mid: >
+          Produces wireframes at varying fidelity levels appropriate to
+          the design phase, from rapid sketches during ideation to
+          detailed annotated wireframes for engineering handoff. Builds
+          interactive prototypes with realistic transitions and conditional
+          logic to test specific hypotheses.
+        senior: >
+          Uses prototyping strategically to de-risk complex interactions,
+          validate assumptions with stakeholders, and test with users
+          before engineering investment. Selects the right fidelity and
+          tool for each situation, from paper prototypes to code-based
+          prototypes for high-fidelity motion and data integration.
+        staff: >
+          Establishes prototyping standards and shared component libraries
+          that accelerate the team's ability to explore and validate
+          solutions. Evaluates emerging prototyping tools and methods,
+          integrating them into the team's design workflow for maximum
+          impact on decision speed.
+        principal: >
+          Shapes the organization's approach to prototyping as a
+          strategic capability, ensuring teams invest appropriate effort
+          at each stage of the design process. Champions rapid
+          experimentation culture and evaluates how AI-assisted
+          prototyping tools change the economics of design exploration.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI-powered tools like Galileo AI and Figma's generative features
+          can produce wireframe variations and layout suggestions from
+          text prompts, significantly accelerating the exploration phase.
+          However, knowing which ideas to pursue, what fidelity to use
+          for which audience, and how to craft prototypes that answer
+          specific design questions remains a skilled human activity.
+
+    - id: user_flows
+      name: "User Flows & Journey Mapping"
+      category: analytical
+      description: >
+        Mapping the paths users take through a product to accomplish
+        goals, including task flows, user journeys, service blueprints,
+        and experience maps. Visualizes decision points, pain points,
+        and emotional states across touchpoints.
+      proficiency:
+        junior: >
+          Creates basic task-flow diagrams showing the happy path for
+          well-defined features. Documents the steps a user takes to
+          complete a single goal and identifies obvious decision points
+          and error states.
+        mid: >
+          Designs comprehensive user-flow diagrams covering primary,
+          secondary, and error paths for medium-complexity features.
+          Creates customer journey maps that capture emotional states,
+          pain points, and opportunities across multiple touchpoints.
+        senior: >
+          Maps end-to-end journeys spanning multiple product areas and
+          channels, identifying systemic pain points and opportunities
+          for experience improvement. Facilitates cross-functional
+          journey-mapping workshops and uses journey artifacts to
+          influence product-roadmap prioritization.
+        staff: >
+          Establishes journey-mapping methodology and templates across
+          the organization. Connects journey insights to measurable
+          outcomes, building frameworks that help teams continuously
+          monitor and improve key user journeys at portfolio scale.
+        principal: >
+          Drives the company's customer-experience measurement strategy,
+          connecting journey-level insights to business metrics and
+          strategic planning. Influences how the organization thinks
+          about end-to-end experience ownership across product boundaries
+          and organizational silos.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can generate user-flow diagrams from feature descriptions
+          and suggest common journey patterns, but understanding the
+          actual paths real users take, identifying non-obvious pain
+          points, and connecting journey insights to strategic product
+          decisions requires empathy and contextual judgment that AI
+          cannot replicate.
+
+    - id: usability_evaluation
+      name: "Usability Evaluation"
+      category: analytical
+      description: >
+        Assessing the effectiveness, efficiency, and satisfaction of
+        user interfaces through heuristic evaluation, cognitive
+        walkthroughs, usability testing, and expert reviews. Includes
+        identifying usability issues, severity rating, and
+        prioritizing fixes.
+      proficiency:
+        junior: >
+          Conducts basic heuristic evaluations using Nielsen's heuristics
+          or similar frameworks. Identifies obvious usability issues in
+          existing interfaces and documents them with screenshots and
+          severity ratings under guidance.
+        mid: >
+          Performs structured usability evaluations including cognitive
+          walkthroughs and heuristic reviews independently. Plans and
+          facilitates moderated usability tests for specific features,
+          synthesizes findings into actionable recommendations, and
+          tracks issue resolution.
+        senior: >
+          Designs comprehensive usability evaluation programs combining
+          multiple methods (heuristic review, testing, analytics review)
+          to assess product quality holistically. Establishes usability
+          benchmarks, defines severity frameworks, and integrates
+          usability evaluation into the team's design and release process.
+        staff: >
+          Sets organizational standards for usability evaluation,
+          including when and how to apply different methods, quality
+          thresholds for releases, and training programs for designers
+          and product managers. Connects usability metrics to product
+          KPIs and business outcomes.
+        principal: >
+          Champions usability as a competitive differentiator at the
+          executive level. Defines the company's approach to experience
+          quality measurement, benchmarks against industry leaders, and
+          drives investment in usability infrastructure and tooling that
+          raises the quality bar across all products.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI tools can perform automated heuristic checks and flag common
+          usability anti-patterns in design files, but interpreting why
+          users struggle, assessing severity in context, and making
+          trade-off recommendations between fixing usability issues and
+          other priorities requires human judgment and domain expertise.
+
+    - id: design_thinking
+      name: "Design Thinking & Problem Framing"
+      category: analytical
+      description: >
+        Applying human-centered design methodology to frame problems,
+        generate ideas, and converge on solutions. Includes empathy
+        mapping, problem definition, ideation facilitation, concept
+        development, and iterative validation through the double-diamond
+        or similar frameworks.
+      proficiency:
+        junior: >
+          Participates in design-thinking workshops and contributes to
+          ideation sessions. Understands the basic phases (empathize,
+          define, ideate, prototype, test) and applies structured
+          brainstorming techniques like How Might We statements and
+          Crazy 8s.
+        mid: >
+          Facilitates design-thinking exercises for specific features or
+          problem spaces. Frames design challenges clearly, generates
+          multiple solution concepts, and uses structured evaluation
+          criteria to converge on approaches. Creates empathy maps and
+          personas grounded in research.
+        senior: >
+          Leads design-thinking processes for ambiguous, high-impact
+          problem spaces that span multiple features or product areas.
+          Adapts methodology to the situation, selecting the right
+          activities and fidelity for each phase. Coaches product
+          managers and engineers in design-thinking methods.
+        staff: >
+          Introduces and scales design-thinking practices across the
+          organization. Develops custom frameworks that integrate
+          design thinking into product development workflows, and
+          trains cross-functional leaders to apply human-centered
+          approaches to strategic decisions.
+        principal: >
+          Embeds human-centered design thinking into the company's
+          innovation culture and strategic planning process. Drives
+          the adoption of design-led approaches at the executive
+          level for new market exploration, product-portfolio decisions,
+          and organizational change initiatives.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          Design thinking is fundamentally a facilitation and
+          sense-making practice that requires reading the room,
+          managing group dynamics, and synthesizing ambiguous inputs
+          into actionable direction. AI can support ideation by
+          generating stimulus material, but the facilitation, empathy,
+          and judgment at the heart of design thinking are deeply human.
+
+    - id: accessibility_design
+      name: "Accessibility Design"
+      category: technical
+      description: >
+        Designing inclusive experiences that work for people with
+        diverse abilities, including visual, auditory, motor, and
+        cognitive disabilities. Encompasses WCAG compliance, inclusive
+        design principles, assistive-technology considerations, and
+        accessibility testing in the design phase.
+      proficiency:
+        junior: >
+          Understands core accessibility principles (color contrast,
+          text alternatives, keyboard navigation) and applies them to
+          designs. Uses accessibility plugins in Figma to check contrast
+          ratios and follows existing accessible component patterns.
+        mid: >
+          Designs interfaces that meet WCAG 2.2 AA standards, including
+          proper focus order, meaningful ARIA labeling annotations, and
+          alternative interaction paths. Considers diverse user needs
+          during the design phase and tests designs with assistive
+          technologies like screen readers.
+        senior: >
+          Leads accessibility reviews for major product launches and
+          establishes design-phase accessibility checklists and
+          annotation standards. Designs accessible patterns for complex
+          interactions (data tables, drag-and-drop, real-time content)
+          and coaches team members on inclusive design practices.
+        staff: >
+          Defines the organization's accessibility design strategy,
+          including compliance targets, design-phase audit processes,
+          and integration with engineering accessibility testing.
+          Partners with legal and product leadership to manage
+          accessibility risk and drives investment in inclusive design
+          capabilities.
+        principal: >
+          Champions inclusive design as a core company value at the
+          executive level. Shapes the organization's long-term
+          accessibility roadmap, engages with disability communities
+          and advocacy organizations, and drives industry-level
+          contributions to accessibility standards and best practices.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can automate contrast checks, suggest ARIA annotations, and
+          flag common accessibility violations in design files, reducing
+          the effort for routine compliance. However, designing truly
+          inclusive experiences requires understanding the diverse ways
+          people interact with technology, which demands empathy and
+          expertise that AI cannot provide.
+
+    - id: ux_writing
+      name: "UX Writing & Content Design"
+      category: communication
+      description: >
+        Crafting the words that appear in user interfaces -- button
+        labels, error messages, onboarding copy, tooltips, and
+        navigation text -- to guide users, reduce confusion, and
+        create a consistent product voice. Includes content strategy,
+        terminology governance, and localization considerations.
+      proficiency:
+        junior: >
+          Writes clear, concise UI labels, button text, and simple error
+          messages following the product's established voice and tone
+          guidelines. Recognizes when copy is confusing or inconsistent
+          and flags issues for review.
+        mid: >
+          Crafts UX copy for complete feature flows including onboarding,
+          empty states, error handling, and success confirmations.
+          Maintains consistency with the product's content style guide
+          and considers localization implications when writing copy.
+        senior: >
+          Defines content patterns and writing guidelines for product
+          areas, establishing voice and tone standards that other
+          designers follow. Creates content frameworks for complex
+          flows (permissions, destructive actions, data privacy) and
+          collaborates with content strategists on terminology governance.
+        staff: >
+          Sets the organization's UX writing standards and content
+          design methodology. Builds content pattern libraries, defines
+          terminology governance processes, and ensures content quality
+          scales across teams, products, and locales.
+        principal: >
+          Shapes the company's voice and content experience strategy at
+          the portfolio level, aligning UX writing practices with brand
+          strategy and internationalization goals. Drives investment in
+          content infrastructure and evaluates how AI writing tools
+          should be integrated into content workflows.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI excels at generating UX copy variations, suggesting concise
+          alternatives, and adapting text for different tones and locales.
+          It is increasingly useful for first-draft microcopy. However,
+          establishing a product's voice, making nuanced terminology
+          decisions, and crafting copy for sensitive contexts (error
+          recovery, data deletion, privacy) require human judgment and
+          brand sensibility.
+
+    - id: cross_functional_collaboration
+      name: "Cross-Functional Collaboration"
+      category: communication
+      description: >
+        Working effectively with product managers, engineers, researchers,
+        data analysts, and other stakeholders to align on goals, negotiate
+        trade-offs, and deliver cohesive product experiences. Includes
+        facilitating design reviews, participating in sprint ceremonies,
+        and managing design-engineering handoff.
+      proficiency:
+        junior: >
+          Communicates design decisions clearly to immediate team members
+          and responds constructively to feedback. Participates in sprint
+          ceremonies, provides design assets on time, and asks clarifying
+          questions when requirements are ambiguous.
+        mid: >
+          Collaborates proactively with engineers on implementation
+          feasibility and trade-offs. Manages design handoff with clear
+          specifications and annotations, facilitates design reviews
+          with product and engineering, and escalates blockers
+          appropriately.
+        senior: >
+          Acts as a design partner to product and engineering leads,
+          influencing feature scope, prioritization, and technical
+          approach. Facilitates cross-functional workshops, resolves
+          conflicts between business goals and user needs, and ensures
+          design quality is maintained through implementation.
+        staff: >
+          Builds and maintains cross-functional relationships at the
+          leadership level, representing design perspective in strategic
+          discussions. Establishes collaboration rituals and handoff
+          processes that scale across teams, and coaches designers on
+          effective stakeholder management.
+        principal: >
+          Shapes the organizational model for design-product-engineering
+          collaboration, influencing team structures, decision-making
+          frameworks, and resource allocation. Builds bridges between
+          design and executive leadership to ensure design has a seat
+          at the strategic table.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Cross-functional collaboration is fundamentally an interpersonal
+          skill involving negotiation, empathy, trust-building, and
+          organizational navigation. AI tools may help with meeting
+          summaries or documentation, but the relationship-building
+          and influence required for effective collaboration are
+          irreplaceably human.
+
+    - id: design_leadership
+      name: "Design Leadership & Mentorship"
+      category: leadership
+      description: >
+        Guiding the professional growth of other designers, setting
+        quality standards, defining team processes, and providing
+        creative direction. Includes hiring, performance management,
+        career coaching, and building a healthy design culture.
+      proficiency:
+        junior: >
+          Seeks feedback actively and applies it to improve work.
+          Supports teammates by sharing learnings and participating
+          constructively in design critiques. Begins to develop a
+          perspective on good design practice.
+        mid: >
+          Provides helpful feedback in design critiques and informally
+          mentors newer designers. Contributes to team process
+          improvements and begins articulating design rationale
+          persuasively to non-design stakeholders.
+        senior: >
+          Formally mentors junior and mid-level designers, providing
+          regular feedback on craft and career development. Sets
+          quality standards for the team's output, leads design
+          critiques, and contributes to hiring by conducting portfolio
+          reviews and interviews.
+        staff: >
+          Defines the design team's processes, quality bar, and
+          professional development framework. Leads hiring strategy,
+          shapes the team's culture, and provides creative direction
+          across multiple projects. Coaches senior designers preparing
+          for staff-level responsibilities.
+        principal: >
+          Builds and shapes the design organization's culture, values,
+          and talent strategy. Defines career frameworks, establishes
+          the company's design reputation through external engagement,
+          and serves as an executive sponsor for design excellence
+          initiatives that attract and retain top talent.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Design leadership and mentorship are intrinsically human
+          activities that require emotional intelligence, trust, and
+          the ability to develop others through personalized coaching.
+          AI cannot replicate the judgment needed to provide nuanced
+          career guidance, build team culture, or inspire creative
+          confidence in others.
+
+    - id: research_integration
+      name: "Research Integration"
+      category: analytical
+      description: >
+        Incorporating user research findings into design decisions,
+        including interpreting research data, translating insights into
+        design requirements, and maintaining a continuous feedback loop
+        between design and research. Distinct from conducting research
+        (a UX researcher skill), this focuses on being an effective
+        consumer and commissioner of research.
+      proficiency:
+        junior: >
+          Reads and understands research reports and usability findings.
+          Incorporates direct user feedback into design iterations when
+          pointed to specific insights. Asks questions to clarify
+          research implications for assigned work.
+        mid: >
+          Proactively seeks relevant research findings before starting
+          design work. Identifies when additional research is needed
+          and writes effective research briefs. Translates research
+          insights into specific design requirements and validates
+          design decisions against existing evidence.
+        senior: >
+          Drives the research agenda for a product area by identifying
+          the most critical knowledge gaps. Synthesizes research from
+          multiple sources (usability tests, analytics, surveys, market
+          research) into coherent design strategies and ensures the
+          team designs with evidence, not assumptions.
+        staff: >
+          Establishes how design and research collaborate across the
+          organization, including research-intake processes, shared
+          insight repositories, and frameworks for research-informed
+          decision-making. Ensures research investment is aligned with
+          the highest-impact design decisions.
+        principal: >
+          Shapes the organizational culture around evidence-based design,
+          championing research investment at the executive level. Defines
+          how research insights flow into product strategy and long-term
+          experience vision, ensuring design decisions at all levels are
+          grounded in genuine user understanding.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can help surface relevant research findings from large
+          repositories and summarize key insights, making it easier to
+          access existing knowledge. However, determining which research
+          questions matter most, interpreting findings in the context
+          of design trade-offs, and building a culture of evidence-based
+          design require human judgment and organizational influence.
+
+    - id: design_critique
+      name: "Design Critique & Feedback"
+      category: communication
+      description: >
+        Giving and receiving structured feedback on design work to
+        improve quality, build shared understanding, and develop
+        team skills. Includes facilitating critique sessions, providing
+        actionable feedback at the right level of abstraction, and
+        creating a psychologically safe environment for honest
+        evaluation.
+      proficiency:
+        junior: >
+          Presents own work clearly in critique sessions and receives
+          feedback constructively. Provides basic observations about
+          peer designs, focusing on consistency with established
+          patterns and obvious usability issues.
+        mid: >
+          Gives specific, actionable feedback grounded in design
+          principles and user needs rather than personal preference.
+          Distinguishes between strategic and surface-level feedback,
+          and adapts critique depth to the design phase (concept vs.
+          detailed design).
+        senior: >
+          Facilitates design critiques that are productive and
+          psychologically safe, guiding the conversation toward the
+          most impactful issues. Provides feedback that elevates the
+          team's craft, connecting specific design decisions to user
+          outcomes and business goals.
+        staff: >
+          Establishes critique practices and feedback culture across
+          the design organization. Trains designers in effective
+          critique methods, defines review processes for high-stakes
+          design decisions, and models the vulnerability and rigor
+          needed for healthy design discourse.
+        principal: >
+          Shapes the organization's design quality culture through
+          the critique and review practices they champion. Provides
+          high-level creative direction on the most important product
+          experiences and ensures that design excellence is maintained
+          through scalable feedback mechanisms as the team grows.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can analyze designs against heuristics and style guides,
+          flagging inconsistencies and accessibility issues. However,
+          effective design critique requires understanding the design
+          intent, reading the team dynamic, calibrating feedback to the
+          designer's growth stage, and creating an environment where
+          honest feedback drives improvement -- all deeply human skills.

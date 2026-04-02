@@ -1,0 +1,699 @@
+role:
+  id: people_analytics
+  function: hr
+  name: "People Analytics Specialist"
+  also_known_as:
+    - "HR Data Analyst"
+    - "Workforce Analytics Analyst"
+    - "People Data Scientist"
+    - "HR Analytics Specialist"
+    - "People Insights Analyst"
+  description: >
+    Applies data science, statistical analysis, and business intelligence
+    techniques to workforce data to generate insights that inform talent
+    decisions, improve employee experience, and drive organizational
+    performance. People analytics specialists design research studies, build
+    predictive models, create dashboards, and translate complex data findings
+    into actionable recommendations for HR and business leaders, serving as
+    the quantitative backbone of evidence-based people practices.
+  ai_impact:
+    level: "moderate-high"
+    summary: >
+      AI is amplifying people analytics capabilities by automating data
+      preparation, generating exploratory analyses, building predictive models
+      with less manual feature engineering, and creating natural language
+      summaries of complex findings. AI-powered platforms democratize access
+      to workforce insights through conversational interfaces. However, the
+      discipline's core challenges around research design, causal inference,
+      ethical data use, privacy compliance, and translating insights into
+      organizational action remain deeply human. Specialists who leverage AI
+      for technical acceleration while focusing on research rigor, ethical
+      judgment, and stakeholder influence will be most valuable.
+    automating:
+      - "Data extraction, cleaning, and preparation from HRIS systems"
+      - "Standard workforce reporting and dashboard generation"
+      - "Basic descriptive analytics and trend visualization"
+      - "Survey response coding and theme extraction"
+      - "Anomaly detection in workforce metrics"
+      - "Natural language summaries of analytical findings"
+    augmenting:
+      - "Predictive model development for attrition and performance"
+      - "Advanced statistical analysis and hypothesis testing"
+      - "Survey design optimization and psychometric validation"
+      - "Organizational network analysis from communication data"
+      - "Skills taxonomy development from job and performance data"
+      - "Sentiment analysis across employee feedback channels"
+    preserving:
+      - "Research design and causal inference methodology"
+      - "Ethical judgment on data privacy and algorithmic fairness"
+      - "Stakeholder communication and influence with non-technical leaders"
+      - "Contextual interpretation of findings within organizational reality"
+      - "Building organizational trust in data-driven people decisions"
+      - "Navigating political sensitivities around workforce data"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "O*NET - Management Analysts"
+        url: "https://www.onetonline.org/link/summary/13-1111.00"
+      - name: "Wharton People Analytics"
+        url: "https://wpa.wharton.upenn.edu/"
+      - name: "Josh Bersin - People Analytics Trends"
+        url: "https://joshbersin.com/people-analytics/"
+  levels:
+    - id: junior
+      name: "People Analytics Analyst I"
+      years_experience: "0-2"
+      summary: >
+        Supports analytics projects by extracting and cleaning workforce data,
+        generating standard reports, and building basic visualizations. Learns
+        HR domain knowledge, develops SQL and statistical skills, and assists
+        senior analysts with data preparation for research projects under
+        close guidance.
+    - id: mid
+      name: "People Analytics Analyst II"
+      years_experience: "2-5"
+      summary: >
+        Conducts independent analyses on defined workforce questions including
+        attrition drivers, engagement trends, and compensation equity. Builds
+        dashboards and reports for HR stakeholders, applies appropriate
+        statistical methods, and presents findings with clear recommendations.
+        Manages survey administration and basic predictive modeling.
+    - id: senior
+      name: "Senior People Analytics Specialist"
+      years_experience: "5-8"
+      summary: >
+        Leads complex analytics projects from research design through
+        stakeholder presentation, applying advanced statistical and machine
+        learning methods. Designs research studies with proper methodology,
+        builds predictive models, and translates findings into actionable
+        strategies. Mentors junior analysts and establishes analytical
+        standards for the team.
+    - id: staff
+      name: "People Analytics Manager / Lead"
+      years_experience: "8-12"
+      summary: >
+        Manages the people analytics function, setting the research agenda
+        and overseeing a team of analysts. Designs the analytics technology
+        stack, establishes data governance standards, and partners with HR
+        and business leadership to ensure analytics drives strategic
+        decisions. Builds organizational capability for evidence-based
+        people practices.
+    - id: principal
+      name: "Head of People Analytics / VP People Insights"
+      years_experience: "12+"
+      summary: >
+        Defines the organization's people analytics strategy at the executive
+        level, aligning research priorities with business strategy and talent
+        objectives. Builds the analytics team and technology infrastructure,
+        establishes ethical data use standards, and ensures people insights
+        influence board-level workforce decisions and organizational
+        transformation.
+  skills:
+    - id: workforce_analytics
+      name: "Workforce Analytics"
+      category: technical
+      description: >
+        Analyzing workforce data including headcount, turnover, tenure,
+        demographics, cost, and productivity metrics to provide descriptive,
+        diagnostic, and prescriptive insights that inform operational and
+        strategic workforce decisions.
+      proficiency:
+        junior: >
+          Generates standard workforce reports from HRIS data including
+          headcount summaries, turnover calculations, and demographic
+          breakdowns. Understands basic workforce metrics definitions and
+          creates simple visualizations using established templates and tools.
+        mid: >
+          Conducts multi-dimensional workforce analyses combining headcount,
+          cost, performance, and demographic data. Builds interactive
+          dashboards with drill-down capabilities, identifies trends and
+          anomalies, and presents findings to HR business partners with
+          contextual interpretation and recommendations.
+        senior: >
+          Designs comprehensive workforce analytics frameworks that connect
+          operational metrics to strategic outcomes. Builds automated
+          reporting pipelines, creates executive-level workforce intelligence
+          briefings, and applies diagnostic analytics to identify root causes
+          of workforce challenges such as attrition spikes or engagement gaps.
+        staff: >
+          Defines the organization's workforce analytics strategy and
+          standards, establishing metric definitions, data quality
+          requirements, and reporting hierarchies. Builds self-service
+          analytics capabilities for HR business partners and ensures
+          workforce intelligence is integrated into business planning cycles.
+        principal: >
+          Shapes the company's workforce intelligence vision at the executive
+          level, ensuring workforce analytics capabilities support strategic
+          workforce planning, M&A due diligence, and board reporting. Drives
+          adoption of real-time workforce monitoring and connects people
+          metrics to financial and operational performance outcomes.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI dramatically accelerates workforce reporting, anomaly detection,
+          and trend analysis from HRIS data. However, designing meaningful
+          metric frameworks, interpreting findings in organizational context,
+          and translating analytics into decisions that leaders will act on
+          require human domain expertise and communication skills.
+
+    - id: survey_design_analysis
+      name: "Survey Design & Analysis"
+      category: technical
+      description: >
+        Designing, administering, and analyzing employee surveys including
+        engagement surveys, pulse checks, onboarding surveys, and exit
+        interviews, applying psychometric principles to ensure valid and
+        reliable measurement of employee attitudes and experiences.
+      proficiency:
+        junior: >
+          Assists with survey administration including platform configuration,
+          distribution, and response rate monitoring. Compiles basic survey
+          results such as response frequencies and average scores, and formats
+          reports using established templates for stakeholder review.
+        mid: >
+          Designs survey instruments with appropriate question types, scales,
+          and sequencing for specific measurement objectives. Conducts
+          statistical analyses including reliability testing, factor analysis,
+          and demographic breakdowns. Creates action-oriented reports that
+          highlight key findings and improvement opportunities.
+        senior: >
+          Leads the organizational survey program, designing comprehensive
+          measurement strategies including engagement models, benchmark
+          selection, and longitudinal trend analysis. Applies advanced
+          psychometric techniques, designs driver analyses to prioritize
+          interventions, and presents findings to senior leadership with
+          evidence-based action recommendations.
+        staff: >
+          Defines the organization's employee listening strategy, establishing
+          survey cadence, platform standards, and governance for feedback
+          channels including surveys, focus groups, and always-on listening
+          tools. Ensures survey programs drive measurable action and maintains
+          organizational trust in the feedback process.
+        principal: >
+          Shapes the company's employee listening philosophy at the executive
+          level, ensuring the organization maintains continuous insight into
+          workforce sentiment and experience. Connects survey insights to
+          board-level talent risk assessment, drives adoption of modern
+          listening approaches, and ensures ethical data use in sentiment
+          analysis.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI automates open-ended response coding, sentiment analysis, and
+          theme extraction from survey data. However, designing valid survey
+          instruments, interpreting results in organizational context, and
+          facilitating action planning processes require human expertise in
+          research methodology and organizational dynamics.
+
+    - id: predictive_modeling
+      name: "Predictive Modeling"
+      category: technical
+      description: >
+        Building statistical and machine learning models to predict workforce
+        outcomes such as attrition risk, performance trajectory, promotion
+        readiness, and engagement trends, including feature engineering, model
+        selection, validation, and responsible deployment of predictive
+        insights.
+      proficiency:
+        junior: >
+          Understands basic predictive modeling concepts such as regression,
+          classification, and train-test splits. Assists with data preparation
+          for modeling projects, runs models using established code templates,
+          and documents results under guidance from senior analysts.
+        mid: >
+          Builds predictive models for defined workforce outcomes using
+          logistic regression, decision trees, and ensemble methods. Conducts
+          feature engineering, performs cross-validation, and evaluates model
+          performance using appropriate metrics. Presents model findings with
+          clear interpretation of key predictors.
+        senior: >
+          Designs end-to-end predictive analytics projects from problem
+          framing through deployment, selecting appropriate methods and
+          addressing challenges such as class imbalance, feature selection,
+          and temporal validity. Ensures models are explainable to non-
+          technical stakeholders and evaluates fairness across demographic
+          groups before deployment.
+        staff: >
+          Defines the organization's predictive people analytics strategy,
+          establishing governance for model development, validation, and
+          deployment. Builds the technical infrastructure for model lifecycle
+          management, ensures algorithmic fairness standards, and drives
+          organizational adoption of predictive insights in talent decisions.
+        principal: >
+          Shapes the company's approach to predictive workforce intelligence
+          at the executive level, balancing analytical ambition with ethical
+          responsibility and privacy requirements. Ensures predictive
+          capabilities inform strategic workforce planning and risk
+          management, and establishes standards that position the organization
+          as a responsible leader in people analytics innovation.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI and AutoML tools significantly accelerate model building, feature
+          selection, and hyperparameter tuning. However, framing the right
+          prediction problems, ensuring models are fair and ethical, validating
+          results against organizational reality, and communicating
+          predictions responsibly require human judgment.
+
+    - id: data_visualization
+      name: "Data Visualization"
+      category: technical
+      description: >
+        Creating effective visual representations of workforce data using
+        tools such as Tableau, Power BI, Looker, or Python visualization
+        libraries, designing dashboards and reports that communicate insights
+        clearly to diverse audiences from analysts to executives.
+      proficiency:
+        junior: >
+          Creates basic charts, graphs, and tables that accurately represent
+          workforce data. Uses visualization tools to build standard reports
+          following established design templates. Understands fundamental
+          principles of chart selection and data presentation clarity.
+        mid: >
+          Builds interactive dashboards with appropriate visual encodings,
+          filtering, and drill-down capabilities. Designs visualizations that
+          tell coherent data stories, tailors complexity to audience
+          sophistication, and maintains consistent visual standards across
+          analytics deliverables for HR stakeholders.
+        senior: >
+          Designs visualization strategies for complex analytical narratives,
+          creating executive-level presentations that distill complicated
+          findings into intuitive visual stories. Establishes data
+          visualization standards for the analytics team, mentors junior
+          analysts on effective visual communication, and evaluates new tools.
+        staff: >
+          Defines the organization's people analytics visualization strategy
+          and standards, establishing design systems, self-service dashboard
+          architectures, and publishing workflows. Ensures visualizations
+          support data-driven decision-making across the HR function and
+          drive executive engagement with people insights.
+        principal: >
+          Shapes the company's people data communication philosophy at the
+          executive level, ensuring workforce insights are presented with
+          the clarity and impact needed to influence board and C-suite
+          decisions. Drives innovation in how the organization communicates
+          about its workforce through data storytelling and visual analytics.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can auto-generate charts, suggest optimal visualizations for
+          data types, and create natural language summaries of dashboards.
+          However, designing visualizations that tell compelling stories,
+          highlight the right insights for specific audiences, and drive
+          action require human understanding of communication and context.
+
+    - id: hris_data_integration
+      name: "HRIS & Data Integration"
+      category: technical
+      description: >
+        Extracting, transforming, and integrating data from multiple HR
+        systems including HRIS, ATS, LMS, performance management, and
+        compensation platforms to create unified datasets for analysis,
+        including data pipeline design, quality assurance, and governance.
+      proficiency:
+        junior: >
+          Extracts data from HRIS systems using standard queries and reports.
+          Performs basic data cleaning including deduplication, formatting
+          corrections, and missing value identification. Maintains data
+          dictionaries and documents data lineage for assigned datasets.
+        mid: >
+          Builds data integration workflows connecting multiple HR systems,
+          using SQL, Python, or ETL tools to create unified analytical
+          datasets. Designs data quality checks, manages data refresh
+          schedules, and resolves integration issues across source systems
+          for reliable analytics output.
+        senior: >
+          Architects the people analytics data infrastructure, designing
+          data models, integration patterns, and quality frameworks that
+          support advanced analytics at scale. Leads HRIS implementation
+          projects from a data perspective, ensures analytical datasets
+          are accurate and timely, and establishes data governance standards.
+        staff: >
+          Defines the organization's people data strategy, managing the
+          analytics data architecture, vendor integrations, and data quality
+          program. Establishes data governance including ownership, access
+          controls, and retention policies. Ensures the data infrastructure
+          supports both operational reporting and advanced analytics needs.
+        principal: >
+          Shapes the company's people data vision at the executive level,
+          ensuring data infrastructure supports the organization's analytics
+          ambitions and complies with evolving privacy regulations. Drives
+          investment in modern data platforms, influences HRIS vendor data
+          capabilities, and positions people data as a strategic asset.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI accelerates data cleaning, schema mapping, and integration
+          pipeline creation. However, designing data architectures that
+          support diverse analytical use cases, ensuring data quality in
+          complex multi-system environments, and establishing governance
+          frameworks require human expertise in both data engineering and
+          HR domain knowledge.
+
+    - id: statistical_methods
+      name: "Statistical Methods"
+      category: technical
+      description: >
+        Applying appropriate statistical techniques to workforce research
+        questions including hypothesis testing, regression analysis, ANOVA,
+        survival analysis, structural equation modeling, and Bayesian methods,
+        with rigorous attention to assumptions, sample size, and result
+        interpretation.
+      proficiency:
+        junior: >
+          Understands foundational statistical concepts including descriptive
+          statistics, correlation, t-tests, and chi-square tests. Applies
+          basic statistical analyses using R, Python, or SPSS under guidance,
+          and interprets results with attention to statistical significance.
+        mid: >
+          Applies intermediate statistical methods including multiple
+          regression, ANOVA, and logistic regression to workforce research
+          questions. Validates assumptions, handles missing data appropriately,
+          and communicates results with proper caveats about causation,
+          sample size, and generalizability.
+        senior: >
+          Selects and applies advanced statistical methods appropriate to
+          complex research designs including multilevel modeling, survival
+          analysis, and propensity score matching. Designs studies with
+          proper controls, addresses confounding variables, and ensures
+          methodological rigor in all analytical work produced by the team.
+        staff: >
+          Defines the organization's statistical methodology standards for
+          people analytics, establishing guidelines for method selection,
+          peer review processes, and reporting standards. Mentors analysts on
+          advanced techniques, evaluates emerging methodological approaches,
+          and ensures the team's analytical work meets academic-level rigor.
+        principal: >
+          Shapes the company's people analytics research methodology at the
+          executive level, building partnerships with academic institutions
+          and establishing the organization's reputation for rigorous
+          workforce research. Ensures analytical methods support defensible
+          conclusions in sensitive areas such as pay equity, performance
+          evaluation, and algorithmic decision-making.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can suggest appropriate statistical tests, run analyses, and
+          interpret outputs in natural language. However, designing proper
+          research methodologies, understanding when statistical assumptions
+          are violated in messy workforce data, and communicating findings
+          with appropriate nuance require trained statistical judgment.
+
+    - id: retention_attrition
+      name: "Retention & Attrition Analysis"
+      category: technical
+      description: >
+        Analyzing employee turnover patterns, identifying attrition drivers,
+        building retention risk models, and developing evidence-based
+        retention strategies through exit analysis, survival modeling,
+        stay interview data, and cost-of-turnover calculations.
+      proficiency:
+        junior: >
+          Calculates standard attrition metrics including overall turnover
+          rate, voluntary versus involuntary splits, and tenure distributions.
+          Compiles exit interview data into summary reports and tracks
+          turnover trends over time using established reporting templates.
+        mid: >
+          Conducts detailed attrition analyses segmented by department, role,
+          tenure, and demographics. Performs exit interview theme analysis,
+          calculates cost-of-turnover estimates, and identifies correlations
+          between engagement survey responses and subsequent attrition for
+          targeted retention recommendations.
+        senior: >
+          Designs comprehensive retention analytics programs including
+          predictive attrition models, survival analysis, and driver analyses
+          that isolate the most impactful retention levers. Presents findings
+          to senior leadership with specific intervention recommendations and
+          measures the effectiveness of retention programs over time.
+        staff: >
+          Defines the organization's retention analytics strategy, establishing
+          early warning systems, manager-level attrition dashboards, and
+          intervention effectiveness measurement frameworks. Integrates
+          retention analytics into talent review and workforce planning
+          processes and drives organizational adoption of data-driven
+          retention practices.
+        principal: >
+          Shapes the company's retention strategy at the executive level,
+          ensuring attrition insights inform board-level talent risk
+          discussions, compensation decisions, and organizational design.
+          Builds predictive capabilities that enable proactive retention
+          management and connects retention outcomes to financial performance
+          and organizational health metrics.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI excels at building attrition prediction models and identifying
+          risk patterns from large datasets. However, interpreting why
+          people actually leave versus what models predict, designing
+          effective retention interventions, and navigating the sensitivity
+          of using predictive models for individual-level actions require
+          human judgment and ethical consideration.
+
+    - id: diversity_metrics
+      name: "Diversity & Inclusion Metrics"
+      category: technical
+      description: >
+        Measuring and reporting on workforce diversity, equity, and inclusion
+        through representation analysis, pay equity metrics, inclusion
+        indices, promotion and attrition equity, and intersectional
+        demographic analysis, supporting organizational DEI accountability
+        and strategy.
+      proficiency:
+        junior: >
+          Generates standard diversity reports including representation
+          percentages by gender, race, and ethnicity across organizational
+          levels. Maintains demographic data accuracy and produces required
+          EEO-1 and other regulatory filings with attention to data quality.
+        mid: >
+          Conducts detailed diversity analyses including representation
+          trends, hiring and promotion equity ratios, and attrition
+          differentials by demographic group. Creates diversity dashboards
+          for leadership and identifies areas where representation or
+          equity metrics indicate potential concerns requiring attention.
+        senior: >
+          Designs comprehensive DEI measurement frameworks incorporating
+          representation, equity, inclusion, and belonging metrics.
+          Conducts intersectional analyses, builds inclusion indices from
+          survey data, and presents findings to senior leadership with
+          evidence-based recommendations. Ensures metrics support
+          accountability while maintaining statistical validity.
+        staff: >
+          Defines the organization's DEI analytics strategy, establishing
+          metric standards, reporting cadences, and accountability frameworks.
+          Builds executive dashboards that track progress against DEI goals,
+          supports public DEI reporting and ESG disclosures, and ensures
+          analytical approaches meet evolving regulatory requirements.
+        principal: >
+          Shapes the company's DEI measurement philosophy at the executive
+          level, ensuring metrics drive genuine progress rather than
+          performative reporting. Advises the board on DEI performance,
+          influences industry measurement standards, and ensures the
+          organization's analytical approach to DEI is both rigorous and
+          ethically grounded.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI automates diversity reporting, identifies intersectional
+          patterns, and flags equity anomalies. However, interpreting
+          diversity data in organizational and societal context, designing
+          metrics that drive meaningful change, and navigating the political
+          sensitivity of DEI measurement require human expertise and ethical
+          judgment.
+
+    - id: org_network_analysis
+      name: "Organizational Network Analysis"
+      category: technical
+      description: >
+        Mapping and analyzing informal organizational networks using
+        communication metadata, collaboration tool data, and survey-based
+        network instruments to understand information flow, influence
+        patterns, collaboration bottlenecks, and organizational connectivity.
+      proficiency:
+        junior: >
+          Understands basic network analysis concepts such as nodes, edges,
+          centrality, and clustering. Assists with data preparation for
+          network studies and creates simple network visualizations using
+          established tools under guidance from experienced analysts.
+        mid: >
+          Conducts organizational network analyses using communication
+          metadata or survey-based instruments, calculating standard network
+          metrics and creating visualizations that reveal collaboration
+          patterns. Identifies highly connected individuals, isolated groups,
+          and potential information bottlenecks within the organization.
+        senior: >
+          Designs and leads organizational network analysis projects, selecting
+          appropriate data sources, network metrics, and analytical approaches.
+          Interprets network findings in organizational context, advises
+          leaders on structural interventions, and combines network analysis
+          with other workforce data to generate richer insights.
+        staff: >
+          Defines the organization's approach to network analytics, establishing
+          ethical data use guidelines, platform partnerships, and integration
+          with broader people analytics capabilities. Builds organizational
+          understanding of network insights and drives adoption of network-
+          informed decisions in organizational design and change management.
+        principal: >
+          Shapes the company's approach to organizational intelligence at the
+          executive level, leveraging network analysis alongside traditional
+          workforce analytics to provide holistic insights into organizational
+          effectiveness. Navigates the privacy and ethical complexities of
+          passive data collection and positions network analytics as a
+          strategic capability.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI enhances network analysis through automated pattern detection,
+          community identification, and dynamic network visualization.
+          However, designing ethical data collection approaches, interpreting
+          network patterns in organizational context, and translating network
+          insights into actionable recommendations require human expertise.
+
+    - id: privacy_ethics
+      name: "Privacy & Ethics"
+      category: interpersonal
+      description: >
+        Ensuring people analytics practices comply with data privacy
+        regulations such as GDPR and CCPA, and adhere to ethical standards
+        for workforce data collection, analysis, and use, including informed
+        consent, algorithmic fairness, data minimization, and responsible
+        insight communication.
+      proficiency:
+        junior: >
+          Follows established data privacy protocols when handling employee
+          data, including access controls, data minimization, and secure
+          storage practices. Understands basic privacy concepts and escalates
+          questions about data use appropriateness to senior team members.
+        mid: >
+          Applies privacy-by-design principles to analytics projects,
+          conducting data protection impact assessments and implementing
+          anonymization and aggregation techniques. Ensures analytical
+          outputs do not inadvertently identify individuals and maintains
+          compliance with organizational data governance policies.
+        senior: >
+          Leads ethical review of analytics projects, establishing frameworks
+          for evaluating algorithmic fairness, assessing potential harms from
+          predictive models, and ensuring analytical practices respect employee
+          dignity. Partners with legal and compliance teams on privacy
+          requirements and coaches the team on ethical data practice.
+        staff: >
+          Defines the organization's people analytics ethics framework,
+          establishing review boards, fairness standards, and governance
+          processes for the responsible use of workforce data. Manages
+          privacy compliance across analytics operations, builds
+          organizational trust in data practices, and leads responses to
+          regulatory changes.
+        principal: >
+          Shapes the company's workforce data ethics philosophy at the
+          executive level, ensuring the organization is a responsible leader
+          in people analytics. Advises the board on workforce data risks,
+          influences industry ethical standards through thought leadership,
+          and navigates the evolving tension between analytical capability
+          and employee privacy rights.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          Privacy and ethics in people analytics is fundamentally about human
+          judgment, values, and trust. AI can flag potential privacy violations
+          and test for algorithmic bias, but determining what is ethically
+          appropriate, building organizational trust, and navigating the moral
+          complexities of workforce data use are deeply human responsibilities.
+
+    - id: storytelling_with_data
+      name: "Storytelling with Data"
+      category: interpersonal
+      description: >
+        Translating complex analytical findings into compelling narratives
+        that resonate with non-technical stakeholders, combining data
+        visualization, contextual interpretation, and persuasive
+        communication to drive evidence-based decision-making across the
+        organization.
+      proficiency:
+        junior: >
+          Presents basic data findings in clear, organized formats with
+          accurate labels and context. Writes concise summaries of analytical
+          results, distinguishing between correlation and causation in
+          communications, and practices translating numbers into plain
+          business language.
+        mid: >
+          Creates data-driven presentations that combine visualizations with
+          narrative context, organizing findings into logical story arcs for
+          HR business partners. Tailors communication complexity to audience
+          sophistication and highlights actionable insights with clear
+          recommendations supported by evidence.
+        senior: >
+          Crafts compelling executive-level data stories that connect
+          workforce insights to business outcomes, using narrative techniques
+          that engage, inform, and persuade senior leaders. Designs
+          presentation frameworks for recurring analytics deliverables and
+          coaches junior analysts on effective data communication.
+        staff: >
+          Defines the organization's people analytics communication strategy
+          and standards, establishing storytelling frameworks, presentation
+          templates, and training programs. Ensures analytics outputs are
+          accessible to diverse audiences and drive organizational adoption
+          of evidence-based people practices through compelling communication.
+        principal: >
+          Shapes how the company communicates about its workforce at the
+          executive and board level, ensuring people insights are presented
+          with the narrative power and analytical rigor needed to influence
+          strategic decisions. Builds the organization's reputation for
+          insightful people analytics through external thought leadership
+          and industry engagement.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can generate narrative summaries of data and suggest story
+          structures. However, crafting narratives that resonate with
+          specific organizational contexts, reading audience reactions,
+          building credibility through authentic communication, and
+          persuading leaders to act on findings remain distinctly human.
+
+    - id: stakeholder_communication
+      name: "Stakeholder Communication"
+      category: interpersonal
+      description: >
+        Building effective partnerships with HR leaders, business executives,
+        IT teams, and other stakeholders to ensure people analytics work is
+        aligned with organizational priorities, properly resourced, and
+        translated into actionable talent strategies.
+      proficiency:
+        junior: >
+          Communicates analytics project updates and findings clearly to
+          immediate team members and HR partners. Responds to data requests
+          promptly and accurately, and asks clarifying questions to ensure
+          analytical work addresses stakeholder needs effectively.
+        mid: >
+          Manages stakeholder relationships for assigned analytics projects,
+          conducting intake conversations to understand business questions,
+          setting expectations on timelines and methodology, and presenting
+          findings with clear recommendations tailored to stakeholder
+          priorities and decision-making contexts.
+        senior: >
+          Partners with senior HR and business leaders as a trusted analytics
+          advisor, proactively identifying opportunities for data-driven
+          insights and translating complex findings into strategic
+          recommendations. Manages competing stakeholder priorities,
+          negotiates project scope, and builds demand for analytics
+          capabilities across the organization.
+        staff: >
+          Builds strategic partnerships between the people analytics function
+          and executive leadership, establishing governance structures,
+          advisory relationships, and communication cadences. Positions
+          people analytics as a strategic capability rather than a reporting
+          function and drives organizational adoption of evidence-based
+          decision-making.
+        principal: >
+          Operates as a strategic advisor to the C-suite and board on
+          workforce data and insights, ensuring people analytics informs
+          the highest-level talent and business decisions. Builds external
+          partnerships with academic institutions and industry peers, and
+          positions the organization as a thought leader in people analytics
+          through visible and impactful stakeholder engagement.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          Stakeholder communication in people analytics is fundamentally
+          about building trust, managing expectations, and influencing
+          decisions through relationship and credibility. AI can prepare
+          supporting materials, but the interpersonal dynamics of advisory
+          partnership remain entirely human.

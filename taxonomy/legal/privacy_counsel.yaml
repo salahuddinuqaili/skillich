@@ -1,0 +1,768 @@
+role:
+  id: privacy_counsel
+  function: legal
+  name: "Privacy Counsel / Data Protection Officer"
+  also_known_as:
+    - "Data Protection Officer"
+    - "Privacy Officer"
+    - "Chief Privacy Officer"
+    - "Data Privacy Counsel"
+    - "Information Privacy Specialist"
+  description: >
+    Advises the organization on data protection laws and privacy regulations,
+    designs and manages privacy compliance programs, and serves as the
+    interface between the organization, data subjects, and regulatory
+    authorities on privacy matters. Privacy counsel navigates the complex
+    and rapidly evolving landscape of global privacy regulations including
+    GDPR, CCPA/CPRA, HIPAA, and sector-specific requirements, ensuring the
+    organization collects, processes, stores, and shares personal data
+    lawfully while enabling data-driven business objectives.
+  ai_impact:
+    level: "moderate"
+    summary: >
+      AI is creating a paradoxical dynamic for privacy professionals:
+      AI tools can automate privacy impact assessments, data mapping,
+      consent management, and regulatory monitoring, making privacy
+      programs more efficient. Simultaneously, the proliferation of AI
+      systems processing personal data is generating unprecedented new
+      privacy challenges that demand expert human guidance. Privacy counsel
+      must now advise on AI training data usage, algorithmic fairness, and
+      automated decision-making transparency -- novel questions where
+      regulation is still forming. The net effect is that while AI automates
+      routine privacy compliance tasks, the strategic and advisory demands
+      on privacy professionals are expanding faster than automation reduces
+      their workload.
+    automating:
+      - "Data subject access request intake and initial processing"
+      - "Privacy impact assessment questionnaire distribution and collection"
+      - "Cookie consent banner configuration and monitoring"
+      - "Data inventory updates from system scanning"
+      - "Privacy policy template generation and comparison"
+      - "Regulatory change monitoring and initial impact flagging"
+    augmenting:
+      - "Complex privacy impact assessment analysis"
+      - "Cross-border data transfer mechanism evaluation"
+      - "Vendor privacy review and risk scoring"
+      - "Data mapping across complex system architectures"
+      - "Breach notification timeline and obligation analysis"
+      - "Privacy regulation comparison across jurisdictions"
+    preserving:
+      - "Strategic privacy program design and evolution"
+      - "Regulatory engagement and relationship management"
+      - "Privacy advice for novel technology deployments (AI, IoT, biometrics)"
+      - "Balancing business innovation with privacy obligations"
+      - "Crisis leadership during data breach response"
+      - "Ethical judgment on privacy-by-design for emerging technologies"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "O*NET - Lawyers"
+        url: "https://www.onetonline.org/link/summary/23-1011.00"
+      - name: "IAPP (International Association of Privacy Professionals)"
+        url: "https://iapp.org/"
+      - name: "Gartner - Privacy Program Management"
+        url: "https://www.gartner.com/en/legal-compliance/topics/privacy"
+  levels:
+    - id: junior
+      name: "Junior Privacy Analyst"
+      years_experience: "0-2"
+      summary: >
+        Supports the privacy program by processing data subject requests,
+        maintaining data inventories, assisting with privacy impact
+        assessments, and conducting privacy research. Learns applicable
+        privacy regulations and organizational data practices. Assists
+        senior privacy team members with compliance monitoring and
+        documentation.
+    - id: mid
+      name: "Privacy Counsel"
+      years_experience: "2-5"
+      summary: >
+        Manages privacy compliance activities for assigned regulatory
+        domains or business areas independently. Conducts privacy impact
+        assessments, reviews vendor privacy practices, advises business
+        teams on privacy requirements, and handles data subject requests
+        requiring legal analysis. Monitors regulatory developments and
+        updates compliance materials.
+    - id: senior
+      name: "Senior Privacy Counsel"
+      years_experience: "5-9"
+      summary: >
+        Leads privacy compliance programs for major regulatory frameworks
+        or business areas. Provides strategic privacy advice on complex
+        initiatives including new product launches, AI deployments, and
+        international expansion. Manages breach response processes,
+        conducts complex privacy impact assessments, and drives privacy-
+        by-design integration into product development.
+    - id: staff
+      name: "Deputy Chief Privacy Officer"
+      years_experience: "9-14"
+      summary: >
+        Oversees multiple privacy program domains or the enterprise privacy
+        function. Manages a team of privacy professionals, sets privacy
+        strategy aligned with business objectives, and reports on program
+        effectiveness to senior leadership. Drives privacy technology
+        adoption and ensures the organization's privacy posture supports
+        business growth across jurisdictions.
+    - id: principal
+      name: "Chief Privacy Officer / DPO"
+      years_experience: "14+"
+      summary: >
+        Leads the organization's entire privacy function, setting strategy,
+        managing global privacy risk, and serving as the primary privacy
+        liaison with regulators and data protection authorities. Reports
+        to the board on privacy posture and emerging data protection risks.
+        Shapes organizational culture around responsible data use and
+        ensures privacy practices enable rather than hinder business
+        innovation.
+  skills:
+    - id: data_protection_regulations
+      name: "Data Protection Regulations (GDPR, CCPA, HIPAA)"
+      category: technical
+      description: >
+        Interpreting and applying major data protection and privacy
+        regulations including the EU General Data Protection Regulation,
+        California Consumer Privacy Act and CPRA, Health Insurance
+        Portability and Accountability Act, and other sector-specific and
+        jurisdictional privacy laws, understanding their requirements,
+        enforcement mechanisms, and practical compliance implications.
+      proficiency:
+        junior: >
+          Understands the core principles and key requirements of major
+          privacy regulations including GDPR, CCPA, and HIPAA. Identifies
+          which regulations apply to specific data processing activities
+          and assists with compliance assessments using established
+          checklists and frameworks.
+        mid: >
+          Interprets privacy regulation requirements independently and
+          advises business teams on compliance obligations for specific
+          data processing activities. Monitors regulatory guidance and
+          enforcement actions to refine compliance interpretations.
+          Maintains current knowledge across multiple regulatory
+          frameworks simultaneously.
+        senior: >
+          Provides authoritative guidance on complex privacy regulation
+          questions including cross-border applicability, regulatory
+          conflicts, and novel processing activities. Develops compliance
+          frameworks that address multiple overlapping regulatory
+          requirements efficiently. Engages with industry peers on
+          regulatory interpretation questions.
+        staff: >
+          Defines the organization's privacy regulatory compliance
+          strategy across all applicable jurisdictions. Establishes
+          interpretation standards and escalation frameworks. Manages the
+          regulatory monitoring program and ensures compliance
+          capabilities evolve with the rapidly changing privacy
+          regulatory landscape.
+        principal: >
+          Shapes the organization's privacy regulatory positioning and
+          advocacy strategy. Engages with data protection authorities
+          and policymakers to influence regulatory outcomes. Provides
+          definitive guidance on the most consequential regulatory
+          questions and ensures the organization's compliance posture
+          supports global operations and business innovation.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can monitor regulatory changes, compare requirements across
+          jurisdictions, and map regulations to data processing
+          activities. However, interpreting ambiguous regulatory
+          provisions, advising on novel processing activities, and
+          developing defensible compliance positions require deep
+          privacy law expertise.
+
+    - id: privacy_impact_assessments
+      name: "Privacy Impact Assessments"
+      category: technical
+      description: >
+        Conducting privacy impact assessments and data protection impact
+        assessments for new and modified data processing activities,
+        including evaluating necessity and proportionality, identifying
+        privacy risks, recommending mitigation measures, and documenting
+        assessments to demonstrate compliance and support regulatory
+        engagement.
+      proficiency:
+        junior: >
+          Assists with privacy impact assessments by distributing
+          questionnaires, collecting responses from business and
+          technical teams, and compiling assessment documentation. Conducts
+          preliminary risk identification using established assessment
+          templates and criteria under supervision.
+        mid: >
+          Conducts privacy impact assessments independently for standard
+          processing activities, evaluating data flows, identifying
+          privacy risks, and recommending mitigation measures. Produces
+          assessment reports that document analysis and conclusions.
+          Tracks remediation of identified issues through completion.
+        senior: >
+          Leads privacy impact assessments for complex and high-risk
+          processing activities including AI systems, large-scale
+          profiling, and cross-border data flows. Develops assessment
+          methodologies and risk evaluation criteria tailored to the
+          organization's processing landscape. Advises on whether prior
+          consultation with regulators is required.
+        staff: >
+          Defines the organization's PIA/DPIA program including trigger
+          criteria, assessment methodology, governance processes, and
+          quality standards. Integrates privacy impact assessments into
+          product development and procurement lifecycles. Establishes
+          metrics that demonstrate program effectiveness to regulators.
+        principal: >
+          Sets the strategic direction for privacy risk assessment across
+          the enterprise. Ensures assessment capabilities address emerging
+          technology risks including AI, IoT, and biometric processing.
+          Drives a culture where privacy impact assessment is viewed as
+          an enabler of responsible innovation rather than a compliance
+          burden.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can automate questionnaire distribution, pre-populate
+          assessments from data inventories, and flag high-risk
+          processing patterns. However, evaluating proportionality,
+          assessing risks of novel processing activities, and
+          recommending effective mitigations require experienced privacy
+          professionals.
+
+    - id: data_mapping
+      name: "Data Mapping"
+      category: technical
+      description: >
+        Creating and maintaining comprehensive records of the organization's
+        personal data processing activities, including data categories,
+        purposes, legal bases, data flows, storage locations, retention
+        periods, and third-party sharing, as required by GDPR Article 30
+        and other regulatory obligations.
+      proficiency:
+        junior: >
+          Assists with data mapping activities by collecting information
+          from business and technical teams using established
+          questionnaires. Populates data mapping tools and maintains
+          records of processing activities. Validates data mapping
+          entries against system documentation and data flow diagrams.
+        mid: >
+          Conducts data mapping exercises for assigned business areas or
+          systems, identifying personal data categories, processing
+          purposes, legal bases, and data flows. Maintains records of
+          processing activities and updates mappings when processing
+          changes occur. Identifies gaps in data mapping coverage.
+        senior: >
+          Leads enterprise data mapping programs, designing mapping
+          methodologies, managing cross-functional data collection, and
+          ensuring comprehensive coverage of all processing activities.
+          Leverages automated data discovery tools to supplement manual
+          mapping. Produces analysis that supports privacy impact
+          assessments and regulatory inquiries.
+        staff: >
+          Defines the organization's data mapping strategy and governance
+          framework. Evaluates and deploys automated data discovery and
+          classification tools. Ensures data mapping supports regulatory
+          compliance obligations, privacy impact assessments, and
+          incident response requirements across all business areas.
+        principal: >
+          Sets the enterprise data governance vision integrating data
+          mapping with broader information governance and data management
+          strategies. Ensures data mapping capabilities scale with
+          organizational growth and evolving regulatory requirements.
+          Drives adoption of advanced data discovery technologies
+          including AI-powered classification.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI-powered data discovery and classification tools significantly
+          accelerate data mapping by scanning systems and identifying
+          personal data automatically. However, validating findings,
+          determining legal bases, documenting processing purposes, and
+          maintaining mapping accuracy require knowledgeable privacy
+          professionals.
+
+    - id: incident_response_breach
+      name: "Incident Response & Breach Notification"
+      category: technical
+      description: >
+        Managing the organization's response to data security incidents
+        and personal data breaches, including detection coordination,
+        impact assessment, containment support, regulatory notification,
+        data subject notification, and post-incident analysis, ensuring
+        compliance with notification timelines and requirements across
+        applicable jurisdictions.
+      proficiency:
+        junior: >
+          Supports incident response by documenting reported incidents,
+          maintaining incident tracking logs, and assisting with data
+          subject notification logistics. Researches notification
+          requirements for assigned jurisdictions and compiles
+          information for breach assessment reports under supervision.
+        mid: >
+          Manages incident response activities for reported data
+          breaches, conducting breach assessments, determining
+          notification obligations, drafting notification communications,
+          and coordinating with regulatory authorities. Maintains
+          incident response playbooks and ensures compliance with
+          notification timelines across applicable jurisdictions.
+        senior: >
+          Leads incident response for significant data breaches,
+          coordinating cross-functional response teams, conducting
+          complex breach assessments spanning multiple jurisdictions,
+          and making notification recommendations to leadership. Develops
+          incident response plans and conducts tabletop exercises.
+          Manages regulatory communications during breach investigations.
+        staff: >
+          Defines the organization's data breach response strategy and
+          governance framework. Establishes incident classification
+          criteria, response team structures, and escalation protocols.
+          Oversees breach response program readiness through regular
+          testing and improvement. Reports breach trends and program
+          effectiveness to senior leadership.
+        principal: >
+          Sets the enterprise incident response philosophy and ensures
+          breach response capabilities meet regulatory expectations and
+          organizational risk tolerance. Leads response to the most
+          significant breaches, making final recommendations on
+          notification scope, timing, and regulatory engagement. Manages
+          reputational and legal exposure during major breach events.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can accelerate breach assessment through automated impact
+          analysis and notification requirement determination across
+          jurisdictions. However, leading breach response under time
+          pressure, making notification judgment calls, managing
+          regulatory relationships, and coordinating cross-functional
+          teams during incidents require experienced human leadership.
+
+    - id: vendor_privacy_reviews
+      name: "Vendor Privacy Reviews"
+      category: technical
+      description: >
+        Evaluating the privacy and data protection practices of third-party
+        vendors, service providers, and business partners who process
+        personal data on behalf of or in connection with the organization,
+        including due diligence assessments, data processing agreement
+        negotiations, and ongoing monitoring of vendor privacy compliance.
+      proficiency:
+        junior: >
+          Conducts initial vendor privacy screenings using established
+          questionnaires and checklists. Collects and organizes vendor
+          privacy documentation including certifications, audit reports,
+          and data processing agreements. Maintains vendor privacy
+          assessment records and tracks review schedules.
+        mid: >
+          Performs vendor privacy assessments independently, evaluating
+          vendor data protection practices, security controls, and
+          regulatory compliance. Negotiates data processing agreements
+          and standard contractual clauses. Identifies privacy risks in
+          vendor relationships and recommends appropriate contractual
+          and operational safeguards.
+        senior: >
+          Leads vendor privacy review programs, designing risk-based
+          assessment methodologies and tiered review processes. Conducts
+          in-depth assessments of high-risk vendors including on-site
+          reviews and technical evaluations. Develops data processing
+          agreement templates and negotiation playbooks that balance
+          privacy protection with vendor management efficiency.
+        staff: >
+          Defines the organization's vendor privacy management strategy
+          and governance framework. Integrates vendor privacy reviews
+          with procurement processes and third-party risk management.
+          Establishes vendor privacy monitoring programs and ensures
+          capabilities scale with the organization's vendor ecosystem
+          complexity.
+        principal: >
+          Sets the enterprise approach to vendor privacy risk management
+          aligned with regulatory expectations and organizational risk
+          appetite. Drives industry standards for vendor privacy
+          assessment and ensures the organization's vendor management
+          practices reflect best practices in data protection. Manages
+          privacy dimensions of strategic vendor relationships.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can automate vendor screening, compare vendor responses
+          against benchmarks, and flag privacy risk indicators. However,
+          evaluating the practical adequacy of vendor privacy programs,
+          negotiating data processing terms, and making risk-based
+          decisions on vendor relationships require experienced privacy
+          professionals.
+
+    - id: privacy_by_design
+      name: "Privacy by Design"
+      category: technical
+      description: >
+        Embedding privacy considerations into the design and development
+        of products, services, systems, and business processes from the
+        earliest stages, ensuring data minimization, purpose limitation,
+        transparency, and user control are integral to system architecture
+        rather than applied as an afterthought.
+      proficiency:
+        junior: >
+          Understands privacy-by-design principles including data
+          minimization, purpose limitation, and user control. Applies
+          privacy checklists during product and system design reviews.
+          Identifies basic privacy concerns in proposed designs and
+          escalates to senior privacy team members for guidance.
+        mid: >
+          Integrates privacy-by-design principles into product
+          development processes for assigned projects, advising
+          engineering and product teams on data minimization, consent
+          mechanisms, and transparency requirements. Reviews system
+          designs for privacy implications and recommends design
+          modifications that reduce privacy risk.
+        senior: >
+          Leads privacy-by-design programs, developing frameworks and
+          design patterns that engineering teams can implement
+          consistently. Advises on privacy architecture for complex
+          systems including AI/ML pipelines, data platforms, and cross-
+          border deployments. Creates privacy design review gates
+          integrated into the software development lifecycle.
+        staff: >
+          Defines the organization's privacy-by-design strategy and
+          governance framework. Establishes privacy engineering standards
+          and tooling that enable product teams to build privacy-
+          respecting systems efficiently. Partners with engineering
+          leadership to embed privacy considerations into development
+          culture and practices.
+        principal: >
+          Champions privacy-by-design as a competitive differentiator
+          and trust-building mechanism. Ensures the organization's
+          approach to privacy engineering evolves with emerging
+          technologies and regulatory expectations. Drives industry
+          thought leadership on privacy-preserving system design
+          including AI governance and ethical data use.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can suggest privacy design patterns and flag potential
+          privacy issues in system architectures. However, integrating
+          privacy into novel system designs, balancing privacy
+          protections with user experience and business requirements,
+          and championing privacy culture are human-driven activities.
+
+    - id: cross_border_transfers
+      name: "Cross-Border Data Transfers"
+      category: technical
+      description: >
+        Managing the legal and operational requirements for transferring
+        personal data across international borders, including evaluating
+        transfer mechanisms such as Standard Contractual Clauses, Binding
+        Corporate Rules, adequacy decisions, and derogations, conducting
+        transfer impact assessments, and implementing appropriate
+        safeguards.
+      proficiency:
+        junior: >
+          Understands the basic framework for cross-border data transfers
+          under GDPR and other privacy laws. Assists with transfer
+          mechanism documentation and maintains records of international
+          data flows. Supports transfer impact assessment data collection
+          under supervision.
+        mid: >
+          Manages cross-border data transfer compliance for assigned data
+          flows, selecting appropriate transfer mechanisms, executing
+          Standard Contractual Clauses, and conducting transfer impact
+          assessments. Monitors regulatory developments affecting
+          international transfers and advises business teams on transfer
+          requirements.
+        senior: >
+          Leads the organization's cross-border data transfer program,
+          developing transfer governance frameworks, conducting complex
+          transfer impact assessments for high-risk jurisdictions, and
+          managing Binding Corporate Rules or other enterprise transfer
+          mechanisms. Advises on novel transfer scenarios including
+          cloud architectures and AI processing.
+        staff: >
+          Defines the enterprise data transfer strategy across all
+          jurisdictions and business operations. Manages relationships
+          with data protection authorities on transfer matters. Ensures
+          transfer mechanisms scale with organizational growth and
+          evolving regulatory requirements including new adequacy
+          decisions and transfer frameworks.
+        principal: >
+          Sets the organization's global data transfer philosophy
+          balancing regulatory compliance with business operational
+          needs. Engages with policymakers and industry groups on
+          international data flow governance. Manages enterprise
+          exposure from transfer mechanism challenges and ensures
+          business continuity planning addresses potential transfer
+          disruptions.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can map data flows, identify cross-border transfers, and
+          compare regulatory requirements across jurisdictions. However,
+          evaluating transfer mechanism adequacy, conducting nuanced
+          transfer impact assessments, and navigating the political
+          dimensions of international data governance require experienced
+          privacy counsel.
+
+    - id: cookie_consent_management
+      name: "Cookie & Consent Management"
+      category: technical
+      description: >
+        Designing and managing the organization's approach to obtaining,
+        recording, and managing user consent for data collection and
+        processing, including cookie consent mechanisms, preference centers,
+        consent management platforms, and compliance with ePrivacy, GDPR
+        consent requirements, and state privacy law opt-out obligations.
+      proficiency:
+        junior: >
+          Assists with cookie consent implementation by cataloging cookies
+          and tracking technologies on organizational websites. Supports
+          consent management platform configuration and testing. Monitors
+          consent rates and generates basic compliance reports following
+          established procedures.
+        mid: >
+          Manages cookie consent and preference management programs for
+          assigned digital properties, configuring consent management
+          platforms, maintaining cookie inventories, and ensuring
+          compliance with applicable consent requirements. Advises
+          marketing and product teams on consent requirements for new
+          data collection activities.
+        senior: >
+          Leads the organization's consent management program, designing
+          consent architectures that comply with multiple regulatory
+          frameworks while optimizing user experience and consent rates.
+          Evaluates consent management platforms and implements solutions
+          that scale across digital properties. Develops consent
+          governance standards and audit processes.
+        staff: >
+          Defines the enterprise consent management strategy integrating
+          cookie consent, marketing preferences, and data processing
+          consent into a unified framework. Ensures consent mechanisms
+          support regulatory compliance across jurisdictions while
+          enabling data-driven business objectives. Manages consent
+          management vendor relationships and technology roadmap.
+        principal: >
+          Sets the organization's philosophical approach to consent as
+          a trust-building mechanism rather than merely a compliance
+          requirement. Drives industry-leading consent practices that
+          demonstrate respect for user autonomy. Ensures consent
+          architecture evolves with emerging regulations, browser
+          changes, and privacy-enhancing technologies.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can automate cookie scanning, consent banner optimization,
+          and compliance monitoring across digital properties. However,
+          designing consent experiences that balance compliance with
+          user experience, interpreting evolving consent requirements,
+          and developing consent strategies for novel data practices
+          require human expertise.
+
+    - id: privacy_program_management
+      name: "Privacy Program Management"
+      category: interpersonal
+      description: >
+        Designing, implementing, and managing the organization's overall
+        privacy compliance program including governance structures,
+        policies, processes, technology, training, and metrics, ensuring
+        the program is comprehensive, effective, and adaptable to evolving
+        regulatory requirements and business needs.
+      proficiency:
+        junior: >
+          Supports privacy program operations by maintaining program
+          documentation, tracking compliance activities, and assisting
+          with program metrics collection. Follows established program
+          processes and contributes to program improvement suggestions
+          based on daily operational experience.
+        mid: >
+          Manages privacy program components including policy maintenance,
+          training coordination, compliance monitoring, and reporting.
+          Tracks program metrics and produces regular status reports.
+          Identifies program gaps and recommends improvements based on
+          regulatory changes and operational experience.
+        senior: >
+          Leads significant privacy program workstreams or manages the
+          program for a major business area. Designs program elements
+          including policies, processes, and controls. Measures program
+          effectiveness through metrics and benchmarking. Drives
+          program maturity improvements and reports program status to
+          senior leadership.
+        staff: >
+          Oversees the enterprise privacy program, setting strategy,
+          managing resources, and ensuring comprehensive compliance
+          coverage. Establishes program governance structures and
+          reporting cadences. Manages the privacy technology stack and
+          vendor relationships. Reports program effectiveness to senior
+          leadership and the board.
+        principal: >
+          Defines the organization's privacy program vision and strategy
+          as a core component of corporate responsibility and competitive
+          advantage. Ensures program design reflects regulatory
+          expectations and industry best practices. Drives privacy
+          program maturity to a level that earns the confidence of
+          regulators, customers, and stakeholders.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can automate program metrics collection, generate compliance
+          dashboards, and flag program gaps. However, designing effective
+          privacy programs, building organizational commitment, managing
+          privacy teams, and driving strategic program evolution are
+          fundamentally human leadership responsibilities.
+
+    - id: training_awareness
+      name: "Training & Awareness"
+      category: interpersonal
+      description: >
+        Designing and delivering privacy training and awareness programs
+        that build organizational understanding of privacy obligations,
+        responsible data handling practices, and individual roles in
+        protecting personal data, creating a privacy-aware culture that
+        reduces the risk of data breaches and regulatory violations.
+      proficiency:
+        junior: >
+          Assists with privacy training logistics including scheduling,
+          enrollment management, and completion tracking. Helps develop
+          training materials and awareness communications using approved
+          content. Supports delivery of training sessions for new
+          employees and role-specific audiences.
+        mid: >
+          Develops and delivers privacy training programs for assigned
+          audiences, creating engaging content tailored to role-specific
+          privacy responsibilities. Measures training effectiveness
+          through assessments and feedback. Manages the annual privacy
+          training calendar and produces completion reports for
+          compliance documentation.
+        senior: >
+          Designs comprehensive privacy training curricula covering
+          multiple regulatory frameworks and audience segments.
+          Implements innovative training approaches including scenario-
+          based exercises, privacy champions programs, and just-in-time
+          learning. Measures training impact on privacy compliance
+          outcomes and continuously improves programs.
+        staff: >
+          Defines the organization's privacy training and awareness
+          strategy. Establishes training standards that demonstrate
+          program effectiveness to regulators. Builds a privacy-aware
+          culture through sustained awareness campaigns, leadership
+          messaging, and integration of privacy awareness into
+          organizational onboarding and development programs.
+        principal: >
+          Shapes the organization's privacy culture as a competitive
+          differentiator and trust-building mechanism. Ensures training
+          and awareness programs support the organization's privacy
+          values and regulatory commitments. Drives executive
+          sponsorship of privacy culture initiatives and measures
+          cultural outcomes alongside compliance metrics.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can personalize training content, generate scenario-based
+          exercises, and automate completion tracking. However, designing
+          training that changes behavior, building organizational privacy
+          culture, and engaging leadership as privacy champions require
+          human creativity and interpersonal skills.
+
+    - id: regulatory_engagement
+      name: "Regulatory Engagement"
+      category: interpersonal
+      description: >
+        Managing relationships and interactions with data protection
+        authorities, privacy regulators, and government agencies, including
+        responding to inquiries, managing complaints, coordinating
+        regulatory audits, and proactively engaging with regulators on
+        emerging privacy topics to build productive relationships that
+        support the organization's regulatory standing.
+      proficiency:
+        junior: >
+          Assists with regulatory correspondence by gathering requested
+          information, preparing draft responses, and maintaining records
+          of regulatory interactions. Monitors data protection authority
+          publications and enforcement actions for relevant developments
+          and guidance.
+        mid: >
+          Manages routine regulatory interactions including responding
+          to data protection authority inquiries, processing data
+          subject complaints referred by regulators, and coordinating
+          information requests. Maintains regulatory correspondence
+          files and tracks response deadlines.
+        senior: >
+          Leads the organization's engagement with data protection
+          authorities on significant matters including investigations,
+          audits, and complex complaints. Develops regulatory engagement
+          strategies and manages sensitive communications. Provides
+          strategic recommendations on when and how to engage regulators
+          proactively on emerging privacy topics.
+        staff: >
+          Oversees the organization's data protection authority
+          relationship management program. Establishes engagement
+          protocols and communication standards. Manages regulatory
+          interactions that could have enterprise-level implications
+          and advises leadership on regulatory engagement strategy
+          across jurisdictions.
+        principal: >
+          Serves as the organization's senior privacy regulatory
+          liaison, maintaining productive relationships with key data
+          protection authorities globally. Engages proactively with
+          regulators on policy development and emerging privacy topics.
+          Manages regulatory exposure and reputation at the enterprise
+          level and represents the organization in industry regulatory
+          advocacy efforts.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can help prepare regulatory correspondence and track
+          regulatory requirements. However, building productive
+          regulatory relationships, managing sensitive regulatory
+          interactions, and representing the organization credibly
+          to data protection authorities are fundamentally human
+          activities requiring trust, judgment, and interpersonal
+          skill.
+
+    - id: technical_privacy
+      name: "Technical Privacy (Encryption, Anonymization)"
+      category: technical
+      description: >
+        Understanding and advising on technical privacy-enhancing
+        technologies and controls including encryption, pseudonymization,
+        anonymization, differential privacy, data masking, access controls,
+        and privacy-preserving computation, ensuring technical
+        implementations align with legal requirements and privacy-by-design
+        principles.
+      proficiency:
+        junior: >
+          Understands basic technical privacy concepts including
+          encryption at rest and in transit, pseudonymization versus
+          anonymization, and access control fundamentals. Identifies
+          when technical privacy controls are relevant to compliance
+          assessments and raises technical questions with engineering
+          teams.
+        mid: >
+          Evaluates technical privacy controls during privacy impact
+          assessments and vendor reviews, assessing whether encryption,
+          anonymization, and access control implementations meet
+          regulatory requirements. Advises engineering teams on
+          technical privacy requirements and reviews data architecture
+          proposals for privacy implications.
+        senior: >
+          Provides expert guidance on technical privacy implementations
+          including anonymization techniques, privacy-preserving
+          analytics, and encryption architectures. Evaluates whether
+          technical measures achieve genuine anonymization or adequate
+          pseudonymization under applicable regulations. Advises on
+          privacy-enhancing technologies for complex use cases
+          including AI training and data sharing.
+        staff: >
+          Defines the organization's technical privacy standards and
+          requirements, partnering with engineering and security teams
+          to establish privacy-enhancing technology guidelines.
+          Evaluates emerging privacy-preserving technologies such as
+          federated learning, homomorphic encryption, and secure multi-
+          party computation for organizational applicability.
+        principal: >
+          Sets the enterprise technical privacy strategy at the
+          intersection of legal requirements and technological
+          capability. Drives adoption of advanced privacy-enhancing
+          technologies that enable new data use cases while maintaining
+          compliance. Shapes industry approaches to technical privacy
+          through thought leadership and regulatory engagement on
+          technology standards.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can analyze data architectures for privacy risks and
+          suggest appropriate technical controls. However, evaluating
+          whether anonymization techniques are truly effective, advising
+          on privacy-enhancing technology trade-offs, and bridging the
+          gap between legal requirements and technical implementation
+          require professionals with both privacy law and technical
+          expertise.

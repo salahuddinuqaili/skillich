@@ -1,0 +1,677 @@
+role:
+  id: support_agent
+  function: support
+  name: "Customer Support Agent"
+  also_known_as:
+    - "Customer Service Representative"
+    - "Help Desk Agent"
+    - "Customer Care Specialist"
+    - "Support Specialist"
+    - "Client Support Associate"
+  description: >
+    Serves as the frontline point of contact for customers seeking assistance
+    via tickets, live chat, phone, email, and social media channels. Customer
+    support agents resolve product questions, troubleshoot issues, process
+    requests, and ensure a positive customer experience by combining product
+    knowledge, empathy, and efficient use of support tooling. They contribute
+    to knowledge base content, identify recurring issues for escalation, and
+    maintain quality standards that directly impact customer satisfaction and
+    retention metrics.
+  ai_impact:
+    level: "very-high"
+    summary: >
+      AI is fundamentally reshaping frontline support through chatbots that
+      handle routine inquiries end-to-end, auto-classification of incoming
+      tickets, AI-suggested responses, and real-time sentiment detection.
+      Tier-1 resolution of simple, well-documented issues is increasingly
+      automated, shifting human agents toward complex, emotionally sensitive,
+      and judgment-heavy interactions. Agents who master AI-assisted workflows
+      and focus on empathy-driven problem-solving will remain essential, but
+      the overall headcount demand for routine support work is declining.
+    automating:
+      - "Answering common FAQs and known-issue inquiries"
+      - "Ticket classification, tagging, and priority routing"
+      - "Auto-suggesting response templates and knowledge articles"
+      - "Password resets, account lookups, and status checks"
+      - "Post-interaction survey distribution and basic CSAT tracking"
+      - "Spelling and grammar correction in outbound messages"
+    augmenting:
+      - "Real-time sentiment analysis to flag at-risk conversations"
+      - "AI-drafted responses for agent review and personalization"
+      - "Surfacing relevant knowledge base articles during live interactions"
+      - "Automated summarization of long ticket threads"
+      - "Translation assistance for multilingual support queues"
+      - "Pattern detection across tickets to identify emerging issues"
+    preserving:
+      - "Empathetic handling of frustrated or emotionally distressed customers"
+      - "Judgment calls on exceptions, refunds, and policy flexibility"
+      - "De-escalation of hostile or threatening interactions"
+      - "Building genuine rapport and trust with high-value customers"
+      - "Navigating ambiguous situations not covered by documentation"
+      - "Providing nuanced product feedback to internal teams"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Gartner - AI in Customer Service"
+        url: "https://www.gartner.com/en/customer-service-support/topics/ai-customer-service"
+      - name: "McKinsey - The Next Frontier of Customer Engagement"
+        url: "https://www.mckinsey.com/capabilities/operations/our-insights/the-next-frontier-of-customer-engagement-ai-enabled-customer-service"
+      - name: "Zendesk CX Trends Report"
+        url: "https://www.zendesk.com/cx-trends-report/"
+  levels:
+    - id: junior
+      name: "Junior Support Agent"
+      years_experience: "0-1"
+      summary: >
+        Handles straightforward customer inquiries using scripts, templates,
+        and knowledge base articles. Learns product fundamentals, support
+        tooling, and team processes. Escalates issues that fall outside
+        documented procedures and seeks feedback to improve response quality.
+    - id: mid
+      name: "Support Agent"
+      years_experience: "1-3"
+      summary: >
+        Resolves a broad range of customer issues independently across
+        multiple channels. Applies product knowledge to troubleshoot
+        non-obvious problems, exercises judgment on policy exceptions, and
+        contributes to knowledge base content. Consistently meets quality
+        and productivity targets.
+    - id: senior
+      name: "Senior Support Agent"
+      years_experience: "3-5"
+      summary: >
+        Handles the most complex and sensitive customer interactions,
+        including escalations and VIP accounts. Mentors junior agents,
+        identifies systemic issues for process improvement, and serves as
+        a subject matter expert on specific product areas. Maintains
+        exceptional quality metrics while managing high-difficulty volume.
+    - id: lead
+      name: "Lead Support Agent"
+      years_experience: "5-8"
+      summary: >
+        Acts as the operational backbone of the support team, coordinating
+        queue coverage, managing real-time escalations, and driving quality
+        improvement initiatives. Designs training materials, leads calibration
+        sessions, and bridges communication between agents and management.
+    - id: specialist
+      name: "Support Specialist"
+      years_experience: "4-7"
+      summary: >
+        Serves as the deep subject matter expert in a specific product area,
+        customer segment, or channel. Handles the highest-complexity cases,
+        works directly with product and engineering on issue resolution, and
+        develops specialized documentation and training for the broader team.
+  skills:
+    - id: ticket_resolution
+      name: "Ticket Resolution"
+      category: operational
+      description: >
+        Managing the full lifecycle of customer support tickets from initial
+        triage through investigation, resolution, and follow-up, ensuring
+        timely closure, accurate categorization, and customer satisfaction
+        while meeting SLA targets across all priority levels.
+      proficiency:
+        junior: >
+          Resolves straightforward tickets using documented procedures and
+          templates. Accurately categorizes and tags incoming requests.
+          Follows up on pending tickets as directed and closes resolved
+          issues with appropriate documentation of the solution applied.
+        mid: >
+          Independently resolves moderate-complexity tickets requiring
+          investigation across multiple systems. Prioritizes workload to
+          meet SLA targets, writes clear internal notes for handoffs, and
+          identifies when to escalate versus when to invest additional
+          time in self-directed troubleshooting.
+        senior: >
+          Handles high-priority and complex tickets involving multi-step
+          troubleshooting or cross-functional coordination. Identifies
+          patterns in ticket volume and resolution that signal systemic
+          issues. Defines resolution workflows for newly discovered
+          problem types and coaches others on efficient triage techniques.
+        lead: >
+          Designs and optimizes ticket routing rules, escalation paths, and
+          SLA tier structures. Monitors team-level resolution metrics in
+          real time, intervenes on aging tickets, and drives process changes
+          that reduce average handle time without sacrificing quality or
+          customer satisfaction scores.
+        specialist: >
+          Manages the most technically intricate or business-critical tickets,
+          often involving executive-level customers or regulatory implications.
+          Develops playbooks for rare but high-impact scenarios and serves as
+          the final escalation point before issues are routed to engineering
+          or product leadership.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI auto-classification, suggested responses, and end-to-end bot
+          resolution handle a growing share of routine tickets. However,
+          complex investigations requiring judgment, empathy, and cross-system
+          reasoning remain human-dependent, especially for novel issues.
+
+    - id: product_knowledge
+      name: "Product Knowledge"
+      category: domain
+      description: >
+        Developing and maintaining deep understanding of the company's
+        products, features, pricing, integrations, and common workflows so
+        that customer questions can be answered accurately and completely,
+        including awareness of known issues, upcoming changes, and competitive
+        positioning.
+      proficiency:
+        junior: >
+          Demonstrates working knowledge of core product features and common
+          customer workflows. Navigates the product confidently to replicate
+          customer-reported issues and locates relevant help documentation
+          quickly when encountering unfamiliar areas.
+        mid: >
+          Possesses comprehensive knowledge of product capabilities, edge
+          cases, and integration points. Explains complex features in
+          customer-friendly language, anticipates follow-up questions, and
+          stays current with release notes, known issues, and feature
+          deprecations.
+        senior: >
+          Serves as a product subject matter expert consulted by peers and
+          managers. Identifies gaps between product capabilities and customer
+          needs, contributes to beta testing and feedback programs, and
+          translates technical product changes into customer-facing guidance
+          proactively.
+        lead: >
+          Maintains expert-level knowledge across the full product surface
+          and coordinates knowledge transfer when major releases or changes
+          occur. Designs product knowledge assessments for the team and
+          ensures training materials stay aligned with the current product
+          state.
+        specialist: >
+          Holds the deepest product expertise in a specific domain, often
+          exceeding the knowledge of product managers in edge-case behavior.
+          Partners directly with engineering on bug reproduction, validates
+          fixes, and authors the definitive internal documentation for their
+          area of specialty.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can surface relevant product documentation and suggest answers
+          from knowledge bases in real time, reducing memorization burden.
+          However, understanding nuanced product behavior, anticipating
+          customer context, and navigating undocumented edge cases still
+          require human experience with the product.
+
+    - id: communication
+      name: "Written & Verbal Communication"
+      category: interpersonal
+      description: >
+        Conveying information clearly, concisely, and professionally across
+        written channels such as email, chat, and tickets, as well as verbal
+        channels like phone and video, adapting tone, complexity, and format
+        to match the customer's technical level, emotional state, and
+        preferred communication style.
+      proficiency:
+        junior: >
+          Writes clear, grammatically correct responses using templates and
+          approved language. Maintains a friendly, professional tone on chat
+          and phone. Asks clarifying questions when customer requests are
+          ambiguous and avoids jargon when communicating with non-technical
+          users.
+        mid: >
+          Crafts personalized responses that address the customer's specific
+          situation rather than relying solely on templates. Adjusts
+          communication style based on customer tone and technical level.
+          Writes concise yet thorough summaries for internal handoffs and
+          escalation notes.
+        senior: >
+          Communicates with precision and empathy in high-stakes situations
+          including executive escalations and public-facing responses.
+          Coaches peers on tone, clarity, and persuasion techniques. Drafts
+          customer-facing communications for incidents, outages, and policy
+          changes.
+        lead: >
+          Defines communication standards, templates, and tone guidelines
+          for the support team. Reviews and calibrates agent responses for
+          quality, trains new hires on communication best practices, and
+          authors scripts for sensitive scenarios such as data breaches or
+          service discontinuations.
+        specialist: >
+          Produces highly technical yet accessible explanations for complex
+          product behavior, often translating engineering-level detail into
+          language appropriate for business stakeholders or end users.
+          Develops communication frameworks adopted across the support
+          organization for specific interaction types.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI generates draft responses, corrects grammar, and adjusts tone
+          effectively, significantly speeding up written communication.
+          However, reading emotional nuance, adapting in real time during
+          live conversations, and crafting truly personalized responses for
+          sensitive situations remain human strengths.
+
+    - id: de_escalation
+      name: "De-escalation & Conflict Resolution"
+      category: interpersonal
+      description: >
+        Calming frustrated, angry, or distressed customers through active
+        listening, acknowledgment, empathy, and solution-oriented dialogue,
+        turning negative experiences into opportunities to rebuild trust and
+        retain the customer relationship while maintaining professional
+        composure and adhering to company policies.
+      proficiency:
+        junior: >
+          Recognizes signs of customer frustration and applies basic
+          de-escalation techniques such as acknowledging the issue,
+          apologizing sincerely, and offering to help. Knows when to involve
+          a senior agent or manager and does not take negativity personally.
+        mid: >
+          De-escalates moderately heated interactions independently using
+          active listening, empathy statements, and reframing techniques.
+          Identifies the root cause of frustration beyond the stated
+          complaint and offers concrete remediation steps that satisfy the
+          customer while staying within policy guidelines.
+        senior: >
+          Handles the most volatile customer interactions with composure and
+          skill, including threats to churn, public complaints, and legal
+          references. Turns negative experiences into loyalty-building
+          moments through creative problem-solving and genuine human
+          connection. Coaches peers on de-escalation strategies.
+        lead: >
+          Develops de-escalation frameworks, scripts, and training programs
+          for the team. Analyzes escalation patterns to identify systemic
+          triggers and works with product or policy teams to address root
+          causes. Manages real-time intervention for interactions that
+          require immediate senior involvement.
+        specialist: >
+          Serves as the final human escalation point for the most sensitive
+          customer situations, including those with legal, regulatory, or
+          reputational implications. Designs specialized handling procedures
+          for high-risk customer segments and partners with legal and
+          communications teams on response strategies.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can detect negative sentiment and suggest calming language, but
+          genuine de-escalation requires reading subtle emotional cues,
+          exercising real-time judgment on concessions, and building authentic
+          human connection, which remain deeply human capabilities.
+
+    - id: tool_proficiency
+      name: "Support Tool Proficiency"
+      category: technical
+      description: >
+        Navigating and leveraging customer support platforms such as Zendesk,
+        Intercom, Freshdesk, Salesforce Service Cloud, and related tools for
+        ticketing, live chat, phone systems, CRM lookups, and workflow
+        automation, maximizing efficiency through keyboard shortcuts, macros,
+        views, and integrations.
+      proficiency:
+        junior: >
+          Navigates the primary support platform to create, update, and
+          resolve tickets. Uses basic features like canned responses, ticket
+          tagging, and customer history lookup. Follows established workflows
+          for routing and escalation within the tool.
+        mid: >
+          Uses advanced platform features including custom views, macros,
+          triggers, and automations to increase personal productivity.
+          Performs CRM lookups, links related tickets, and leverages
+          integrations with internal tools to gather context without
+          switching systems.
+        senior: >
+          Configures and optimizes support tool workflows including
+          automation rules, SLA policies, and custom fields. Troubleshoots
+          platform issues, trains agents on efficient tool usage, and
+          evaluates new features or integrations that could improve team
+          productivity.
+        lead: >
+          Administers the support platform at the team or department level,
+          managing views, routing rules, and reporting dashboards. Partners
+          with operations and IT on platform upgrades, data migrations, and
+          third-party integrations. Designs tooling workflows that reduce
+          handle time.
+        specialist: >
+          Serves as the power user and internal consultant for the support
+          technology stack. Builds custom reports, configures advanced API
+          integrations, and evaluates new tooling against operational
+          requirements. Provides input on vendor selection and contract
+          negotiations for support platforms.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI-powered features within support platforms are automating ticket
+          routing, response suggestion, and basic workflow triggers. However,
+          configuring complex multi-tool workflows, troubleshooting platform
+          issues, and designing automation that handles edge cases correctly
+          still require human expertise.
+
+    - id: troubleshooting
+      name: "Troubleshooting & Problem Solving"
+      category: technical
+      description: >
+        Systematically diagnosing customer-reported issues by gathering
+        information, reproducing problems, isolating root causes, and
+        identifying solutions or workarounds, using structured approaches
+        that efficiently narrow down possibilities and minimize customer
+        effort.
+      proficiency:
+        junior: >
+          Follows documented troubleshooting steps to resolve known issues.
+          Gathers basic diagnostic information from customers such as
+          browser version, error messages, and steps to reproduce. Escalates
+          when standard procedures do not resolve the problem.
+        mid: >
+          Diagnoses issues that fall outside documented procedures by asking
+          targeted questions, testing hypotheses, and isolating variables
+          systematically. Reproduces reported problems in test environments
+          and identifies effective workarounds when immediate fixes are not
+          available.
+        senior: >
+          Solves complex, multi-factor problems that span product areas or
+          involve intermittent behavior. Develops troubleshooting decision
+          trees for newly discovered issue types. Mentors agents on
+          structured diagnostic approaches and contributes to engineering
+          bug reports with detailed reproduction steps.
+        lead: >
+          Designs troubleshooting frameworks and diagnostic protocols for the
+          team. Analyzes resolution data to identify where agents get stuck
+          most frequently and develops targeted training or tooling to
+          address those gaps. Coordinates with engineering on diagnostic
+          tooling improvements.
+        specialist: >
+          Tackles the most technically demanding customer issues, often
+          requiring analysis of logs, API responses, or system behavior that
+          approaches engineering-level investigation. Develops advanced
+          diagnostic guides and serves as the bridge between support and
+          engineering for the most complex reported defects.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can suggest troubleshooting steps based on symptom matching and
+          historical resolution data, accelerating diagnosis of known issues.
+          However, diagnosing novel problems, reasoning about complex system
+          interactions, and creative workaround generation still depend on
+          human analytical skills.
+
+    - id: documentation
+      name: "Documentation & Knowledge Contribution"
+      category: operational
+      description: >
+        Creating, updating, and maintaining internal and customer-facing
+        documentation including help articles, troubleshooting guides, FAQs,
+        and internal runbooks, ensuring accuracy, clarity, and findability so
+        that both customers and fellow agents can self-serve effectively.
+      proficiency:
+        junior: >
+          Flags outdated or missing knowledge base articles when encountered
+          during ticket resolution. Writes basic internal notes and follows
+          documentation templates to contribute draft articles that are
+          reviewed by senior team members before publication.
+        mid: >
+          Authors clear, well-structured help articles and internal guides
+          independently. Updates existing documentation proactively when
+          product changes occur or when customer feedback reveals confusion.
+          Follows content style guides and organizes information for easy
+          scanning.
+        senior: >
+          Produces comprehensive documentation for complex product areas
+          including multi-step workflows, edge cases, and integration guides.
+          Reviews and edits documentation created by others. Identifies high-
+          impact knowledge gaps by analyzing ticket trends and creates
+          content that measurably reduces ticket volume.
+        lead: >
+          Manages the documentation contribution process for the team,
+          assigning coverage areas, maintaining editorial standards, and
+          tracking content freshness. Designs documentation templates and
+          workflows that make it easy for agents to contribute without
+          extensive writing experience.
+        specialist: >
+          Develops the most technically detailed documentation, often serving
+          as the authoritative reference for internal engineering-facing
+          support guides. Creates documentation strategies for new product
+          launches, ensures consistency across help center sections, and
+          measures content effectiveness through analytics.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI excels at drafting documentation from ticket data, generating
+          FAQ content, and updating articles based on product changes.
+          However, ensuring accuracy for nuanced product behavior, organizing
+          content for discoverability, and writing for diverse audience
+          comprehension levels still benefit from human editorial judgment.
+
+    - id: empathy
+      name: "Empathy & Emotional Intelligence"
+      category: interpersonal
+      description: >
+        Recognizing, understanding, and responding appropriately to customer
+        emotions and perspectives, building genuine rapport, and demonstrating
+        care that goes beyond scripted responses, creating positive emotional
+        outcomes even when the technical resolution is limited.
+      proficiency:
+        junior: >
+          Demonstrates basic empathy by acknowledging customer frustration
+          and using warm, respectful language. Avoids dismissive or robotic
+          responses. Recognizes when a customer's emotional state requires
+          a different approach than a purely transactional one and adjusts
+          tone accordingly.
+        mid: >
+          Reads emotional cues accurately across written and verbal channels
+          and responds with genuine understanding. Balances empathy with
+          efficiency, knowing when to spend extra time building rapport and
+          when to move toward resolution. Maintains composure and positivity
+          through difficult interactions.
+        senior: >
+          Models exceptional emotional intelligence in the most sensitive
+          interactions. Coaches peers on recognizing emotional subtext,
+          adapting communication styles, and managing personal emotional
+          resilience. Handles situations involving grief, disability, or
+          financial hardship with sensitivity and appropriate accommodations.
+        lead: >
+          Builds empathy-focused training programs and calibration exercises
+          for the team. Defines quality standards that measure emotional
+          intelligence alongside resolution metrics. Creates safe spaces for
+          agents to process emotionally taxing interactions and prevents
+          burnout through workload awareness.
+        specialist: >
+          Brings deep interpersonal expertise to the highest-stakes customer
+          relationships, often involving long-running or deeply personal
+          issues. Develops frameworks for handling emotionally complex
+          scenarios that are adopted across the support organization and
+          incorporated into onboarding curricula.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          AI can detect sentiment and suggest empathetic language, but
+          genuine emotional connection, reading nuanced human emotions,
+          and responding with authentic care in high-stakes situations
+          remain among the most distinctly human capabilities in customer
+          support.
+
+    - id: multichannel_support
+      name: "Multichannel Support"
+      category: operational
+      description: >
+        Providing consistent, high-quality support across multiple channels
+        including email, live chat, phone, video, social media, and in-app
+        messaging, adapting communication style and workflow to each channel's
+        characteristics while maintaining a unified view of the customer
+        interaction history.
+      proficiency:
+        junior: >
+          Handles customer interactions on two to three channels following
+          channel-specific guidelines. Understands the basic differences in
+          response expectations between email, chat, and phone. Logs
+          interactions consistently so context is available across channels.
+        mid: >
+          Works fluently across all supported channels, adapting tone, length,
+          and pacing to match channel norms. Manages concurrent chat sessions
+          effectively while maintaining quality. Transitions customers
+          between channels smoothly when a different medium would better
+          serve their needs.
+        senior: >
+          Serves as a model for channel-specific best practices and trains
+          agents on the nuances of each medium. Identifies opportunities to
+          improve the omnichannel experience, such as reducing context loss
+          during channel switches. Handles complex interactions that span
+          multiple channels over time.
+        lead: >
+          Designs channel-specific workflows, staffing models, and quality
+          standards. Analyzes channel performance data to optimize resource
+          allocation and identifies which interactions should be routed to
+          which channels. Drives adoption of new channels based on customer
+          preference and business impact analysis.
+        specialist: >
+          Develops expertise in a specific high-complexity channel such as
+          social media crisis response or video-based technical support.
+          Creates specialized playbooks for that channel and consults on
+          tooling, staffing, and process decisions to maximize effectiveness
+          within their area of channel expertise.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI chatbots increasingly handle routine interactions across chat,
+          email, and social media channels autonomously. However, managing
+          complex multi-channel customer journeys, handling real-time voice
+          interactions, and making judgment calls on channel transitions
+          still require human adaptability.
+
+    - id: time_management
+      name: "Time Management & Productivity"
+      category: operational
+      description: >
+        Managing personal workload efficiently across a high volume of
+        concurrent customer interactions, balancing speed with quality,
+        prioritizing urgent issues, and maintaining consistent productivity
+        throughout shifts while avoiding burnout and sustaining focus.
+      proficiency:
+        junior: >
+          Manages a standard ticket queue with guidance on prioritization.
+          Meets basic productivity targets for tickets handled per hour
+          without sacrificing response accuracy. Uses time between
+          interactions productively for learning, documentation review,
+          or administrative tasks.
+        mid: >
+          Independently prioritizes a mixed workload of tickets, chats, and
+          callbacks based on urgency and SLA deadlines. Handles concurrent
+          chat sessions while maintaining quality. Consistently meets or
+          exceeds productivity benchmarks and manages personal energy
+          effectively across shifts.
+        senior: >
+          Maximizes personal throughput on complex cases while maintaining
+          top-tier quality scores. Models efficient workflows that peers can
+          adopt. Identifies and eliminates personal and team-level time
+          wasters. Balances reactive ticket work with proactive activities
+          like documentation and mentoring.
+        lead: >
+          Designs workload distribution strategies, shift schedules, and
+          capacity plans for the team. Monitors real-time queue health and
+          adjusts staffing dynamically. Sets productivity targets that
+          balance efficiency with quality and agent well-being, using data
+          to calibrate expectations fairly.
+        specialist: >
+          Manages a caseload of high-complexity, long-running issues that
+          require sustained attention over days or weeks. Balances deep
+          investigation work with responsiveness to customer updates.
+          Develops time management frameworks for specialized support
+          workflows that differ from standard queue-based models.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI-assisted prioritization, auto-routing, and response drafting
+          significantly boost agent productivity by reducing time spent on
+          triage and writing. However, managing personal energy, making
+          judgment calls on competing priorities, and sustaining quality
+          through long shifts remain human responsibilities.
+
+    - id: knowledge_base_contribution
+      name: "Knowledge Base Contribution"
+      category: operational
+      description: >
+        Actively identifying gaps, inaccuracies, and improvement opportunities
+        in customer-facing and internal knowledge bases, then creating or
+        updating content that reduces future ticket volume, improves self-
+        service success rates, and enables faster agent resolution.
+      proficiency:
+        junior: >
+          Reports outdated or incorrect knowledge base articles through the
+          established feedback process. Suggests new article topics based on
+          frequently asked questions encountered during ticket resolution and
+          drafts basic content following existing templates and style
+          guidelines.
+        mid: >
+          Proactively creates and updates knowledge base articles without
+          being prompted, triggered by product changes or ticket pattern
+          analysis. Writes clear, searchable content with appropriate
+          screenshots, steps, and troubleshooting sections. Measures the
+          impact of contributed articles on ticket deflection.
+        senior: >
+          Identifies systemic knowledge gaps through ticket trend analysis
+          and creates comprehensive content plans to address them. Authors
+          complex articles covering advanced workflows, integrations, and
+          edge cases. Establishes review schedules to keep content current
+          and mentors others on effective knowledge writing.
+        lead: >
+          Manages the team's knowledge contribution pipeline, assigning
+          coverage areas, setting content targets, and tracking article
+          freshness and effectiveness. Designs contribution workflows that
+          make authoring low-friction for agents and ensures new product
+          launches include knowledge base readiness.
+        specialist: >
+          Authors the most technically detailed and authoritative knowledge
+          base content in their domain of expertise. Develops content
+          architectures for complex product areas, creates decision trees
+          and interactive troubleshooting guides, and measures content
+          effectiveness through search analytics and feedback loops.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI can draft articles from ticket data, identify knowledge gaps
+          from search analytics, and flag stale content automatically. Yet
+          ensuring technical accuracy, writing for diverse comprehension
+          levels, and structuring content for effective self-service still
+          require human editorial judgment and product expertise.
+
+    - id: quality_assurance
+      name: "Quality Assurance & Self-Review"
+      category: operational
+      description: >
+        Maintaining high standards in every customer interaction through
+        adherence to quality rubrics, self-review of responses before sending,
+        participation in peer review and calibration sessions, and continuous
+        improvement based on feedback from quality evaluations and customer
+        satisfaction scores.
+      proficiency:
+        junior: >
+          Reviews own responses for accuracy, tone, and completeness before
+          sending. Accepts quality feedback constructively and applies
+          coaching to subsequent interactions. Understands the team's quality
+          rubric and strives to meet baseline standards on all evaluated
+          dimensions.
+        mid: >
+          Consistently exceeds quality benchmarks across evaluated dimensions
+          including accuracy, empathy, resolution completeness, and
+          communication clarity. Participates in peer review sessions,
+          provides constructive feedback to colleagues, and self-identifies
+          areas for improvement proactively.
+        senior: >
+          Performs formal quality evaluations of peer interactions using the
+          team's rubric. Identifies recurring quality issues across the team
+          and recommends targeted coaching or process changes. Contributes
+          to calibration sessions that ensure consistent quality scoring
+          across evaluators.
+        lead: >
+          Designs and maintains the quality assurance program including
+          rubrics, sampling methodologies, calibration cadences, and
+          coaching workflows. Analyzes quality trends to identify systemic
+          improvement opportunities and reports on quality metrics to
+          management and stakeholders.
+        specialist: >
+          Defines quality standards for specialized interaction types such
+          as technical escalations, VIP handling, or regulatory-sensitive
+          conversations. Develops advanced evaluation criteria for their
+          domain and partners with training to build skill development
+          programs targeted at the most common quality gaps.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI can automatically score interactions for tone, completeness,
+          and adherence to rubrics, significantly scaling quality review
+          coverage. However, evaluating nuanced judgment calls, coaching
+          agents on interpersonal skills, and designing quality programs
+          that balance metrics with customer outcomes remain human-driven.

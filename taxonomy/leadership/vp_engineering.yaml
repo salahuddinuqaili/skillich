@@ -1,0 +1,515 @@
+role:
+  id: vp_engineering
+  function: leadership
+  name: "VP of Engineering"
+  also_known_as:
+    - Vice President of Engineering
+    - SVP of Engineering
+    - EVP of Engineering
+    - Head of Engineering
+    - VP Software Engineering
+    - VP Software Development
+  description: >
+    The VP of Engineering is a senior executive responsible for the overall health, output, and
+    strategic direction of the engineering organization. They translate company strategy into
+    engineering execution, own organizational design at scale, and serve as the primary voice of
+    engineering at the executive table.
+  ai_impact:
+    level: moderate
+    summary: >
+      AI is changing how VPs of Engineering access information and make decisions, offering real-time
+      organizational insights and predictive analytics. AI tools can surface risks earlier, automate
+      executive reporting, and model organizational scenarios. However, the role's core value lies in
+      executive judgment, people leadership, and strategic vision, areas where AI serves as an
+      accelerant rather than a replacement.
+    automating:
+      - Executive dashboard generation and organizational health reporting
+      - Budget variance tracking and financial forecasting
+      - Meeting preparation and briefing document synthesis
+      - Competitive technology landscape monitoring
+    augmenting:
+      - Organizational health analysis with AI-powered engagement and retention signals
+      - Workforce planning models informed by market data and attrition predictions
+      - Strategic scenario planning with AI-assisted modeling
+      - Vendor evaluation and technology investment analysis
+      - Risk assessment across engineering portfolio
+    preserving:
+      - Executive presence and board-level communication
+      - Building and maintaining trust with C-suite peers
+      - Organizational culture shaping and values reinforcement
+      - High-stakes people decisions including executive hiring and terminations
+      - Navigating company politics and building cross-functional coalitions
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Gartner - Future of Work for Engineering Leaders"
+        url: "https://www.gartner.com/en/engineering-leaders"
+      - name: "MIT Sloan - AI and the Future of Management"
+        url: "https://sloanreview.mit.edu/big-ideas/artificial-intelligence-business-strategy/"
+  levels:
+    - id: vp
+      name: "Vice President (VP)"
+      years_experience: "12-18"
+      summary: >
+        Leads the engineering organization for a major business unit or product area comprising
+        50 to 200 engineers. Owns engineering strategy, organizational design, and delivery for
+        their scope. Partners directly with product and business leadership to drive outcomes.
+        Reports to the SVP or CTO.
+    - id: svp
+      name: "Senior Vice President (SVP)"
+      years_experience: "16-22"
+      summary: >
+        Oversees multiple VPs and the entire engineering function for a division or large business
+        unit with 200 to 1000 engineers. Sets multi-year technical and organizational strategy.
+        Operates as a key member of the senior leadership team with significant influence on
+        company direction.
+    - id: evp
+      name: "Executive Vice President (EVP)"
+      years_experience: "20-28"
+      summary: >
+        Leads engineering across the entire company or multiple major divisions with over 1000
+        engineers. Sets company-wide engineering vision and culture. Reports directly to the CEO
+        and presents regularly to the board. Makes decisions that fundamentally shape the
+        company's technical trajectory.
+    - id: evp_plus
+      name: "EVP / Chief Engineering Officer"
+      years_experience: "22-30"
+      summary: >
+        Functions at the highest level of engineering leadership below the CTO, often with
+        broader operational scope including IT, security, and data. Shapes the company's
+        technology identity in the market. Drives multi-year transformations and operates
+        as a peer to the CEO on technical matters.
+    - id: ceo_track
+      name: "EVP (CEO Track)"
+      years_experience: "25+"
+      summary: >
+        An EVP-level engineering leader who operates as a general manager with full business
+        accountability beyond engineering. Leads cross-functional organizations and drives
+        business outcomes. Positioned for CEO succession or board-level roles.
+  skills:
+    - id: executive_leadership
+      name: "Executive Leadership"
+      category: leadership
+      description: >
+        The ability to operate as a senior executive, making high-stakes decisions under
+        uncertainty, building executive teams, and driving organizational outcomes at scale.
+        Encompasses presence, judgment, decisiveness, and the ability to inspire confidence.
+      proficiency:
+        junior: >
+          Operates effectively as a new VP, establishing credibility with the executive team
+          and building relationships with peers. Makes sound decisions within their domain and
+          communicates confidently in executive settings.
+        mid: >
+          Demonstrates strong executive presence and judgment across the senior leadership team.
+          Influences decisions beyond engineering. Builds and leads a high-performing leadership
+          team of directors and senior managers.
+        senior: >
+          Operates as one of the most influential executives in the company. Makes decisions
+          that shape company direction. Builds executive teams that drive transformational
+          outcomes. Commands respect across the organization.
+        staff: >
+          Functions as a trusted advisor to the CEO and board. Drives company-wide strategic
+          initiatives. Develops other executives and builds organizational leadership capacity.
+          Recognized as an exceptional executive by peers and external observers.
+        principal: >
+          Operates at the highest levels of executive leadership with board-level influence.
+          Shapes the company's strategic direction as a peer to the CEO. Sought after as a
+          board member and executive advisor by other companies.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Executive leadership depends on human qualities such as presence, judgment, empathy,
+          and the ability to inspire confidence. AI can provide better data for decisions but
+          cannot replicate the trust and influence that define executive leadership.
+
+    - id: organizational_strategy
+      name: "Organizational Strategy"
+      category: leadership
+      description: >
+        The ability to design and evolve large-scale engineering organizations that align with
+        business strategy, optimize for delivery and innovation, and create environments where
+        engineering talent thrives and grows.
+      proficiency:
+        junior: >
+          Develops organizational strategy for a VP-scope engineering organization. Makes
+          thoughtful decisions about team structure, reporting lines, and investment allocation.
+          Aligns organizational design with the product and business strategy for their area.
+        mid: >
+          Designs organizational structures that optimize for speed, quality, and talent retention
+          across a large engineering function. Creates strategies for managing organizational
+          complexity as the company grows. Builds organizations that attract top engineering talent.
+        senior: >
+          Architects engineering organizations that drive competitive advantage. Creates innovative
+          organizational models that become industry benchmarks. Designs structures that maintain
+          effectiveness through rapid growth, market shifts, and strategic pivots.
+        staff: >
+          Shapes company-wide organizational strategy beyond engineering. Creates organizational
+          philosophies and frameworks that other functions adopt. Designs organizations for the
+          most complex and ambiguous strategic challenges.
+        principal: >
+          Defines organizational strategies for unprecedented scale and complexity. Influences
+          how the industry thinks about engineering organization design. Creates organizational
+          innovations that provide sustainable competitive advantage.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can provide organizational network analysis, attrition risk modeling, and team
+          effectiveness metrics to inform strategy. However, designing organizations that
+          balance human dynamics, strategic needs, and cultural values requires deep executive
+          judgment that AI cannot replicate.
+
+    - id: talent_management
+      name: "Talent Management"
+      category: leadership
+      description: >
+        The ability to attract, develop, retain, and deploy engineering talent at the executive
+        level, including hiring and developing VPs and directors, managing executive performance,
+        and building the overall talent strategy for the engineering organization.
+      proficiency:
+        junior: >
+          Hires and develops directors effectively. Creates talent strategies for their organization
+          that address skill gaps and succession needs. Builds a reputation that attracts strong
+          engineering leaders to the company.
+        mid: >
+          Manages a portfolio of engineering leaders including VPs and directors. Creates
+          development programs for senior engineering leaders. Builds the company's engineering
+          employer brand in the market and attracts executive-level talent.
+        senior: >
+          Drives the company-wide engineering talent strategy. Hires and develops VP-level
+          leaders. Creates programs that develop engineering managers into executives. Builds
+          a talent pipeline that provides a sustainable competitive advantage.
+        staff: >
+          Shapes the company's overall talent philosophy beyond engineering. Develops leaders
+          who go on to become successful executives at other companies. Creates talent
+          management innovations that become industry best practices.
+        principal: >
+          Recognized as an exceptional developer of engineering talent. Builds organizations
+          known as the best training ground for engineering leaders. Alumni network spans
+          the industry and strengthens the company's reputation.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can assist with talent analytics, identifying flight risks, and optimizing
+          development plans. However, the core of talent management at the executive level
+          involves relationships, mentoring, and judgment about human potential that remain
+          deeply personal and human.
+
+    - id: board_communication
+      name: "Board and Investor Communication"
+      category: communication
+      description: >
+        The ability to communicate effectively with board members, investors, and other external
+        stakeholders about technology strategy, engineering capabilities, and the role of
+        technology in driving business value.
+      proficiency:
+        junior: >
+          Prepares materials for board presentations on engineering topics. Communicates
+          clearly about engineering progress and challenges in business terms. Supports
+          the CTO or CEO with data and analysis for board discussions.
+        mid: >
+          Presents directly to the board on engineering strategy and organizational health.
+          Communicates complex technical topics in ways that resonate with non-technical board
+          members. Builds credibility with board members through transparent and insightful updates.
+        senior: >
+          Commands board attention and respect as a key executive voice on technology matters.
+          Shapes board understanding of technology as a strategic asset. Builds relationships
+          with individual board members who become advocates for engineering investment.
+        staff: >
+          Operates as a trusted advisor to the board on all technology matters. Influences
+          board-level strategic decisions about the role of technology in the company's future.
+          Prepares materials that help the board make informed decisions about major technology bets.
+        principal: >
+          Communicates at the highest levels of governance with mastery. Influences investor
+          confidence through compelling technology narratives. Serves on other companies' boards,
+          bringing engineering leadership perspective to governance.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can help prepare board materials, analyze financial data, and draft presentations.
+          However, the ability to command a boardroom, build trust with directors, and communicate
+          vision with conviction remains a fundamentally human capability.
+
+    - id: technology_vision
+      name: "Technology Vision"
+      category: domain
+      description: >
+        The ability to articulate a compelling multi-year technology vision that aligns with
+        business strategy, inspires the engineering organization, and positions the company
+        for long-term competitive advantage through technology.
+      proficiency:
+        junior: >
+          Develops a technology vision for their organization that aligns with the company's
+          overall technical direction. Communicates the vision in ways that inspire their teams
+          and connect daily work to long-term goals.
+        mid: >
+          Shapes the company's technology vision in partnership with the CTO. Creates compelling
+          narratives about how technology will drive business value. Translates abstract vision
+          into concrete strategic initiatives that teams can execute against.
+        senior: >
+          Co-creates the company's technology vision and drives its execution across the
+          engineering organization. Identifies technology trends that will shape the industry
+          and positions the company to capitalize on them. Inspires the entire organization.
+        staff: >
+          Defines the company's technology vision with authority and credibility. Creates
+          visions that attract top talent and excite the market. Positions the company as a
+          technology leader through the strength and clarity of the vision.
+        principal: >
+          Shapes technology vision at an industry level. Creates visions that influence how the
+          market thinks about the future of technology in the company's domain. Recognized as
+          a visionary leader whose perspectives shape industry direction.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can help scan the technology landscape, identify trends, and model future scenarios.
+          However, crafting a compelling vision that inspires people and aligns with business
+          strategy requires creativity, judgment, and leadership that remain uniquely human.
+
+    - id: operational_excellence
+      name: "Operational Excellence"
+      category: analytical
+      description: >
+        The ability to drive operational excellence across a large engineering organization,
+        establishing standards, metrics, and continuous improvement practices that ensure
+        reliable delivery, efficient resource utilization, and high engineering productivity.
+      proficiency:
+        junior: >
+          Establishes operational standards and metrics for their engineering organization.
+          Drives improvements in deployment frequency, reliability, and incident response.
+          Creates operational review cadences that identify and address systemic issues.
+        mid: >
+          Drives operational excellence across the entire engineering function. Creates
+          frameworks for measuring and improving engineering productivity. Balances operational
+          investment with feature delivery at the organizational level.
+        senior: >
+          Establishes operational excellence as a core engineering competency. Creates innovative
+          approaches to measuring and improving engineering effectiveness. Drives operational
+          improvements that create measurable business value and competitive advantage.
+        staff: >
+          Develops operational excellence frameworks that become organizational standards. Creates
+          programs that drive continuous operational improvement across the company. Benchmarks
+          operational performance against industry leaders and drives targeted improvements.
+        principal: >
+          Establishes operational excellence practices that become industry benchmarks. Creates
+          innovative operational frameworks that other companies adopt. Drives operational
+          improvements that fundamentally change the company's competitive position.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI significantly augments operational excellence through automated monitoring, predictive
+          analytics, and intelligent alerting. AI tools can identify efficiency bottlenecks and
+          suggest improvements. However, setting operational strategy and building an operational
+          culture require human leadership.
+
+    - id: cross_company_influence
+      name: "Cross-Company Influence"
+      category: communication
+      description: >
+        The ability to influence decisions and drive alignment across the entire company,
+        partnering with peers in product, sales, marketing, finance, and operations to ensure
+        engineering is a strategic partner rather than a service function.
+      proficiency:
+        junior: >
+          Builds strong partnerships with VP-level peers across the company. Represents
+          engineering effectively in cross-functional leadership discussions. Influences
+          decisions that affect engineering resources and priorities.
+        mid: >
+          Operates as a key influencer across the senior leadership team. Shapes company strategy
+          from an engineering perspective. Builds coalitions that drive cross-functional outcomes
+          and positions engineering as a strategic partner to the business.
+        senior: >
+          Influences company-wide strategy and decision-making as one of the most respected
+          executive voices. Drives cross-functional initiatives that create significant business
+          value. Builds a reputation for sound judgment that gives engineering outsized influence.
+        staff: >
+          Shapes the company's strategic direction through deep influence across all functions.
+          Creates cross-functional operating models that optimize company-wide outcomes. Trusted
+          by the CEO as a strategic partner on issues far beyond engineering.
+        principal: >
+          Operates as one of the most influential leaders in the company regardless of function.
+          Drives company-wide transformation through cross-functional influence. Mentors other
+          executives on building cross-company influence and partnership.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Cross-company influence is built entirely on human relationships, trust, and credibility.
+          AI can provide data to support arguments and help prepare for discussions but cannot
+          build the interpersonal relationships and political capital that drive influence.
+
+    - id: diversity_inclusion
+      name: "Diversity, Equity, and Inclusion"
+      category: leadership
+      description: >
+        The ability to build and sustain diverse and inclusive engineering organizations where
+        people of all backgrounds can thrive, advance, and do their best work, driving equitable
+        outcomes in hiring, development, and promotion.
+      proficiency:
+        junior: >
+          Champions diversity and inclusion within their organization. Sets measurable goals
+          for improving representation and belonging. Ensures equitable processes for hiring,
+          performance evaluation, and promotion within their teams.
+        mid: >
+          Drives DEI strategy across the engineering function. Creates programs that improve
+          representation at all levels including leadership. Builds inclusive cultures that
+          retain diverse talent and measures progress against clear benchmarks.
+        senior: >
+          Establishes DEI as a core engineering value and competitive advantage. Creates systemic
+          changes in hiring, development, and promotion that drive equitable outcomes. Builds
+          partnerships with external organizations to strengthen the diverse talent pipeline.
+        staff: >
+          Shapes the company-wide DEI strategy from an engineering perspective. Creates innovative
+          programs that become models for the industry. Builds organizations where diversity of
+          thought drives better technical and business outcomes.
+        principal: >
+          Recognized as an industry leader in building diverse engineering organizations. Creates
+          frameworks and programs that other companies adopt. Advocates for systemic changes in
+          the technology industry to improve diversity and inclusion.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can help identify bias in hiring processes, analyze representation data, and flag
+          inequitable patterns in performance reviews and promotions. However, building truly
+          inclusive cultures requires empathy, vulnerability, and personal commitment that
+          are inherently human.
+
+    - id: vendor_strategy
+      name: "Vendor and Partner Strategy"
+      category: domain
+      description: >
+        The ability to develop and manage strategic vendor and technology partner relationships,
+        making build-versus-buy decisions at the organizational level, negotiating major contracts,
+        and creating a vendor ecosystem that supports engineering effectiveness.
+      proficiency:
+        junior: >
+          Manages vendor relationships for their organization, making sound build-versus-buy
+          decisions. Negotiates contracts that protect the company's interests. Evaluates new
+          vendors and technologies against organizational needs.
+        mid: >
+          Develops vendor strategy for the engineering function, optimizing the vendor portfolio
+          for cost, capability, and risk. Negotiates major enterprise contracts. Creates
+          frameworks for vendor evaluation that other leaders adopt.
+        senior: >
+          Shapes the company's technology vendor strategy. Builds strategic partnerships with
+          key technology providers. Negotiates multi-year, multi-million dollar agreements that
+          create competitive advantage. Manages vendor risk at the organizational level.
+        staff: >
+          Defines the company's overall technology vendor and partner strategy. Creates innovative
+          partnership models that provide unique competitive advantages. Influences vendor product
+          roadmaps through the strategic importance of the relationship.
+        principal: >
+          Operates as a strategic partner to the CEOs of key technology vendors. Creates
+          partnership ecosystems that fundamentally strengthen the company's competitive position.
+          Shapes how the industry thinks about vendor and partner strategy.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can assist with vendor evaluation, contract analysis, and market comparison.
+          AI-powered tools can monitor vendor performance and identify risks. However, building
+          strategic partnerships and negotiating complex agreements require human relationship
+          skills and business judgment.
+
+    - id: m_and_a_technical
+      name: "M&A Technical Due Diligence"
+      category: domain
+      description: >
+        The ability to evaluate technology assets, engineering organizations, and technical debt
+        during mergers and acquisitions, and to lead the technical integration of acquired companies
+        into the parent organization.
+      proficiency:
+        junior: >
+          Participates in technical due diligence for acquisitions, evaluating code quality,
+          architecture, and engineering team capabilities. Contributes to integration planning
+          and helps identify technical risks and synergies.
+        mid: >
+          Leads technical due diligence for mid-size acquisitions. Evaluates technology assets,
+          team capabilities, and integration complexity. Creates integration plans that minimize
+          disruption while capturing value. Identifies deal-breaker technical risks.
+        senior: >
+          Drives technical due diligence for major acquisitions. Develops comprehensive
+          frameworks for evaluating technology assets and engineering organizations. Leads
+          complex integrations that preserve the value of acquired technology and talent.
+        staff: >
+          Shapes the company's M&A strategy from a technology perspective. Creates reusable
+          due diligence frameworks and integration playbooks. Advises the CEO and board on
+          technology-related aspects of potential acquisitions.
+        principal: >
+          Recognized as an expert in technology M&A. Influences deal strategy at the board
+          level. Creates M&A integration approaches that maximize value capture and talent
+          retention. Advises other companies on technology M&A best practices.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can accelerate code analysis, architecture evaluation, and technical debt
+          quantification during due diligence. AI tools can compare technology stacks and
+          identify integration risks. However, evaluating team quality, cultural fit, and
+          strategic technology value requires experienced human judgment.
+
+    - id: crisis_leadership
+      name: "Crisis Leadership"
+      category: leadership
+      description: >
+        The ability to lead the engineering organization through major crises including critical
+        outages, security breaches, organizational upheaval, and market disruptions, maintaining
+        clarity and confidence while driving rapid resolution.
+      proficiency:
+        junior: >
+          Leads engineering crisis response for significant incidents within their organization.
+          Communicates clearly with executives and stakeholders during crises. Maintains team
+          focus and morale during high-pressure situations.
+        mid: >
+          Manages company-impacting engineering crises with composure and effectiveness. Creates
+          crisis management frameworks and playbooks. Builds organizational resilience through
+          preparation and training. Communicates with board and customers during crises.
+        senior: >
+          Leads the company through major technical crises with authority and calm. Develops
+          crisis leadership capabilities across the engineering organization. Creates
+          organizational structures that enable rapid and effective crisis response at scale.
+        staff: >
+          Manages the most severe crises including existential threats to the business. Builds
+          company-wide crisis management capabilities. Creates post-crisis recovery strategies
+          that strengthen the organization. Communicates with investors and regulators during crises.
+        principal: >
+          Recognized for exceptional crisis leadership under the most extreme circumstances.
+          Creates crisis management philosophies and frameworks that other companies adopt.
+          Builds organizations that emerge stronger from every crisis they face.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can aid crisis detection, automated response for known issues, and real-time
+          impact analysis. However, crisis leadership requires human judgment, calm under
+          pressure, decisive action, and the ability to inspire confidence during uncertainty,
+          none of which can be automated.
+
+    - id: industry_presence
+      name: "Industry Presence and Thought Leadership"
+      category: communication
+      description: >
+        The ability to represent the company in the broader technology industry through speaking,
+        writing, community engagement, and personal brand, strengthening the company's reputation
+        and attracting talent and partnership opportunities.
+      proficiency:
+        junior: >
+          Speaks at industry conferences and writes about engineering leadership topics. Builds
+          a personal brand that enhances the company's reputation. Participates in industry
+          communities and professional networks.
+        mid: >
+          Maintains a recognized industry presence through keynotes, publications, and community
+          leadership. Attracts talent and partnership opportunities through personal visibility.
+          Represents the company in industry groups and standards bodies.
+        senior: >
+          Recognized as a leading voice in engineering leadership. Delivers keynotes at major
+          conferences and publishes widely read content. Shapes industry conversations about
+          engineering management and technology leadership.
+        staff: >
+          Operates as one of the most visible engineering executives in the industry. Influences
+          industry direction through thought leadership and community engagement. Creates
+          opportunities for the company through personal reputation and relationships.
+        principal: >
+          Recognized as one of the defining voices in technology leadership. Shapes how the
+          industry thinks about engineering organizations and technology strategy. Influences
+          policy and industry standards at the highest levels.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can help prepare presentations, draft articles, and identify speaking opportunities.
+          However, industry presence is built on authenticity, personal relationships, and
+          original thinking, qualities that depend on human experience and perspective.

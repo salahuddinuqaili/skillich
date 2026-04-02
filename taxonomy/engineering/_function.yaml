@@ -1,0 +1,27 @@
+function:
+  id: engineering
+  name: "Engineering"
+  description: >
+    Software engineering, infrastructure, and technical delivery roles.
+    Encompasses the design, development, testing, deployment, and maintenance
+    of software systems across all layers of the stack.
+  roles:
+    - frontend
+    - backend
+    - fullstack
+    - mobile
+    - devops_sre
+    - cloud_infrastructure
+    - security_engineering
+    - data_engineering
+    - ml_engineering
+    - qa_testing
+  sources:
+    - name: "Dropbox Engineering Career Framework"
+      url: "https://dropbox.github.io/dbx-career-framework/"
+    - name: "GitLab Engineering Handbook"
+      url: "https://handbook.gitlab.com/handbook/engineering/"
+    - name: "CircleCI Engineering Competency Matrix"
+      url: "https://circleci.com/blog/why-we-re-designed-our-engineering-career-paths-at-circleci/"
+    - name: "progression.fyi"
+      url: "https://progression.fyi/"

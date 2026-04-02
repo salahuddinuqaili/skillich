@@ -1,0 +1,626 @@
+role:
+  id: clinical_data_analyst
+  function: healthcare
+  name: "Clinical Data Analyst"
+  also_known_as:
+    - "Healthcare Data Analyst"
+    - "Clinical Informatics Analyst"
+    - "Health Data Analyst"
+    - "Clinical Analytics Specialist"
+    - "Outcomes Analyst"
+  description: >
+    Analyzes patient outcomes, clinical utilization, and operational data to
+    support evidence-based decision-making in healthcare organizations. Builds
+    clinical dashboards, extracts and validates data from EHR systems, applies
+    statistical methods to identify trends, and translates complex findings
+    into actionable insights for clinicians, administrators, and quality teams
+    while maintaining strict HIPAA compliance and data integrity standards.
+  ai_impact:
+    level: "moderate-high"
+    summary: >
+      AI is accelerating clinical data analysis by automating routine data
+      extraction, anomaly detection, and report generation. Natural language
+      query tools allow non-technical stakeholders to explore data directly,
+      reducing ad-hoc request volume. However, the need for clinical domain
+      knowledge, regulatory awareness, and the ability to contextualize data
+      within complex care delivery environments ensures that skilled analysts
+      remain critical for high-stakes analytical work and strategic insight.
+    automating:
+      - "Routine report generation and scheduled dashboard refreshes"
+      - "Data quality checks and missing-value detection"
+      - "Standard SQL query generation from natural language requests"
+      - "Automated anomaly and outlier flagging in clinical datasets"
+      - "Chart abstraction and structured data extraction from notes"
+    augmenting:
+      - "Complex cohort identification and risk stratification modeling"
+      - "Root cause analysis for quality and safety events"
+      - "Predictive analytics for readmission and length-of-stay"
+      - "Natural language summarization of clinical data findings"
+      - "Cross-system data reconciliation and entity resolution"
+    preserving:
+      - "Clinical context interpretation and domain-specific judgment"
+      - "Stakeholder relationship management with clinical leadership"
+      - "Regulatory compliance decisions involving PHI and data governance"
+      - "Study design and analytical framework selection for novel questions"
+      - "Ethical reasoning about data use, bias, and patient equity"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "O*NET - Health Information Technologists and Medical Registrars"
+        url: "https://www.onetonline.org/link/summary/29-9021.00"
+      - name: "AHIMA - Health Data Analytics"
+        url: "https://www.ahima.org/certification-careers/certifications-overview/"
+      - name: "McKinsey - The Era of Analytics in Healthcare"
+        url: "https://www.mckinsey.com/industries/healthcare/our-insights/the-era-of-clinical-analytics"
+  levels:
+    - id: junior
+      name: "Junior Clinical Data Analyst"
+      years_experience: "0-2"
+      summary: >
+        Executes well-defined data extraction and reporting tasks under
+        supervision. Writes basic SQL queries, populates standard report
+        templates, and performs initial data quality checks. Learns clinical
+        terminology, EHR data structures, and organizational data governance
+        policies.
+    - id: mid
+      name: "Clinical Data Analyst"
+      years_experience: "2-5"
+      summary: >
+        Independently manages end-to-end analytical projects from data
+        extraction through insight delivery. Builds and maintains dashboards,
+        conducts statistical analyses, and presents findings to clinical
+        stakeholders. Ensures data quality and HIPAA compliance across
+        assigned workstreams.
+    - id: senior
+      name: "Senior Clinical Data Analyst"
+      years_experience: "5-8"
+      summary: >
+        Leads complex analytical initiatives spanning multiple data sources
+        and clinical domains. Designs analytical frameworks, mentors junior
+        analysts, and partners with clinical leadership to define metrics
+        and KPIs. Drives data quality improvement efforts and contributes
+        to data governance strategy.
+    - id: staff
+      name: "Staff Clinical Data Analyst"
+      years_experience: "8-12"
+      summary: >
+        Sets analytical standards and best practices across the organization.
+        Architects data pipelines and self-service analytics platforms that
+        serve multiple departments. Influences data strategy by connecting
+        analytical capabilities to organizational quality and financial goals.
+    - id: principal
+      name: "Principal Clinical Data Analyst"
+      years_experience: "12+"
+      summary: >
+        Defines the organization's clinical analytics vision and roadmap.
+        Drives adoption of advanced analytics, AI/ML models, and population
+        health platforms. Advises executive leadership on data-driven
+        strategy, partners with external research institutions, and shapes
+        data governance at the enterprise level.
+  skills:
+    - id: clinical_data_management
+      name: "Clinical Data Management"
+      category: technical
+      description: >
+        Organizing, cleaning, validating, and maintaining clinical datasets
+        from EHR systems, registries, and claims sources, ensuring data
+        integrity, completeness, and fitness for analytical use while adhering
+        to institutional and regulatory standards.
+      proficiency:
+        junior: >
+          Performs basic data cleaning tasks such as deduplication, formatting
+          corrections, and missing-value identification using established
+          procedures. Follows documented data management workflows and escalates
+          anomalies to senior team members for resolution.
+        mid: >
+          Designs and implements data validation rules for clinical datasets
+          spanning multiple source systems. Builds repeatable data cleaning
+          pipelines, documents data lineage, and resolves moderate data quality
+          issues independently while maintaining audit trails.
+        senior: >
+          Architects data management frameworks that standardize how clinical
+          data is ingested, validated, and stored across the organization.
+          Leads data quality improvement initiatives, defines data dictionaries,
+          and establishes monitoring that proactively detects integrity issues.
+        staff: >
+          Sets enterprise-wide clinical data management standards, including
+          master data management strategies and data stewardship programs.
+          Partners with IT and clinical leadership to align data management
+          practices with organizational analytics and research objectives.
+        principal: >
+          Drives the organization's clinical data strategy at the executive
+          level, evaluating emerging data management technologies and aligning
+          data infrastructure investments with multi-year quality, research,
+          and population health goals across the enterprise.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI accelerates data profiling, anomaly detection, and automated
+          cleansing routines, but understanding clinical data semantics,
+          resolving ambiguous mappings, and making governance decisions about
+          data fitness for specific use cases require human domain expertise.
+
+    - id: ehr_systems
+      name: "EHR Systems (Epic, Cerner)"
+      category: technical
+      description: >
+        Navigating, extracting data from, and optimizing the use of electronic
+        health record platforms such as Epic, Cerner (Oracle Health), and
+        similar systems, including understanding their data models, reporting
+        modules, and integration capabilities.
+      proficiency:
+        junior: >
+          Navigates core EHR modules to locate patient data and run pre-built
+          reports. Understands the basic data model including encounters,
+          orders, results, and clinical documentation. Uses reporting tools
+          like Crystal Reports or Reporting Workbench for standard extracts.
+        mid: >
+          Extracts complex datasets using native EHR reporting tools and direct
+          database queries against Clarity, Caboodle, or equivalent data
+          warehouses. Understands flowsheet data, clinical documentation
+          structures, and order-entry workflows across major EHR platforms.
+        senior: >
+          Designs optimized extraction strategies leveraging EHR data warehouse
+          architectures. Understands Epic Cogito, Cerner HealtheAnalytics, or
+          equivalent analytics platforms deeply. Advises teams on data
+          availability, refresh timing, and known data quality limitations.
+        staff: >
+          Defines organizational standards for EHR data access, including
+          approved extraction pathways, data refresh SLAs, and governance over
+          custom reporting objects. Partners with EHR administration teams to
+          influence build decisions that improve downstream analytics quality.
+        principal: >
+          Shapes the organization's EHR analytics strategy, evaluating platform
+          upgrades, cloud migration paths, and emerging capabilities like FHIR-
+          based APIs. Influences vendor roadmap discussions and aligns EHR data
+          architecture with enterprise analytics and AI initiatives.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI tools can assist with query generation and report building within
+          EHR platforms, but deep knowledge of platform-specific data models,
+          undocumented behaviors, and organizational configuration nuances
+          remains essential for producing reliable clinical datasets.
+
+    - id: sql_data_extraction
+      name: "SQL & Data Extraction"
+      category: technical
+      description: >
+        Writing efficient SQL queries to extract, transform, and analyze data
+        from relational databases and clinical data warehouses, including
+        complex joins, window functions, CTEs, and performance optimization
+        for large healthcare datasets.
+      proficiency:
+        junior: >
+          Writes basic SELECT queries with joins, WHERE clauses, and GROUP BY
+          aggregations. Extracts data from a single source following documented
+          query templates. Understands primary and foreign key relationships in
+          clinical data schemas.
+        mid: >
+          Writes complex queries using CTEs, window functions, and subqueries
+          to answer multi-step analytical questions. Optimizes query performance
+          through indexing awareness and execution plan review. Builds reusable
+          query libraries for common clinical data extractions.
+        senior: >
+          Designs efficient ETL processes and complex analytical queries spanning
+          multiple clinical data sources. Mentors team members on SQL best
+          practices, performance tuning, and query readability. Evaluates and
+          implements query optimization strategies for large-scale datasets.
+        staff: >
+          Establishes SQL coding standards and shared query frameworks across the
+          analytics organization. Architects data extraction patterns that
+          balance performance, maintainability, and auditability. Drives adoption
+          of modern SQL features and tooling that improve team productivity.
+        principal: >
+          Defines the organization's data extraction strategy, evaluating when
+          SQL-based approaches should give way to distributed processing, data
+          lakehouse architectures, or streaming pipelines. Influences technology
+          investment decisions that shape how clinical data is accessed at scale.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI is highly effective at generating SQL from natural language
+          descriptions, optimizing existing queries, and explaining complex
+          query logic. However, understanding clinical data semantics, validating
+          results against domain expectations, and designing extraction
+          strategies for novel analytical questions still require human analysts.
+
+    - id: statistical_analysis
+      name: "Statistical Analysis"
+      category: technical
+      description: >
+        Applying statistical methods such as hypothesis testing, regression
+        analysis, survival analysis, and descriptive statistics to clinical
+        data, using tools like R, Python (SciPy, pandas), SAS, or SPSS to
+        generate valid, reproducible findings.
+      proficiency:
+        junior: >
+          Calculates descriptive statistics, creates frequency distributions,
+          and performs basic hypothesis tests such as t-tests and chi-square
+          tests using established tools. Interprets p-values and confidence
+          intervals with guidance from senior analysts.
+        mid: >
+          Selects and applies appropriate statistical methods for clinical
+          research questions including logistic regression, ANOVA, and survival
+          analysis. Validates assumptions, handles confounders, and presents
+          results with proper context for clinical and administrative audiences.
+        senior: >
+          Designs statistical analysis plans for complex clinical studies and
+          quality improvement projects. Applies advanced methods like propensity
+          score matching, mixed-effects models, and time-series analysis.
+          Mentors team members on method selection and result interpretation.
+        staff: >
+          Establishes organizational standards for statistical rigor in clinical
+          analytics, including reproducibility requirements, peer review
+          processes, and approved methodologies. Partners with research teams
+          to align analytical approaches with publication-quality standards.
+        principal: >
+          Drives the organization's analytical methodology strategy, evaluating
+          emerging techniques like causal inference frameworks and Bayesian
+          methods. Advises leadership on the appropriate level of statistical
+          evidence required for clinical and strategic decisions.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI tools can automate exploratory data analysis, suggest appropriate
+          tests, and generate code for standard statistical procedures. However,
+          selecting the right analytical framework, interpreting results within
+          clinical context, and communicating nuanced findings to decision-makers
+          require deep domain expertise and human judgment.
+
+    - id: clinical_terminology
+      name: "Clinical Terminology (ICD-10, CPT, SNOMED)"
+      category: domain
+      description: >
+        Understanding and applying standardized clinical classification systems
+        including ICD-10-CM/PCS, CPT, HCPCS, SNOMED CT, LOINC, and RxNorm to
+        correctly interpret, categorize, and analyze clinical data across
+        different healthcare contexts.
+      proficiency:
+        junior: >
+          Recognizes major code sets and their purposes. Looks up ICD-10 and CPT
+          codes to understand data categories. Applies basic code groupings when
+          filtering clinical datasets and follows team conventions for
+          terminology mapping in standard reports.
+        mid: >
+          Maps between terminology systems for analytical purposes, understands
+          code hierarchies and groupers, and identifies coding inconsistencies in
+          datasets. Uses SNOMED CT and LOINC for clinical concept normalization
+          and builds terminology-aware data validation rules.
+        senior: >
+          Designs terminology mapping strategies for cross-system analytics and
+          research cohort definitions. Advises clinical teams on coding
+          implications for data quality and analytics. Leads efforts to
+          standardize terminology use across organizational data assets.
+        staff: >
+          Establishes enterprise terminology management standards, including
+          mapping governance, version management, and integration with master
+          data management. Partners with coding and clinical documentation
+          teams to improve upstream data quality for analytics.
+        principal: >
+          Shapes the organization's clinical terminology strategy, evaluating
+          ontology evolution, national interoperability mandates, and emerging
+          standards. Advises leadership on terminology infrastructure investments
+          that support AI/ML, population health, and research objectives.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI excels at suggesting code mappings, flagging inconsistencies, and
+          automating terminology normalization across datasets. However,
+          resolving ambiguous clinical concepts, understanding coding context
+          nuances, and making governance decisions about terminology use require
+          human clinical and informatics expertise.
+
+    - id: data_quality
+      name: "Data Quality & Validation"
+      category: technical
+      description: >
+        Designing and implementing processes to assess, monitor, and improve the
+        accuracy, completeness, consistency, and timeliness of clinical data,
+        including data profiling, validation rule development, and root cause
+        analysis of data quality issues.
+      proficiency:
+        junior: >
+          Executes established data quality checks including completeness scans,
+          range validations, and cross-field consistency checks. Documents
+          identified issues and tracks resolution status using standard tools
+          and processes provided by the team.
+        mid: >
+          Designs data quality rules for new datasets and analytical use cases.
+          Implements automated validation pipelines, creates data quality
+          scorecards, and performs root cause analysis on recurring data issues.
+          Communicates findings and remediation plans to data stewards.
+        senior: >
+          Architects data quality frameworks spanning multiple clinical data
+          sources and organizational boundaries. Defines data quality KPIs,
+          establishes monitoring dashboards, and leads cross-functional
+          initiatives to address systemic data quality issues at their source.
+        staff: >
+          Sets enterprise data quality standards and governance processes that
+          integrate with clinical operations and IT workflows. Drives adoption
+          of data quality tooling and establishes accountability structures that
+          connect data quality outcomes to organizational performance metrics.
+        principal: >
+          Defines the organization's data quality vision, aligning investment in
+          data quality infrastructure with strategic objectives in analytics, AI,
+          and regulatory compliance. Influences industry data quality standards
+          through participation in professional organizations and consortia.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI automates routine data profiling, anomaly detection, and pattern-
+          based validation effectively. However, defining what constitutes
+          acceptable quality for specific clinical use cases, investigating
+          complex systemic issues, and making governance trade-offs between
+          data quality investment and operational burden require human judgment.
+
+    - id: regulatory_reporting
+      name: "Regulatory & Quality Reporting"
+      category: domain
+      description: >
+        Preparing, validating, and submitting regulatory and quality reports
+        required by CMS, The Joint Commission, state agencies, and payer
+        organizations, including measures related to HEDIS, eCQMs, MIPS,
+        Hospital Compare, and mandatory public health reporting.
+      proficiency:
+        junior: >
+          Assists with data extraction and validation for standard regulatory
+          reports using documented procedures. Understands the purpose of major
+          reporting programs and follows established timelines and checklists for
+          report preparation under supervision.
+        mid: >
+          Independently prepares and validates regulatory submissions for
+          programs such as CMS quality reporting and state-mandated registries.
+          Troubleshoots measure calculation discrepancies, maintains reporting
+          calendars, and ensures timely submission across multiple programs.
+        senior: >
+          Leads the organization's regulatory reporting strategy for complex
+          programs spanning multiple facilities and payer contracts. Designs
+          automated measure calculation pipelines, interprets specification
+          changes, and advises leadership on performance improvement targets.
+        staff: >
+          Defines enterprise-wide quality measurement and reporting standards
+          that integrate regulatory requirements with internal quality
+          improvement objectives. Establishes governance over measure
+          definitions, calculation engines, and submission workflows across
+          the organization.
+        principal: >
+          Shapes the organization's regulatory reporting strategy at the
+          executive level, anticipating regulatory changes and evaluating their
+          operational and financial impact. Engages with industry groups and
+          regulatory bodies to influence measure development and reporting
+          requirements.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can automate measure calculation, flag submission anomalies, and
+          track regulatory specification changes. However, interpreting ambiguous
+          measure specifications, resolving edge cases in clinical data, and
+          making strategic decisions about reporting program participation
+          require experienced human analysts with regulatory domain knowledge.
+
+    - id: dashboard_development
+      name: "Dashboard Development"
+      category: technical
+      description: >
+        Designing and building interactive clinical and operational dashboards
+        using tools such as Tableau, Power BI, Qlik, or Epic SlicerDicer that
+        present complex healthcare data clearly, enabling clinicians and
+        administrators to monitor performance and make informed decisions.
+      proficiency:
+        junior: >
+          Builds basic dashboards using established templates and style guides.
+          Creates standard visualizations including bar charts, line graphs, and
+          tables. Connects to prepared data sources and applies filters following
+          documented design specifications.
+        mid: >
+          Designs end-to-end dashboards with appropriate chart types, drill-down
+          functionality, and responsive layouts. Implements calculated fields,
+          parameters, and dynamic filtering. Optimizes data source connections
+          for performance and ensures accessibility standards are met.
+        senior: >
+          Architects dashboard ecosystems that serve diverse clinical and
+          administrative audiences. Establishes visualization standards, data
+          refresh strategies, and governance for self-service analytics
+          platforms. Mentors team members on visual design and storytelling.
+        staff: >
+          Defines the organization's dashboard and visualization strategy,
+          selecting platforms, establishing design systems, and building shared
+          component libraries. Drives adoption of self-service analytics that
+          reduce ad-hoc reporting burden while maintaining data governance.
+        principal: >
+          Shapes the organization's approach to data democratization and
+          clinical intelligence delivery. Evaluates emerging visualization
+          technologies, embedded analytics, and AI-powered narrative generation
+          tools that transform how clinical data is consumed across the
+          enterprise.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can auto-generate charts, suggest optimal visualizations for given
+          datasets, and create narrative summaries of dashboard data. However,
+          designing dashboards that drive clinical action, understanding
+          audience-specific needs, and building trust in data through thoughtful
+          presentation require human design and domain judgment.
+
+    - id: research_support
+      name: "Research Support & Analytics"
+      category: domain
+      description: >
+        Supporting clinical research initiatives by designing study cohorts,
+        extracting research datasets from operational systems, performing
+        feasibility assessments, and conducting analyses that support grant
+        applications, publications, and quality improvement studies.
+      proficiency:
+        junior: >
+          Extracts research datasets following approved protocols and documented
+          data specifications. Assists with feasibility queries by pulling
+          patient counts and basic demographic summaries. Maintains research
+          data files with proper versioning and access controls.
+        mid: >
+          Independently builds research cohorts using complex inclusion and
+          exclusion criteria across multiple data sources. Conducts descriptive
+          and preliminary statistical analyses for research teams. Prepares
+          data documentation and codebooks that meet institutional review
+          standards.
+        senior: >
+          Partners with principal investigators to design analytical approaches
+          for clinical studies. Leads complex research data linkage projects,
+          performs advanced statistical analyses, and co-authors methods sections
+          for publications. Advises on data availability and quality limitations.
+        staff: >
+          Establishes research analytics standards and reusable data assets that
+          accelerate research throughput across the organization. Builds
+          research data repositories, defines de-identification standards, and
+          creates self-service tools that enable investigators to conduct
+          preliminary analyses independently.
+        principal: >
+          Drives the organization's research data strategy, positioning
+          analytical infrastructure as a competitive advantage for grant
+          funding and academic partnerships. Evaluates emerging research data
+          platforms and AI/ML tools that accelerate discovery while maintaining
+          regulatory compliance and scientific rigor.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI tools can accelerate literature review, cohort identification, and
+          preliminary analysis for research projects. However, designing valid
+          study methodologies, interpreting results within clinical context, and
+          ensuring compliance with research ethics and regulatory requirements
+          remain firmly human responsibilities.
+
+    - id: population_health_analytics
+      name: "Population Health Analytics"
+      category: domain
+      description: >
+        Analyzing health data at the population level to identify disease
+        prevalence, risk factors, care gaps, and utilization patterns, using
+        risk stratification models, geographic analysis, and social
+        determinants of health data to support prevention and care management
+        programs.
+      proficiency:
+        junior: >
+          Runs pre-built population health reports and risk stratification
+          queries. Understands basic concepts including disease prevalence,
+          incidence rates, and care gap identification. Assists with data
+          preparation for population health dashboards and program evaluations.
+        mid: >
+          Designs and implements population segmentation analyses, builds risk
+          scores using established models, and identifies care gaps across
+          chronic disease populations. Integrates claims, clinical, and social
+          determinants data to create comprehensive population health profiles.
+        senior: >
+          Leads population health analytics strategy for the organization,
+          designing predictive models for utilization and risk, evaluating
+          intervention effectiveness, and advising care management leadership on
+          targeting strategies. Integrates novel data sources including SDOH
+          and community-level indicators.
+        staff: >
+          Defines the organization's population health measurement framework,
+          connecting analytics to value-based care contract performance and
+          community health improvement objectives. Establishes shared data
+          assets and analytical tools that serve care management, quality, and
+          network teams.
+        principal: >
+          Shapes the organization's population health strategy at the executive
+          level, leveraging advanced analytics and AI to drive health equity,
+          optimize risk-bearing contract performance, and inform community
+          investment priorities. Engages with payer partners and public health
+          agencies on data-sharing and collaborative analytics initiatives.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI significantly enhances risk prediction, pattern detection, and
+          intervention targeting in population health. However, translating
+          analytical findings into effective care programs, addressing health
+          equity considerations, and navigating the complex stakeholder
+          landscape of population health management require human expertise.
+
+    - id: privacy_compliance
+      name: "Privacy & Compliance (HIPAA)"
+      category: domain
+      description: >
+        Ensuring all data handling, analysis, and reporting activities comply
+        with HIPAA Privacy and Security Rules, institutional policies, and
+        applicable state regulations, including de-identification methods,
+        minimum necessary standards, business associate requirements, and
+        breach notification procedures.
+      proficiency:
+        junior: >
+          Follows established HIPAA policies for data handling, applies minimum
+          necessary principles when accessing patient data, and uses approved
+          de-identification methods for analytical outputs. Completes required
+          privacy training and reports potential concerns promptly.
+        mid: >
+          Applies Safe Harbor and Expert Determination de-identification methods
+          appropriately. Reviews data sharing requests for HIPAA compliance,
+          implements access controls for analytical datasets, and contributes to
+          privacy impact assessments for new analytical tools and workflows.
+        senior: >
+          Advises teams on complex HIPAA compliance scenarios including research
+          data use, cross-organizational data sharing, and cloud-based analytics
+          platforms. Leads privacy impact assessments, designs de-identification
+          strategies, and ensures analytical workflows meet audit requirements.
+        staff: >
+          Defines organizational standards for privacy-preserving analytics,
+          including approved de-identification pipelines, data access governance,
+          and monitoring frameworks. Partners with compliance and legal teams
+          to align analytical practices with evolving regulatory requirements.
+        principal: >
+          Shapes the organization's privacy and compliance strategy for data
+          analytics, evaluating emerging privacy-enhancing technologies like
+          federated learning and differential privacy. Advises executive
+          leadership on regulatory risk and data sharing strategy in the
+          context of value-based care and research collaborations.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can automate PHI detection, flag potential compliance violations,
+          and apply de-identification rules consistently. However, interpreting
+          complex regulatory requirements, making risk-based compliance
+          decisions, and navigating the intersection of analytics innovation
+          and patient privacy require experienced human judgment.
+
+    - id: cross_functional_collaboration
+      name: "Cross-Functional Collaboration"
+      category: interpersonal
+      description: >
+        Partnering effectively with clinicians, IT teams, quality departments,
+        finance, and executive leadership to translate analytical findings into
+        actionable insights, align data initiatives with organizational
+        priorities, and build trust in data-driven decision-making.
+      proficiency:
+        junior: >
+          Communicates clearly with immediate team members and responds
+          professionally to data requests from clinical and operational staff.
+          Asks clarifying questions to understand stakeholder needs and delivers
+          results in accessible formats with guidance on presentation approach.
+        mid: >
+          Builds productive relationships with stakeholders across clinical and
+          administrative departments. Translates technical findings into
+          business-relevant language, facilitates requirements-gathering
+          sessions, and proactively communicates project status and timeline
+          adjustments.
+        senior: >
+          Serves as a trusted analytical partner to clinical and operational
+          leaders, influencing how data is used in strategic decisions. Leads
+          cross-functional project teams, mediates competing data priorities,
+          and builds organizational capacity for data-driven decision-making.
+        staff: >
+          Establishes collaboration frameworks that connect analytics teams with
+          clinical, operational, and executive stakeholders across the
+          organization. Defines service-level expectations, intake processes,
+          and feedback mechanisms that ensure analytics work delivers measurable
+          organizational value.
+        principal: >
+          Drives the organization's culture of data-informed decision-making at
+          the executive level. Builds relationships with board members, external
+          partners, and industry peers to advance the organization's analytical
+          capabilities and reputation as a data-driven healthcare institution.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          AI can assist with communication drafting and presentation generation,
+          but building trust with clinical stakeholders, understanding the
+          political and cultural dynamics of healthcare organizations, and
+          influencing data-driven culture change are deeply human capabilities.

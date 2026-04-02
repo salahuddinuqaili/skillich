@@ -1,0 +1,476 @@
+role:
+  id: mobile
+  function: engineering
+  name: "Mobile Engineer"
+  also_known_as:
+    - "Mobile Developer"
+    - "iOS Engineer"
+    - "Android Engineer"
+    - "Mobile Application Developer"
+  description: >
+    Designs, builds, and maintains native and cross-platform mobile applications.
+    Manages app lifecycle, platform-specific UX conventions, offline capabilities,
+    and distribution through app stores.
+
+  ai_impact:
+    level: moderate-high
+    summary: >
+      AI accelerates UI component generation and boilerplate code, but platform-specific
+      constraints (memory, battery, network), app store policies, and native API integration
+      require deep human expertise. Cross-platform frameworks add complexity that AI
+      handles unevenly.
+    automating:
+      - "UI component scaffolding from designs"
+      - "Boilerplate platform code generation"
+      - "Unit test generation for view models"
+      - "Localization string management"
+    augmenting:
+      - "Platform API integration and migration"
+      - "Performance profiling and optimization"
+      - "Cross-platform code sharing decisions"
+      - "Accessibility compliance implementation"
+    preserving:
+      - "Platform-specific UX judgment"
+      - "App store review compliance strategy"
+      - "Offline-first architecture design"
+      - "Device fragmentation troubleshooting"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "State of Mobile Engineering 2025"
+        url: "https://www.runway.team/blog/the-state-of-mobile-release-management-2025"
+      - name: "Stack Overflow Developer Survey 2024 - Mobile Development Trends"
+        url: "https://survey.stackoverflow.co/2024/technology"
+
+  levels:
+    - id: junior
+      name: "Junior (L1-L2)"
+      years_experience: "0-2"
+      summary: "Implements features on one platform following established patterns and UI guidelines."
+    - id: mid
+      name: "Mid-Level (L3)"
+      years_experience: "2-5"
+      summary: "Owns features across the app. Handles platform APIs, navigation, and data persistence independently."
+    - id: senior
+      name: "Senior (L4)"
+      years_experience: "5-8"
+      summary: "Architects app modules. Drives performance optimization and platform migration decisions."
+    - id: staff
+      name: "Staff (L5)"
+      years_experience: "8-12"
+      summary: "Defines mobile platform strategy. Evaluates native vs cross-platform trade-offs for the organization."
+    - id: principal
+      name: "Principal (L6+)"
+      years_experience: "12+"
+      summary: "Sets mobile technology vision. Drives architectural decisions spanning multiple apps and platforms."
+
+  skills:
+    - id: platform_native
+      name: "Native Platform Development"
+      category: technical
+      description: "Building apps with native SDKs: Swift/SwiftUI for iOS, Kotlin/Jetpack Compose for Android."
+      proficiency:
+        junior: >
+          Builds simple screens and navigation flows using SwiftUI or Jetpack
+          Compose on one platform. Follows existing patterns for data binding,
+          list rendering, and view lifecycle, and references platform
+          documentation to resolve common issues.
+        mid: >
+          Implements complex features using platform APIs (camera, location,
+          notifications) with correct lifecycle management in Swift or Kotlin.
+          Handles permission flows, background state restoration, and integrates
+          platform-specific libraries like CoreData or Room for persistence.
+        senior: >
+          Architects app modules with clean separation between UI, domain, and
+          data layers. Leads migration efforts between UI frameworks (e.g.,
+          UIKit to SwiftUI, XML Views to Compose) while managing the trade-off
+          between migration velocity and feature delivery.
+        staff: >
+          Evaluates platform SDK evolution (new SwiftUI APIs, Compose
+          Multiplatform) and sets adoption timelines that balance developer
+          productivity against OS version support. Designs shared architecture
+          patterns and reference implementations that multiple teams adopt.
+        principal: >
+          Drives native platform strategy across multiple apps, engaging with
+          Apple and Google developer relations on roadmap alignment. Makes
+          multi-year technology bets on platform direction and positions the
+          organization to adopt new SDK capabilities early.
+      ai_impact:
+        rating: 0.5
+        detail: "AI generates platform-specific code effectively for common patterns. Platform-specific edge cases, OS version compatibility, and native API nuances require human knowledge."
+
+    - id: cross_platform
+      name: "Cross-Platform Development"
+      category: technical
+      description: "Building apps with React Native, Flutter, or KMP for code sharing across iOS and Android."
+      proficiency:
+        junior: >
+          Builds components in the chosen cross-platform framework (React
+          Native, Flutter, or KMP). Follows established bridge patterns for
+          native module access and uses framework tooling like hot reload
+          to iterate on UI quickly.
+        mid: >
+          Implements platform-specific native modules in Swift or Kotlin
+          when framework abstractions are insufficient. Manages native
+          dependencies, resolves version conflicts in Podfile or Gradle,
+          and handles platform-specific rendering differences.
+        senior: >
+          Evaluates cross-platform vs native trade-offs for each feature,
+          considering performance, UX fidelity, and maintenance cost. Designs
+          the bridging architecture and decides which layers share code vs
+          remain platform-specific.
+        staff: >
+          Selects and evolves the cross-platform strategy (React Native vs
+          Flutter vs KMP) for the organization, benchmarking performance,
+          developer velocity, and hiring implications. Drives framework
+          migration when a technology bet no longer pays off.
+        principal: >
+          Sets the multi-platform engineering vision spanning mobile, web,
+          and emerging surfaces (wearables, TV). Evaluates emerging frameworks
+          and convergence paradigms, making investment decisions that affect
+          team structure and hiring for multiple years.
+      ai_impact:
+        rating: 0.45
+        detail: "AI generates cross-platform component code but struggles with native module bridging, platform-specific workarounds, and framework migration strategy."
+
+    - id: mobile_ui_ux
+      name: "Mobile UI & UX Implementation"
+      category: technical
+      description: "Implementing platform-appropriate interactions, animations, gestures, and accessibility patterns."
+      proficiency:
+        junior: >
+          Implements designs using standard UIKit/SwiftUI or Material
+          components. Follows Apple Human Interface Guidelines or Material
+          Design specifications and uses platform navigation patterns
+          (tab bars, navigation stacks) correctly.
+        mid: >
+          Creates custom animations using Core Animation or Android
+          MotionLayout and implements gesture recognizers for swipe, pinch,
+          and long-press interactions. Adapts layouts for different screen
+          sizes, orientations, and Dynamic Type accessibility settings.
+        senior: >
+          Defines the UI component architecture and establishes a mobile
+          design system with reusable components, spacing tokens, and
+          typography scales. Implements complex interaction patterns like
+          shared-element transitions and interactive dismissals.
+        staff: >
+          Establishes mobile design system standards across teams, bridging
+          design and engineering on interaction patterns. Evaluates trade-offs
+          between platform-native UX conventions and cross-platform design
+          consistency to maintain brand coherence.
+        principal: >
+          Shapes the organization's mobile UX engineering philosophy,
+          influencing how design and engineering collaborate on interaction
+          paradigms. Evaluates emerging platform capabilities (widgets,
+          live activities, dynamic island) for strategic UX advantage.
+      ai_impact:
+        rating: 0.4
+        detail: "AI implements standard UI layouts well. Custom animations, gesture-based interactions, and platform-appropriate UX judgment require human creativity."
+
+    - id: mobile_performance
+      name: "Mobile Performance Optimization"
+      category: technical
+      description: "Optimizing app startup time, memory usage, battery consumption, and rendering performance."
+      proficiency:
+        junior: >
+          Uses Xcode Instruments or Android Studio Profiler to identify
+          obvious performance issues like main-thread blocking and memory
+          leaks. Avoids common anti-patterns such as synchronous network
+          calls and unbounded image caching.
+        mid: >
+          Optimizes list rendering with cell reuse and diffable data
+          sources, implements efficient image loading with caching
+          libraries (Kingfisher, Coil), and reduces app binary size through
+          asset optimization and dead-code stripping.
+        senior: >
+          Conducts systematic performance analysis using Instruments Time
+          Profiler, Allocations, and Android Perfetto traces. Implements
+          pre-fetching strategies, lazy module loading, and background
+          processing to balance responsiveness against battery drain.
+        staff: >
+          Defines performance budgets (app launch time, frame drop rates,
+          memory ceilings) and deploys monitoring via MetricKit or Firebase
+          Performance across apps. Drives organization-wide initiatives to
+          reduce cold start times and eliminate jank.
+        principal: >
+          Sets performance engineering standards for the mobile platform,
+          investing in custom profiling tooling and on-device benchmarking
+          infrastructure. Translates performance metrics into user-retention
+          impact to justify engineering investment to leadership.
+      ai_impact:
+        rating: 0.3
+        detail: "AI suggests optimization patterns but cannot profile real device behavior, battery impact, or network-constrained scenarios that require physical device testing."
+
+    - id: mobile_networking
+      name: "Mobile Networking & Data Sync"
+      category: technical
+      description: "API communication, offline-first design, data synchronization, and network resilience."
+      proficiency:
+        junior: >
+          Makes API calls using URLSession or Retrofit and displays results
+          with basic loading spinners and error states. Follows existing
+          patterns for authentication headers, JSON decoding, and response
+          parsing.
+        mid: >
+          Implements offline caching with CoreData or Room, retry logic
+          with exponential backoff, and optimistic UI updates. Manages
+          paginated API responses and background data sync using platform
+          task schedulers.
+        senior: >
+          Designs offline-first architectures with conflict resolution
+          strategies (last-write-wins, CRDTs, server-reconciled). Implements
+          efficient sync protocols using delta updates or GraphQL
+          subscriptions while balancing data freshness against battery cost.
+        staff: >
+          Defines the mobile networking stack (gRPC, GraphQL, REST) and
+          sync strategy across apps, evaluating trade-offs between real-time
+          push and polling approaches. Establishes shared networking
+          libraries with consistent error handling and retry policies.
+        principal: >
+          Shapes the organization's approach to mobile-server communication,
+          driving adoption of emerging protocols and edge computing patterns.
+          Evaluates trade-offs between thin-client and thick-client
+          architectures as network capabilities evolve.
+      ai_impact:
+        rating: 0.35
+        detail: "AI handles standard API integration. Offline-first architecture, conflict resolution strategies, and network-resilient design require domain-specific human judgment."
+
+    - id: mobile_testing
+      name: "Mobile Testing"
+      category: technical
+      description: "Unit testing, UI testing, integration testing, and device testing for mobile apps."
+      proficiency:
+        junior: >
+          Writes unit tests for view models and business logic using XCTest
+          or JUnit. Runs existing UI test suites locally and in CI, and
+          understands the difference between unit, integration, and UI test
+          scopes.
+        mid: >
+          Implements UI tests with XCTest UI or Espresso for native apps,
+          or Detox/Appium for cross-platform. Sets up test fixtures, mock
+          network layers, and dependency injection containers to enable
+          isolated, reproducible test execution.
+        senior: >
+          Designs the test strategy balancing speed, coverage, and
+          maintenance cost across unit, integration, and UI layers.
+          Implements screenshot testing with tools like swift-snapshot-testing
+          or Paparazzi to catch visual regressions early in CI.
+        staff: >
+          Defines mobile testing standards across the organization and
+          invests in test infrastructure including device farms (Firebase
+          Test Lab, AWS Device Farm) and parallel execution pipelines. Sets
+          coverage thresholds and quality gates for release readiness.
+        principal: >
+          Sets quality engineering strategy for mobile, evaluating testing
+          paradigms (contract testing, mutation testing, AI-generated test
+          cases) and making investment decisions that balance confidence
+          against developer velocity.
+      ai_impact:
+        rating: 0.6
+        detail: "AI generates unit and basic UI tests well. Device-specific test scenarios, visual regression analysis, and flaky test debugging on real devices remain human tasks."
+
+    - id: app_distribution
+      name: "App Store & Distribution"
+      category: domain
+      description: "App signing, store submissions, review compliance, beta distribution, and release management."
+      proficiency:
+        junior: >
+          Follows existing release processes and checklists. Understands
+          build variants (debug/release), provisioning profiles, and code
+          signing basics in Xcode or Android Studio without modifying
+          the configuration independently.
+        mid: >
+          Manages release pipelines end-to-end, distributes betas via
+          TestFlight and Firebase App Distribution, and submits builds to
+          App Store Connect and Google Play Console independently. Writes
+          store metadata and manages screenshots.
+        senior: >
+          Optimizes release processes with Fastlane automation for signing,
+          building, and uploading. Handles App Store review rejections with
+          targeted appeals, implements expedited review requests, and sets
+          up phased rollout monitoring with crash-rate thresholds.
+        staff: >
+          Defines release strategy across apps including phased rollouts,
+          staged percentages, and remote feature flags to decouple deploy
+          from release. Evaluates A/B testing via store experiments and
+          balances release cadence against QA capacity.
+        principal: >
+          Shapes distribution strategy including alternative stores
+          (sideloading regulations, EU DMA compliance), enterprise
+          distribution programs, and platform relationship management.
+          Anticipates store policy shifts and positions the organization
+          to adapt quickly.
+      ai_impact:
+        rating: 0.3
+        detail: "Store policies are rule-based but frequently change and require interpretation. Relationship management with platform review teams is entirely human."
+
+    - id: mobile_security
+      name: "Mobile Security"
+      category: technical
+      description: "Secure storage, certificate pinning, biometric auth, code obfuscation, and data protection."
+      proficiency:
+        junior: >
+          Uses platform keychain (iOS) or keystore (Android) for sensitive
+          data storage. Follows secure coding guidelines, avoids logging
+          sensitive information, and uses HTTPS for all network calls
+          without disabling certificate validation.
+        mid: >
+          Implements certificate pinning with TrustKit or OkHttp
+          CertificatePinner, integrates biometric authentication via
+          LocalAuthentication or BiometricPrompt, and configures encrypted
+          local storage using SQLCipher or EncryptedSharedPreferences.
+        senior: >
+          Conducts security reviews for mobile apps, identifying risks in
+          third-party SDKs and data flows. Designs authentication
+          architectures with secure token management, refresh rotation,
+          and jailbreak/root detection to protect sensitive operations.
+        staff: >
+          Defines mobile security standards and threat models across the
+          organization. Evaluates third-party SDK security posture, manages
+          the balance between security hardening and user friction, and
+          drives adoption of runtime application self-protection (RASP).
+        principal: >
+          Sets mobile security strategy including regulatory compliance
+          (GDPR, HIPAA, PCI-DSS), penetration testing programs, and
+          incident response plans. Engages with security researchers and
+          establishes a responsible disclosure program for mobile apps.
+      ai_impact:
+        rating: 0.25
+        detail: "Security is context-dependent. AI detects known patterns but cannot evaluate threat models specific to the app's domain, user base, and regulatory environment."
+
+    - id: push_notifications
+      name: "Push Notifications & Background Processing"
+      category: technical
+      description: "Implementing push notifications, background tasks, and app lifecycle management."
+      proficiency:
+        junior: >
+          Implements basic push notification handling with APNs or FCM,
+          registers for remote notifications, and displays standard alerts.
+          Follows platform guidelines for background task declarations in
+          Info.plist or AndroidManifest.
+        mid: >
+          Designs notification strategies with rich content (images, action
+          buttons), deep linking into specific app screens, and user
+          segmentation via topics or tags. Implements notification service
+          extensions for content modification before display.
+        senior: >
+          Architects notification infrastructure including silent push for
+          background data sync, BGTaskScheduler or WorkManager for deferred
+          processing, and engagement optimization through delivery timing
+          and notification grouping strategies.
+        staff: >
+          Defines notification strategy across apps, evaluating platforms
+          (OneSignal, Braze, custom APNs/FCM) for deliverability, analytics,
+          and cost. Balances engagement goals against notification fatigue
+          by establishing frequency caps and relevance scoring.
+        principal: >
+          Shapes the organization's real-time communication strategy across
+          mobile, web push, email, and in-app channels. Drives a unified
+          messaging architecture that respects user preferences and
+          regulatory requirements across all surfaces.
+      ai_impact:
+        rating: 0.4
+        detail: "AI handles notification plumbing. Strategy around user engagement, notification fatigue, and platform-specific background processing limits require human judgment."
+
+    - id: mobile_architecture
+      name: "Mobile App Architecture"
+      category: technical
+      description: "Structuring mobile apps with clean architecture patterns: MVVM, MVI, Clean Architecture, modularization."
+      proficiency:
+        junior: >
+          Follows existing architecture patterns (MVVM, MVI) and places
+          code in the correct layers (view, view model, repository, data
+          source). Understands unidirectional data flow and uses dependency
+          injection as configured by the team.
+        mid: >
+          Implements features within architectural boundaries using Hilt
+          or Swinject for dependency injection and modular Gradle/SPM
+          packages. Understands trade-offs between repository caching and
+          direct API calls and maintains clean layer separation.
+        senior: >
+          Selects and evolves app architecture, leading modularization
+          efforts that improve build times and enable parallel team
+          development. Evaluates trade-offs between MVVM, MVI, and TCA
+          patterns based on feature complexity and team familiarity.
+        staff: >
+          Defines mobile architecture standards across the organization,
+          establishing shared module boundaries, navigation patterns, and
+          feature-flag integration points. Evaluates architectural paradigm
+          shifts like Compose Multiplatform or Swift structured concurrency
+          for strategic adoption.
+        principal: >
+          Sets the architectural vision for the mobile platform, driving
+          multi-app and super-app architecture decisions. Evaluates trade-offs
+          between monolithic apps and modular app suites, considering team
+          autonomy, shared infrastructure, and user experience cohesion.
+      ai_impact:
+        rating: 0.2
+        detail: "Architecture decisions depend on team size, feature complexity, and organizational dynamics that AI cannot evaluate. AI can scaffold patterns but not select them."
+
+    - id: ci_cd_mobile
+      name: "Mobile CI/CD & Automation"
+      category: technical
+      description: "Build automation, code signing, automated testing, and continuous delivery for mobile apps."
+      proficiency:
+        junior: >
+          Uses existing CI/CD pipelines to build and test locally. Understands
+          build configurations (debug, release, staging) and code signing
+          basics including provisioning profiles for iOS and keystores
+          for Android.
+        mid: >
+          Configures CI/CD pipelines with Fastlane, Bitrise, or GitHub
+          Actions for automated builds, test execution, and beta distribution
+          to TestFlight or Firebase. Manages code signing in CI using match
+          or environment-based keystore injection.
+        senior: >
+          Designs mobile CI/CD architecture including parallel test execution,
+          build caching with Gradle remote cache or Xcode derived data, and
+          artifact management. Optimizes pipeline duration by splitting
+          unit, integration, and UI test stages strategically.
+        staff: >
+          Defines mobile DevOps strategy across the organization, investing
+          in build infrastructure (self-hosted runners, Mac farms), developer
+          tooling for local iteration speed, and release-train automation
+          that reduces manual coordination overhead.
+        principal: >
+          Shapes the organization's mobile developer experience and
+          productivity engineering, evaluating emerging build systems
+          (Bazel, Tuist), remote execution platforms, and AI-assisted
+          CI optimization to reduce build times and developer wait states.
+      ai_impact:
+        rating: 0.5
+        detail: "AI generates CI configs and Fastlane scripts well. Mobile-specific challenges like code signing, provisioning profiles, and device farm management require human expertise."
+
+    - id: analytics_instrumentation
+      name: "Analytics & Instrumentation"
+      category: analytical
+      description: "Implementing event tracking, crash reporting, and performance monitoring in mobile apps."
+      proficiency:
+        junior: >
+          Adds event tracking calls following existing naming conventions
+          using Firebase Analytics or Amplitude. Uses Crashlytics or Sentry
+          dashboards to review crash reports and understands basic metrics
+          like DAU and session length.
+        mid: >
+          Designs event taxonomies for new features with consistent naming,
+          property schemas, and user-flow funnels. Implements A/B test
+          instrumentation with feature flag platforms (LaunchDarkly,
+          Statsig) and validates data quality in analytics dashboards.
+        senior: >
+          Architects the analytics SDK strategy, managing multiple providers
+          without bloating binary size or impacting startup time. Ensures
+          data quality through automated validation, privacy compliance
+          (ATT, GDPR consent flows), and schema governance.
+        staff: >
+          Defines instrumentation standards across apps, evaluating analytics
+          platforms for cost, data warehouse integration, and real-time
+          capabilities. Builds shared analytics libraries that enforce
+          consistent event schemas and simplify cross-platform reporting.
+        principal: >
+          Shapes the organization's mobile data strategy, connecting
+          instrumentation to product and business decisions. Drives alignment
+          between mobile analytics, backend event streams, and data
+          warehouse schemas to enable holistic user journey analysis.
+      ai_impact:
+        rating: 0.45
+        detail: "AI generates tracking code from event specs. Designing meaningful event taxonomies, ensuring data quality, and connecting analytics to product decisions are human tasks."

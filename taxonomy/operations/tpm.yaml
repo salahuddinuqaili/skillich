@@ -1,0 +1,609 @@
+role:
+  id: tpm
+  function: operations
+  name: "Technical Program Manager"
+  also_known_as:
+    - "TPM"
+    - "Technical Delivery Manager"
+    - "Engineering Program Manager"
+    - "Infrastructure Program Manager"
+    - "Platform Program Manager"
+  description: >
+    Drives the planning and execution of technically complex programs that
+    require deep understanding of software systems, architecture, and
+    engineering processes. TPMs bridge the gap between engineering
+    leadership and program delivery, managing technical dependencies,
+    coordinating releases, and ensuring that cross-team engineering
+    initiatives are delivered with quality and predictability.
+  ai_impact:
+    level: "moderate"
+    summary: >
+      AI is augmenting TPM workflows through automated dependency tracking,
+      release note generation, and technical document drafting. Routine
+      coordination tasks like status aggregation and schedule analysis are
+      increasingly automatable. However, the TPM's core value in navigating
+      technical ambiguity, influencing engineering teams without authority,
+      and making trade-off decisions that require both technical depth and
+      organizational awareness remains firmly human-driven.
+    automating:
+      - "Release note and changelog generation"
+      - "Dependency graph visualization and conflict detection"
+      - "Technical status report compilation from engineering tools"
+      - "Meeting summarization and action-item tracking"
+    augmenting:
+      - "Architecture review preparation and risk surface analysis"
+      - "Incident timeline reconstruction and post-mortem drafting"
+      - "Capacity modeling and delivery forecasting"
+      - "Technical documentation review and gap identification"
+    preserving:
+      - "Cross-team technical negotiation and trade-off facilitation"
+      - "Judgment calls on launch readiness under uncertainty"
+      - "Building engineering trust and credibility as a non-coding leader"
+      - "Navigating organizational dynamics to unblock technical work"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Dropbox Engineering Career Framework - TPM"
+        url: "https://dropbox.github.io/dbx-career-framework/"
+      - name: "Meta TPM Career Expectations"
+        url: "https://www.levels.fyi/blog/meta-tpm-career-levels.html"
+      - name: "Amazon TPM Interview and Role Guide"
+        url: "https://www.scarletink.com/p/tpm-role-at-amazon"
+  levels:
+    - id: junior
+      name: "Junior Technical Program Manager"
+      years_experience: "0-2"
+      summary: >
+        Supports technical program execution by tracking engineering
+        deliverables, maintaining project documentation, and coordinating
+        logistics for cross-team engineering meetings. Develops technical
+        literacy by learning system architecture and engineering workflows.
+    - id: mid
+      name: "Technical Program Manager"
+      years_experience: "2-5"
+      summary: >
+        Manages end-to-end delivery of technical programs involving
+        multiple engineering teams. Owns dependency tracking, risk
+        management, and release coordination. Communicates technical
+        progress and blockers to both engineering and non-technical
+        stakeholders with appropriate translation.
+    - id: senior
+      name: "Senior Technical Program Manager"
+      years_experience: "5-8"
+      summary: >
+        Leads complex, cross-organizational technical programs with
+        significant architectural implications. Drives technical
+        decision-making processes, facilitates architecture reviews,
+        and manages programs with ambiguous scope and evolving
+        requirements. Mentors junior TPMs and establishes best
+        practices for technical program delivery.
+    - id: staff
+      name: "Staff Technical Program Manager"
+      years_experience: "8-12"
+      summary: >
+        Drives portfolio-level technical program strategy across
+        engineering organizations. Defines TPM processes, tooling, and
+        standards that improve delivery predictability at scale.
+        Partners with engineering leadership to align technical
+        roadmaps with program execution and organizational goals.
+    - id: principal
+      name: "Principal Technical Program Manager"
+      years_experience: "12+"
+      summary: >
+        Sets the vision for technical program management across the
+        company. Leads the most critical, company-defining technical
+        initiatives such as platform migrations, infrastructure
+        transformations, and multi-year technology investments. Shapes
+        executive decision-making at the intersection of technology
+        strategy and organizational execution.
+  skills:
+    - id: technical_acumen
+      name: "Technical Acumen"
+      category: technical
+      description: >
+        Understanding software architecture, system design, development
+        methodologies, and technical infrastructure well enough to
+        engage credibly with engineers, assess technical risks, and
+        make informed program decisions without being a hands-on coder.
+      proficiency:
+        junior: >
+          Understands basic software development concepts including
+          version control, CI/CD, APIs, and databases. Can follow
+          technical discussions and ask clarifying questions that
+          demonstrate growing technical literacy.
+        mid: >
+          Reads architectural diagrams, understands service
+          dependencies, and follows code review discussions. Translates
+          technical concepts for non-technical stakeholders and
+          identifies when engineering estimates may carry risk.
+        senior: >
+          Evaluates architectural proposals for feasibility, scalability,
+          and operational risk. Identifies technical debt that threatens
+          program delivery and facilitates trade-off discussions between
+          engineering quality and schedule pressure.
+        staff: >
+          Provides technical guidance across programs, identifying
+          architectural patterns that enable or constrain delivery.
+          Challenges engineering assumptions constructively and ensures
+          technical decisions align with long-term platform strategy.
+        principal: >
+          Shapes technology strategy conversations at the executive
+          level with credible technical depth. Evaluates emerging
+          technologies and architectural paradigms for their impact
+          on organizational execution capability.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can help TPMs quickly understand unfamiliar technical
+          domains and summarize architectural documents, but earning
+          engineering credibility and making sound judgment calls on
+          technical trade-offs requires genuine understanding built
+          through experience.
+
+    - id: program_execution
+      name: "Program Execution & Delivery"
+      category: analytical
+      description: >
+        Driving technical programs from inception through delivery,
+        including milestone definition, workstream coordination, blocker
+        resolution, and launch management, with a focus on predictable
+        and quality outcomes.
+      proficiency:
+        junior: >
+          Tracks engineering tasks and milestones in project management
+          tools. Updates program schedules, follows up on overdue items,
+          and prepares status summaries for the program lead.
+        mid: >
+          Manages program execution end-to-end, including milestone
+          planning, progress tracking, and blocker resolution. Runs
+          effective stand-ups and program reviews, adjusting plans as
+          conditions change.
+        senior: >
+          Leads execution of complex programs with multiple phases and
+          parallel workstreams. Designs launch criteria and readiness
+          checklists, manages phased rollouts, and makes go/no-go
+          recommendations based on risk assessment.
+        staff: >
+          Defines program execution standards and frameworks for the
+          TPM organization. Drives adoption of practices that improve
+          delivery predictability such as milestone-based planning,
+          pre-mortem exercises, and execution retrospectives.
+        principal: >
+          Oversees execution of the organization's most critical
+          technical programs. Sets expectations for delivery excellence
+          and accountability at the executive level. Shapes the
+          organizational approach to balancing speed with quality in
+          program delivery.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can automate schedule tracking, flag delays, and forecast
+          completion dates, but navigating the human dynamics of program
+          execution, motivating teams through challenging phases, and
+          making judgment calls on trade-offs require experienced TPMs.
+
+    - id: dependency_management
+      name: "Dependency Management"
+      category: analytical
+      description: >
+        Identifying, tracking, and resolving technical and organizational
+        dependencies across teams and systems, including API contracts,
+        shared infrastructure, data pipelines, and cross-team deliverables
+        that can create bottlenecks or risks.
+      proficiency:
+        junior: >
+          Maintains dependency lists and tracks delivery dates for
+          cross-team commitments. Escalates missed dependencies to
+          the program lead with relevant context.
+        mid: >
+          Maps dependencies across engineering teams, identifies
+          critical chains, and proactively surfaces risks from
+          dependency conflicts. Coordinates resolution with dependent
+          teams through regular sync meetings.
+        senior: >
+          Designs dependency management frameworks for complex programs,
+          including dependency graphs, contract-based interfaces, and
+          buffered integration milestones. Resolves cross-organizational
+          dependency conflicts through negotiation and creative
+          solutions.
+        staff: >
+          Establishes organizational practices for dependency management
+          including shared tooling, dependency review processes, and
+          architectural patterns that reduce coupling between teams.
+          Drives systemic reduction of dependency-related delivery risk.
+        principal: >
+          Influences organizational architecture and team topology
+          decisions to minimize harmful dependencies at scale. Shapes
+          platform and API strategies that enable team autonomy while
+          maintaining system coherence.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can generate dependency graphs from code analysis and flag
+          potential conflicts, but resolving dependency deadlocks,
+          negotiating priority across teams, and designing decoupling
+          strategies require organizational context and human influence.
+
+    - id: architecture_awareness
+      name: "Architecture Awareness"
+      category: technical
+      description: >
+        Maintaining a working understanding of system architectures,
+        service boundaries, data flows, and infrastructure topology
+        sufficient to assess program risks, facilitate technical
+        discussions, and ensure program plans account for architectural
+        constraints and opportunities.
+      proficiency:
+        junior: >
+          Studies system architecture diagrams and documentation.
+          Understands the basic components of the systems their
+          program touches and can describe high-level data flows.
+        mid: >
+          Understands service-level architecture including inter-service
+          communication, data stores, and deployment topology. Uses
+          architectural knowledge to identify program risks related
+          to system boundaries and integration points.
+        senior: >
+          Participates in architecture reviews with credibility,
+          identifying risks and constraints that affect program
+          delivery. Facilitates technical discussions between
+          architects and product stakeholders on scope and feasibility.
+        staff: >
+          Maintains a portfolio-level view of system architecture
+          across the organization. Identifies architectural
+          dependencies and technical debt that affect multiple programs
+          and advocates for strategic investment in platform
+          capabilities.
+        principal: >
+          Influences enterprise architecture decisions based on
+          program execution experience. Ensures that architectural
+          evolution plans are executable and aligned with
+          organizational delivery capacity.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can help TPMs quickly parse architectural documentation
+          and identify system dependencies, but developing the
+          contextual understanding needed to assess architectural
+          risk in the context of a specific program requires hands-on
+          organizational experience.
+
+    - id: release_management
+      name: "Release Management"
+      category: technical
+      description: >
+        Coordinating the planning, scheduling, and execution of software
+        releases including feature flag management, phased rollouts,
+        rollback planning, release trains, and post-release validation
+        to ensure quality deployments with minimal disruption.
+      proficiency:
+        junior: >
+          Supports release activities by tracking feature completeness,
+          preparing release checklists, and coordinating communication
+          with stakeholders around release timing.
+        mid: >
+          Manages release processes end-to-end including release
+          scheduling, go/no-go decisions with the team, rollback
+          planning, and post-release monitoring. Coordinates across
+          engineering, QA, and operations teams.
+        senior: >
+          Designs release strategies for complex programs including
+          phased rollouts, canary deployments, and feature flag
+          coordination across teams. Defines release readiness criteria
+          and manages launch coordination for high-profile features.
+        staff: >
+          Defines organizational release management standards and
+          tooling. Drives adoption of continuous delivery practices
+          that reduce release risk and increase deployment frequency.
+          Manages release trains for large-scale platform changes.
+        principal: >
+          Shapes the organization's release philosophy, balancing
+          release velocity with stability and quality. Influences
+          infrastructure investment in deployment capabilities and
+          drives cultural shifts toward continuous delivery maturity.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can automate release note generation, predict deployment
+          risk from code change analysis, and monitor rollout health,
+          but making go/no-go decisions under pressure and coordinating
+          complex multi-team releases require experienced human
+          judgment.
+
+    - id: incident_coordination
+      name: "Incident Coordination"
+      category: leadership
+      description: >
+        Coordinating the response to technical incidents and outages,
+        including establishing command structures, managing communication
+        with stakeholders, facilitating blameless post-mortems, and
+        driving corrective action tracking to improve system reliability.
+      proficiency:
+        junior: >
+          Supports incident response by taking notes, tracking action
+          items, and updating status pages. Learns incident management
+          processes and participates in post-mortem reviews.
+        mid: >
+          Serves as incident coordinator for moderate-severity events,
+          managing the war room, communications, and timeline tracking.
+          Facilitates post-mortems and tracks corrective actions through
+          completion.
+        senior: >
+          Leads incident response for high-severity events, maintaining
+          calm command during escalated situations. Designs incident
+          management processes, trains responders, and ensures
+          post-mortem action items drive meaningful reliability
+          improvements.
+        staff: >
+          Defines organizational incident management frameworks
+          including severity classifications, escalation procedures,
+          and communication templates. Analyzes incident trends across
+          programs to identify systemic reliability investments.
+        principal: >
+          Shapes the organization's reliability culture and incident
+          response maturity. Drives executive-level discussions on
+          reliability investment trade-offs and ensures incident
+          learnings are integrated into program planning processes.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can assist with incident timeline reconstruction, root
+          cause pattern matching, and communication drafting, but
+          maintaining composure under pressure, coordinating
+          cross-team response in real time, and building a blameless
+          incident culture require strong human leadership.
+
+    - id: data_driven_decisions
+      name: "Data-Driven Decision Making"
+      category: analytical
+      description: >
+        Using quantitative data and metrics to inform program decisions
+        including delivery forecasting, resource allocation, quality
+        assessment, and trade-off analysis, while maintaining awareness
+        of data limitations and avoiding false precision.
+      proficiency:
+        junior: >
+          Collects and presents basic program metrics such as velocity,
+          burn-down charts, and defect rates. Uses data to support
+          status reporting under guidance.
+        mid: >
+          Selects and tracks meaningful program metrics, performs trend
+          analysis, and uses data to support recommendations on scope,
+          schedule, and resource decisions. Identifies when data
+          contradicts assumptions.
+        senior: >
+          Designs metrics frameworks for complex programs that balance
+          leading and lagging indicators. Uses data to facilitate
+          trade-off discussions with stakeholders and to challenge
+          assumptions with evidence-based analysis.
+        staff: >
+          Defines organizational standards for program metrics and
+          data-driven decision-making. Establishes dashboards and
+          reporting that connect program metrics to business outcomes.
+          Drives a culture of evidence-based program management.
+        principal: >
+          Shapes the organization's approach to measuring program
+          effectiveness and delivery health at the portfolio level.
+          Ensures metrics frameworks evolve with organizational
+          maturity and avoid incentivizing counterproductive behavior.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI excels at data aggregation, trend detection, and
+          forecasting from historical patterns. However, determining
+          which metrics actually matter, interpreting data in
+          organizational context, and avoiding data-driven theater
+          require experienced human judgment.
+
+    - id: cross_team_communication
+      name: "Cross-Team Communication"
+      category: communication
+      description: >
+        Communicating effectively across engineering teams, product
+        management, design, and leadership with appropriate technical
+        depth and context translation, ensuring all parties have the
+        information they need to make decisions and deliver their work.
+      proficiency:
+        junior: >
+          Writes clear meeting notes and status updates. Communicates
+          task-level information accurately between teams and
+          escalates blockers with appropriate context.
+        mid: >
+          Translates technical details for non-technical stakeholders
+          and business context for engineering teams. Runs effective
+          cross-team syncs and ensures follow-through on inter-team
+          commitments.
+        senior: >
+          Crafts communications that align diverse teams around
+          shared goals. Facilitates difficult cross-team conversations
+          about trade-offs, priorities, and technical debt. Adapts
+          communication style to engineering, product, and executive
+          audiences.
+        staff: >
+          Sets communication standards for the TPM organization.
+          Creates communication frameworks and templates that improve
+          cross-team clarity. Coaches TPMs on effective technical
+          communication and stakeholder management.
+        principal: >
+          Communicates complex technical program strategy to the
+          executive team with authority and clarity. Shapes
+          organizational norms for transparent, effective cross-team
+          communication that enables high-velocity delivery.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can draft communications, translate technical jargon,
+          and summarize complex discussions, but building cross-team
+          trust, navigating sensitive interpersonal dynamics, and
+          reading the room during critical conversations remain
+          human strengths.
+
+    - id: process_optimization
+      name: "Process Optimization"
+      category: analytical
+      description: >
+        Continuously evaluating and improving engineering and program
+        management processes to increase delivery efficiency, reduce
+        waste, and improve quality, including retrospectives, workflow
+        analysis, and tooling improvements.
+      proficiency:
+        junior: >
+          Identifies process pain points from personal experience and
+          team feedback. Suggests improvements and helps implement
+          changes directed by the program lead.
+        mid: >
+          Analyzes program processes for bottlenecks and inefficiencies.
+          Designs and implements process improvements with measurable
+          outcomes. Facilitates retrospectives that generate actionable
+          insights.
+        senior: >
+          Leads process optimization initiatives across multiple teams,
+          balancing standardization with team autonomy. Implements
+          measurement frameworks to evaluate process effectiveness and
+          drives continuous improvement culture.
+        staff: >
+          Defines process optimization methodologies for the TPM
+          organization. Identifies systemic inefficiencies across the
+          engineering organization and drives cross-cutting process
+          improvements with measurable business impact.
+        principal: >
+          Shapes the organization's operational excellence philosophy,
+          integrating process optimization with engineering culture
+          and delivery strategy. Influences executive investment in
+          tooling and process infrastructure.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can analyze process data, identify bottlenecks, and
+          suggest optimizations from industry best practices, but
+          implementing process changes that stick requires
+          understanding team dynamics, organizational culture, and
+          the art of driving adoption without mandate.
+
+    - id: roadmap_management
+      name: "Roadmap Management"
+      category: analytical
+      description: >
+        Developing and maintaining technical program roadmaps that
+        sequence work across teams, account for dependencies and
+        capacity constraints, and provide stakeholders with a credible
+        view of what will be delivered and when.
+      proficiency:
+        junior: >
+          Maintains roadmap artifacts in planning tools, updating
+          timelines and milestones based on team input. Flags
+          conflicts between roadmap commitments and current progress.
+        mid: >
+          Builds program roadmaps with sequenced milestones,
+          dependency linkages, and capacity-informed timelines.
+          Facilitates roadmap reviews with stakeholders and adjusts
+          plans as priorities shift.
+        senior: >
+          Designs roadmaps for complex programs that balance technical
+          prerequisites, business priorities, and team capacity.
+          Manages roadmap trade-offs across stakeholders and ensures
+          roadmap commitments are credible and achievable.
+        staff: >
+          Drives portfolio-level roadmap alignment across engineering
+          teams and programs. Defines roadmap planning processes and
+          cadences that connect quarterly planning with program
+          execution. Manages roadmap interdependencies at scale.
+        principal: >
+          Shapes the organization's technology roadmap in partnership
+          with engineering and product leadership. Ensures program
+          roadmaps are aligned with multi-year technology strategy
+          and organizational transformation goals.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can suggest roadmap sequences based on dependency analysis
+          and historical velocity, but making prioritization trade-offs
+          that account for organizational politics, market timing, and
+          strategic bets requires human strategic judgment.
+
+    - id: risk_mitigation
+      name: "Technical Risk Mitigation"
+      category: analytical
+      description: >
+        Identifying and mitigating risks specific to technical programs
+        including architectural risks, integration risks, performance
+        risks, security risks, and the compounding effects of technical
+        debt on delivery timelines.
+      proficiency:
+        junior: >
+          Documents technical risks identified by engineering teams.
+          Tracks mitigation actions and reports on risk status during
+          program reviews.
+        mid: >
+          Proactively identifies technical risks through dependency
+          analysis, architecture review, and engineering conversations.
+          Develops mitigation plans and escalates risks that exceed
+          program thresholds.
+        senior: >
+          Designs risk management frameworks for complex technical
+          programs including risk scoring matrices, trigger-based
+          escalation, and contingency planning for critical technical
+          dependencies. Facilitates risk reviews that surface hidden
+          risks.
+        staff: >
+          Defines organizational standards for technical risk
+          management across programs. Conducts portfolio-level risk
+          assessments that identify systemic technical risks and
+          drive strategic investment in risk reduction.
+        principal: >
+          Advises executive leadership on enterprise technical risk
+          posture. Integrates technical risk management with business
+          continuity planning and ensures the organization maintains
+          appropriate risk appetite for technical programs.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can surface common risk patterns and analyze code change
+          risk signals, but assessing the true probability and
+          business impact of novel technical risks and crafting
+          viable mitigation strategies require experienced TPM
+          judgment.
+
+    - id: technical_documentation
+      name: "Technical Documentation"
+      category: communication
+      description: >
+        Creating and maintaining program-level technical documentation
+        including program charters, architecture decision records,
+        integration specifications, runbooks, and post-mortem reports
+        that serve as authoritative references for program decisions
+        and outcomes.
+      proficiency:
+        junior: >
+          Writes meeting notes, decision logs, and basic program
+          documentation. Maintains document repositories and ensures
+          documents are organized and accessible.
+        mid: >
+          Creates program charters, technical requirements documents,
+          and integration specifications. Writes clear post-mortem
+          reports and maintains living documentation that evolves
+          with the program.
+        senior: >
+          Designs documentation standards for complex programs
+          including architecture decision records, launch playbooks,
+          and operational runbooks. Ensures documentation supports
+          both current execution and future onboarding.
+        staff: >
+          Defines documentation standards and templates for the TPM
+          organization. Drives adoption of documentation practices
+          that improve organizational knowledge retention and reduce
+          dependency on institutional memory.
+        principal: >
+          Shapes the organization's knowledge management strategy,
+          ensuring critical program decisions and learnings are
+          captured, accessible, and actionable at the enterprise
+          level.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI significantly accelerates documentation drafting,
+          formatting, and maintenance. Routine documentation like
+          meeting notes and status reports are highly automatable,
+          though crafting documents that capture nuanced technical
+          decisions and organizational context still benefits from
+          human authorship.

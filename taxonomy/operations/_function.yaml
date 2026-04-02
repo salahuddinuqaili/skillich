@@ -1,0 +1,25 @@
+function:
+  id: operations
+  name: "Operations & Management"
+  description: >
+    Program management, agile delivery, IT operations, and technical
+    communication roles. Encompasses the coordination, governance, and
+    operational excellence disciplines that enable technology organizations
+    to plan, execute, and deliver reliably at scale.
+  roles:
+    - program_manager
+    - tpm
+    - scrum_master
+    - it_operations
+    - technical_writer
+  sources:
+    - name: "Dropbox Engineering Career Framework"
+      url: "https://dropbox.github.io/dbx-career-framework/"
+    - name: "Scrum.org Competency Model"
+      url: "https://www.scrum.org/professional-scrum-competencies"
+    - name: "ITIL 4 Foundation"
+      url: "https://www.axelos.com/certifications/itil-service-management/itil-4-foundation"
+    - name: "PMI - Project Management Body of Knowledge"
+      url: "https://www.pmi.org/pmbok-guide-standards/foundational/pmbok"
+    - name: "Write the Docs Community"
+      url: "https://www.writethedocs.org/"

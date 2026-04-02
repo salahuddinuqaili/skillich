@@ -1,0 +1,36 @@
+name: "Rating or Content Feedback"
+description: "Suggest a rating change or flag an inaccuracy. No coding required."
+title: "[Feedback] "
+labels: ["feedback", "community"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        You don't need to write code to contribute. If something doesn't match your real-world experience, tell us.
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: What kind of feedback?
+      options:
+        - "A rating feels wrong (too high or too low)"
+        - "A proficiency description doesn't match my experience"
+        - "A skill is missing from a role"
+        - "A role is missing from the taxonomy"
+        - "Other"
+    validations:
+      required: true
+
+  - type: input
+    id: role
+    attributes:
+      label: Which role?
+      placeholder: "e.g., Backend Engineer, Recruiter"
+
+  - type: textarea
+    id: details
+    attributes:
+      label: What should change and why?
+      placeholder: "Be specific. Share your experience."
+    validations:
+      required: true

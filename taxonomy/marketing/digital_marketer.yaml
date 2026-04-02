@@ -1,0 +1,629 @@
+role:
+  id: digital_marketer
+  function: marketing
+  name: "Digital Marketer"
+  also_known_as:
+    - "Digital Marketing Manager"
+    - "Growth Marketer"
+    - "Performance Marketer"
+    - "Demand Generation Manager"
+    - "Online Marketing Specialist"
+  description: >
+    Plans, executes, and optimizes multi-channel digital marketing campaigns
+    to drive customer acquisition, engagement, and revenue growth. Digital
+    marketers own the full lifecycle of paid and organic campaigns across
+    search, social, email, and display channels, translating business
+    objectives into measurable marketing programs while managing budgets
+    and reporting on ROI.
+
+  ai_impact:
+    level: moderate-high
+    summary: >
+      AI tools are automating significant portions of campaign setup,
+      audience targeting, ad copy generation, and performance reporting.
+      Platforms like Google Performance Max and Meta Advantage+ increasingly
+      handle bidding, placement, and creative optimization autonomously.
+      However, strategic campaign planning, brand positioning, cross-channel
+      orchestration, and interpreting nuanced customer behavior remain
+      firmly human-driven competencies.
+    automating:
+      - "Generating ad copy variants and creative assets from briefs"
+      - "Automating bid management and budget allocation across platforms"
+      - "Building standard performance reports and dashboards"
+      - "Scheduling and publishing social media content"
+      - "Segmenting audiences based on behavioral and demographic data"
+    augmenting:
+      - "Analyzing campaign performance to identify optimization opportunities"
+      - "A/B testing ad creatives, landing pages, and email sequences"
+      - "Personalizing content and offers across customer segments"
+      - "Forecasting campaign outcomes and budget scenarios"
+      - "Competitive analysis and market trend identification"
+    preserving:
+      - "Defining brand strategy and positioning in crowded markets"
+      - "Building cross-channel marketing strategies aligned with business goals"
+      - "Managing stakeholder relationships and aligning marketing with sales"
+      - "Making budget allocation decisions across competing priorities"
+      - "Navigating privacy regulations and ethical marketing boundaries"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "HubSpot State of Marketing Report"
+        url: "https://www.hubspot.com/state-of-marketing"
+      - name: "Google AI-Powered Advertising"
+        url: "https://ads.google.com/home/campaigns/ai-powered-ads/"
+      - name: "McKinsey – The State of AI in Marketing"
+        url: "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights"
+
+  levels:
+    - id: junior
+      name: "Junior (L1-L2)"
+      years_experience: "0-2"
+      summary: >
+        Executes defined campaign tasks under guidance, including setting
+        up ads, drafting email copy, scheduling social posts, and pulling
+        performance reports. Learns platform mechanics, follows brand
+        guidelines, and supports senior marketers with research and
+        data gathering.
+    - id: mid
+      name: "Mid-Level (L3)"
+      years_experience: "2-4"
+      summary: >
+        Independently manages campaigns across two or three channels
+        from planning through optimization. Owns email marketing flows,
+        manages paid media budgets, and uses analytics to iterate on
+        creative and targeting. Begins developing channel-specific
+        expertise and contributes to quarterly marketing plans.
+    - id: senior
+      name: "Senior (L4)"
+      years_experience: "4-8"
+      summary: >
+        Designs and leads multi-channel campaign strategies that drive
+        measurable pipeline and revenue impact. Owns significant budget
+        allocation, develops audience segmentation frameworks, and
+        mentors junior marketers. Partners with product and sales to
+        align marketing programs with go-to-market priorities.
+    - id: staff
+      name: "Staff (L5)"
+      years_experience: "8-12"
+      summary: >
+        Sets the digital marketing strategy across the organization,
+        defining channel mix, technology stack, and measurement
+        frameworks. Leads cross-functional initiatives spanning marketing,
+        product, and data teams. Evaluates emerging platforms and
+        establishes best practices that scale across regions and
+        product lines.
+    - id: principal
+      name: "Principal (L6+)"
+      years_experience: "12+"
+      summary: >
+        Shapes the company's overall digital marketing vision with
+        multi-year strategic impact. Drives innovation in marketing
+        technology adoption, defines organizational capability-building
+        programs, and represents marketing in executive leadership
+        forums. Recognized externally as a thought leader in digital
+        marketing strategy.
+
+  skills:
+    - id: campaign_management
+      name: "Campaign Management"
+      category: technical
+      description: >
+        End-to-end planning, execution, and optimization of digital
+        marketing campaigns across multiple channels including paid
+        search, display, social, and email, using platforms like Google
+        Ads, Meta Business Suite, and marketing automation tools.
+      proficiency:
+        junior: >
+          Sets up campaigns in ad platforms following established templates
+          and checklists. Monitors basic metrics like impressions, clicks,
+          and CTR, and flags anomalies to senior team members.
+        mid: >
+          Plans and launches multi-channel campaigns independently, configuring
+          targeting, bidding strategies, and tracking parameters. Optimizes
+          campaigns based on performance data and manages flight schedules
+          across concurrent initiatives.
+        senior: >
+          Designs integrated campaign architectures spanning paid, owned, and
+          earned channels with clear attribution models. Defines testing
+          frameworks for creative, audience, and bidding variables, and
+          establishes campaign governance standards for the team.
+        staff: >
+          Builds scalable campaign management frameworks and playbooks that
+          work across product lines and geographies. Evaluates and selects
+          campaign management platforms, defines automation rules, and
+          establishes cross-team coordination processes.
+        principal: >
+          Sets the organizational philosophy for campaign management, balancing
+          automation with human oversight. Drives adoption of AI-powered
+          campaign tools while establishing guardrails for brand safety and
+          budget governance at enterprise scale.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI platforms increasingly automate bid management, audience targeting,
+          and creative rotation within campaigns. However, strategic campaign
+          architecture, cross-channel orchestration, and the judgment to
+          override algorithmic recommendations remain human-driven.
+
+    - id: email_marketing
+      name: "Email Marketing"
+      category: technical
+      description: >
+        Designing, building, and optimizing email marketing programs
+        including lifecycle automations, drip campaigns, newsletters,
+        transactional emails, and deliverability management using tools
+        like Mailchimp, Klaviyo, HubSpot, or Braze.
+      proficiency:
+        junior: >
+          Builds emails from existing templates, manages subscriber lists,
+          and schedules sends following established cadences. Monitors open
+          rates and click rates and performs basic list hygiene.
+        mid: >
+          Designs multi-step email automations triggered by user behavior,
+          writes compelling subject lines and copy, and runs A/B tests on
+          send time, subject, and content. Manages segmentation logic and
+          monitors deliverability metrics.
+        senior: >
+          Architects the email marketing program including lifecycle stages,
+          triggered flows, and preference centers. Defines segmentation
+          strategies based on engagement scoring and customer data, and
+          establishes deliverability best practices including authentication
+          (SPF, DKIM, DMARC) and warm-up protocols.
+        staff: >
+          Defines the organization's email strategy across product lines,
+          balancing engagement with send frequency. Evaluates ESP platforms,
+          drives migration initiatives, and establishes personalization
+          frameworks that leverage customer data platform (CDP) integrations.
+        principal: >
+          Shapes the company's owned-channel communication strategy where
+          email intersects with push, in-app, and SMS. Drives innovation in
+          email personalization at scale and positions the organization for
+          evolving inbox standards and privacy regulations.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI tools generate subject lines, email body copy, and segment
+          suggestions effectively. Predictive send-time optimization is
+          increasingly automated. However, designing lifecycle architectures,
+          balancing communication frequency, and managing deliverability
+          require strategic human judgment.
+
+    - id: social_media
+      name: "Social Media Marketing"
+      category: communication
+      description: >
+        Building and executing social media strategies across platforms
+        (LinkedIn, X, Instagram, TikTok, YouTube) including content
+        creation, community management, influencer partnerships, and
+        social listening to drive brand awareness and engagement.
+      proficiency:
+        junior: >
+          Creates and schedules social posts following brand guidelines and
+          content calendars. Monitors comments and engagement, responds to
+          straightforward community interactions, and compiles weekly
+          performance summaries.
+        mid: >
+          Develops platform-specific content strategies, manages community
+          engagement at scale, and identifies trending topics and cultural
+          moments relevant to the brand. Runs basic influencer outreach and
+          manages social advertising campaigns.
+        senior: >
+          Defines the brand's social media strategy across platforms, including
+          voice, content pillars, and engagement frameworks. Manages influencer
+          partnerships, designs social campaigns tied to business objectives,
+          and establishes crisis communication protocols.
+        staff: >
+          Sets organization-wide social media governance including platform
+          selection, brand-safety guidelines, and measurement frameworks.
+          Evaluates emerging platforms, defines employee advocacy programs,
+          and aligns social strategy with broader marketing and PR efforts.
+        principal: >
+          Shapes the company's long-term social and community strategy,
+          advising executive leadership on brand presence and reputation
+          management. Anticipates platform shifts and positions the
+          organization to lead in social innovation within its industry.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI generates social copy, suggests hashtags, identifies optimal
+          posting times, and drafts initial responses for community
+          management. However, brand voice authenticity, cultural sensitivity,
+          crisis judgment, and relationship-driven influencer strategy remain
+          human-centric.
+
+    - id: paid_media
+      name: "Paid Media & Advertising"
+      category: technical
+      description: >
+        Managing paid advertising across search (Google, Bing), social
+        (Meta, LinkedIn, TikTok), display, and programmatic channels,
+        including media planning, bid optimization, audience targeting,
+        creative testing, and ROAS management.
+      proficiency:
+        junior: >
+          Sets up ad campaigns in Google Ads and Meta Ads Manager following
+          documented procedures. Monitors spend pacing and basic performance
+          metrics, and compiles reporting data for review by senior team
+          members.
+        mid: >
+          Manages paid media budgets across multiple platforms, optimizing
+          bids, audiences, and creatives based on performance data. Implements
+          conversion tracking, runs creative A/B tests, and manages
+          retargeting campaigns independently.
+        senior: >
+          Develops comprehensive paid media strategies aligned with funnel
+          stages and business objectives. Manages significant budgets with
+          clear ROAS targets, designs attribution models, and establishes
+          testing frameworks that systematically improve performance.
+        staff: >
+          Defines the organization's paid media architecture including
+          platform mix, measurement methodology, and automation strategy.
+          Evaluates new ad platforms and formats, negotiates strategic
+          partnerships, and drives cross-team budget optimization.
+        principal: >
+          Sets the company's paid media investment philosophy, balancing
+          performance and brand objectives. Drives adoption of privacy-first
+          measurement approaches, evaluates the impact of AI-driven ad
+          platforms, and shapes the long-term media strategy.
+      ai_impact:
+        rating: 0.75
+        detail: >
+          AI-powered bidding (Google Smart Bidding, Meta Advantage+)
+          increasingly automates tactical optimization. Creative generation
+          and audience expansion are rapidly improving. However, strategic
+          media planning, budget allocation across channels, and navigating
+          privacy-driven signal loss require experienced human judgment.
+
+    - id: marketing_automation
+      name: "Marketing Automation"
+      category: technical
+      description: >
+        Implementing and managing marketing automation platforms (HubSpot,
+        Marketo, Pardot, ActiveCampaign) to orchestrate lead nurturing,
+        scoring, behavioral triggers, and multi-touch campaign workflows
+        that scale personalized marketing programs.
+      proficiency:
+        junior: >
+          Builds simple automation workflows from templates, sets up basic
+          trigger conditions, and manages contact lists within the automation
+          platform. Tests workflow logic and troubleshoots common execution
+          errors.
+        mid: >
+          Designs multi-step nurture sequences with branching logic based on
+          engagement signals and lead properties. Implements lead scoring
+          models, configures CRM sync rules, and ensures data quality across
+          the marketing-sales handoff.
+        senior: >
+          Architects the marketing automation strategy including lifecycle
+          stages, scoring models, and multi-channel orchestration rules.
+          Defines the integration architecture between the automation platform,
+          CRM, analytics, and ad platforms, ensuring clean data flow.
+        staff: >
+          Evaluates and selects marketing automation platforms for the
+          organization, designing migration strategies and governance
+          frameworks. Builds scalable automation architectures that serve
+          multiple business units and integrate with the broader data stack.
+        principal: >
+          Defines the long-term marketing technology strategy where automation
+          is the central orchestration layer. Drives innovation in AI-powered
+          personalization, predictive lead routing, and adaptive nurture
+          sequences that evolve with customer behavior at scale.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI enhances automation platforms with predictive scoring, send-time
+          optimization, and content recommendations. However, designing
+          automation architectures, defining lifecycle stages, and ensuring
+          data integrity across integrations require deep marketing-operations
+          expertise.
+
+    - id: crm_management
+      name: "CRM Management"
+      category: technical
+      description: >
+        Managing customer relationship management platforms (Salesforce,
+        HubSpot CRM, Dynamics 365) to maintain accurate customer data,
+        track interactions across touchpoints, enable sales-marketing
+        alignment, and derive insights from customer lifecycle data.
+      proficiency:
+        junior: >
+          Navigates the CRM to update records, create basic reports, and
+          manage contact lists. Follows data-entry standards and assists
+          with list imports and data cleaning tasks.
+        mid: >
+          Configures CRM workflows, custom fields, and basic reporting
+          dashboards. Manages lead routing rules, maintains data hygiene
+          processes, and supports the sales team with pipeline reporting
+          and list segmentation.
+        senior: >
+          Designs CRM architecture including object relationships, custom
+          fields, and automation rules that support the full customer
+          lifecycle. Establishes data governance standards, builds
+          attribution reporting, and manages integrations with marketing
+          automation and analytics platforms.
+        staff: >
+          Defines the organization's CRM strategy across business units,
+          including data model standardization, integration architecture,
+          and migration planning. Evaluates CRM platforms and drives
+          adoption of customer data platforms that unify marketing and
+          sales data.
+        principal: >
+          Shapes the company's customer data strategy where CRM is a
+          foundational layer. Drives innovation in unified customer
+          profiles, predictive customer intelligence, and the convergence
+          of CRM, CDP, and marketing automation into a cohesive ecosystem.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI assists with data enrichment, duplicate detection, and
+          predictive lead scoring within CRMs. However, designing CRM
+          architecture, establishing data governance, and aligning CRM
+          processes with complex sales motions require deep organizational
+          context and human judgment.
+
+    - id: brand_strategy
+      name: "Brand Strategy"
+      category: domain
+      description: >
+        Defining and evolving brand positioning, messaging architecture,
+        visual identity guidelines, and brand governance to create
+        differentiated, consistent, and resonant brand experiences
+        across all customer touchpoints.
+      proficiency:
+        junior: >
+          Follows existing brand guidelines when creating marketing materials.
+          Ensures visual consistency in campaigns and flags deviations from
+          brand standards. Understands the company's core value propositions
+          and target audience personas.
+        mid: >
+          Contributes to messaging development for campaigns and product
+          launches, adapting brand voice across channels and audiences.
+          Conducts competitive brand analysis and helps maintain brand
+          consistency across marketing programs.
+        senior: >
+          Develops brand messaging frameworks for major initiatives,
+          defines positioning for new products or markets, and leads brand
+          audits. Establishes brand governance processes and ensures
+          cross-functional alignment on brand standards.
+        staff: >
+          Defines the organization's brand strategy including positioning
+          architecture, messaging hierarchy, and brand portfolio management.
+          Leads rebranding initiatives and establishes measurement
+          frameworks for brand equity and awareness.
+        principal: >
+          Shapes the company's long-term brand vision and its relationship
+          to corporate strategy. Advises executive leadership on brand
+          portfolio decisions, market positioning, and the role of brand
+          in competitive differentiation and customer loyalty.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can generate messaging drafts and analyze brand sentiment at
+          scale, but defining brand positioning, making differentiation
+          decisions, and crafting authentic brand narratives that resonate
+          with human emotions require deep strategic and creative judgment
+          that remains fundamentally human.
+
+    - id: copywriting
+      name: "Copywriting"
+      category: communication
+      description: >
+        Writing persuasive, clear, and brand-consistent copy for marketing
+        channels including ads, emails, landing pages, social posts,
+        product descriptions, and sales enablement materials, optimized
+        for conversion and engagement.
+      proficiency:
+        junior: >
+          Writes clear, grammatically correct copy for straightforward
+          assignments like social posts, email drafts, and ad variations.
+          Follows brand voice guidelines and incorporates feedback from
+          editors and senior writers.
+        mid: >
+          Crafts compelling copy across multiple formats and channels,
+          adapting tone for different audiences and funnel stages. Writes
+          effective CTAs, subject lines, and headlines, and uses A/B
+          testing results to refine messaging.
+        senior: >
+          Develops messaging strategies for major campaigns and product
+          launches. Writes high-stakes copy (homepage, manifesto, executive
+          communications) and establishes copywriting standards, style
+          guides, and review processes for the team.
+        staff: >
+          Defines the organization's copy and messaging standards across
+          all channels, ensuring consistency and quality at scale. Leads
+          the development of messaging frameworks, trains teams on
+          effective copywriting, and establishes AI-assisted writing
+          workflows with quality guardrails.
+        principal: >
+          Shapes the company's communication philosophy and voice at the
+          highest level. Drives innovation in how copy and messaging
+          evolve with AI tools while preserving brand authenticity, and
+          sets the standard for how the organization communicates with
+          its markets.
+      ai_impact:
+        rating: 0.75
+        detail: >
+          AI tools generate competent marketing copy for ads, emails, and
+          social posts at speed. However, crafting breakthrough creative
+          concepts, writing copy that captures authentic brand voice, and
+          developing messaging strategies that differentiate in crowded
+          markets require human creativity and strategic thinking.
+
+    - id: analytics_reporting
+      name: "Analytics & Reporting"
+      category: analytical
+      description: >
+        Measuring marketing performance using analytics platforms
+        (Google Analytics 4, Adobe Analytics, Mixpanel), building
+        dashboards, defining KPIs, implementing tracking, and
+        translating data into actionable insights for campaign
+        optimization and strategic planning.
+      proficiency:
+        junior: >
+          Pulls standard reports from analytics platforms, tracks basic
+          KPIs like traffic, conversions, and engagement rates, and
+          compiles performance summaries using templates. Verifies
+          tracking implementation on new campaigns.
+        mid: >
+          Builds custom reports and dashboards, defines campaign-specific
+          KPIs, and performs analysis to identify trends and optimization
+          opportunities. Implements UTM tracking frameworks and ensures
+          data accuracy across marketing channels.
+        senior: >
+          Designs the marketing measurement framework including KPI
+          hierarchies, attribution models, and reporting cadences. Builds
+          executive dashboards that connect marketing activities to
+          business outcomes and leads data-driven optimization reviews.
+        staff: >
+          Defines the organization's marketing analytics architecture
+          including platform selection, data governance, and the integration
+          of marketing data with the broader data warehouse. Establishes
+          analytics standards and self-serve reporting capabilities across
+          teams.
+        principal: >
+          Shapes the company's marketing measurement philosophy, navigating
+          the tension between attribution precision and privacy constraints.
+          Drives innovation in marketing mix modeling, incrementality
+          testing, and AI-powered insights that inform strategic
+          investment decisions.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI automates report generation, anomaly detection, and basic
+          insight extraction from marketing data. However, designing
+          measurement frameworks, interpreting ambiguous data in business
+          context, and making strategic recommendations from analytics
+          require experienced human judgment.
+
+    - id: audience_segmentation
+      name: "Audience Segmentation"
+      category: analytical
+      description: >
+        Defining, building, and refining audience segments based on
+        demographic, behavioral, psychographic, and firmographic data
+        to deliver targeted marketing messages and personalized
+        experiences across channels.
+      proficiency:
+        junior: >
+          Creates audience lists in marketing platforms using predefined
+          criteria. Maintains segment hygiene and assists with basic
+          segmentation tasks like geographic or demographic list splits.
+        mid: >
+          Builds behavioral and engagement-based segments using platform
+          tools and customer data. Designs segmentation logic for campaign
+          targeting, analyzes segment performance, and recommends
+          refinements based on response data.
+        senior: >
+          Develops the segmentation strategy including methodology,
+          data sources, and refresh cadences. Creates advanced segments
+          using predictive attributes, lookalike modeling, and lifecycle
+          stages, and ensures segment definitions are consistent across
+          channels and platforms.
+        staff: >
+          Defines the organization's audience architecture including
+          segment taxonomy, data governance, and the integration of
+          segmentation across marketing automation, advertising, and
+          personalization platforms. Drives CDP adoption and unified
+          audience strategies.
+        principal: >
+          Shapes the company's customer intelligence strategy where
+          segmentation is a foundational capability. Drives innovation
+          in AI-powered micro-segmentation and real-time personalization
+          while navigating privacy regulations and ethical data usage
+          at enterprise scale.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI excels at identifying patterns in customer data and suggesting
+          segments that humans might miss. Lookalike and predictive modeling
+          are increasingly automated. However, defining strategically
+          meaningful segment frameworks and aligning segmentation with
+          business objectives require human insight.
+
+    - id: channel_strategy
+      name: "Channel Strategy"
+      category: domain
+      description: >
+        Evaluating, selecting, and orchestrating marketing channels
+        (paid search, social, email, content, partnerships, events)
+        into a cohesive go-to-market approach that maximizes reach,
+        efficiency, and customer acquisition across the funnel.
+      proficiency:
+        junior: >
+          Understands the basics of major marketing channels and their
+          role in the funnel. Supports channel-specific execution and
+          gathers competitive intelligence on channel usage within the
+          industry.
+        mid: >
+          Manages two to three channels end-to-end and understands their
+          interplay in driving customer journeys. Recommends channel
+          tactics based on campaign objectives and contributes to
+          cross-channel planning discussions.
+        senior: >
+          Designs cross-channel marketing strategies that align channel
+          selection with customer journey stages and business objectives.
+          Develops channel testing frameworks, manages channel mix
+          optimization, and leads go-to-market planning for launches.
+        staff: >
+          Defines the organization's channel strategy across product
+          lines and markets, balancing channel investment based on
+          performance data, market maturity, and competitive dynamics.
+          Evaluates emerging channels and establishes frameworks for
+          channel experimentation.
+        principal: >
+          Sets the company's long-term channel investment philosophy,
+          anticipating shifts in channel effectiveness and customer
+          behavior. Drives the organization's approach to channel
+          diversification, partner ecosystems, and the integration of
+          online and offline channels.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can analyze channel performance data and suggest budget
+          reallocation, but the strategic judgment to select channels,
+          sequence them across the customer journey, and adapt the
+          channel mix to competitive dynamics and market shifts requires
+          deep marketing experience and business context.
+
+    - id: budget_management
+      name: "Budget Management"
+      category: leadership
+      description: >
+        Planning, allocating, tracking, and optimizing marketing budgets
+        across channels, campaigns, and time periods to maximize return
+        on marketing investment while maintaining fiscal discipline and
+        alignment with business objectives.
+      proficiency:
+        junior: >
+          Tracks campaign spend against budgets using spreadsheets or
+          platform tools. Flags pacing issues to the team and assists
+          with budget reconciliation and invoice processing.
+        mid: >
+          Manages channel-level budgets independently, pacing spend
+          throughout campaign periods and reallocating funds based on
+          performance. Builds budget tracking spreadsheets and contributes
+          to monthly spend reviews.
+        senior: >
+          Develops quarterly and annual marketing budgets for a team or
+          product line. Makes data-driven budget reallocation decisions
+          across channels, forecasts spend scenarios, and presents budget
+          performance and recommendations to leadership.
+        staff: >
+          Defines the organization's marketing budget framework including
+          allocation methodology, approval processes, and ROI measurement
+          standards. Manages multi-million-dollar budgets across teams
+          and leads annual planning cycles.
+        principal: >
+          Shapes the company's marketing investment strategy at the
+          executive level, balancing growth investment with efficiency
+          targets. Drives the development of financial models that
+          connect marketing spend to business outcomes and influences
+          board-level marketing investment discussions.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI supports budget optimization by modeling spend scenarios and
+          predicting diminishing returns. However, strategic budget
+          allocation decisions that weigh business priorities, competitive
+          dynamics, and organizational constraints remain fundamentally
+          human, especially at senior levels.

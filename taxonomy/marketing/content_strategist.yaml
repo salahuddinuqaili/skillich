@@ -1,0 +1,667 @@
+role:
+  id: content_strategist
+  function: marketing
+  name: "Content Strategist"
+  also_known_as:
+    - "Content Strategy Manager"
+    - "Content Marketing Manager"
+    - "Editorial Strategist"
+    - "Content Lead"
+    - "Head of Content"
+  description: >
+    Defines and executes the content strategy that connects business
+    objectives with audience needs across the entire content lifecycle.
+    Content strategists plan editorial calendars, establish governance
+    frameworks, ensure brand voice consistency, and measure content
+    effectiveness across channels, translating organizational goals
+    into compelling narratives that drive engagement, authority, and
+    conversion.
+
+  ai_impact:
+    level: moderate-high
+    summary: >
+      AI content generation tools have fundamentally changed content
+      production speed and cost, making first-draft creation nearly
+      instantaneous for standard formats. This shifts the content
+      strategist's value toward differentiated thinking: editorial
+      judgment, brand voice curation, content architecture, and the
+      strategic decisions about what to create, for whom, and why.
+      Strategists who leverage AI for production while focusing on
+      quality, originality, and measurement will thrive.
+    automating:
+      - "Generating first drafts for blog posts, social copy, and product descriptions"
+      - "Repurposing long-form content into multiple format derivatives"
+      - "Creating content briefs from keyword research and competitive data"
+      - "Producing content performance reports and dashboards"
+      - "Translating and localizing content across languages"
+    augmenting:
+      - "Identifying content gaps and opportunities through audience research"
+      - "Editing and refining AI-generated drafts to meet quality and voice standards"
+      - "Planning content calendars that balance editorial themes with SEO targets"
+      - "Analyzing content performance to inform strategy refinement"
+      - "Building content taxonomies and metadata frameworks"
+    preserving:
+      - "Defining content strategy that aligns with business goals and audience needs"
+      - "Establishing and evolving brand voice and editorial standards"
+      - "Making editorial judgment calls about quality, authenticity, and appropriateness"
+      - "Building narrative frameworks that differentiate the brand in crowded markets"
+      - "Leading cross-functional content governance and stakeholder alignment"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Content Science – Content Strategy Research"
+        url: "https://www.contentscienceinc.com/"
+      - name: "Kristina Halvorson – Content Strategy for the Web"
+        url: "https://www.contentstrategy.com/"
+      - name: "Content Marketing Institute – Annual Research"
+        url: "https://contentmarketinginstitute.com/research/"
+
+  levels:
+    - id: junior
+      name: "Junior (L1-L2)"
+      years_experience: "0-2"
+      summary: >
+        Supports content execution by drafting, editing, and publishing
+        content following established guidelines. Maintains editorial
+        calendars, assists with research, and learns content strategy
+        fundamentals by working closely with senior strategists on
+        planning and measurement tasks.
+    - id: mid
+      name: "Mid-Level (L3)"
+      years_experience: "2-4"
+      summary: >
+        Owns content programs for specific channels or audience segments,
+        managing the editorial calendar, writing briefs, and coordinating
+        with writers and designers. Analyzes content performance, refines
+        approaches based on data, and contributes to strategic planning.
+    - id: senior
+      name: "Senior (L4)"
+      years_experience: "4-8"
+      summary: >
+        Develops content strategy for a product or business area,
+        defining editorial pillars, governance frameworks, and
+        measurement models. Leads cross-functional content planning,
+        mentors junior strategists, and drives content initiatives
+        that measurably impact business objectives.
+    - id: staff
+      name: "Staff (L5)"
+      years_experience: "8-12"
+      summary: >
+        Sets content strategy across the organization, defining the
+        content operating model, technology stack, and governance
+        standards. Leads content transformation initiatives, establishes
+        AI-assisted content workflows, and aligns content investment
+        with business strategy across product lines and markets.
+    - id: principal
+      name: "Principal (L6+)"
+      years_experience: "12+"
+      summary: >
+        Shapes the company's long-term content vision as a strategic
+        business asset. Drives innovation in content operations,
+        evaluates the impact of AI on content differentiation, and
+        advises executive leadership on content investment, brand
+        narrative, and thought leadership strategy.
+
+  skills:
+    - id: content_planning
+      name: "Content Planning"
+      category: domain
+      description: >
+        Developing editorial calendars, content roadmaps, and
+        production schedules that align content creation with business
+        objectives, audience needs, seasonal trends, and marketing
+        campaigns across multiple channels and formats.
+      proficiency:
+        junior: >
+          Maintains the editorial calendar, schedules content for
+          publication, and assists with brainstorming sessions. Tracks
+          content production status and flags scheduling conflicts or
+          gaps to the team.
+        mid: >
+          Develops monthly and quarterly content plans for assigned
+          channels, balancing evergreen and timely topics. Creates
+          content briefs with clear objectives, keywords, and audience
+          targets, and coordinates production timelines with writers
+          and designers.
+        senior: >
+          Designs the content planning framework including editorial
+          themes, content mix strategy, and production workflows.
+          Aligns content calendars with product launches, campaigns,
+          and business priorities, and manages trade-offs when
+          resources are constrained.
+        staff: >
+          Defines the organization's content planning methodology
+          across teams, including tools, templates, and coordination
+          processes. Establishes capacity planning models and resource
+          allocation frameworks that scale content production
+          effectively.
+        principal: >
+          Shapes the company's content investment strategy, determining
+          how planning processes evolve to balance AI-accelerated
+          production with quality standards. Drives integration of
+          content planning with product and go-to-market planning
+          at the executive level.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can suggest content topics, identify gaps, and help
+          populate editorial calendars. However, strategic content
+          planning that balances business priorities, audience needs,
+          resource constraints, and editorial quality requires human
+          judgment and organizational context.
+
+    - id: editorial_management
+      name: "Editorial Management"
+      category: leadership
+      description: >
+        Managing the editorial process from ideation through
+        publication including assigning work, providing editorial
+        feedback, enforcing style guidelines, managing contributor
+        relationships, and maintaining content quality standards
+        across a team of writers and creators.
+      proficiency:
+        junior: >
+          Proofreads and copy-edits content for grammar, style guide
+          adherence, and factual accuracy. Follows the editorial
+          workflow, tracks content through production stages, and
+          learns to provide constructive feedback.
+        mid: >
+          Manages the editorial workflow for a content program,
+          assigning briefs to writers, providing substantive editorial
+          feedback, and ensuring content meets quality and brand
+          standards. Coordinates with designers on visual content
+          and manages publication schedules.
+        senior: >
+          Leads the editorial function including hiring and developing
+          writers, establishing editorial standards and review
+          processes, and defining the quality bar for published
+          content. Manages relationships with freelance contributors
+          and external agencies.
+        staff: >
+          Builds the editorial operations infrastructure including
+          workflow tools, quality assurance processes, and editorial
+          training programs. Defines how AI-generated content is
+          reviewed and refined, and establishes the editorial
+          governance model across the organization.
+        principal: >
+          Sets the company's editorial vision and standards at the
+          highest level, defining how the organization's content
+          voice and quality evolve over time. Drives the editorial
+          strategy for thought leadership and positions the company
+          as an authoritative voice in its industry.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI assists with proofreading, style checking, and
+          generating initial feedback on drafts. However, substantive
+          editorial judgment, developing writer talent, maintaining
+          authentic brand voice, and making editorial decisions about
+          quality and appropriateness are deeply human activities.
+
+    - id: seo_writing
+      name: "SEO Writing"
+      category: technical
+      description: >
+        Creating content that satisfies both search engine ranking
+        factors and reader expectations, including keyword
+        integration, content structure optimization, search intent
+        alignment, and techniques for earning featured snippets
+        and other SERP features.
+      proficiency:
+        junior: >
+          Writes content following SEO briefs with specified keywords
+          and structure. Incorporates target keywords naturally,
+          uses proper header hierarchy, and writes meta descriptions
+          and title tags as directed.
+        mid: >
+          Creates SEO-optimized content independently, researching
+          target keywords, analyzing competing content, and
+          structuring articles for both readability and search
+          performance. Optimizes existing content for improved
+          rankings and featured snippet capture.
+        senior: >
+          Develops the SEO content strategy including topic cluster
+          architecture, content format selection for different intent
+          types, and content refresh programs. Defines SEO writing
+          guidelines and trains writers on search-optimized content
+          creation.
+        staff: >
+          Integrates SEO writing standards across the organization's
+          content operations, ensuring all content creators understand
+          and apply search best practices. Evaluates AI writing tools
+          for SEO content and establishes quality controls for
+          AI-assisted production at scale.
+        principal: >
+          Shapes the company's approach to search-optimized content
+          in the era of AI-generated SERPs and evolving quality
+          signals. Defines how the organization differentiates its
+          content in an environment of abundant AI-generated
+          search content.
+      ai_impact:
+        rating: 0.75
+        detail: >
+          AI tools produce competent SEO content rapidly, including
+          keyword-optimized articles and meta tags. However, creating
+          content with genuine expertise, original insights, and the
+          depth that earns authority and links requires human
+          knowledge and editorial judgment.
+
+    - id: content_governance
+      name: "Content Governance"
+      category: domain
+      description: >
+        Establishing and enforcing standards, policies, and processes
+        for content creation, review, publication, and maintenance
+        including style guides, approval workflows, content lifecycles,
+        and compliance with legal and regulatory requirements.
+      proficiency:
+        junior: >
+          Follows established content governance processes including
+          review workflows, approval chains, and style guide
+          requirements. Flags content that may need legal or
+          compliance review.
+        mid: >
+          Manages content governance processes for assigned programs,
+          enforcing style guides, ensuring regulatory compliance, and
+          maintaining content inventories. Identifies gaps in
+          governance processes and recommends improvements.
+        senior: >
+          Designs content governance frameworks including style guides,
+          approval workflows, content lifecycle policies, and audit
+          processes. Establishes content quality standards and
+          coordinates with legal, compliance, and brand teams on
+          governance requirements.
+        staff: >
+          Builds the organization's content governance infrastructure
+          including tools, automation, and training programs. Defines
+          policies for AI-generated content, content archival, and
+          cross-team content sharing, and ensures governance scales
+          with content production volume.
+        principal: >
+          Sets the company's content governance philosophy, balancing
+          speed and control. Navigates the governance implications of
+          AI content tools, user-generated content, and evolving
+          regulatory requirements at the enterprise level.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can check content against style guides, flag compliance
+          issues, and automate approval routing. However, defining
+          governance frameworks, making policy decisions about
+          AI-generated content, and balancing creative freedom with
+          brand consistency require human leadership and judgment.
+
+    - id: brand_voice
+      name: "Brand Voice & Tone"
+      category: communication
+      description: >
+        Defining, documenting, and maintaining the brand's voice,
+        tone, and personality across all content touchpoints,
+        ensuring consistency while adapting for different channels,
+        audiences, and contexts.
+      proficiency:
+        junior: >
+          Writes content that follows established brand voice
+          guidelines. Identifies tone differences across examples
+          and asks for guidance when uncertain about voice
+          application in new contexts.
+        mid: >
+          Applies brand voice consistently across channels and formats,
+          adapting tone for different contexts (educational vs.
+          promotional, social vs. long-form) while maintaining the
+          core personality. Provides voice-related feedback to other
+          content creators.
+        senior: >
+          Defines and documents the brand voice framework including
+          voice attributes, tone spectrum, vocabulary guidelines,
+          and channel-specific adaptations. Trains writers and
+          stakeholders on voice application and leads voice audits
+          across content touchpoints.
+        staff: >
+          Evolves the brand voice strategy across the organization,
+          managing voice consistency across sub-brands, products,
+          and markets. Defines how brand voice is maintained when
+          AI tools generate content and establishes voice quality
+          metrics.
+        principal: >
+          Shapes the company's brand personality and communication
+          philosophy at the highest level. Drives voice evolution
+          in response to market positioning changes and ensures the
+          brand voice remains authentic and differentiated as content
+          production scales with AI.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI tools can be trained on brand voice guidelines and
+          produce on-brand content with increasing accuracy. However,
+          defining what the brand voice should be, evolving it
+          strategically, and making nuanced tone decisions for
+          sensitive contexts require deep brand understanding and
+          human judgment.
+
+    - id: multi_channel_distribution
+      name: "Multi-Channel Distribution"
+      category: technical
+      description: >
+        Planning and executing content distribution across owned
+        (blog, email, social), earned (PR, guest posts, syndication),
+        and paid (sponsored content, native advertising) channels to
+        maximize content reach, engagement, and conversion.
+      proficiency:
+        junior: >
+          Publishes content across channels following distribution
+          checklists. Adapts content formats for different platforms
+          (blog excerpts for email, pull quotes for social) and
+          monitors initial engagement metrics.
+        mid: >
+          Develops channel-specific distribution plans for content
+          programs, tailoring messaging and format for each platform's
+          audience and algorithm. Manages content syndication
+          partnerships and coordinates distribution timing for
+          maximum impact.
+        senior: >
+          Designs the content distribution strategy including channel
+          mix, amplification tactics, and measurement frameworks.
+          Establishes distribution playbooks for different content
+          types and integrates paid promotion with organic
+          distribution.
+        staff: >
+          Defines the organization's content distribution architecture
+          including platform strategy, automation tools, and
+          cross-team coordination processes. Evaluates emerging
+          distribution channels and establishes partnerships that
+          extend content reach at scale.
+        principal: >
+          Shapes the company's content distribution philosophy,
+          balancing owned, earned, and paid channels for sustainable
+          reach. Drives innovation in content distribution as
+          platform algorithms, social media dynamics, and content
+          consumption habits evolve.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI helps automate content repurposing and optimize
+          distribution timing and targeting. However, developing
+          distribution strategies, managing channel partnerships,
+          and adapting to platform algorithm changes require human
+          strategic thinking and relationship management.
+
+    - id: content_measurement
+      name: "Content Measurement & ROI"
+      category: analytical
+      description: >
+        Defining and tracking content performance metrics including
+        engagement, conversion, SEO impact, and business outcomes.
+        Building measurement frameworks that demonstrate content ROI
+        and inform strategic content investment decisions.
+      proficiency:
+        junior: >
+          Pulls content performance reports from analytics platforms,
+          tracks basic metrics (views, engagement, shares), and
+          compiles performance summaries using established templates.
+        mid: >
+          Builds content performance dashboards, defines channel-
+          specific KPIs, and analyzes content data to identify
+          top-performing topics, formats, and distribution channels.
+          Calculates basic content ROI and presents findings to
+          stakeholders.
+        senior: >
+          Designs the content measurement framework including KPI
+          hierarchies, attribution models, and reporting cadences.
+          Creates executive dashboards connecting content performance
+          to business outcomes and uses data to drive content
+          strategy refinement.
+        staff: >
+          Defines the organization's content ROI methodology including
+          measurement tools, attribution approaches, and benchmarking
+          standards. Establishes content analytics infrastructure
+          that enables self-serve reporting across teams.
+        principal: >
+          Shapes the company's content investment strategy by
+          developing sophisticated ROI models that account for
+          brand value, long-term SEO impact, and audience development.
+          Drives innovation in content attribution and positions
+          content as a measurable business asset.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI automates report generation and can identify content
+          performance patterns and anomalies. However, defining
+          meaningful content metrics, building attribution models
+          that capture content's full value, and translating data
+          into strategic decisions require human analytical judgment.
+
+    - id: audience_research
+      name: "Audience Research"
+      category: analytical
+      description: >
+        Understanding target audiences through qualitative and
+        quantitative research methods including persona development,
+        audience surveys, behavioral analysis, social listening, and
+        community engagement to inform content strategy decisions.
+      proficiency:
+        junior: >
+          Reviews existing audience personas and research reports.
+          Assists with survey design, monitors social media comments
+          for audience insights, and compiles audience data from
+          analytics platforms.
+        mid: >
+          Conducts audience research using surveys, interviews, and
+          analytics data to build and refine audience personas.
+          Analyzes audience behavior and content preferences to
+          inform editorial planning and identifies underserved
+          audience segments.
+        senior: >
+          Designs audience research programs including methodology,
+          tooling, and integration with content strategy. Creates
+          detailed persona frameworks, maps content journeys to
+          audience needs, and establishes feedback loops between
+          audience insights and content planning.
+        staff: >
+          Defines the organization's audience intelligence strategy
+          including research methodology, data integration, and
+          insights distribution. Builds audience segmentation
+          frameworks that inform content personalization and
+          cross-team content planning.
+        principal: >
+          Shapes the company's approach to audience understanding,
+          evaluating how AI-powered audience analysis, changing
+          privacy regulations, and evolving content consumption
+          patterns impact the organization's ability to know and
+          serve its audiences.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI tools analyze audience data, synthesize survey results,
+          and identify behavioral patterns efficiently. However,
+          designing research methodologies, interpreting qualitative
+          insights, and translating audience understanding into
+          differentiated content strategy require human empathy and
+          strategic thinking.
+
+    - id: content_ops
+      name: "Content Operations"
+      category: technical
+      description: >
+        Designing and managing the systems, workflows, tools, and
+        processes that enable efficient content production at scale,
+        including content management systems, DAM platforms,
+        collaboration tools, and production pipelines.
+      proficiency:
+        junior: >
+          Uses content management systems and collaboration tools
+          to publish, update, and organize content. Follows
+          established workflows and assists with content migration
+          and tagging tasks.
+        mid: >
+          Manages content production workflows, configures CMS
+          settings, and maintains content taxonomies. Identifies
+          workflow bottlenecks and implements improvements to
+          production efficiency.
+        senior: >
+          Designs content operations workflows including production
+          pipelines, CMS architecture, and quality assurance
+          processes. Selects and configures content tools, defines
+          team workflows, and establishes content operations
+          metrics for efficiency and quality.
+        staff: >
+          Builds the organization's content operations infrastructure
+          including technology stack, automation, and governance.
+          Leads CMS migrations, establishes cross-team content
+          sharing processes, and defines how AI tools integrate
+          into production workflows.
+        principal: >
+          Shapes the company's content operations strategy, driving
+          investment in infrastructure that scales content production
+          while maintaining quality. Evaluates emerging content
+          technologies and positions the organization for efficient,
+          AI-augmented content operations at enterprise scale.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI automates many content operations tasks including
+          tagging, categorization, and workflow routing. However,
+          designing content operations architecture, selecting
+          technology platforms, and building efficient production
+          systems that serve diverse teams require human systems
+          thinking and organizational knowledge.
+
+    - id: storytelling
+      name: "Storytelling & Narrative"
+      category: communication
+      description: >
+        Crafting compelling narratives that connect brand messages
+        with audience emotions and experiences, using story
+        structures, emotional arcs, and narrative techniques across
+        long-form content, campaigns, video, and brand communications.
+      proficiency:
+        junior: >
+          Identifies story elements in existing content and writes
+          straightforward narratives following templates and
+          guidance. Develops an understanding of story structure
+          and practices incorporating narrative techniques into
+          marketing content.
+        mid: >
+          Crafts engaging narratives across formats including case
+          studies, blog posts, and campaign messaging. Uses story
+          structures (hero's journey, problem-solution) effectively
+          and adapts narratives for different audiences and channels.
+        senior: >
+          Develops narrative strategies for major initiatives,
+          creating story frameworks that guide content across
+          touchpoints and campaigns. Mentors writers on storytelling
+          craft and establishes narrative standards that elevate
+          the brand's content quality.
+        staff: >
+          Defines the organization's narrative approach including
+          master brand narratives, story libraries, and frameworks
+          for consistent storytelling across teams. Leads high-stakes
+          narrative projects and trains the organization on
+          effective storytelling.
+        principal: >
+          Shapes the company's storytelling vision, defining how
+          narrative drives brand differentiation and emotional
+          connection at scale. Drives innovation in narrative
+          forms and positions the organization as a recognized
+          storyteller in its industry.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can structure narratives and generate story drafts, but
+          crafting stories that resonate emotionally, reflect genuine
+          human experiences, and differentiate a brand requires
+          creative intuition, cultural awareness, and the kind of
+          original thinking that remains fundamentally human.
+
+    - id: content_taxonomy
+      name: "Content Taxonomy & Metadata"
+      category: technical
+      description: >
+        Designing and maintaining content classification systems
+        including taxonomies, tags, metadata schemas, and information
+        architecture that enable content discoverability, reuse,
+        personalization, and analytics across platforms.
+      proficiency:
+        junior: >
+          Applies existing taxonomy tags to content accurately.
+          Follows metadata guidelines when publishing content and
+          flags categorization issues or gaps to the team.
+        mid: >
+          Manages content taxonomies and metadata systems, adding
+          new categories as needed and ensuring consistent
+          application across content. Audits taxonomy usage and
+          recommends improvements for better content organization
+          and findability.
+        senior: >
+          Designs content taxonomy frameworks including category
+          hierarchies, controlled vocabularies, and metadata schemas.
+          Aligns taxonomies with SEO keyword strategies,
+          personalization systems, and analytics requirements.
+        staff: >
+          Defines the organization's content classification strategy
+          including cross-platform taxonomy standards, metadata
+          governance, and integration with content management and
+          personalization systems. Drives taxonomy adoption across
+          teams and content types.
+        principal: >
+          Shapes the company's information architecture strategy
+          where content taxonomy is a foundational capability.
+          Evaluates how AI-powered auto-tagging, semantic search,
+          and knowledge graphs transform content classification
+          and positions the organization accordingly.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI excels at auto-tagging content and suggesting taxonomy
+          classifications based on content analysis. However,
+          designing taxonomy frameworks that serve business needs,
+          aligning classification with strategy, and governing
+          taxonomy evolution require human information architecture
+          expertise.
+
+    - id: ai_content_tools
+      name: "AI Content Tools"
+      category: technical
+      description: >
+        Evaluating, implementing, and managing AI-powered content
+        tools (ChatGPT, Claude, Jasper, Writer) for content creation,
+        editing, optimization, and personalization, including prompt
+        engineering, quality control, and workflow integration.
+      proficiency:
+        junior: >
+          Uses AI writing tools to generate drafts and brainstorm
+          ideas following team guidelines. Reviews AI output for
+          accuracy and brand voice compliance and edits generated
+          content to meet quality standards.
+        mid: >
+          Integrates AI tools into content workflows for specific
+          use cases (first drafts, repurposing, translation).
+          Develops effective prompts for consistent output quality
+          and establishes review processes for AI-generated content.
+        senior: >
+          Designs the team's AI content strategy including tool
+          selection, use case definition, quality standards, and
+          prompt libraries. Trains content creators on effective
+          AI tool usage and establishes governance for AI content
+          disclosure and quality assurance.
+        staff: >
+          Defines the organization's AI content operations strategy
+          including tool evaluation, procurement, workflow
+          integration, and policy development. Builds scalable
+          AI-assisted content production pipelines with quality
+          controls and compliance frameworks.
+        principal: >
+          Shapes the company's long-term strategy for AI in content,
+          evaluating the impact on content differentiation, brand
+          authenticity, and competitive advantage. Drives policy
+          on AI content ethics, disclosure, and the evolving role
+          of human creativity in an AI-augmented content landscape.
+      ai_impact:
+        rating: 0.8
+        detail: >
+          This skill is inherently intertwined with AI, as it involves
+          mastering AI tools themselves. The meta-challenge is that
+          the tools evolve rapidly, so the human value lies in
+          strategic tool selection, workflow design, quality governance,
+          and the judgment to know when AI output needs human
+          enhancement or replacement.

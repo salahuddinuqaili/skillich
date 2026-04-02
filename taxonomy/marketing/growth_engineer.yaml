@@ -1,0 +1,683 @@
+role:
+  id: growth_engineer
+  function: marketing
+  name: "Growth Engineer"
+  also_known_as:
+    - "Growth Hacker"
+    - "Growth Product Engineer"
+    - "Experimentation Engineer"
+    - "Product Growth Engineer"
+    - "Growth Software Engineer"
+  description: >
+    Combines software engineering skills with growth strategy to build
+    and optimize systems that drive user acquisition, activation,
+    retention, and monetization. Growth engineers own the technical
+    infrastructure for experimentation, analytics instrumentation,
+    referral systems, and product-led growth mechanics, working at
+    the intersection of engineering, product, and marketing to
+    accelerate business growth through code.
+
+  ai_impact:
+    level: moderate
+    summary: >
+      AI assists growth engineers with code generation, experiment
+      analysis, and pattern identification in user behavior data.
+      However, the core of growth engineering requires the creative
+      combination of technical skills with business intuition to
+      identify high-leverage growth opportunities. The ability to
+      design novel growth loops, build experimentation infrastructure,
+      and make strategic technical decisions about what to build
+      remains fundamentally human-driven.
+    automating:
+      - "Generating boilerplate code for A/B test implementations and feature flags"
+      - "Writing event tracking instrumentation code from specifications"
+      - "Analyzing experiment results and generating statistical summaries"
+      - "Creating data pipelines for growth metrics dashboards"
+      - "Generating variations of onboarding flows and paywall designs"
+    augmenting:
+      - "Identifying growth opportunities from user behavior data patterns"
+      - "Debugging complex instrumentation and data pipeline issues"
+      - "Designing experiment architectures for multi-variant tests"
+      - "Optimizing referral system mechanics and incentive structures"
+      - "Building personalized user experiences based on behavioral signals"
+    preserving:
+      - "Identifying and designing novel growth loops and viral mechanics"
+      - "Making strategic decisions about what growth levers to invest in"
+      - "Architecting experimentation platforms that scale with organizational needs"
+      - "Bridging technical implementation with growth strategy and user psychology"
+      - "Navigating ethical boundaries in growth tactics and dark pattern avoidance"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Reforge – Growth Engineering Program"
+        url: "https://www.reforge.com/growth-engineering"
+      - name: "Andrew Chen – Growth Engineering Essays"
+        url: "https://andrewchen.com/"
+      - name: "Lenny Rachitsky – Growth & Product Newsletter"
+        url: "https://www.lennysnewsletter.com/"
+
+  levels:
+    - id: junior
+      name: "Junior (L1-L2)"
+      years_experience: "0-2"
+      summary: >
+        Implements growth features and experiments under guidance,
+        including A/B test code, event tracking, and basic feature
+        flags. Learns growth frameworks, develops proficiency in the
+        team's experimentation tools, and ships well-defined growth
+        tasks within existing systems.
+    - id: mid
+      name: "Mid-Level (L3)"
+      years_experience: "2-4"
+      summary: >
+        Independently builds and ships growth experiments across the
+        product surface, from hypothesis through implementation and
+        analysis. Owns growth features like onboarding flows, referral
+        mechanics, and activation triggers, and contributes to
+        experimentation infrastructure.
+    - id: senior
+      name: "Senior (L4)"
+      years_experience: "4-8"
+      summary: >
+        Designs growth systems and experimentation infrastructure
+        that the team relies on. Identifies high-leverage growth
+        opportunities through data analysis, architects growth
+        loops and monetization mechanics, and mentors junior
+        engineers on growth engineering practices. Drives growth
+        strategy alongside product managers.
+    - id: staff
+      name: "Staff (L5)"
+      years_experience: "8-12"
+      summary: >
+        Sets the growth engineering strategy across the organization,
+        defining experimentation platforms, analytics infrastructure,
+        and growth architecture standards. Leads cross-functional
+        growth initiatives, evaluates growth technology investments,
+        and drives the engineering side of the company's growth model.
+    - id: principal
+      name: "Principal (L6+)"
+      years_experience: "12+"
+      summary: >
+        Shapes the company's long-term growth engineering vision,
+        making decisions about growth infrastructure, experimentation
+        culture, and technical growth strategy with multi-year impact.
+        Influences the organization's product-led growth model at
+        the architectural level and is recognized as a thought leader
+        in growth engineering.
+
+  skills:
+    - id: experimentation_platforms
+      name: "Experimentation Platforms"
+      category: technical
+      description: >
+        Building, configuring, and maintaining experimentation
+        infrastructure using platforms like LaunchDarkly, Optimizely,
+        Statsig, Eppo, or custom-built systems to enable A/B testing,
+        multi-variant testing, and controlled rollouts at scale.
+      proficiency:
+        junior: >
+          Uses the team's experimentation platform to create and
+          configure basic experiments following established patterns.
+          Understands experiment lifecycle (draft, running, concluded)
+          and monitors experiment health metrics.
+        mid: >
+          Configures complex experiments including audience targeting,
+          mutual exclusion groups, and metric definitions.
+          Troubleshoots experiment issues like sample ratio mismatch
+          and implements experiment SDK integrations across
+          client and server.
+        senior: >
+          Designs the experimentation platform architecture including
+          assignment logic, metric computation pipelines, and
+          statistical engines. Establishes experimentation standards
+          for the team and builds platform features that increase
+          experiment velocity and reliability.
+        staff: >
+          Defines the organization's experimentation infrastructure
+          strategy including build-vs-buy decisions, platform
+          selection, and integration with the data warehouse.
+          Drives adoption of advanced experimentation capabilities
+          like holdout groups, interaction detection, and
+          sequential testing.
+        principal: >
+          Shapes the company's experimentation culture at the
+          infrastructure level, evaluating emerging platforms
+          and statistical methodologies. Drives investment in
+          experimentation infrastructure that enables thousands
+          of concurrent experiments with rigorous statistical
+          foundations.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can suggest experiment configurations and analyze
+          results, but designing experimentation platforms that
+          handle complex assignment logic, maintain statistical
+          validity, and scale with organizational needs requires
+          deep engineering expertise and understanding of
+          statistical foundations.
+
+    - id: ab_testing_infra
+      name: "A/B Testing Infrastructure"
+      category: technical
+      description: >
+        Building the technical systems that enable reliable A/B
+        testing including user bucketing, consistent assignment,
+        metric collection, statistical analysis pipelines, and
+        results visualization, ensuring experiments are
+        trustworthy and actionable.
+      proficiency:
+        junior: >
+          Implements A/B test variants in code following established
+          patterns. Sets up metric tracking for experiments and
+          verifies that assignment and exposure logging work
+          correctly before launch.
+        mid: >
+          Builds end-to-end A/B test implementations including
+          variant code, metric instrumentation, and results
+          analysis. Ensures proper randomization, handles edge
+          cases in assignment, and validates test integrity
+          through pre-experiment checks.
+        senior: >
+          Designs A/B testing systems including hashing-based
+          assignment, layer architecture for concurrent experiments,
+          and automated metric pipelines. Implements statistical
+          methods (frequentist and Bayesian) and builds tools
+          that detect experiment quality issues.
+        staff: >
+          Architects the organization's A/B testing infrastructure
+          including assignment services, metric computation
+          frameworks, and automated analysis tools. Establishes
+          testing standards that ensure statistical rigor and
+          scalability across all product teams.
+        principal: >
+          Sets the long-term strategy for experimentation
+          infrastructure, evaluating emerging approaches like
+          adaptive experiments, causal inference methods, and
+          AI-driven experiment optimization. Influences the
+          company's data-driven decision-making culture through
+          infrastructure investment.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI assists with experiment analysis and result
+          interpretation, but building reliable A/B testing
+          infrastructure that maintains statistical validity,
+          handles concurrent experiments, and scales with the
+          organization requires deep systems engineering and
+          statistical expertise.
+
+    - id: event_tracking
+      name: "Event Tracking & Analytics Instrumentation"
+      category: technical
+      description: >
+        Designing and implementing event tracking systems that
+        capture user behavior data across platforms (web, mobile,
+        server), including event schemas, tracking plans, data
+        validation, and integration with analytics platforms
+        like Segment, Amplitude, or Mixpanel.
+      proficiency:
+        junior: >
+          Implements event tracking code following existing tracking
+          plans and schemas. Verifies events fire correctly using
+          debugging tools and fixes common instrumentation issues.
+        mid: >
+          Designs tracking plans for new features including event
+          naming, property definitions, and data validation rules.
+          Implements tracking across web and mobile platforms,
+          manages data quality monitoring, and troubleshoots
+          instrumentation gaps.
+        senior: >
+          Architects the event tracking infrastructure including
+          schema governance, tracking SDK design, and data
+          pipeline integration. Establishes naming conventions,
+          builds automated tracking validation, and ensures data
+          quality standards across product teams.
+        staff: >
+          Defines the organization's analytics instrumentation
+          strategy including the event schema standard, tracking
+          platform architecture, and data governance framework.
+          Drives adoption of consistent instrumentation practices
+          and builds infrastructure that scales with product
+          complexity.
+        principal: >
+          Shapes the company's behavioral data strategy where
+          event tracking is the foundational layer. Evaluates
+          how emerging privacy regulations, server-side tracking,
+          and data clean rooms change instrumentation approaches,
+          and positions the organization's data collection
+          infrastructure accordingly.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can generate tracking code from specifications and
+          detect instrumentation gaps. However, designing event
+          schemas that serve diverse analytical needs, maintaining
+          data quality at scale, and making architectural decisions
+          about tracking infrastructure require human planning
+          and systems thinking.
+
+    - id: growth_loops
+      name: "Growth Loops & Viral Mechanics"
+      category: domain
+      description: >
+        Designing and implementing self-reinforcing growth systems
+        where user actions generate inputs that drive further growth,
+        including viral loops, content loops, paid acquisition loops,
+        and network effects that create compounding user growth.
+      proficiency:
+        junior: >
+          Understands basic growth loop concepts and can implement
+          components of existing growth loops (share buttons, invite
+          flows, referral tracking) following specifications.
+        mid: >
+          Implements complete growth loop features including referral
+          flows, social sharing mechanics, and user-generated content
+          systems. Instruments growth loops for measurement and
+          analyzes loop performance metrics like viral coefficient
+          and cycle time.
+        senior: >
+          Designs growth loop architectures including identification
+          of loop opportunities, mechanics design, and optimization
+          frameworks. Models loop dynamics mathematically, identifies
+          bottlenecks in existing loops, and creates new loops that
+          align with user value creation.
+        staff: >
+          Defines the organization's growth loop strategy, identifying
+          which loop types to invest in based on the product's
+          nature and market. Builds frameworks for evaluating loop
+          effectiveness and drives cross-team initiatives to
+          strengthen the company's primary growth loops.
+        principal: >
+          Shapes the company's fundamental growth model, evaluating
+          how growth loops interact with network effects, market
+          dynamics, and competitive positions. Drives strategic
+          decisions about growth architecture that have multi-year
+          compounding impact.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can analyze data to identify growth patterns and
+          suggest optimizations to existing loops. However,
+          designing novel growth loops that align with user
+          psychology, product mechanics, and business models
+          requires creative strategic thinking that remains
+          fundamentally human.
+
+    - id: activation_engineering
+      name: "Activation Engineering"
+      category: technical
+      description: >
+        Building systems that accelerate new users from signup to
+        their first value experience, including onboarding flows,
+        activation triggers, progressive disclosure patterns, and
+        time-to-value optimization through personalized user
+        journeys.
+      proficiency:
+        junior: >
+          Implements onboarding UI components and activation
+          checkpoints following specifications. Tracks activation
+          metrics and assists with A/B tests on onboarding flow
+          variants.
+        mid: >
+          Builds activation features including progressive onboarding
+          flows, contextual prompts, and activation checklists.
+          Analyzes user activation funnels to identify drop-off
+          points and implements targeted interventions.
+        senior: >
+          Designs the activation architecture including user state
+          machines, personalized onboarding paths, and trigger-based
+          engagement systems. Defines activation metrics and builds
+          experimentation frameworks for continuous activation
+          optimization.
+        staff: >
+          Defines the organization's activation engineering strategy
+          including platform capabilities, personalization
+          infrastructure, and measurement standards. Drives
+          cross-product activation improvements and establishes
+          activation as a core engineering discipline.
+        principal: >
+          Shapes the company's user activation philosophy, evaluating
+          how AI-powered personalization, changing user expectations,
+          and product complexity impact activation strategy.
+          Drives long-term investment in activation infrastructure
+          that compounds user growth.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI enables more personalized activation experiences through
+          behavioral prediction and content recommendations. However,
+          designing activation architectures that balance user
+          education with value delivery, and making strategic
+          decisions about activation investment, require human
+          understanding of user psychology and product dynamics.
+
+    - id: referral_systems
+      name: "Referral Systems"
+      category: technical
+      description: >
+        Building referral and invitation systems that incentivize
+        existing users to bring new users, including referral
+        tracking, reward mechanics, fraud detection, and
+        optimization of referral flows for conversion.
+      proficiency:
+        junior: >
+          Implements referral UI components and tracking code
+          following specifications. Tests referral flows end-to-end
+          and monitors basic referral metrics like invite send
+          rate and conversion.
+        mid: >
+          Builds referral systems including link generation,
+          attribution tracking, reward fulfillment, and basic
+          fraud detection. Optimizes referral flows through A/B
+          testing and analyzes referral funnel performance.
+        senior: >
+          Designs referral system architecture including incentive
+          structures, multi-channel attribution, fraud detection
+          algorithms, and reward optimization. Models referral
+          economics and builds experimentation frameworks for
+          referral program optimization.
+        staff: >
+          Defines the organization's referral infrastructure
+          strategy including platform capabilities, fraud
+          prevention, and integration with the broader growth
+          stack. Evaluates referral mechanics across product lines
+          and drives optimization of the company's viral growth
+          channels.
+        principal: >
+          Shapes the company's word-of-mouth and referral growth
+          strategy at the architectural level. Evaluates how
+          referral systems interact with the broader growth model,
+          network effects, and market dynamics, and drives
+          strategic investment in viral growth infrastructure.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can optimize referral messaging and identify fraud
+          patterns. However, designing referral system architectures,
+          modeling incentive economics, and creating referral
+          mechanics that align with user motivations require human
+          creativity and systems engineering expertise.
+
+    - id: paywall_monetization
+      name: "Paywall & Monetization Engineering"
+      category: technical
+      description: >
+        Building and optimizing monetization systems including
+        paywalls, pricing experiments, subscription management,
+        upgrade prompts, and conversion optimization for free-to-paid
+        and plan upgrade flows.
+      proficiency:
+        junior: >
+          Implements paywall UI components and upgrade prompts
+          following specifications. Tracks conversion metrics
+          and assists with A/B tests on pricing and paywall
+          variations.
+        mid: >
+          Builds paywall and monetization features including
+          dynamic paywalls, plan comparison pages, and upgrade
+          flows. Implements subscription management logic and
+          runs pricing experiments with proper measurement.
+        senior: >
+          Designs the monetization architecture including paywall
+          logic, pricing experiment infrastructure, and subscription
+          lifecycle management. Models monetization economics and
+          builds frameworks for systematic pricing and packaging
+          optimization.
+        staff: >
+          Defines the organization's monetization engineering
+          strategy including paywall platforms, pricing
+          experimentation infrastructure, and revenue optimization
+          frameworks. Drives cross-product monetization improvements
+          and establishes pricing experimentation as a core
+          capability.
+        principal: >
+          Shapes the company's monetization technology strategy,
+          evaluating how AI-driven personalized pricing, evolving
+          subscription models, and market dynamics change
+          monetization architecture. Drives long-term investment
+          in monetization infrastructure.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI enables personalized pricing and paywall optimization
+          through user behavior prediction. However, designing
+          monetization architectures, modeling pricing economics,
+          and making strategic decisions about monetization approach
+          require human judgment about business models, user
+          psychology, and market positioning.
+
+    - id: feature_flagging
+      name: "Feature Flagging & Progressive Rollouts"
+      category: technical
+      description: >
+        Implementing and managing feature flag systems that enable
+        controlled rollouts, kill switches, user targeting, and
+        runtime configuration, using platforms like LaunchDarkly,
+        Split, or custom solutions to decouple deployment from
+        release.
+      proficiency:
+        junior: >
+          Uses the team's feature flag system to gate new features
+          behind flags, configure basic targeting rules, and
+          manage flag lifecycles (create, enable, archive).
+        mid: >
+          Designs feature flag strategies for complex rollouts
+          including percentage-based rollouts, user segment
+          targeting, and multi-flag dependencies. Implements flag
+          evaluation in performance-critical paths and manages
+          flag debt cleanup.
+        senior: >
+          Architects the feature flag infrastructure including
+          SDK design, flag evaluation performance, and integration
+          with experimentation and deployment systems. Establishes
+          flag governance standards and builds tooling for flag
+          management at scale.
+        staff: >
+          Defines the organization's feature management strategy
+          including platform architecture, governance frameworks,
+          and integration with CI/CD, experimentation, and
+          incident response. Drives adoption of progressive
+          delivery practices across engineering teams.
+        principal: >
+          Shapes the company's progressive delivery philosophy,
+          evaluating how feature management, experimentation, and
+          deployment infrastructure converge. Drives investment
+          in feature management infrastructure that enables
+          safe, rapid product evolution at enterprise scale.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can suggest flag configurations and detect stale
+          flags. However, designing feature flag architectures
+          that support complex rollout strategies, maintain
+          performance, and integrate with experimentation systems
+          requires deep infrastructure engineering expertise.
+
+    - id: full_stack_web
+      name: "Full-Stack Web Development"
+      category: technical
+      description: >
+        Building growth features across the full web stack including
+        frontend UI (React, Next.js), backend APIs (Node.js, Python),
+        and database interactions, enabling rapid implementation of
+        growth experiments and features.
+      proficiency:
+        junior: >
+          Builds frontend components and basic API endpoints for
+          growth features. Follows established patterns for database
+          queries and API integrations and ships well-defined tasks
+          across the stack.
+        mid: >
+          Implements growth features end-to-end from database schema
+          through API to UI, including landing pages, onboarding
+          flows, and conversion optimization experiments. Works
+          efficiently across the stack to ship growth work rapidly.
+        senior: >
+          Designs full-stack growth systems including API design,
+          data models, and frontend architecture optimized for
+          experimentation and iteration speed. Makes technology
+          choices that balance development velocity with system
+          reliability for growth surfaces.
+        staff: >
+          Defines the growth engineering tech stack and architectural
+          patterns that enable rapid experimentation across the
+          product. Establishes frontend and backend standards
+          specific to growth surfaces that prioritize iteration
+          speed and measurement capability.
+        principal: >
+          Shapes the company's growth engineering platform strategy,
+          evaluating how the technical stack enables or constrains
+          growth velocity. Drives investment in growth-specific
+          infrastructure that compounds the team's ability to ship
+          and learn from experiments.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI code generation significantly accelerates full-stack
+          development for growth features. However, making
+          architectural decisions that optimize for experimentation
+          velocity, designing systems that support rapid iteration,
+          and balancing speed with reliability require experienced
+          engineering judgment.
+
+    - id: analytics_instrumentation
+      name: "Analytics Instrumentation & Data Pipelines"
+      category: technical
+      description: >
+        Building the data infrastructure that powers growth analytics
+        including event collection systems, data transformation
+        pipelines, metrics computation, and integration with
+        analytics and experimentation platforms.
+      proficiency:
+        junior: >
+          Implements analytics events in application code following
+          tracking plans. Verifies data flows through pipelines
+          and troubleshoots common instrumentation and collection
+          issues.
+        mid: >
+          Builds analytics data pipelines including event collection,
+          transformation, and loading into the data warehouse.
+          Implements metrics computations for growth KPIs and
+          ensures data quality through validation and monitoring.
+        senior: >
+          Designs the growth analytics infrastructure including
+          event collection architecture, real-time and batch
+          processing pipelines, and metrics computation frameworks.
+          Establishes data quality standards and builds
+          self-serve analytics capabilities for growth teams.
+        staff: >
+          Defines the organization's growth data infrastructure
+          strategy including pipeline architecture, real-time
+          analytics capabilities, and integration with
+          experimentation platforms. Drives adoption of modern
+          data stack practices for growth analytics.
+        principal: >
+          Shapes the company's growth data strategy, evaluating
+          how real-time analytics, privacy-compliant data
+          collection, and AI-powered insights change the growth
+          analytics landscape. Drives investment in data
+          infrastructure that enables data-driven growth at scale.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI helps generate pipeline code and detect data quality
+          issues. However, designing analytics architectures that
+          serve diverse growth team needs, ensuring data reliability
+          at scale, and making infrastructure trade-offs require
+          human systems engineering expertise.
+
+    - id: onboarding_optimization
+      name: "Onboarding Optimization"
+      category: domain
+      description: >
+        Systematically improving user onboarding experiences through
+        experimentation, behavioral analysis, and UX optimization
+        to increase activation rates, reduce time-to-value, and
+        improve new user retention across web and mobile products.
+      proficiency:
+        junior: >
+          Implements onboarding experiment variants and tracks
+          onboarding metrics. Assists with user research and data
+          analysis for onboarding optimization projects.
+        mid: >
+          Runs onboarding optimization experiments including
+          flow redesigns, copy tests, and progressive disclosure
+          variants. Analyzes onboarding funnels to identify
+          drop-off points and designs targeted interventions.
+        senior: >
+          Designs the onboarding optimization program including
+          testing roadmaps, metric frameworks, and personalization
+          strategies. Builds segmented onboarding experiences
+          based on user attributes and models the impact of
+          onboarding improvements on downstream retention.
+        staff: >
+          Defines the organization's onboarding strategy across
+          products, establishing optimization methodologies,
+          personalization infrastructure, and best practices.
+          Drives cross-product onboarding improvements and
+          positions onboarding as a strategic growth lever.
+        principal: >
+          Shapes the company's new user experience philosophy,
+          evaluating how AI-powered personalization, changing
+          user expectations, and product complexity impact
+          onboarding strategy. Drives long-term investment in
+          onboarding infrastructure that compounds user growth.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI enables more personalized onboarding through
+          behavioral prediction and dynamic content. However,
+          designing onboarding strategies that balance education
+          with engagement, prioritizing optimization efforts,
+          and understanding user psychology require human insight
+          and strategic thinking.
+
+    - id: performance_marketing_tech
+      name: "Performance Marketing Technology"
+      category: technical
+      description: >
+        Building and integrating the technical systems that connect
+        growth engineering with paid acquisition, including conversion
+        tracking, pixel implementation, server-side event APIs,
+        audience sync pipelines, and attribution integration with
+        ad platforms.
+      proficiency:
+        junior: >
+          Implements tracking pixels and conversion events on
+          websites following documentation. Verifies events fire
+          correctly in platform debugging tools and troubleshoots
+          common tracking issues.
+        mid: >
+          Builds server-side conversion tracking using platform
+          APIs (Meta Conversions API, Google Enhanced Conversions).
+          Implements audience sync pipelines and manages the
+          technical integration between the product and ad
+          platforms.
+        senior: >
+          Designs the performance marketing technology architecture
+          including server-side tracking infrastructure, audience
+          data pipelines, and attribution integration. Builds
+          systems that maintain tracking reliability despite
+          browser privacy changes and ad blocker prevalence.
+        staff: >
+          Defines the organization's marketing technology
+          integration strategy including platform architecture,
+          data flow standards, and privacy-compliant tracking
+          approaches. Drives the engineering response to
+          tracking deprecation (cookies, device IDs) and
+          builds future-proof measurement infrastructure.
+        principal: >
+          Shapes the company's marketing technology strategy at
+          the intersection of engineering and advertising. Evaluates
+          how privacy regulation, platform changes, and AI-driven
+          advertising transform the technical requirements for
+          performance marketing, and drives infrastructure
+          investment accordingly.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI assists with tracking implementation and data pipeline
+          code. However, designing marketing technology architectures
+          that navigate privacy changes, maintain data quality across
+          platforms, and adapt to evolving ad platform requirements
+          require deep technical expertise and industry knowledge.

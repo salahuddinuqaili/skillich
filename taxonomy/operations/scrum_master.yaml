@@ -1,0 +1,664 @@
+role:
+  id: scrum_master
+  function: operations
+  name: "Scrum Master"
+  also_known_as:
+    - "Agile Coach"
+    - "Agile Facilitator"
+    - "Delivery Lead"
+    - "Iteration Manager"
+    - "Agile Project Manager"
+  description: >
+    Serves as a servant leader and coach for agile teams, facilitating
+    Scrum events, removing impediments, and fostering an environment
+    where teams can continuously improve their practices, collaboration,
+    and delivery outcomes. Scrum Masters champion agile values and
+    principles across the organization, helping teams and stakeholders
+    adopt mindsets and practices that enable high-performing, self-
+    managing teams.
+  ai_impact:
+    level: "low"
+    summary: >
+      AI has limited impact on the core Scrum Master competencies of
+      facilitation, coaching, and organizational change. While AI can
+      assist with metrics tracking, retrospective pattern analysis, and
+      meeting scheduling, the role's essence lies in human-to-human
+      interaction: reading team dynamics, coaching individuals through
+      growth, and navigating organizational resistance to agile adoption.
+      Scrum Masters who integrate AI into their toolset for data-informed
+      coaching will enhance rather than replace their effectiveness.
+    automating:
+      - "Sprint metrics calculation and velocity tracking"
+      - "Meeting scheduling and agenda preparation"
+      - "Retrospective theme analysis from historical data"
+      - "Standard ceremony documentation and note-taking"
+    augmenting:
+      - "Team health assessment and pattern identification"
+      - "Impediment trend analysis and systemic issue detection"
+      - "Agile maturity assessment and improvement recommendations"
+      - "Stakeholder communication drafting and alignment"
+    preserving:
+      - "Team facilitation, coaching, and interpersonal dynamics"
+      - "Conflict resolution and building psychological safety"
+      - "Organizational change leadership and culture transformation"
+      - "Servant leadership and individual mentoring relationships"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Scrum.org Professional Scrum Competencies"
+        url: "https://www.scrum.org/professional-scrum-competencies"
+      - name: "Scrum Guide 2020"
+        url: "https://scrumguides.org/scrum-guide.html"
+      - name: "ICAgile Coaching Track"
+        url: "https://www.icagile.com/agile-delivery/agile-coaching"
+  levels:
+    - id: junior
+      name: "Junior Scrum Master"
+      years_experience: "0-2"
+      summary: >
+        Facilitates Scrum ceremonies for a single team, learning to
+        apply the Scrum framework effectively. Tracks basic agile
+        metrics, maintains the team board, and removes straightforward
+        impediments. Develops foundational facilitation and coaching
+        skills under mentorship from experienced practitioners.
+    - id: mid
+      name: "Scrum Master"
+      years_experience: "2-5"
+      summary: >
+        Effectively facilitates all Scrum events and coaches teams
+        toward self-management and continuous improvement. Removes
+        organizational impediments, collaborates with Product Owners
+        on backlog health, and adapts practices to team context.
+        Builds strong relationships with stakeholders and advocates
+        for agile practices.
+    - id: senior
+      name: "Senior Scrum Master"
+      years_experience: "5-8"
+      summary: >
+        Coaches multiple teams and their stakeholders, diagnosing
+        systemic impediments and driving improvements that cross team
+        boundaries. Mentors other Scrum Masters, facilitates
+        large-scale planning events, and leads agile transformation
+        efforts within a department. Adapts and combines frameworks
+        based on organizational context.
+    - id: staff
+      name: "Staff Scrum Master"
+      years_experience: "8-12"
+      summary: >
+        Drives agile practice maturity across the organization,
+        designing coaching programs, scaling frameworks, and
+        measurement systems. Partners with leadership to embed
+        agile values into organizational culture, structures, and
+        processes. Builds communities of practice and develops the
+        next generation of agile practitioners.
+    - id: principal
+      name: "Principal Scrum Master"
+      years_experience: "12+"
+      summary: >
+        Serves as the organization's agile thought leader, shaping
+        enterprise agility strategy and advising executive leadership
+        on organizational design for agile delivery. Leads
+        large-scale transformations, influences industry practice
+        through external engagement, and drives cultural change that
+        enables sustained high performance across the enterprise.
+  skills:
+    - id: scrum_framework
+      name: "Scrum Framework Mastery"
+      category: domain
+      description: >
+        Deep understanding and practical application of the Scrum
+        framework including its roles, events, artifacts, and rules
+        as defined in the Scrum Guide, along with the ability to
+        adapt the framework to different team and organizational
+        contexts while preserving its core principles.
+      proficiency:
+        junior: >
+          Understands the Scrum framework fundamentals including
+          Sprint Planning, Daily Scrum, Sprint Review, and Sprint
+          Retrospective. Facilitates ceremonies using established
+          formats and maintains Scrum artifacts with guidance.
+        mid: >
+          Applies the Scrum framework effectively, ensuring events
+          are purposeful and time-boxed. Coaches the team on the
+          intent behind each element and adapts ceremony formats
+          to maximize team engagement and outcomes.
+        senior: >
+          Diagnoses when framework application is superficial and
+          coaches teams toward deeper understanding of Scrum
+          principles. Adapts and extends the framework for different
+          team contexts while preserving its core values. Mentors
+          other Scrum Masters on nuanced framework application.
+        staff: >
+          Defines organizational guidelines for Scrum implementation
+          that balance consistency with team autonomy. Evaluates
+          complementary practices from Kanban, XP, and other
+          frameworks to enhance delivery effectiveness. Leads Scrum
+          Master communities of practice.
+        principal: >
+          Shapes the organization's agile framework strategy,
+          including framework selection, adaptation, and evolution
+          for enterprise contexts. Engages with the broader Scrum
+          community and contributes to the advancement of agile
+          practice.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          The Scrum framework is well-documented, and AI can answer
+          questions about its mechanics, but the real skill lies in
+          contextual application, coaching teams to understand why
+          the framework works, and adapting it to unique team
+          situations, all of which require human judgment.
+
+    - id: facilitation
+      name: "Facilitation"
+      category: communication
+      description: >
+        Designing and leading collaborative sessions including Scrum
+        ceremonies, workshops, planning meetings, and retrospectives
+        that engage participants, surface diverse perspectives, drive
+        toward shared understanding, and produce actionable outcomes.
+      proficiency:
+        junior: >
+          Facilitates standard Scrum ceremonies using established
+          formats and templates. Keeps meetings on track with
+          time-boxing and ensures all participants have opportunity
+          to contribute.
+        mid: >
+          Designs facilitation approaches tailored to the session
+          objective and group dynamics. Uses a variety of techniques
+          such as dot voting, affinity mapping, and silent
+          brainstorming to drive engagement and quality outcomes.
+        senior: >
+          Facilitates complex, high-stakes sessions including
+          cross-team planning, conflict resolution, and strategic
+          workshops. Reads group dynamics in real time and adjusts
+          approach to maintain psychological safety and productive
+          tension.
+        staff: >
+          Coaches facilitators across the organization and develops
+          facilitation toolkits and training programs. Designs and
+          leads large-scale facilitated events such as PI planning
+          and organizational retrospectives.
+        principal: >
+          Facilitates executive-level strategic sessions and
+          organizational design workshops. Shapes the organization's
+          culture of effective meetings and collaborative
+          decision-making through standards, training, and
+          leadership modeling.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Facilitation is an inherently human-interactive skill that
+          requires reading body language, managing group energy, and
+          adapting in real time. AI can suggest facilitation
+          techniques and generate agendas, but the in-the-moment
+          artistry of great facilitation cannot be automated.
+
+    - id: coaching
+      name: "Agile Coaching"
+      category: leadership
+      description: >
+        Coaching individuals, teams, and leaders in agile mindsets,
+        practices, and continuous improvement through questioning,
+        observation, feedback, and experimentation rather than
+        directive instruction, enabling others to develop their own
+        capability and self-sufficiency.
+      proficiency:
+        junior: >
+          Shares agile knowledge with team members through
+          conversations and informal teaching. Asks questions that
+          help the team reflect on their practices and identifies
+          coaching moments with guidance from mentors.
+        mid: >
+          Coaches teams through structured improvement cycles using
+          observation, powerful questions, and targeted experiments.
+          Helps individuals adopt agile practices by connecting
+          principles to their specific challenges and motivations.
+        senior: >
+          Applies professional coaching techniques to work with
+          teams and individuals at deeper levels. Coaches Product
+          Owners on backlog management and stakeholders on agile
+          collaboration. Diagnoses team dysfunction and designs
+          coaching interventions that address root causes.
+        staff: >
+          Develops the coaching capability of Scrum Masters across
+          the organization. Designs coaching frameworks, supervision
+          structures, and development programs that build agile
+          coaching capacity at scale.
+        principal: >
+          Coaches executive leadership on agile mindset and
+          organizational agility. Designs enterprise coaching
+          strategies that develop agile capability from team
+          level to C-suite. Influences the coaching profession
+          through thought leadership and community engagement.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Coaching is fundamentally about human connection, trust,
+          and the ability to hold space for growth. AI can provide
+          coaching frameworks and suggest questions, but the
+          empathetic, intuitive aspects of effective coaching
+          remain irreplaceable.
+
+    - id: team_dynamics
+      name: "Team Dynamics & Health"
+      category: leadership
+      description: >
+        Observing, understanding, and improving team dynamics
+        including psychological safety, trust, collaboration
+        patterns, motivation, and team development stages, to
+        foster an environment where teams can deliver their best
+        work sustainably.
+      proficiency:
+        junior: >
+          Observes team interactions during ceremonies and
+          identifies obvious signs of dysfunction such as
+          disengagement, side conversations, or unresolved
+          conflicts. Raises concerns with mentors and takes
+          simple actions to improve team morale.
+        mid: >
+          Assesses team health using models like Tuckman's stages
+          or team health checks. Identifies patterns in team
+          dynamics that affect delivery and designs interventions
+          such as team agreements, feedback exercises, and bonding
+          activities to address them.
+        senior: >
+          Diagnoses complex team dynamics issues including hidden
+          conflicts, trust deficits, and motivation problems.
+          Designs and facilitates targeted interventions. Coaches
+          team leaders on creating environments of psychological
+          safety and high performance.
+        staff: >
+          Defines team health measurement practices and
+          intervention frameworks for the organization. Trains
+          Scrum Masters on team dynamics assessment and coaches
+          leadership on organizational factors that affect team
+          performance.
+        principal: >
+          Shapes organizational policies and structures that
+          enable healthy team dynamics at scale, including team
+          formation practices, performance management approaches,
+          and leadership behaviors. Influences executive decisions
+          on organizational design for team effectiveness.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Team dynamics are deeply interpersonal and contextual.
+          AI can analyze communication patterns and survey data
+          to surface potential issues, but understanding the
+          nuances of human relationships and intervening
+          effectively requires empathy and social intelligence.
+
+    - id: impediment_removal
+      name: "Impediment Removal"
+      category: leadership
+      description: >
+        Identifying, prioritizing, and resolving obstacles that
+        prevent the team from delivering effectively, including
+        organizational blockers, process inefficiencies, tooling
+        gaps, and external dependencies, while coaching teams to
+        become increasingly self-sufficient in resolving their
+        own impediments.
+      proficiency:
+        junior: >
+          Tracks impediments raised by the team and follows up
+          on resolution. Escalates blockers that are outside the
+          team's control to the appropriate people and maintains
+          an impediment backlog.
+        mid: >
+          Proactively identifies impediments through observation
+          and conversation, not just those explicitly raised.
+          Resolves organizational and process impediments through
+          direct action and relationship-based influence across
+          the organization.
+        senior: >
+          Addresses systemic impediments that affect multiple
+          teams, working with management and other stakeholders
+          to change policies, processes, and structures. Coaches
+          teams to identify and resolve their own impediments
+          independently.
+        staff: >
+          Identifies and drives resolution of organizational-level
+          impediments that inhibit agile adoption and delivery
+          effectiveness. Partners with leadership to remove
+          structural barriers such as misaligned incentives,
+          siloed organizations, and governance overhead.
+        principal: >
+          Drives enterprise-level removal of impediments to
+          organizational agility, including legacy processes,
+          hierarchical decision-making structures, and cultural
+          resistance. Influences executive leadership to invest
+          in systemic solutions.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          AI can help categorize and track impediments, but the
+          core work of navigating organizational politics,
+          building coalitions to drive change, and coaching
+          teams toward self-sufficiency requires human
+          relationship skills and organizational savvy.
+
+    - id: agile_metrics
+      name: "Agile Metrics & Reporting"
+      category: analytical
+      description: >
+        Selecting, tracking, and interpreting agile delivery metrics
+        such as velocity, cycle time, throughput, and quality
+        indicators to provide teams and stakeholders with actionable
+        insights that drive continuous improvement without creating
+        perverse incentives.
+      proficiency:
+        junior: >
+          Tracks basic sprint metrics including velocity, burn-down,
+          and sprint goal achievement. Prepares metric reports and
+          presents them during retrospectives.
+        mid: >
+          Selects metrics appropriate to team context and maturity.
+          Analyzes trends in velocity, cycle time, and defect
+          rates to identify improvement opportunities. Communicates
+          metrics as conversation starters rather than performance
+          judgments.
+        senior: >
+          Designs metrics frameworks that balance delivery
+          predictability, quality, and team health indicators.
+          Coaches teams and stakeholders on healthy metric
+          interpretation and prevents metric gaming. Uses flow
+          metrics to diagnose systemic delivery issues.
+        staff: >
+          Defines organizational agile metrics standards that
+          enable consistent reporting without constraining team
+          autonomy. Designs dashboards that provide portfolio-level
+          visibility while respecting team-level context.
+        principal: >
+          Shapes the organization's measurement philosophy for
+          agile delivery, ensuring metrics evolve with
+          organizational maturity and align with business outcomes
+          rather than activity-based measures.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI excels at metric calculation, trend analysis, and
+          anomaly detection from project management tools. However,
+          choosing which metrics to emphasize, interpreting them in
+          team context, and using them as coaching tools rather
+          than control mechanisms requires human wisdom.
+
+    - id: stakeholder_management
+      name: "Stakeholder Engagement"
+      category: communication
+      description: >
+        Building and maintaining productive relationships with
+        stakeholders including Product Owners, management, and
+        external parties to ensure they understand and support
+        agile practices, have appropriate visibility into team
+        progress, and engage constructively with the team.
+      proficiency:
+        junior: >
+          Communicates team progress and impediments to
+          stakeholders through standard channels. Helps
+          stakeholders understand Scrum ceremonies and how to
+          participate effectively.
+        mid: >
+          Manages stakeholder expectations around delivery
+          timelines and scope flexibility. Coaches stakeholders
+          on healthy engagement patterns with the team and
+          facilitates productive Sprint Reviews.
+        senior: >
+          Navigates complex stakeholder landscapes, aligning
+          competing interests around team capacity and strategic
+          priorities. Coaches leadership on agile governance
+          practices and builds stakeholder buy-in for agile
+          transformation.
+        staff: >
+          Orchestrates stakeholder alignment across multiple
+          teams and programs. Develops stakeholder engagement
+          strategies for agile transformations and coaches
+          leaders on their role in an agile organization.
+        principal: >
+          Serves as a trusted advisor to executive stakeholders
+          on organizational agility. Builds executive-level
+          support for agile practices by demonstrating business
+          value and connecting agile delivery to strategic
+          outcomes.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          Stakeholder engagement depends on trust, empathy, and
+          contextual communication. AI can help prepare materials
+          and track stakeholder sentiment, but the relationship
+          building and influence work is fundamentally human.
+
+    - id: continuous_improvement
+      name: "Continuous Improvement"
+      category: analytical
+      description: >
+        Fostering a culture of regular reflection and iterative
+        improvement through effective retrospectives, experiments,
+        and feedback loops that enable teams to systematically
+        enhance their processes, practices, and outcomes over time.
+      proficiency:
+        junior: >
+          Facilitates basic retrospectives using standard formats
+          like Start/Stop/Continue. Tracks improvement actions
+          and follows up on completion in subsequent sprints.
+        mid: >
+          Designs varied retrospective formats that keep the team
+          engaged and surface meaningful insights. Helps teams
+          design improvement experiments with clear hypotheses and
+          success criteria. Ensures improvement actions are
+          prioritized alongside delivery work.
+        senior: >
+          Coaches teams to take ownership of their improvement
+          process. Identifies patterns across retrospectives that
+          point to deeper systemic issues. Facilitates cross-team
+          improvement initiatives and shares learnings across the
+          organization.
+        staff: >
+          Designs continuous improvement frameworks and practices
+          for the organization. Establishes mechanisms for
+          cross-team learning such as communities of practice,
+          improvement showcases, and organizational retrospectives.
+        principal: >
+          Shapes the organization's learning culture, embedding
+          continuous improvement into leadership expectations,
+          performance management, and organizational rhythms.
+          Drives enterprise-level improvement initiatives that
+          transform organizational capability.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can analyze retrospective data for patterns and
+          suggest improvement experiments from best-practice
+          databases, but creating the psychological safety and
+          motivation for genuine improvement, and coaching teams
+          through the discomfort of change, requires human skill.
+
+    - id: scaling_agile
+      name: "Scaling Agile"
+      category: domain
+      description: >
+        Applying and adapting scaling frameworks such as SAFe, LeSS,
+        Nexus, or custom approaches to coordinate agile delivery
+        across multiple teams, managing inter-team dependencies,
+        shared backlogs, and integrated planning while preserving
+        the benefits of team-level agility.
+      proficiency:
+        junior: >
+          Understands the basics of at least one scaling framework
+          and participates in scaled events such as Scrum of Scrums
+          or PI Planning. Coordinates with other Scrum Masters on
+          cross-team dependencies.
+        mid: >
+          Facilitates scaled agile events and coordinates delivery
+          across two to three teams. Manages cross-team dependencies,
+          shared resources, and integration challenges. Adapts
+          scaling practices to organizational context.
+        senior: >
+          Designs scaling approaches that balance coordination needs
+          with team autonomy. Leads PI Planning and cross-team
+          retrospectives. Evaluates and combines elements from
+          different scaling frameworks based on organizational fit.
+        staff: >
+          Defines the organization's scaling strategy, selecting
+          and customizing frameworks for the organizational context.
+          Coaches leadership on structural changes needed to support
+          scaled agile delivery. Manages the evolution of scaling
+          practices as the organization matures.
+        principal: >
+          Shapes enterprise agility strategy beyond framework
+          selection, addressing organizational design, funding
+          models, and governance structures that enable agility
+          at scale. Advises executive leadership on the
+          organizational transformation required for true
+          enterprise agility.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          Scaling frameworks are well-documented, and AI can
+          provide guidance on framework mechanics. However,
+          adapting scaling approaches to unique organizational
+          contexts, managing the politics of cross-team
+          coordination, and driving the cultural shifts required
+          for effective scaling remain deeply human challenges.
+
+    - id: servant_leadership
+      name: "Servant Leadership"
+      category: leadership
+      description: >
+        Practicing a leadership philosophy centered on serving the
+        team's needs, removing barriers, empowering self-management,
+        and developing others, rather than directing or controlling
+        work, creating an environment where teams can perform at
+        their best.
+      proficiency:
+        junior: >
+          Prioritizes team needs over personal agenda. Takes on
+          administrative and logistical tasks that free the team
+          to focus on delivery. Shows willingness to serve through
+          consistent supportive actions.
+        mid: >
+          Models servant leadership behaviors consistently,
+          empowering the team to make decisions and take ownership.
+          Creates space for team members to grow by stepping back
+          when appropriate and stepping in when needed.
+        senior: >
+          Coaches other Scrum Masters and team leaders on servant
+          leadership principles. Balances serving the team with
+          challenging them to grow. Influences organizational
+          leadership toward servant leadership practices.
+        staff: >
+          Develops servant leadership capability across the
+          organization through training, coaching, and modeling.
+          Shapes management practices to align with servant
+          leadership values and measures leadership effectiveness
+          through team outcomes.
+        principal: >
+          Embodies servant leadership at the organizational level,
+          influencing executive leadership culture. Shapes
+          leadership development programs, performance
+          expectations, and organizational values that promote
+          servant leadership as a core competency.
+      ai_impact:
+        rating: 0.05
+        detail: >
+          Servant leadership is entirely about human presence,
+          empathy, and selfless action in service of others. This
+          is among the least automatable skills in any role, as
+          it requires genuine human connection and moral commitment
+          that AI cannot replicate.
+
+    - id: conflict_resolution
+      name: "Conflict Resolution"
+      category: communication
+      description: >
+        Addressing and resolving interpersonal and team conflicts
+        constructively, transforming disagreements into opportunities
+        for improved understanding, stronger relationships, and
+        better outcomes through active listening, mediation, and
+        facilitated dialogue.
+      proficiency:
+        junior: >
+          Recognizes signs of conflict within the team and raises
+          concerns with mentors. Uses basic active listening
+          techniques and helps create space for team members to
+          express differing viewpoints.
+        mid: >
+          Addresses team conflicts directly using techniques such
+          as non-violent communication and interest-based
+          negotiation. Facilitates conversations between
+          conflicting parties and helps them find mutually
+          acceptable solutions.
+        senior: >
+          Mediates complex conflicts involving multiple parties,
+          strong emotions, or power dynamics. Coaches team members
+          on healthy conflict behaviors and creates team norms that
+          transform conflict into productive discourse.
+        staff: >
+          Develops conflict resolution training and resources for
+          Scrum Masters and team leaders. Coaches leadership on
+          creating organizational conditions where constructive
+          conflict is encouraged and destructive conflict is
+          addressed promptly.
+        principal: >
+          Facilitates resolution of organizational-level conflicts
+          between departments, leadership teams, and strategic
+          priorities. Shapes organizational culture around healthy
+          conflict norms and builds conflict resolution capability
+          as a leadership competency.
+      ai_impact:
+        rating: 0.05
+        detail: >
+          Conflict resolution requires emotional intelligence,
+          active listening, and the ability to hold space for
+          difficult emotions. AI can provide conflict resolution
+          frameworks and suggest techniques, but the practice
+          itself is entirely dependent on human empathy and
+          interpersonal skill.
+
+    - id: organizational_change
+      name: "Organizational Change Agency"
+      category: leadership
+      description: >
+        Driving adoption of agile values, mindsets, and practices
+        across the organization by influencing leadership, building
+        coalitions, addressing resistance, and creating conditions
+        for sustainable change that goes beyond process adoption
+        to cultural transformation.
+      proficiency:
+        junior: >
+          Champions agile values within the team and shares
+          learnings with peers. Supports change initiatives led
+          by more experienced practitioners and provides feedback
+          on what is working at the team level.
+        mid: >
+          Identifies organizational barriers to agile adoption
+          and proposes changes to leadership. Builds relationships
+          across the organization that support agile practice
+          adoption and finds allies for change initiatives.
+        senior: >
+          Leads agile transformation efforts within a department,
+          designing change strategies that address structural,
+          process, and cultural barriers. Builds champion networks
+          and measures transformation progress through outcome-based
+          metrics.
+        staff: >
+          Designs enterprise agile transformation strategies
+          including change roadmaps, stakeholder engagement plans,
+          and measurement frameworks. Partners with HR, leadership,
+          and other functions to embed agile values into
+          organizational systems.
+        principal: >
+          Serves as the executive advisor on organizational agility,
+          shaping strategy for enterprise-wide transformation.
+          Influences board-level conversations on organizational
+          design, culture, and the strategic importance of agile
+          capability as a competitive advantage.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Organizational change is fundamentally about influencing
+          human behavior, navigating politics, and building
+          coalitions. AI can provide change management frameworks
+          and analyze adoption data, but the leadership, courage,
+          and relationship work required to transform organizations
+          is irreducibly human.

@@ -1,0 +1,538 @@
+role:
+  id: cto
+  function: leadership
+  name: "Chief Technology Officer"
+  also_known_as:
+    - CTO
+    - Chief Technical Officer
+    - Chief Architect
+    - Head of Technology
+    - VP Technology (startup context)
+  description: >
+    The Chief Technology Officer is the most senior technology leader in an organization, responsible
+    for defining technology vision, driving innovation, and ensuring the company's technology strategy
+    creates sustainable competitive advantage. The role varies significantly by company stage, from
+    hands-on technical leadership at startups to strategic executive leadership at enterprises.
+  ai_impact:
+    level: moderate-high
+    summary: >
+      AI is profoundly reshaping the CTO role, both as a tool that enhances the CTO's effectiveness
+      and as a strategic domain the CTO must master. CTOs now need deep fluency in AI capabilities
+      to set technology strategy and evaluate opportunities. AI tools augment strategic analysis,
+      technology evaluation, and decision-making. However, the CTO's core responsibility of setting
+      technology vision and building organizations that execute on it remains fundamentally human.
+    automating:
+      - Technology landscape scanning and trend analysis
+      - Architecture documentation and diagram generation
+      - Security vulnerability assessment and compliance monitoring
+      - Vendor comparison and evaluation data gathering
+      - Technical debt quantification and impact analysis
+    augmenting:
+      - Technology strategy development with AI-powered scenario modeling
+      - Architecture decision evaluation with AI-assisted impact analysis
+      - Innovation pipeline management with AI-powered opportunity identification
+      - Technical due diligence for acquisitions and partnerships
+      - Platform strategy optimization through usage analytics and AI recommendations
+    preserving:
+      - Setting technology vision that inspires and aligns the organization
+      - Building and maintaining trust with the board, CEO, and executive peers
+      - Making high-stakes technology bets under deep uncertainty
+      - Representing the company's technology story to investors and customers
+      - Building engineering culture and attracting world-class talent
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Deloitte - CTO as Strategist"
+        url: "https://www2.deloitte.com/us/en/insights/topics/leadership/role-of-chief-technology-officer.html"
+      - name: "McKinsey - The CTO's Role in an AI-First World"
+        url: "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights"
+  levels:
+    - id: startup_cto
+      name: "Startup CTO"
+      years_experience: "8-14"
+      summary: >
+        Serves as the technical co-founder or first senior technical hire at an early-stage
+        company. Combines hands-on architecture and coding with strategic leadership. Owns
+        all technology decisions and builds the founding engineering team. Must balance
+        speed of execution with building a foundation that can scale.
+    - id: growth_cto
+      name: "Growth-Stage CTO"
+      years_experience: "12-18"
+      summary: >
+        Leads technology at a company scaling from product-market fit through rapid growth,
+        typically 50 to 500 engineers. Transitions from hands-on coding to organizational
+        leadership. Drives platform evolution, team scaling, and the technical strategy
+        that supports the company's growth trajectory.
+    - id: scale_cto
+      name: "Scale-Up CTO"
+      years_experience: "15-22"
+      summary: >
+        Leads technology at a large or pre-IPO company with 500 to 2000 engineers. Focuses
+        primarily on technology strategy, organizational design, and executive leadership.
+        Manages complex technology portfolios and drives the platform investments that
+        define the company's technical competitive advantage.
+    - id: enterprise_cto
+      name: "Enterprise CTO"
+      years_experience: "20-30"
+      summary: >
+        Serves as the top technology executive at a large enterprise with thousands of engineers.
+        Operates as a peer to the CEO with board-level responsibilities. Sets multi-year
+        technology vision, drives digital transformation, and ensures technology creates
+        sustainable competitive advantage at global scale.
+    - id: transformational_cto
+      name: "Transformational CTO"
+      years_experience: "22+"
+      summary: >
+        A rare CTO who combines deep technical expertise with exceptional executive leadership
+        to drive industry-defining technology transformations. Shapes how the broader market
+        thinks about technology in their domain. Often serves on multiple boards and influences
+        technology policy at the national or global level.
+  skills:
+    - id: technology_vision
+      name: "Technology Vision"
+      category: domain
+      description: >
+        The ability to envision how technology will evolve and to craft a compelling, multi-year
+        technology strategy that positions the company for long-term success. Encompasses trend
+        identification, strategic foresight, and the ability to articulate a vision that inspires
+        the organization and the market.
+      proficiency:
+        junior: >
+          Develops a clear technology vision for a startup or small company. Identifies the key
+          technology trends relevant to the business and makes sound bets about which to pursue.
+          Communicates the vision in ways that attract early engineering talent and investor interest.
+        mid: >
+          Crafts a compelling technology vision for a growth-stage company that balances current
+          execution needs with long-term strategic positioning. Identifies emerging technologies
+          that will reshape the competitive landscape and begins positioning the company to capitalize.
+        senior: >
+          Defines a multi-year technology vision for a large company that creates competitive
+          differentiation. Connects technology strategy to business outcomes in ways that resonate
+          with the board and investors. Anticipates market shifts and positions the company ahead
+          of them.
+        staff: >
+          Sets technology vision at the enterprise level that shapes the company's market identity
+          and competitive positioning. Creates visions that influence how the industry thinks about
+          technology in the company's domain. Attracts top talent and partnerships through the
+          strength of the vision.
+        principal: >
+          Creates technology visions that reshape entire industries. Recognized globally as a
+          visionary whose perspectives influence technology investment and adoption patterns.
+          Sets multi-decade technology direction that creates lasting competitive advantage.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can accelerate technology trend analysis and scenario modeling, but crafting a vision
+          that inspires an organization and positions a company competitively requires human
+          creativity, market intuition, and strategic judgment.
+
+    - id: architecture_strategy
+      name: "Architecture Strategy"
+      category: technical
+      description: >
+        The ability to set architectural direction at the enterprise level, making strategic
+        decisions about platforms, systems, and technical approaches that balance current needs
+        with future scalability, maintainability, and adaptability.
+      proficiency:
+        junior: >
+          Sets architectural direction for a startup, making pragmatic decisions that balance
+          speed with technical quality. Designs systems that can scale from initial launch
+          through early growth. Makes sound technology choices with limited resources.
+        mid: >
+          Drives architectural strategy for a growing company, managing the transition from
+          startup architecture to scalable platforms. Makes strategic decisions about when to
+          re-architect versus when to extend existing systems. Balances technical debt management
+          with feature velocity.
+        senior: >
+          Sets architectural direction for a large company with complex, multi-product technology
+          portfolios. Makes strategic platform decisions that affect hundreds of engineers and
+          millions of users. Creates architectural governance that maintains quality without
+          stifling innovation.
+        staff: >
+          Defines architectural strategy at the enterprise level, managing complex technology
+          ecosystems spanning multiple products, platforms, and data centers. Makes architecture
+          decisions that shape the company's technical capabilities for years. Creates
+          architectural principles that guide thousands of engineers.
+        principal: >
+          Sets architectural direction at industry-defining scale. Creates architectural approaches
+          that become reference models for the industry. Makes architecture decisions that
+          influence how the broader technology community thinks about system design.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can assist with architecture analysis, pattern identification, and impact assessment.
+          AI tools can evaluate architectural options against quality attributes. However, setting
+          architectural direction that accounts for organizational capabilities, business strategy,
+          and market dynamics requires deep human expertise and judgment.
+
+    - id: innovation_leadership
+      name: "Innovation Leadership"
+      category: leadership
+      description: >
+        The ability to foster a culture of innovation, identify and incubate emerging technology
+        opportunities, and create systematic approaches to turning innovative ideas into business
+        value while managing the inherent risk and uncertainty of innovation.
+      proficiency:
+        junior: >
+          Drives innovation at a startup where the entire company is the innovation vehicle.
+          Makes smart bets about which technologies and approaches to pursue. Creates a culture
+          where rapid experimentation is valued and failure is treated as learning.
+        mid: >
+          Builds innovation programs at a growing company, creating space for experimentation
+          while maintaining focus on core execution. Identifies promising technology opportunities
+          and creates paths to evaluate and adopt them. Balances innovation investment with
+          delivery commitments.
+        senior: >
+          Leads innovation strategy at a large company, creating programs and structures that
+          systematically generate and evaluate innovative ideas. Manages a portfolio of innovation
+          bets at different stages of maturity. Connects innovation outcomes to business value.
+        staff: >
+          Drives enterprise-wide innovation strategy. Creates innovation ecosystems that include
+          internal R&D, partnerships, acquisitions, and open source contributions. Builds
+          innovation into the company's DNA rather than treating it as a separate activity.
+        principal: >
+          Defines innovation approaches that reshape the industry. Creates innovation frameworks
+          and cultures that consistently produce breakthrough results. Recognized globally as a
+          leader in technology innovation and its application to business value.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can help identify innovation opportunities, analyze patent landscapes, and evaluate
+          emerging technologies. However, innovation leadership requires human creativity,
+          risk tolerance, and the ability to inspire teams to pursue ambitious goals in the
+          face of uncertainty.
+
+    - id: executive_communication
+      name: "Executive Communication"
+      category: communication
+      description: >
+        The ability to communicate technology strategy, risks, and opportunities to boards,
+        investors, customers, and the public in compelling and accessible ways that build
+        confidence and drive alignment.
+      proficiency:
+        junior: >
+          Communicates technology strategy effectively to investors, early customers, and the
+          founding team. Translates complex technical concepts into language that non-technical
+          stakeholders understand and find compelling. Pitches technology vision as part of
+          fundraising efforts.
+        mid: >
+          Presents technology strategy to the board and investors with clarity and confidence.
+          Communicates effectively with enterprise customers about technology roadmap and security.
+          Builds credibility with the executive team through transparent and insightful communication.
+        senior: >
+          Commands respect in boardrooms and at industry events through exceptional communication.
+          Shapes stakeholder confidence in the company's technology direction. Communicates
+          complex technology decisions in ways that build trust with investors and customers.
+        staff: >
+          Operates as the company's primary technology voice to external audiences. Delivers
+          keynotes that shape market perception. Communicates with regulators, analysts, and
+          media about technology strategy with authority and nuance.
+        principal: >
+          Communicates with mastery across all audiences from engineers to heads of state.
+          Shapes public discourse about technology through compelling communication. Recognized
+          as one of the most effective technology communicators in the industry.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can help draft communications, prepare presentations, and analyze audience reactions.
+          However, the ability to command a room, build trust through personal presence, and adapt
+          messaging in real time remains a fundamentally human skill.
+
+    - id: build_vs_buy
+      name: "Build vs. Buy Strategy"
+      category: analytical
+      description: >
+        The ability to make strategic decisions about when to build technology internally versus
+        acquiring it through purchase, partnership, or open source adoption, optimizing for
+        competitive advantage, speed, cost, and long-term strategic flexibility.
+      proficiency:
+        junior: >
+          Makes sound build-versus-buy decisions for a startup, optimizing for speed and resource
+          efficiency. Evaluates third-party tools and platforms pragmatically. Avoids the common
+          startup trap of building everything from scratch while also avoiding critical vendor
+          dependencies.
+        mid: >
+          Develops build-versus-buy frameworks for a growing company. Evaluates complex tradeoffs
+          between internal development, commercial products, and open source. Makes strategic
+          decisions about which capabilities are core differentiators that must be built internally.
+        senior: >
+          Sets build-versus-buy strategy at the organizational level. Makes multi-million dollar
+          decisions about technology investments with sophisticated analysis of total cost of
+          ownership, strategic value, and risk. Creates frameworks that other leaders use for
+          consistent decision-making.
+        staff: >
+          Defines the company's technology sourcing strategy across build, buy, partner, and
+          open source. Makes decisions that shape the company's technology portfolio for years.
+          Negotiates strategic technology partnerships that create unique competitive advantages.
+        principal: >
+          Makes industry-shaping build-versus-buy decisions at global scale. Creates technology
+          sourcing strategies that become models for the industry. Influences how technology
+          vendors develop their products through the strategic importance of the decisions.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can significantly improve build-versus-buy analysis through automated cost modeling,
+          vendor comparison, and risk assessment. AI tools can monitor the open source landscape
+          and evaluate technology maturity. However, strategic judgment about which capabilities
+          provide competitive differentiation requires human insight.
+
+    - id: security_governance
+      name: "Security Governance"
+      category: technical
+      description: >
+        The ability to establish and maintain security governance across the technology organization,
+        ensuring the company's technology assets, customer data, and systems are protected while
+        balancing security requirements with business agility and user experience.
+      proficiency:
+        junior: >
+          Establishes security practices for a startup including secure development practices,
+          basic compliance requirements, and incident response capabilities. Makes pragmatic
+          security decisions that protect the company without paralyzing development velocity.
+        mid: >
+          Builds a comprehensive security program for a growing company. Hires security talent
+          and establishes security governance processes. Ensures compliance with relevant regulations
+          and industry standards. Manages security incidents with appropriate urgency and transparency.
+        senior: >
+          Drives security strategy at the enterprise level, managing complex compliance requirements
+          across multiple products and geographies. Creates security governance that scales across
+          a large engineering organization. Builds relationships with regulators and auditors.
+        staff: >
+          Sets the company's overall security posture and governance model. Manages security risk
+          at the board level. Creates security cultures that make security everyone's responsibility
+          rather than a specialized function. Drives industry collaboration on security challenges.
+        principal: >
+          Shapes security practices at an industry level. Influences security regulations and
+          standards through thought leadership and direct engagement with policymakers. Creates
+          security governance models that other companies adopt as best practices.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI is transforming security governance through automated threat detection, vulnerability
+          scanning, and compliance monitoring. AI tools can identify security risks in code and
+          infrastructure in real time. However, setting security strategy, managing risk appetite,
+          and building security culture require human judgment and leadership.
+
+    - id: technical_due_diligence
+      name: "Technical Due Diligence"
+      category: analytical
+      description: >
+        The ability to evaluate technology assets, architecture quality, engineering team capabilities,
+        and technical risk for investment decisions, acquisitions, and strategic partnerships,
+        providing assessments that inform high-stakes business decisions.
+      proficiency:
+        junior: >
+          Evaluates the technology and engineering team of potential acquisition targets or
+          investment opportunities. Assesses code quality, architecture soundness, and team
+          capabilities. Identifies key technical risks and integration challenges.
+        mid: >
+          Leads comprehensive technical due diligence for significant acquisitions. Creates
+          structured evaluation frameworks that assess technology, people, process, and
+          technical debt. Provides clear recommendations that inform deal terms and integration
+          planning.
+        senior: >
+          Drives technical due diligence for major acquisitions and strategic investments.
+          Evaluates complex technology portfolios and provides nuanced assessments of strategic
+          value, risk, and integration cost. Influences deal structure and valuation.
+        staff: >
+          Sets the company's approach to technical due diligence across all M&A activity.
+          Creates reusable frameworks and playbooks. Advises the board on technology-related
+          aspects of major deals. Evaluates technology assets at billion-dollar-plus valuations.
+        principal: >
+          Recognized as an industry expert in technology due diligence. Advises PE firms,
+          venture capitalists, and corporate boards on technology evaluation. Creates due
+          diligence methodologies that become industry standards.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can accelerate code analysis, architecture evaluation, and technical debt
+          quantification. AI tools can compare technology stacks against industry benchmarks.
+          However, assessing team quality, strategic technology value, and integration
+          complexity requires experienced human judgment.
+
+    - id: talent_strategy
+      name: "Talent Strategy"
+      category: leadership
+      description: >
+        The ability to develop and execute a comprehensive talent strategy that attracts, develops,
+        and retains world-class engineering talent, creating an organizational culture and employee
+        value proposition that serves as a competitive advantage.
+      proficiency:
+        junior: >
+          Builds the founding engineering team and establishes the engineering culture for a startup.
+          Attracts talent through the strength of the technical vision and the opportunity to build
+          something new. Creates an environment where engineers want to stay and grow.
+        mid: >
+          Develops a comprehensive talent strategy for a growing engineering organization. Builds
+          employer brand, creates career frameworks, and establishes development programs. Manages
+          the challenges of scaling culture while growing the team rapidly.
+        senior: >
+          Drives talent strategy for a large engineering organization. Creates programs that develop
+          engineers into leaders. Builds the company's reputation as a premier engineering employer.
+          Develops innovative approaches to attracting talent in competitive markets.
+        staff: >
+          Shapes the company-wide engineering talent strategy. Creates talent programs that become
+          competitive advantages. Builds organizations known for developing exceptional engineering
+          talent. Influences how the industry thinks about engineering talent development.
+        principal: >
+          Recognized as an exceptional builder and developer of engineering talent. Creates
+          organizations whose alumni are sought-after leaders across the industry. Shapes how
+          the industry thinks about engineering careers and talent development.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can assist with talent analytics, skills gap analysis, and development plan
+          optimization. However, building a talent strategy that attracts and retains top
+          engineers requires understanding human motivation, creating meaningful cultures,
+          and building personal relationships that AI cannot replicate.
+
+    - id: product_technology_alignment
+      name: "Product-Technology Alignment"
+      category: domain
+      description: >
+        The ability to ensure deep alignment between product strategy and technology capabilities,
+        creating a technology platform and architecture that enables the product roadmap while
+        opening new product opportunities through technology innovation.
+      proficiency:
+        junior: >
+          Ensures tight alignment between product goals and technical execution at a startup.
+          Makes technology choices that enable the product vision while maintaining flexibility
+          for pivots. Partners closely with the CEO or product lead on product-technology tradeoffs.
+        mid: >
+          Drives product-technology alignment at a growing company with an expanding product
+          portfolio. Creates technology platforms that accelerate product development. Identifies
+          opportunities where technology capabilities can enable new product experiences.
+        senior: >
+          Ensures strategic alignment between product and technology at the enterprise level.
+          Creates technology strategies that open new product possibilities. Partners with the
+          CPO to create shared roadmaps that optimize both product and technology investment.
+        staff: >
+          Drives product-technology alignment across a complex product portfolio. Creates
+          platform strategies that provide competitive product advantages. Shapes how the
+          company thinks about the relationship between technology investment and product
+          differentiation.
+        principal: >
+          Creates product-technology alignment models that redefine competitive advantage
+          in the industry. Identifies opportunities where technology can create entirely new
+          product categories. Shapes how the industry thinks about the relationship between
+          technology capability and product innovation.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can help identify market opportunities, analyze product usage patterns, and model
+          technology investment scenarios. However, the strategic judgment required to align
+          product vision with technology capabilities in ways that create competitive
+          advantage remains a deeply human capability.
+
+    - id: industry_thought_leadership
+      name: "Industry Thought Leadership"
+      category: communication
+      description: >
+        The ability to shape industry conversations through writing, speaking, community engagement,
+        and public presence, building personal and company credibility that attracts talent,
+        customers, and partnership opportunities.
+      proficiency:
+        junior: >
+          Builds a personal brand through technical blogging, conference talks, and community
+          participation. Represents the startup at industry events and in the press. Uses
+          personal visibility to attract early talent and customers.
+        mid: >
+          Maintains a recognized industry presence through regular speaking, writing, and
+          community engagement. Represents the company at major conferences and in media.
+          Attracts talent and partnership opportunities through personal credibility.
+        senior: >
+          Recognized as a leading voice in the technology industry. Delivers keynotes at major
+          conferences and publishes widely. Shapes industry conversations about technology
+          trends and leadership. Attracts significant attention and opportunities for the company.
+        staff: >
+          Operates as one of the most visible CTOs in the industry. Influences industry direction
+          through thought leadership and community engagement. Creates opportunities for the
+          company through personal reputation and relationships at the highest levels.
+        principal: >
+          Recognized as one of the defining technology leaders of the era. Shapes how the
+          industry and public think about technology. Influences policy and regulation through
+          personal authority and expertise. Legacy includes influence on the next generation
+          of technology leaders.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can help prepare content, identify speaking opportunities, and manage public
+          presence. However, thought leadership is built on authenticity, original thinking,
+          and personal experience, qualities that require human creativity and perspective.
+
+    - id: platform_strategy
+      name: "Platform Strategy"
+      category: technical
+      description: >
+        The ability to develop and execute platform strategies that create leverage across
+        the organization, enabling rapid product development, external ecosystem growth,
+        and sustainable competitive advantages through shared technical capabilities.
+      proficiency:
+        junior: >
+          Makes strategic decisions about platform versus product investment at a startup.
+          Identifies which capabilities should be built as reusable platforms versus
+          purpose-built features. Creates the foundation for platform thinking in the
+          engineering culture.
+        mid: >
+          Develops platform strategy for a growing company, identifying which capabilities
+          to invest in as shared platforms. Balances platform investment with product delivery
+          urgency. Creates platform roadmaps that anticipate future product needs.
+        senior: >
+          Drives enterprise platform strategy spanning internal developer platforms, API
+          ecosystems, and shared services. Makes strategic decisions about platform investment
+          that shape the company's technical capabilities for years. Creates platform
+          governance models that balance standardization with flexibility.
+        staff: >
+          Defines the company's overall platform strategy as a key source of competitive
+          advantage. Creates external platform ecosystems that generate network effects and
+          lock-in. Develops platform investment frameworks that optimize for long-term
+          strategic value.
+        principal: >
+          Creates platform strategies that reshape markets and define industry platforms.
+          Builds platform ecosystems at unprecedented scale. Influences how the industry
+          thinks about platform strategy and its role in creating competitive advantage.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can help analyze platform usage, identify integration opportunities, and optimize
+          platform architectures. However, platform strategy requires deep understanding of
+          market dynamics, developer ecosystems, and competitive positioning that depends
+          on human strategic judgment.
+
+    - id: ai_strategy
+      name: "AI and Machine Learning Strategy"
+      category: domain
+      description: >
+        The ability to develop and execute the company's AI and machine learning strategy,
+        identifying high-value applications, building or acquiring AI capabilities, managing
+        AI-related risks, and positioning the company to benefit from the AI transformation.
+      proficiency:
+        junior: >
+          Evaluates AI opportunities for a startup, identifying where AI and ML can create
+          product differentiation or operational efficiency. Makes pragmatic decisions about
+          building versus buying AI capabilities. Stays current on AI developments relevant
+          to the business.
+        mid: >
+          Develops a comprehensive AI strategy for a growing company. Builds or hires AI
+          capabilities. Identifies the highest-value applications of AI across the business.
+          Manages the risks of AI adoption including bias, reliability, and data privacy.
+        senior: >
+          Drives enterprise AI strategy, managing a portfolio of AI initiatives across the
+          organization. Creates AI governance frameworks and establishes responsible AI practices.
+          Positions the company as an AI-forward organization that attracts AI talent and
+          partnership opportunities.
+        staff: >
+          Defines the company's AI strategy as a core element of competitive positioning.
+          Creates AI platforms and capabilities that provide sustainable advantages. Shapes
+          how the company thinks about the AI transformation and its implications for every
+          aspect of the business.
+        principal: >
+          Shapes the industry's approach to AI strategy and governance. Creates AI strategies
+          at unprecedented scale. Influences AI policy and regulation through thought leadership
+          and direct engagement. Recognized as one of the leading voices on AI strategy globally.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          Ironically, AI strategy itself is augmented by AI tools that can analyze the AI
+          landscape, evaluate model capabilities, and identify application opportunities.
+          However, setting AI strategy that accounts for ethical considerations, competitive
+          dynamics, and organizational readiness requires experienced human judgment.

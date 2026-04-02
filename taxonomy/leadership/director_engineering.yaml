@@ -1,0 +1,513 @@
+role:
+  id: director_engineering
+  function: leadership
+  name: "Director of Engineering"
+  also_known_as:
+    - Engineering Director
+    - Director of Software Engineering
+    - Director of Development
+    - Senior Engineering Manager
+    - Head of Engineering
+  description: >
+    The Director of Engineering leads multiple engineering teams and managers, translating organizational
+    strategy into technical execution across a department or division. They are accountable for delivery,
+    talent development, and operational health across their organization, balancing short-term execution
+    with long-term technical investment.
+  ai_impact:
+    level: moderate
+    summary: >
+      AI is reshaping how Directors of Engineering operate by providing better data for organizational
+      decisions and automating routine management overhead. AI-powered analytics can surface team health
+      metrics, predict delivery risks, and optimize resource allocation. However, the core of the role
+      remains deeply human: building trust, navigating organizational politics, and making judgment calls
+      that require contextual awareness no AI can replicate.
+    automating:
+      - Status reporting and progress tracking across teams
+      - Resource utilization analysis and capacity planning calculations
+      - Identifying patterns in engineering metrics and team performance data
+      - Generating first drafts of organizational communications and updates
+      - Scheduling optimization and meeting load balancing
+    augmenting:
+      - Organizational design decisions informed by network analysis
+      - Hiring pipeline optimization with AI-assisted candidate screening
+      - Technical strategy validation through AI-powered market analysis
+      - Performance review preparation with AI-summarized feedback data
+      - Risk identification across multiple project portfolios
+    preserving:
+      - Building and maintaining trust with engineering managers
+      - Navigating complex organizational politics and stakeholder dynamics
+      - Making high-judgment calls about team structure and people
+      - Coaching and developing engineering managers into leaders
+      - Representing engineering perspective in cross-functional leadership forums
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "McKinsey - The State of AI in 2024"
+        url: "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai"
+      - name: "Harvard Business Review - How AI Will Transform Management"
+        url: "https://hbr.org/2023/10/how-ai-will-transform-management"
+  levels:
+    - id: m3_director
+      name: "Director (M3)"
+      years_experience: "8-12"
+      summary: >
+        Manages two to four engineering teams through front-line managers. Owns delivery for a
+        significant product area or platform domain. Develops emerging managers and establishes
+        team processes that scale. Primarily focused on execution excellence within their scope.
+    - id: m4_senior_director
+      name: "Senior Director (M4)"
+      years_experience: "12-16"
+      summary: >
+        Leads a department of five to ten teams spanning multiple product areas or technical domains.
+        Drives cross-team technical strategy and organizational design. Acts as a key partner to
+        product and business leadership. Responsible for significant headcount and budget decisions.
+    - id: m5_group_director
+      name: "Group Director (M5)"
+      years_experience: "15-20"
+      summary: >
+        Oversees a large engineering organization of ten or more teams, often spanning multiple
+        departments. Sets multi-year technical direction and organizational strategy. Operates as
+        a senior executive with significant influence on company-wide engineering decisions and culture.
+    - id: m5_plus_distinguished_director
+      name: "Distinguished Director (M5+)"
+      years_experience: "18-25"
+      summary: >
+        Leads the largest and most complex engineering organizations within the company. Shapes
+        company-wide engineering strategy and culture. Serves as a key advisor to VP and C-level
+        leadership. Often responsible for the most critical and high-risk technical initiatives.
+    - id: m5_plus_fellow_director
+      name: "Fellow Director (M5+ Fellow)"
+      years_experience: "20+"
+      summary: >
+        Recognized as one of the top engineering leaders in the organization with company-wide
+        influence. Drives transformational initiatives that reshape how engineering operates.
+        Mentors directors and senior directors. Represents the company externally as a thought
+        leader in engineering management.
+  skills:
+    - id: organizational_design
+      name: "Organizational Design"
+      category: leadership
+      description: >
+        The ability to structure engineering teams, reporting lines, and collaboration models
+        to maximize delivery effectiveness, minimize coordination overhead, and support the
+        growth of individuals and teams.
+      proficiency:
+        junior: >
+          Understands basic team structures such as feature teams versus platform teams. Can
+          articulate the tradeoffs of different organizational models when prompted and follows
+          established organizational patterns.
+        mid: >
+          Designs team boundaries and reporting structures for a department of multiple teams.
+          Identifies when organizational friction is causing delivery problems and proposes
+          structural changes to address them.
+        senior: >
+          Architects organizational structures that optimize for both delivery speed and technical
+          excellence across a large department. Anticipates how growth will stress current structures
+          and proactively redesigns before problems emerge.
+        staff: >
+          Designs organization-wide structures that balance autonomy and alignment across many
+          departments. Creates innovative organizational models that become templates adopted
+          across the company. Mentors other directors on organizational design.
+        principal: >
+          Shapes the company's overall engineering organizational philosophy. Designs structures
+          for unprecedented scale or complexity. Publishes and speaks on organizational design
+          principles that influence the broader industry.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can provide network analysis and communication pattern data to inform organizational
+          design decisions, but the judgment required to balance human dynamics, political realities,
+          and strategic goals remains fundamentally human.
+
+    - id: multi_team_delivery
+      name: "Multi-Team Delivery"
+      category: leadership
+      description: >
+        The ability to coordinate and drive execution across multiple engineering teams working
+        on interconnected or parallel initiatives, ensuring predictable delivery of business outcomes
+        while managing dependencies and risks.
+      proficiency:
+        junior: >
+          Tracks delivery progress across two to four teams using established processes. Identifies
+          cross-team dependencies and escalates blockers. Runs regular coordination ceremonies and
+          ensures teams are aligned on priorities.
+        mid: >
+          Orchestrates delivery across five to eight teams with complex interdependencies. Designs
+          delivery processes that provide visibility without excessive overhead. Makes tradeoff
+          decisions about scope and sequencing across teams.
+        senior: >
+          Drives delivery of large-scale, multi-quarter programs spanning many teams. Develops
+          sophisticated approaches to managing risk and uncertainty at scale. Creates delivery
+          frameworks that other directors adopt across the organization.
+        staff: >
+          Manages delivery across an entire engineering department with dozens of teams. Balances
+          multiple strategic programs with ongoing operational commitments. Develops delivery
+          approaches that work across different team maturity levels and domains.
+        principal: >
+          Orchestrates company-wide technical programs of unprecedented scope and complexity.
+          Designs delivery systems that scale across hundreds of engineers. Innovates on delivery
+          methodology in ways that influence the broader engineering community.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can significantly improve delivery tracking, risk prediction, and dependency analysis.
+          Automated tools can surface bottlenecks and forecast completion dates. However, the human
+          skills of negotiation, motivation, and judgment under uncertainty remain essential.
+
+    - id: technical_strategy
+      name: "Technical Strategy"
+      category: domain
+      description: >
+        The ability to define and drive multi-year technical direction for an engineering organization,
+        making strategic choices about technology investments, platform evolution, and technical debt
+        management that align with business objectives.
+      proficiency:
+        junior: >
+          Contributes to technical strategy discussions with informed perspectives. Understands how
+          current technical choices affect future options. Can articulate the technical direction for
+          their area and connect it to broader organizational goals.
+        mid: >
+          Develops and drives technical strategy for a department, making key decisions about platform
+          investments, technology adoption, and technical debt. Balances innovation with stability and
+          communicates strategy effectively to both technical and non-technical stakeholders.
+        senior: >
+          Shapes technical strategy across multiple departments, identifying opportunities for
+          consolidation, shared platforms, and strategic technology bets. Creates compelling technical
+          narratives that secure executive buy-in and drive organizational alignment.
+        staff: >
+          Defines organization-wide technical strategy that positions the company for long-term
+          competitive advantage. Evaluates emerging technologies and makes high-stakes investment
+          decisions. Creates technical strategy frameworks adopted across the company.
+        principal: >
+          Sets the company's overall technical direction in partnership with the CTO. Makes
+          industry-shaping technology decisions. Recognized externally as a thought leader in
+          technical strategy for the company's domain.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can assist with market analysis, technology trend evaluation, and scenario modeling
+          for strategic decisions. However, crafting a coherent technical strategy that accounts
+          for organizational capabilities, market position, and competitive dynamics requires
+          deep human judgment.
+
+    - id: hiring_scaling
+      name: "Hiring and Scaling"
+      category: leadership
+      description: >
+        The ability to attract, evaluate, and onboard engineering talent at scale, building
+        high-performing teams that grow effectively while maintaining quality and culture as
+        the organization expands.
+      proficiency:
+        junior: >
+          Manages hiring for two to four teams, working with recruiters to maintain a healthy
+          pipeline. Calibrates interview feedback across teams and makes sound hiring decisions.
+          Develops onboarding processes that get new hires productive quickly.
+        mid: >
+          Scales hiring across a department, designing interview processes that are consistent
+          and effective. Builds employer brand within the local market. Creates workforce plans
+          that anticipate growth needs and develops strategies to fill critical skill gaps.
+        senior: >
+          Drives hiring strategy for a large engineering organization, including executive-level
+          recruitment. Builds the company's engineering brand in the broader market. Designs
+          scaling approaches that maintain quality and culture during rapid growth phases.
+        staff: >
+          Develops organization-wide hiring strategy and processes. Creates innovative approaches
+          to talent acquisition in competitive markets. Builds programs for developing internal
+          talent pipelines and reducing dependency on external hiring.
+        principal: >
+          Shapes the company's overall talent strategy for engineering. Builds industry-leading
+          hiring and development programs. Attracts top talent through personal reputation and
+          the organizational culture they have built.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI is transforming candidate sourcing, resume screening, and interview scheduling.
+          AI-powered tools can help reduce bias in job descriptions and identify non-obvious
+          candidate pools. However, evaluating culture fit, leadership potential, and making
+          final hiring decisions remain deeply human activities.
+
+    - id: budget_ownership
+      name: "Budget Ownership"
+      category: analytical
+      description: >
+        The ability to manage engineering budgets including headcount, infrastructure, tooling,
+        and vendor costs, making investment decisions that maximize business value while maintaining
+        fiscal discipline and transparency.
+      proficiency:
+        junior: >
+          Manages a team-level budget for headcount and tooling. Tracks spending against plan
+          and escalates variances. Participates in annual planning processes and provides
+          input on resource needs for their area.
+        mid: >
+          Owns a department-level budget spanning headcount, infrastructure, and vendor costs.
+          Makes tradeoff decisions about resource allocation across teams. Builds business cases
+          for incremental investment and presents them to leadership.
+        senior: >
+          Manages a significant engineering budget with full P&L awareness. Drives cost optimization
+          initiatives across the organization. Creates sophisticated financial models for technology
+          investments and can present ROI analysis to executive leadership.
+        staff: >
+          Oversees budgets across multiple departments, making strategic investment decisions
+          that shape the company's technical capabilities. Develops financial frameworks for
+          evaluating build-versus-buy decisions and platform investments at scale.
+        principal: >
+          Partners with the CFO and CEO on company-wide technology investment strategy. Makes
+          board-level financial presentations about engineering investment. Develops innovative
+          financial models for valuing technology assets and technical debt.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can automate budget tracking, spending analysis, and variance reporting. Predictive
+          models can forecast infrastructure costs and optimize cloud spending. However, making
+          strategic investment decisions that balance technical and business considerations
+          requires human judgment and organizational context.
+
+    - id: cross_functional_leadership
+      name: "Cross-Functional Leadership"
+      category: communication
+      description: >
+        The ability to partner effectively with product, design, data science, operations, and
+        business teams to drive aligned outcomes, translating between technical and business
+        perspectives while building trust and shared accountability.
+      proficiency:
+        junior: >
+          Partners effectively with product and design counterparts for their area. Translates
+          technical constraints and opportunities into language non-technical stakeholders
+          understand. Builds trusting relationships with cross-functional peers.
+        mid: >
+          Leads cross-functional initiatives spanning multiple product and business areas.
+          Navigates competing priorities between engineering and other functions. Creates
+          shared frameworks for decision-making that build alignment across functions.
+        senior: >
+          Drives cross-functional alignment at the department or division level. Resolves
+          complex conflicts between engineering and business priorities. Shapes how product
+          and engineering collaborate across the organization.
+        staff: >
+          Influences cross-functional strategy at the organizational level. Builds partnerships
+          with senior leaders across all functions. Creates organizational structures and
+          processes that optimize cross-functional collaboration at scale.
+        principal: >
+          Shapes the company's cross-functional operating model. Serves as a trusted advisor
+          to leaders across all functions. Drives company-wide initiatives that require deep
+          collaboration between engineering and the rest of the business.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          AI has limited impact on cross-functional leadership as it fundamentally depends on
+          human relationships, trust, empathy, and the ability to navigate organizational
+          dynamics. AI can help prepare materials and analyze data for cross-functional
+          discussions but cannot replace the interpersonal skills required.
+
+    - id: engineering_culture
+      name: "Engineering Culture"
+      category: leadership
+      description: >
+        The ability to shape and sustain an engineering culture that attracts top talent,
+        drives innovation, maintains high standards, and adapts to changing market and
+        organizational conditions while preserving core values.
+      proficiency:
+        junior: >
+          Reinforces positive engineering culture within their teams. Addresses culture issues
+          promptly when they arise. Models the behaviors and values they want to see in their
+          organization and creates safe environments for teams to take risks.
+        mid: >
+          Actively shapes engineering culture across a department. Designs rituals, processes,
+          and communication practices that reinforce desired cultural attributes. Identifies
+          and addresses cultural anti-patterns before they become systemic.
+        senior: >
+          Defines and drives engineering culture across a large organization. Creates programs
+          and initiatives that strengthen culture during periods of growth or change. Balances
+          preserving core cultural values with evolving practices for new challenges.
+        staff: >
+          Shapes the company's overall engineering culture. Creates cultural frameworks and
+          programs that scale across the entire engineering organization. Develops culture
+          leaders at every level of the organization.
+        principal: >
+          Establishes engineering cultural norms that become defining aspects of the company's
+          identity and employer brand. Influences engineering culture beyond the company through
+          writing, speaking, and community engagement.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Engineering culture is fundamentally about human connection, shared values, and
+          behavioral norms. AI has minimal direct impact on culture building, though AI tools
+          can help measure cultural health through sentiment analysis and engagement surveys.
+
+    - id: performance_systems
+      name: "Performance Management Systems"
+      category: leadership
+      description: >
+        The ability to design, implement, and operate performance management systems that
+        accurately evaluate engineering contributions, drive professional growth, and create
+        fair and transparent career progression for engineers and managers.
+      proficiency:
+        junior: >
+          Applies the company's performance management framework consistently across their
+          teams. Conducts calibration discussions that are fair and well-reasoned. Coaches
+          managers on delivering effective feedback and writing strong reviews.
+        mid: >
+          Adapts and improves performance management processes for their department. Designs
+          calibration approaches that work across multiple teams with different contexts.
+          Creates development programs that address common growth areas for engineers and managers.
+        senior: >
+          Shapes the performance management approach for a large engineering organization.
+          Designs evaluation criteria and career ladders that are fair, clear, and motivating.
+          Creates systems that identify and develop high-potential talent at every level.
+        staff: >
+          Designs organization-wide performance management systems. Creates innovative approaches
+          to evaluating engineering contributions that account for different types of impact.
+          Develops programs for identifying and accelerating the growth of future leaders.
+        principal: >
+          Establishes performance management philosophy and systems that become industry models.
+          Creates frameworks for evaluating engineering leadership that are adopted broadly.
+          Develops thought leadership on engineering career development and performance evaluation.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can help aggregate performance data, identify patterns in feedback, and reduce bias
+          in evaluations. AI-powered tools can suggest development plans based on skill gaps.
+          However, the core activities of calibration, coaching, and difficult performance
+          conversations remain fundamentally human.
+
+    - id: stakeholder_influence
+      name: "Stakeholder Influence"
+      category: communication
+      description: >
+        The ability to build relationships with and influence senior stakeholders including
+        executives, board members, and external partners to secure resources, drive alignment,
+        and advance engineering priorities within the broader organizational context.
+      proficiency:
+        junior: >
+          Communicates effectively with VP-level stakeholders about team progress and needs.
+          Builds credibility through reliable delivery and transparent communication. Presents
+          technical topics in business-relevant terms to non-technical executives.
+        mid: >
+          Influences VP and C-level stakeholders on engineering strategy and investment decisions.
+          Builds strong relationships with key business stakeholders through consistent delivery
+          and proactive communication. Advocates effectively for engineering needs.
+        senior: >
+          Operates as a trusted advisor to C-level executives on technical matters. Shapes
+          executive decision-making through data-driven arguments and compelling narratives.
+          Builds coalitions across the organization to drive strategic initiatives.
+        staff: >
+          Influences company strategy at the executive team level. Builds relationships with
+          board members and external stakeholders. Creates communication frameworks that other
+          engineering leaders adopt for stakeholder management.
+        principal: >
+          Shapes company direction through deep trusted relationships with the CEO and board.
+          Represents the company's engineering capabilities to external stakeholders including
+          investors, partners, and customers. Influences industry-wide conversations.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          AI can help prepare presentations, analyze stakeholder concerns, and draft communications.
+          However, stakeholder influence depends on trust, credibility, and interpersonal skills
+          that are fundamentally human. The ability to read a room and adapt messaging in real
+          time remains beyond AI capabilities.
+
+    - id: change_management
+      name: "Change Management"
+      category: leadership
+      description: >
+        The ability to lead engineering organizations through significant transitions such as
+        reorganizations, technology migrations, process changes, and cultural shifts, minimizing
+        disruption while achieving desired outcomes.
+      proficiency:
+        junior: >
+          Leads change initiatives within their teams, communicating clearly about the reasons
+          for change and the expected path forward. Manages team anxiety during transitions
+          and maintains team productivity through periods of uncertainty.
+        mid: >
+          Drives department-level change initiatives, developing communication plans and
+          managing stakeholder expectations. Identifies and addresses resistance to change.
+          Creates transition plans that account for both technical and human dimensions.
+        senior: >
+          Leads large-scale organizational changes affecting many teams. Designs change management
+          approaches that maintain engineering productivity and morale. Builds change leadership
+          capability in managers throughout the organization.
+        staff: >
+          Drives transformational changes across the engineering organization. Creates change
+          management frameworks and playbooks that other leaders adopt. Manages complex changes
+          that span organizational boundaries and affect the entire company.
+        principal: >
+          Leads company-wide transformations that fundamentally reshape how engineering operates.
+          Develops innovative approaches to change management that become organizational
+          capabilities. Mentors other leaders on leading through uncertainty and ambiguity.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can assist with communication planning, sentiment analysis during transitions, and
+          identifying at-risk teams or individuals. However, leading people through change requires
+          empathy, trust, and the ability to inspire confidence that AI cannot provide.
+
+    - id: succession_planning
+      name: "Succession Planning"
+      category: leadership
+      description: >
+        The ability to identify, develop, and prepare future leaders who can step into critical
+        roles, ensuring organizational continuity and building a deep bench of leadership talent
+        across the engineering organization.
+      proficiency:
+        junior: >
+          Identifies high-potential individuals on their teams and creates development plans
+          for them. Ensures key knowledge is documented and shared to reduce bus factor risk.
+          Actively develops their direct reports toward the next level of leadership.
+        mid: >
+          Builds a leadership pipeline across their department, identifying successors for all
+          critical roles. Creates stretch assignments and development programs that accelerate
+          leadership growth. Develops a diverse pipeline of future leaders.
+        senior: >
+          Drives succession planning across a large engineering organization. Creates systematic
+          approaches to identifying and developing leadership talent at every level. Builds
+          programs that develop leaders who can operate in increasingly complex environments.
+        staff: >
+          Shapes the organization-wide approach to leadership development and succession planning.
+          Creates innovative programs for developing engineering leaders. Builds talent review
+          processes that ensure a healthy leadership pipeline across the company.
+        principal: >
+          Establishes succession planning as a core organizational capability. Develops leaders
+          who go on to become VPs and C-level executives. Creates leadership development
+          frameworks that are recognized as industry best practices.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can help identify leadership potential through performance data analysis and
+          suggest development opportunities based on skill gaps. However, the mentoring
+          relationships, judgment about readiness, and personal investment in developing
+          future leaders remain irreplaceably human activities.
+
+    - id: operational_excellence
+      name: "Operational Excellence"
+      category: analytical
+      description: >
+        The ability to establish and maintain high standards for engineering operations including
+        reliability, incident management, deployment practices, and operational efficiency,
+        creating systems and processes that drive continuous improvement.
+      proficiency:
+        junior: >
+          Ensures their teams follow operational best practices and maintain reliability targets.
+          Drives incident response improvements and postmortem culture. Establishes operational
+          metrics and reviews them regularly with their teams.
+        mid: >
+          Drives operational excellence across a department, setting standards and metrics that
+          teams adopt. Creates processes for cross-team incident management and operational
+          reviews. Identifies systemic operational issues and drives investment to address them.
+        senior: >
+          Establishes operational excellence standards for a large engineering organization.
+          Creates programs that drive continuous improvement in reliability, efficiency, and
+          quality. Balances operational investment with feature delivery across the organization.
+        staff: >
+          Defines the organization-wide approach to operational excellence. Creates frameworks
+          and programs that drive operational maturity across all engineering teams. Develops
+          metrics and incentive structures that align operational and business outcomes.
+        principal: >
+          Establishes operational excellence as a core organizational competency. Creates
+          innovative approaches to engineering operations that become industry standards.
+          Drives operational improvements that create measurable competitive advantage.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI is significantly augmenting operational excellence through automated anomaly
+          detection, predictive alerting, and intelligent incident routing. AI-powered tools
+          can identify patterns across incidents and suggest systemic improvements. However,
+          setting operational strategy and building an operational culture require human leadership.

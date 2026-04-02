@@ -1,0 +1,237 @@
+role:
+  id: growth_pm
+  function: product
+  name: "Growth Product Manager"
+  also_known_as:
+    - "Growth PM"
+    - "Product Manager, Growth"
+    - "Growth Lead"
+    - "Product Growth Manager"
+  description: >
+    Growth Product Managers specialize in driving measurable improvements to acquisition,
+    activation, retention, and monetization through rapid experimentation and data-driven
+    optimization. They combine product management fundamentals with deep analytical rigor
+    and a relentless focus on growth loops, funnel optimization, and scalable mechanisms
+    that compound over time.
+  ai_impact:
+    level: moderate-high
+    summary: >
+      AI is accelerating the growth PM's toolkit by enabling faster experiment iteration,
+      automated personalization at scale, and predictive modeling of user behavior. AI-powered
+      tools can generate copy variants, optimize send times, and identify micro-segments for
+      targeting. However, designing sustainable growth loops, making strategic monetization
+      decisions, and balancing growth with product integrity require human creativity and
+      ethical judgment that AI cannot replace.
+    automating:
+      - "Generating copy and creative variants for growth experiments"
+      - "Optimizing email and notification send times"
+      - "Basic cohort segmentation and churn prediction"
+      - "Monitoring experiment metrics and flagging significance"
+    augmenting:
+      - "Personalization at scale through AI-driven recommendation systems"
+      - "Predictive lifetime value modeling for acquisition targeting"
+      - "Automated A/B test analysis with causal inference"
+      - "Dynamic pricing optimization and elasticity modeling"
+      - "AI-generated user journey orchestration"
+    preserving:
+      - "Designing sustainable growth loops and viral mechanics"
+      - "Strategic decisions about monetization and pricing"
+      - "Balancing aggressive growth with user experience quality"
+      - "Cross-functional alignment on growth strategy"
+      - "Ethical judgment on growth tactics and dark patterns"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Reforge Growth Series"
+        url: "https://www.reforge.com/growth-series"
+      - name: "Andrew Chen - Growth Essays"
+        url: "https://andrewchen.com/"
+  levels:
+    - id: junior
+      name: "Junior/Associate"
+      years_experience: "0-2"
+      summary: "Executes growth experiments under guidance, analyzes funnel data, writes experiment briefs, and begins developing intuition for high-impact growth levers."
+    - id: mid
+      name: "Mid-Level"
+      years_experience: "2-5"
+      summary: "Independently owns a growth area like activation or retention, runs a high-velocity experiment program, and consistently ships measurable improvements to key metrics."
+    - id: senior
+      name: "Senior"
+      years_experience: "5-8"
+      summary: "Leads growth strategy for a major part of the funnel, designs scalable growth loops, mentors junior growth PMs, and influences company growth targets and investment."
+    - id: staff
+      name: "Staff/Lead Growth PM"
+      years_experience: "8-12"
+      summary: "Shapes the overall growth strategy across the full user lifecycle, drives cross-team growth initiatives, builds growth infrastructure, and establishes experimentation culture."
+    - id: principal
+      name: "Principal/Head of Growth"
+      years_experience: "12+"
+      summary: "Defines the company's growth model and philosophy, builds and scales the growth organization, drives executive-level growth strategy, and is accountable for company-wide growth KPIs."
+  skills:
+    - id: growth_modeling
+      name: "Growth Modeling"
+      category: analytical
+      description: "The ability to build quantitative models of user acquisition, activation, retention, and revenue that identify the highest-leverage growth opportunities and forecast the impact of interventions."
+      proficiency:
+        junior: "Understands basic growth accounting frameworks, can build simple spreadsheet models of user flows, and tracks top-of-funnel metrics like signups and activation rate."
+        mid: "Builds detailed growth models incorporating cohort retention, viral coefficients, and channel-specific CAC. Identifies which model inputs have the largest impact on growth outcomes."
+        senior: "Creates sophisticated growth models with scenario analysis, sensitivity testing, and dynamic inputs. Uses models to drive resource allocation and set growth targets for the team."
+        staff: "Builds company-wide growth models that connect product metrics to revenue forecasting, drives executive alignment on growth levers, and establishes modeling practices across growth teams."
+        principal: "Defines the company's growth accounting framework at the board level, ensures growth models inform strategic investment decisions, and builds organizational capability for rigorous growth forecasting."
+      ai_impact:
+        rating: 0.5
+        detail: "AI can accelerate model building, run simulations, and identify patterns in historical data. Choosing the right model structure and interpreting outputs for strategic decisions require human judgment."
+
+    - id: activation_optimization
+      name: "Activation Optimization"
+      category: domain
+      description: "The practice of optimizing the new-user experience to ensure users reach their 'aha moment' as quickly as possible, converting signups into engaged, activated users."
+      proficiency:
+        junior: "Understands the concept of activation events, tracks setup completion funnels, and runs basic experiments to improve onboarding flows with guidance."
+        mid: "Maps activation funnels by segment, identifies the key actions that predict long-term retention, and designs experiments to reduce time-to-value for new users."
+        senior: "Designs end-to-end activation strategies including personalized onboarding, progressive disclosure, and contextual education. Measures activation against long-term retention correlation."
+        staff: "Shapes the company-wide activation strategy, drives investment in onboarding infrastructure, and establishes activation metrics as a core KPI across product and growth teams."
+        principal: "Defines the company philosophy on first-user experience, ensures activation strategy evolves with the product and user base, and drives executive commitment to activation as a growth lever."
+      ai_impact:
+        rating: 0.5
+        detail: "AI enables personalized onboarding at scale and can predict optimal activation paths for user segments. Defining what activation means for the product and designing the core experience require human creativity."
+
+    - id: retention_analysis
+      name: "Retention Analysis"
+      category: analytical
+      description: "The ability to measure, diagnose, and improve user retention through cohort analysis, churn prediction, and identification of behaviors and features that drive long-term engagement."
+      proficiency:
+        junior: "Calculates basic retention curves by cohort, understands the difference between day-N and bracket retention, and identifies which cohorts have the best or worst retention."
+        mid: "Conducts segmented retention analysis, identifies features and behaviors correlated with retention, and builds churn prediction models using logistic regression or similar methods."
+        senior: "Designs comprehensive retention strategies based on deep behavioral analysis, implements intervention systems for at-risk users, and connects retention metrics to lifetime value."
+        staff: "Shapes the company's retention strategy across the full user lifecycle, drives investment in engagement infrastructure, and establishes retention benchmarks used across the organization."
+        principal: "Defines the company-wide approach to long-term user engagement, ensures retention is embedded as a core metric in every product team's goals, and drives executive accountability for retention outcomes."
+      ai_impact:
+        rating: 0.5
+        detail: "AI excels at churn prediction and identifying retention risk factors from behavioral data. Designing interventions that genuinely improve the user experience rather than just delay churn requires human insight."
+
+    - id: experimentation_velocity
+      name: "Experimentation Velocity"
+      category: analytical
+      description: "The ability to design, launch, and learn from a high volume of experiments efficiently, building a culture and infrastructure that maximizes the pace of validated learning."
+      proficiency:
+        junior: "Supports experiment execution by writing test briefs, setting up feature flags, and documenting results. Maintains the experiment tracker and follows established processes."
+        mid: "Independently runs three to five experiments per sprint, optimizes experiment design for faster learnings, and builds a personal framework for generating and prioritizing test ideas."
+        senior: "Manages an experiment portfolio across multiple growth surfaces, establishes processes that increase team experiment throughput without sacrificing rigor, and drives a culture of rapid iteration."
+        staff: "Builds experimentation infrastructure and tooling that accelerates velocity across the organization, establishes experiment quality standards, and measures organizational learning rate."
+        principal: "Defines the company's experimentation culture and philosophy, drives investment in experimentation platform capabilities, and ensures experimentation velocity translates into compounding growth."
+      ai_impact:
+        rating: 0.5
+        detail: "AI can generate experiment ideas, auto-analyze results, and accelerate the test cycle. Prioritizing which experiments matter most and designing tests that yield strategic insight require human judgment."
+
+    - id: funnel_optimization
+      name: "Funnel Optimization"
+      category: analytical
+      description: "The systematic practice of identifying and eliminating friction at each stage of user conversion funnels to maximize the percentage of users who complete key actions."
+      proficiency:
+        junior: "Maps basic conversion funnels, calculates step-by-step drop-off rates, and identifies the stage with the largest absolute drop-off for initial investigation."
+        mid: "Conducts segmented funnel analysis, designs experiments to address specific friction points, and quantifies the revenue impact of conversion improvements at each stage."
+        senior: "Optimizes complex multi-step funnels with branching paths, designs personalized funnel experiences for different user segments, and builds funnel monitoring systems with automated alerts."
+        staff: "Establishes funnel optimization practices across the organization, builds shared funnel definitions and measurement, and drives cross-team initiatives that improve end-to-end conversion."
+        principal: "Defines the company-wide conversion optimization strategy, ensures funnel metrics are embedded in business planning, and drives investment in personalization and optimization infrastructure."
+      ai_impact:
+        rating: 0.6
+        detail: "AI can identify funnel bottlenecks, suggest optimization experiments, and personalize experiences automatically. Understanding why users drop off and designing solutions that feel natural requires human product sense."
+
+    - id: referral_mechanics
+      name: "Referral & Viral Mechanics"
+      category: domain
+      description: "The design of product features and incentive structures that encourage users to invite others, creating viral growth loops that reduce customer acquisition costs and accelerate organic growth."
+      proficiency:
+        junior: "Understands basic viral loop concepts and k-factor calculation, tracks referral program metrics, and assists in implementing referral features."
+        mid: "Designs referral programs with appropriate incentive structures, measures viral coefficients across channels, and experiments with different sharing mechanics and reward types."
+        senior: "Architects viral loops embedded in core product value, designs multi-sided referral systems, and optimizes for both sender and receiver experience to maximize conversion."
+        staff: "Builds the company's referral and viral growth strategy, establishes frameworks for evaluating viral potential in new features, and drives investment in sharing infrastructure."
+        principal: "Defines the company's word-of-mouth growth philosophy, ensures viral mechanics are sustainable and value-creating rather than extractive, and drives organic growth as a core company strategy."
+      ai_impact:
+        rating: 0.3
+        detail: "AI can optimize referral messaging and targeting, but designing viral mechanics that feel natural and create genuine value for both referrers and recipients requires creative product thinking."
+
+    - id: monetization_strategy
+      name: "Monetization Strategy"
+      category: domain
+      description: "The ability to design and optimize revenue models, packaging, and pricing that capture the value a product creates while maintaining a positive user experience and supporting long-term growth."
+      proficiency:
+        junior: "Understands basic business model types like freemium, subscription, and usage-based pricing. Tracks revenue metrics and conversion rates between free and paid tiers."
+        mid: "Designs experiments to optimize paywall placement, trial length, and upgrade prompts. Analyzes conversion funnels by plan type and identifies revenue expansion opportunities."
+        senior: "Develops monetization strategies that balance revenue growth with user experience, designs packaging and bundling experiments, and builds lifetime value models by segment."
+        staff: "Shapes the company's overall monetization architecture, drives cross-team revenue optimization, and establishes pricing governance and experimentation frameworks."
+        principal: "Defines the company's long-term pricing and monetization vision, advises executive leadership on business model evolution, and ensures monetization strategy aligns with competitive positioning and growth goals."
+      ai_impact:
+        rating: 0.4
+        detail: "AI can model price elasticity and optimize conversion points, but strategic decisions about business model design, competitive pricing, and the balance between growth and revenue require human judgment."
+
+    - id: feature_flagging
+      name: "Feature Flagging & Progressive Rollout"
+      category: technical
+      description: "The practice of using feature flags and staged rollouts to control feature exposure, manage risk, and enable rapid experimentation without full deployment cycles."
+      proficiency:
+        junior: "Uses feature flag tools to toggle experiments on and off, understands the difference between feature flags and deployment, and follows established rollout procedures."
+        mid: "Designs rollout plans with percentage-based ramps, defines rollback criteria, and uses feature flags to run targeted experiments on specific user segments."
+        senior: "Architects complex multi-flag experiment systems, manages feature flag lifecycle including cleanup, and designs progressive rollout strategies that balance speed with safety."
+        staff: "Builds the organization's feature flagging strategy and governance, selects and implements feature flag platforms, and establishes standards for flag management and technical debt prevention."
+        principal: "Defines the company's release management philosophy, ensures feature flagging infrastructure scales with organizational needs, and drives investment in experimentation platform capabilities."
+      ai_impact:
+        rating: 0.4
+        detail: "AI can suggest rollout strategies and monitor flag performance, but the judgment calls around risk tolerance, rollback decisions, and organizational readiness remain human responsibilities."
+
+    - id: growth_loops
+      name: "Growth Loops"
+      category: domain
+      description: "The ability to identify, design, and measure compounding growth mechanisms where the output of one cycle feeds back as the input to the next, creating sustainable and scalable growth."
+      proficiency:
+        junior: "Understands the concept of growth loops versus linear funnels, can diagram basic acquisition and engagement loops, and identifies which loops the company currently relies on."
+        mid: "Maps the company's growth loops quantitatively, measures loop efficiency and cycle time, and proposes experiments to strengthen specific loop stages."
+        senior: "Designs new growth loops based on product capabilities and user behavior, models loop economics including payback periods, and drives cross-functional execution on loop-strengthening initiatives."
+        staff: "Shapes the company's growth loop portfolio strategy, identifies opportunities for new compounding loops, and ensures growth loops are understood and invested in at the leadership level."
+        principal: "Defines the company's sustainable growth philosophy around compounding loops rather than linear tactics, drives executive alignment on loop investment, and ensures growth loops remain healthy as the company scales."
+      ai_impact:
+        rating: 0.2
+        detail: "AI can measure loop metrics and flag efficiency changes, but designing sustainable growth loops requires creative product thinking and deep understanding of user value creation that remains a human skill."
+
+    - id: analytics_instrumentation
+      name: "Analytics Instrumentation"
+      category: technical
+      description: "The practice of designing and implementing comprehensive event tracking and analytics infrastructure that provides the data foundation necessary for growth measurement and experimentation."
+      proficiency:
+        junior: "Implements basic event tracking for growth experiments, verifies that events fire correctly, and uses analytics tools to pull experiment metrics."
+        mid: "Designs tracking plans for growth features, defines event taxonomies, and ensures clean data capture across platforms. Partners with engineering to instrument new flows."
+        senior: "Architects the analytics instrumentation strategy for the growth surface area, ensures cross-platform consistency, and builds real-time monitoring for critical growth metrics."
+        staff: "Defines the organization's growth analytics infrastructure strategy, drives investment in real-time data capabilities, and ensures instrumentation standards are maintained across all growth teams."
+        principal: "Shapes the company's data infrastructure vision to support growth at scale, ensures analytics capabilities evolve with growth strategy, and drives investment in data platform capabilities."
+      ai_impact:
+        rating: 0.5
+        detail: "AI can suggest event schemas and auto-generate tracking code, but designing an instrumentation strategy that captures the right data for growth modeling requires human architectural thinking."
+
+    - id: pricing_strategy
+      name: "Pricing Strategy"
+      category: domain
+      description: "The analytical and strategic practice of setting, testing, and optimizing product pricing to maximize revenue and growth while aligning with customer willingness to pay and competitive positioning."
+      proficiency:
+        junior: "Understands basic pricing concepts like value-based and cost-plus pricing, tracks pricing-related metrics, and assists in pricing research and competitive benchmarking."
+        mid: "Conducts willingness-to-pay research, designs pricing experiments including A/B tests on price points and packaging, and analyzes price sensitivity across segments."
+        senior: "Develops comprehensive pricing strategies with segmented pricing, discount frameworks, and promotional calendars. Models revenue impact of pricing changes and advises leadership."
+        staff: "Shapes the company's pricing architecture across products and markets, establishes pricing governance and approval processes, and drives cross-functional pricing decisions."
+        principal: "Defines the company's pricing philosophy and long-term strategy, advises executive leadership on pricing in the context of market positioning and growth stage, and ensures pricing evolves with the competitive landscape."
+      ai_impact:
+        rating: 0.4
+        detail: "AI can model price elasticity, simulate revenue scenarios, and analyze competitive pricing data. Strategic pricing decisions that balance revenue, growth, and market positioning require human strategic judgment."
+
+    - id: lifecycle_marketing
+      name: "Lifecycle Marketing"
+      category: domain
+      description: "The design and optimization of automated communication sequences across email, push, in-app, and other channels that guide users through the product lifecycle from acquisition to advocacy."
+      proficiency:
+        junior: "Understands basic lifecycle stages, assists in writing email and notification copy, and tracks open rates, click-through rates, and conversion metrics for campaigns."
+        mid: "Designs lifecycle campaigns with targeted triggers, segment-based personalization, and multivariate testing. Optimizes messaging cadence and channel mix for different user segments."
+        senior: "Architects comprehensive lifecycle marketing programs spanning the full user journey, implements sophisticated personalization logic, and drives measurable impact on activation and retention."
+        staff: "Shapes the company's lifecycle marketing strategy, selects and integrates marketing automation platforms, and establishes measurement frameworks that connect lifecycle marketing to business outcomes."
+        principal: "Defines the company's user communication philosophy, ensures lifecycle marketing is integrated with product experience, and drives executive investment in marketing automation infrastructure."
+      ai_impact:
+        rating: 0.6
+        detail: "AI is transforming lifecycle marketing through AI-generated copy, send-time optimization, and predictive audience targeting. Strategic decisions about messaging philosophy and user experience quality still require human oversight."

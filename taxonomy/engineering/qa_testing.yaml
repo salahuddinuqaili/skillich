@@ -1,0 +1,432 @@
+role:
+  id: qa_testing
+  function: engineering
+  name: "QA & Test Engineer"
+  also_known_as:
+    - "Quality Assurance Engineer"
+    - "Software Test Engineer"
+    - "SDET"
+    - "Test Automation Engineer"
+  description: >
+    Ensures software quality through test strategy, automation, manual testing,
+    and quality process design. Prevents defects from reaching users by building
+    testing into every stage of the development lifecycle.
+
+  ai_impact:
+    level: very-high
+    summary: >
+      QA is among the most AI-impacted engineering roles. AI generates test cases,
+      automates visual regression testing, and identifies flaky tests. Routine manual
+      testing is rapidly being automated. The role is evolving from test execution
+      toward test strategy, quality architecture, and exploratory testing that
+      requires human creativity and domain knowledge.
+    automating:
+      - "Test case generation from specifications"
+      - "Regression test maintenance and self-healing locators"
+      - "Visual regression testing"
+      - "API test generation from OpenAPI specs"
+      - "Test data generation"
+    augmenting:
+      - "Exploratory testing with AI-suggested scenarios"
+      - "Performance test analysis and bottleneck identification"
+      - "Test coverage gap analysis"
+      - "Flaky test root cause analysis"
+    preserving:
+      - "Test strategy and quality architecture design"
+      - "Usability and user experience evaluation"
+      - "Edge case identification from domain expertise"
+      - "Cross-functional quality advocacy"
+      - "Risk-based testing prioritization"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Master Software Testing QA Roadmap 2025"
+        url: "https://mastersoftwaretesting.com/career-center/career-paths/qa-career-roadmap-2025"
+      - name: "ISTQB Certified Tester Foundation Level Syllabus"
+        url: "https://www.istqb.org/certifications/certified-tester-foundation-level"
+
+  levels:
+    - id: junior
+      name: "Junior (L1-L2)"
+      years_experience: "0-2"
+      summary: "Executes test cases, reports bugs clearly, and learns automation fundamentals."
+    - id: mid
+      name: "Mid-Level (L3)"
+      years_experience: "2-5"
+      summary: "Designs test plans, builds automation suites, and owns quality for features independently."
+    - id: senior
+      name: "Senior (L4)"
+      years_experience: "5-8"
+      summary: "Defines test strategy for teams. Architects automation frameworks and mentors on quality practices."
+    - id: staff
+      name: "Staff (L5)"
+      years_experience: "8-12"
+      summary: "Sets quality engineering standards across the organization. Drives test infrastructure investments."
+    - id: principal
+      name: "Principal (L6+)"
+      years_experience: "12+"
+      summary: "Defines the organization's quality philosophy. Shapes the industry's approach to software quality."
+
+  skills:
+    - id: test_strategy
+      name: "Test Strategy & Planning"
+      category: analytical
+      description: "Designing risk-based test strategies that balance coverage, speed, and cost across the test pyramid."
+      proficiency:
+        junior: >
+          Follows existing test plans and executes assigned test cases in TestRail
+          or similar management tools. Understands the test pyramid concept and
+          can articulate the difference between unit, integration, and E2E tests.
+        mid: >
+          Creates risk-based test plans for features including scope, entry/exit
+          criteria, and environment needs. Maps coverage to requirements in
+          TestRail and prioritizes test cases by business impact and failure
+          likelihood.
+        senior: >
+          Designs test strategies for complex distributed systems, balancing unit,
+          integration, E2E, and exploratory testing to optimize coverage per hour
+          invested. Makes deliberate trade-offs between test depth and release
+          velocity based on risk analysis.
+        staff: >
+          Defines organizational test strategy standards and governance. Audits
+          team testing portfolios for ROI, identifies systemic over-testing in
+          low-risk areas and under-testing in high-risk areas, and reallocates
+          investment accordingly.
+        principal: >
+          Sets the quality engineering philosophy that guides how the company
+          thinks about risk, coverage, and release confidence. Publishes thought
+          leadership on testing approaches and drives industry standards for
+          quality strategy at scale.
+      ai_impact:
+        rating: 0.2
+        detail: "Test strategy requires understanding business risk, team capabilities, and system architecture holistically. AI cannot evaluate which failures matter most to users."
+
+    - id: test_automation
+      name: "Test Automation"
+      category: technical
+      description: "Building and maintaining automated test suites using frameworks like Selenium, Playwright, Cypress, or pytest."
+      proficiency:
+        junior: >
+          Writes basic automated tests in pytest or Jest following existing Page
+          Object patterns. Maintains existing Cypress or Playwright suites by
+          updating locators and fixing simple failures from CI logs.
+        mid: >
+          Builds automation suites with proper abstractions such as Page Object
+          Model and API clients in Playwright or Cypress. Handles async waits,
+          dynamic content, and test data setup with fixtures and factories.
+        senior: >
+          Architects test automation frameworks with parallel execution, retry
+          logic, and HTML/Allure reporting integrated into CI/CD. Chooses between
+          Playwright, Cypress, and Selenium based on team needs, weighing
+          browser coverage against developer experience trade-offs.
+        staff: >
+          Selects automation tooling across the organization and defines shared
+          framework standards. Evaluates self-healing locator tools and AI-assisted
+          test generation, balancing adoption cost against maintenance savings
+          for large suite portfolios.
+        principal: >
+          Sets automation strategy balancing investment in proprietary frameworks,
+          open-source tools, and AI-assisted testing. Makes build-vs-buy decisions
+          for test infrastructure and drives the industry on sustainable
+          automation architecture at scale.
+      ai_impact:
+        rating: 0.65
+        detail: "AI generates test code and maintains locators effectively. Framework architecture, reliability engineering for tests, and tool selection require human expertise."
+
+    - id: manual_exploratory
+      name: "Manual & Exploratory Testing"
+      category: analytical
+      description: "Systematic exploration of software to find defects that automated tests miss."
+      proficiency:
+        junior: >
+          Executes scripted test cases step by step and reports bugs with clear
+          reproduction steps, screenshots, and severity ratings. Logs results in
+          TestRail or Zephyr and escalates ambiguous behavior to senior testers.
+        mid: >
+          Conducts charter-based exploratory sessions using heuristics like
+          SFDPOT and consistency oracles. Finds edge cases in form validation,
+          state transitions, and cross-browser rendering that automated scans
+          miss consistently.
+        senior: >
+          Designs session-based exploratory testing approaches for complex
+          features, defining charters and time-boxes. Mentors testers on testing
+          heuristics and oracles, balancing exploratory depth against coverage
+          breadth for release deadlines.
+        staff: >
+          Integrates exploratory testing into the SDLC with structured session
+          reports and defect taxonomies. Defines when exploratory testing adds
+          more value than automation and builds organizational capability for
+          systematic human testing.
+        principal: >
+          Champions the enduring value of human testing alongside AI-generated
+          suites. Shapes how exploratory testing methodology evolves as AI handles
+          more scripted scenarios, ensuring the discipline remains rigorous and
+          outcome-focused.
+      ai_impact:
+        rating: 0.3
+        detail: "Exploratory testing requires creativity, domain knowledge, and the ability to think like a confused user. AI suggests scenarios but cannot replicate human intuition about what feels wrong."
+
+    - id: performance_testing
+      name: "Performance Testing"
+      category: technical
+      description: "Load testing, stress testing, and performance profiling using tools like k6, JMeter, or Gatling."
+      proficiency:
+        junior: >
+          Runs existing k6 or JMeter scripts and reads result summaries for
+          response time percentiles and error rates. Reports deviations from
+          baseline thresholds and captures HAR files for investigation.
+        mid: >
+          Designs load test scenarios in k6 or Gatling modeling realistic user
+          journeys with ramp-up profiles. Identifies bottlenecks from response
+          time distributions, CPU/memory charts, and database slow query logs.
+        senior: >
+          Architects performance testing strategies covering baseline, load,
+          stress, soak, and spike scenarios. Correlates application metrics with
+          infrastructure telemetry to pinpoint root causes, and decides when
+          performance risk justifies delaying a release.
+        staff: >
+          Defines performance engineering standards including SLA-driven budgets,
+          automated performance gates in CI/CD, and integration with SLO burn-rate
+          alerts. Drives investment in dedicated performance environments and
+          continuous benchmarking infrastructure.
+        principal: >
+          Sets organizational performance quality standards and capacity planning
+          philosophy. Makes strategic decisions about performance tooling
+          investments, drives industry practices for performance testing in
+          cloud-native architectures, and aligns performance goals with business
+          growth projections.
+      ai_impact:
+        rating: 0.4
+        detail: "AI generates load test scripts from API definitions. Interpreting results in production context, identifying systemic bottlenecks, and capacity planning require human analysis."
+
+    - id: api_testing
+      name: "API Testing"
+      category: technical
+      description: "Testing REST, GraphQL, and gRPC APIs for correctness, contracts, security, and performance."
+      proficiency:
+        junior: >
+          Tests APIs using Postman collections or curl, validating response
+          schemas, status codes, and basic payload correctness. Documents API
+          behavior discrepancies and maintains existing automated request
+          sequences.
+        mid: >
+          Automates API test suites with contract testing using Pact or
+          Schemathesis. Validates error handling, pagination, rate limiting, and
+          edge cases across REST and GraphQL endpoints with proper assertion
+          libraries.
+        senior: >
+          Designs API test strategy spanning contract, integration, and chaos
+          testing. Decides where consumer-driven contracts add value versus
+          provider-side schema validation, balancing test maintenance cost against
+          cross-team coordination overhead.
+        staff: >
+          Defines API quality standards across service boundaries, implementing
+          automated contract testing in CI/CD with Pact Broker or similar
+          registries. Establishes backward-compatibility policies and API
+          versioning test strategies for the organization.
+        principal: >
+          Sets API quality strategy for internal and external APIs, including
+          public API certification programs. Makes build-vs-buy decisions for
+          API testing infrastructure and drives industry practices on contract
+          testing at microservice scale.
+      ai_impact:
+        rating: 0.7
+        detail: "AI generates API tests from OpenAPI/GraphQL schemas very effectively. Custom business logic validation, security testing, and contract evolution strategy are more human-dependent."
+
+    - id: ci_cd_quality
+      name: "CI/CD Quality Gates"
+      category: technical
+      description: "Integrating quality checks into CI/CD pipelines: test execution, coverage, linting, and security scanning."
+      proficiency:
+        junior: >
+          Triggers test runs in GitHub Actions or Jenkins and reads pipeline
+          logs to identify test failures. Understands pipeline stages, build
+          artifacts, and how quality checks gate deployments.
+        mid: >
+          Configures quality gates in CI/CD including coverage thresholds via
+          Codecov, static analysis with SonarQube, and parallelized test
+          execution. Tunes flaky-test retries and sets up test result reporting
+          dashboards.
+        senior: >
+          Designs pipeline quality architecture with smart test selection,
+          parallel sharding, and fast-feedback loops under ten minutes. Balances
+          gate strictness against developer velocity, making deliberate trade-offs
+          on which checks block merge versus run asynchronously.
+        staff: >
+          Defines CI/CD quality standards across the organization, driving
+          investment in test infrastructure for speed and reliability. Evaluates
+          predictive test selection tools and AI-assisted pipeline optimization,
+          establishing cost-benefit frameworks for quality gate decisions.
+        principal: >
+          Sets organizational quality pipeline philosophy, shaping how quality
+          gates evolve alongside AI-assisted development and trunk-based delivery.
+          Makes strategic decisions on shared pipeline infrastructure and ensures
+          quality automation scales without becoming a bottleneck.
+      ai_impact:
+        rating: 0.55
+        detail: "AI configures pipelines and suggests quality gates. Balancing pipeline speed with thoroughness, smart test selection strategies, and quality culture require human judgment."
+
+    - id: test_data_management
+      name: "Test Data Management"
+      category: technical
+      description: "Creating, managing, and protecting test data for realistic and compliant test environments."
+      proficiency:
+        junior: >
+          Uses existing test fixtures, seed scripts, and factory methods to set
+          up test data. Follows data handling procedures for PII and understands
+          the difference between synthetic and production-derived datasets.
+        mid: >
+          Creates test data strategies using factory libraries like FactoryBot or
+          Faker, builds reusable fixture sets, and generates synthetic data for
+          load testing. Implements data cleanup routines to prevent test pollution.
+        senior: >
+          Designs test data architectures with PII masking, subset extraction
+          from production, and environment-specific data provisioning. Balances
+          data realism against privacy compliance and storage cost for
+          production-like environments.
+        staff: >
+          Defines organizational test data strategy including GDPR/CCPA compliant
+          masking pipelines, self-service environment provisioning, and data
+          freshness SLAs. Drives investment in test environment infrastructure
+          that enables parallel team development.
+        principal: >
+          Sets organizational test environment strategy spanning data governance,
+          infrastructure provisioning, and access controls. Makes strategic
+          decisions about environment management platforms and ensures data
+          practices scale with regulatory requirements across jurisdictions.
+      ai_impact:
+        rating: 0.5
+        detail: "AI generates synthetic test data effectively. Data privacy compliance, production-representative data strategies, and environment management require human planning."
+
+    - id: accessibility_testing
+      name: "Accessibility Testing"
+      category: domain
+      description: "Validating WCAG compliance, screen reader compatibility, keyboard navigation, and inclusive design."
+      proficiency:
+        junior: >
+          Runs automated accessibility scans with axe-core and Lighthouse,
+          mapping findings to specific WCAG 2.2 success criteria. Reports color
+          contrast, missing alt text, and ARIA violations with clear remediation
+          guidance.
+        mid: >
+          Conducts manual accessibility testing with NVDA, VoiceOver, or JAWS
+          screen readers. Tests complete keyboard navigation flows, focus
+          management, and live region announcements that automated tools cannot
+          fully evaluate.
+        senior: >
+          Designs accessibility test strategies combining automated CI checks
+          with manual screen reader audits. Mentors teams on WCAG requirements,
+          balances remediation urgency against development timelines, and defines
+          accessibility acceptance criteria for features.
+        staff: >
+          Defines organizational accessibility standards aligned to WCAG 2.2 AA
+          and regulatory requirements like ADA and EAA. Establishes automated
+          accessibility gates in CI/CD and builds training programs that embed
+          inclusive design into the development workflow.
+        principal: >
+          Sets the accessibility quality vision at the executive level, driving
+          inclusive design culture and compliance strategy. Makes investment
+          decisions for assistive technology testing labs and influences industry
+          standards for digital accessibility.
+      ai_impact:
+        rating: 0.4
+        detail: "AI detects many automated accessibility issues. Testing actual usability with assistive technology and evaluating the human experience of accessibility requires manual testing."
+
+    - id: security_testing
+      name: "Security Testing"
+      category: technical
+      description: "Identifying security vulnerabilities through DAST, fuzzing, and security-focused test scenarios."
+      proficiency:
+        junior: >
+          Runs DAST scanners like OWASP ZAP or Burp Suite and triages findings
+          against OWASP Top 10 categories. Documents vulnerabilities with
+          reproduction steps and severity ratings following CVSS guidelines.
+        mid: >
+          Designs security test scenarios for authentication, authorization,
+          input validation, and session management. Automates security checks
+          with OWASP ZAP in CI/CD and performs targeted fuzzing of API endpoints
+          with tools like RESTler.
+        senior: >
+          Integrates security testing into the overall test strategy, selecting
+          SAST/DAST tools and defining risk-based scanning policies. Conducts
+          focused security assessments and decides which findings block releases
+          versus enter the backlog based on exploitability.
+        staff: >
+          Defines security testing standards across the organization, evaluating
+          tools like Snyk, Checkmarx, and Semgrep for coverage and false-positive
+          rates. Establishes vulnerability SLAs and ensures security scanning
+          scales without creating bottlenecks in delivery pipelines.
+        principal: >
+          Sets security testing strategy aligned with the organization's threat
+          model and risk posture. Makes build-vs-buy decisions for security
+          tooling, drives industry practices on DevSecOps testing, and ensures
+          quality engineering and security teams collaborate effectively.
+      ai_impact:
+        rating: 0.5
+        detail: "AI-powered DAST and fuzzing tools find known vulnerability patterns effectively. Business logic security flaws and context-specific attack scenarios require human creativity."
+
+    - id: quality_metrics
+      name: "Quality Metrics & Reporting"
+      category: analytical
+      description: "Defining, measuring, and reporting quality metrics: defect rates, coverage, escape rates, MTTR."
+      proficiency:
+        junior: >
+          Tracks basic quality metrics such as test pass rates and open bug
+          counts in Jira or TestRail. Maintains accurate bug reports with
+          severity, priority, and component tags for reliable dashboard data.
+        mid: >
+          Defines quality metrics for features including defect escape rate,
+          code coverage trends, and MTTR. Creates Grafana or Looker dashboards
+          that surface actionable quality signals for product and engineering
+          stakeholders.
+        senior: >
+          Designs quality measurement frameworks that correlate testing metrics
+          with production incident rates and customer-reported defects. Identifies
+          which metrics drive behavior change versus those that become vanity
+          numbers, and adjusts reporting accordingly.
+        staff: >
+          Sets organizational quality metrics standards, establishing consistent
+          measurement across teams. Drives data-driven quality improvement by
+          connecting defect escape rates to investment decisions and making
+          the business case for testing infrastructure.
+        principal: >
+          Defines quality measurement philosophy at the executive level, shaping
+          how the organization understands and invests in quality. Ensures
+          metrics frameworks evolve with AI-assisted development and publishes
+          thought leadership on meaningful quality indicators.
+      ai_impact:
+        rating: 0.45
+        detail: "AI aggregates metrics and identifies trends. Interpreting metrics in business context, defining meaningful quality indicators, and driving organizational change require human judgment."
+
+    - id: bug_advocacy
+      name: "Bug Advocacy & Quality Communication"
+      category: communication
+      description: "Writing clear bug reports, advocating for quality priorities, and communicating risk to stakeholders."
+      proficiency:
+        junior: >
+          Writes clear bug reports with reproduction steps, expected versus
+          actual behavior, severity, and environment details. Attaches
+          screenshots and logs so developers can reproduce issues without
+          follow-up questions.
+        mid: >
+          Advocates for bug fixes by framing defects in business context such
+          as user impact and revenue risk. Communicates quality status in sprint
+          reviews and standups, surfacing testing blockers and risk areas early.
+        senior: >
+          Presents quality risk assessments to product and engineering leadership
+          with data-backed recommendations. Negotiates quality trade-offs at
+          release time, articulating when shipping with known issues is acceptable
+          versus when delay is warranted.
+        staff: >
+          Builds quality advocacy culture across the organization by coaching
+          teams on risk communication. Establishes quality review ceremonies
+          and escalation paths that ensure critical defects reach decision-makers
+          before releases ship.
+        principal: >
+          Represents quality at the executive level, shaping organizational
+          attitude toward software quality. Drives investment in quality
+          engineering by connecting defect costs to business outcomes and
+          building executive consensus on quality standards.
+      ai_impact:
+        rating: 0.15
+        detail: "Quality advocacy is about persuasion, organizational influence, and building a culture where quality is valued. This is a fundamentally human leadership skill."

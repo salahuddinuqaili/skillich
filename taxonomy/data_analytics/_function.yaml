@@ -1,0 +1,20 @@
+function:
+  id: data_analytics
+  name: "Data & Analytics"
+  description: >
+    Encompasses roles focused on extracting insights from data, building analytical
+    infrastructure, and applying statistical and machine learning techniques to drive
+    business decisions. Includes data analysis, business intelligence, data science,
+    and analytics engineering disciplines.
+  roles:
+    - data_analyst
+    - bi_analyst
+    - data_scientist
+    - analytics_engineer
+  sources:
+    - name: "Bureau of Labor Statistics - Data Scientists"
+      url: "https://www.bls.gov/ooh/math/data-scientists.htm"
+    - name: "O*NET - Data Science Occupations"
+      url: "https://www.onetonline.org/find/descriptor/result/1.A.1.e.2"
+    - name: "World Economic Forum - Future of Jobs Report"
+      url: "https://www.weforum.org/publications/the-future-of-jobs-report-2023/"

@@ -1,0 +1,645 @@
+role:
+  id: health_informatics
+  function: healthcare
+  name: "Health Informatics Specialist"
+  also_known_as:
+    - "Clinical Informatics Specialist"
+    - "Health IT Specialist"
+    - "Informaticist"
+    - "Clinical Systems Analyst"
+    - "Healthcare IT Analyst"
+  description: >
+    Bridges clinical practice and information technology by implementing,
+    optimizing, and governing health IT systems that support patient care,
+    clinical workflows, and organizational decision-making. Health informatics
+    specialists translate clinical requirements into system configurations,
+    drive EHR adoption and optimization, ensure interoperability between
+    systems, and champion the effective use of health data to improve care
+    quality, safety, and efficiency.
+  ai_impact:
+    level: "moderate"
+    summary: >
+      AI is beginning to enhance health informatics work by automating routine
+      system configuration analysis, identifying workflow inefficiencies, and
+      generating clinical decision support logic. However, the deeply
+      contextual nature of clinical workflow design, the complexity of
+      stakeholder change management, and the regulatory requirements
+      surrounding health IT implementations ensure that informatics
+      specialists remain essential. The role is evolving toward more
+      strategic AI governance and integration responsibilities.
+    automating:
+      - "Routine system configuration audits and compliance checks"
+      - "Standard report and interface monitoring and error detection"
+      - "Documentation of system build specifications and change logs"
+      - "Basic help desk triage for known EHR issues"
+      - "Template generation for standard clinical documentation"
+    augmenting:
+      - "Clinical workflow analysis and optimization recommendations"
+      - "Clinical decision support rule design and testing"
+      - "Interoperability mapping and data transformation design"
+      - "User adoption analytics and training needs identification"
+      - "Vendor product evaluation and feature comparison"
+    preserving:
+      - "Clinical stakeholder relationship management and consensus-building"
+      - "Change management strategy for health IT implementations"
+      - "Ethical and safety evaluation of clinical decision support"
+      - "Organizational governance of health information systems"
+      - "Cross-departmental workflow redesign and process improvement"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "AMIA - Clinical Informatics Competencies"
+        url: "https://amia.org/education-events/education-catalog/clinical-informatics"
+      - name: "O*NET - Health Information Technologists"
+        url: "https://www.onetonline.org/link/summary/29-9021.00"
+      - name: "HIMSS - Health Informatics Workforce"
+        url: "https://www.himss.org/resources/himss-future-health-workforce"
+  levels:
+    - id: junior
+      name: "Junior Health Informatics Specialist"
+      years_experience: "0-2"
+      summary: >
+        Supports health IT implementations by executing system configuration
+        tasks, testing workflows, and documenting build specifications under
+        guidance. Assists with end-user training and support. Learns clinical
+        workflows, health data standards, and organizational governance
+        processes.
+    - id: mid
+      name: "Health Informatics Specialist"
+      years_experience: "2-5"
+      summary: >
+        Manages informatics projects from requirements gathering through go-live
+        and optimization. Configures clinical systems, designs workflows, and
+        partners with clinical stakeholders to drive adoption. Troubleshoots
+        system issues and implements interoperability solutions independently.
+    - id: senior
+      name: "Senior Health Informatics Specialist"
+      years_experience: "5-8"
+      summary: >
+        Leads complex informatics initiatives spanning multiple clinical areas
+        and systems. Designs clinical decision support, drives optimization
+        programs, and mentors junior staff. Partners with clinical and IT
+        leadership to align health IT strategy with organizational quality and
+        safety goals.
+    - id: staff
+      name: "Staff Health Informatics Specialist"
+      years_experience: "8-12"
+      summary: >
+        Sets informatics standards and best practices across the organization.
+        Architects cross-system integration strategies, establishes governance
+        frameworks for clinical system changes, and drives enterprise-wide
+        health IT optimization programs that improve care quality and
+        operational efficiency.
+    - id: principal
+      name: "Principal Health Informatics Specialist"
+      years_experience: "12+"
+      summary: >
+        Defines the organization's health informatics vision and strategy at
+        the executive level. Drives adoption of emerging technologies
+        including AI, FHIR-based interoperability, and population health
+        platforms. Shapes industry standards through professional engagement
+        and advises C-suite leadership on health IT investment and governance.
+  skills:
+    - id: ehr_implementation
+      name: "EHR Implementation & Optimization"
+      category: technical
+      description: >
+        Planning, configuring, testing, deploying, and continuously optimizing
+        electronic health record systems such as Epic, Cerner, or MEDITECH,
+        including system build, workflow design, upgrade management, and
+        post-go-live optimization to maximize clinical adoption and value.
+      proficiency:
+        junior: >
+          Executes system build tasks following specifications, tests configured
+          workflows against requirements, and documents deviations. Assists with
+          go-live support, end-user troubleshooting, and issue logging during
+          implementation events under senior guidance.
+        mid: >
+          Leads build and configuration for assigned clinical areas, designing
+          order sets, documentation templates, and clinical workflows. Manages
+          testing cycles, coordinates with clinical stakeholders for validation,
+          and drives resolution of post-go-live optimization requests.
+        senior: >
+          Architects EHR optimization programs spanning multiple clinical
+          departments, identifying high-impact improvement opportunities and
+          designing solutions that balance clinical needs with system
+          sustainability. Leads upgrade planning and drives measurable adoption
+          improvements.
+        staff: >
+          Defines organization-wide EHR governance standards including change
+          control processes, build standards, and optimization prioritization
+          frameworks. Partners with vendor account teams on product roadmap
+          alignment and drives enterprise-level configuration consistency.
+        principal: >
+          Shapes the organization's EHR strategy at the executive level,
+          evaluating platform migration decisions, cloud hosting transitions,
+          and emerging capabilities. Influences vendor product development
+          through strategic partnership and represents the organization in
+          user group governance.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can assist with configuration analysis, identify optimization
+          opportunities from usage patterns, and automate testing scenarios.
+          However, understanding clinical workflow nuances, managing stakeholder
+          expectations during implementations, and making build trade-offs
+          require deep domain expertise and organizational context.
+
+    - id: clinical_workflow_analysis
+      name: "Clinical Workflow Analysis"
+      category: domain
+      description: >
+        Analyzing, documenting, and redesigning clinical workflows to improve
+        efficiency, safety, and user experience within health IT systems,
+        using process mapping, time-motion studies, and usability evaluation
+        methods to identify and resolve workflow friction.
+      proficiency:
+        junior: >
+          Documents current-state clinical workflows by observing end users and
+          creating process maps. Identifies obvious friction points and records
+          user feedback during workflow walk-throughs under supervision from
+          senior informaticists.
+        mid: >
+          Conducts independent workflow analyses using structured methodologies
+          such as process mapping and task analysis. Designs future-state
+          workflows in collaboration with clinical stakeholders and translates
+          findings into specific system configuration recommendations.
+        senior: >
+          Leads complex workflow redesign initiatives that span multiple clinical
+          roles and systems. Applies human factors and usability principles to
+          optimize clinical system design. Measures workflow improvement outcomes
+          and presents ROI analyses to organizational leadership.
+        staff: >
+          Establishes organizational standards for clinical workflow analysis
+          including approved methodologies, documentation templates, and
+          measurement frameworks. Trains informatics staff on advanced workflow
+          analysis techniques and drives continuous improvement culture.
+        principal: >
+          Shapes the organization's approach to clinical workflow optimization
+          as a strategic capability, connecting workflow efficiency to patient
+          safety, provider satisfaction, and financial performance. Evaluates
+          emerging technologies like ambient clinical intelligence and workflow
+          automation platforms.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can analyze system usage logs to identify workflow bottlenecks and
+          suggest optimizations based on patterns. However, understanding the
+          clinical rationale behind workflows, navigating interpersonal dynamics
+          during redesign, and ensuring patient safety during process changes
+          require deep human expertise.
+
+    - id: interoperability_standards
+      name: "Interoperability Standards (HL7, FHIR)"
+      category: technical
+      description: >
+        Implementing and managing health data exchange using standards including
+        HL7 v2, HL7 FHIR, C-CDA, X12 EDI, and DICOM, including interface
+        design, data mapping, API development, and compliance with ONC
+        interoperability rules and TEFCA frameworks.
+      proficiency:
+        junior: >
+          Understands the purpose and basic structure of major health data
+          exchange standards including HL7 v2 messages and FHIR resources.
+          Assists with interface testing, message validation, and documentation
+          of data mapping specifications.
+        mid: >
+          Designs and implements health data interfaces using HL7 v2 and FHIR
+          standards. Creates data mapping specifications, configures integration
+          engines, and troubleshoots interface errors. Understands C-CDA
+          document structures and ONC certification requirements.
+        senior: >
+          Architects interoperability solutions spanning multiple systems and
+          organizations, selecting appropriate standards and exchange patterns
+          for each use case. Leads FHIR API development, implements SMART on
+          FHIR applications, and drives compliance with federal interoperability
+          mandates.
+        staff: >
+          Defines the organization's interoperability strategy and governance,
+          establishing standards for interface design, data quality, and partner
+          onboarding. Leads participation in health information exchange
+          networks and evaluates TEFCA alignment requirements.
+        principal: >
+          Shapes the organization's interoperability vision at the executive
+          level, driving strategic participation in national data exchange
+          networks and influencing industry standards development. Evaluates
+          emerging interoperability paradigms and positions the organization as
+          a leader in health data exchange.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can assist with data mapping, message validation, and FHIR resource
+          generation. However, designing interoperability architectures that
+          work across organizational boundaries, navigating complex partner
+          relationships, and interpreting evolving federal regulations require
+          experienced human informaticists.
+
+    - id: health_data_standards
+      name: "Health Data Standards"
+      category: domain
+      description: >
+        Applying clinical and administrative data standards including ICD-10,
+        SNOMED CT, LOINC, RxNorm, CPT, and NDC codes to ensure consistent data
+        capture, storage, and exchange across health information systems,
+        supporting analytics, interoperability, and regulatory compliance.
+      proficiency:
+        junior: >
+          Identifies the purpose and scope of major health data standards and
+          code sets. Applies standard terminologies when configuring system
+          fields and validates that data elements conform to specified standards
+          in testing environments.
+        mid: >
+          Maps clinical concepts to appropriate standard terminologies across
+          system configurations and interfaces. Implements terminology
+          validation rules, manages code set updates, and troubleshoots
+          terminology-related data quality issues across clinical systems.
+        senior: >
+          Designs terminology management strategies that ensure consistent
+          standards application across the organization's clinical and
+          analytical systems. Leads cross-system terminology harmonization
+          efforts and advises on standards-related regulatory requirements.
+        staff: >
+          Establishes enterprise terminology governance including standards
+          selection criteria, mapping workflows, versioning strategies, and
+          quality monitoring. Partners with clinical documentation improvement
+          teams to align terminology use with organizational data strategy.
+        principal: >
+          Drives the organization's health data standards strategy, engaging
+          with standards development organizations, evaluating emerging
+          ontologies and classification systems, and positioning the
+          organization to leverage standards for AI, research, and value-based
+          care analytics.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI accelerates terminology mapping, code suggestion, and standards
+          compliance checking. However, governance decisions about standards
+          adoption, resolving conflicts between competing terminologies, and
+          understanding the clinical implications of terminology choices
+          require deep informatics expertise.
+
+    - id: change_management
+      name: "Change Management"
+      category: interpersonal
+      description: >
+        Leading organizational change associated with health IT implementations
+        and optimizations, including stakeholder analysis, communication
+        planning, resistance management, training strategies, and adoption
+        measurement to ensure that technology changes deliver intended clinical
+        and operational outcomes.
+      proficiency:
+        junior: >
+          Supports change management activities by preparing training materials,
+          assisting with go-live support events, and collecting user feedback.
+          Communicates system changes clearly to end users following established
+          communication templates and escalation procedures.
+        mid: >
+          Develops change management plans for informatics projects including
+          stakeholder analysis, communication strategies, and training curricula.
+          Monitors adoption metrics, identifies resistance patterns, and
+          implements targeted interventions to improve user acceptance.
+        senior: >
+          Leads change management strategy for complex, multi-department health
+          IT initiatives. Coaches clinical champions, designs governance
+          structures for ongoing optimization, and measures the impact of change
+          efforts on clinical outcomes, user satisfaction, and efficiency.
+        staff: >
+          Establishes organizational change management standards and frameworks
+          for health IT initiatives. Builds internal change management
+          capability by training informatics staff, creating reusable toolkits,
+          and defining success metrics that connect technology adoption to
+          organizational performance.
+        principal: >
+          Drives the organization's change management philosophy for health IT
+          at the executive level. Advises leadership on organizational readiness
+          for transformative technology changes, builds executive sponsorship
+          models, and ensures that change management is integral to all major
+          technology investment decisions.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          AI can help analyze adoption data and generate communication drafts,
+          but understanding organizational culture, building trust with clinical
+          stakeholders, and navigating the deeply human dynamics of technology
+          change in healthcare settings remain firmly beyond AI capabilities.
+
+    - id: vendor_management
+      name: "Vendor Management"
+      category: interpersonal
+      description: >
+        Managing relationships with health IT vendors including contract
+        negotiation, product roadmap alignment, service-level monitoring,
+        issue escalation, and evaluation of new products and features to
+        ensure vendor partnerships deliver organizational value.
+      proficiency:
+        junior: >
+          Logs and tracks vendor support tickets, assists with product testing
+          during upgrade cycles, and documents vendor-provided configuration
+          guidance. Participates in vendor training sessions and maintains
+          awareness of product release notes and known issues.
+        mid: >
+          Manages day-to-day vendor relationships for assigned products,
+          including issue escalation, enhancement request tracking, and
+          participation in product advisory calls. Evaluates new features
+          against organizational needs and coordinates vendor-led implementations.
+        senior: >
+          Leads vendor relationship management for critical health IT systems,
+          negotiating priorities, influencing product roadmaps, and ensuring
+          service-level commitments are met. Evaluates competing vendor
+          solutions for new requirements and presents recommendations to
+          leadership with total cost of ownership analysis.
+        staff: >
+          Establishes vendor management standards across the organization,
+          including evaluation frameworks, contract review processes, and
+          governance structures. Manages strategic vendor partnerships that
+          align product development with organizational health IT strategy.
+        principal: >
+          Drives vendor strategy at the executive level, evaluating build-vs-buy
+          decisions, negotiating enterprise agreements, and managing vendor
+          portfolio risk. Represents the organization in vendor advisory boards
+          and influences product direction for critical health IT platforms.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          AI can assist with contract analysis and feature comparison, but
+          building strategic vendor relationships, negotiating favorable terms,
+          and aligning vendor product roadmaps with organizational needs require
+          interpersonal skills and institutional knowledge that remain
+          distinctly human.
+
+    - id: clinical_decision_support
+      name: "Clinical Decision Support"
+      category: technical
+      description: >
+        Designing, implementing, testing, and maintaining clinical decision
+        support (CDS) rules, alerts, and advisories within EHR systems that
+        assist clinicians in making evidence-based care decisions, while
+        managing alert fatigue and ensuring patient safety.
+      proficiency:
+        junior: >
+          Tests CDS rules in non-production environments following documented
+          test plans. Assists with alert fire-rate analysis and documents CDS
+          specifications including trigger conditions, target populations, and
+          displayed content for standard clinical alerts.
+        mid: >
+          Designs and implements CDS rules including drug-drug interaction
+          alerts, order set recommendations, and documentation prompts.
+          Analyzes alert override rates, identifies alert fatigue patterns, and
+          proposes optimization strategies to improve CDS effectiveness.
+        senior: >
+          Architects CDS strategies that integrate evidence-based guidelines
+          with EHR workflows to maximize clinical impact while minimizing
+          alert burden. Leads CDS governance committees, designs evaluation
+          frameworks, and implements advanced CDS using predictive models and
+          context-aware logic.
+        staff: >
+          Establishes enterprise CDS governance standards including evidence
+          review processes, implementation workflows, outcome measurement, and
+          retirement criteria. Drives adoption of advanced CDS paradigms
+          including machine learning-based alerts and SMART on FHIR CDS Hooks.
+        principal: >
+          Shapes the organization's CDS vision and strategy, evaluating emerging
+          AI-powered decision support, ambient clinical intelligence, and
+          real-time surveillance systems. Advises leadership on the balance
+          between clinical automation and physician autonomy, and influences
+          industry standards for CDS implementation.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI is transforming CDS by enabling predictive alerts, natural language
+          processing of clinical notes, and context-aware recommendations.
+          However, ensuring CDS rules are clinically appropriate, managing the
+          organizational dynamics of alert governance, and evaluating the safety
+          implications of AI-generated recommendations require deep clinical
+          informatics expertise.
+
+    - id: training_adoption
+      name: "Training & Adoption"
+      category: interpersonal
+      description: >
+        Developing and delivering training programs that build end-user
+        proficiency with health IT systems, measuring adoption and
+        proficiency, and designing ongoing education strategies that sustain
+        effective system use as platforms evolve and new features are deployed.
+      proficiency:
+        junior: >
+          Delivers classroom and one-on-one EHR training sessions using
+          established curricula. Creates training environment scenarios,
+          assists with training material updates, and provides at-the-elbow
+          support during go-live events and new feature deployments.
+        mid: >
+          Designs training curricula for system implementations and major
+          updates, incorporating adult learning principles and role-based
+          content. Develops proficiency assessments, tracks completion rates,
+          and identifies users and departments requiring additional support.
+        senior: >
+          Leads training strategy for complex implementations spanning multiple
+          roles and clinical areas. Designs blended learning approaches
+          combining classroom, e-learning, and simulation. Measures training
+          effectiveness through adoption analytics and correlates proficiency
+          with clinical outcomes.
+        staff: >
+          Establishes organizational training standards and infrastructure
+          including learning management systems, competency frameworks, and
+          continuous education programs. Builds train-the-trainer models and
+          certifies internal training staff across clinical departments.
+        principal: >
+          Shapes the organization's health IT education strategy at the
+          executive level, evaluating emerging learning technologies, digital
+          adoption platforms, and AI-powered personalized training. Connects
+          training investment to organizational performance, safety, and
+          employee satisfaction metrics.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI enables personalized learning paths, automated proficiency
+          assessment, and intelligent help systems within EHR platforms.
+          However, designing training that addresses diverse clinical learning
+          styles, providing empathetic support during stressful implementations,
+          and building a culture of continuous learning remain human-driven.
+
+    - id: quality_improvement
+      name: "Quality Improvement"
+      category: domain
+      description: >
+        Applying quality improvement methodologies such as Plan-Do-Study-Act,
+        Lean, and Six Sigma to health IT initiatives, using data to identify
+        improvement opportunities, design interventions, measure outcomes, and
+        sustain gains in clinical quality, safety, and efficiency.
+      proficiency:
+        junior: >
+          Participates in quality improvement projects by collecting data,
+          preparing run charts, and documenting process observations. Understands
+          basic QI concepts including PDSA cycles, root cause analysis, and
+          standard process mapping techniques used in healthcare settings.
+        mid: >
+          Leads quality improvement projects using structured methodologies,
+          defining measurable objectives, collecting and analyzing baseline
+          data, implementing interventions, and reporting outcomes. Connects
+          health IT changes to quality metrics and demonstrates impact.
+        senior: >
+          Designs quality improvement programs that leverage health IT
+          capabilities to drive measurable gains in clinical outcomes and
+          operational efficiency. Mentors staff on QI methodologies, leads
+          cross-functional improvement teams, and presents results to quality
+          committees and organizational leadership.
+        staff: >
+          Establishes organizational frameworks connecting health IT
+          optimization to quality improvement objectives. Designs measurement
+          systems that track the impact of informatics initiatives on clinical
+          quality, safety, and efficiency across the enterprise.
+        principal: >
+          Drives the organization's strategy for using health IT as a quality
+          improvement engine at the executive level. Evaluates emerging
+          technologies for quality monitoring and intervention, and ensures
+          that informatics investments are aligned with organizational quality
+          and safety priorities.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can automate data collection, identify quality trends, and suggest
+          interventions based on patterns in clinical data. However, designing
+          effective improvement strategies, engaging clinical teams in change,
+          and sustaining quality gains require human leadership, creativity,
+          and interpersonal skills.
+
+    - id: data_governance
+      name: "Data Governance"
+      category: domain
+      description: >
+        Establishing and maintaining policies, standards, and processes that
+        ensure health data is accurate, accessible, consistent, secure, and
+        used appropriately across the organization, including data
+        stewardship, metadata management, data access controls, and data
+        lifecycle management.
+      proficiency:
+        junior: >
+          Follows established data governance policies when accessing and
+          handling health data. Documents data definitions and lineage for
+          assigned systems. Assists with data quality monitoring by running
+          standard validation checks and reporting results.
+        mid: >
+          Implements data governance standards for assigned clinical systems
+          and data domains. Manages metadata repositories, enforces data access
+          policies, and coordinates with data stewards to resolve data quality
+          issues. Contributes to data governance committee activities.
+        senior: >
+          Designs data governance frameworks for clinical data domains including
+          data ownership models, quality standards, access policies, and
+          lifecycle management procedures. Leads data governance committees
+          and drives cross-system data harmonization initiatives.
+        staff: >
+          Establishes enterprise-wide data governance standards and
+          infrastructure including governance councils, stewardship programs,
+          and technology platforms. Aligns data governance practices with
+          organizational analytics, compliance, and interoperability objectives.
+        principal: >
+          Drives the organization's data governance strategy at the executive
+          level, connecting data governance investment to business value,
+          regulatory compliance, and AI readiness. Evaluates emerging data
+          governance technologies and frameworks, and represents the
+          organization in industry data governance initiatives.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can automate metadata discovery, lineage tracking, and policy
+          compliance monitoring. However, defining governance policies that
+          balance data access with privacy, building organizational consensus
+          around data ownership, and making strategic decisions about data
+          lifecycle management require experienced human judgment.
+
+    - id: privacy_security
+      name: "Privacy & Security"
+      category: domain
+      description: >
+        Ensuring health information systems and data handling practices comply
+        with HIPAA, HITECH, and organizational security policies, including
+        access control design, audit trail management, security risk
+        assessments, and incident response for health IT systems.
+      proficiency:
+        junior: >
+          Follows organizational security policies when configuring and
+          accessing health IT systems. Applies role-based access control
+          settings as specified, completes security training, and reports
+          potential security concerns through established incident response
+          channels.
+        mid: >
+          Implements privacy and security controls within health IT systems
+          including role-based access, audit logging, and break-the-glass
+          procedures. Conducts access reviews, participates in security risk
+          assessments, and remediates identified vulnerabilities in assigned
+          systems.
+        senior: >
+          Designs privacy and security architectures for health IT systems that
+          balance data protection with clinical workflow efficiency. Leads
+          security risk assessments, designs audit strategies, and advises
+          clinical leadership on privacy-preserving approaches to data sharing
+          and analytics.
+        staff: >
+          Establishes organization-wide health IT privacy and security standards
+          including access governance frameworks, audit programs, and incident
+          response procedures. Partners with information security teams to
+          align health IT security practices with enterprise cybersecurity
+          strategy.
+        principal: >
+          Shapes the organization's health IT security strategy at the executive
+          level, evaluating emerging threats to healthcare systems, driving
+          investment in security infrastructure, and ensuring compliance with
+          evolving federal and state regulations. Advises leadership on risk
+          tolerance and security posture decisions.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI enhances threat detection, access anomaly identification, and
+          compliance monitoring for health IT systems. However, designing
+          security architectures that support clinical workflows, making risk
+          tolerance decisions, and responding to novel security threats in
+          healthcare environments require experienced human security and
+          informatics professionals.
+
+    - id: project_management
+      name: "Project Management"
+      category: interpersonal
+      description: >
+        Planning, executing, and delivering health IT projects on time, within
+        scope, and within budget, using project management methodologies
+        including Agile, waterfall, and hybrid approaches, with attention to
+        stakeholder management, risk mitigation, and resource allocation in
+        complex healthcare environments.
+      proficiency:
+        junior: >
+          Manages personal task lists and contributes to team project tracking.
+          Attends project meetings, documents action items and decisions, and
+          communicates task status accurately. Follows established project
+          management processes and escalates risks promptly.
+        mid: >
+          Manages small-to-medium health IT projects independently, including
+          scope definition, timeline creation, risk identification, and
+          stakeholder communication. Coordinates cross-functional task
+          dependencies and adjusts plans proactively when issues arise.
+        senior: >
+          Leads complex health IT projects spanning multiple clinical areas,
+          technical teams, and vendor partners. Manages project governance,
+          executive reporting, and issue escalation. Applies appropriate
+          methodology based on project characteristics and organizational
+          context.
+        staff: >
+          Establishes project management standards for health informatics
+          initiatives across the organization, including methodology selection
+          criteria, governance templates, and portfolio management practices.
+          Mentors project managers and drives continuous improvement of delivery
+          capabilities.
+        principal: >
+          Drives the organization's health IT delivery strategy at the
+          executive level, overseeing program portfolios, managing enterprise-
+          level risks, and ensuring that project investments align with
+          strategic priorities. Builds organizational delivery capability and
+          establishes partnerships with external implementation partners.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can assist with schedule optimization, risk prediction, and status
+          reporting automation. However, managing stakeholder relationships,
+          navigating organizational politics, and making judgment calls about
+          scope, timeline, and resource trade-offs in complex healthcare
+          projects remain fundamentally human activities.

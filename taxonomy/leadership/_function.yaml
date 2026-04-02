@@ -1,0 +1,21 @@
+function:
+  id: leadership
+  name: "Leadership"
+  description: >
+    Technical and product leadership roles responsible for organizational strategy,
+    team building, architectural vision, and executive decision-making. Spans
+    engineering management, product leadership, and technical architecture.
+  roles:
+    - engineering_manager
+    - director_engineering
+    - vp_engineering
+    - cto
+    - product_leader
+    - technical_architect
+  sources:
+    - name: "CTO Academy Leadership Framework"
+      url: "https://cto.academy/engineering-manager-to-vp-of-engineering/"
+    - name: "CircleCI Engineering Career Paths"
+      url: "https://circleci.com/blog/why-we-re-designed-our-engineering-career-paths-at-circleci/"
+    - name: "Dropbox Engineering Career Framework"
+      url: "https://dropbox.github.io/dbx-career-framework/"

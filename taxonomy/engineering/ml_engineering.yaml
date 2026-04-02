@@ -1,0 +1,549 @@
+role:
+  id: ml_engineering
+  function: engineering
+  name: "Machine Learning Engineer"
+  also_known_as:
+    - "ML Engineer"
+    - "Machine Learning Developer"
+    - "Applied ML Engineer"
+    - "AI Engineer"
+    - "ML Software Engineer"
+    - "Deep Learning Engineer"
+  description: >
+    Designs, builds, and deploys machine learning models and systems that solve real-world
+    problems at scale. Bridges the gap between data science research and production software
+    engineering, owning the full lifecycle from data ingestion and feature engineering through
+    model training, evaluation, deployment, and monitoring. Collaborates closely with data
+    scientists, platform engineers, and product teams to translate business requirements into
+    performant, reliable ML-powered products.
+
+  ai_impact:
+    level: "high"
+    summary: >
+      ML Engineering is simultaneously one of the roles most disrupted and most empowered by
+      advances in AI. Foundational model APIs, AutoML platforms, and code-generation assistants
+      are automating significant portions of routine model development, while the demand for
+      engineers who can architect novel ML systems, fine-tune large models, and operate them
+      responsibly at scale continues to accelerate.
+    automating:
+      - "Boilerplate model training scripts and hyperparameter searches"
+      - "Standard feature transformation and preprocessing pipelines"
+      - "Routine model selection for well-understood problem types"
+      - "Generation of evaluation reports and visualization dashboards"
+      - "Writing unit tests and integration tests for ML pipelines"
+    augmenting:
+      - "Rapid prototyping of novel architectures and training strategies"
+      - "Debugging training failures and diagnosing data-quality issues"
+      - "Literature review and staying current with research advances"
+      - "Code review and refactoring of ML codebases"
+      - "Incident triage when production models degrade"
+    preserving:
+      - "End-to-end ML system design and architectural decision-making"
+      - "Cross-functional collaboration and stakeholder communication"
+      - "Responsible AI governance, fairness audits, and ethical judgment"
+      - "Novel research translation and adaptation to business domains"
+      - "Mentoring junior engineers and building team culture"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "O*NET - Software Developers and ML Engineers"
+        url: "https://www.onetonline.org/link/summary/15-1252.00"
+      - name: "Stanford HAI - AI Index Report 2025"
+        url: "https://aiindex.stanford.edu/report/"
+      - name: "McKinsey - The State of AI in 2025"
+        url: "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai"
+
+  levels:
+    - id: junior
+      name: "Junior ML Engineer"
+      years_experience: "0-2"
+      summary: >
+        Implements well-defined ML tasks under close supervision. Trains and evaluates models
+        using established pipelines, writes clean supporting code, and begins learning MLOps
+        fundamentals. Focuses on building strong foundations in algorithms, frameworks, and
+        software engineering best practices.
+    - id: mid
+      name: "Mid-Level ML Engineer"
+      years_experience: "2-5"
+      summary: >
+        Independently owns model development and deployment for moderately complex projects.
+        Designs feature pipelines, selects appropriate architectures, and operates models in
+        production with monitoring and alerting. Begins contributing to system design decisions
+        and mentoring junior teammates.
+    - id: senior
+      name: "Senior ML Engineer"
+      years_experience: "5-8"
+      summary: >
+        Leads the technical direction of ML projects end-to-end, from problem framing through
+        production operation. Designs scalable training and serving infrastructure, drives
+        best practices across the team, and partners with product and leadership to align ML
+        investments with business outcomes. Acts as a go-to technical authority.
+    - id: staff
+      name: "Staff ML Engineer"
+      years_experience: "8-12"
+      summary: >
+        Sets the ML engineering strategy across multiple teams or a product area. Defines
+        architectural patterns, tooling standards, and quality bars for the organization.
+        Tackles the most ambiguous and high-impact problems, influences the technical roadmap,
+        and elevates engineering culture through design reviews, RFCs, and mentorship.
+    - id: principal
+      name: "Principal ML Engineer"
+      years_experience: "12+"
+      summary: >
+        Shapes the company-wide ML vision and long-term technical strategy. Drives
+        cross-organizational initiatives such as platform migrations, responsible-AI programs,
+        and foundational model adoption. Represents the organization externally through
+        publications, talks, and open-source leadership. Advises executive leadership on
+        technology investments and emerging capabilities.
+
+  skills:
+    - id: ml_fundamentals
+      name: "ML Algorithms & Theory"
+      category: technical
+      description: >
+        Understanding of core machine learning algorithms, statistical learning theory,
+        optimization methods, and the mathematical foundations that underpin model behavior
+        including linear algebra, probability, and information theory.
+      proficiency:
+        junior: >
+          Understands and applies standard supervised and unsupervised algorithms such as
+          linear models, decision trees, and k-means. Can explain bias-variance tradeoff
+          and basic regularization techniques.
+        mid: >
+          Selects appropriate algorithms for diverse problem types with justified tradeoffs.
+          Comfortable with ensemble methods, kernel methods, and probabilistic graphical
+          models. Diagnoses underfitting and overfitting through principled analysis.
+        senior: >
+          Deep command of optimization theory, convergence guarantees, and advanced methods
+          such as variational inference and reinforcement learning. Adapts and extends
+          algorithms to fit novel domain constraints.
+        staff: >
+          Guides the organization on algorithmic strategy, identifying when off-the-shelf
+          methods suffice versus when custom approaches are warranted. Publishes internal
+          research findings and drives knowledge-sharing across teams.
+        principal: >
+          Shapes the company's algorithmic direction and evaluates emerging research for
+          strategic adoption. Contributes original algorithmic work to the broader ML
+          community through papers or open-source projects.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AutoML and neural architecture search can automate routine algorithm selection,
+          but deep theoretical understanding remains essential for debugging failures,
+          designing novel approaches, and knowing when automated tools are unreliable.
+
+    - id: deep_learning
+      name: "Deep Learning Frameworks"
+      category: technical
+      description: >
+        Proficiency with modern deep learning frameworks such as PyTorch and TensorFlow,
+        including building custom architectures, writing efficient training loops, leveraging
+        accelerators (GPUs/TPUs), and utilizing the broader ecosystem of libraries like
+        Hugging Face Transformers, Lightning, and JAX.
+      proficiency:
+        junior: >
+          Builds and trains standard neural network architectures (CNNs, RNNs, Transformers)
+          using high-level framework APIs. Understands backpropagation and can use
+          pre-trained models for transfer learning.
+        mid: >
+          Writes custom layers, loss functions, and training loops. Profiles and optimizes
+          GPU utilization, manages mixed-precision training, and navigates framework
+          internals to debug subtle numerical issues.
+        senior: >
+          Designs complex multi-task and multi-modal architectures from scratch. Implements
+          advanced training strategies such as curriculum learning and self-supervised
+          pre-training. Drives framework migration decisions for the team.
+        staff: >
+          Defines deep learning best practices and reusable abstractions across the
+          organization. Evaluates and adopts new frameworks or paradigms (e.g., JAX, Triton
+          kernels) and mentors teams through transitions.
+        principal: >
+          Influences the organization's long-term deep learning platform strategy.
+          Collaborates with framework maintainers or hardware vendors to co-design solutions
+          for proprietary workloads at the frontier of model scale.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          Code generation tools accelerate boilerplate model code, and high-level APIs
+          reduce the barrier to entry. However, custom architecture design, performance
+          optimization, and debugging complex training dynamics still require deep expertise.
+
+    - id: nlp
+      name: "Natural Language Processing & LLMs"
+      category: technical
+      description: >
+        Expertise in processing, understanding, and generating human language using both
+        classical NLP techniques and modern large language models, covering tokenization,
+        embeddings, sequence modeling, text classification, information extraction, machine
+        translation, summarization, and conversational AI.
+      proficiency:
+        junior: >
+          Applies pre-trained language models and embeddings to standard NLP tasks such as
+          sentiment analysis and named entity recognition. Understands tokenization
+          strategies and basic text preprocessing.
+        mid: >
+          Fine-tunes transformer-based models for domain-specific tasks. Designs effective
+          prompt templates and evaluation harnesses. Handles multilingual data and builds
+          text pipelines that operate reliably at moderate scale.
+        senior: >
+          Architects end-to-end NLP systems that combine retrieval, generation, and
+          structured extraction. Implements advanced techniques like RLHF data collection,
+          constrained decoding, and knowledge distillation. Leads model quality benchmarking.
+        staff: >
+          Defines the organization's NLP strategy across products and identifies where LLMs
+          versus classical approaches deliver the best cost-quality tradeoff. Establishes
+          evaluation frameworks and quality gates for language-model-powered features.
+        principal: >
+          Drives enterprise-wide language AI vision including build-versus-buy decisions for
+          foundation models. Shapes data strategy for pre-training and fine-tuning corpora.
+          Represents the organization in industry working groups on language technology.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          LLM APIs have dramatically lowered the barrier for basic NLP tasks, automating
+          much of what previously required custom model development. Deep expertise remains
+          critical for production reliability, cost optimization, evaluation rigor, and
+          working at the frontier of language model capabilities.
+
+    - id: computer_vision
+      name: "Computer Vision"
+      category: technical
+      description: >
+        Building systems that interpret and analyze visual data including images, video, and
+        3D point clouds, encompassing object detection, segmentation, recognition, generation,
+        and multi-modal vision-language models.
+      proficiency:
+        junior: >
+          Applies pre-trained vision models for classification and detection tasks. Performs
+          standard data augmentation and understands common architectures like ResNet and
+          YOLO. Can set up annotation workflows and data pipelines for image datasets.
+        mid: >
+          Fine-tunes and adapts vision models for domain-specific use cases such as medical
+          imaging or manufacturing inspection. Implements custom augmentation strategies,
+          handles class imbalance, and deploys models for real-time inference on edge devices.
+        senior: >
+          Designs multi-stage vision pipelines (detection, tracking, re-identification) and
+          integrates vision with other modalities. Leads evaluation methodology including
+          dataset curation, annotation quality assurance, and failure-mode analysis.
+        staff: >
+          Defines the vision platform strategy across the organization including model
+          serving infrastructure, annotation tooling, and synthetic data generation.
+          Drives adoption of emerging paradigms such as vision foundation models and
+          neural radiance fields.
+        principal: >
+          Sets the company-wide computer vision research and product roadmap. Builds
+          partnerships with hardware vendors for specialized inference accelerators.
+          Publishes influential work and contributes to industry standards for vision AI.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          Foundation vision models and vision-language models have automated many standard
+          perception tasks, but domain-specific applications, real-time edge deployment,
+          and safety-critical vision systems still demand deep specialized expertise.
+
+    - id: mlops
+      name: "MLOps & Model Deployment"
+      category: technical
+      description: >
+        Practices and tooling for deploying, monitoring, and maintaining ML models in
+        production, including CI/CD for ML, model serving infrastructure, containerization,
+        orchestration, A/B testing, canary deployments, and production monitoring with
+        automated alerting and rollback.
+      proficiency:
+        junior: >
+          Packages models into containers and deploys them to a managed serving platform.
+          Understands the basics of CI/CD pipelines and can add models to existing
+          deployment workflows. Monitors dashboards and escalates anomalies.
+        mid: >
+          Builds end-to-end ML pipelines with automated training, validation, and deployment
+          stages. Implements model versioning, A/B testing, and shadow deployments.
+          Configures monitoring for data drift, prediction quality, and latency.
+        senior: >
+          Designs the MLOps platform architecture including pipeline orchestration, feature
+          serving, model registry, and observability stack. Drives reliability practices
+          such as SLOs for model performance, automated rollback, and chaos testing.
+        staff: >
+          Defines MLOps standards and platform strategy across the organization. Evaluates
+          and integrates vendor solutions versus internal tooling. Ensures compliance with
+          regulatory requirements for model auditability and lineage tracking.
+        principal: >
+          Shapes the industry-facing MLOps vision for the organization. Drives convergence
+          of ML infrastructure and software infrastructure patterns. Advises leadership on
+          build-versus-buy platform decisions and long-term infrastructure investments.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          Managed ML platforms and infrastructure-as-code generators are automating routine
+          deployment tasks, but designing resilient production ML systems, debugging
+          cross-cutting infrastructure issues, and operating at scale remain deeply
+          human-driven activities.
+
+    - id: experiment_tracking
+      name: "Experiment Tracking & Reproducibility"
+      category: analytical
+      description: >
+        Systematic tracking of ML experiments including hyperparameters, metrics, artifacts,
+        and code versions to ensure full reproducibility, facilitate comparison across runs,
+        and maintain a clear audit trail from research to production.
+      proficiency:
+        junior: >
+          Uses experiment tracking tools (MLflow, Weights & Biases, Neptune) to log
+          parameters, metrics, and artifacts for each training run. Follows team conventions
+          for naming and organizing experiments.
+        mid: >
+          Designs experiment tracking workflows that capture full reproducibility metadata
+          including data snapshots, environment specifications, and random seeds. Builds
+          comparison dashboards and automates report generation for stakeholders.
+        senior: >
+          Establishes organization-wide experiment tracking standards and integrates them
+          into CI/CD and model registry workflows. Implements lineage tracking from raw
+          data through deployed model, enabling regulatory audit trails.
+        staff: >
+          Architects the experiment management platform to support hundreds of practitioners
+          across teams. Drives convergence on tooling and metadata schemas that enable
+          cross-team benchmarking and knowledge transfer.
+        principal: >
+          Defines the strategic vision for reproducibility and scientific rigor across the
+          organization. Champions cultural norms around experiment documentation and
+          publishes best practices that influence the broader ML community.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI assistants can automate experiment logging, generate comparison reports, and
+          suggest hyperparameter configurations. However, designing meaningful experiments,
+          interpreting nuanced results, and maintaining organizational discipline around
+          reproducibility remain human responsibilities.
+
+    - id: feature_engineering
+      name: "Feature Engineering & Feature Stores"
+      category: technical
+      description: >
+        Transforming raw data into informative features that improve model performance,
+        and building feature store infrastructure that enables consistent feature computation,
+        sharing, and serving across training and inference with low latency and high
+        reliability.
+      proficiency:
+        junior: >
+          Creates standard feature transformations such as encodings, normalizations, and
+          aggregations. Uses existing feature store APIs to retrieve and serve features.
+          Understands the importance of avoiding data leakage between training and test sets.
+        mid: >
+          Designs complex feature pipelines including time-windowed aggregations, embedding
+          lookups, and cross-feature interactions. Implements feature validation and
+          monitoring for drift. Contributes new features to the shared feature store.
+        senior: >
+          Architects feature platforms that serve both batch training and real-time inference
+          with consistency guarantees. Drives feature discovery and reuse across teams.
+          Implements automated feature importance analysis and deprecation workflows.
+        staff: >
+          Defines the feature engineering strategy and platform roadmap for the organization.
+          Designs governance models for feature ownership, quality, and access control.
+          Evaluates emerging approaches like learned feature representations and automated
+          feature generation.
+        principal: >
+          Shapes the company's data-to-features vision, ensuring alignment between data
+          platform investments and ML engineering needs. Drives cross-organizational
+          initiatives to democratize feature access and improve data quality at the source.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          Automated feature engineering tools and deep learning's ability to learn
+          representations from raw data are reducing manual feature work for many use cases.
+          Domain-specific feature design, feature platform engineering, and governance
+          remain strongly human-driven.
+
+    - id: model_evaluation
+      name: "Model Evaluation & Validation"
+      category: analytical
+      description: >
+        Rigorous assessment of model quality, robustness, and readiness for production
+        through appropriate metrics selection, statistical testing, error analysis, fairness
+        auditing, stress testing, and structured validation gates that prevent regressions.
+      proficiency:
+        junior: >
+          Computes standard evaluation metrics (accuracy, precision, recall, F1, AUC) and
+          generates confusion matrices and learning curves. Understands the importance of
+          held-out test sets and cross-validation.
+        mid: >
+          Selects metrics aligned with business objectives and implements custom evaluation
+          protocols. Performs detailed error analysis including slice-based evaluation and
+          failure-mode categorization. Builds automated validation pipelines.
+        senior: >
+          Designs comprehensive evaluation frameworks that cover accuracy, fairness,
+          robustness, calibration, and latency. Implements statistical significance testing
+          and champions evaluation rigor across the team. Defines promotion criteria for
+          models entering production.
+        staff: >
+          Establishes organization-wide model validation standards and governance processes.
+          Drives adoption of advanced evaluation techniques such as adversarial testing,
+          counterfactual analysis, and human evaluation protocols for generative models.
+        principal: >
+          Defines the strategic approach to model quality assurance across the enterprise.
+          Influences industry standards and regulatory frameworks for ML model validation.
+          Ensures evaluation practices evolve to keep pace with new model paradigms.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI tools can automate metric computation and generate evaluation reports, but
+          defining what to measure, interpreting ambiguous results, designing meaningful
+          evaluation protocols, and making go/no-go deployment decisions require expert
+          human judgment.
+
+    - id: distributed_training
+      name: "Distributed & Large-Scale Training"
+      category: technical
+      description: >
+        Training ML models across multiple GPUs, nodes, and clusters using data parallelism,
+        model parallelism, pipeline parallelism, and emerging strategies like ZeRO and FSDP,
+        along with the infrastructure knowledge to manage large-scale compute efficiently.
+      proficiency:
+        junior: >
+          Runs multi-GPU training using framework-provided utilities like PyTorch
+          DistributedDataParallel. Understands basic concepts of data parallelism and can
+          troubleshoot common distributed training errors such as NCCL timeouts.
+        mid: >
+          Configures and optimizes multi-node training jobs on cluster schedulers (SLURM,
+          Kubernetes). Implements gradient accumulation, mixed-precision training, and
+          checkpointing strategies. Profiles communication bottlenecks and optimizes
+          throughput.
+        senior: >
+          Designs distributed training architectures using advanced parallelism strategies
+          including tensor parallelism, pipeline parallelism, and expert parallelism.
+          Optimizes training efficiency for large models, managing memory, communication,
+          and compute tradeoffs.
+        staff: >
+          Leads the organization's large-scale training infrastructure strategy including
+          cluster design, job scheduling policies, and cost optimization. Drives adoption
+          of emerging training paradigms and collaborates with cloud providers on hardware
+          roadmaps.
+        principal: >
+          Defines the long-term compute strategy for the organization and advises leadership
+          on GPU cluster investments, cloud commitments, and emerging hardware platforms.
+          Influences the design of next-generation training infrastructure through vendor
+          partnerships.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          Managed training platforms simplify some configuration, but distributed systems
+          engineering at the frontier of model scale involves deep expertise in hardware,
+          networking, and systems optimization that remains firmly in the domain of
+          specialized human engineers.
+
+    - id: llm_engineering
+      name: "LLM Fine-Tuning & RAG"
+      category: technical
+      description: >
+        Adapting large language models to specific domains and tasks through fine-tuning
+        techniques (full, LoRA, QLoRA, RLHF, DPO) and building retrieval-augmented generation
+        systems that ground model outputs in authoritative knowledge sources for accuracy
+        and recency.
+      proficiency:
+        junior: >
+          Fine-tunes pre-trained LLMs on custom datasets using parameter-efficient methods
+          like LoRA. Implements basic RAG pipelines with vector databases and embedding
+          models. Understands prompt engineering fundamentals.
+        mid: >
+          Designs and evaluates fine-tuning strategies for specific use cases, selecting
+          appropriate base models and training approaches. Builds production RAG systems
+          with chunking strategies, hybrid retrieval, re-ranking, and citation attribution.
+        senior: >
+          Architects complex LLM systems that combine fine-tuning, retrieval, tool use, and
+          guardrails. Implements advanced alignment techniques (RLHF, DPO, constitutional
+          AI). Designs rigorous evaluation frameworks for generative quality, factuality,
+          and safety.
+        staff: >
+          Defines the organization's LLM strategy including build-versus-buy decisions for
+          foundation models, fine-tuning infrastructure, and RAG platform architecture.
+          Establishes quality, safety, and cost benchmarks for LLM-powered products.
+        principal: >
+          Shapes the company-wide generative AI vision and roadmap. Drives strategic
+          partnerships with foundation model providers. Defines governance frameworks for
+          LLM deployment and advises leadership on capability evolution and risk management.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI-powered tools are accelerating LLM development by automating dataset preparation,
+          suggesting prompt strategies, and simplifying RAG pipeline construction. However,
+          production-grade LLM system design, alignment engineering, and cost-quality
+          optimization at scale require significant human expertise and judgment.
+
+    - id: responsible_ai
+      name: "Responsible AI & Bias Mitigation"
+      category: domain
+      description: >
+        Ensuring ML systems are fair, transparent, accountable, and aligned with ethical
+        principles and regulatory requirements, including bias detection and mitigation,
+        model explainability, privacy preservation, safety testing, and governance
+        frameworks for responsible AI development and deployment.
+      proficiency:
+        junior: >
+          Applies fairness metrics and bias detection tools to evaluate models across
+          demographic groups. Generates basic model explanations using SHAP or LIME.
+          Understands foundational concepts of algorithmic fairness and data privacy.
+        mid: >
+          Designs fairness evaluation protocols for specific domains and implements bias
+          mitigation strategies at the data, model, and post-processing levels. Builds
+          explainability dashboards and contributes to model cards and datasheets for
+          deployed systems.
+        senior: >
+          Leads responsible AI practices for the team including fairness audits, red-teaming
+          exercises, and privacy impact assessments. Implements differential privacy,
+          federated learning, and other privacy-preserving techniques. Drives adoption of
+          model documentation standards.
+        staff: >
+          Establishes the organization's responsible AI framework including policies,
+          tooling, review processes, and training programs. Partners with legal, policy,
+          and compliance teams to ensure regulatory alignment. Builds internal audit
+          capabilities for AI systems.
+        principal: >
+          Defines the company's responsible AI vision and represents the organization in
+          industry consortia and regulatory discussions. Shapes internal governance
+          structures and ensures responsible AI practices scale with the organization's
+          growing use of ML. Publishes thought leadership on AI ethics.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI tools can automate some bias scanning and generate explanations, but responsible
+          AI fundamentally requires human judgment about values, societal context, ethical
+          tradeoffs, and regulatory interpretation. This remains one of the most
+          human-centric aspects of ML engineering.
+
+    - id: ml_system_design
+      name: "ML System Design & Architecture"
+      category: leadership
+      description: >
+        Designing end-to-end ML systems that are scalable, maintainable, and aligned with
+        business objectives, encompassing requirements analysis, component selection,
+        data architecture, training and serving infrastructure, feedback loops, and
+        cross-functional integration with broader software systems.
+      proficiency:
+        junior: >
+          Understands common ML system design patterns and can articulate the components
+          of a typical ML pipeline. Follows established architectural templates and
+          contributes components to existing system designs.
+        mid: >
+          Designs ML systems for moderately complex use cases, selecting appropriate
+          components for data ingestion, feature computation, training, serving, and
+          monitoring. Produces clear design documents and identifies key technical risks.
+        senior: >
+          Architects large-scale ML systems that balance performance, cost, reliability,
+          and maintainability. Designs feedback loops for continuous model improvement.
+          Leads design reviews and drives consensus on critical architectural decisions
+          across engineering and product teams.
+        staff: >
+          Defines architectural patterns and reference designs that teams across the
+          organization adopt. Identifies cross-cutting platform opportunities and drives
+          convergence on shared infrastructure. Mentors senior engineers on system design
+          and leads the organization's technical design review process.
+        principal: >
+          Sets the long-term ML systems architecture vision for the enterprise. Drives
+          strategic technology decisions that affect multiple product lines and teams.
+          Ensures ML system designs align with company-wide data strategy, infrastructure
+          roadmap, and business objectives. Publishes influential system design work.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI assistants can help generate design document templates and suggest common
+          patterns, but ML system design requires deep contextual understanding of business
+          requirements, organizational constraints, cost tradeoffs, and technical risk
+          assessment that remains a distinctly human capability.

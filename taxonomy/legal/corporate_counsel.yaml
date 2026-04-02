@@ -1,0 +1,688 @@
+role:
+  id: corporate_counsel
+  function: legal
+  name: "Corporate Counsel"
+  also_known_as:
+    - "In-House Counsel"
+    - "General Counsel"
+    - "Corporate Attorney"
+    - "In-House Lawyer"
+    - "Business Counsel"
+  description: >
+    Serves as the organization's internal legal advisor, providing guidance
+    on business operations, transactions, disputes, and regulatory matters.
+    Corporate counsel balances legal risk with commercial objectives, drafting
+    and negotiating contracts, advising on corporate governance, managing
+    outside counsel, and ensuring the company operates within applicable laws
+    while pursuing strategic goals.
+  ai_impact:
+    level: "moderate"
+    summary: >
+      AI is transforming legal practice by accelerating contract drafting,
+      clause comparison, and case law research, reducing hours of manual work
+      to minutes. However, the core of corporate counsel work -- exercising
+      judgment on ambiguous legal questions, negotiating high-stakes deals,
+      advising executives on risk tolerance, and navigating novel regulatory
+      landscapes -- remains firmly human. Lawyers who integrate AI into their
+      workflows will handle larger portfolios with greater speed, but the
+      profession's reliance on contextual reasoning, persuasion, and ethical
+      judgment limits full automation.
+    automating:
+      - "First-draft contract generation from templates and playbooks"
+      - "Case law and statute research across jurisdictions"
+      - "Summarization of lengthy legal documents and filings"
+      - "Standard NDA and low-risk contract review"
+      - "Due diligence document collection and initial categorization"
+      - "Routine regulatory filing preparation"
+    augmenting:
+      - "Complex contract negotiation strategy and redlining"
+      - "M&A due diligence analysis and risk identification"
+      - "Litigation risk assessment and case strategy"
+      - "Regulatory change impact analysis across business units"
+      - "Intellectual property portfolio strategy"
+      - "Cross-jurisdictional compliance gap analysis"
+    preserving:
+      - "Executive advisory on business risk and strategic direction"
+      - "Negotiation of high-value deals and dispute settlements"
+      - "Ethical judgment on novel legal and business questions"
+      - "Board communication and corporate governance leadership"
+      - "Relationship management with regulators and outside counsel"
+      - "Crisis management and real-time legal decision-making"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "O*NET - Lawyers"
+        url: "https://www.onetonline.org/link/summary/23-1011.00"
+      - name: "Thomson Reuters Future of Professionals Report 2024"
+        url: "https://www.thomsonreuters.com/en-us/posts/technology/future-of-professionals-2024/"
+      - name: "Goldman Sachs - The Potentially Large Effects of AI on Economic Growth"
+        url: "https://www.gspublishing.com/content/research/en/reports/2023/03/27/d64e052b-0f6e-45d7-967b-d7be35fabd16.html"
+  levels:
+    - id: junior
+      name: "Junior Corporate Counsel"
+      years_experience: "0-3"
+      summary: >
+        Handles routine legal matters under supervision, including standard
+        contract reviews, basic corporate filings, and legal research
+        assignments. Learns the company's business, risk tolerance, and
+        internal processes. Drafts initial versions of agreements and memos
+        for senior review.
+    - id: mid
+      name: "Corporate Counsel"
+      years_experience: "3-6"
+      summary: >
+        Manages a portfolio of legal matters independently across one or
+        more business areas. Drafts and negotiates contracts of moderate
+        complexity, advises business teams on day-to-day legal questions,
+        and coordinates with outside counsel on specialized matters.
+        Identifies legal risks and proposes practical mitigation strategies.
+    - id: senior
+      name: "Senior Corporate Counsel"
+      years_experience: "6-10"
+      summary: >
+        Leads legal support for major business units or practice areas,
+        handling complex transactions, disputes, and regulatory matters.
+        Provides strategic legal advice that shapes business decisions.
+        Mentors junior attorneys and manages key outside counsel
+        relationships. Drives improvements to legal processes and templates.
+    - id: staff
+      name: "Assistant General Counsel"
+      years_experience: "10-15"
+      summary: >
+        Oversees a significant legal function or multiple practice areas.
+        Sets legal strategy for major business initiatives, M&A
+        transactions, or litigation portfolios. Manages a team of attorneys
+        and legal professionals. Advises senior leadership on enterprise-wide
+        legal risk and partners with the business to enable strategic
+        objectives within legal boundaries.
+    - id: principal
+      name: "General Counsel / Chief Legal Officer"
+      years_experience: "15+"
+      summary: >
+        Serves as the organization's top legal officer, setting the overall
+        legal strategy and managing the entire legal function. Advises the
+        CEO and board of directors on legal, regulatory, and governance
+        matters. Shapes company policy, manages enterprise legal risk, and
+        represents the organization to regulators, legislators, and the
+        public. Drives the legal department's operational excellence and
+        talent development.
+  skills:
+    - id: contract_drafting_review
+      name: "Contract Drafting & Review"
+      category: technical
+      description: >
+        Drafting, reviewing, and negotiating commercial agreements including
+        SaaS agreements, licensing deals, vendor contracts, employment
+        agreements, and partnership arrangements, with attention to risk
+        allocation, indemnification, liability caps, termination provisions,
+        and enforceability across jurisdictions.
+      proficiency:
+        junior: >
+          Reviews standard contracts against established playbooks and
+          identifies deviations from approved terms. Drafts initial versions
+          of NDAs, amendments, and simple vendor agreements using templates
+          with guidance from senior counsel.
+        mid: >
+          Drafts and negotiates moderately complex commercial agreements
+          independently, adapting templates to fit deal-specific requirements.
+          Identifies material risks in counterparty paper and proposes
+          alternative language that balances legal protection with business
+          objectives.
+        senior: >
+          Leads negotiation of high-value and complex agreements including
+          strategic partnerships, enterprise licenses, and multi-party deals.
+          Develops contract playbooks, fallback positions, and escalation
+          frameworks that enable faster deal execution across the organization.
+        staff: >
+          Defines the organization's contract standards, approval workflows,
+          and risk tolerance frameworks. Oversees playbook development across
+          practice areas and drives adoption of contract automation tools that
+          reduce cycle time while maintaining legal rigor.
+        principal: >
+          Sets enterprise contracting strategy aligned with business model
+          evolution and market positioning. Negotiates the highest-stakes
+          agreements personally, shapes industry contracting norms through
+          thought leadership, and ensures the contract function scales with
+          organizational growth.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI drafting tools can generate first drafts from playbooks and
+          compare clauses against benchmarks effectively. However, crafting
+          creative deal structures, negotiating against sophisticated
+          counterparties, and judging acceptable risk for novel arrangements
+          remain deeply human capabilities.
+
+    - id: corporate_governance
+      name: "Corporate Governance"
+      category: technical
+      description: >
+        Advising on board governance, fiduciary duties, entity management,
+        corporate authorizations, securities law compliance, and shareholder
+        matters, ensuring proper corporate formalities are maintained and
+        governance structures support the organization's strategy and
+        regulatory obligations.
+      proficiency:
+        junior: >
+          Prepares board meeting materials, corporate resolutions, and
+          organizational documents under supervision. Maintains entity
+          records, registered agent filings, and corporate minute books
+          following established checklists and procedures.
+        mid: >
+          Manages the corporate governance calendar independently, drafting
+          board and committee materials, resolutions, and consent actions.
+          Advises on routine governance questions including officer
+          appointments, subsidiary management, and equity plan administration.
+        senior: >
+          Advises the board and senior leadership on governance best
+          practices, fiduciary duties, and conflicts of interest. Leads
+          governance aspects of significant corporate events such as
+          financings, restructurings, and public offerings. Ensures
+          compliance with securities regulations and listing requirements.
+        staff: >
+          Designs and evolves the organization's governance framework
+          including committee charters, delegation of authority matrices,
+          and board information packages. Manages governance dimensions of
+          M&A integration and international subsidiary structures across
+          multiple jurisdictions.
+        principal: >
+          Serves as the primary governance advisor to the board of directors
+          and CEO. Shapes governance strategy to support long-term corporate
+          objectives, navigates activist investor situations, and ensures
+          governance practices reflect evolving regulatory expectations and
+          stakeholder demands.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can automate entity management tracking and draft routine
+          governance documents, but advising boards on fiduciary duties,
+          navigating conflicts of interest, and shaping governance strategy
+          require nuanced judgment and deep institutional knowledge that
+          resist automation.
+
+    - id: ma_due_diligence
+      name: "M&A Due Diligence"
+      category: technical
+      description: >
+        Conducting legal due diligence for mergers, acquisitions, investments,
+        and divestitures, including review of target company contracts,
+        intellectual property, litigation, regulatory compliance, employment
+        matters, and corporate records, synthesizing findings into risk
+        assessments that inform deal terms and valuation.
+      proficiency:
+        junior: >
+          Reviews due diligence documents in assigned categories such as
+          contracts or corporate records, flagging issues against provided
+          checklists. Populates data room indexes and organizes document
+          collections under supervision from senior team members.
+        mid: >
+          Manages due diligence workstreams across multiple categories,
+          identifying material risks and drafting sections of the due
+          diligence report. Coordinates with target company counsel to
+          resolve document requests and clarify open issues efficiently.
+        senior: >
+          Leads end-to-end legal due diligence for transactions, designing
+          the scope and prioritization of review based on deal type and
+          risk profile. Synthesizes findings into executive-level risk
+          summaries that influence deal terms, representations, warranties,
+          and indemnification structures.
+        staff: >
+          Oversees multiple simultaneous transactions, establishing due
+          diligence methodologies and quality standards across the legal
+          team. Advises deal principals on material findings that affect
+          valuation, deal structure, or go/no-go decisions for complex
+          multi-jurisdictional acquisitions.
+        principal: >
+          Shapes the organization's M&A legal strategy, including target
+          evaluation frameworks, integration playbooks, and risk appetite
+          for transformative transactions. Serves as the senior legal voice
+          in deal committees, balancing legal risk against strategic value
+          creation at the highest levels.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI dramatically accelerates document review, contract extraction,
+          and risk pattern identification during due diligence. However,
+          synthesizing disparate findings into a coherent risk narrative,
+          advising on deal terms, and exercising judgment on materiality
+          thresholds require experienced legal professionals.
+
+    - id: employment_law
+      name: "Employment Law"
+      category: technical
+      description: >
+        Advising on employment-related legal matters including hiring
+        practices, compensation and benefits compliance, workplace policies,
+        discrimination and harassment claims, terminations, leave
+        administration, non-compete and non-solicitation agreements, and
+        labor relations across domestic and international jurisdictions.
+      proficiency:
+        junior: >
+          Researches employment law questions and drafts initial responses
+          under supervision. Reviews offer letters, separation agreements,
+          and workplace policies against templates. Assists with
+          employment-related filings and document collection for workplace
+          investigations.
+        mid: >
+          Advises HR and managers on routine employment matters including
+          performance management, accommodations, leave compliance, and
+          termination risk. Drafts and updates employment agreements and
+          workplace policies. Supports internal investigations with
+          interview preparation and fact summaries.
+        senior: >
+          Leads complex employment matters including sensitive investigations,
+          reduction-in-force planning, executive employment negotiations, and
+          multi-state compliance programs. Manages employment litigation and
+          agency proceedings. Develops training programs on workplace legal
+          compliance for managers and HR teams.
+        staff: >
+          Defines the organization's employment law strategy across
+          jurisdictions, balancing compliance obligations with business
+          flexibility. Oversees employment dimensions of corporate
+          transactions and restructurings. Manages relationships with
+          employment litigation counsel and drives proactive risk reduction
+          initiatives.
+        principal: >
+          Sets enterprise workforce legal strategy aligned with business
+          growth, international expansion, and evolving employment
+          regulations. Advises the board and C-suite on labor market risks,
+          pay equity, worker classification, and emerging workforce
+          legislation. Shapes industry positions on employment policy.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can accelerate research across employment statutes and
+          regulations and draft standard employment documents effectively.
+          However, advising on sensitive workplace situations, conducting
+          investigations requiring credibility assessments, and navigating
+          the interplay of federal, state, and local employment laws require
+          nuanced human judgment.
+
+    - id: intellectual_property
+      name: "Intellectual Property"
+      category: technical
+      description: >
+        Managing and protecting the organization's intellectual property
+        portfolio including patents, trademarks, copyrights, trade secrets,
+        and licensing, with attention to prosecution strategy, freedom-to-
+        operate analyses, IP due diligence, enforcement, and portfolio
+        optimization aligned with business strategy.
+      proficiency:
+        junior: >
+          Assists with IP-related tasks such as invention disclosure intake,
+          trademark clearance searches, and copyright registration filings.
+          Maintains IP portfolio records and docketing systems. Researches
+          basic IP questions under supervision from experienced counsel.
+        mid: >
+          Manages trademark prosecution and maintenance across jurisdictions,
+          coordinates patent filings with outside counsel, and reviews
+          contracts for IP-related provisions. Conducts preliminary
+          freedom-to-operate assessments and supports IP due diligence for
+          transactions.
+        senior: >
+          Develops IP strategy for business units including patent filing
+          priorities, trade secret programs, and open-source compliance
+          policies. Leads IP aspects of licensing negotiations and M&A due
+          diligence. Manages IP enforcement actions and responds to third-
+          party infringement claims with strategic recommendations.
+        staff: >
+          Defines the organization's IP strategy aligned with product
+          roadmaps, competitive positioning, and monetization opportunities.
+          Oversees the full IP portfolio across patents, trademarks, and
+          trade secrets. Manages IP budgets, outside counsel panels, and
+          prosecution quality standards across the enterprise.
+        principal: >
+          Sets the enterprise IP vision connecting portfolio strategy to
+          corporate strategy, M&A activity, and market positioning. Advises
+          the board on IP valuation, licensing programs, and litigation
+          risk at the portfolio level. Engages with patent offices, industry
+          groups, and policymakers on IP reform and emerging issues like
+          AI-generated inventions.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI accelerates prior art searches, patent landscape analysis, and
+          trademark screening significantly. However, crafting patent claims
+          with appropriate scope, developing prosecution strategy, and making
+          enforcement decisions based on competitive dynamics require deep
+          technical and legal expertise.
+
+    - id: litigation_management
+      name: "Litigation Management"
+      category: technical
+      description: >
+        Overseeing the organization's litigation portfolio including pre-
+        litigation risk assessment, outside counsel selection and management,
+        case strategy, budgeting, settlement negotiations, and reporting to
+        senior leadership, spanning commercial disputes, regulatory actions,
+        employment claims, and intellectual property litigation.
+      proficiency:
+        junior: >
+          Assists with litigation support tasks including document collection,
+          legal research, and preparation of case chronologies. Coordinates
+          with outside counsel on discovery logistics and tracks litigation
+          hold compliance under direction from senior attorneys.
+        mid: >
+          Manages routine litigation matters with outside counsel, including
+          budget oversight, status reporting, and settlement authority
+          requests. Conducts early case assessments for new disputes, and
+          drafts litigation hold notices and privilege logs for standard
+          matters independently.
+        senior: >
+          Leads management of significant litigation matters, developing
+          case strategy with outside counsel and making recommendations on
+          settlement versus trial decisions. Manages litigation budgets for
+          a portfolio of matters and provides regular risk reporting to
+          senior leadership on material exposures.
+        staff: >
+          Oversees the organization's litigation function, setting case
+          management standards, outside counsel selection criteria, and
+          budgeting methodologies. Manages bet-the-company litigation and
+          drives alternative dispute resolution strategies that reduce cost
+          and business disruption across the portfolio.
+        principal: >
+          Defines the organization's litigation risk appetite and dispute
+          resolution philosophy at the enterprise level. Manages
+          relationships with top-tier litigation firms, reports material
+          exposures to the board, and makes final recommendations on
+          high-stakes settlement and trial decisions that affect the
+          company's reputation and financial position.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI significantly aids document review, case law research, and
+          litigation analytics for predicting outcomes. However, developing
+          case strategy, managing outside counsel relationships, making
+          settlement judgments, and presenting to senior leadership require
+          experienced legal professionals with strong business acumen.
+
+    - id: regulatory_compliance
+      name: "Regulatory Compliance"
+      category: technical
+      description: >
+        Ensuring organizational compliance with applicable laws, regulations,
+        and industry standards across all business operations, including
+        identifying regulatory requirements, advising business teams on
+        compliance obligations, managing regulatory relationships, and
+        responding to government inquiries and examinations.
+      proficiency:
+        junior: >
+          Monitors regulatory updates in assigned areas and summarizes
+          implications for the legal team. Assists with compliance
+          questionnaires, regulatory filings, and data collection for
+          government inquiries following established procedures and checklists.
+        mid: >
+          Advises business teams on regulatory requirements for new products,
+          markets, and initiatives. Manages routine regulatory filings and
+          correspondence with regulators. Conducts compliance assessments and
+          identifies gaps requiring remediation in assigned business areas.
+        senior: >
+          Leads regulatory compliance programs for major business areas,
+          developing compliance frameworks, managing regulatory
+          relationships, and coordinating responses to examinations and
+          investigations. Provides strategic guidance on navigating complex
+          regulatory landscapes and anticipates emerging regulatory trends.
+        staff: >
+          Designs enterprise-wide regulatory compliance architecture spanning
+          multiple regulatory frameworks and jurisdictions. Manages
+          regulatory risk at the portfolio level and advises senior
+          leadership on regulatory strategy for market expansion, product
+          launches, and corporate transactions that implicate licensing
+          and approval requirements.
+        principal: >
+          Sets the organization's regulatory strategy and government affairs
+          approach at the executive level. Engages directly with regulators
+          and policymakers to shape regulatory outcomes. Ensures the
+          compliance function scales with business growth while maintaining
+          the organization's reputation for regulatory integrity.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI excels at monitoring regulatory changes and mapping requirements
+          to business processes. However, interpreting ambiguous regulations,
+          building productive regulatory relationships, and advising on
+          strategic compliance positioning require experienced counsel with
+          deep domain knowledge.
+
+    - id: legal_research
+      name: "Legal Research"
+      category: technical
+      description: >
+        Conducting thorough and efficient legal research using primary and
+        secondary sources, legal databases such as Westlaw and LexisNexis,
+        and emerging AI-powered research tools, synthesizing findings into
+        clear, actionable legal memoranda and recommendations that inform
+        business decisions and legal strategy.
+      proficiency:
+        junior: >
+          Performs directed legal research using Westlaw, LexisNexis, and
+          public legal databases, identifying relevant statutes, regulations,
+          and case law. Drafts research memos summarizing findings and
+          applicable legal standards under supervision with proper citations.
+        mid: >
+          Conducts independent legal research on complex questions spanning
+          multiple jurisdictions and practice areas. Synthesizes large
+          volumes of authority into concise, well-organized memoranda with
+          clear recommendations. Leverages AI research tools to improve
+          efficiency and coverage.
+        senior: >
+          Designs research strategies for novel legal questions where
+          precedent is sparse or conflicting. Produces authoritative legal
+          analyses that inform major business decisions and litigation
+          strategy. Mentors junior attorneys on research methodology and
+          critical evaluation of AI-generated legal research.
+        staff: >
+          Establishes research standards and knowledge management systems
+          across the legal department. Evaluates and deploys legal research
+          technology including AI-powered tools. Ensures research quality
+          and consistency through templates, peer review processes, and
+          training programs for the legal team.
+        principal: >
+          Drives the legal department's knowledge strategy, ensuring
+          institutional legal knowledge is captured, maintained, and
+          accessible. Shapes the department's approach to integrating AI
+          research tools while maintaining rigor. Contributes to legal
+          scholarship and industry guidance on emerging legal questions.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI-powered legal research tools have dramatically accelerated case
+          law and statute discovery, citation verification, and document
+          summarization. However, framing the right legal questions,
+          evaluating the relevance and weight of authority, and synthesizing
+          research into strategic advice require trained legal reasoning.
+
+    - id: risk_assessment
+      name: "Risk Assessment"
+      category: technical
+      description: >
+        Identifying, evaluating, and prioritizing legal and regulatory risks
+        across business operations, transactions, and strategic initiatives,
+        developing risk mitigation frameworks, and communicating risk profiles
+        to stakeholders in terms that enable informed business decisions
+        balancing risk against commercial opportunity.
+      proficiency:
+        junior: >
+          Assists with risk assessment activities by gathering data,
+          populating risk registers, and conducting preliminary research on
+          identified risk areas. Follows established risk evaluation
+          frameworks and templates to document findings under senior guidance.
+        mid: >
+          Conducts risk assessments for business initiatives and
+          transactions, identifying material legal and regulatory risks
+          and proposing mitigation strategies. Maintains risk registers and
+          produces risk reports for assigned business areas with clear
+          categorization and prioritization.
+        senior: >
+          Leads enterprise risk assessment exercises spanning multiple
+          business units and legal domains. Develops risk frameworks and
+          scoring methodologies tailored to the organization's risk
+          appetite. Communicates complex risk profiles to senior
+          leadership in actionable terms that facilitate decision-making.
+        staff: >
+          Defines the organization's legal risk management strategy and
+          methodology, integrating legal risk into enterprise risk
+          management programs. Oversees risk assessment processes for major
+          corporate transactions and strategic initiatives. Establishes
+          risk reporting cadences and escalation protocols for the board.
+        principal: >
+          Sets the enterprise legal risk appetite in partnership with the
+          CEO and board. Drives a proactive risk culture that identifies
+          emerging threats before they materialize. Shapes risk governance
+          structures and ensures the organization's risk posture supports
+          strategic ambitions while protecting long-term enterprise value.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can aggregate risk data, identify patterns, and flag anomalies
+          across large portfolios effectively. However, calibrating risk
+          appetite to organizational context, making judgment calls on
+          ambiguous risks, and communicating risk trade-offs to leadership
+          require experienced professionals with deep business understanding.
+
+    - id: cross_functional_advisory
+      name: "Cross-Functional Advisory"
+      category: interpersonal
+      description: >
+        Providing practical, business-oriented legal guidance to stakeholders
+        across the organization including product, engineering, sales,
+        marketing, HR, and finance teams, translating complex legal concepts
+        into actionable recommendations that enable business objectives while
+        managing legal risk appropriately.
+      proficiency:
+        junior: >
+          Responds to routine legal questions from business teams using
+          established guidance and playbooks. Escalates novel or complex
+          questions appropriately. Builds relationships with business
+          stakeholders and learns to understand their operational context
+          and communication preferences.
+        mid: >
+          Serves as the primary legal contact for one or more business
+          functions, providing timely and practical legal advice on
+          recurring business activities. Translates legal requirements
+          into actionable guidance and develops FAQ documents and self-
+          service resources that reduce repeat inquiries.
+        senior: >
+          Acts as a trusted legal advisor to senior business leaders,
+          providing strategic counsel on complex initiatives that span
+          multiple legal disciplines. Anticipates legal issues before they
+          arise and proactively develops solutions that enable business
+          speed while managing risk within acceptable thresholds.
+        staff: >
+          Leads cross-functional legal support across major business lines,
+          ensuring consistent advice and aligned risk tolerance. Develops
+          legal intake and triage systems that optimize the allocation of
+          legal resources to highest-impact business needs. Influences
+          business strategy through early legal engagement on new ventures.
+        principal: >
+          Functions as a strategic business partner to the C-suite,
+          integrating legal perspective into enterprise strategy and
+          corporate development. Shapes the legal department's service
+          model to maximize business impact and positions the legal
+          function as a competitive advantage rather than a cost center.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can surface relevant policies and draft initial guidance for
+          routine questions. However, building trusted advisor relationships,
+          understanding unspoken business context, calibrating advice to
+          stakeholder risk tolerance, and providing strategic counsel on
+          novel situations remain fundamentally human capabilities.
+
+    - id: vendor_partner_negotiations
+      name: "Vendor & Partner Negotiations"
+      category: interpersonal
+      description: >
+        Leading or supporting negotiations with vendors, partners, customers,
+        and counterparties on commercial terms, legal protections, and risk
+        allocation, combining legal expertise with business acumen to achieve
+        favorable outcomes that preserve relationships and support long-term
+        strategic objectives.
+      proficiency:
+        junior: >
+          Prepares negotiation materials including redline comparisons,
+          issue lists, and background research on counterparties. Observes
+          negotiations led by senior counsel and documents agreed terms
+          and open issues for follow-up actions.
+        mid: >
+          Conducts negotiations on standard commercial agreements,
+          advocating for company positions on key terms while finding
+          creative compromises on secondary points. Manages negotiation
+          timelines and coordinates internal stakeholder alignment on
+          negotiation priorities and fallback positions.
+        senior: >
+          Leads complex, multi-party negotiations involving significant
+          financial exposure or strategic importance. Develops negotiation
+          strategies that balance legal risk mitigation with commercial
+          objectives. Manages escalation dynamics and finds creative
+          solutions to impasses that preserve deal value and relationships.
+        staff: >
+          Oversees negotiation strategy across the organization's major
+          commercial relationships, establishing standard terms, escalation
+          frameworks, and approval authorities. Personally leads the most
+          sensitive negotiations and develops the negotiation capabilities
+          of the legal team through coaching and training programs.
+        principal: >
+          Negotiates the organization's most consequential agreements
+          including strategic alliances, transformative acquisitions, and
+          major dispute settlements. Shapes the company's negotiation
+          philosophy and commercial terms strategy at the enterprise level.
+          Builds and maintains executive-level relationships with key
+          counterparties.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can prepare negotiation analyses and benchmark terms against
+          market data. However, reading counterparty dynamics, building
+          rapport, making real-time strategic concessions, and achieving
+          outcomes that preserve long-term relationships are fundamentally
+          human skills that resist automation.
+
+    - id: board_communication
+      name: "Board Communication"
+      category: interpersonal
+      description: >
+        Preparing materials for and communicating effectively with the board
+        of directors and board committees on legal matters, risk exposures,
+        governance issues, and strategic legal considerations, ensuring board
+        members have the information needed for informed decision-making
+        while managing privileged communications appropriately.
+      proficiency:
+        junior: >
+          Assists with preparation of board meeting materials including
+          legal updates, committee reports, and background research. Helps
+          organize board books and ensures materials are distributed on
+          schedule following established formatting and content guidelines.
+        mid: >
+          Drafts sections of board presentations and committee reports on
+          assigned legal topics. Prepares concise legal summaries that
+          translate complex matters into clear executive-level language.
+          Manages logistics for board meeting legal sessions and tracks
+          action items arising from board discussions.
+        senior: >
+          Prepares comprehensive board and committee materials on significant
+          legal matters, litigation updates, and regulatory developments.
+          Presents directly to board committees on specialized topics.
+          Ensures appropriate privilege protections in board communications
+          and maintains proper documentation of legal advice.
+        staff: >
+          Leads the legal department's board reporting function, setting
+          content standards and reporting cadences. Advises the general
+          counsel on board communication strategy and manages the
+          preparation of board materials for enterprise-level legal risk
+          assessments, governance matters, and major transactions.
+        principal: >
+          Serves as a primary advisor to the board on legal and governance
+          matters, presenting regularly to the full board and committees.
+          Shapes the board's understanding of the legal landscape, emerging
+          risks, and regulatory trends. Manages sensitive board-level
+          communications including special committee matters and internal
+          investigations with appropriate privilege protections.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can help draft initial board materials and summarize complex
+          legal matters. However, calibrating the level of detail for board
+          audiences, managing privilege considerations, presenting with
+          appropriate nuance, and advising directors on governance judgment
+          calls are inherently human activities.

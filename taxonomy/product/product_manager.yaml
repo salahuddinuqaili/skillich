@@ -1,0 +1,235 @@
+role:
+  id: product_manager
+  function: product
+  name: "Product Manager"
+  also_known_as:
+    - "PM"
+    - "Product Owner"
+    - "Program Manager (Microsoft)"
+    - "Product Lead"
+  description: >
+    Product Managers drive the strategy, roadmap, and execution of a product or product area,
+    serving as the connective tissue between engineering, design, data, and business teams.
+    They translate user needs and business objectives into clearly prioritized features,
+    coordinate cross-functional delivery, and measure outcomes to inform future investment.
+  ai_impact:
+    level: moderate-high
+    summary: >
+      AI is reshaping how PMs work by automating routine analysis, drafting documents, and
+      synthesizing research at unprecedented speed. Generative AI tools can produce first-draft
+      PRDs, competitive summaries, and data queries in seconds, freeing PMs to focus on judgment,
+      strategy, and cross-functional alignment. However, the core PM value proposition of setting
+      vision, making trade-off decisions under ambiguity, and influencing without authority remains
+      deeply human.
+    automating:
+      - "Drafting product requirement documents and user stories"
+      - "Generating competitive landscape summaries from public data"
+      - "Writing SQL queries and basic data pulls for product metrics"
+      - "Summarizing user feedback and support ticket themes"
+    augmenting:
+      - "Prioritization modeling with AI-assisted scoring frameworks"
+      - "Rapid prototyping and wireframing with generative design tools"
+      - "Scenario planning and market sizing with AI forecasting"
+      - "Automated experiment analysis and statistical significance testing"
+    preserving:
+      - "Setting product vision and long-term strategy"
+      - "Making high-stakes trade-off decisions under ambiguity"
+      - "Building cross-functional trust and influencing without authority"
+      - "Navigating organizational politics and stakeholder alignment"
+      - "Ethical judgment on user impact and data privacy"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Reforge AI for Product Managers"
+        url: "https://www.reforge.com/blog/ai-for-product-managers"
+      - name: "Lenny Rachitsky - AI and the Future of PM"
+        url: "https://www.lennysnewsletter.com/p/how-ai-will-change-product-management"
+  levels:
+    - id: junior
+      name: "Junior/Associate"
+      years_experience: "0-2"
+      summary: "Supports a senior PM by owning small features or components, writes basic specs, gathers data, and begins learning how to coordinate across teams."
+    - id: mid
+      name: "Mid-Level"
+      years_experience: "2-5"
+      summary: "Independently owns a product area or feature set, drives roadmap execution end to end, and consistently ships outcomes that move team-level metrics."
+    - id: senior
+      name: "Senior"
+      years_experience: "5-8"
+      summary: "Owns a significant product area, defines strategy that aligns to company objectives, mentors junior PMs, and partners with engineering and design leadership."
+    - id: staff
+      name: "Staff/Group PM"
+      years_experience: "8-12"
+      summary: "Drives strategy across multiple product areas, resolves cross-team dependencies, shapes organizational processes, and represents product in executive forums."
+    - id: principal
+      name: "Principal/Director of Product"
+      years_experience: "12+"
+      summary: "Sets product vision across a portfolio, influences company strategy, builds and scales PM teams, and is accountable for business-unit-level outcomes."
+  skills:
+    - id: product_strategy
+      name: "Product Strategy"
+      category: domain
+      description: "The ability to define a compelling product vision, identify target markets, and articulate a strategy that differentiates the product and creates sustainable competitive advantage."
+      proficiency:
+        junior: "Understands the existing product strategy and can articulate how their feature work ladders up to broader goals. Asks clarifying questions about strategic rationale."
+        mid: "Develops feature-level strategy with clear hypotheses, success metrics, and competitive rationale. Identifies gaps and proposes strategic adjustments for their area."
+        senior: "Owns product-area strategy end to end, incorporating market trends, competitive dynamics, and business model implications. Presents strategy to leadership with conviction."
+        staff: "Shapes cross-product strategy spanning multiple teams, identifies new market opportunities, and drives portfolio-level trade-offs that align with company mission."
+        principal: "Sets multi-year product vision for a business unit, influences company-level strategic direction, and builds frameworks that other PMs use to develop their own strategies."
+      ai_impact:
+        rating: 0.2
+        detail: "AI can surface market data and competitive intelligence, but synthesizing it into a differentiated strategy requires deep judgment, creativity, and organizational context."
+
+    - id: roadmap_prioritization
+      name: "Roadmap & Prioritization"
+      category: analytical
+      description: "The practice of deciding what to build and in what order, using structured frameworks to balance user value, business impact, effort, and strategic alignment."
+      proficiency:
+        junior: "Maintains backlog hygiene, writes clear tickets, and applies basic prioritization frameworks like RICE or MoSCoW when guided. Understands why sequencing matters."
+        mid: "Owns the roadmap for a product area, applies prioritization frameworks independently, makes defensible trade-offs, and communicates priorities to stakeholders."
+        senior: "Balances competing stakeholder demands across a larger product surface area, uses quantitative and qualitative inputs to build quarterly roadmaps, and says no effectively."
+        staff: "Orchestrates roadmap alignment across multiple teams, resolves cross-team priority conflicts, and builds planning processes that scale with organizational growth."
+        principal: "Drives company-level investment allocation across product areas, establishes prioritization culture and governance, and ensures roadmaps connect to multi-year strategy."
+      ai_impact:
+        rating: 0.4
+        detail: "AI scoring models can accelerate RICE calculations and surface data for prioritization, but ultimate trade-off decisions require human judgment about strategic context and stakeholder dynamics."
+
+    - id: requirements_definition
+      name: "Requirements Definition"
+      category: technical
+      description: "The craft of translating user needs and business goals into clear, actionable product requirements documents, user stories, and acceptance criteria that engineering teams can build from."
+      proficiency:
+        junior: "Writes basic user stories with acceptance criteria following established templates. Seeks feedback from senior PMs and engineers to improve clarity."
+        mid: "Produces comprehensive PRDs that cover user flows, edge cases, technical considerations, and success metrics. Drives alignment with engineering before development begins."
+        senior: "Writes requirements at the epic and initiative level, balancing specificity with room for engineering creativity. Defines phased rollout plans and feature-flag strategies."
+        staff: "Establishes requirements standards and templates across multiple teams, reviews complex PRDs from other PMs, and ensures requirements connect to measurable business outcomes."
+        principal: "Defines high-level product briefs that set vision and constraints while empowering teams to determine implementation details. Coaches the organization on effective specification practices."
+      ai_impact:
+        rating: 0.6
+        detail: "Generative AI can draft initial PRDs, user stories, and acceptance criteria from brief prompts, significantly accelerating the writing process. PMs still must validate completeness, resolve ambiguity, and ensure strategic alignment."
+
+    - id: data_fluency
+      name: "Data Fluency"
+      category: analytical
+      description: "The ability to define metrics, query data, interpret dashboards, and use quantitative evidence to inform product decisions and measure outcomes."
+      proficiency:
+        junior: "Reads dashboards and basic reports, understands core product metrics like DAU and conversion rate, and can request specific data pulls from analysts."
+        mid: "Writes SQL queries for routine analysis, defines feature-level success metrics, and interprets A/B test results with guidance on statistical nuance."
+        senior: "Independently designs metric frameworks for a product area, identifies leading and lagging indicators, and catches data quality issues before they distort decisions."
+        staff: "Establishes metric hierarchies and data governance practices across teams, partners with data engineering on instrumentation strategy, and drives data-informed culture."
+        principal: "Defines company-level KPI frameworks, ensures metric alignment across business units, and champions investment in data infrastructure as a strategic asset."
+      ai_impact:
+        rating: 0.5
+        detail: "AI copilots can generate SQL, summarize dashboards, and flag anomalies, making data access more democratic. Interpreting results in business context and defining the right metrics still requires human expertise."
+
+    - id: user_empathy
+      name: "User Empathy"
+      category: domain
+      description: "The capacity to deeply understand user needs, motivations, pain points, and behaviors through direct engagement, research synthesis, and sustained curiosity about the user experience."
+      proficiency:
+        junior: "Participates in user interviews and usability sessions, reads research reports, and begins developing intuition about user needs in their product area."
+        mid: "Regularly conducts user interviews, synthesizes feedback patterns, and uses user understanding to shape feature requirements and prioritization."
+        senior: "Builds deep domain expertise about user segments, champions the user perspective in strategic debates, and identifies unmet needs that unlock new product opportunities."
+        staff: "Establishes user-engagement rituals across teams, ensures research insights flow into product decisions at scale, and mentors PMs on developing user empathy."
+        principal: "Shapes company-wide customer philosophy, personally engages with key customer segments, and ensures user-centricity is embedded in organizational processes and incentives."
+      ai_impact:
+        rating: 0.2
+        detail: "AI can summarize user feedback at scale and surface sentiment trends, but genuine empathy requires human connection, contextual reading, and the emotional intelligence to hear what users do not say."
+
+    - id: stakeholder_management
+      name: "Stakeholder Management"
+      category: communication
+      description: "The practice of identifying, engaging, and aligning diverse stakeholders across engineering, design, sales, marketing, and leadership to build consensus and drive product outcomes."
+      proficiency:
+        junior: "Keeps immediate team informed of progress, escalates blockers promptly, and builds trust through reliable follow-through on commitments."
+        mid: "Manages competing stakeholder requests, communicates trade-off rationale clearly, and navigates disagreements to reach alignment across functional teams."
+        senior: "Influences senior leaders and cross-functional peers without direct authority, builds coalitions for strategic initiatives, and proactively manages expectations across the organization."
+        staff: "Navigates complex organizational dynamics across multiple teams and business units, resolves executive-level conflicts, and builds sustainable stakeholder processes."
+        principal: "Serves as a trusted advisor to C-suite on product matters, shapes cross-company alignment on strategic bets, and represents the product organization externally to board and investors."
+      ai_impact:
+        rating: 0.1
+        detail: "Stakeholder management is fundamentally about relationships, trust, and political navigation. AI can help prepare briefs and talking points, but the interpersonal dynamics remain entirely human."
+
+    - id: go_to_market
+      name: "Go-to-Market Execution"
+      category: domain
+      description: "The ability to plan and coordinate product launches across marketing, sales, support, and customer success to ensure features reach users effectively and achieve adoption targets."
+      proficiency:
+        junior: "Contributes to launch checklists, drafts release notes, and coordinates with one or two partner teams on small feature launches."
+        mid: "Owns end-to-end GTM for feature launches, coordinates across marketing, sales enablement, and support, and tracks adoption metrics post-launch."
+        senior: "Designs GTM strategies for major product launches, stages rollouts to manage risk, and drives cross-functional launch retrospectives to improve processes."
+        staff: "Establishes GTM playbooks and frameworks used across the product organization, partners with marketing leadership on positioning and messaging strategy."
+        principal: "Orchestrates GTM for transformational product bets, aligns launch strategy with company-level brand and revenue goals, and builds the organizational muscle for repeatable launches."
+      ai_impact:
+        rating: 0.4
+        detail: "AI can draft launch materials, generate messaging variants, and automate launch-readiness checklists. Orchestrating cross-functional execution and reading market timing remain human-driven."
+
+    - id: experimentation
+      name: "Experimentation & Testing"
+      category: analytical
+      description: "The discipline of designing, running, and interpreting experiments to validate product hypotheses, reduce risk, and make evidence-based decisions about feature rollouts."
+      proficiency:
+        junior: "Understands basic A/B testing concepts, helps define experiment hypotheses, and reads experiment results with guidance from analysts or senior PMs."
+        mid: "Designs experiments with clear hypotheses, selects appropriate metrics and sample sizes, and interprets results with awareness of common statistical pitfalls."
+        senior: "Runs sophisticated multi-variate experiments, establishes experimentation standards for their product area, and makes ship-or-kill decisions based on nuanced result interpretation."
+        staff: "Builds experimentation culture and infrastructure across teams, defines guardrail metrics, and creates frameworks for deciding when experimentation is and is not appropriate."
+        principal: "Champions an experimentation-driven product culture at the company level, invests in platform capabilities, and balances data-driven rigor with strategic conviction when experiments are inconclusive."
+      ai_impact:
+        rating: 0.5
+        detail: "AI can automate experiment analysis, flag statistical significance, and suggest follow-up tests. Framing the right hypotheses and making judgment calls on ambiguous results require human reasoning."
+
+    - id: business_acumen
+      name: "Business Acumen"
+      category: domain
+      description: "The understanding of business models, revenue mechanics, unit economics, and competitive dynamics that enables a PM to make product decisions aligned with commercial success."
+      proficiency:
+        junior: "Understands the company's basic business model, can explain how their product area contributes to revenue, and follows competitive developments."
+        mid: "Incorporates unit economics and revenue impact into feature prioritization, builds basic business cases for investment, and tracks competitive moves proactively."
+        senior: "Develops P&L-level thinking for their product area, builds detailed business cases for strategic investments, and identifies monetization opportunities."
+        staff: "Drives commercial strategy across multiple product areas, partners with finance on forecasting and resource allocation, and identifies new revenue streams."
+        principal: "Shapes the company's business model evolution, advises executive leadership on commercial strategy, and evaluates build-vs-buy-vs-partner decisions at the portfolio level."
+      ai_impact:
+        rating: 0.3
+        detail: "AI can accelerate market research, financial modeling, and competitive analysis. Synthesizing commercial insight into strategic product decisions requires experienced human judgment."
+
+    - id: technical_fluency
+      name: "Technical Fluency"
+      category: technical
+      description: "Sufficient understanding of software architecture, engineering trade-offs, and technical constraints to collaborate effectively with engineering teams and make informed product-technical decisions."
+      proficiency:
+        junior: "Understands basic technical concepts like APIs, databases, and front-end vs. back-end. Asks informed questions about engineering estimates and technical feasibility."
+        mid: "Engages in architectural discussions, understands trade-offs between speed and technical debt, and can scope features with awareness of system constraints."
+        senior: "Partners with engineering leadership on technical strategy, evaluates platform vs. feature investment trade-offs, and anticipates technical risks in the roadmap."
+        staff: "Shapes technical platform strategy across teams, drives build-vs-buy decisions for infrastructure, and ensures product and engineering roadmaps are tightly aligned."
+        principal: "Influences company-wide technical direction from a product perspective, evaluates emerging technologies for strategic impact, and partners with CTO on long-term platform vision."
+      ai_impact:
+        rating: 0.3
+        detail: "AI coding assistants lower the barrier for PMs to prototype and understand code, but deep technical judgment about architecture, scalability, and trade-offs remains essential."
+
+    - id: team_leadership
+      name: "Team Leadership"
+      category: leadership
+      description: "The ability to lead, mentor, and grow product teams, fostering a culture of ownership, collaboration, and continuous improvement across the product organization."
+      proficiency:
+        junior: "Demonstrates ownership of assigned work, collaborates effectively with peers, and proactively seeks mentorship and feedback on their development."
+        mid: "Informally mentors interns or new hires, facilitates productive team rituals, and models accountability and transparency within the immediate team."
+        senior: "Directly mentors junior PMs, leads hiring and onboarding for the product team, and shapes team processes to improve velocity and decision quality."
+        staff: "Manages or matrixes multiple PMs, develops career frameworks and growth plans, and builds a team culture that attracts and retains top product talent."
+        principal: "Builds and scales the PM organization, defines the PM career ladder, establishes hiring bar and culture, and represents the product function in company leadership."
+      ai_impact:
+        rating: 0.1
+        detail: "Leadership, mentorship, and organizational development are fundamentally human capabilities. AI can provide coaching resources and automate administrative tasks, but building trust and growing people requires direct human engagement."
+
+    - id: executive_communication
+      name: "Executive Communication"
+      category: communication
+      description: "The skill of distilling complex product information into clear, compelling narratives tailored for senior leadership, board members, and external audiences."
+      proficiency:
+        junior: "Writes clear status updates, presents feature demos to the immediate team, and structures information logically in documents and emails."
+        mid: "Presents product updates and proposals to director-level stakeholders, adapts communication style to different audiences, and tells coherent stories with data."
+        senior: "Delivers compelling executive presentations, writes crisp strategy documents, and communicates bad news and hard trade-offs with clarity and confidence."
+        staff: "Crafts narratives that influence VP and C-level decision-making, represents the product organization in cross-functional executive forums, and coaches other PMs on communication."
+        principal: "Presents to the board of directors, shapes external product narratives for press and analysts, and establishes communication standards and cadences across the product organization."
+      ai_impact:
+        rating: 0.4
+        detail: "AI can draft presentations, polish prose, and structure narratives. The ability to read a room, adapt in real time, and convey authentic conviction is irreplaceable."

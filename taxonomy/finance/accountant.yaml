@@ -1,0 +1,741 @@
+role:
+  id: accountant
+  function: finance
+  name: "Accountant"
+  also_known_as:
+    - "Staff Accountant"
+    - "General Ledger Accountant"
+    - "Corporate Accountant"
+    - "Bookkeeper"
+    - "Accounting Specialist"
+  description: >
+    Manages an organization's financial records, ensures compliance with
+    accounting standards and tax regulations, and prepares accurate financial
+    statements. Accountants maintain the integrity of the general ledger,
+    reconcile accounts, process transactions, and serve as the foundation of
+    financial reporting and compliance. They work at the intersection of
+    regulatory requirements, internal controls, and operational finance to
+    ensure stakeholders can trust the numbers that drive business decisions.
+  ai_impact:
+    level: "very-high"
+    summary: >
+      AI is profoundly transforming accounting by automating bookkeeping,
+      transaction coding, reconciliation, and routine compliance tasks that
+      historically consumed the majority of accountants' time. Invoice
+      processing, bank reconciliation, and standard journal entries are
+      increasingly handled by intelligent automation tools. However, the
+      profession's judgment-intensive work around complex accounting estimates,
+      internal controls design, client advisory services, and ethical
+      stewardship of financial integrity remains essential and human.
+      Accountants who embrace AI tools will shift from transaction processing
+      toward advisory and analytical roles.
+    automating:
+      - "Transaction coding and journal entry posting"
+      - "Bank and credit card reconciliation"
+      - "Invoice processing and three-way matching"
+      - "Standard month-end accrual calculations"
+      - "Routine tax form preparation and filing"
+      - "Data entry from source documents into ERP systems"
+    augmenting:
+      - "Complex account reconciliation with anomaly detection"
+      - "Financial statement drafting and variance analysis"
+      - "Tax planning scenario modeling and optimization"
+      - "Audit workpaper preparation and evidence gathering"
+      - "Regulatory change impact assessment"
+      - "Cash flow forecasting and working capital analysis"
+    preserving:
+      - "Professional judgment on accounting estimates and reserves"
+      - "Internal controls design and effectiveness evaluation"
+      - "Client and stakeholder advisory relationships"
+      - "Ethical reasoning about financial reporting integrity"
+      - "Complex transaction structuring and accounting treatment"
+      - "Cross-functional collaboration with legal, tax, and operations"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "O*NET - Accountants and Auditors"
+        url: "https://www.onetonline.org/link/summary/13-2011.00"
+      - name: "McKinsey - The Economic Potential of Generative AI"
+        url: "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier"
+      - name: "AICPA - Future of Accounting"
+        url: "https://www.aicpa-cima.com/resources/landing/future-of-finance"
+  levels:
+    - id: junior
+      name: "Junior Accountant"
+      years_experience: "0-2"
+      summary: >
+        Performs routine accounting tasks including transaction processing,
+        basic reconciliations, and data entry under close supervision.
+        Learns the organization's chart of accounts, accounting policies,
+        and ERP system. Builds foundational knowledge of GAAP/IFRS and
+        develops attention to detail and accuracy.
+    - id: mid
+      name: "Accountant"
+      years_experience: "2-5"
+      summary: >
+        Manages complete accounting cycles for assigned areas including
+        journal entries, reconciliations, and period-end close tasks. Works
+        independently on moderate-complexity items, prepares supporting
+        schedules for financial statements, and assists with audit requests.
+        Identifies and resolves discrepancies with limited guidance.
+    - id: senior
+      name: "Senior Accountant"
+      years_experience: "5-8"
+      summary: >
+        Leads accounting for complex areas such as revenue recognition,
+        intercompany transactions, or multi-entity consolidation. Reviews
+        junior staff work, manages key close activities, and serves as a
+        primary contact for external auditors. Drives process improvements
+        and ensures compliance with evolving accounting standards.
+    - id: staff
+      name: "Staff Accountant Lead"
+      years_experience: "8-12"
+      summary: >
+        Oversees accounting operations across multiple functional areas or
+        entities, setting standards for quality, timeliness, and compliance.
+        Designs and implements accounting processes and internal controls
+        for new business activities. Serves as the technical accounting
+        resource for complex transactions and policy interpretations.
+    - id: principal
+      name: "Principal Accountant"
+      years_experience: "12+"
+      summary: >
+        Defines the organization's accounting strategy, including technical
+        positions on complex standards, system architecture decisions, and
+        the balance between in-house and outsourced capabilities. Serves as
+        the ultimate authority on accounting policy, engages with auditors
+        and regulators at the highest level, and shapes the profession's
+        evolution within the organization.
+  skills:
+    - id: gaap_ifrs
+      name: "Generally Accepted Accounting (GAAP/IFRS)"
+      category: technical
+      description: >
+        Deep knowledge of accounting standards frameworks including US GAAP
+        (ASC codification) and International Financial Reporting Standards,
+        covering recognition, measurement, presentation, and disclosure
+        requirements across all major accounting topics. Includes the ability
+        to research, interpret, and apply standards to novel transactions.
+      proficiency:
+        junior: >
+          Understands fundamental accounting concepts including accrual basis,
+          matching principle, and the core recognition criteria for revenue
+          and expenses. Applies standard GAAP treatments for routine
+          transactions following established policies and refers complex items
+          to senior team members for guidance on proper classification.
+        mid: >
+          Applies GAAP/IFRS standards to moderate-complexity transactions
+          independently, including proper revenue recognition timing, lease
+          classification, and impairment assessments. Researches codification
+          topics to support accounting positions and documents conclusions
+          clearly. Identifies when transactions require non-routine accounting
+          treatment or senior review.
+        senior: >
+          Navigates complex accounting standards including ASC 606 revenue
+          recognition, ASC 842 leases, ASC 805 business combinations, and
+          ASC 350/360 impairment. Drafts technical accounting memos supporting
+          position choices, reviews disclosure language, and mentors staff on
+          proper application of standards to evolving business transactions.
+        staff: >
+          Serves as the organization's technical accounting authority for new
+          and complex standards, leading adoption efforts for major standard
+          changes. Develops accounting policies that balance compliance with
+          operational practicality. Engages with external auditors on
+          significant accounting positions and coordinates resolution of audit
+          findings with clear remediation plans.
+        principal: >
+          Shapes the organization's accounting policy framework at the
+          strategic level, anticipating the impact of proposed standards and
+          influencing industry comment letters. Advises the CFO and audit
+          committee on the most complex accounting judgments and ensures the
+          organization's financial statements represent best-in-class
+          reporting quality.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can quickly search and summarize accounting standards, flag
+          potential misapplications, and generate draft accounting memos.
+          However, applying professional judgment to complex estimates,
+          interpreting standards for novel transactions, and defending
+          positions with auditors require deep expertise that resists
+          automation.
+
+    - id: tax_compliance
+      name: "Tax Compliance"
+      category: technical
+      description: >
+        Preparing and filing tax returns, calculating tax provisions, and
+        ensuring compliance with federal, state, local, and international tax
+        laws. Includes income tax, sales/use tax, payroll tax, property tax,
+        and transfer pricing, with attention to deadlines, documentation
+        requirements, and optimization opportunities within legal boundaries.
+      proficiency:
+        junior: >
+          Assists in preparing standard tax workpapers and gathering supporting
+          documentation for tax filings. Understands basic concepts including
+          taxable income, deductions, credits, and filing requirements. Learns
+          the organization's tax calendar and follows established procedures
+          for data collection and return preparation.
+        mid: >
+          Prepares federal and state income tax returns or provisions for
+          moderate-complexity entities, including book-to-tax adjustments,
+          estimated tax calculations, and extension filings. Maintains tax
+          workpapers that support filing positions and assists with responses
+          to tax authority inquiries with appropriate documentation.
+        senior: >
+          Manages the complete tax compliance process for complex entities
+          including multi-state, multi-entity, and international filings.
+          Reviews returns prepared by junior staff, identifies tax planning
+          opportunities, and ensures proper documentation of uncertain tax
+          positions. Leads interactions with tax authorities during
+          examinations.
+        staff: >
+          Oversees the organization's tax compliance function, ensuring
+          timely and accurate filings across all jurisdictions. Implements
+          tax technology solutions that automate data gathering and return
+          preparation. Develops transfer pricing documentation and
+          coordinates with external advisors on specialized compliance
+          matters including international tax.
+        principal: >
+          Defines the organization's tax strategy in partnership with the
+          CFO and legal counsel, balancing compliance obligations with
+          optimization opportunities across the global structure. Advises
+          on the tax implications of major transactions, restructurings,
+          and expansions. Engages with policymakers on proposed tax
+          legislation affecting the organization.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI automates routine tax calculations, identifies common deductions,
+          and streamlines data gathering from source systems. However, tax
+          planning for complex structures, interpreting evolving tax law for
+          novel situations, and managing relationships with tax authorities
+          require professional judgment and strategic thinking.
+
+    - id: financial_statement_preparation
+      name: "Financial Statement Preparation"
+      category: technical
+      description: >
+        Compiling, reviewing, and presenting complete sets of financial
+        statements including the income statement, balance sheet, statement of
+        cash flows, and statement of stockholders' equity with accompanying
+        notes and disclosures. Ensures statements are accurate, compliant with
+        applicable standards, and presented consistently.
+      proficiency:
+        junior: >
+          Assists in compiling financial statement data by extracting trial
+          balance information, preparing supporting schedules, and verifying
+          figures tie to underlying records. Understands the structure and
+          purpose of each primary financial statement and the concept of
+          materiality in financial reporting.
+        mid: >
+          Prepares complete financial statements for assigned entities,
+          ensuring proper classification, presentation, and interperiod
+          consistency. Drafts footnote disclosures for routine items, performs
+          analytical review procedures to identify anomalies, and ensures
+          statements balance and articulate across all primary schedules.
+        senior: >
+          Leads financial statement preparation for complex organizations
+          including multi-entity consolidations, foreign currency translation,
+          and intercompany elimination entries. Reviews and refines disclosure
+          language for compliance and clarity. Manages the statement review
+          process with external auditors and ensures timely issuance.
+        staff: >
+          Designs the organization's financial statement preparation process,
+          including close calendars, review checkpoints, and quality assurance
+          procedures. Implements automation that reduces preparation time while
+          improving accuracy. Ensures consistency between financial statements,
+          management reporting, and regulatory filings across the enterprise.
+        principal: >
+          Sets the standard for financial statement quality and transparency
+          at the organizational level, benchmarking against best-in-class
+          peers. Drives strategic decisions about reporting scope, segment
+          presentation, and voluntary disclosures. Advises the audit committee
+          on presentation matters and ensures statements serve all stakeholder
+          needs effectively.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI can automate trial balance extraction, generate standard
+          disclosures, and perform consistency checks across statements.
+          However, making presentation judgments about materiality,
+          classification, and disclosure quality in the context of evolving
+          standards and stakeholder expectations requires experienced
+          accounting professionals.
+
+    - id: accounts_payable_receivable
+      name: "Accounts Payable/Receivable"
+      category: technical
+      description: >
+        Managing the full lifecycle of payables and receivables, from invoice
+        receipt or issuance through payment processing, collections, and aging
+        analysis. Includes vendor management, three-way matching, credit
+        analysis, collections strategy, and working capital optimization
+        through effective management of cash conversion cycles.
+      proficiency:
+        junior: >
+          Processes invoices, matches purchase orders to receipts, and posts
+          payments following established procedures. Prepares basic aging
+          reports for accounts receivable and follows up on overdue balances
+          using standard collection scripts. Maintains organized records and
+          resolves simple discrepancies with vendors or customers.
+        mid: >
+          Manages the complete AP or AR cycle including exception handling,
+          vendor statement reconciliation, credit memo processing, and
+          escalated collections. Analyzes aging trends, identifies process
+          bottlenecks, and recommends improvements. Ensures proper accrual of
+          payables and bad debt provisions at period end with supporting
+          documentation.
+        senior: >
+          Oversees AP and AR operations, designing workflows that optimize
+          cash conversion cycle while maintaining vendor and customer
+          relationships. Implements credit policies, escalation procedures,
+          and approval hierarchies. Analyzes working capital trends and
+          presents recommendations for DSO and DPO optimization to management.
+        staff: >
+          Defines the organization's payables and receivables strategy,
+          including technology platform selection, automation roadmaps, and
+          shared services design. Establishes KPIs and service-level
+          agreements that balance efficiency, control, and stakeholder
+          satisfaction. Drives adoption of electronic payment methods and
+          automated matching systems.
+        principal: >
+          Shapes the organization's working capital management philosophy,
+          connecting AP/AR operations to treasury strategy, supply chain
+          finance programs, and customer relationship management. Evaluates
+          emerging fintech solutions and drives enterprise-wide process
+          transformation that reduces cost while improving cash flow
+          predictability and stakeholder experience.
+      ai_impact:
+        rating: 0.75
+        detail: >
+          AI and automation tools handle invoice processing, three-way
+          matching, and routine collections effectively, making AP/AR one of
+          the most automatable accounting functions. However, managing vendor
+          and customer relationships, designing credit policies, and
+          optimizing working capital strategy still require human judgment.
+
+    - id: reconciliation
+      name: "Reconciliation"
+      category: technical
+      description: >
+        Performing systematic comparison and resolution of balances between
+        different financial records, accounts, and systems. Includes bank
+        reconciliation, intercompany reconciliation, subledger-to-GL
+        reconciliation, and balance sheet account reconciliation, with
+        attention to timeliness, completeness, and root-cause resolution
+        of discrepancies.
+      proficiency:
+        junior: >
+          Performs standard bank and account reconciliations using templates,
+          matching transactions between systems and documenting outstanding
+          items. Identifies simple discrepancies such as timing differences
+          and data entry errors. Escalates unresolved items appropriately
+          and maintains reconciliation files with supporting documentation.
+        mid: >
+          Reconciles complex accounts including intercompany balances,
+          inventory, and prepaids with independently designed procedures.
+          Investigates and resolves discrepancies by tracing through source
+          systems, identifying root causes, and recommending corrective
+          entries. Ensures all balance sheet accounts are reconciled within
+          the close timeline.
+        senior: >
+          Designs reconciliation frameworks that prioritize accounts by risk
+          and materiality, establishing appropriate frequency, review
+          procedures, and escalation protocols. Leads resolution of complex
+          multi-system discrepancies. Implements automated reconciliation
+          tools and continuous monitoring that catch issues before period-end.
+        staff: >
+          Defines the organization's reconciliation standards and governance
+          model, including certification requirements, exception management
+          processes, and reporting cadences. Evaluates and implements
+          reconciliation technology platforms that scale across entities.
+          Ensures reconciliation quality supports audit readiness and
+          accurate financial reporting.
+        principal: >
+          Shapes the organization's approach to financial data integrity,
+          positioning reconciliation as a proactive control rather than a
+          reactive exercise. Drives adoption of real-time reconciliation
+          capabilities and continuous close practices that fundamentally
+          change the speed and reliability of financial reporting across
+          the enterprise.
+      ai_impact:
+        rating: 0.8
+        detail: >
+          AI and automated reconciliation tools excel at matching transactions,
+          identifying discrepancies, and categorizing outstanding items,
+          making this one of the most automatable accounting activities.
+          However, investigating complex discrepancies with multiple root
+          causes and designing reconciliation frameworks for new account
+          types require accounting knowledge and judgment.
+
+    - id: audit_preparation
+      name: "Audit Preparation"
+      category: technical
+      description: >
+        Preparing for and supporting internal and external audit engagements,
+        including organizing workpapers, responding to information requests,
+        documenting accounting positions, and coordinating across departments
+        to ensure timely and complete audit support. Encompasses both the
+        tactical execution and strategic management of the audit relationship.
+      proficiency:
+        junior: >
+          Gathers requested documents and schedules for audit inquiries,
+          maintains organized audit workpaper files, and prepares basic
+          reconciliations and roll-forward schedules that support financial
+          statement balances. Responds to straightforward auditor questions
+          and learns the audit process timeline and expectation framework.
+        mid: >
+          Manages audit preparation for assigned areas, anticipating auditor
+          requests and preparing comprehensive support packages. Drafts
+          explanations for significant variances and unusual transactions.
+          Coordinates with operational teams to gather evidence and ensures
+          all items are addressed within the agreed timeline without repeated
+          follow-ups.
+        senior: >
+          Leads audit preparation across multiple areas, managing the overall
+          timeline and coordinating cross-functional support. Reviews audit
+          workpapers for completeness and accuracy before submission.
+          Discusses complex accounting positions with auditors, negotiates
+          resolution of audit findings, and implements recommendations from
+          prior audits.
+        staff: >
+          Designs the organization's audit readiness program, including
+          continuous preparation practices that reduce period-end burden.
+          Manages the auditor relationship strategically, setting
+          expectations, negotiating scope, and resolving disagreements at the
+          appropriate level. Drives remediation of control deficiencies
+          identified during audits.
+        principal: >
+          Oversees the audit relationship at the executive and audit committee
+          level, ensuring productive engagement that serves the organization's
+          reporting quality objectives. Manages auditor selection and
+          transition processes. Shapes the organization's audit strategy to
+          balance thoroughness with efficiency as the business grows in
+          complexity.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can organize and retrieve audit evidence, generate workpaper
+          templates, and draft responses to standard inquiries. However,
+          managing the auditor relationship, negotiating complex accounting
+          positions, and coordinating cross-functional audit support require
+          interpersonal skills and professional judgment.
+
+    - id: erp_systems
+      name: "ERP Systems (SAP, Oracle, NetSuite)"
+      category: technical
+      description: >
+        Configuring, operating, and optimizing enterprise resource planning
+        systems for accounting and financial management. Includes chart of
+        accounts design, workflow configuration, reporting setup, integration
+        with subledger modules, and data governance within platforms such as
+        SAP, Oracle, NetSuite, Microsoft Dynamics, and Sage.
+      proficiency:
+        junior: >
+          Navigates the organization's ERP system to perform routine
+          transactions including journal entries, vendor payments, and report
+          generation. Follows established procedures for data entry, period-
+          end processing, and basic troubleshooting. Understands the
+          relationship between subledger modules and the general ledger.
+        mid: >
+          Operates the ERP system proficiently across multiple modules,
+          performing complex transactions, generating custom reports, and
+          resolving common system issues independently. Configures basic
+          workflows, approval routes, and recurring entries. Participates in
+          system testing for upgrades, patches, and new module deployments.
+        senior: >
+          Leads ERP configuration for accounting processes including chart
+          of accounts design, period-end close automation, and intercompany
+          accounting setups. Designs custom reports and dashboards that meet
+          stakeholder needs. Manages system integrations with banks, tax
+          engines, and reporting tools, and drives user training initiatives.
+        staff: >
+          Defines the organization's ERP strategy for finance and accounting,
+          including platform selection, implementation governance, and
+          integration architecture. Leads system implementation or migration
+          projects with cross-functional scope. Establishes data governance
+          standards and ensures the system supports evolving regulatory and
+          reporting requirements.
+        principal: >
+          Shapes the enterprise technology architecture for financial systems,
+          evaluating emerging platforms, cloud migration strategies, and
+          the integration of AI capabilities within ERP environments. Drives
+          vendor relationships and license negotiations at the executive level,
+          ensuring the technology stack supports long-term business growth
+          and regulatory compliance.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI is increasingly embedded within ERP platforms for intelligent
+          transaction processing and anomaly detection. However, configuring
+          systems for complex organizational structures, managing
+          implementations, and ensuring data integrity across integrated
+          systems require deep functional and technical expertise.
+
+    - id: regulatory_compliance
+      name: "Regulatory Compliance"
+      category: domain
+      description: >
+        Ensuring the organization's accounting practices, financial reporting,
+        and business operations comply with applicable laws, regulations, and
+        professional standards. Includes SOX compliance, SEC reporting
+        requirements, state and local regulations, and industry-specific
+        compliance obligations, with attention to documentation, monitoring,
+        and remediation.
+      proficiency:
+        junior: >
+          Understands basic compliance requirements including filing deadlines,
+          record retention policies, and the purpose of internal controls.
+          Follows established compliance procedures and checklists. Assists
+          in gathering documentation for compliance testing and learns the
+          organization's regulatory landscape and reporting obligations.
+        mid: >
+          Manages compliance activities for assigned areas, including SOX
+          control testing, regulatory filing preparation, and documentation
+          maintenance. Monitors regulatory changes that affect accounting
+          practices and alerts management to new requirements. Ensures
+          compliance evidence is complete, organized, and audit-ready for
+          all assigned obligations.
+        senior: >
+          Leads compliance programs across multiple regulatory frameworks,
+          designing testing plans, assessing control effectiveness, and
+          driving remediation of identified gaps. Interprets new regulations
+          and develops implementation plans. Serves as the primary contact
+          for regulators during examinations and coordinates enterprise-wide
+          compliance efforts.
+        staff: >
+          Defines the organization's accounting compliance framework,
+          including risk assessment methodology, monitoring cadences, and
+          escalation procedures. Implements compliance technology solutions
+          that automate monitoring and reporting. Develops training programs
+          that embed compliance awareness throughout the accounting and
+          finance organization.
+        principal: >
+          Shapes the organization's compliance philosophy at the executive
+          level, ensuring regulatory obligations are met efficiently without
+          impeding business agility. Advises the board and audit committee
+          on compliance risk, engages with regulators proactively, and
+          positions the organization ahead of regulatory trends that could
+          impact financial reporting and operations.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI enhances compliance through automated monitoring, regulatory
+          change tracking, and pattern recognition in transaction data.
+          However, interpreting regulations for the organization's specific
+          context, assessing control design effectiveness, and managing
+          regulatory relationships require human judgment and professional
+          expertise.
+
+    - id: internal_controls
+      name: "Internal Controls"
+      category: technical
+      description: >
+        Designing, implementing, testing, and monitoring internal controls
+        over financial reporting and operations. Includes control
+        documentation, risk assessment, segregation of duties analysis,
+        control testing procedures, and deficiency remediation following
+        frameworks such as COSO and SOX Section 404.
+      proficiency:
+        junior: >
+          Understands the purpose of internal controls and common control
+          types including preventive, detective, and compensating controls.
+          Follows established control procedures in daily work such as
+          approval workflows and reconciliation requirements. Assists in
+          documenting control activities and gathering testing evidence.
+        mid: >
+          Documents and tests internal controls for assigned processes,
+          evaluating design and operating effectiveness. Identifies control
+          gaps and recommends remediation actions. Prepares control matrices
+          and walkthrough documentation. Understands the COSO framework and
+          applies it to assess the control environment for moderate
+          complexity processes.
+        senior: >
+          Designs internal control frameworks for new processes, systems, and
+          business activities, ensuring appropriate risk coverage without
+          excessive burden. Leads SOX compliance efforts for assigned areas,
+          evaluates the severity of control deficiencies, and develops
+          remediation plans. Mentors staff on control concepts and testing
+          methodologies.
+        staff: >
+          Defines the organization's internal controls strategy, including
+          the risk assessment methodology that drives control priorities,
+          the testing approach that balances assurance with efficiency, and
+          the technology tools that automate control monitoring. Coordinates
+          with external auditors on their reliance on internal controls
+          and drives continuous improvement initiatives.
+        principal: >
+          Shapes the organization's control culture and governance
+          philosophy, ensuring controls are embedded in business processes
+          rather than layered on as afterthoughts. Advises the audit committee
+          on control effectiveness, emerging risk areas, and the balance
+          between control investment and operational agility. Drives adoption
+          of continuous monitoring and automated controls.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can automate control testing, monitor transactions for
+          anomalies in real-time, and flag segregation-of-duties violations.
+          However, designing controls that are effective without being
+          burdensome, assessing risk in the context of organizational
+          change, and cultivating a strong control culture require human
+          leadership and judgment.
+
+    - id: cash_flow_management
+      name: "Cash Flow Management"
+      category: technical
+      description: >
+        Monitoring, forecasting, and optimizing the organization's cash
+        position and liquidity. Includes daily cash positioning, short-term
+        and long-term cash forecasting, working capital management, banking
+        relationship oversight, and strategies for ensuring the organization
+        can meet its financial obligations while maximizing the productive
+        use of cash.
+      proficiency:
+        junior: >
+          Assists in monitoring daily cash balances and preparing basic cash
+          position reports. Understands the difference between profit and
+          cash flow, and can trace cash movements through the statement of
+          cash flows. Learns the organization's banking structure, payment
+          cycles, and cash management procedures.
+        mid: >
+          Prepares weekly and monthly cash flow forecasts by gathering inputs
+          from AP, AR, payroll, and treasury. Monitors cash position against
+          forecasts and investigates significant variances. Identifies timing
+          issues that affect liquidity and recommends actions to optimize
+          working capital such as payment timing and collection acceleration.
+        senior: >
+          Develops comprehensive cash flow forecasting models incorporating
+          direct and indirect methods, scenario analysis, and seasonal
+          patterns. Manages banking relationships and coordinates with
+          treasury on debt draws, investments, and foreign currency
+          management. Advises on working capital strategies that improve
+          the cash conversion cycle.
+        staff: >
+          Defines the organization's cash management framework, including
+          forecasting methodology, liquidity risk thresholds, and investment
+          policies for excess cash. Implements cash management technology
+          solutions and oversees banking relationship strategy. Drives
+          enterprise-wide initiatives to optimize working capital across
+          business units and geographies.
+        principal: >
+          Shapes the organization's liquidity strategy at the executive
+          level, ensuring adequate reserves while deploying excess cash
+          productively. Advises on capital structure decisions, dividend
+          policies, and share repurchase programs through the lens of cash
+          flow sustainability. Coordinates with treasury on long-term funding
+          strategy and investor relations.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI improves cash forecasting through pattern recognition and
+          real-time data integration from banking and ERP systems. However,
+          managing banking relationships, making judgment calls about
+          liquidity reserves, and optimizing cash deployment in the context
+          of business strategy require experienced financial professionals.
+
+    - id: cost_accounting
+      name: "Cost Accounting"
+      category: technical
+      description: >
+        Analyzing, allocating, and reporting on the costs of products,
+        services, projects, and activities to support pricing decisions,
+        profitability analysis, and operational efficiency. Includes standard
+        costing, activity-based costing, variance analysis, inventory
+        valuation, and cost-volume-profit analysis across manufacturing
+        and service environments.
+      proficiency:
+        junior: >
+          Understands basic cost concepts including direct versus indirect
+          costs, fixed versus variable costs, and cost allocation methods.
+          Assists in collecting cost data, preparing standard cost worksheets,
+          and calculating basic variances. Learns the organization's cost
+          structure, cost centers, and product costing methodology.
+        mid: >
+          Performs standard cost analysis including material, labor, and
+          overhead variance calculations, product profitability analysis, and
+          inventory valuation. Maintains cost accounting records and prepares
+          monthly cost reports. Identifies cost trends and anomalies that
+          warrant investigation, recommending corrective actions to operations.
+        senior: >
+          Designs cost accounting systems including standard cost development,
+          allocation methodologies, and activity-based costing implementations.
+          Leads profitability analysis across product lines, customer segments,
+          and business units. Advises on pricing strategies, make-versus-buy
+          decisions, and operational improvements based on cost insights.
+        staff: >
+          Defines the organization's cost accounting strategy, selecting
+          methodologies that provide actionable insights without excessive
+          complexity. Implements costing systems that integrate with ERP and
+          operational data sources. Develops cost frameworks that support
+          transfer pricing, inventory valuation, and management reporting
+          requirements across the enterprise.
+        principal: >
+          Shapes the organization's approach to cost transparency and
+          profitability management at the strategic level. Connects cost
+          accounting insights to competitive positioning, capital allocation,
+          and long-term business model decisions. Advises executive leadership
+          on cost structure transformation initiatives and efficiency
+          programs.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can automate routine cost calculations, identify cost anomalies,
+          and perform allocation computations at scale. However, designing
+          meaningful cost frameworks, interpreting cost data in operational
+          context, and advising on strategic pricing and investment decisions
+          require deep understanding of the business and industry dynamics.
+
+    - id: client_advisory
+      name: "Client Advisory"
+      category: interpersonal
+      description: >
+        Providing trusted counsel to internal business partners or external
+        clients on accounting, financial, and operational matters beyond
+        routine compliance. Includes proactive identification of risks and
+        opportunities, translation of technical accounting concepts into
+        business language, and the development of long-term advisory
+        relationships built on credibility and business understanding.
+      proficiency:
+        junior: >
+          Communicates clearly with internal stakeholders on routine accounting
+          matters, answering questions about policies, procedures, and
+          transaction processing. Learns to explain accounting concepts in
+          accessible language and builds rapport with business partners.
+          Identifies when questions require escalation to senior team members.
+        mid: >
+          Serves as a reliable point of contact for assigned business units
+          or clients, proactively communicating about deadlines, requirements,
+          and potential issues. Provides guidance on accounting treatment for
+          standard transactions and helps stakeholders understand the financial
+          impact of operational decisions. Builds trusted working relationships.
+        senior: >
+          Acts as a trusted advisor to business leaders, proactively
+          identifying accounting and financial risks and opportunities.
+          Translates complex accounting requirements into actionable business
+          guidance. Facilitates cross-functional problem-solving and builds
+          relationships that position the accounting function as a strategic
+          partner rather than a compliance function.
+        staff: >
+          Develops the advisory capability across the accounting organization,
+          training staff to think beyond compliance toward value-added
+          insights. Manages the most complex advisory relationships, including
+          those involving executive leadership and board members. Designs
+          service delivery models that balance advisory work with core
+          accounting obligations.
+        principal: >
+          Shapes the organization's vision for accounting as a strategic
+          function, positioning the team as essential advisors on business
+          decisions. Builds external advisory relationships with auditors,
+          bankers, and industry peers that bring best-practice insights into
+          the organization. Drives the profession's evolution from transaction
+          processing toward strategic advisory.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          Client advisory relies on trust, relationship context, and the
+          ability to understand business problems beyond their accounting
+          dimensions. While AI can provide supporting data and analysis,
+          the interpersonal skills, judgment, and credibility that define
+          effective advisory relationships remain fundamentally human.

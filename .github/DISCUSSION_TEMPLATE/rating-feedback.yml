@@ -1,0 +1,54 @@
+title: "Rating Feedback: [Role Name] - [Skill Name]"
+labels: ["rating-feedback", "community"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing your expertise! Practitioner feedback is how we make ratings accurate.
+        You don't need to be a developer to contribute — just share your experience.
+
+  - type: input
+    id: role
+    attributes:
+      label: Which role are you giving feedback on?
+      placeholder: "e.g., Backend Engineer, Product Manager, Accountant"
+    validations:
+      required: true
+
+  - type: input
+    id: skill
+    attributes:
+      label: Which skill?
+      placeholder: "e.g., System Design, Financial Modeling"
+    validations:
+      required: true
+
+  - type: input
+    id: current_rating
+    attributes:
+      label: Current AI impact rating
+      placeholder: "e.g., 0.5"
+
+  - type: input
+    id: suggested_rating
+    attributes:
+      label: What should the rating be?
+      placeholder: "e.g., 0.3 (lower = more human, higher = more automated)"
+
+  - type: textarea
+    id: reasoning
+    attributes:
+      label: Why? What's your experience?
+      placeholder: |
+        Share what you've seen in practice. For example:
+        - "I've been a controller for 10 years. AI can't handle month-end close because..."
+        - "ChatGPT already does 80% of this task for me..."
+        - "This rating is too low/high because..."
+    validations:
+      required: true
+
+  - type: input
+    id: experience
+    attributes:
+      label: Your background (optional)
+      placeholder: "e.g., 5 years as a Senior PM at a fintech startup"

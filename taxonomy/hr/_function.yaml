@@ -1,0 +1,21 @@
+function:
+  id: hr
+  name: "Human Resources & People Operations"
+  description: >
+    Human resources, talent acquisition, people analytics, and organizational
+    development roles. Encompasses the strategies, systems, and practices that
+    attract, develop, compensate, and retain talent while fostering a healthy
+    organizational culture and ensuring regulatory compliance.
+  roles:
+    - recruiter
+    - hr_business_partner
+    - compensation_analyst
+    - learning_development
+    - people_analytics
+  sources:
+    - name: "SHRM Competency Model"
+      url: "https://www.shrm.org/credentials/shrm-body-of-applied-skills-and-knowledge"
+    - name: "CIPD Profession Map"
+      url: "https://www.cipd.org/en/the-people-profession/the-profession-map/"
+    - name: "Josh Bersin - HR Technology Market"
+      url: "https://joshbersin.com/"

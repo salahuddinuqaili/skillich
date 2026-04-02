@@ -1,0 +1,601 @@
+role:
+  id: backend
+  function: engineering
+  name: "Backend Engineer"
+  also_known_as:
+    - "Server-Side Engineer"
+    - "Backend Developer"
+    - "Platform Engineer"
+    - "API Engineer"
+    - "Services Engineer"
+  description: >
+    Designs, builds, and maintains the server-side logic, databases, APIs, and
+    infrastructure that power software applications. Backend engineers ensure
+    systems are performant, reliable, secure, and scalable, working across
+    data storage, business logic, third-party integrations, and distributed
+    architecture to deliver robust services that frontend clients and other
+    consumers depend on.
+  ai_impact:
+    level: "high"
+    summary: >
+      AI is rapidly transforming backend engineering by automating boilerplate
+      code generation, routine CRUD operations, test scaffolding, and standard
+      configuration tasks. However, the discipline's core challenges around
+      system design trade-offs, performance tuning under real-world load,
+      incident response, and cross-team architectural decision-making remain
+      deeply human. Senior-and-above engineers who leverage AI for acceleration
+      while applying judgment to ambiguous, high-stakes problems will see their
+      leverage multiply rather than their roles diminish.
+    automating:
+      - "Boilerplate CRUD endpoint generation"
+      - "Unit and integration test scaffolding"
+      - "Standard configuration and infrastructure-as-code templates"
+      - "Routine code reviews for style and simple bug detection"
+      - "Documentation generation from code and API schemas"
+      - "Log analysis and anomaly pattern recognition"
+    augmenting:
+      - "System design exploration and trade-off analysis"
+      - "Complex debugging and root-cause analysis"
+      - "Performance profiling and optimization recommendations"
+      - "Database query optimization and schema evolution"
+      - "Security vulnerability detection and remediation"
+      - "Incident response triage and runbook execution"
+    preserving:
+      - "Architectural vision and long-term system evolution"
+      - "Cross-team technical alignment and stakeholder negotiation"
+      - "Production judgment under uncertainty and novel failure modes"
+      - "Mentorship, culture-building, and team development"
+      - "Ethical reasoning about data handling and privacy"
+      - "Business-context-driven prioritization of technical work"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "O*NET - Software Developers"
+        url: "https://www.onetonline.org/link/summary/15-1252.00"
+      - name: "GitHub Copilot Research"
+        url: "https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/"
+      - name: "McKinsey - The Economic Potential of Generative AI"
+        url: "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier"
+      - name: "Stack Overflow Developer Survey 2024"
+        url: "https://survey.stackoverflow.co/2024/"
+  levels:
+    - id: junior
+      name: "Junior Backend Engineer"
+      years_experience: "0-2"
+      summary: >
+        Delivers well-scoped tasks within existing services under guidance.
+        Writes clean, tested code for defined features and bug fixes. Learns
+        codebase conventions, tooling, and operational practices. Asks
+        clarifying questions and incorporates feedback quickly.
+    - id: mid
+      name: "Backend Engineer"
+      years_experience: "2-5"
+      summary: >
+        Owns features end-to-end within a service, from design through
+        deployment and monitoring. Writes production-quality code with
+        appropriate test coverage and documentation. Identifies and resolves
+        moderate complexity issues independently. Contributes to on-call
+        rotations and participates in architectural discussions.
+    - id: senior
+      name: "Senior Backend Engineer"
+      years_experience: "5-8"
+      summary: >
+        Leads the design and delivery of complex features and multi-service
+        changes. Makes sound technical trade-offs considering performance,
+        maintainability, and business impact. Mentors junior and mid-level
+        engineers. Drives improvements to development practices, reliability,
+        and operational excellence within the team.
+    - id: staff
+      name: "Staff Backend Engineer"
+      years_experience: "8-12"
+      summary: >
+        Sets technical direction across multiple teams or a significant system
+        boundary. Solves ambiguous, cross-cutting problems that span
+        organizational lines. Raises the engineering bar through standards,
+        tooling, and architectural patterns. Influences roadmaps by connecting
+        technical capabilities to business outcomes.
+    - id: principal
+      name: "Principal Backend Engineer"
+      years_experience: "12+"
+      summary: >
+        Defines the long-term technical vision for backend systems at the
+        organizational level. Drives industry-leading practices in
+        reliability, scalability, and developer productivity. Navigates
+        executive-level trade-offs between velocity, quality, and cost.
+        Shapes engineering culture and serves as a trusted technical
+        authority across the company.
+  skills:
+    - id: programming_languages
+      name: "Server-Side Languages"
+      category: technical
+      description: >
+        Proficiency in one or more server-side programming languages such as
+        Python, Java, Go, C#, Rust, or Node.js/TypeScript, including idiomatic
+        use of the language's type system, standard library, concurrency
+        primitives, and ecosystem tooling.
+      proficiency:
+        junior: >
+          Writes functional code in one server-side language, following team
+          style guides and using standard library features. Solves
+          well-defined problems with guidance on language idioms.
+        mid: >
+          Writes idiomatic, well-structured code with confident use of the
+          language's type system, error handling, and concurrency basics.
+          Evaluates and integrates third-party libraries effectively.
+        senior: >
+          Leverages advanced language features such as generics, metaprogramming,
+          or unsafe blocks where appropriate. Establishes coding standards and
+          champions idioms that improve readability and performance across the team.
+        staff: >
+          Evaluates and recommends language choices for new systems based on
+          performance characteristics, ecosystem maturity, and team capability.
+          Contributes to internal frameworks and shared libraries that raise
+          productivity organization-wide.
+        principal: >
+          Shapes the organization's language strategy, balancing innovation
+          against maintenance burden and hiring dynamics. Engages with language
+          communities and influences internal tooling investment decisions at
+          the executive level.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI code-generation tools accelerate boilerplate and routine
+          implementations significantly, but choosing the right language,
+          designing idiomatic abstractions, and leveraging advanced features
+          for correctness still require deep human expertise.
+
+    - id: system_design
+      name: "System Design & Architecture"
+      category: technical
+      description: >
+        Ability to decompose complex requirements into well-bounded services,
+        define data flows, select appropriate architectural patterns such as
+        microservices, monoliths, or event-driven designs, and make durable
+        trade-offs across scalability, consistency, availability, and cost.
+      proficiency:
+        junior: >
+          Understands the high-level architecture of the systems they work in
+          and can diagram basic request flows. Follows established patterns
+          when adding new components.
+        mid: >
+          Designs small-to-medium features considering data flow, failure
+          modes, and integration points. Produces clear design documents and
+          incorporates feedback from senior engineers.
+        senior: >
+          Leads system design for complex features spanning multiple services.
+          Makes well-reasoned trade-offs between consistency, availability,
+          and partition tolerance, and communicates rationale effectively to
+          stakeholders.
+        staff: >
+          Architects multi-service systems that handle evolving requirements
+          gracefully. Defines domain boundaries, API contracts, and data
+          ownership models across teams. Introduces architectural patterns
+          that reduce systemic complexity.
+        principal: >
+          Drives organization-wide architectural vision, identifying when to
+          consolidate, decompose, or re-platform major systems. Balances
+          long-term technical strategy against near-term delivery needs and
+          communicates direction to executive leadership.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can generate candidate architectures and surface relevant
+          patterns, but evaluating trade-offs under real organizational
+          constraints, navigating ambiguity, and aligning technical direction
+          with business strategy remain deeply human activities.
+
+    - id: api_design
+      name: "API Design (REST, GraphQL, gRPC)"
+      category: technical
+      description: >
+        Designing, building, and evolving APIs that are intuitive, consistent,
+        performant, and backward-compatible, spanning RESTful HTTP APIs, GraphQL
+        schemas, gRPC service definitions, and event-based contracts, with
+        attention to versioning, documentation, and developer experience.
+      proficiency:
+        junior: >
+          Implements API endpoints from specifications following established
+          conventions. Understands HTTP methods, status codes, and basic
+          request/response patterns.
+        mid: >
+          Designs coherent API resources with proper naming, pagination,
+          filtering, and error handling. Writes OpenAPI or GraphQL schemas and
+          considers versioning from the start.
+        senior: >
+          Defines API standards for teams, balancing usability against
+          performance. Designs backward-compatible evolution strategies and
+          deprecation policies. Selects the right API paradigm for each use
+          case.
+        staff: >
+          Establishes organization-wide API governance including style guides,
+          linting, review gates, and contract-testing pipelines. Drives
+          adoption of standards that improve cross-team interoperability and
+          reduce integration friction.
+        principal: >
+          Shapes the company's API strategy as a product, influencing
+          public-facing developer experience, partner integrations, and
+          platform extensibility. Aligns API architecture with long-term
+          business model and ecosystem goals.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI tools can generate schema boilerplate, suggest endpoint
+          structures, and draft documentation, but designing APIs that age
+          well, balance competing consumer needs, and enforce organizational
+          consistency requires experienced human judgment.
+
+    - id: databases
+      name: "Database Design & Optimization"
+      category: technical
+      description: >
+        Designing schemas, writing efficient queries, choosing appropriate
+        storage engines, and optimizing database performance across relational
+        systems like PostgreSQL and MySQL, NoSQL stores like MongoDB, DynamoDB,
+        and Cassandra, and specialized engines such as time-series or graph
+        databases.
+      proficiency:
+        junior: >
+          Writes basic SQL queries and understands table relationships,
+          primary keys, and foreign keys. Uses an ORM to interact with
+          databases and follows existing schema patterns.
+        mid: >
+          Designs normalized schemas, writes performant queries with proper
+          indexing, and understands execution plans. Handles migrations safely
+          and selects appropriate data types for the workload.
+        senior: >
+          Optimizes complex queries and schema designs for high-throughput
+          workloads. Selects between relational and NoSQL stores based on
+          access patterns. Implements partitioning, replication, and
+          connection-pooling strategies.
+        staff: >
+          Defines data architecture standards across teams, including storage
+          selection frameworks, migration strategies for zero-downtime
+          deployments, and data modeling review processes. Leads capacity
+          planning and cost-optimization efforts.
+        principal: >
+          Drives the organization's data storage strategy, evaluating emerging
+          technologies, negotiating vendor relationships, and ensuring data
+          architecture supports multi-year scalability and compliance
+          requirements.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI excels at suggesting query optimizations, generating schema
+          drafts, and explaining execution plans, but choosing the right
+          storage engine for evolving workloads and managing live migration
+          risks requires deep operational experience.
+
+    - id: caching_strategies
+      name: "Caching & Performance"
+      category: technical
+      description: >
+        Designing and implementing caching layers using technologies like Redis,
+        Memcached, or CDN-level caching to reduce latency and backend load,
+        including cache invalidation strategies, eviction policies, and
+        end-to-end performance profiling and optimization.
+      proficiency:
+        junior: >
+          Understands basic caching concepts like TTL, cache hits, and misses.
+          Uses existing caching mechanisms in the application following
+          established patterns.
+        mid: >
+          Implements application-level and distributed caching with
+          appropriate invalidation strategies. Profiles endpoints to identify
+          performance bottlenecks and applies targeted optimizations.
+        senior: >
+          Designs multi-layer caching architectures balancing consistency and
+          freshness. Implements cache-aside, write-through, and write-behind
+          patterns based on workload characteristics. Leads performance
+          optimization efforts across services.
+        staff: >
+          Defines organization-wide caching and performance standards.
+          Architects shared caching infrastructure that serves multiple teams.
+          Establishes performance budgets, SLOs, and continuous profiling
+          pipelines.
+        principal: >
+          Drives the company's performance culture, setting expectations
+          for latency, throughput, and efficiency at scale. Evaluates emerging
+          caching technologies and CDN strategies that align with the
+          platform's global footprint and cost targets.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can recommend caching patterns and flag obvious performance
+          issues, but designing invalidation strategies that maintain
+          correctness under real-world concurrency and diagnosing subtle
+          latency problems requires hands-on systems experience.
+
+    - id: message_queues
+      name: "Message Queues & Event-Driven Architecture"
+      category: technical
+      description: >
+        Designing and operating event-driven systems using message brokers such
+        as Kafka, RabbitMQ, SQS, or Pulsar, including event schema design,
+        delivery guarantees, consumer group management, dead-letter handling,
+        and saga or choreography patterns for distributed workflows.
+      proficiency:
+        junior: >
+          Understands the purpose of message queues and can publish and
+          consume messages using existing producer/consumer frameworks.
+          Handles basic error cases like retry and dead-letter routing.
+        mid: >
+          Designs event schemas and topic structures for new features.
+          Implements idempotent consumers, manages consumer offsets, and
+          configures appropriate delivery guarantees for the use case.
+        senior: >
+          Architects event-driven systems spanning multiple services,
+          selecting between choreography and orchestration patterns.
+          Implements sagas, compensation logic, and schema evolution
+          strategies that maintain backward compatibility.
+        staff: >
+          Defines the organization's event-driven architecture standards
+          including event catalogs, schema registries, and governance
+          processes. Designs shared messaging infrastructure that supports
+          diverse workloads with clear operational boundaries.
+        principal: >
+          Shapes the company's asynchronous communication strategy, aligning
+          event-driven architecture with domain-driven design principles and
+          long-term platform evolution. Evaluates build-versus-buy decisions
+          for streaming infrastructure at scale.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can generate producer/consumer boilerplate and suggest common
+          patterns, but designing reliable event-driven workflows with correct
+          ordering, exactly-once semantics, and graceful failure handling
+          under production load requires substantial distributed systems
+          expertise.
+
+    - id: authentication_authorization
+      name: "Authentication & Authorization"
+      category: technical
+      description: >
+        Implementing identity verification and access control systems including
+        OAuth 2.0, OpenID Connect, JWTs, SAML, RBAC, ABAC, and API key
+        management, ensuring secure session handling, token lifecycle
+        management, and least-privilege enforcement.
+      proficiency:
+        junior: >
+          Implements authentication flows using established libraries and
+          frameworks. Understands the difference between authentication and
+          authorization and applies basic role checks in application code.
+        mid: >
+          Integrates OAuth 2.0 and OIDC flows, manages JWT lifecycle
+          including refresh tokens and revocation, and implements role-based
+          access control. Handles session security concerns like CSRF and
+          token storage.
+        senior: >
+          Designs authorization architectures supporting RBAC and ABAC
+          models across multiple services. Implements centralized policy
+          enforcement, audits permission models for least-privilege
+          compliance, and leads identity provider integrations.
+        staff: >
+          Defines the organization's identity and access management strategy
+          spanning internal services, partner APIs, and customer-facing
+          applications. Architects zero-trust patterns and drives adoption of
+          policy-as-code frameworks across teams.
+        principal: >
+          Shapes the company's security identity posture at the executive
+          level, aligning authentication and authorization architecture with
+          compliance requirements, acquisition integration needs, and
+          long-term platform federation strategy.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can scaffold standard auth flows and flag common misconfigurations,
+          but designing authorization models that correctly enforce complex
+          business rules and survive adversarial scrutiny requires deep
+          security knowledge and careful human review.
+
+    - id: testing_backend
+      name: "Backend Testing Strategies"
+      category: technical
+      description: >
+        Designing and implementing comprehensive testing strategies for backend
+        systems including unit tests, integration tests, contract tests,
+        end-to-end tests, load tests, and chaos experiments, with attention to
+        test isolation, determinism, speed, and coverage effectiveness.
+      proficiency:
+        junior: >
+          Writes unit tests for individual functions and classes using the
+          team's testing framework. Understands the testing pyramid and
+          writes tests that are deterministic and isolated.
+        mid: >
+          Designs integration tests with proper test fixtures, database
+          seeding, and external service mocking. Achieves meaningful coverage
+          and writes tests that serve as living documentation of system
+          behavior.
+        senior: >
+          Defines testing strategies for complex features including contract
+          tests between services, performance benchmarks, and failure
+          injection tests. Optimizes CI test suites for speed and reliability,
+          eliminating flaky tests systematically.
+        staff: >
+          Establishes organization-wide testing standards, including shared
+          testing infrastructure, contract testing pipelines, and chaos
+          engineering programs. Drives cultural adoption of testing practices
+          that balance confidence with development velocity.
+        principal: >
+          Shapes the company's quality engineering philosophy, connecting
+          testing investment to business risk reduction. Champions advanced
+          practices such as production testing, formal verification for
+          critical paths, and AI-assisted test generation at scale.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI significantly accelerates test generation, especially for unit
+          and integration tests with clear specifications. However, designing
+          testing strategies that efficiently cover critical business scenarios
+          and identifying what not to test still requires experienced
+          engineering judgment.
+
+    - id: observability
+      name: "Observability & Monitoring"
+      category: technical
+      description: >
+        Instrumenting systems with structured logging, distributed tracing,
+        and metrics collection using tools like Prometheus, Grafana, Datadog,
+        Jaeger, or OpenTelemetry, and designing alerting, dashboards, and SLO
+        frameworks that enable rapid incident detection and resolution.
+      proficiency:
+        junior: >
+          Adds structured logging and basic metrics to application code.
+          Understands the difference between logs, metrics, and traces. Uses
+          existing dashboards and alerts to investigate issues during on-call.
+        mid: >
+          Instruments services with distributed tracing and custom metrics.
+          Builds dashboards that surface key health indicators and configures
+          actionable alerts with appropriate thresholds and routing.
+        senior: >
+          Designs observability strategies for complex distributed systems,
+          including SLI/SLO frameworks, trace sampling policies, and
+          correlation across telemetry signals. Leads incident post-mortems
+          and drives improvements to detection and resolution times.
+        staff: >
+          Defines organization-wide observability standards and shared
+          instrumentation libraries. Architects centralized telemetry
+          pipelines that scale cost-effectively. Establishes SLO review
+          processes that connect reliability targets to business outcomes.
+        principal: >
+          Shapes the company's reliability philosophy, balancing observability
+          investment against operational cost. Drives adoption of emerging
+          practices such as AIOps, continuous profiling, and eBPF-based
+          observability across the engineering organization.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI is increasingly effective at anomaly detection, log correlation,
+          and suggesting root causes from telemetry data. However, designing
+          meaningful SLOs, choosing what to instrument, and making judgment
+          calls during novel incidents remain human-driven activities.
+
+    - id: security_fundamentals
+      name: "Security Fundamentals"
+      category: technical
+      description: >
+        Applying secure coding practices to prevent common vulnerabilities such
+        as injection attacks, broken access control, and data exposure, while
+        understanding encryption, secrets management, dependency scanning, and
+        secure software supply chain practices.
+      proficiency:
+        junior: >
+          Follows secure coding guidelines to prevent common vulnerabilities
+          like SQL injection and XSS. Uses parameterized queries, input
+          validation, and secrets management tools as directed.
+        mid: >
+          Identifies and remediates OWASP Top 10 vulnerabilities in code
+          reviews. Implements encryption at rest and in transit, manages
+          secrets rotation, and integrates dependency vulnerability scanning
+          into CI pipelines.
+        senior: >
+          Conducts threat modeling for new features and services. Designs
+          defense-in-depth architectures, implements security headers and
+          rate limiting, and leads remediation of penetration test findings.
+          Mentors the team on secure development practices.
+        staff: >
+          Defines security engineering standards and secure-by-default
+          frameworks across the organization. Drives adoption of supply chain
+          security practices including SBOM generation, signed artifacts, and
+          automated compliance checks.
+        principal: >
+          Shapes the company's application security strategy in partnership
+          with the security organization. Influences industry practices,
+          evaluates emerging threat landscapes, and ensures security
+          architecture supports regulatory requirements across jurisdictions.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI tools are strong at detecting known vulnerability patterns and
+          suggesting remediations from established databases, but threat
+          modeling for novel architectures, evaluating real-world attack
+          surfaces, and balancing security against usability require
+          experienced human reasoning.
+
+    - id: cloud_services
+      name: "Cloud Services Integration"
+      category: technical
+      description: >
+        Leveraging managed cloud services from providers like AWS, GCP, or
+        Azure for compute, storage, networking, and managed databases,
+        including infrastructure-as-code practices with Terraform, Pulumi,
+        or CloudFormation, and optimizing for cost, reliability, and
+        operational simplicity.
+      proficiency:
+        junior: >
+          Deploys applications to cloud environments using existing
+          infrastructure-as-code templates and CI/CD pipelines. Understands
+          core services like compute instances, object storage, and managed
+          databases.
+        mid: >
+          Selects and integrates appropriate cloud services for new features
+          such as queues, caches, and serverless functions. Writes
+          infrastructure-as-code for provisioning and manages environment
+          configurations across staging and production.
+        senior: >
+          Designs cloud architectures optimized for cost, performance, and
+          reliability. Implements multi-region deployments, disaster recovery
+          strategies, and network security configurations. Evaluates
+          managed services versus self-hosted alternatives.
+        staff: >
+          Defines the organization's cloud architecture patterns, landing
+          zone designs, and cost governance frameworks. Drives adoption of
+          FinOps practices and establishes guardrails that enable teams to
+          move quickly while staying within security and budget constraints.
+        principal: >
+          Negotiates cloud provider strategy at the executive level, including
+          multi-cloud positioning, enterprise agreements, and long-term
+          migration roadmaps. Ensures cloud architecture supports the
+          company's growth trajectory while managing vendor concentration
+          risk.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI accelerates infrastructure-as-code generation, cost anomaly
+          detection, and service selection recommendations. However,
+          designing resilient multi-region architectures, managing cloud
+          provider relationships, and optimizing costs at scale require
+          organizational context and strategic thinking beyond current AI
+          capabilities.
+
+    - id: concurrency
+      name: "Concurrency & Distributed Systems"
+      category: technical
+      description: >
+        Designing and implementing systems that handle concurrent operations
+        and distributed coordination correctly, including multi-threading,
+        async/await patterns, distributed locks, consensus algorithms, data
+        replication, eventual consistency, and strategies for handling partial
+        failures in distributed environments.
+      proficiency:
+        junior: >
+          Understands basic concurrency concepts such as threads, locks, and
+          race conditions. Writes simple asynchronous code using async/await
+          or futures and avoids common pitfalls like shared mutable state.
+        mid: >
+          Implements concurrent systems using thread pools, channels, and
+          synchronization primitives. Understands distributed systems
+          fundamentals like CAP theorem, idempotency, and retry strategies
+          with exponential backoff.
+        senior: >
+          Designs systems that handle distributed coordination challenges
+          including leader election, distributed locking, and conflict
+          resolution. Implements patterns for graceful degradation, circuit
+          breaking, and partition tolerance in production services.
+        staff: >
+          Architects distributed system topologies across the organization,
+          defining consistency models, replication strategies, and failure
+          domain boundaries. Establishes standards for distributed
+          transaction patterns and cross-service data integrity.
+        principal: >
+          Drives the company's distributed systems philosophy, evaluating
+          emerging consensus protocols, CRDTs, and coordination-avoidance
+          techniques. Shapes the long-term evolution of system topology to
+          support global scale while maintaining operational tractability.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          Concurrency bugs and distributed systems failures are notoriously
+          subtle and context-dependent. AI can help identify common anti-
+          patterns, but reasoning about correctness under partial failure,
+          network partitions, and clock skew in production environments
+          remains one of the most human-dependent areas of backend engineering.

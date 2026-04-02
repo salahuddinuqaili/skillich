@@ -1,0 +1,700 @@
+role:
+  id: revenue_operations
+  function: sales
+  name: "Revenue Operations Manager"
+  also_known_as:
+    - "RevOps Manager"
+    - "Sales Operations Manager"
+    - "GTM Operations Manager"
+    - "Revenue Strategy & Operations"
+    - "Business Operations (Revenue)"
+  description: >
+    Designs, optimizes, and operates the systems, processes, and analytics
+    that power the revenue engine across sales, marketing, and customer
+    success. Revenue operations professionals ensure CRM integrity, build
+    forecasting models, design territories and quotas, manage the sales
+    tech stack, and provide the data infrastructure that enables revenue
+    leaders to make informed decisions. They serve as the operational
+    backbone that turns go-to-market strategy into repeatable, scalable
+    execution.
+  ai_impact:
+    level: "moderate-high"
+    summary: >
+      AI is transforming revenue operations by automating data quality
+      management, generating pipeline analytics, building predictive
+      forecasting models, and accelerating report creation. However, the
+      strategic dimensions of the role--designing sales processes that
+      drive behavior change, building consensus across revenue functions,
+      and translating data insights into operational decisions--require
+      human judgment and organizational influence. RevOps professionals
+      who leverage AI for analytical acceleration while investing in
+      strategic advisory and change management will become increasingly
+      valuable as the go-to-market technology landscape grows more
+      complex.
+    automating:
+      - "CRM data cleansing and deduplication"
+      - "Standard report and dashboard generation"
+      - "Pipeline snapshot and trend reporting"
+      - "Lead routing rule execution"
+      - "Data enrichment and field population"
+      - "Commission calculation and statement generation"
+    augmenting:
+      - "Predictive forecasting model development"
+      - "Territory optimization and account scoring"
+      - "Sales process bottleneck identification"
+      - "Tech stack integration and workflow design"
+      - "Quota modeling and scenario analysis"
+      - "Funnel conversion analysis and anomaly detection"
+    preserving:
+      - "Sales process design that drives behavior change"
+      - "Cross-functional alignment between sales, marketing, and CS"
+      - "Change management for new tools and process adoption"
+      - "Strategic advisory to revenue leadership"
+      - "Vendor negotiation and technology strategy"
+      - "Organizational design and resource allocation decisions"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Forrester - The Rise of Revenue Operations"
+        url: "https://www.forrester.com/report/the-rise-of-revenue-operations"
+      - name: "RevOps Co-op - State of RevOps Report"
+        url: "https://www.revopscoop.com/"
+      - name: "Clari - Revenue Operations Guide"
+        url: "https://www.clari.com/blog/revenue-operations/"
+  levels:
+    - id: junior
+      name: "Revenue Operations Analyst"
+      years_experience: "0-2"
+      summary: >
+        Executes operational tasks including CRM administration, report
+        building, data quality maintenance, and process documentation.
+        Learns the revenue tech stack, data models, and sales methodology.
+        Supports the RevOps team with analysis and project execution under
+        guidance.
+    - id: mid
+      name: "Revenue Operations Manager"
+      years_experience: "2-5"
+      summary: >
+        Owns specific operational domains such as CRM management, territory
+        planning, or pipeline analytics. Designs workflows, builds
+        dashboards, and manages tool integrations independently. Partners
+        with revenue leaders to identify process improvements and
+        implements solutions that improve sales productivity.
+    - id: senior
+      name: "Senior Revenue Operations Manager"
+      years_experience: "5-8"
+      summary: >
+        Leads complex operational initiatives spanning multiple revenue
+        functions. Designs forecasting models, territory structures, and
+        compensation plans. Serves as a strategic advisor to sales
+        leadership on process optimization, technology investment, and
+        data-driven decision making.
+    - id: staff
+      name: "Head of Revenue Operations"
+      years_experience: "8-12"
+      summary: >
+        Leads the revenue operations function, managing a team of analysts
+        and managers. Defines the operational strategy that supports
+        revenue growth including tech stack architecture, process
+        frameworks, and analytics capabilities. Partners with C-suite
+        on planning, forecasting, and go-to-market strategy.
+    - id: principal
+      name: "VP of Revenue Operations"
+      years_experience: "12+"
+      summary: >
+        Sets the strategic vision for revenue operations as a company-wide
+        function that aligns sales, marketing, and customer success
+        operations. Drives organizational transformation through data-
+        driven decision making, process excellence, and technology
+        investment. Influences company strategy at the executive level
+        and owns the operational infrastructure that enables scalable
+        revenue growth.
+  skills:
+    - id: crm_administration
+      name: "CRM Administration"
+      category: technical
+      description: >
+        Configuring, customizing, and maintaining CRM platforms like
+        Salesforce or HubSpot, including object models, automation rules,
+        user permissions, integrations, and data architecture that support
+        the sales process and enable accurate reporting.
+      proficiency:
+        junior: >
+          Performs routine CRM administration tasks including user
+          management, field updates, and basic workflow modifications.
+          Troubleshoots common user issues and maintains documentation
+          of CRM configurations. Follows established standards for data
+          model changes.
+        mid: >
+          Designs and implements CRM customizations including custom
+          objects, validation rules, process automation, and page layouts.
+          Manages integrations with sales tools and ensures data flows
+          correctly between systems. Handles CRM release management and
+          sandbox administration.
+        senior: >
+          Architects CRM solutions for complex business requirements
+          spanning multiple sales motions, product lines, and market
+          segments. Designs scalable data models, implements advanced
+          automation, and optimizes CRM performance. Establishes
+          governance standards for configuration changes.
+        staff: >
+          Defines the organization's CRM architecture strategy, including
+          platform selection, customization philosophy, and integration
+          patterns. Manages CRM vendor relationships and licensing. Builds
+          the CRM team's capabilities and establishes standards that
+          balance flexibility with maintainability.
+        principal: >
+          Shapes the company's CRM and customer data platform strategy at
+          the executive level. Evaluates emerging platforms and
+          capabilities, negotiates enterprise agreements, and ensures
+          the CRM architecture supports the company's multi-year growth
+          trajectory and evolving go-to-market model.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can generate CRM configuration code, suggest automation
+          rules, and identify data model optimization opportunities.
+          However, designing CRM architectures that balance competing
+          stakeholder needs, managing the change impact of configuration
+          changes, and ensuring long-term platform scalability require
+          human judgment and organizational context.
+
+    - id: sales_process_design
+      name: "Sales Process Design"
+      category: strategic
+      description: >
+        Designing, documenting, and optimizing the end-to-end sales
+        process including stage definitions, exit criteria, handoff points,
+        required activities, and governance mechanisms that create a
+        repeatable and scalable revenue motion.
+      proficiency:
+        junior: >
+          Documents existing sales processes, creating workflow diagrams
+          and reference guides. Identifies obvious process gaps and
+          inconsistencies. Gathers feedback from sales reps about process
+          friction points and compiles findings for the team.
+        mid: >
+          Designs process improvements based on data analysis and rep
+          feedback, implementing changes through CRM workflow updates
+          and enablement materials. Measures the impact of process changes
+          on conversion rates, cycle times, and rep productivity.
+        senior: >
+          Architects end-to-end sales processes for new markets, products,
+          or sales motions. Balances process rigor with rep flexibility
+          to drive adoption. Designs stage definitions and exit criteria
+          that improve forecast accuracy and deal progression visibility.
+        staff: >
+          Defines the organization's sales process framework, establishing
+          methodology alignment, governance standards, and continuous
+          improvement cycles. Partners with sales leadership to evolve
+          processes as the business scales and the market shifts.
+        principal: >
+          Shapes the company's go-to-market operational model, ensuring
+          sales processes across all segments and motions are aligned,
+          scalable, and data-informed. Drives sales process innovation
+          that creates competitive advantage through operational
+          excellence and faster time-to-revenue for new initiatives.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can analyze process data to identify bottlenecks, suggest
+          process improvements, and benchmark against industry patterns.
+          However, designing processes that people actually follow,
+          navigating the organizational politics of process change, and
+          balancing standardization with flexibility require human
+          leadership and change management skills.
+
+    - id: pipeline_analytics
+      name: "Pipeline Analytics"
+      category: analytical
+      description: >
+        Building and maintaining analytical frameworks that provide
+        visibility into pipeline health, conversion rates, deal velocity,
+        and revenue trajectory, enabling revenue leaders to make data-
+        informed decisions about resource allocation and strategic
+        priorities.
+      proficiency:
+        junior: >
+          Builds standard pipeline reports and dashboards from templates,
+          ensuring data accuracy and timely delivery. Understands key
+          pipeline metrics like conversion rates, average deal size, and
+          sales cycle length. Identifies basic data quality issues that
+          affect reporting accuracy.
+        mid: >
+          Designs pipeline analytics frameworks that track leading and
+          lagging indicators across sales stages. Builds cohort analyses,
+          trending reports, and segment comparisons that surface actionable
+          insights. Partners with sales managers to interpret data and
+          develop action plans.
+        senior: >
+          Creates advanced pipeline analytics including predictive models,
+          multi-dimensional segmentation, and scenario analysis. Identifies
+          systemic pipeline health issues and recommends operational
+          changes. Presents analytical findings to revenue leadership with
+          clear strategic recommendations.
+        staff: >
+          Defines the organization's pipeline analytics strategy, including
+          metric definitions, reporting architecture, and analytics team
+          capabilities. Ensures analytics infrastructure scales with
+          business complexity and provides increasingly sophisticated
+          insights as data maturity improves.
+        principal: >
+          Shapes the company's approach to revenue intelligence, ensuring
+          pipeline analytics connect to broader business planning,
+          financial forecasting, and strategic decision-making at the
+          board level. Evaluates emerging analytics and AI capabilities
+          that enhance pipeline visibility and prediction accuracy.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI excels at processing pipeline data, identifying patterns,
+          and generating automated insights and anomaly alerts. Predictive
+          pipeline analytics is a rapidly improving AI capability. Human
+          value remains in framing the right analytical questions,
+          interpreting results within business context, and translating
+          insights into operational decisions.
+
+    - id: territory_quota_planning
+      name: "Territory & Quota Planning"
+      category: strategic
+      description: >
+        Designing territory structures, account assignments, and quota
+        allocations that balance revenue opportunity, rep capacity, and
+        market coverage to maximize total revenue production while
+        maintaining fairness and seller motivation.
+      proficiency:
+        junior: >
+          Supports territory and quota planning by compiling account data,
+          market sizing inputs, and historical performance metrics.
+          Creates territory maps and account lists from approved
+          segmentation criteria. Documents assignment rules and exception
+          processes.
+        mid: >
+          Builds territory models using account scoring, geographic data,
+          and capacity analysis. Designs quota allocations based on
+          territory potential, historical performance, and market growth
+          assumptions. Manages territory change processes and handles rep
+          assignment disputes with data-driven rationale.
+        senior: >
+          Architects territory and quota frameworks for complex
+          organizations with multiple sales roles, overlay teams, and
+          market segments. Designs models that balance revenue
+          optimization with rep equity and retention. Leads the annual
+          planning process and manages mid-year adjustments.
+        staff: >
+          Defines the organization's territory and quota philosophy,
+          establishing the principles, data inputs, and governance
+          processes that guide annual planning. Partners with finance and
+          sales leadership to align territory and quota design with
+          company-level revenue targets and headcount plans.
+        principal: >
+          Shapes the company's go-to-market capacity model, ensuring
+          territory structures, quota allocations, and resource
+          investments support long-term revenue growth. Evaluates
+          emerging approaches to dynamic territory management and
+          influences executive decisions about market coverage strategy.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can optimize territory assignments based on multi-variable
+          scoring models, predict quota attainment distributions, and
+          suggest rebalancing adjustments. Human value remains in
+          navigating the organizational politics of territory changes,
+          managing fairness perceptions, and making judgment calls that
+          balance mathematical optimization with human factors.
+
+    - id: tech_stack_management
+      name: "Tech Stack Management"
+      category: technical
+      description: >
+        Evaluating, implementing, integrating, and managing the revenue
+        technology stack including CRM, sales engagement, conversation
+        intelligence, forecasting, and analytics tools, ensuring the
+        tech stack supports the sales process and delivers ROI.
+      proficiency:
+        junior: >
+          Supports day-to-day administration of sales tools including user
+          provisioning, basic troubleshooting, and configuration updates.
+          Documents tool processes and maintains vendor contact
+          information. Gathers user feedback about tool effectiveness.
+        mid: >
+          Manages specific tools in the revenue tech stack end-to-end,
+          including configuration, integration maintenance, user training,
+          and vendor relationship management. Evaluates new tool requests
+          against existing capabilities and identifies redundancies.
+        senior: >
+          Designs the revenue tech stack architecture, ensuring tools
+          integrate effectively and data flows correctly across systems.
+          Leads tool evaluation and implementation projects, managing
+          stakeholder requirements, vendor negotiations, and rollout
+          plans.
+        staff: >
+          Defines the organization's revenue technology strategy, including
+          build-versus-buy frameworks, integration architecture patterns,
+          and vendor management processes. Manages the tech stack budget
+          and ensures technology investments deliver measurable productivity
+          improvements.
+        principal: >
+          Shapes the company's go-to-market technology vision, evaluating
+          emerging platforms and AI capabilities that could transform
+          revenue operations. Negotiates strategic vendor partnerships and
+          ensures the technology roadmap supports the company's growth
+          trajectory and competitive positioning.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can suggest tool integrations, identify workflow automation
+          opportunities, and analyze tool adoption metrics. However,
+          evaluating vendor claims critically, designing technology
+          architectures that balance capability with complexity, and
+          managing the organizational change required for tool adoption
+          require experienced human judgment.
+
+    - id: data_quality
+      name: "Data Quality"
+      category: technical
+      description: >
+        Establishing and maintaining data quality standards across the
+        revenue tech stack, including validation rules, enrichment
+        processes, deduplication strategies, and governance frameworks
+        that ensure the data foundation for reporting and analytics is
+        accurate, complete, and trustworthy.
+      proficiency:
+        junior: >
+          Executes routine data quality tasks including duplicate merging,
+          field standardization, and data cleanup projects. Monitors data
+          quality dashboards and flags issues to the team. Follows
+          established data entry standards and enrichment processes.
+        mid: >
+          Designs data quality rules including validation logic,
+          enrichment workflows, and automated deduplication processes.
+          Measures data quality metrics and creates remediation plans for
+          identified issues. Trains users on data hygiene practices that
+          prevent quality degradation.
+        senior: >
+          Architects the organization's data quality framework, including
+          governance policies, quality scoring models, and automated
+          monitoring systems. Identifies the root causes of data quality
+          issues and implements systemic solutions across processes,
+          tools, and user behavior.
+        staff: >
+          Defines the organization's data governance strategy for revenue
+          data, establishing ownership models, quality standards, and
+          compliance requirements. Partners with IT and data teams to
+          ensure revenue data integrates cleanly with enterprise data
+          platforms and supports cross-functional analytics.
+        principal: >
+          Shapes the company's approach to data as a strategic asset,
+          ensuring revenue data quality supports advanced analytics, AI
+          initiatives, and executive decision-making. Establishes data
+          governance as an organizational capability rather than a
+          tactical function and connects data quality investments to
+          business outcomes.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI is highly effective at identifying data quality issues,
+          automating deduplication, enriching records from external
+          sources, and maintaining data hygiene at scale. This is one of
+          the most automatable RevOps activities. Human value remains in
+          establishing governance policies, managing the organizational
+          aspects of data quality, and making judgment calls about
+          acceptable data trade-offs.
+
+    - id: forecasting_models
+      name: "Forecasting Models"
+      category: analytical
+      description: >
+        Building and maintaining revenue forecasting models that combine
+        pipeline data, historical patterns, and qualitative inputs to
+        predict revenue outcomes with accuracy, enabling financial planning,
+        resource allocation, and strategic decision-making.
+      proficiency:
+        junior: >
+          Maintains forecasting spreadsheets and reports, compiling inputs
+          from sales managers and updating models with current pipeline
+          data. Understands basic forecasting concepts like weighted
+          pipeline, commit versus upside, and forecast accuracy metrics.
+        mid: >
+          Builds forecasting models that incorporate pipeline stage
+          conversion rates, historical seasonality, and deal-level
+          attributes. Tracks forecast accuracy over time and identifies
+          systematic biases. Presents forecast analysis to sales
+          leadership with variance explanations.
+        senior: >
+          Designs advanced forecasting methodologies that combine
+          quantitative models with qualitative inspection processes.
+          Builds scenario analysis capabilities and early warning systems
+          for forecast risk. Drives forecast accuracy improvements
+          through process and methodology changes.
+        staff: >
+          Defines the organization's forecasting strategy, selecting
+          methodologies, inspection cadences, and accuracy targets.
+          Evaluates AI-powered forecasting tools and integrates
+          predictive models into the operational forecasting process.
+          Presents forecast insights to the executive team and board.
+        principal: >
+          Shapes the company's approach to revenue predictability,
+          connecting forecasting capabilities to financial planning,
+          investor communications, and strategic resource allocation.
+          Drives organizational maturity from reactive forecasting toward
+          predictive revenue intelligence that enables proactive
+          decision-making.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI-powered forecasting models are increasingly accurate,
+          processing more data signals than human analysis can manage.
+          This is one of the most AI-enhanced RevOps capabilities. Human
+          value remains in validating model outputs against ground truth,
+          incorporating qualitative signals the model cannot capture, and
+          communicating forecast insights in business context.
+
+    - id: commission_compensation
+      name: "Commission & Compensation"
+      category: operational
+      description: >
+        Designing, calculating, and administering sales compensation plans
+        including commission structures, accelerators, SPIFs, and bonuses
+        that incentivize desired sales behavior and align rep motivation
+        with company revenue objectives.
+      proficiency:
+        junior: >
+          Calculates commissions and generates payment statements using
+          established plan rules and tools. Handles rep inquiries about
+          commission calculations and resolves discrepancies by tracing
+          data through the system. Maintains compensation plan
+          documentation.
+        mid: >
+          Administers complex compensation plans with multiple components,
+          thresholds, and accelerators. Designs commission calculation
+          workflows and reconciliation processes. Models plan scenarios
+          to validate that design changes produce intended incentive
+          effects before implementation.
+        senior: >
+          Designs compensation plans that balance revenue incentives with
+          company economics and rep satisfaction. Models plan costs under
+          various attainment scenarios and presents recommendations to
+          sales leadership. Manages the annual plan design process and
+          handles complex exception situations.
+        staff: >
+          Defines the organization's sales compensation philosophy,
+          establishing design principles, governance processes, and
+          administration standards. Evaluates compensation management
+          platforms and ensures plans scale with organizational complexity
+          and remain competitive for talent retention.
+        principal: >
+          Shapes the company's incentive compensation strategy at the
+          executive level, ensuring plans drive the right behaviors across
+          all revenue roles and market segments. Connects compensation
+          design to broader talent strategy, financial planning, and
+          go-to-market objectives. Benchmarks against market practices
+          and advises the board on compensation competitiveness.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI can automate commission calculations, model plan scenarios,
+          and identify anomalies in payment data. However, designing
+          compensation plans that motivate desired behaviors, navigating
+          the politics of plan changes, and balancing competing
+          stakeholder interests in plan design require human judgment
+          and organizational influence.
+
+    - id: reporting_dashboards
+      name: "Reporting & Dashboards"
+      category: analytical
+      description: >
+        Designing, building, and maintaining reports and dashboards that
+        provide revenue leaders with timely, accurate, and actionable
+        visibility into sales performance, pipeline health, and
+        operational metrics across the go-to-market organization.
+      proficiency:
+        junior: >
+          Builds reports and dashboards from templates using CRM and BI
+          tools. Ensures data accuracy and formatting consistency.
+          Delivers recurring reports on schedule and handles ad hoc data
+          requests from sales managers with appropriate turnaround time.
+        mid: >
+          Designs reporting frameworks that organize metrics into coherent
+          narratives for different audiences. Builds interactive
+          dashboards with drill-down capabilities and automated refresh.
+          Identifies reporting gaps and creates new views that address
+          emerging business questions.
+        senior: >
+          Architects the organization's reporting and analytics
+          infrastructure, including data models, visualization standards,
+          and self-service capabilities. Designs executive dashboards
+          that tell a strategic story and enable data-driven management
+          cadences across the revenue organization.
+        staff: >
+          Defines the organization's business intelligence strategy for
+          revenue operations, including platform selection, data
+          architecture, and analyst team capabilities. Ensures reporting
+          scales with organizational complexity and evolves from
+          descriptive to predictive and prescriptive analytics.
+        principal: >
+          Shapes the company's approach to revenue intelligence, ensuring
+          reporting and analytics capabilities support board-level
+          visibility, strategic planning, and operational decision-making.
+          Evaluates emerging BI and AI platforms that enhance the
+          organization's analytical maturity and competitive advantage.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI can generate reports from natural language queries, suggest
+          dashboard designs, and surface automated insights from data.
+          However, designing reporting frameworks that drive the right
+          management behaviors, telling compelling stories with data,
+          and ensuring analytics address strategic business questions
+          require human analytical and communication skills.
+
+    - id: cross_functional_alignment
+      name: "Cross-Functional Alignment"
+      category: interpersonal
+      description: >
+        Building alignment and operational consistency across sales,
+        marketing, and customer success teams by establishing shared
+        definitions, unified processes, integrated technology, and
+        common metrics that enable the revenue engine to operate as
+        a cohesive system.
+      proficiency:
+        junior: >
+          Supports cross-functional alignment by documenting shared
+          definitions, process agreements, and SLA terms. Attends
+          cross-functional meetings and tracks action items. Ensures
+          data consistency across sales, marketing, and CS systems.
+        mid: >
+          Facilitates alignment between two or more revenue functions,
+          managing lead handoff processes, shared metric definitions, and
+          joint reporting. Identifies misalignment issues and proposes
+          process changes that improve cross-functional collaboration.
+        senior: >
+          Leads cross-functional alignment initiatives that establish
+          shared revenue processes, unified data models, and integrated
+          technology workflows across sales, marketing, and CS. Resolves
+          cross-functional conflicts and builds consensus around
+          operational standards.
+        staff: >
+          Defines the organization's revenue operations integration
+          strategy, ensuring all revenue functions operate from a
+          shared process and data foundation. Builds the RevOps team's
+          cross-functional advisory capabilities and establishes
+          governance mechanisms that maintain alignment as the
+          organization scales.
+        principal: >
+          Shapes the company's revenue operating model, ensuring
+          organizational structure, incentives, and processes support
+          cross-functional collaboration rather than silos. Influences
+          executive decisions about team structure, reporting lines, and
+          shared metrics that drive aligned behavior across the entire
+          go-to-market organization.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can identify misalignment through data analysis, suggest
+          process standardization opportunities, and automate cross-
+          functional reporting. However, building consensus across
+          organizational boundaries, navigating competing priorities,
+          and driving the behavior change required for true alignment
+          are deeply human skills that require influence and trust.
+
+    - id: vendor_evaluation
+      name: "Vendor Evaluation"
+      category: strategic
+      description: >
+        Evaluating, selecting, and managing technology vendors for the
+        revenue tech stack, including requirements gathering, market
+        assessment, proof-of-concept coordination, contract negotiation,
+        and ongoing vendor relationship management.
+      proficiency:
+        junior: >
+          Supports vendor evaluation by gathering requirements from
+          stakeholders, compiling feature comparison matrices, and
+          coordinating demo logistics. Documents evaluation criteria and
+          vendor responses. Maintains vendor contact information and
+          contract details.
+        mid: >
+          Manages vendor evaluation processes independently, from
+          requirements definition through selection recommendation.
+          Coordinates proof-of-concept evaluations, checks references,
+          and negotiates standard contract terms. Presents evaluation
+          findings and recommendations to management.
+        senior: >
+          Leads complex vendor evaluations for strategic technology
+          purchases, managing cross-functional stakeholder input and
+          balancing technical requirements with budget constraints.
+          Negotiates enterprise contracts and builds vendor relationships
+          that deliver ongoing value beyond the initial purchase.
+        staff: >
+          Defines the organization's vendor management framework,
+          including evaluation methodologies, contract standards, and
+          governance processes. Manages the revenue tech stack budget and
+          ensures vendor investments deliver measurable ROI. Conducts
+          periodic portfolio reviews to identify consolidation and
+          optimization opportunities.
+        principal: >
+          Shapes the company's technology procurement strategy for revenue
+          operations, negotiating strategic partnerships with key vendors
+          and evaluating emerging platforms that could transform
+          go-to-market operations. Influences build-versus-buy decisions
+          and ensures technology investments align with long-term
+          competitive strategy.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can aggregate vendor information, generate comparison
+          matrices, and analyze user reviews at scale. However,
+          evaluating vendor claims critically, assessing long-term
+          viability and strategic fit, negotiating contract terms, and
+          managing the organizational impact of technology changes require
+          human experience and judgment.
+
+    - id: change_management
+      name: "Change Management"
+      category: interpersonal
+      description: >
+        Planning and executing organizational change initiatives related
+        to new sales processes, tools, territories, and compensation plans,
+        including stakeholder communication, training, adoption monitoring,
+        and resistance management to ensure changes achieve intended outcomes.
+      proficiency:
+        junior: >
+          Supports change initiatives by creating documentation, training
+          materials, and communication drafts. Gathers user feedback
+          during rollouts and reports adoption metrics. Assists with
+          training sessions and answers questions from users adapting
+          to new processes or tools.
+        mid: >
+          Manages change implementation for moderate-scope initiatives,
+          including communication plans, training programs, and adoption
+          tracking. Anticipates common resistance points and prepares
+          mitigation strategies. Measures change adoption and iterates
+          on approaches based on user feedback.
+        senior: >
+          Leads change management for complex organizational initiatives
+          involving multiple teams and significant process disruption.
+          Designs comprehensive change plans with stakeholder mapping,
+          communication cadences, and success metrics. Coaches managers
+          on leading their teams through transition periods.
+        staff: >
+          Defines the organization's change management methodology for
+          revenue operations, establishing frameworks that improve the
+          success rate of operational changes. Builds change management
+          as a core capability within the RevOps team and ensures major
+          initiatives include proper change planning from the start.
+        principal: >
+          Shapes the company's approach to organizational change across
+          the go-to-market function, ensuring the organization can
+          absorb continuous operational improvement without change fatigue.
+          Influences executive communication and leadership practices
+          that create a culture receptive to operational evolution and
+          continuous improvement.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can generate communication drafts, create training content,
+          and monitor adoption metrics automatically. However, understanding
+          human resistance to change, building the trust required for
+          adoption, coaching leaders through difficult transitions, and
+          navigating the emotional dimensions of organizational change
+          are fundamentally human capabilities.

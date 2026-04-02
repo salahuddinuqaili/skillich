@@ -1,0 +1,21 @@
+function:
+  id: sales
+  name: "Sales"
+  description: >
+    Revenue-generating roles responsible for identifying, engaging, and closing
+    customers across the full buyer journey. Encompasses prospecting, deal
+    execution, technical pre-sales, post-sale customer success, and the
+    operational infrastructure that ties the revenue engine together.
+  roles:
+    - account_executive
+    - sales_development
+    - sales_engineer
+    - customer_success
+    - revenue_operations
+  sources:
+    - name: "Pavilion (formerly Revenue Collective) Career Frameworks"
+      url: "https://www.joinpavilion.com/"
+    - name: "Winning by Design - Revenue Architecture"
+      url: "https://www.winningbydesign.com/revenue-architecture"
+    - name: "MEDDICC Sales Methodology"
+      url: "https://meddicc.com/"

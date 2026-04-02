@@ -1,0 +1,462 @@
+role:
+  id: bi_analyst
+  function: data_analytics
+  name: "BI Analyst"
+  also_known_as:
+    - "Business Intelligence Analyst"
+    - "BI Developer"
+    - "BI Engineer"
+    - "Reporting Analyst"
+    - "Business Intelligence Developer"
+  description: >
+    Designs, builds, and maintains business intelligence solutions including dashboards,
+    reports, and data models that enable organizations to monitor performance and make
+    data-driven decisions. Bridges the gap between raw data infrastructure and business
+    users who need accessible, reliable, and actionable information.
+  ai_impact:
+    level: moderate-high
+    summary: >
+      AI is reshaping business intelligence by enabling natural language querying of
+      dashboards, auto-generating visualizations, and surfacing anomalies without manual
+      configuration. Routine report building and metric monitoring are increasingly
+      automated. However, designing effective BI architectures, understanding nuanced
+      business requirements, and governing data quality across the organization remain
+      critical human responsibilities.
+    automating:
+      - "Standard report generation and scheduling"
+      - "Basic dashboard creation from templates"
+      - "Data quality checks and anomaly flagging"
+      - "Metric calculations and KPI tracking"
+      - "Natural language to dashboard queries"
+    augmenting:
+      - "Intelligent insight surfacing and trend detection"
+      - "Automated data lineage and impact analysis"
+      - "AI-assisted semantic layer design"
+      - "Smart alerting with contextual explanations"
+    preserving:
+      - "BI platform architecture and governance"
+      - "Complex business requirement translation"
+      - "Stakeholder relationship management and training"
+      - "Data quality strategy and organizational data culture"
+      - "Cross-functional data standardization and alignment"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Gartner - Magic Quadrant for Analytics and BI Platforms"
+        url: "https://www.gartner.com/reviews/market/analytics-business-intelligence-platforms"
+      - name: "Forrester - The Future of Business Intelligence"
+        url: "https://www.forrester.com/report/the-future-of-business-intelligence"
+
+  levels:
+    - id: junior
+      name: "Junior BI Analyst"
+      years_experience: "0-2"
+      summary: >
+        Builds basic reports and dashboards under guidance, learns the organization's
+        data sources and BI tools, and supports senior team members with data extraction
+        and visualization tasks.
+    - id: mid
+      name: "BI Analyst"
+      years_experience: "2-4"
+      summary: >
+        Independently designs and builds dashboards and reports, manages data models
+        within BI platforms, and works directly with business stakeholders to translate
+        requirements into analytical solutions.
+    - id: senior
+      name: "Senior BI Analyst"
+      years_experience: "4-7"
+      summary: >
+        Leads complex BI projects, architects data models and dashboard solutions for
+        enterprise use cases, mentors junior team members, and establishes best practices
+        for the BI function.
+    - id: staff
+      name: "Staff BI Analyst"
+      years_experience: "7-10"
+      summary: >
+        Defines the BI strategy and platform architecture for the organization, drives
+        self-service analytics adoption, establishes governance frameworks, and influences
+        cross-functional data initiatives.
+    - id: principal
+      name: "Principal BI Analyst"
+      years_experience: "10+"
+      summary: >
+        Sets the strategic vision for business intelligence across the enterprise, evaluates
+        and selects BI technologies, advises executive leadership on analytics capabilities,
+        and shapes the organization's data-driven culture.
+
+  skills:
+    - id: tableau
+      name: "Tableau"
+      category: technical
+      description: >
+        Building interactive dashboards, visualizations, and analytical applications using
+        Tableau Desktop, Tableau Server, and Tableau Cloud for enterprise-scale business
+        intelligence.
+      proficiency:
+        junior: >
+          Creates basic worksheets and dashboards with standard chart types. Connects to
+          data sources and applies simple filters, parameters, and calculated fields.
+        mid: >
+          Builds complex interactive dashboards with advanced calculations, Level of Detail
+          expressions, and parameter-driven views. Publishes to Tableau Server with
+          appropriate permissions and schedules.
+        senior: >
+          Architects Tableau solutions for enterprise use cases including embedded analytics.
+          Optimizes performance for large datasets and establishes development standards and
+          style guides.
+        staff: >
+          Defines the organization's Tableau strategy including governance, licensing, and
+          server architecture. Evaluates Tableau against alternative platforms and drives
+          adoption best practices.
+        principal: >
+          Shapes the organization's overall visualization and BI platform strategy with Tableau
+          as a core component. Engages with Tableau at a strategic partnership level and
+          influences product direction.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          Tableau's built-in AI features like Ask Data and Tableau Pulse automate basic
+          exploration, but designing effective enterprise dashboards and governing content
+          requires human expertise.
+
+    - id: power_bi
+      name: "Power BI"
+      category: technical
+      description: >
+        Developing reports, dashboards, and data models using Microsoft Power BI including
+        DAX formulas, Power Query, and the broader Microsoft analytics ecosystem.
+      proficiency:
+        junior: >
+          Creates basic reports with standard visuals. Uses Power Query for simple data
+          transformations and writes basic DAX measures for aggregations.
+        mid: >
+          Builds sophisticated reports with complex DAX calculations, row-level security,
+          and optimized data models. Manages workspace governance and scheduled refreshes.
+        senior: >
+          Architects Power BI solutions across the organization including composite models,
+          dataflows, and premium capacity management. Establishes DAX standards and
+          performance optimization patterns.
+        staff: >
+          Defines the organization's Power BI strategy within the Microsoft ecosystem.
+          Architects enterprise-scale deployments and drives adoption of advanced features
+          like paginated reports and embedded analytics.
+        principal: >
+          Sets strategic direction for the Microsoft analytics ecosystem within the organization.
+          Evaluates Power BI's role alongside other platforms and advises on long-term
+          technology investments.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          Copilot in Power BI enables natural language report creation and DAX generation,
+          automating routine tasks. However, designing robust data models and governance
+          structures remains a human responsibility.
+
+    - id: sql_advanced
+      name: "Advanced SQL"
+      category: technical
+      description: >
+        Writing complex, optimized SQL for analytical workloads including window functions,
+        recursive CTEs, query optimization, and working with data warehouse-specific SQL
+        dialects.
+      proficiency:
+        junior: >
+          Writes standard queries with JOINs, GROUP BY, and subqueries. Understands basic
+          differences between database dialects and can query data warehouses with guidance.
+        mid: >
+          Uses window functions, CTEs, and complex aggregations fluently. Understands query
+          execution plans and optimizes queries for data warehouse performance.
+        senior: >
+          Writes highly optimized analytical queries for large-scale datasets. Designs
+          materialized views, stored procedures, and query patterns that support BI workloads
+          efficiently.
+        staff: >
+          Defines SQL standards and optimization strategies for the BI organization. Architects
+          query patterns that balance performance, maintainability, and cost across data
+          platforms.
+        principal: >
+          Evaluates query engine capabilities across platforms and guides technology selection.
+          Sets the strategic direction for how SQL is used within the organization's analytics
+          stack.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI tools excel at generating and optimizing SQL from natural language, but
+          understanding complex data warehouse architectures and writing performant queries
+          for specific business logic still requires human knowledge.
+
+    - id: data_warehousing
+      name: "Data Warehousing"
+      category: technical
+      description: >
+        Understanding data warehouse architecture, dimensional modeling, ETL/ELT patterns,
+        and cloud data platforms to support efficient analytical querying and reporting.
+      proficiency:
+        junior: >
+          Understands basic data warehouse concepts including fact and dimension tables,
+          star schemas, and the difference between OLTP and OLAP systems.
+        mid: >
+          Navigates complex data warehouse structures independently. Understands partitioning,
+          clustering, and materialization strategies and their impact on query performance.
+        senior: >
+          Designs dimensional models and advises on data warehouse architecture decisions.
+          Optimizes warehouse configurations for BI workloads and manages cost-performance
+          trade-offs.
+        staff: >
+          Architects enterprise data warehouse strategy including platform selection, modeling
+          standards, and governance frameworks. Drives modernization from legacy to cloud
+          platforms.
+        principal: >
+          Sets the long-term vision for the organization's data warehouse and lakehouse
+          strategy. Evaluates emerging architectures and guides multi-year technology
+          roadmaps.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can suggest warehouse optimizations and automate monitoring, but designing
+          warehouse architectures that balance business needs, performance, and cost requires
+          deep human expertise and organizational knowledge.
+
+    - id: dashboard_design
+      name: "Dashboard Design"
+      category: technical
+      description: >
+        Designing intuitive, performant dashboards that provide actionable business insights
+        through thoughtful layout, interactivity, and information hierarchy.
+      proficiency:
+        junior: >
+          Builds basic dashboards following established templates and design guidelines.
+          Understands fundamental principles of visual hierarchy and user interaction.
+        mid: >
+          Designs user-centered dashboards with clear navigation, appropriate drill-down
+          paths, and responsive layouts. Considers performance implications of design choices.
+        senior: >
+          Creates enterprise dashboard frameworks with consistent design systems. Conducts
+          user research to optimize dashboard effectiveness and establishes design standards
+          for the team.
+        staff: >
+          Defines the organization's dashboard design strategy and governance model. Architects
+          self-service analytics frameworks that balance flexibility with consistency.
+        principal: >
+          Sets the vision for how the organization consumes and interacts with data through
+          dashboards. Evaluates emerging interaction paradigms and guides long-term UX strategy
+          for analytics.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can generate basic dashboard layouts and suggest visualizations, but designing
+          dashboards that effectively serve specific business processes and user workflows
+          requires human design thinking.
+
+    - id: etl_understanding
+      name: "ETL/ELT Understanding"
+      category: technical
+      description: >
+        Understanding extract, transform, and load processes that feed data into BI systems,
+        including data pipeline concepts, scheduling, and data freshness requirements.
+      proficiency:
+        junior: >
+          Understands basic ETL concepts and can trace data from source to dashboard.
+          Identifies when data freshness issues affect reporting and escalates appropriately.
+        mid: >
+          Troubleshoots data pipeline issues that affect BI outputs. Collaborates with data
+          engineers on transformation logic and understands scheduling and dependency
+          management.
+        senior: >
+          Designs transformation requirements for BI-specific data needs. Architects staging
+          layers and intermediate models that serve analytical workloads efficiently.
+        staff: >
+          Shapes the organization's data integration strategy to support BI requirements.
+          Defines service-level agreements for data freshness and quality across pipelines.
+        principal: >
+          Sets strategic direction for how data flows from source systems to analytical
+          platforms. Evaluates modern data stack architectures and guides technology adoption.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI can automate pipeline monitoring and suggest transformations, but understanding
+          business requirements for data timeliness and designing resilient data flows
+          requires human judgment.
+
+    - id: stakeholder_management
+      name: "Stakeholder Management"
+      category: communication
+      description: >
+        Building relationships with business stakeholders, understanding their analytical
+        needs, managing priorities, and ensuring BI solutions drive adoption and value.
+      proficiency:
+        junior: >
+          Responds to stakeholder requests clearly and promptly. Asks clarifying questions
+          to understand requirements and communicates progress on assigned tasks.
+        mid: >
+          Manages multiple stakeholder relationships independently. Translates business needs
+          into technical requirements and sets appropriate expectations on deliverables.
+        senior: >
+          Navigates competing priorities across business units and influences stakeholders
+          toward data-driven approaches. Conducts needs assessments and roadmap planning
+          with business leaders.
+        staff: >
+          Builds executive-level relationships across the organization. Shapes the BI roadmap
+          based on strategic priorities and drives organizational adoption of self-service
+          analytics.
+        principal: >
+          Serves as the primary liaison between analytics and executive leadership. Influences
+          corporate strategy through data-driven insights and shapes the organization's
+          relationship with data.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Stakeholder management depends on trust, empathy, organizational awareness, and
+          interpersonal skills that remain fundamentally human capabilities.
+
+    - id: data_modeling
+      name: "Data Modeling"
+      category: technical
+      description: >
+        Designing dimensional and analytical data models that support efficient querying,
+        reporting, and self-service analytics within BI platforms.
+      proficiency:
+        junior: >
+          Understands basic concepts of dimensions, facts, and relationships. Can navigate
+          existing data models to build reports and identify relevant tables.
+        mid: >
+          Designs star and snowflake schemas for departmental analytics needs. Creates
+          efficient data models within BI tools with proper relationships and hierarchies.
+        senior: >
+          Architects enterprise data models that serve multiple business domains. Balances
+          normalization trade-offs and designs for query performance and user accessibility.
+        staff: >
+          Defines organizational data modeling standards and governance processes. Leads
+          data model reviews and ensures consistency across business domains and BI platforms.
+        principal: >
+          Sets the strategic vision for enterprise data modeling including semantic layers
+          and business ontologies. Evaluates emerging modeling paradigms and guides adoption.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can suggest model structures and detect relationships, but designing models that
+          accurately reflect complex business semantics and serve diverse user needs requires
+          deep domain expertise.
+
+    - id: kpi_definition
+      name: "KPI Definition & Metric Design"
+      category: analytical
+      description: >
+        Defining, documenting, and standardizing key performance indicators and business
+        metrics that align with organizational objectives and drive accountability.
+      proficiency:
+        junior: >
+          Understands common business KPIs and how they are calculated. Assists in documenting
+          metric definitions and ensuring consistency in reporting.
+        mid: >
+          Defines KPIs for business functions with appropriate targets, thresholds, and
+          measurement methodologies. Ensures metric consistency across dashboards and reports.
+        senior: >
+          Designs comprehensive metric frameworks that align with strategic objectives. Leads
+          cross-functional metric standardization efforts and resolves conflicting definitions.
+        staff: >
+          Architects the organization's metric governance framework including ownership,
+          certification, and change management processes. Advises executives on metric strategy.
+        principal: >
+          Defines the organization's measurement philosophy and strategic KPI architecture.
+          Ensures metrics drive the right behaviors and align with long-term corporate
+          objectives.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can suggest common KPIs and detect metric anomalies, but defining metrics that
+          align with business strategy, avoid perverse incentives, and drive meaningful
+          accountability requires human judgment.
+
+    - id: report_automation
+      name: "Report Automation"
+      category: technical
+      description: >
+        Automating the creation, distribution, and maintenance of recurring reports to
+        reduce manual effort and ensure timely, consistent delivery of information.
+      proficiency:
+        junior: >
+          Sets up basic scheduled reports and email distributions using BI platform features.
+          Follows established automation patterns and templates.
+        mid: >
+          Designs automated reporting workflows with conditional logic, dynamic parameters,
+          and multi-format outputs. Implements error handling and notification systems.
+        senior: >
+          Architects complex report automation pipelines integrating multiple data sources
+          and delivery channels. Establishes automation standards and monitors reliability.
+        staff: >
+          Defines the organization's report automation strategy and platform architecture.
+          Drives migration from manual processes to automated, self-service solutions.
+        principal: >
+          Sets the strategic vision for information delivery across the organization.
+          Evaluates emerging automation technologies and guides the transition toward
+          proactive, AI-driven reporting.
+      ai_impact:
+        rating: 0.8
+        detail: >
+          AI significantly enhances report automation through intelligent scheduling, dynamic
+          content generation, and anomaly-based alerting. Routine report creation is
+          increasingly automated.
+
+    - id: data_governance
+      name: "Data Governance"
+      category: domain
+      description: >
+        Implementing policies, processes, and standards that ensure data quality, security,
+        privacy, and proper usage across BI systems and analytical workflows.
+      proficiency:
+        junior: >
+          Follows established data governance policies including access controls, naming
+          conventions, and documentation requirements. Flags potential governance issues.
+        mid: >
+          Implements governance controls within BI platforms including row-level security,
+          data classification, and usage tracking. Documents data lineage and definitions.
+        senior: >
+          Designs governance frameworks for BI environments including certification processes,
+          data quality monitoring, and compliance controls. Leads governance reviews and
+          training.
+        staff: >
+          Architects enterprise data governance strategy spanning BI platforms, data
+          warehouses, and source systems. Establishes policies that balance accessibility
+          with security and compliance.
+        principal: >
+          Sets the organizational vision for data governance and stewardship. Advises
+          executive leadership on governance investments, regulatory compliance, and
+          risk management.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can automate data classification, lineage tracking, and compliance monitoring,
+          but designing governance policies that balance organizational needs with regulatory
+          requirements demands human expertise.
+
+    - id: looker_lookml
+      name: "Looker & LookML"
+      category: technical
+      description: >
+        Building semantic data models and exploratory analytics using Looker and LookML,
+        enabling governed self-service analytics through a centralized modeling layer.
+      proficiency:
+        junior: >
+          Navigates Looker to explore data and build basic looks and dashboards. Understands
+          fundamental LookML concepts like views, dimensions, and measures.
+        mid: >
+          Writes LookML models including derived tables, custom dimensions, and complex
+          measures. Manages Explores and implements caching and datagroup strategies.
+        senior: >
+          Architects LookML projects for enterprise scale including model organization,
+          refinements, and extends patterns. Optimizes performance and establishes development
+          standards.
+        staff: >
+          Defines the organization's Looker strategy and governance model. Architects the
+          semantic layer to support self-service analytics across business domains and
+          evaluates Looker within the broader BI ecosystem.
+        principal: >
+          Sets the strategic vision for semantic layer technology within the organization.
+          Evaluates Looker against emerging platforms and guides long-term investments in
+          governed self-service analytics.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can assist with LookML generation and suggest model improvements, but designing
+          semantic layers that accurately represent business logic and enable meaningful
+          self-service exploration requires deep domain knowledge.

@@ -1,0 +1,681 @@
+role:
+  id: contract_manager
+  function: legal
+  name: "Contract Manager"
+  also_known_as:
+    - "Contracts Administrator"
+    - "Contract Specialist"
+    - "Commercial Contracts Manager"
+    - "Contract Operations Manager"
+    - "Procurement Contracts Lead"
+  description: >
+    Manages the full contract lifecycle from initiation through execution,
+    compliance, and renewal or termination. Contract managers serve as the
+    operational backbone of commercial agreements, coordinating between
+    legal, procurement, sales, and business teams to ensure contracts are
+    executed efficiently, obligations are tracked and fulfilled, and the
+    organization maximizes value from its commercial relationships while
+    minimizing contractual risk.
+  ai_impact:
+    level: "high"
+    summary: >
+      AI is significantly transforming contract management by excelling at
+      clause extraction, obligation tracking, risk scoring, and compliance
+      monitoring across large contract portfolios. AI-powered CLM platforms
+      can auto-redline against playbooks, compare terms across agreements,
+      and flag deviations in seconds. However, relationship-driven
+      negotiation, judgment calls on non-standard terms, cross-functional
+      stakeholder alignment, and the strategic aspects of vendor relationship
+      management continue to require human expertise. Contract managers who
+      adopt AI tools will manage larger portfolios more effectively, while
+      those focused solely on manual review face role compression.
+    automating:
+      - "Clause extraction and contract data population"
+      - "Standard contract generation from approved templates"
+      - "Obligation tracking and deadline monitoring"
+      - "Compliance checking against playbook terms"
+      - "Contract comparison and deviation identification"
+      - "Renewal notification and auto-generated renewal packages"
+    augmenting:
+      - "Risk scoring and prioritization of non-standard terms"
+      - "Negotiation preparation with benchmarking data"
+      - "Portfolio analytics and spend optimization"
+      - "Vendor performance analysis and relationship insights"
+      - "Redlining complex agreements against playbooks"
+      - "Cross-contract dependency and conflict detection"
+    preserving:
+      - "Relationship-driven vendor and partner negotiations"
+      - "Cross-functional stakeholder alignment and influence"
+      - "Judgment on acceptable risk for non-standard situations"
+      - "Strategic vendor management and partnership development"
+      - "Process design and organizational change management"
+      - "Escalation handling and conflict resolution"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "O*NET - Purchasing Managers"
+        url: "https://www.onetonline.org/link/summary/11-3061.00"
+      - name: "World Commerce & Contracting (formerly IACCM)"
+        url: "https://www.worldcc.com/"
+      - name: "Gartner - Market Guide for Contract Lifecycle Management"
+        url: "https://www.gartner.com/en/documents/4021384"
+  levels:
+    - id: junior
+      name: "Junior Contract Manager"
+      years_experience: "0-2"
+      summary: >
+        Supports the contract lifecycle by processing standard agreements,
+        maintaining contract records, and tracking key dates and obligations.
+        Learns organizational templates, approval workflows, and CLM system
+        operations. Handles routine contract requests with guidance from
+        senior team members.
+    - id: mid
+      name: "Contract Manager"
+      years_experience: "2-5"
+      summary: >
+        Manages contracts independently through the full lifecycle for
+        assigned business areas. Negotiates standard and moderately complex
+        terms, maintains accurate contract repositories, and ensures
+        compliance with contractual obligations. Coordinates between legal,
+        procurement, and business stakeholders to resolve issues efficiently.
+    - id: senior
+      name: "Senior Contract Manager"
+      years_experience: "5-8"
+      summary: >
+        Leads contract management for high-value or complex commercial
+        relationships. Drives process improvements, develops templates
+        and playbooks, and mentors junior team members. Manages escalations
+        on contentious terms and partners with legal counsel on non-standard
+        risk positions. Provides portfolio-level reporting and analytics.
+    - id: staff
+      name: "Lead Contract Manager"
+      years_experience: "8-12"
+      summary: >
+        Oversees the contract management function for a business unit or
+        the enterprise, setting process standards, technology strategy,
+        and performance metrics. Manages a team of contract professionals,
+        drives CLM platform adoption, and ensures the contract function
+        delivers measurable business value through efficiency, compliance,
+        and risk reduction.
+    - id: principal
+      name: "Director of Contract Management"
+      years_experience: "12+"
+      summary: >
+        Defines the organization's contract management strategy and
+        operating model. Drives transformation initiatives including
+        technology modernization, process automation, and organizational
+        design. Partners with senior leadership on commercial strategy,
+        vendor consolidation, and procurement optimization. Represents
+        the contract function at the executive level and ensures it
+        supports enterprise growth objectives.
+  skills:
+    - id: contract_lifecycle_management
+      name: "Contract Lifecycle Management"
+      category: technical
+      description: >
+        Managing contracts through all phases from request and authoring
+        through negotiation, execution, performance management, and renewal
+        or termination, ensuring proper handoffs, approvals, and documentation
+        at each stage with full audit trail and version control.
+      proficiency:
+        junior: >
+          Follows established lifecycle workflows to process contracts
+          through each stage. Tracks contract status in the CLM system,
+          ensures required approvals are obtained, and maintains organized
+          records of executed agreements and supporting documentation.
+        mid: >
+          Manages the full contract lifecycle independently for assigned
+          portfolios, ensuring efficient progression through each phase.
+          Identifies bottlenecks in the lifecycle process and proposes
+          improvements. Maintains accurate metadata and reporting for
+          portfolio visibility.
+        senior: >
+          Designs and optimizes contract lifecycle workflows to reduce
+          cycle time and improve quality. Implements stage gates, approval
+          matrices, and escalation procedures. Measures lifecycle
+          performance through KPIs such as cycle time, bottleneck
+          frequency, and compliance rates across the portfolio.
+        staff: >
+          Defines enterprise contract lifecycle standards and governance
+          frameworks. Leads CLM process transformation initiatives that
+          align with organizational growth and complexity. Establishes
+          lifecycle analytics programs that provide portfolio-level
+          insights to senior leadership.
+        principal: >
+          Sets the strategic vision for contract lifecycle management across
+          the enterprise, integrating CLM into broader procurement and
+          commercial operations strategies. Drives industry best practices
+          and evaluates emerging technologies that fundamentally improve
+          contract lifecycle efficiency and intelligence.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI automates many lifecycle stages including drafting, obligation
+          extraction, and renewal tracking. However, designing lifecycle
+          processes for organizational context, managing stakeholder
+          relationships through complex negotiations, and driving adoption
+          of new workflows require human leadership.
+
+    - id: negotiation
+      name: "Negotiation"
+      category: interpersonal
+      description: >
+        Conducting effective contract negotiations with vendors, customers,
+        and partners, balancing the organization's legal and commercial
+        interests against counterparty positions, building productive
+        relationships, and achieving outcomes that support long-term
+        business objectives while managing risk.
+      proficiency:
+        junior: >
+          Prepares negotiation materials including comparison analyses
+          and issue summaries. Negotiates simple terms on standard
+          agreements following approved playbooks and escalation
+          guidelines. Documents negotiation outcomes and agreed positions.
+        mid: >
+          Leads negotiations on moderately complex commercial agreements,
+          advocating for company positions while finding practical
+          compromises. Manages multi-round negotiations efficiently and
+          coordinates internal stakeholder input on negotiation priorities
+          and acceptable fallback positions.
+        senior: >
+          Conducts complex negotiations involving significant commercial
+          value, non-standard risk positions, or multiple stakeholders.
+          Develops negotiation strategies tailored to counterparty dynamics
+          and business priorities. Mentors junior negotiators and builds
+          organizational negotiation capability through training.
+        staff: >
+          Defines negotiation standards and playbook strategies across the
+          organization. Personally leads the most critical or contentious
+          negotiations. Develops negotiation training programs and
+          benchmarking resources that improve outcomes across the entire
+          contract management team.
+        principal: >
+          Shapes the organization's commercial negotiation philosophy and
+          competitive positioning on terms. Negotiates enterprise-level
+          agreements with strategic partners and top-tier vendors. Builds
+          executive-level counterparty relationships that facilitate
+          efficient deal-making and dispute resolution.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can prepare negotiation briefs and benchmark terms against
+          market standards. However, building rapport, reading counterparty
+          signals, making real-time strategic trade-offs, and reaching
+          creative compromises remain fundamentally human skills.
+
+    - id: redlining_markup
+      name: "Redlining & Markup"
+      category: technical
+      description: >
+        Reviewing and marking up contract drafts to identify and address
+        unfavorable terms, missing protections, ambiguous language, and
+        deviations from organizational standards, producing clear redlines
+        that facilitate efficient negotiation and minimize revision cycles.
+      proficiency:
+        junior: >
+          Reviews contracts against approved playbooks and checklists,
+          identifying deviations from standard terms. Produces clean
+          redlines using proper markup conventions and tracks changes
+          accurately through multiple revision rounds.
+        mid: >
+          Redlines moderately complex agreements independently, assessing
+          risk implications of non-standard terms and proposing alternative
+          language. Prioritizes markup comments to focus counterparty
+          attention on material issues and reduces unnecessary negotiation
+          friction on low-risk points.
+        senior: >
+          Performs expert-level redlining of complex agreements including
+          strategic partnerships, enterprise deals, and multi-party
+          arrangements. Develops organization-specific redlining playbooks
+          with tiered fallback positions and approval thresholds that
+          accelerate negotiation across the team.
+        staff: >
+          Establishes enterprise redlining standards, playbook governance,
+          and quality assurance processes. Evaluates AI-powered redlining
+          tools and drives adoption that improves speed and consistency
+          while maintaining appropriate human oversight for high-risk terms.
+        principal: >
+          Defines the organization's commercial terms strategy reflected
+          in redlining standards. Ensures playbooks evolve with business
+          model changes, regulatory developments, and market dynamics.
+          Drives the industry-leading use of technology-assisted contract
+          review across the enterprise.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI excels at comparing contracts against playbooks, flagging
+          deviations, and suggesting standard alternative language.
+          However, assessing the commercial implications of non-standard
+          terms in context and crafting creative alternative language for
+          novel situations still require experienced human professionals.
+
+    - id: clm_systems
+      name: "CLM Systems (Ironclad, Agiloft, Icertis)"
+      category: technical
+      description: >
+        Administering and leveraging contract lifecycle management platforms
+        such as Ironclad, Agiloft, Icertis, DocuSign CLM, or similar tools
+        for contract creation, workflow automation, repository management,
+        obligation tracking, and portfolio analytics, including system
+        configuration, integration, and user adoption management.
+      proficiency:
+        junior: >
+          Uses the CLM platform proficiently for daily contract operations
+          including creating requests, routing approvals, uploading executed
+          contracts, and running standard reports. Follows system procedures
+          and maintains data quality in the contract repository.
+        mid: >
+          Configures CLM workflows, templates, and metadata fields to
+          support business requirements. Troubleshoots system issues,
+          trains new users, and generates custom reports and dashboards.
+          Identifies opportunities to improve system utilization and data
+          quality across the organization.
+        senior: >
+          Leads CLM system optimization initiatives including workflow
+          redesign, integration with adjacent systems such as procurement
+          and finance platforms, and advanced analytics configuration.
+          Evaluates new CLM capabilities and AI features, driving adoption
+          that delivers measurable efficiency and insight improvements.
+        staff: >
+          Defines the CLM technology strategy and roadmap for the
+          enterprise. Manages vendor relationships, oversees implementation
+          and migration projects, and ensures CLM architecture supports
+          organizational scaling. Establishes data governance and
+          integration standards across the contract technology ecosystem.
+        principal: >
+          Shapes the organization's contract technology vision as part of
+          broader digital transformation strategy. Evaluates emerging CLM
+          platforms and AI capabilities that could fundamentally transform
+          contract operations. Drives executive investment decisions and
+          ensures contract technology delivers strategic business value.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI-native CLM platforms are rapidly adding intelligent features
+          for drafting, analysis, and obligation tracking. However,
+          configuring systems for organizational context, managing change
+          adoption, and architecting integrations across enterprise
+          systems require skilled professionals.
+
+    - id: risk_identification
+      name: "Risk Identification"
+      category: technical
+      description: >
+        Identifying, categorizing, and assessing contractual risks including
+        unfavorable liability provisions, inadequate indemnification, missing
+        protections, regulatory non-compliance, and operational risks arising
+        from contract terms, ensuring appropriate risk mitigation before
+        execution and throughout the contract term.
+      proficiency:
+        junior: >
+          Identifies common contractual risks such as unlimited liability,
+          broad indemnification, and missing termination rights using
+          established checklists. Flags deviations from standard terms
+          and escalates to senior team members for risk assessment.
+        mid: >
+          Conducts independent risk assessments of contracts, evaluating
+          the interplay of liability, indemnification, insurance, and
+          limitation provisions. Categorizes risks by severity and
+          likelihood and recommends mitigation strategies aligned with
+          organizational risk tolerance.
+        senior: >
+          Performs expert risk analysis on complex and non-standard
+          agreements, identifying hidden risks in unusual provisions and
+          cross-contract dependencies. Develops risk scoring frameworks
+          and decision matrices that enable consistent risk evaluation
+          across the contract management team.
+        staff: >
+          Defines the organization's contractual risk management
+          framework, establishing risk categories, tolerance thresholds,
+          and escalation criteria. Provides portfolio-level risk reporting
+          to senior leadership and drives proactive risk reduction
+          initiatives across major vendor and customer relationships.
+        principal: >
+          Sets enterprise contractual risk appetite aligned with corporate
+          risk management strategy. Ensures risk identification
+          capabilities evolve with business model changes and emerging
+          risk categories. Advises the board and executive team on
+          material contractual risk exposures and mitigation strategies.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI can effectively flag known risk patterns and score contracts
+          against risk benchmarks. However, identifying novel risks in
+          non-standard arrangements, assessing the practical likelihood
+          of contractual risk materialization, and calibrating risk
+          tolerance to business context require experienced judgment.
+
+    - id: template_management
+      name: "Template Management"
+      category: technical
+      description: >
+        Creating, maintaining, and governing a library of contract templates,
+        clause libraries, and playbooks that enable consistent, efficient
+        contract creation across the organization, including version control,
+        approval workflows, and regular updates to reflect legal and business
+        changes.
+      proficiency:
+        junior: >
+          Uses approved templates to generate contracts and maintains the
+          template library with proper version control and organization.
+          Identifies when templates need updates based on recurring
+          negotiation feedback and reports findings to the team lead.
+        mid: >
+          Develops and maintains contract templates and clause libraries
+          for assigned agreement types. Incorporates lessons learned from
+          negotiations into template improvements and manages the template
+          approval process with legal stakeholders.
+        senior: >
+          Designs the organization's template architecture including
+          modular clause libraries, conditional logic, and tiered playbook
+          positions. Leads template governance processes ensuring templates
+          remain current with legal, regulatory, and business changes
+          across the portfolio.
+        staff: >
+          Defines the enterprise template management strategy including
+          governance framework, technology requirements, and quality
+          standards. Ensures templates support self-service contract
+          generation by business teams and integrates template management
+          with CLM and AI drafting platforms.
+        principal: >
+          Shapes the organization's approach to standardized contracting
+          as a strategic advantage, driving template strategies that
+          reduce cycle time, improve commercial terms consistency, and
+          enable scalable growth. Evaluates AI-powered template generation
+          and dynamic assembly technologies.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI can generate template drafts, suggest clause alternatives, and
+          identify templates needing updates based on regulatory changes.
+          However, designing template architectures that balance
+          standardization with flexibility and governing template quality
+          across the enterprise require human oversight.
+
+    - id: compliance_tracking
+      name: "Compliance Tracking"
+      category: technical
+      description: >
+        Monitoring and ensuring fulfillment of contractual obligations by
+        all parties, including performance milestones, delivery schedules,
+        service levels, regulatory requirements, and financial obligations,
+        with systematic tracking, alerting, and reporting to prevent
+        breaches and maximize contract value realization.
+      proficiency:
+        junior: >
+          Tracks contractual obligations and key dates using established
+          systems and checklists. Sends reminders to responsible parties
+          for upcoming deadlines and documents compliance status in the
+          contract management system accurately.
+        mid: >
+          Manages obligation tracking programs for assigned portfolios,
+          identifying potential compliance gaps and coordinating with
+          business owners to ensure timely performance. Produces regular
+          compliance reports and escalates material compliance risks
+          to management.
+        senior: >
+          Designs compliance tracking frameworks including obligation
+          categorization, monitoring protocols, and escalation procedures.
+          Implements automated tracking and alerting systems. Leads
+          remediation efforts for identified compliance gaps and provides
+          portfolio-level compliance reporting to leadership.
+        staff: >
+          Defines the enterprise compliance tracking strategy spanning
+          all contract types and business areas. Establishes integration
+          between compliance tracking and enterprise systems such as
+          finance, procurement, and project management. Drives continuous
+          improvement in compliance rates and reporting quality.
+        principal: >
+          Shapes the organization's approach to contractual compliance
+          as a strategic capability that protects revenue, reduces risk,
+          and strengthens commercial relationships. Drives investment in
+          compliance technology and ensures compliance capabilities scale
+          with portfolio growth and complexity.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI excels at extracting obligations from contracts, monitoring
+          deadlines, and flagging compliance risks automatically. However,
+          interpreting ambiguous obligations, managing remediation across
+          organizations, and making judgment calls on materiality require
+          human professionals.
+
+    - id: vendor_management
+      name: "Vendor Management"
+      category: interpersonal
+      description: >
+        Managing commercial relationships with vendors and suppliers through
+        the contract lens, including performance monitoring against SLAs,
+        relationship governance, issue resolution, contract amendments,
+        and strategic vendor evaluation to ensure the organization receives
+        maximum value from its vendor portfolio.
+      proficiency:
+        junior: >
+          Supports vendor management activities by tracking SLA performance
+          data, preparing vendor meeting agendas, and documenting meeting
+          outcomes and action items. Maintains vendor contact information
+          and contract records in management systems.
+        mid: >
+          Manages vendor relationships for assigned contracts, monitoring
+          performance against SLAs, coordinating issue resolution, and
+          processing contract amendments and change orders. Prepares
+          vendor scorecards and performance reports for business
+          stakeholders.
+        senior: >
+          Leads vendor relationship management for strategic suppliers,
+          conducting quarterly business reviews, negotiating performance
+          improvements, and managing escalations. Develops vendor
+          governance frameworks and scoring methodologies that drive
+          accountability and continuous improvement.
+        staff: >
+          Oversees the vendor management program across the enterprise,
+          establishing governance standards, performance frameworks, and
+          strategic vendor segmentation models. Drives vendor consolidation
+          and optimization initiatives that reduce cost and risk while
+          improving service quality.
+        principal: >
+          Defines the organization's vendor management strategy as a
+          component of enterprise procurement and commercial operations.
+          Builds executive relationships with strategic vendors, leads
+          enterprise-level contract renegotiations, and ensures vendor
+          management capabilities support organizational growth and
+          resilience objectives.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can automate SLA monitoring, generate performance dashboards,
+          and flag vendor risk indicators. However, building productive
+          vendor relationships, negotiating improvements, and making
+          strategic vendor portfolio decisions require human relationship
+          management and business judgment.
+
+    - id: reporting_analytics
+      name: "Reporting & Analytics"
+      category: technical
+      description: >
+        Generating insights from contract data through reporting, analytics,
+        and visualization, including portfolio-level metrics such as cycle
+        time, value, risk exposure, and compliance rates, enabling data-
+        driven decision-making about contract operations and commercial
+        strategy.
+      proficiency:
+        junior: >
+          Generates standard contract reports using CLM system reporting
+          tools and spreadsheets. Maintains data accuracy in contract
+          repositories and produces regular status reports on contract
+          activity, pending approvals, and upcoming key dates.
+        mid: >
+          Develops custom reports and dashboards that provide portfolio
+          visibility on key metrics including cycle time, contract value,
+          expiration timelines, and risk distribution. Analyzes contract
+          data to identify trends and improvement opportunities.
+        senior: >
+          Designs comprehensive contract analytics programs that deliver
+          actionable insights to stakeholders. Implements advanced
+          analytics including spend analysis, vendor performance trending,
+          and risk heat mapping. Translates data findings into strategic
+          recommendations for process and commercial improvements.
+        staff: >
+          Establishes the enterprise contract analytics strategy including
+          data governance, reporting standards, and integration with
+          business intelligence platforms. Drives adoption of predictive
+          analytics and AI-powered insights across the contract management
+          function.
+        principal: >
+          Leverages contract analytics as a strategic asset, connecting
+          contract data insights to enterprise commercial strategy,
+          procurement optimization, and risk management decisions.
+          Champions investment in analytics capabilities that position
+          the contract function as a source of competitive intelligence.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI dramatically improves contract analytics by extracting data
+          from unstructured documents, identifying patterns, and generating
+          predictive insights. However, interpreting analytics in business
+          context, designing meaningful metrics, and translating data into
+          strategic action require skilled human analysts.
+
+    - id: cross_functional_collaboration
+      name: "Cross-Functional Collaboration"
+      category: interpersonal
+      description: >
+        Working effectively across organizational boundaries with legal,
+        procurement, sales, finance, IT, and business teams to ensure
+        contracts support business objectives, comply with policies, and
+        move through the approval process efficiently, resolving competing
+        priorities and building consensus among diverse stakeholders.
+      proficiency:
+        junior: >
+          Coordinates with internal stakeholders to gather contract
+          requirements and route approvals. Communicates clearly about
+          contract status, timelines, and information needs. Builds
+          working relationships with frequent collaborators across teams.
+        mid: >
+          Facilitates cross-functional alignment on contract terms and
+          negotiation priorities. Manages competing stakeholder requests
+          and negotiates internal trade-offs to keep contracts moving
+          forward. Develops process documentation and training materials
+          that improve stakeholder engagement.
+        senior: >
+          Leads complex cross-functional contract initiatives involving
+          multiple departments and senior stakeholders. Resolves
+          conflicting priorities through influence and builds consensus
+          on risk positions. Establishes stakeholder engagement models
+          that improve contract velocity and satisfaction.
+        staff: >
+          Designs the contract function's operating model for cross-
+          functional engagement, establishing intake processes, RACI
+          frameworks, and escalation paths. Builds strong partnerships
+          with functional leaders to ensure the contract management
+          team is positioned as a valued business partner.
+        principal: >
+          Positions the contract management function as a strategic
+          enabler of business objectives across the enterprise. Builds
+          executive-level relationships that ensure contract operations
+          have the resources, authority, and visibility needed to deliver
+          maximum organizational impact.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          AI can automate routine communications and status updates.
+          However, building cross-functional relationships, navigating
+          organizational dynamics, resolving competing priorities, and
+          influencing stakeholders without direct authority are
+          fundamentally human capabilities.
+
+    - id: renewal_management
+      name: "Renewal Management"
+      category: technical
+      description: >
+        Managing contract renewal processes including tracking expiration
+        dates, evaluating renewal options, benchmarking terms against market
+        conditions, coordinating renewal negotiations, and ensuring
+        continuity of critical commercial relationships without service
+        disruption or unfavorable auto-renewal terms.
+      proficiency:
+        junior: >
+          Monitors contract expiration dates and auto-renewal deadlines
+          in the CLM system. Sends timely renewal notifications to
+          business owners and collects renewal decision inputs following
+          established timelines and procedures.
+        mid: >
+          Manages the renewal process for assigned contracts, preparing
+          renewal analyses that compare current terms against market
+          benchmarks, usage data, and business requirements. Coordinates
+          renewal negotiations and ensures timely execution to prevent
+          lapses or unfavorable auto-renewals.
+        senior: >
+          Leads strategic renewal management across high-value contracts,
+          developing renewal strategies that optimize commercial terms
+          and align with evolving business needs. Implements proactive
+          renewal pipelines and benchmarking programs that maximize
+          negotiation leverage and minimize disruption.
+        staff: >
+          Defines the enterprise renewal management strategy including
+          timeline standards, analysis frameworks, and escalation
+          protocols. Establishes renewal analytics that quantify savings
+          achieved and value captured. Ensures the renewal process
+          integrates with vendor management and procurement strategies.
+        principal: >
+          Shapes the organization's approach to contract renewals as a
+          strategic value optimization opportunity. Drives enterprise-
+          level consolidation and renegotiation programs that generate
+          material savings. Ensures renewal capabilities scale with
+          portfolio growth and increasing contract complexity.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI effectively automates renewal tracking, generates
+          benchmarking analyses, and flags contracts approaching renewal
+          deadlines. However, developing renewal negotiation strategies,
+          evaluating whether to renew versus replace, and managing
+          stakeholder alignment on renewal decisions require human
+          judgment.
+
+    - id: process_improvement
+      name: "Process Improvement"
+      category: interpersonal
+      description: >
+        Continuously analyzing and improving contract management processes,
+        workflows, and systems to increase efficiency, reduce cycle time,
+        improve compliance, and enhance stakeholder experience, applying
+        Lean, Six Sigma, or similar methodologies to identify waste and
+        implement sustainable improvements.
+      proficiency:
+        junior: >
+          Identifies inefficiencies in contract processes through daily
+          work and documents improvement suggestions. Participates in
+          process improvement initiatives by gathering data, testing new
+          workflows, and providing feedback on proposed changes.
+        mid: >
+          Leads targeted process improvement projects that address specific
+          bottlenecks or quality issues in contract workflows. Measures
+          improvement outcomes against baseline metrics and documents
+          updated procedures for team adoption.
+        senior: >
+          Designs and implements significant process transformation
+          initiatives that deliver measurable improvements in cycle time,
+          compliance, and stakeholder satisfaction. Applies structured
+          improvement methodologies and change management practices to
+          ensure sustainable adoption.
+        staff: >
+          Defines the contract function's continuous improvement strategy
+          and establishes a culture of operational excellence. Leads
+          enterprise-level process transformation programs including
+          technology modernization, organizational redesign, and workflow
+          automation initiatives.
+        principal: >
+          Drives strategic transformation of the contract management
+          function, positioning it as an operational best practice within
+          the organization. Evaluates emerging technologies and operating
+          models that could fundamentally reshape contract operations
+          and delivers the business case for transformative investments.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can identify process bottlenecks through data analysis and
+          suggest automation opportunities. However, designing processes
+          for organizational context, managing change adoption, and
+          building a culture of continuous improvement are fundamentally
+          human leadership activities.

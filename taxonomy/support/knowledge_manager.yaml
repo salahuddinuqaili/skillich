@@ -1,0 +1,702 @@
+role:
+  id: knowledge_manager
+  function: support
+  name: "Knowledge Manager"
+  also_known_as:
+    - "Knowledge Base Manager"
+    - "Help Center Manager"
+    - "Content Manager (Support)"
+    - "Knowledge Management Specialist"
+    - "Self-Service Content Lead"
+  description: >
+    Builds, organizes, and maintains the knowledge ecosystem that powers
+    both customer self-service and agent-assisted support, including help
+    centers, internal knowledge bases, FAQs, and contextual in-app content.
+    Knowledge managers define content strategy, design information
+    architecture, establish governance processes, measure content
+    effectiveness, and drive continuous improvement of self-service
+    experiences. They work cross-functionally with product, engineering,
+    support, and marketing to ensure knowledge assets are accurate,
+    discoverable, and aligned with customer needs.
+  ai_impact:
+    level: "high"
+    summary: >
+      AI is significantly transforming knowledge management through automated
+      content drafting from support tickets, intelligent gap identification
+      based on search analytics and ticket patterns, auto-categorization
+      and tagging, and AI-powered search and recommendation engines. Content
+      creation velocity is increasing dramatically with AI-generated first
+      drafts, and knowledge freshness monitoring is becoming automated.
+      However, ensuring accuracy, designing effective information
+      architectures, maintaining editorial quality, and making strategic
+      content decisions still require human expertise. Knowledge managers
+      who leverage AI as a force multiplier while applying editorial
+      judgment will see their impact scale significantly.
+    automating:
+      - "First-draft generation of help articles from ticket resolution data"
+      - "Auto-tagging and categorization of knowledge base content"
+      - "Identification of stale or outdated content from product change logs"
+      - "Basic content formatting and style consistency enforcement"
+      - "Search query analysis and synonym mapping"
+      - "Translation of help content into additional languages"
+    augmenting:
+      - "Gap analysis identifying missing content from ticket and search patterns"
+      - "Content optimization recommendations based on engagement analytics"
+      - "AI-suggested edits for clarity, readability, and completeness"
+      - "Automated content summarization for different audience levels"
+      - "Intelligent content recommendation for agents during live interactions"
+      - "Predictive identification of content needs before product launches"
+    preserving:
+      - "Information architecture design and content strategy decisions"
+      - "Editorial judgment on accuracy, tone, and brand voice"
+      - "Cross-functional collaboration to gather and validate content"
+      - "Governance decisions on content lifecycle and ownership"
+      - "Understanding nuanced customer needs that data alone cannot capture"
+      - "Strategic prioritization of content investments for maximum impact"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Knowledge-Centered Service (KCS) Consortium"
+        url: "https://www.serviceinnovation.org/kcs/"
+      - name: "Gartner - Knowledge Management for Customer Service"
+        url: "https://www.gartner.com/en/customer-service-support/topics/knowledge-management"
+      - name: "Nielsen Norman Group - Help and Documentation UX"
+        url: "https://www.nngroup.com/topic/help-documentation/"
+  levels:
+    - id: junior
+      name: "Knowledge Specialist"
+      years_experience: "0-2"
+      summary: >
+        Creates and updates knowledge base content following established
+        guidelines and templates. Maintains content accuracy by reviewing
+        articles flagged as outdated. Assists with content audits, metadata
+        tagging, and basic analytics reporting. Learns content strategy
+        fundamentals and editorial standards.
+    - id: mid
+      name: "Knowledge Manager"
+      years_experience: "2-5"
+      summary: >
+        Manages a section of the knowledge base end-to-end, including
+        content planning, creation, optimization, and governance. Analyzes
+        content performance metrics to prioritize updates and new content.
+        Works with subject matter experts to produce accurate, effective
+        content and maintains editorial standards across contributors.
+    - id: senior
+      name: "Senior Knowledge Manager"
+      years_experience: "5-8"
+      summary: >
+        Leads knowledge strategy for the entire help center or internal
+        knowledge base, defining information architecture, governance
+        processes, and content standards. Drives self-service optimization
+        initiatives, manages content contributor programs, and connects
+        knowledge metrics to customer experience outcomes.
+    - id: lead
+      name: "Lead Knowledge Manager"
+      years_experience: "8-12"
+      summary: >
+        Sets strategic direction for the knowledge management function
+        across the organization, including tool selection, team structure,
+        and cross-functional content programs. Drives adoption of AI-assisted
+        content workflows, defines the knowledge strategy for new products
+        and markets, and ensures knowledge investments deliver measurable
+        business impact.
+    - id: director
+      name: "Director of Knowledge Management"
+      years_experience: "12+"
+      summary: >
+        Owns the organizational knowledge management vision and strategy,
+        connecting content investments to customer self-service rates,
+        support efficiency, and customer satisfaction. Manages the knowledge
+        team, drives adoption of knowledge-centered service methodologies,
+        and positions the knowledge function as a strategic capability
+        within the customer experience organization.
+  skills:
+    - id: content_strategy
+      name: "Content Strategy"
+      category: strategic
+      description: >
+        Defining the overall strategy for knowledge content including
+        audience analysis, content prioritization frameworks, editorial
+        direction, channel strategy, and content lifecycle management,
+        ensuring that content investments align with customer needs and
+        business goals.
+      proficiency:
+        junior: >
+          Understands the target audience for knowledge content and follows
+          the established content strategy when creating articles. Identifies
+          content gaps based on personal experience resolving customer
+          issues and proposes new articles based on frequently asked
+          questions encountered during support interactions.
+        mid: >
+          Develops content plans for assigned product areas based on ticket
+          data, search analytics, and customer feedback. Defines content
+          priorities that maximize self-service impact and creates editorial
+          calendars aligned with product release schedules. Measures content
+          effectiveness through deflection and engagement metrics.
+        senior: >
+          Defines the overall content strategy for the knowledge base,
+          including audience segmentation, content type frameworks, and
+          channel distribution decisions. Builds content prioritization
+          models that balance customer need, business impact, and creation
+          effort. Drives strategic content initiatives across teams.
+        lead: >
+          Sets the long-term content vision for the knowledge function,
+          anticipating how AI, self-service trends, and product evolution
+          will change content requirements. Defines content investment
+          frameworks that connect creation effort to measurable outcomes
+          and drives organizational adoption of content-first approaches.
+        director: >
+          Shapes the organization's content strategy at the executive level,
+          positioning knowledge content as a strategic asset that drives
+          self-service, reduces support costs, and improves customer
+          experience. Ensures content strategy evolves with market changes
+          and AI capabilities while maintaining editorial excellence.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can analyze data to suggest content priorities and identify
+          gaps, but defining a coherent content strategy, making editorial
+          direction decisions, and aligning content investments with business
+          goals require human strategic thinking and organizational context.
+
+    - id: kb_architecture
+      name: "Knowledge Base Architecture"
+      category: technical
+      description: >
+        Designing and maintaining the information architecture of knowledge
+        bases including category structures, navigation hierarchies, tagging
+        taxonomies, search optimization, and content relationships that
+        enable customers and agents to find the right information quickly
+        and intuitively.
+      proficiency:
+        junior: >
+          Follows the established information architecture when creating
+          and categorizing content. Applies correct tags, categories, and
+          metadata to articles. Understands the navigation structure and
+          can explain how customers find information within the current
+          help center design.
+        mid: >
+          Designs and optimizes category structures and navigation for
+          assigned sections of the knowledge base. Develops tagging
+          taxonomies that improve search and content discovery. Audits
+          existing architecture for usability issues and reorganizes
+          content to reduce findability friction.
+        senior: >
+          Architects the full information structure of the knowledge base,
+          defining category hierarchies, content type models, and
+          relationship schemas. Optimizes search configuration including
+          synonym mapping, boosting rules, and faceted navigation. Designs
+          architecture that scales with content volume growth.
+        lead: >
+          Defines the information architecture standards and design
+          principles for the knowledge management function. Evaluates and
+          selects knowledge management platforms based on architectural
+          capabilities. Drives migration planning when architecture changes
+          require content restructuring at scale.
+        director: >
+          Sets the architectural vision for the organization's knowledge
+          ecosystem, ensuring the information structure supports multi-
+          product, multi-language, and multi-audience requirements. Drives
+          investment in knowledge infrastructure that enables AI-powered
+          search, recommendation, and content assembly capabilities.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can auto-categorize content, suggest taxonomy improvements from
+          search patterns, and optimize search relevance algorithmically.
+          However, designing intuitive information architectures, making
+          structural decisions that scale, and understanding how humans
+          navigate information require human UX expertise.
+
+    - id: writing_editing
+      name: "Writing & Editing"
+      category: communication
+      description: >
+        Producing clear, accurate, and accessible written content for
+        diverse audiences, including step-by-step guides, conceptual
+        explanations, troubleshooting articles, and release notes, while
+        maintaining consistent voice, terminology, and style across
+        the knowledge base.
+      proficiency:
+        junior: >
+          Writes clear, grammatically correct help articles following
+          established style guides and templates. Produces step-by-step
+          instructions with appropriate screenshots and formatting. Edits
+          content for basic accuracy and clarity, and incorporates feedback
+          from reviewers to improve writing quality.
+        mid: >
+          Writes comprehensive articles for complex topics, structuring
+          information for scannability and progressive disclosure. Adapts
+          writing style for different audience technical levels. Edits
+          content from subject matter experts into polished, customer-ready
+          articles and maintains voice consistency across the knowledge base.
+        senior: >
+          Establishes the editorial voice and style standards for the
+          knowledge base. Produces exemplary content for the most complex
+          topics that serves as a model for other writers. Reviews and
+          elevates content quality across the knowledge base through
+          editorial oversight and constructive feedback to contributors.
+        lead: >
+          Defines the editorial standards, style guides, and writing
+          frameworks for the knowledge management function. Develops
+          training programs that improve writing quality across all
+          contributors including non-writers such as engineers and product
+          managers. Evaluates AI-generated content for quality thresholds.
+        director: >
+          Sets the editorial vision for the organization's customer-facing
+          content, ensuring the knowledge base voice aligns with brand
+          standards and customer expectations. Drives adoption of AI-
+          assisted writing tools while maintaining quality standards that
+          preserve trust and accuracy.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI generates competent first drafts, adapts reading levels, and
+          enforces style consistency effectively. However, ensuring
+          technical accuracy for nuanced product behavior, establishing
+          editorial voice, and making judgment calls on what to include
+          or exclude still require human editorial expertise.
+
+    - id: content_analytics
+      name: "Content Analytics & Optimization"
+      category: analytical
+      description: >
+        Measuring content effectiveness through analytics including page
+        views, search success rates, article helpfulness scores, deflection
+        rates, and engagement patterns, then using data insights to
+        prioritize content improvements, identify gaps, and demonstrate
+        the business value of knowledge investments.
+      proficiency:
+        junior: >
+          Reviews basic content metrics including page views, helpfulness
+          ratings, and search queries. Identifies articles with low
+          satisfaction scores or declining traffic. Generates standard
+          analytics reports following established templates and flags
+          trends for manager review.
+        mid: >
+          Analyzes content performance across multiple metrics to identify
+          optimization opportunities. Measures self-service deflection
+          rates and connects content improvements to ticket reduction.
+          Builds dashboards that track content health indicators and
+          designs A/B tests for article variations.
+        senior: >
+          Develops the analytics framework for measuring knowledge
+          effectiveness including metric definitions, data collection
+          methods, and reporting standards. Builds sophisticated analyses
+          connecting content performance to customer journey outcomes.
+          Identifies systemic content improvement opportunities from data.
+        lead: >
+          Defines the content measurement strategy for the knowledge
+          function, ensuring analytics drive decision-making at every level.
+          Develops ROI models that quantify the business value of knowledge
+          investments. Evaluates and implements analytics tools and AI-
+          powered insight generation capabilities.
+        director: >
+          Sets the organizational standard for knowledge ROI measurement,
+          presenting content impact analysis to executive stakeholders in
+          terms of cost savings, customer satisfaction improvement, and
+          self-service success rates. Ensures analytics insights drive
+          strategic content investment decisions.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI excels at pattern recognition in content analytics, identifying
+          gaps from search failure data, and suggesting optimization
+          priorities. However, interpreting analytics within business
+          context, designing measurement frameworks, and making strategic
+          decisions about content investment still require human judgment.
+
+    - id: taxonomy_design
+      name: "Taxonomy & Metadata Design"
+      category: technical
+      description: >
+        Designing and maintaining classification systems, controlled
+        vocabularies, and metadata schemas that organize knowledge content
+        for effective retrieval, including tag taxonomies, content type
+        definitions, attribute schemas, and cross-referencing systems.
+      proficiency:
+        junior: >
+          Applies taxonomy tags and metadata to content accurately following
+          established guidelines. Understands the purpose of classification
+          systems and controlled vocabularies. Identifies tagging
+          inconsistencies during content review and reports them for
+          correction through the established governance process.
+        mid: >
+          Designs taxonomy structures for assigned content areas, defining
+          categories, tags, and relationships that improve content
+          discoverability. Maintains controlled vocabularies and manages
+          taxonomy changes through governance processes. Audits metadata
+          quality and drives consistency improvements.
+        senior: >
+          Architects the complete taxonomy and metadata framework for the
+          knowledge base, including hierarchical classification, faceted
+          taxonomy, and cross-referencing models. Designs governance
+          processes for taxonomy evolution and ensures classification
+          systems scale with content growth and product expansion.
+        lead: >
+          Defines the taxonomy strategy for the organization, aligning
+          classification systems across knowledge bases, support ticketing,
+          product feedback, and other content repositories. Evaluates AI-
+          assisted classification tools and drives adoption of automated
+          tagging that maintains taxonomy standards.
+        director: >
+          Sets the organizational taxonomy vision, ensuring classification
+          systems support multi-product, multi-language content ecosystems.
+          Drives investment in taxonomy infrastructure that enables AI-
+          powered content assembly, personalized recommendations, and
+          cross-system content discovery.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can auto-classify content, suggest taxonomy improvements from
+          usage patterns, and maintain tagging consistency at scale.
+          However, designing taxonomy structures that reflect how users
+          think, managing classification evolution, and aligning taxonomies
+          across organizational systems require human information science
+          expertise.
+
+    - id: self_service_optimization
+      name: "Self-Service Optimization"
+      category: strategic
+      description: >
+        Improving the customer self-service experience to increase the
+        proportion of customers who resolve issues without agent assistance,
+        through content improvements, search optimization, navigation
+        enhancements, contextual help placement, and chatbot content
+        design.
+      proficiency:
+        junior: >
+          Identifies self-service improvement opportunities from customer
+          feedback and personal observation. Updates content to address
+          common reasons customers contact support after viewing articles.
+          Tracks basic self-service metrics such as article views relative
+          to ticket volume for related topics.
+        mid: >
+          Drives self-service optimization initiatives for assigned product
+          areas, analyzing the gap between content views and ticket creation
+          to identify where self-service fails. Optimizes article content,
+          placement, and search discoverability. Designs in-app contextual
+          help experiences that intercept support requests.
+        senior: >
+          Leads the organization's self-service optimization strategy,
+          defining the approach to content placement, search tuning,
+          chatbot content, and proactive help. Builds funnel analyses
+          tracking the customer journey from problem to self-resolution
+          and identifies the largest leakage points for improvement.
+        lead: >
+          Defines the self-service vision and investment strategy, setting
+          deflection targets and allocating resources across content,
+          tooling, and AI-powered self-service capabilities. Drives
+          cross-functional initiatives involving product, engineering,
+          and design to improve the end-to-end self-service experience.
+        director: >
+          Positions self-service as a strategic customer experience
+          capability at the executive level. Connects self-service
+          investment to cost savings, customer satisfaction, and product
+          adoption metrics. Drives organizational commitment to self-
+          service excellence across product, support, and engineering
+          functions.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI chatbots and intelligent search are powerful self-service
+          enablers that can resolve many customer questions without articles.
+          However, designing the self-service strategy, optimizing the
+          customer journey, and making decisions about where AI versus
+          content versus human help is most appropriate still require
+          human strategic judgment.
+
+    - id: cross_functional_collab
+      name: "Cross-Functional Collaboration"
+      category: interpersonal
+      description: >
+        Working effectively with product, engineering, marketing, support,
+        and other teams to gather accurate information, validate content,
+        coordinate launch readiness, and ensure knowledge assets stay
+        synchronized with product reality across the organization.
+      proficiency:
+        junior: >
+          Connects with subject matter experts to gather information for
+          knowledge content. Participates in product launch readiness
+          processes by creating assigned content deliverables. Builds
+          working relationships with counterparts in support and product
+          teams to facilitate content review.
+        mid: >
+          Manages content creation workflows that involve multiple
+          stakeholders, coordinating review cycles and sign-off processes
+          efficiently. Builds relationships with product managers and
+          engineers that enable proactive content updates aligned with
+          release schedules. Represents knowledge needs in cross-functional
+          planning meetings.
+        senior: >
+          Drives cross-functional content programs that span multiple teams
+          and product areas. Establishes knowledge readiness requirements
+          for product launches and holds teams accountable for content
+          deliverables. Influences product and engineering decisions that
+          affect content needs, such as UI copy and in-app help placement.
+        lead: >
+          Defines the cross-functional operating model for knowledge
+          management, establishing content partnership agreements with
+          product, engineering, and support teams. Drives organizational
+          adoption of knowledge-centered service practices and shared
+          responsibility for content accuracy.
+        director: >
+          Positions knowledge management as a cross-functional discipline
+          at the organizational level, ensuring content needs are considered
+          in product planning, engineering processes, and customer experience
+          strategy. Builds executive alignment on shared ownership of the
+          knowledge ecosystem across functions.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can identify content needs from product changes and flag
+          information that requires expert validation. However, building
+          cross-functional relationships, negotiating content priorities
+          with stakeholders, and driving organizational adoption of
+          knowledge practices remain human relationship and influence
+          skills.
+
+    - id: tool_administration
+      name: "Knowledge Platform Administration"
+      category: technical
+      description: >
+        Administering and configuring knowledge management platforms such
+        as Guru, Confluence, Notion, Zendesk Guide, or Helpjuice, including
+        permission management, template design, workflow configuration,
+        search tuning, and integration with support ticketing and CRM
+        systems.
+      proficiency:
+        junior: >
+          Uses the knowledge platform's content creation and editing
+          features proficiently. Follows established templates and
+          workflows for content publication. Understands the platform's
+          permission model and publishing workflow and can perform basic
+          administrative tasks as delegated.
+        mid: >
+          Configures platform features including templates, content
+          workflows, and user permissions. Manages integrations between
+          the knowledge platform and support tools. Customizes search
+          settings, navigation, and content display to improve user
+          experience. Troubleshoots platform issues independently.
+        senior: >
+          Administers the knowledge platform at the organizational level,
+          managing advanced configuration, custom themes, API integrations,
+          and multi-brand or multi-language setups. Evaluates platform
+          capabilities against organizational needs and drives migration
+          planning when platform changes are required.
+        lead: >
+          Defines the knowledge technology strategy including platform
+          selection, integration architecture, and migration roadmaps.
+          Evaluates emerging knowledge management tools and AI-powered
+          platforms. Manages vendor relationships and contract negotiations
+          for knowledge technology. Drives platform adoption across teams.
+        director: >
+          Sets the organizational vision for knowledge technology, ensuring
+          platforms support the long-term content strategy including AI-
+          powered content generation, personalized self-service, and
+          multi-channel content delivery. Manages the knowledge technology
+          budget and drives investment decisions.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI is increasingly embedded in knowledge platforms, automating
+          content suggestions, search relevance tuning, and gap detection.
+          However, platform architecture decisions, integration design,
+          migration planning, and vendor evaluation require human technical
+          and strategic judgment.
+
+    - id: content_governance
+      name: "Content Governance & Lifecycle Management"
+      category: operational
+      description: >
+        Establishing and enforcing standards for content creation, review,
+        publication, maintenance, and retirement, including ownership models,
+        review schedules, approval workflows, version control, and quality
+        criteria that keep the knowledge base accurate and trustworthy.
+      proficiency:
+        junior: >
+          Follows established content governance procedures for review,
+          approval, and publication. Tracks content review dates and flags
+          articles due for refresh. Applies version control practices and
+          documents changes made during content updates.
+        mid: >
+          Manages content governance processes for assigned areas including
+          review scheduling, ownership tracking, and freshness enforcement.
+          Designs approval workflows appropriate for different content types
+          and risk levels. Maintains content inventories and reports on
+          governance compliance.
+        senior: >
+          Defines content governance standards for the knowledge base
+          including ownership models, review cadences, quality criteria,
+          and retirement policies. Builds governance automation using
+          platform features and designs processes that scale with content
+          volume without creating bottlenecks.
+        lead: >
+          Sets the governance strategy for the knowledge function, balancing
+          content quality assurance with creation velocity. Defines content
+          lifecycle models that ensure accuracy while enabling rapid
+          publication. Drives adoption of governance practices across all
+          content contributors including non-knowledge-team authors.
+        director: >
+          Establishes the organizational standard for content governance,
+          ensuring knowledge assets are treated as managed products with
+          clear ownership, quality standards, and lifecycle management.
+          Drives investment in governance automation and AI-assisted content
+          auditing at scale.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can automate freshness checks, flag potentially outdated
+          content, and enforce style standards. However, designing
+          governance models that balance quality with agility, defining
+          ownership structures, and making decisions about content
+          retirement require human organizational and editorial judgment.
+
+    - id: localization
+      name: "Localization & Internationalization"
+      category: operational
+      description: >
+        Adapting knowledge content for different languages, regions, and
+        cultural contexts, including translation management, localization
+        quality assurance, cultural sensitivity review, and coordination
+        of multilingual content publication workflows.
+      proficiency:
+        junior: >
+          Supports localization workflows by preparing source content for
+          translation, tracking translation status, and performing basic
+          quality checks on translated content. Understands the difference
+          between translation and localization and follows established
+          processes for multilingual publication.
+        mid: >
+          Manages localization workflows for assigned content areas,
+          coordinating with translators and in-market reviewers. Ensures
+          source content is written for translatability, avoiding idioms
+          and cultural assumptions. Implements translation memory and
+          glossary management to improve consistency and efficiency.
+        senior: >
+          Leads the localization strategy for the knowledge base, defining
+          which content to localize, prioritization frameworks, and quality
+          standards for each market. Manages translation vendor
+          relationships and evaluates machine translation tools for
+          appropriate use cases. Designs workflows that minimize time-to-
+          publish for localized content.
+        lead: >
+          Defines the organization's localization strategy for knowledge
+          content, including market prioritization, investment levels, and
+          quality thresholds. Evaluates AI translation capabilities and
+          determines the appropriate balance between machine and human
+          translation. Drives localization efficiency improvements at scale.
+        director: >
+          Sets the organizational vision for multilingual knowledge content,
+          connecting localization investment to international market growth
+          strategy. Ensures the knowledge technology stack and content
+          architecture support efficient localization and manages the
+          localization budget across all content types and markets.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI translation has improved dramatically and handles routine
+          content localization well, significantly reducing cost and time.
+          However, ensuring cultural appropriateness, maintaining brand
+          voice across languages, and making strategic localization
+          prioritization decisions still require human linguistic and
+          cultural expertise.
+
+    - id: ai_assisted_content
+      name: "AI-Assisted Content Creation"
+      category: technical
+      description: >
+        Leveraging AI tools to accelerate content creation, optimization,
+        and maintenance, including prompt engineering for content generation,
+        AI-assisted editing, automated content updates, and quality
+        assurance of AI-generated content to ensure accuracy and brand
+        consistency.
+      proficiency:
+        junior: >
+          Uses AI writing tools to generate initial content drafts following
+          team guidelines. Reviews AI-generated content for factual accuracy
+          and brand voice compliance before publication. Understands the
+          limitations of AI-generated content and applies appropriate human
+          review to every piece before it reaches customers.
+        mid: >
+          Develops effective prompting strategies for generating high-quality
+          content drafts from support ticket data, product documentation,
+          and other sources. Integrates AI tools into content creation
+          workflows to improve throughput. Evaluates AI output quality
+          systematically and establishes review criteria for AI-assisted
+          content.
+        senior: >
+          Designs AI-assisted content workflows that multiply the team's
+          output while maintaining quality standards. Implements AI-powered
+          content freshness monitoring, gap detection, and optimization
+          recommendations. Defines the quality assurance process for AI-
+          generated content including accuracy verification and brand voice
+          compliance.
+        lead: >
+          Sets the AI content strategy for the knowledge function, defining
+          which content types and workflows benefit most from AI assistance.
+          Evaluates and selects AI writing tools, establishes organizational
+          policies for AI content use, and drives adoption of AI-assisted
+          workflows across the content team.
+        director: >
+          Defines the organizational vision for AI in knowledge management,
+          positioning AI as a force multiplier while maintaining the human
+          editorial judgment that ensures trust and accuracy. Drives
+          investment in AI content capabilities and manages the evolving
+          balance between AI-generated and human-authored content.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          This skill is inherently about leveraging AI effectively, making
+          it both the most AI-impacted and the most AI-dependent skill.
+          The ability to use AI tools well is becoming essential, but the
+          human judgment to verify accuracy, maintain quality, and know when
+          AI output is insufficient remains critical.
+
+    - id: user_research
+      name: "User Research for Content"
+      category: analytical
+      description: >
+        Conducting research to understand how customers seek and consume
+        help content, including search behavior analysis, usability testing
+        of help experiences, customer interviews, feedback analysis, and
+        journey mapping of the self-service experience.
+      proficiency:
+        junior: >
+          Reviews customer feedback on knowledge base articles and
+          summarizes common themes. Analyzes basic search query data to
+          understand what customers are looking for. Participates in
+          usability testing sessions and documents observations about
+          how customers navigate help content.
+        mid: >
+          Conducts user research activities including search analytics
+          analysis, article feedback review, and basic usability tests.
+          Synthesizes findings into actionable recommendations for content
+          improvement. Designs simple surveys to gather customer input on
+          content needs and preferences.
+        senior: >
+          Leads user research programs that systematically inform content
+          strategy, including journey mapping of self-service experiences,
+          search behavior analysis, and customer interviews about
+          information needs. Connects research findings to content
+          prioritization and information architecture decisions.
+        lead: >
+          Defines the user research strategy for the knowledge function,
+          establishing research methods, cadence, and integration with
+          content planning. Builds research capabilities within the team
+          and ensures customer insights drive content investment decisions
+          at every level.
+        director: >
+          Ensures user research is embedded in the organization's knowledge
+          management practice, connecting customer information behavior
+          insights to strategic content decisions. Drives investment in
+          research tools and capabilities that enable continuous
+          understanding of evolving customer self-service needs.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can analyze search patterns, cluster feedback themes, and
+          identify user behavior patterns at scale. However, designing
+          meaningful research studies, interpreting findings within customer
+          context, and translating insights into strategic content decisions
+          require human empathy and analytical judgment.

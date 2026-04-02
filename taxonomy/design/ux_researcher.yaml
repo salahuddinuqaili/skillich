@@ -1,0 +1,705 @@
+role:
+  id: ux_researcher
+  function: design
+  name: "UX Researcher"
+  also_known_as:
+    - "User Researcher"
+    - "Design Researcher"
+    - "Product Researcher"
+    - "Usability Researcher"
+    - "Customer Insights Researcher"
+  description: >
+    Plans and conducts research to understand user behaviors, needs,
+    motivations, and pain points, translating findings into actionable
+    insights that inform product and design decisions. UX researchers own
+    the full research lifecycle from study design through data collection,
+    analysis, and stakeholder communication, employing both qualitative and
+    quantitative methods to build an evidence base that reduces risk and
+    increases the likelihood of product-market fit.
+
+  ai_impact:
+    level: moderate
+    summary: >
+      AI tools are augmenting research workflows by automating transcription,
+      coding qualitative data, and generating preliminary thematic analyses
+      from interview recordings. Survey design and quantitative analysis are
+      seeing productivity gains from AI-assisted tools. However, the core of
+      UX research -- designing studies that ask the right questions, building
+      rapport with participants, interpreting nuanced human behavior, and
+      translating ambiguous data into strategic recommendations -- remains
+      deeply human. Researchers who leverage AI for operational efficiency
+      can spend more time on the high-judgment activities that drive research
+      impact.
+    automating:
+      - "Transcribing and timestamping user interview and usability test recordings"
+      - "Generating initial thematic codes from qualitative interview transcripts"
+      - "Creating first-draft survey questions from research objectives"
+      - "Summarizing large volumes of open-ended survey responses"
+    augmenting:
+      - "Identifying patterns and themes across large qualitative datasets faster"
+      - "Generating discussion guides and interview protocols from research questions"
+      - "Analyzing behavioral analytics data to identify usability friction points"
+      - "Creating research report drafts and visualizations from coded data"
+      - "Screening and scheduling research participants more efficiently"
+    preserving:
+      - "Designing research studies that address the most critical product questions"
+      - "Building rapport and trust with participants to elicit honest, rich responses"
+      - "Interpreting contextual meaning behind what participants say and do"
+      - "Translating research findings into strategic product recommendations"
+      - "Influencing organizational decisions by presenting compelling research narratives"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Nielsen Norman Group UX Research Methods"
+        url: "https://www.nngroup.com/articles/which-ux-research-methods/"
+      - name: "ResearchOps Community Framework"
+        url: "https://researchops.community/"
+      - name: "Maze State of UX Research Report"
+        url: "https://maze.co/resources/state-of-ux-research/"
+
+  levels:
+    - id: junior
+      name: "Junior (L1-L2)"
+      years_experience: "0-2"
+      summary: >
+        Supports research activities by taking notes during sessions,
+        recruiting participants, and assisting with data organization and
+        basic analysis. Conducts simple usability tests under guidance,
+        learns core research methods, and contributes to research
+        deliverables prepared by senior researchers.
+    - id: mid
+      name: "Mid-Level (L3)"
+      years_experience: "2-4"
+      summary: >
+        Plans and executes research studies independently for specific
+        features or product questions. Conducts interviews, usability
+        tests, and surveys, analyzes data using established frameworks,
+        and presents findings with clear recommendations to product and
+        design stakeholders.
+    - id: senior
+      name: "Senior (L4)"
+      years_experience: "4-8"
+      summary: >
+        Leads the research program for a product area, defining the
+        research roadmap, selecting methods strategically, and ensuring
+        research insights drive meaningful product decisions. Mentors
+        junior researchers, establishes quality standards for research
+        practice, and acts as a trusted advisor to product and design
+        leadership.
+    - id: staff
+      name: "Staff (L5)"
+      years_experience: "8-12"
+      summary: >
+        Sets the research strategy across multiple product areas,
+        building research operations infrastructure, defining
+        methodological standards, and ensuring research investment is
+        aligned with organizational priorities. Influences product
+        strategy with cross-cutting insights and builds the research
+        team's capabilities and culture.
+    - id: principal
+      name: "Principal (L6+)"
+      years_experience: "12+"
+      summary: >
+        Shapes the company's overall approach to user understanding and
+        evidence-based decision-making. Drives organizational investment
+        in research capabilities, establishes the company as a research-
+        informed organization, and contributes thought leadership to the
+        broader UX research community.
+
+  skills:
+    - id: research_planning
+      name: "Research Planning & Study Design"
+      category: analytical
+      description: >
+        Designing research studies that address specific product questions,
+        including defining research objectives, selecting appropriate
+        methods, determining sample sizes, creating study protocols, and
+        managing timelines and resources. The foundation for research that
+        produces valid, actionable insights.
+      proficiency:
+        junior: >
+          Assists with research planning by contributing to discussion guides
+          and test scripts. Understands common research methods (interviews,
+          usability tests, surveys) and their basic applications. Creates
+          simple study plans for well-defined research questions with
+          guidance.
+        mid: >
+          Plans complete research studies independently, selecting methods
+          appropriate to the question, timeline, and resources available.
+          Writes clear research briefs with well-defined objectives,
+          creates detailed discussion guides and test protocols, and
+          manages study logistics.
+        senior: >
+          Designs research programs for complex product questions that
+          require multiple methods and phases (triangulation). Advises
+          product and design teams on the right research approach for
+          their questions, balancing rigor with speed. Defines quality
+          criteria for research study design across the team.
+        staff: >
+          Establishes organizational standards for research planning,
+          including study-design templates, method-selection frameworks,
+          and quality review processes. Ensures research planning practices
+          scale across teams while maintaining methodological rigor.
+        principal: >
+          Shapes the organization's research methodology standards,
+          evaluating emerging methods and technologies for adoption.
+          Drives the integration of research planning into product
+          development workflows, ensuring research is embedded in
+          decision-making rather than treated as an afterthought.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can suggest research methods based on questions and generate
+          draft discussion guides and survey instruments. However, designing
+          studies that will produce valid, unbiased insights for specific
+          product contexts requires understanding of methodological nuances,
+          organizational constraints, and the decision landscape that
+          the research must inform.
+
+    - id: qualitative_methods
+      name: "Qualitative Research Methods"
+      category: technical
+      description: >
+        Conducting in-depth qualitative research including semi-structured
+        interviews, contextual inquiry, diary studies, ethnography, focus
+        groups, and participatory design sessions. Encompasses building
+        rapport, active listening, probing techniques, and managing
+        research dynamics.
+      proficiency:
+        junior: >
+          Conducts structured interviews following prepared discussion
+          guides, takes detailed notes during research sessions, and
+          practices active listening. Assists in contextual inquiry and
+          observational research under supervision.
+        mid: >
+          Leads semi-structured interviews and contextual inquiries
+          independently, adapting questions in real time based on
+          participant responses. Conducts diary studies and focus groups,
+          builds rapport quickly, and uses probing techniques to explore
+          underlying motivations and mental models.
+        senior: >
+          Masters advanced qualitative techniques including ethnographic
+          research, longitudinal studies, and participatory design.
+          Coaches junior researchers on interviewing skills, develops
+          novel qualitative approaches for unique research challenges,
+          and ensures qualitative rigor in team research practices.
+        staff: >
+          Defines the organization's qualitative research standards and
+          best practices. Evaluates emerging qualitative methods and
+          tools, trains teams on advanced techniques, and ensures
+          qualitative research maintains depth and rigor as the
+          organization scales research activities.
+        principal: >
+          Advances the organization's qualitative research capabilities,
+          introducing innovative methods that deepen user understanding.
+          Shapes how qualitative insights are valued and used in strategic
+          decision-making, ensuring the organization maintains a rich,
+          nuanced understanding of its users.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can transcribe and summarize qualitative sessions and
+          suggest follow-up questions, but the core qualitative skills --
+          building trust with participants, reading body language and
+          emotional cues, improvising follow-up probes, and interpreting
+          the meaning behind words -- are fundamentally human capabilities
+          that require empathy and social intelligence.
+
+    - id: quantitative_methods
+      name: "Quantitative Research Methods"
+      category: technical
+      description: >
+        Designing and analyzing quantitative user research including
+        A/B testing, statistical surveys, behavioral analytics, task-
+        completion metrics, benchmarking studies, and statistical
+        significance testing. Includes choosing appropriate statistical
+        methods and interpreting quantitative data accurately.
+      proficiency:
+        junior: >
+          Understands basic quantitative concepts (sample size, averages,
+          percentages, confidence intervals). Assists with data collection
+          for quantitative studies and creates simple charts and graphs
+          to visualize research data.
+        mid: >
+          Designs quantitative studies with appropriate sample sizes and
+          statistical approaches. Analyzes task-completion rates, error
+          rates, and satisfaction scores using standard statistical
+          methods. Interprets A/B test results and behavioral analytics
+          data to answer specific research questions.
+        senior: >
+          Designs complex quantitative research including multivariate
+          studies, benchmarking programs, and large-scale survey research.
+          Applies advanced statistical methods, ensures proper experimental
+          design to avoid common biases, and communicates quantitative
+          findings in ways that drive decision-making.
+        staff: >
+          Establishes organizational standards for quantitative UX
+          research, including statistical rigor requirements, benchmarking
+          frameworks, and integration with product analytics. Builds
+          infrastructure for continuous quantitative measurement of
+          user experience quality.
+        principal: >
+          Defines the company's approach to quantitative user-experience
+          measurement at scale, connecting UX metrics to business outcomes.
+          Drives investment in quantitative research capabilities and
+          establishes the role of quantitative evidence in product
+          strategy and portfolio decisions.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI tools significantly accelerate quantitative analysis,
+          automatically performing statistical tests, generating
+          visualizations, and identifying significant patterns in data.
+          However, designing valid experiments, choosing appropriate
+          statistical methods, avoiding methodological biases, and
+          interpreting results in product context require human
+          expertise in both statistics and user behavior.
+
+    - id: usability_testing
+      name: "Usability Testing"
+      category: technical
+      description: >
+        Planning and conducting moderated and unmoderated usability tests
+        to evaluate interface effectiveness, efficiency, and satisfaction.
+        Includes task design, think-aloud protocols, remote and in-person
+        testing, severity rating of findings, and communicating results
+        to drive design improvements.
+      proficiency:
+        junior: >
+          Assists with usability test preparation including writing tasks,
+          setting up test environments, and recruiting participants.
+          Takes detailed notes during moderated sessions and compiles
+          basic findings summaries.
+        mid: >
+          Plans and conducts moderated and unmoderated usability tests
+          independently. Writes effective task scenarios, facilitates
+          think-aloud sessions, identifies usability issues, rates
+          severity, and presents findings with clear recommendations
+          for design improvement.
+        senior: >
+          Designs comprehensive usability testing programs including
+          benchmark studies, comparative testing, and iterative testing
+          cycles integrated into the design process. Establishes testing
+          standards, severity-rating frameworks, and processes for
+          tracking issue resolution across releases.
+        staff: >
+          Builds organizational usability testing infrastructure,
+          including remote testing platforms, participant panels, and
+          standardized testing protocols. Defines when and how different
+          types of usability testing should be applied across the
+          product development lifecycle.
+        principal: >
+          Shapes the company's usability measurement strategy, connecting
+          usability testing to product quality standards and customer
+          satisfaction metrics. Evaluates how AI-assisted testing tools
+          and synthetic-user technologies will change the economics and
+          practice of usability testing.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can analyze usability test recordings to identify moments
+          of confusion and generate highlight reels, and unmoderated
+          testing platforms increasingly use AI for participant screening
+          and response quality checks. However, facilitating moderated
+          sessions, interpreting participant behavior in context, and
+          making severity judgments about usability issues require human
+          empathy and expertise.
+
+    - id: survey_design
+      name: "Survey Design & Analysis"
+      category: technical
+      description: >
+        Creating effective surveys and questionnaires for user research,
+        including question design, scale selection, response-bias
+        mitigation, sampling strategies, distribution methods, and
+        statistical analysis of survey data. Includes standardized
+        instruments like SUS, SUPR-Q, and custom survey development.
+      proficiency:
+        junior: >
+          Creates simple surveys using established templates and
+          question formats. Understands basic question types (Likert
+          scales, multiple choice, open-ended) and avoids obvious
+          biases like leading questions. Assists with survey distribution
+          and basic data tabulation.
+        mid: >
+          Designs comprehensive surveys with proper question flow, skip
+          logic, and validated scales. Applies standardized instruments
+          (SUS, NPS, CSAT) appropriately, mitigates common response
+          biases, and analyzes survey data to extract meaningful insights
+          beyond simple frequency counts.
+        senior: >
+          Creates custom survey instruments for unique research needs,
+          validates new scales, and designs sampling strategies that
+          ensure representative data. Applies advanced survey analysis
+          techniques (factor analysis, regression, segmentation) and
+          establishes survey quality standards for the team.
+        staff: >
+          Defines organizational survey research standards, including
+          approved instruments, frequency governance (survey fatigue
+          management), and integration with customer communication
+          channels. Builds continuous measurement programs using surveys
+          as a systematic feedback mechanism.
+        principal: >
+          Shapes the company's approach to systematic customer feedback
+          collection, connecting survey programs to product strategy and
+          customer experience metrics. Evaluates emerging survey
+          methodologies and technologies, and ensures survey research
+          produces organizationally actionable insights.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI tools can generate survey questions, suggest scales, and
+          analyze open-ended responses efficiently. However, designing
+          surveys that produce valid, unbiased data, selecting appropriate
+          sampling strategies, and interpreting results in the context
+          of specific product decisions require methodological expertise
+          and domain knowledge.
+
+    - id: data_analysis
+      name: "Research Data Analysis"
+      category: analytical
+      description: >
+        Analyzing research data from multiple sources to extract patterns,
+        themes, and insights. Includes qualitative coding (thematic
+        analysis, affinity mapping), quantitative analysis (descriptive
+        and inferential statistics), mixed-methods analysis, and tools
+        like spreadsheets, statistical software, and qualitative analysis
+        platforms.
+      proficiency:
+        junior: >
+          Performs basic data organization and simple analysis tasks.
+          Creates affinity diagrams under guidance, calculates descriptive
+          statistics (means, frequencies), and uses spreadsheets to
+          organize and visualize research data.
+        mid: >
+          Conducts thematic analysis on qualitative data using systematic
+          coding approaches. Performs statistical analysis appropriate
+          to the study design, creates clear data visualizations, and
+          triangulates findings across qualitative and quantitative data
+          sources.
+        senior: >
+          Leads complex analyses that integrate data from multiple
+          research methods and sources. Applies advanced analytical
+          frameworks, ensures analytical rigor and auditability, and
+          transforms large datasets into clear, compelling narratives
+          that connect to product strategy.
+        staff: >
+          Establishes organizational standards for research data analysis,
+          including coding frameworks, statistical-methods guidelines,
+          and tool selection. Builds shared analysis templates and
+          frameworks that ensure consistency and quality across the
+          research team.
+        principal: >
+          Defines the company's approach to turning research data into
+          strategic insight, connecting analysis practices to business
+          decision-making frameworks. Evaluates how AI analysis tools
+          and large-language models change the practice and economics
+          of research analysis.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI significantly accelerates data analysis by automatically
+          coding qualitative data, identifying statistical patterns,
+          and generating visualizations. However, determining what
+          patterns are meaningful, interpreting findings within product
+          and business context, and ensuring analytical rigor requires
+          human judgment that understands both the research methodology
+          and the decision context.
+
+    - id: research_synthesis
+      name: "Research Synthesis & Insight Generation"
+      category: analytical
+      description: >
+        Transforming raw research data into actionable insights,
+        frameworks, and recommendations. Includes identifying themes
+        across studies, building user models (personas, mental models,
+        journey maps), creating insight repositories, and connecting
+        individual findings to strategic patterns.
+      proficiency:
+        junior: >
+          Contributes to synthesis activities by organizing notes and
+          tagging observations. Creates basic summaries of individual
+          research sessions and helps populate research insight
+          repositories under guidance.
+        mid: >
+          Synthesizes findings from individual studies into clear themes,
+          insights, and recommendations. Creates personas, mental models,
+          and journey maps grounded in research data. Writes research
+          reports that connect findings to specific design and product
+          implications.
+        senior: >
+          Performs meta-synthesis across multiple studies to identify
+          strategic patterns and opportunities. Builds comprehensive user
+          models that inform product strategy, maintains organizational
+          knowledge bases, and creates insight frameworks that remain
+          useful beyond individual projects.
+        staff: >
+          Establishes the organization's approach to research synthesis
+          and knowledge management, including insight repositories,
+          taxonomy standards, and processes for connecting insights across
+          teams and time. Ensures research synthesis produces
+          strategically actionable outputs.
+        principal: >
+          Shapes how the organization creates and uses synthesized
+          research knowledge for strategic planning. Drives investment
+          in knowledge infrastructure and ensures that accumulated user
+          understanding informs company-level decisions about product
+          direction, market strategy, and experience vision.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI tools can summarize research sessions, suggest themes, and
+          generate draft personas from research data. However, identifying
+          which insights matter most, building user models that genuinely
+          inform product decisions, and connecting individual findings to
+          strategic patterns require the contextual understanding and
+          judgment that experienced researchers bring.
+
+    - id: participant_recruitment
+      name: "Participant Recruitment & Management"
+      category: domain
+      description: >
+        Identifying, screening, recruiting, and managing research
+        participants who represent target user populations. Includes
+        developing screeners, building participant panels, managing
+        incentive programs, ensuring diverse representation, and
+        maintaining participant relationships.
+      proficiency:
+        junior: >
+          Assists with participant recruitment using established screeners
+          and recruitment channels. Manages scheduling logistics, sends
+          confirmation communications, and distributes incentives
+          following team procedures.
+        mid: >
+          Writes effective screener surveys, uses multiple recruitment
+          channels to find appropriate participants, and manages the
+          full recruitment pipeline. Ensures participant diversity and
+          representation, handles no-shows and rescheduling, and manages
+          incentive budgets.
+        senior: >
+          Designs recruitment strategies for hard-to-reach populations
+          and specialized research needs. Builds and maintains participant
+          panels, establishes screening criteria that balance
+          representativeness with study requirements, and defines
+          recruitment quality standards for the team.
+        staff: >
+          Builds organizational research-participant infrastructure,
+          including panel management systems, recruitment vendor
+          relationships, and standardized processes for consent,
+          incentives, and data privacy. Ensures recruitment practices
+          scale efficiently while maintaining participant quality.
+        principal: >
+          Shapes the company's approach to participant access as a
+          strategic research capability. Drives investment in panel
+          infrastructure, establishes relationships with research
+          communities, and ensures the organization can access the
+          right participants for research at any scale.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can assist with screener design, automate scheduling, and
+          help manage participant databases. However, building trusted
+          relationships with participant communities, making judgment
+          calls about participant fit for nuanced studies, and ensuring
+          ethical recruitment practices require human social skills and
+          ethical reasoning.
+
+    - id: research_presentation
+      name: "Research Presentation & Storytelling"
+      category: communication
+      description: >
+        Communicating research findings persuasively to diverse
+        stakeholders through reports, presentations, video highlights,
+        and interactive workshops. Includes structuring narratives,
+        visualizing data, selecting the right format for the audience,
+        and driving action from research insights.
+      proficiency:
+        junior: >
+          Creates clear, well-organized research summaries and basic
+          presentations. Presents findings for individual studies to
+          immediate team members, using participant quotes and simple
+          data visualizations to illustrate key points.
+        mid: >
+          Crafts compelling research presentations that tell a clear
+          story from findings to implications. Creates highlight reels,
+          persona documents, and journey maps that stakeholders reference
+          long after the research is complete. Adapts presentation style
+          for different audiences (designers, engineers, executives).
+        senior: >
+          Delivers high-impact research presentations that influence
+          product strategy and roadmap decisions. Uses advanced
+          storytelling techniques to make research memorable and
+          actionable, creates executive-level research summaries, and
+          coaches junior researchers on effective research communication.
+        staff: >
+          Defines the organization's standards for research communication,
+          including report templates, presentation formats, and insight-
+          sharing platforms. Ensures research findings reach and influence
+          decision-makers at all levels, building systems for research
+          knowledge distribution.
+        principal: >
+          Shapes how research insights influence company strategy,
+          presenting to executive leadership and board-level audiences.
+          Builds the narrative infrastructure that connects user
+          understanding to business decisions, ensuring research has
+          a persistent voice in organizational strategic planning.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can generate report drafts, create data visualizations, and
+          produce highlight reels from research recordings. However,
+          crafting narratives that resonate with specific audiences,
+          selecting the insights that will drive action, and presenting
+          research in ways that influence organizational decisions
+          require human communication skills and political acumen.
+
+    - id: research_ops
+      name: "Research Operations (ResearchOps)"
+      category: domain
+      description: >
+        Building and maintaining the operational infrastructure that
+        enables research at scale, including tools, templates, participant
+        management systems, data governance, consent management,
+        knowledge repositories, and standardized processes that reduce
+        friction and increase research quality.
+      proficiency:
+        junior: >
+          Follows established research operations processes for
+          scheduling, consent management, and data storage. Uses
+          research tools and templates correctly and helps maintain
+          organized research archives.
+        mid: >
+          Manages research operations for a team, maintaining tools,
+          templates, and participant databases. Identifies process
+          inefficiencies and implements improvements. Ensures consent
+          forms, data storage, and participant communications follow
+          established standards.
+        senior: >
+          Designs and implements research operations improvements that
+          increase the team's research velocity and quality. Selects
+          and configures research tools, builds template libraries, and
+          establishes data management practices that support knowledge
+          reuse.
+        staff: >
+          Builds the organizational ResearchOps function, defining
+          processes, tools, and governance that enable research at scale.
+          Manages research-tool vendor relationships, establishes data-
+          governance standards, and creates the infrastructure for
+          cross-team knowledge sharing.
+        principal: >
+          Shapes the company's research operations strategy as a
+          competitive advantage. Drives investment in research
+          infrastructure, evaluates how emerging tools and AI capabilities
+          change research operations, and ensures the organization can
+          conduct high-quality research efficiently at any scale.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI is automating many research operations tasks including
+          transcription, scheduling, consent tracking, and repository
+          management. However, designing research operations systems that
+          serve the organization's specific needs, managing vendor
+          relationships, and ensuring ethical data governance require
+          human judgment and organizational knowledge.
+
+    - id: competitive_benchmarking
+      name: "Competitive & Market Research"
+      category: analytical
+      description: >
+        Evaluating competitor products and market trends to inform product
+        strategy and design decisions. Includes competitive usability
+        benchmarking, feature comparison analysis, market landscape
+        mapping, and identifying competitive opportunities and threats
+        from a user-experience perspective.
+      proficiency:
+        junior: >
+          Assists with competitive analysis by documenting competitor
+          features, screenshots, and user flows. Creates basic comparison
+          matrices and contributes to competitive landscape overviews
+          under guidance.
+        mid: >
+          Conducts structured competitive analyses including usability
+          benchmarking of competitor products, feature-gap analysis,
+          and UX strength-weakness assessments. Creates competitive
+          landscape documents that inform product positioning and
+          design decisions.
+        senior: >
+          Designs competitive research programs that systematically
+          track competitor experience quality and identify strategic
+          opportunities. Conducts deep competitive usability evaluations,
+          benchmarks product experience metrics against industry
+          standards, and advises product leadership on competitive
+          positioning.
+        staff: >
+          Establishes the organization's approach to competitive UX
+          intelligence, including regular benchmarking cadences,
+          evaluation frameworks, and integration with product strategy.
+          Ensures competitive insights inform product-roadmap
+          prioritization and design-investment decisions.
+        principal: >
+          Shapes how the organization uses competitive and market
+          intelligence for strategic experience differentiation.
+          Identifies macro-level trends in user expectations, evaluates
+          competitive threats from non-traditional competitors, and
+          positions the company's experience strategy for long-term
+          competitive advantage.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can efficiently gather and summarize competitor information,
+          generate feature comparison matrices, and track competitive
+          changes over time. However, interpreting competitive
+          intelligence in the context of product strategy, identifying
+          meaningful experience differentiators, and making strategic
+          recommendations from competitive data require market
+          expertise and strategic judgment.
+
+    - id: research_ethics
+      name: "Research Ethics & Participant Protection"
+      category: domain
+      description: >
+        Ensuring research practices respect participant rights, privacy,
+        and wellbeing. Includes informed consent, data protection (GDPR,
+        CCPA compliance), vulnerable population safeguards, ethical
+        review processes, incentive fairness, and maintaining
+        professional research standards.
+      proficiency:
+        junior: >
+          Follows established consent and data-handling procedures.
+          Understands core research ethics principles (informed consent,
+          confidentiality, right to withdraw) and applies them to every
+          research interaction.
+        mid: >
+          Manages informed consent processes, ensures participant data
+          is stored and handled in compliance with privacy regulations,
+          and recognizes ethical considerations in study design. Adapts
+          consent procedures for different research contexts (remote,
+          unmoderated, recording).
+        senior: >
+          Establishes research ethics standards for the team, including
+          consent templates, data-retention policies, and guidelines for
+          research with sensitive topics or vulnerable populations.
+          Conducts ethical reviews of research plans and handles
+          situations where participant wellbeing conflicts with research
+          objectives.
+        staff: >
+          Defines the organization's research ethics framework, including
+          IRB-equivalent review processes, data-governance policies, and
+          training programs for researchers. Ensures research practices
+          comply with evolving privacy regulations and industry ethical
+          standards.
+        principal: >
+          Shapes the company's research ethics culture and standards at
+          the organizational level. Engages with industry ethics bodies,
+          anticipates regulatory changes affecting research practices,
+          and ensures the organization's research practices earn and
+          maintain participant and public trust.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can help with consent-form generation and data-handling
+          compliance checks, but research ethics is fundamentally about
+          human judgment, values, and responsibility. Deciding how to
+          protect participant welfare, navigating ethical gray areas, and
+          building a culture of ethical research practice require moral
+          reasoning and empathy that AI cannot provide.

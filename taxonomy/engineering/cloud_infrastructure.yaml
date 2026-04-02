@@ -1,0 +1,518 @@
+role:
+  id: cloud_infrastructure
+  function: engineering
+  name: "Cloud & Infrastructure Engineer"
+  also_known_as:
+    - "Cloud Engineer"
+    - "Infrastructure Engineer"
+    - "Platform Engineer"
+    - "Cloud Architect"
+  description: >
+    Designs, provisions, and manages cloud infrastructure across major providers
+    (AWS, Azure, GCP). Builds platforms that development teams use to deploy and
+    operate services reliably and cost-effectively.
+
+  ai_impact:
+    level: moderate-high
+    summary: >
+      Infrastructure-as-code generation and cloud resource configuration are increasingly
+      AI-assisted. However, cost optimization across complex environments, security posture
+      management, and multi-cloud strategy require deep contextual understanding that
+      remains human-driven.
+    automating:
+      - "Terraform/CloudFormation template generation"
+      - "Security group and IAM policy drafting"
+      - "Cost anomaly detection and right-sizing recommendations"
+      - "Documentation of infrastructure topology"
+    augmenting:
+      - "Architecture design for scalability and resilience"
+      - "Migration planning from on-premises to cloud"
+      - "Multi-cloud strategy evaluation"
+      - "Compliance and security posture assessment"
+    preserving:
+      - "Vendor relationship management and contract negotiation"
+      - "Organizational cloud adoption strategy"
+      - "Cross-team platform requirements gathering"
+      - "Incident escalation and executive communication during outages"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Pluralsight Cloud Career Guide 2025"
+        url: "https://www.pluralsight.com/resources/blog/cloud/cloud-career-guide-2025"
+      - name: "Flexera State of the Cloud Report 2025"
+        url: "https://www.flexera.com/blog/cloud/cloud-computing-trends/"
+
+  levels:
+    - id: junior
+      name: "Junior (L1-L2)"
+      years_experience: "0-2"
+      summary: "Provisions resources using existing templates. Follows runbooks for common operations."
+    - id: mid
+      name: "Mid-Level (L3)"
+      years_experience: "2-5"
+      summary: "Designs infrastructure for services independently. Manages IaC modules and cloud networking."
+    - id: senior
+      name: "Senior (L4)"
+      years_experience: "5-8"
+      summary: "Architects multi-region, highly available infrastructure. Drives cost optimization and security hardening."
+    - id: staff
+      name: "Staff (L5)"
+      years_experience: "8-12"
+      summary: "Defines platform strategy and internal developer platforms. Evaluates cloud vendor offerings."
+    - id: principal
+      name: "Principal (L6+)"
+      years_experience: "12+"
+      summary: "Sets organizational cloud strategy spanning multiple providers, regions, and compliance regimes."
+
+  skills:
+    - id: cloud_platforms
+      name: "Cloud Platform Expertise"
+      category: technical
+      description: "Deep knowledge of AWS, Azure, or GCP services, pricing models, and operational patterns."
+      proficiency:
+        junior: >
+          Navigates the AWS Console, Azure Portal, or GCP Cloud Console to
+          provision core compute, storage, and networking resources. Follows
+          existing architecture diagrams and applies pre-approved configurations
+          for EC2 instances, S3 buckets, or Cloud Storage under supervision.
+        mid: >
+          Provisions and manages services programmatically via AWS CLI, az CLI,
+          or gcloud. Understands pricing models including reserved instances and
+          committed-use discounts, and selects appropriate service tiers such as
+          RDS vs. DynamoDB based on workload access patterns.
+        senior: >
+          Designs architectures leveraging advanced managed services such as
+          Aurora, BigQuery, Lambda, and API Gateway. Optimizes cost by analyzing
+          CloudWatch and Cost Explorer data, balancing managed-service premiums
+          against operational overhead of self-hosted alternatives.
+        staff: >
+          Evaluates cloud vendor roadmaps and emerging services against
+          organizational needs. Drives multi-cloud or cloud-agnostic strategies,
+          weighing portability benefits against the complexity cost of
+          abstracting provider-specific features like AWS Graviton or Azure
+          Confidential Computing.
+        principal: >
+          Negotiates enterprise agreements with AWS, Azure, and GCP, aligning
+          commit levels with growth forecasts. Sets organizational cloud
+          platform strategy spanning provider selection, data sovereignty
+          requirements, and long-term technology bets that shape the company's
+          infrastructure trajectory.
+      ai_impact:
+        rating: 0.4
+        detail: "AI suggests service configurations but cannot evaluate organizational constraints, compliance requirements, or vendor lock-in trade-offs."
+
+    - id: infrastructure_as_code
+      name: "Infrastructure as Code"
+      category: technical
+      description: "Defining and managing infrastructure through code using Terraform, Pulumi, CloudFormation, or Bicep."
+      proficiency:
+        junior: >
+          Writes basic Terraform resources or CloudFormation templates by
+          following existing module patterns. Understands plan/apply workflows
+          and basic variable parameterization, and submits IaC changes through
+          the team's pull-request review process.
+        mid: >
+          Creates reusable Terraform modules with input validation and output
+          contracts. Implements remote state backends in S3 or Azure Blob,
+          configures workspace strategies, and integrates IaC plans into CI/CD
+          pipelines for automated review before apply.
+        senior: >
+          Designs IaC module libraries and provider abstractions serving
+          multiple teams. Implements policy-as-code using OPA or HashiCorp
+          Sentinel, architects state management for multi-account environments,
+          and establishes testing strategies with Terratest or tftest while
+          balancing strictness against developer velocity.
+        staff: >
+          Defines the organizational IaC strategy including Terraform vs. Pulumi
+          vs. Crossplane evaluation, module registry governance, and migration
+          paths between tools. Drives GitOps adoption and establishes patterns
+          for managing hundreds of interconnected modules without state
+          dependency sprawl.
+        principal: >
+          Sets the technical vision for all infrastructure provisioning,
+          balancing declarative IaC purity against operational pragmatism for
+          edge cases. Makes strategic tooling decisions that span years,
+          influences open-source IaC projects, and guides the company's
+          infrastructure automation philosophy.
+      ai_impact:
+        rating: 0.6
+        detail: "AI generates IaC templates effectively for known patterns. State management strategy, module architecture, and migration of existing infrastructure require human planning."
+
+    - id: networking
+      name: "Cloud Networking"
+      category: technical
+      description: "VPCs, subnets, load balancers, DNS, CDN, VPN, and network security configurations."
+      proficiency:
+        junior: >
+          Understands VPC basics including subnets, route tables, and security
+          groups. Reads network topology diagrams and provisions resources
+          within existing VPC architectures. Configures basic security group
+          rules for inbound and outbound traffic following team guidelines.
+        mid: >
+          Designs VPC architectures with proper public/private subnet
+          segmentation, NAT gateways, and Application Load Balancers. Configures
+          Route 53 or Cloud DNS for service discovery and implements VPN
+          connections for hybrid environments with on-premises networks.
+        senior: >
+          Architects multi-region networking using VPC peering, AWS Transit
+          Gateway, or Azure Virtual WAN for hub-and-spoke topologies. Designs
+          hybrid connectivity with Direct Connect or ExpressRoute, balancing
+          cost of dedicated links against latency requirements for critical
+          workloads.
+        staff: >
+          Defines network architecture standards including zero-trust network
+          segmentation, service mesh adoption with Istio or Linkerd, and
+          cross-cloud connectivity patterns. Evaluates trade-offs between
+          network-level isolation and application-level identity for
+          micro-segmentation strategies.
+        principal: >
+          Sets organizational networking strategy spanning cloud, on-premises,
+          and edge locations. Makes strategic investments in network
+          infrastructure such as backbone peering, CDN placement, and
+          sovereignty-compliant routing that align with business expansion
+          plans across geographies.
+      ai_impact:
+        rating: 0.35
+        detail: "AI configures standard network topologies. Complex hybrid networking, performance debugging across regions, and security zone design require deep human expertise."
+
+    - id: compute_services
+      name: "Compute Services"
+      category: technical
+      description: "Managing VMs, containers, serverless functions, and auto-scaling across cloud providers."
+      proficiency:
+        junior: >
+          Launches and configures EC2 instances, Azure VMs, or GCE instances
+          using pre-approved AMIs and instance families. Deploys basic Lambda
+          or Cloud Functions following existing templates, and understands the
+          difference between general-purpose and compute-optimized instance
+          types.
+        mid: >
+          Designs auto-scaling policies using CloudWatch alarms or GCP managed
+          instance groups. Selects compute types for specific workloads,
+          comparing Spot vs. On-Demand vs. Reserved pricing, and optimizes
+          resource utilization by analyzing CPU, memory, and network metrics.
+        senior: >
+          Architects compute strategies mixing EC2, ECS/EKS, and Lambda for
+          cost and performance optimization. Evaluates trade-offs between
+          serverless cold-start latency and always-on container overhead,
+          designing placement strategies that match workload burst patterns
+          and SLA requirements.
+        staff: >
+          Evaluates compute platform evolution including Firecracker, Wasm
+          runtimes, and Graviton/ARM processors. Sets organizational adoption
+          strategy for emerging compute models, weighing performance gains
+          against ecosystem maturity and migration cost for existing
+          workloads.
+        principal: >
+          Defines organizational compute strategy spanning workload placement,
+          cost sustainability, and technology bets on next-generation runtimes.
+          Advises executive leadership on data center vs. cloud vs. edge
+          compute decisions tied to multi-year business growth projections
+          and regulatory landscapes.
+      ai_impact:
+        rating: 0.45
+        detail: "AI right-sizes instances and suggests configurations. Workload-specific compute selection and cost optimization across reserved/spot/on-demand require human analysis."
+
+    - id: security_compliance
+      name: "Cloud Security & Compliance"
+      category: technical
+      description: "IAM policies, encryption, network security, compliance frameworks (SOC 2, ISO 27001, HIPAA)."
+      proficiency:
+        junior: >
+          Follows security best practices by applying least-privilege IAM
+          policies with guidance from senior engineers. Enables default
+          encryption on S3 buckets and RDS instances, and flags security
+          group rules that expose services to 0.0.0.0/0 during code reviews.
+        mid: >
+          Implements encryption at rest using KMS and in transit via TLS
+          termination at load balancers. Configures AWS Config rules or Azure
+          Policy for drift detection, sets up GuardDuty or Defender alerts,
+          and remediates findings from security scanning tools within SLAs.
+        senior: >
+          Designs security architectures spanning IAM boundaries, VPC isolation,
+          and encryption key hierarchies. Implements compliance-as-code for
+          SOC 2 and HIPAA controls using tools like Prowler or ScoutSuite,
+          balancing audit requirements against developer self-service velocity.
+        staff: >
+          Defines cloud security standards and compliance strategy across
+          the organization. Evaluates CSPM tools like Prisma Cloud and CWPP
+          solutions, establishes security guardrails in landing zones, and
+          drives organizational adoption of zero-trust architecture while
+          managing the friction it introduces to developer workflows.
+        principal: >
+          Sets organizational cloud security posture and compliance framework
+          spanning all environments and providers. Advises executive leadership
+          on regulatory risk exposure, drives security investment aligned
+          with threat landscape evolution, and negotiates acceptable risk
+          thresholds balancing protection against business agility.
+      ai_impact:
+        rating: 0.3
+        detail: "AI detects misconfigurations and policy violations. Compliance interpretation, threat modeling, and organizational security strategy require human judgment."
+
+    - id: cost_optimization
+      name: "Cloud Cost Optimization (FinOps)"
+      category: analytical
+      description: "Monitoring, analyzing, and optimizing cloud spend through right-sizing, reservations, and architecture decisions."
+      proficiency:
+        junior: >
+          Reads AWS Cost Explorer or Azure Cost Management dashboards. Applies
+          resource tags following organizational taxonomy and flags unexpected
+          spend increases in daily cost reports. Shuts down unused dev
+          environments when reminded by automation.
+        mid: >
+          Implements right-sizing recommendations using tools like AWS Compute
+          Optimizer or Spot.io. Manages Reserved Instance and Savings Plan
+          purchases for predictable workloads, and produces monthly cost
+          reports with actionable optimization recommendations for the team.
+        senior: >
+          Designs cost-efficient architectures using tiered storage, Spot
+          instances for fault-tolerant workloads, and serverless for bursty
+          traffic. Implements showback and chargeback models using cost
+          allocation tags, balancing granular attribution against tagging
+          complexity overhead.
+        staff: >
+          Drives FinOps practice across the organization using frameworks like
+          the FinOps Foundation model. Negotiates cloud provider committed-use
+          agreements, establishes cost governance policies with automated
+          budget alerts, and builds cost awareness into engineering culture
+          through team-level spending dashboards.
+        principal: >
+          Sets cloud financial strategy at the executive level, aligning
+          infrastructure investment with business outcomes and growth
+          trajectories. Makes strategic decisions about commitment term
+          lengths, multi-cloud cost arbitrage, and build-vs-buy trade-offs
+          where self-hosted infrastructure may outperform cloud economics
+          at scale.
+      ai_impact:
+        rating: 0.55
+        detail: "AI identifies waste and suggests right-sizing effectively. Strategic cost optimization involving commitment planning, architecture trade-offs, and vendor negotiation requires human judgment."
+
+    - id: container_orchestration
+      name: "Container Orchestration"
+      category: technical
+      description: "Managing containerized workloads with Kubernetes, ECS, or similar orchestration platforms."
+      proficiency:
+        junior: >
+          Deploys workloads to existing EKS, AKS, or GKE clusters using
+          provided Kubernetes manifests. Understands pods, services, and
+          deployments at a conceptual level, and uses kubectl to inspect
+          pod logs and describe resources when troubleshooting issues.
+        mid: >
+          Writes Helm charts with parameterized values files, configures
+          Ingress controllers with TLS termination, and manages namespace-level
+          resource quotas. Troubleshoots pod scheduling failures by analyzing
+          node affinity, resource requests, and PersistentVolumeClaim bindings.
+        senior: >
+          Architects Kubernetes clusters for multi-tenancy using namespace
+          isolation, RBAC policies, and NetworkPolicies. Implements service
+          meshes like Istio for traffic management and mTLS, and adopts
+          GitOps workflows with ArgoCD or Flux, weighing operational
+          complexity against deployment safety guarantees.
+        staff: >
+          Evaluates managed Kubernetes (EKS, AKS, GKE) against self-hosted
+          options and emerging platforms like Nomad. Defines the
+          organization's container strategy including base image standards,
+          multi-cluster federation with Admiralty or Liqo, and runtime
+          security enforcement with Falco or Sysdig.
+        principal: >
+          Sets the compute orchestration vision spanning containers,
+          serverless, and emerging WebAssembly runtimes. Makes strategic
+          platform decisions that affect hundreds of engineering teams,
+          contributes to open-source container ecosystem projects, and
+          influences vendor roadmaps through enterprise partnerships.
+      ai_impact:
+        rating: 0.5
+        detail: "AI generates manifests and Helm charts. Cluster architecture, multi-tenancy design, and production troubleshooting of scheduling and networking issues require human expertise."
+
+    - id: disaster_recovery
+      name: "Disaster Recovery & Business Continuity"
+      category: technical
+      description: "Designing backup, recovery, and failover strategies to meet RPO/RTO requirements."
+      proficiency:
+        junior: >
+          Follows backup procedures for RDS snapshots, S3 cross-region
+          replication, and Azure Backup schedules. Understands RPO and RTO
+          concepts and can explain the difference between hot, warm, and
+          cold standby configurations for the services they support.
+        mid: >
+          Implements backup automation using AWS Backup or Azure Site Recovery
+          and tests recovery procedures quarterly. Designs basic failover
+          configurations with Route 53 health checks or Azure Traffic Manager,
+          and documents recovery runbooks with step-by-step validation.
+        senior: >
+          Architects multi-region disaster recovery with automated failover
+          using Global Accelerator or Cloud DNS routing policies. Designs
+          data replication strategies balancing synchronous consistency
+          against asynchronous performance, and selects DR tier (pilot light,
+          warm standby, multi-site) based on cost-vs-RTO trade-off analysis.
+        staff: >
+          Defines DR standards aligned to business criticality tiers, mapping
+          each tier to specific RPO/RTO targets and DR patterns. Conducts
+          organization-wide DR exercises, including tabletop simulations and
+          live failover tests, and drives remediation of gaps discovered
+          during exercises.
+        principal: >
+          Sets organizational resilience strategy spanning infrastructure,
+          data, and application layers. Advises executive leadership on
+          acceptable recovery time trade-offs relative to DR investment
+          costs, and ensures compliance with regulatory continuity
+          requirements across all operating regions and jurisdictions.
+      ai_impact:
+        rating: 0.25
+        detail: "DR strategy depends on business criticality assessments, regulatory requirements, and cost-risk trade-offs that are deeply organizational and human-driven."
+
+    - id: storage_data
+      name: "Cloud Storage & Data Services"
+      category: technical
+      description: "Object storage, block storage, managed databases, caching services, and data lifecycle management."
+      proficiency:
+        junior: >
+          Uses S3, Azure Blob Storage, or Cloud Storage for object storage
+          and provisions managed databases like RDS or Cloud SQL following
+          existing patterns. Understands storage tier differences such as
+          S3 Standard vs. Glacier and selects tiers with guidance.
+        mid: >
+          Selects appropriate storage services for workloads, comparing
+          DynamoDB vs. Aurora vs. ElastiCache based on access patterns and
+          latency requirements. Implements lifecycle policies to transition
+          infrequently accessed data to cheaper tiers and configures
+          cross-region replication for durability.
+        senior: >
+          Designs data architecture across storage tiers spanning hot, warm,
+          and cold data. Optimizes for cost, performance, and durability
+          using strategies like S3 Intelligent-Tiering, read replicas for
+          query offloading, and DAX or Redis caching layers, balancing
+          consistency guarantees against latency targets.
+        staff: >
+          Defines data platform strategy spanning storage, processing, and
+          governance services. Evaluates managed offerings like Redshift vs.
+          BigQuery vs. Snowflake for analytical workloads, and establishes
+          data lifecycle and retention policies that satisfy both cost
+          optimization and regulatory compliance requirements.
+        principal: >
+          Sets organizational data infrastructure vision spanning cloud-native
+          and hybrid architectures. Makes strategic decisions about data
+          sovereignty, multi-cloud data portability, and emerging storage
+          technologies, aligning data platform investments with business
+          intelligence and AI/ML workload growth projections.
+      ai_impact:
+        rating: 0.4
+        detail: "AI recommends storage configurations. Data architecture decisions spanning regulatory requirements, performance characteristics, and cost optimization require human analysis."
+
+    - id: monitoring_alerting
+      name: "Monitoring & Alerting"
+      category: technical
+      description: "Setting up observability for infrastructure: metrics, logs, traces, and alert routing."
+      proficiency:
+        junior: >
+          Uses CloudWatch, Azure Monitor, or Stackdriver dashboards to check
+          system health. Responds to PagerDuty or Opsgenie alerts following
+          runbooks, and learns to navigate log aggregation tools like
+          CloudWatch Logs Insights or Kibana to troubleshoot reported issues.
+        mid: >
+          Configures metrics collection with Prometheus or CloudWatch custom
+          metrics, sets up log aggregation with Fluentd or Datadog, and
+          defines alert rules with appropriate severity levels. Builds
+          operational dashboards in Grafana that surface actionable signals
+          for on-call responders.
+        senior: >
+          Designs observability architecture with proper signal-to-noise ratio
+          by tuning alert thresholds and implementing SLO-based burn-rate
+          alerting. Selects between Datadog, New Relic, and open-source stacks,
+          balancing feature richness and vendor lock-in against cost at scale
+          and data retention needs.
+        staff: >
+          Defines observability standards and tooling strategy for the
+          organization. Drives adoption of unified platforms like OpenTelemetry
+          for instrumentation, evaluates AIOps capabilities for anomaly
+          detection, and optimizes telemetry data pipeline costs that often
+          rival the infrastructure they monitor.
+        principal: >
+          Sets organizational observability philosophy and invests in platform
+          capabilities that provide deep visibility across all services.
+          Makes strategic build-vs-buy decisions for observability
+          infrastructure, aligns monitoring investment with business
+          reliability targets, and drives cultural adoption of data-driven
+          operational practices.
+      ai_impact:
+        rating: 0.5
+        detail: "AI suggests alert thresholds and detects anomalies. Designing meaningful alerts with low noise, correlating signals across systems, and root cause analysis require human expertise."
+
+    - id: automation_scripting
+      name: "Automation & Scripting"
+      category: technical
+      description: "Writing scripts and automation for provisioning, configuration, deployment, and operational tasks."
+      proficiency:
+        junior: >
+          Writes basic Bash and Python scripts for repetitive tasks such as
+          log rotation, resource tagging, and environment cleanup. Uses
+          existing Ansible playbooks or AWS SSM Run Commands and follows
+          team conventions for script structure, logging, and error output.
+        mid: >
+          Creates robust automation with error handling, idempotency, and
+          structured logging using Ansible, Python Boto3, or Azure SDK.
+          Designs scripts that integrate with CI/CD pipelines via GitHub
+          Actions or GitLab CI, and measures toil reduction impact to
+          prioritize further automation opportunities.
+        senior: >
+          Designs automation frameworks for common operational patterns such
+          as account provisioning, certificate rotation, and compliance
+          remediation. Implements self-service platforms using Backstage or
+          custom internal tools, balancing automation coverage against
+          maintenance burden of bespoke tooling.
+        staff: >
+          Defines organizational automation strategy and platform engineering
+          investments. Evaluates workflow orchestration tools like Temporal
+          or Step Functions for complex multi-step operations, and drives
+          a toil-elimination culture by establishing automation SLAs and
+          tracking manual operational hours per team.
+        principal: >
+          Sets the organization's automation philosophy spanning
+          infrastructure, deployment, and operations. Makes strategic
+          build-vs-buy decisions for automation platforms, aligns
+          engineering productivity investments with business outcomes,
+          and ensures automation capabilities scale with organizational
+          growth without creating fragile dependency chains.
+      ai_impact:
+        rating: 0.65
+        detail: "AI generates scripts and automation code effectively. Identifying what to automate, designing idempotent workflows, and building self-service platforms require human judgment."
+
+    - id: platform_engineering
+      name: "Internal Developer Platform"
+      category: technical
+      description: "Building internal platforms and tools that improve developer productivity and self-service capabilities."
+      proficiency:
+        junior: >
+          Uses internal developer platforms such as Backstage service catalogs
+          or self-service portals and provides structured feedback on
+          usability gaps. Documents platform capabilities and onboarding
+          guides to help other engineers adopt existing platform features.
+        mid: >
+          Contributes to internal platform features by building self-service
+          workflows for common operations like environment provisioning or
+          database creation. Implements Backstage plugins or Terraform
+          module wrappers with clear input contracts that abstract cloud
+          complexity from application developers.
+        senior: >
+          Designs platform components with well-documented APIs, golden-path
+          templates, and composable building blocks. Drives platform adoption
+          across teams through developer experience research, measuring
+          adoption rates and time-to-deploy improvements to demonstrate
+          platform value to engineering leadership.
+        staff: >
+          Defines the internal developer platform strategy, evaluating
+          build-vs-buy for platform capabilities like Backstage, Humanitec,
+          or Kratix. Makes investment decisions balancing platform team size
+          against developer productivity gains, and establishes platform
+          product management practices with roadmaps driven by internal
+          customer feedback.
+        principal: >
+          Sets the organization's platform engineering vision, aligning
+          platform investment with developer productivity metrics like
+          deployment frequency and lead time. Drives industry thought
+          leadership on internal platforms, makes strategic decisions
+          about platform team structure, and ensures the platform evolves
+          as a product serving engineering teams rather than a mandate.
+      ai_impact:
+        rating: 0.3
+        detail: "Platform engineering is about understanding developer needs and organizational dynamics. AI assists with implementation but cannot define what developers actually need."

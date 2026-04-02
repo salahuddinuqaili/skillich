@@ -1,0 +1,663 @@
+role:
+  id: medical_coder
+  function: healthcare
+  name: "Medical Coder"
+  also_known_as:
+    - "Clinical Coder"
+    - "Health Information Coder"
+    - "Medical Coding Specialist"
+    - "Inpatient Coder"
+    - "Outpatient Coder"
+  description: >
+    Assigns standardized diagnostic and procedure codes to patient encounters
+    for billing, reimbursement, clinical research, and public health reporting.
+    Medical coders review clinical documentation, interpret physician notes,
+    apply ICD-10-CM/PCS, CPT, and HCPCS code sets with precision, and ensure
+    coding accuracy and compliance with federal and payer-specific regulations.
+    The role demands deep knowledge of medical terminology, anatomy, and the
+    evolving regulatory landscape governing healthcare reimbursement.
+  ai_impact:
+    level: "very-high"
+    summary: >
+      AI is transforming medical coding through computer-assisted coding (CAC)
+      tools that automatically suggest codes from clinical documentation,
+      natural language processing that extracts billable diagnoses and
+      procedures from unstructured notes, and audit algorithms that detect
+      coding patterns and compliance risks. Routine outpatient coding for
+      straightforward encounters is increasingly automated, and AI audit
+      tools are reducing the need for manual chart reviews. However, complex
+      inpatient coding, ambiguous documentation interpretation, and
+      regulatory compliance judgment still require skilled human coders,
+      particularly for high-acuity cases and novel clinical scenarios.
+    automating:
+      - "Routine outpatient code assignment for standard encounter types"
+      - "Code suggestion from structured clinical documentation"
+      - "Automated audit of coding patterns for compliance deviations"
+      - "DRG grouping and reimbursement impact estimation"
+      - "Code-to-documentation reconciliation for completeness checks"
+      - "Denial pattern analysis and root cause identification"
+    augmenting:
+      - "Complex inpatient coding with AI-suggested code candidates"
+      - "Documentation improvement queries generated from NLP analysis"
+      - "Coding guideline lookup and real-time reference during review"
+      - "Audit target prioritization based on risk scoring"
+      - "Specialty coding for oncology, cardiology, and orthopedics"
+    preserving:
+      - "Ambiguous documentation interpretation requiring clinical judgment"
+      - "Regulatory compliance decisions for novel or disputed scenarios"
+      - "Coder-physician communication for clinical documentation improvement"
+      - "Appeals and denial management requiring human argumentation"
+      - "Ethical judgment in upcoding/downcoding gray areas"
+      - "Training and mentorship of new coders"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "AHIMA - The Impact of AI on HIM"
+        url: "https://www.ahima.org/certification-careers/certifications-overview/"
+      - name: "O*NET - Medical Records Specialists"
+        url: "https://www.onetonline.org/link/summary/29-2072.00"
+      - name: "Advisory Board - AI in Medical Coding"
+        url: "https://www.advisory.com/topics/health-information-management"
+  levels:
+    - id: junior
+      name: "Junior Medical Coder"
+      years_experience: "0-2"
+      summary: >
+        Codes straightforward outpatient encounters and low-complexity
+        inpatient cases under supervision. Applies basic ICD-10 and CPT
+        coding guidelines, uses encoder tools, and follows established
+        workflows for code assignment and query generation. Builds
+        foundational knowledge of medical terminology and anatomy.
+    - id: mid
+      name: "Medical Coder"
+      years_experience: "2-5"
+      summary: >
+        Independently codes moderate-to-complex encounters across assigned
+        specialties. Applies coding guidelines accurately, identifies
+        documentation gaps, and generates physician queries. Meets
+        productivity and accuracy benchmarks. Participates in audit
+        activities and stays current with regulatory updates.
+    - id: senior
+      name: "Senior Medical Coder"
+      years_experience: "5-8"
+      summary: >
+        Codes the most complex cases including high-acuity inpatient stays,
+        multi-specialty procedures, and unusual diagnoses. Leads quality
+        audits, trains and mentors junior coders, and serves as a subject
+        matter expert for coding guidelines and regulatory interpretation.
+        Drives coding accuracy improvement initiatives.
+    - id: staff
+      name: "Staff Medical Coder / Coding Lead"
+      years_experience: "8-12"
+      summary: >
+        Sets coding standards and quality benchmarks across the organization.
+        Manages coding audit programs, evaluates and implements coding
+        technology including CAC systems, and partners with revenue cycle
+        leadership to optimize coding performance. Drives compliance
+        strategy and represents coding in cross-functional initiatives.
+    - id: principal
+      name: "Principal Medical Coder / Coding Director"
+      years_experience: "12+"
+      summary: >
+        Defines the organization's coding strategy and vision, including
+        workforce transformation in response to AI automation. Advises
+        executive leadership on regulatory risk, reimbursement optimization,
+        and technology investment. Engages with professional organizations
+        and regulatory bodies to influence coding standards and practices.
+  skills:
+    - id: icd10_coding
+      name: "ICD-10-CM/PCS Coding"
+      category: technical
+      description: >
+        Assigning International Classification of Diseases, Tenth Revision,
+        Clinical Modification (ICD-10-CM) diagnosis codes and Procedure
+        Coding System (ICD-10-PCS) procedure codes to inpatient and
+        outpatient encounters with accuracy and specificity, following
+        official coding guidelines and conventions.
+      proficiency:
+        junior: >
+          Assigns ICD-10-CM codes for common diagnoses using encoder tools and
+          the alphabetic index. Applies basic coding conventions including
+          code-first, use-additional, and excludes notes. Codes straightforward
+          outpatient encounters following Official Guidelines for Coding and
+          Reporting with supervision.
+        mid: >
+          Accurately codes complex ICD-10-CM diagnoses including combination
+          codes, sequelae, and laterality. Assigns ICD-10-PCS procedure codes
+          for moderate-complexity inpatient cases. Applies official guidelines
+          independently and recognizes documentation needing clarification.
+        senior: >
+          Masters coding for the most complex clinical scenarios including
+          multi-system organ failure, complications of care, and rare
+          conditions. Interprets ambiguous guideline language for edge cases,
+          serves as the escalation point for difficult coding questions, and
+          validates CAC-suggested codes with clinical judgment.
+        staff: >
+          Establishes organizational ICD-10 coding standards, guideline
+          interpretation policies, and quality benchmarks. Evaluates the
+          accuracy of AI-assisted coding for ICD-10 assignments, designs
+          validation workflows, and drives coding consistency across
+          facilities and service lines.
+        principal: >
+          Shapes the organization's approach to ICD-10 coding quality and
+          compliance at the strategic level. Monitors classification system
+          evolution including ICD-11 transition planning, influences industry
+          coding guidance through professional engagement, and advises
+          leadership on the impact of coding accuracy on reimbursement and
+          quality reporting.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI-powered CAC tools now achieve high accuracy for routine ICD-10
+          code assignment from structured documentation. However, complex
+          cases with ambiguous documentation, rare diagnoses, and guideline
+          edge cases still require experienced human coders who can interpret
+          clinical context and apply nuanced coding judgment.
+
+    - id: cpt_hcpcs_coding
+      name: "CPT/HCPCS Coding"
+      category: technical
+      description: >
+        Assigning Current Procedural Terminology (CPT) and Healthcare Common
+        Procedure Coding System (HCPCS) codes for professional and facility
+        services, including evaluation and management coding, surgical
+        procedure coding, and appropriate modifier application.
+      proficiency:
+        junior: >
+          Assigns CPT codes for common evaluation and management services and
+          straightforward procedures using encoder tools. Understands basic
+          modifier usage, global surgical packages, and the distinction between
+          professional and facility fee coding.
+        mid: >
+          Accurately codes complex procedures including multi-procedure
+          encounters, add-on codes, and bundling/unbundling rules. Applies
+          modifiers correctly for circumstances such as bilateral procedures,
+          distinct services, and reduced services. Stays current with annual
+          CPT updates.
+        senior: >
+          Masters CPT/HCPCS coding for high-complexity surgical specialties and
+          interventional procedures. Resolves complex bundling disputes,
+          interprets NCCI edits, and serves as a specialist resource for
+          procedural coding questions across the organization.
+        staff: >
+          Establishes organizational CPT/HCPCS coding standards, audit
+          protocols, and education programs. Evaluates AI tool accuracy for
+          procedural code assignment, manages the annual CPT update
+          implementation process, and drives charge capture optimization.
+        principal: >
+          Drives the organization's procedural coding strategy, connecting
+          coding accuracy to revenue integrity and compliance goals. Engages
+          with AMA CPT editorial panel activities, evaluates emerging
+          procedure classification systems, and advises leadership on
+          reimbursement strategy implications of coding decisions.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI tools effectively suggest CPT codes for routine procedures and
+          flag potential bundling issues. However, coding complex multi-
+          procedure encounters, interpreting operative reports for unusual
+          techniques, and making judgment calls on modifier application require
+          human coders with deep procedural knowledge.
+
+    - id: medical_terminology
+      name: "Medical Terminology"
+      category: domain
+      description: >
+        Comprehensive understanding of medical vocabulary, abbreviations, and
+        clinical language used in physician documentation, operative reports,
+        pathology results, and diagnostic imaging, enabling accurate
+        interpretation of clinical records for code assignment.
+      proficiency:
+        junior: >
+          Recognizes common medical terms, abbreviations, and clinical phrases
+          encountered in routine documentation. Uses medical dictionaries and
+          reference tools to look up unfamiliar terms. Understands word roots,
+          prefixes, and suffixes to decipher terminology systematically.
+        mid: >
+          Interprets complex clinical documentation including operative reports,
+          discharge summaries, and specialty consultation notes with confidence.
+          Understands clinical nuances in terminology that affect code
+          selection, such as the distinction between sepsis and bacteremia.
+        senior: >
+          Masters clinical language across multiple specialties, interpreting
+          ambiguous or inconsistent terminology in documentation. Identifies
+          when documentation language does not support the intended clinical
+          meaning and crafts precise physician queries to resolve terminology
+          gaps.
+        staff: >
+          Establishes documentation terminology standards that support accurate
+          coding, partners with clinical documentation improvement programs,
+          and develops education materials that bridge clinical language and
+          coding requirements across the organization.
+        principal: >
+          Advises on organizational clinical documentation strategy, connecting
+          terminology precision to coding accuracy, quality reporting, and
+          reimbursement outcomes. Evaluates NLP tools' ability to interpret
+          clinical language and identifies areas where human terminology
+          expertise remains critical.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          NLP models are increasingly capable of parsing medical terminology
+          and extracting clinical concepts from documentation. However,
+          interpreting ambiguous clinical language, understanding physician
+          documentation habits, and resolving terminology inconsistencies in
+          context still require experienced human medical coders.
+
+    - id: anatomy_physiology
+      name: "Anatomy & Physiology"
+      category: domain
+      description: >
+        Understanding human anatomy, organ systems, physiological processes,
+        and pathophysiology sufficiently to accurately interpret clinical
+        documentation and assign diagnosis and procedure codes that reflect
+        the patient's clinical condition and the services provided.
+      proficiency:
+        junior: >
+          Demonstrates foundational knowledge of major organ systems, anatomical
+          terminology, and common pathophysiological processes. Uses anatomy
+          references to support code assignment for routine diagnoses and
+          procedures across basic body systems.
+        mid: >
+          Applies detailed anatomical and physiological knowledge to interpret
+          complex clinical scenarios including multi-system disease processes,
+          surgical approaches, and procedural descriptions. Understands how
+          anatomical specificity affects code selection and documentation needs.
+        senior: >
+          Masters anatomy and pathophysiology across specialties, enabling
+          accurate coding of the most complex cases including trauma, oncology,
+          and cardiac surgery. Identifies when documentation lacks anatomical
+          specificity needed for code assignment and generates targeted queries.
+        staff: >
+          Develops anatomy and physiology education programs for coding staff
+          that emphasize clinically relevant knowledge for code assignment.
+          Partners with clinical documentation teams to ensure documentation
+          captures anatomical detail required for accurate and specific coding.
+        principal: >
+          Advises on the intersection of clinical knowledge and coding accuracy
+          at the organizational level, ensuring that coding education and
+          quality programs address the anatomy and physiology knowledge
+          required for evolving clinical services and coding classification
+          updates.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI systems can map documented anatomical terms to code categories,
+          but interpreting complex procedural descriptions, understanding the
+          clinical significance of anatomical relationships, and recognizing
+          when documentation is anatomically incomplete require human coders
+          with strong clinical knowledge foundations.
+
+    - id: coding_compliance
+      name: "Coding Compliance"
+      category: domain
+      description: >
+        Ensuring coding practices conform to federal and state regulations,
+        payer-specific guidelines, and organizational compliance policies,
+        including adherence to CMS rules, OIG guidance, NCCI edits, and fraud
+        and abuse laws such as the False Claims Act.
+      proficiency:
+        junior: >
+          Follows established compliance policies and procedures when assigning
+          codes. Understands the importance of coding accuracy for regulatory
+          compliance and recognizes basic compliance red flags such as
+          upcoding patterns and unbundling violations.
+        mid: >
+          Applies compliance rules independently during code assignment,
+          including NCCI edits, medically unlikely edits, and payer-specific
+          guidelines. Identifies potential compliance risks in coding patterns
+          and escalates concerns appropriately through established channels.
+        senior: >
+          Leads coding compliance initiatives including targeted audits,
+          compliance education, and corrective action plan development.
+          Interprets complex regulatory guidance, advises on compliance
+          implications of coding decisions, and serves as an expert resource
+          for compliance-related coding questions.
+        staff: >
+          Designs and manages the organization's coding compliance program
+          including audit methodology, risk assessment, monitoring dashboards,
+          and corrective action tracking. Partners with corporate compliance
+          and legal teams to ensure coding practices align with regulatory
+          requirements and OIG work plan priorities.
+        principal: >
+          Shapes the organization's coding compliance strategy at the executive
+          level, advising leadership on regulatory risk exposure, self-
+          disclosure decisions, and compliance program investment. Monitors
+          the regulatory landscape and ensures the organization is proactively
+          prepared for enforcement trends and audit activity.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI excels at automated audit pattern detection, NCCI edit
+          enforcement, and compliance risk scoring. However, interpreting
+          ambiguous regulatory guidance, making risk-based compliance
+          decisions, and navigating the legal and ethical dimensions of coding
+          compliance require experienced human compliance professionals.
+
+    - id: audit_quality
+      name: "Audit & Quality Assurance"
+      category: technical
+      description: >
+        Conducting and managing coding audits to assess accuracy, identify
+        error patterns, provide education, and drive continuous quality
+        improvement in coding operations, including pre-bill audits,
+        retrospective reviews, and external audit preparation.
+      proficiency:
+        junior: >
+          Assists with audit data collection and documentation review under
+          supervision. Learns audit methodology including sampling techniques,
+          scoring criteria, and error categorization. Tracks audit findings
+          and supports distribution of results to coding staff.
+        mid: >
+          Conducts independent coding audits using established methodology,
+          calculating accuracy rates, identifying error patterns, and preparing
+          audit reports with actionable findings. Provides one-on-one education
+          to coders based on audit results and tracks improvement over time.
+        senior: >
+          Designs audit programs including sampling methodology, scope
+          definition, and risk-based targeting. Leads audit teams, presents
+          findings to organizational leadership, and develops systemic
+          corrective actions that address root causes of coding errors across
+          teams and service lines.
+        staff: >
+          Establishes enterprise audit standards including methodology,
+          frequency, reporting formats, and integration with compliance and
+          revenue integrity programs. Evaluates AI-powered audit tools,
+          designs validation frameworks for automated coding quality
+          monitoring, and drives organization-wide accuracy improvement.
+        principal: >
+          Drives the organization's coding quality strategy at the executive
+          level, connecting coding accuracy to financial performance,
+          compliance risk, and quality reporting outcomes. Evaluates the
+          impact of AI on audit methodology and shapes the evolution of
+          quality assurance practices for an increasingly automated coding
+          environment.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI significantly enhances audit efficiency through automated code
+          validation, pattern detection, and risk-based sample selection.
+          However, interpreting complex audit findings, understanding the
+          clinical context behind coding decisions, and designing effective
+          educational interventions still require experienced human auditors.
+
+    - id: encoder_cac_tools
+      name: "Encoder & CAC Tools"
+      category: technical
+      description: >
+        Proficient use of coding encoder software, computer-assisted coding
+        (CAC) platforms, and natural language processing tools that suggest
+        codes from clinical documentation, including evaluation, calibration,
+        and effective integration of these tools into coding workflows.
+      proficiency:
+        junior: >
+          Uses encoder tools to navigate code indexes, verify code validity,
+          and apply coding guidelines during code assignment. Follows
+          established workflows for reviewing and accepting or rejecting
+          CAC-suggested codes for straightforward encounters.
+        mid: >
+          Leverages encoder and CAC tools efficiently to maximize productivity
+          while maintaining accuracy. Understands CAC suggestion logic,
+          recognizes patterns where CAC tools are reliable versus unreliable,
+          and provides feedback to improve tool performance through correction
+          logging.
+        senior: >
+          Evaluates CAC tool performance across service lines, identifies
+          calibration needs, and designs workflows that optimize the human-AI
+          coding partnership. Trains coders on effective CAC tool usage and
+          develops guidelines for when human override of tool suggestions is
+          appropriate.
+        staff: >
+          Leads CAC tool selection, implementation, and optimization across the
+          organization. Designs evaluation frameworks for AI coding tools,
+          manages vendor relationships for coding technology, and establishes
+          governance over tool configuration and performance monitoring.
+        principal: >
+          Shapes the organization's coding technology strategy, evaluating
+          emerging AI and NLP capabilities, autonomous coding platforms, and
+          the evolving role of human coders in an AI-augmented environment.
+          Advises leadership on technology investment and workforce
+          transformation decisions for the coding function.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          The encoder and CAC tool category is itself at the center of AI
+          transformation in coding. While tool proficiency remains important,
+          the nature of the skill is shifting from manual code lookup to
+          effective supervision of AI-generated suggestions, requiring judgment
+          about when to trust and when to override automated recommendations.
+
+    - id: denial_management
+      name: "Denial Management"
+      category: domain
+      description: >
+        Analyzing, appealing, and preventing claim denials related to coding
+        errors, medical necessity, authorization requirements, and payer-
+        specific rules, including root cause analysis, appeal letter drafting,
+        and collaboration with revenue cycle teams to reduce denial rates.
+      proficiency:
+        junior: >
+          Reviews basic coding-related denials, identifies the denial reason,
+          and corrects code assignments following established guidelines.
+          Assists with denial tracking and documentation collection for appeal
+          processes under senior coder supervision.
+        mid: >
+          Independently analyzes and resolves moderate-complexity coding denials
+          including medical necessity, bundling, and modifier-related issues.
+          Drafts appeal letters with supporting clinical documentation and
+          coding rationale. Tracks denial patterns to identify systemic issues.
+        senior: >
+          Leads denial management strategy for coding-related denials across
+          service lines. Conducts root cause analysis, designs preventive
+          workflows, and negotiates with payer representatives on complex
+          denial disputes. Trains coding staff on denial prevention techniques.
+        staff: >
+          Designs the organization's coding denial management program including
+          analytics dashboards, escalation pathways, and prevention strategies.
+          Partners with revenue cycle leadership to reduce denials, improve
+          clean claim rates, and optimize the coding-denial feedback loop.
+        principal: >
+          Drives enterprise denial management strategy at the executive level,
+          connecting coding accuracy to revenue performance, payer contract
+          negotiation, and organizational financial health. Evaluates AI-
+          powered denial prediction and prevention tools and shapes the
+          organization's approach to payer dispute resolution.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI tools can predict denial risk, automate root cause categorization,
+          and draft initial appeal language. However, crafting persuasive
+          appeals for complex clinical cases, negotiating with payer
+          representatives, and designing systemic prevention strategies require
+          human coding expertise and interpersonal skills.
+
+    - id: regulatory_knowledge
+      name: "Regulatory Knowledge (CMS, OIG)"
+      category: domain
+      description: >
+        Maintaining current knowledge of federal and state healthcare
+        regulations affecting medical coding, including CMS payment policies,
+        OIG work plan priorities, HIPAA transaction standards, and state-
+        specific Medicaid rules, and applying this knowledge to ensure
+        compliant coding practices.
+      proficiency:
+        junior: >
+          Maintains awareness of major regulatory bodies and their role in
+          coding compliance. Completes required compliance training and follows
+          team processes for incorporating regulatory updates into daily coding
+          practice. Understands basic Medicare and Medicaid billing rules.
+        mid: >
+          Stays current with CMS transmittals, LCD/NCD updates, and annual
+          coding regulation changes. Applies regulatory knowledge to daily
+          coding decisions, identifies encounters requiring special regulatory
+          attention, and communicates relevant regulatory changes to team
+          members.
+        senior: >
+          Interprets complex regulatory guidance including CMS final rules,
+          OIG advisory opinions, and MAC-specific policies. Advises the
+          organization on the coding implications of regulatory changes, leads
+          impact assessments for new payment policies, and serves as a
+          regulatory subject matter expert.
+        staff: >
+          Manages the organization's regulatory monitoring and response process
+          for coding-related regulations. Designs impact assessment
+          methodologies, coordinates organizational response to major regulatory
+          changes, and ensures coding policies are updated proactively to
+          maintain compliance.
+        principal: >
+          Shapes the organization's regulatory strategy for medical coding at
+          the executive level. Engages with industry associations and
+          regulatory bodies to influence policy development, advises leadership
+          on regulatory risk and opportunity, and ensures the organization is
+          positioned for upcoming regulatory changes.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can monitor regulatory publications, summarize changes, and flag
+          affected code categories. However, interpreting regulatory intent,
+          assessing organizational impact, and making strategic compliance
+          decisions require experienced human professionals with deep
+          regulatory knowledge and organizational context.
+
+    - id: abstracting_documentation
+      name: "Abstracting & Documentation Review"
+      category: technical
+      description: >
+        Reviewing, abstracting, and interpreting clinical documentation
+        including physician notes, operative reports, pathology results, and
+        diagnostic imaging to identify all reportable diagnoses and procedures
+        for accurate and complete code assignment.
+      proficiency:
+        junior: >
+          Reviews straightforward clinical documentation to identify primary
+          diagnoses and procedures for code assignment. Abstracts basic
+          clinical data from structured documentation following established
+          abstracting guidelines and templates with senior oversight.
+        mid: >
+          Abstracts complex clinical information from multi-source
+          documentation including operative reports, consultation notes, and
+          ancillary results. Identifies discrepancies between documentation
+          sources and recognizes when documentation does not support reported
+          diagnoses or procedures.
+        senior: >
+          Masters documentation review for the most complex clinical scenarios,
+          identifying subtle documentation gaps that affect coding specificity
+          and accuracy. Designs documentation improvement queries that are
+          clinically specific and compliant, and partners with CDI programs
+          to improve documentation quality.
+        staff: >
+          Establishes organizational standards for documentation review and
+          abstracting, including quality metrics, reviewer calibration
+          processes, and integration with CDI and coding quality programs.
+          Evaluates NLP tools for automated abstraction and defines validation
+          requirements for AI-generated abstracts.
+        principal: >
+          Drives the organization's clinical documentation strategy, connecting
+          documentation quality to coding accuracy, quality reporting, and
+          revenue integrity. Evaluates emerging documentation technologies
+          including ambient clinical documentation and AI-powered abstracting,
+          and advises leadership on their impact on coding operations.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          NLP and AI tools are increasingly effective at extracting coded
+          concepts from clinical documentation. However, interpreting ambiguous
+          or conflicting documentation, understanding clinical context that
+          affects code selection, and communicating documentation needs to
+          physicians remain human-dependent skills.
+
+    - id: specialty_coding
+      name: "Specialty Coding"
+      category: technical
+      description: >
+        Applying specialized coding knowledge for complex clinical specialties
+        including oncology, cardiology, orthopedics, neurosurgery, and
+        interventional radiology, where unique coding rules, terminology,
+        and documentation requirements demand deep subject matter expertise.
+      proficiency:
+        junior: >
+          Codes basic encounters within one or two assigned specialties under
+          supervision. Learns specialty-specific terminology, common procedures,
+          and unique coding guidelines. Uses specialty-specific coding
+          references and resources to support accurate code assignment.
+        mid: >
+          Independently codes moderate-complexity encounters across assigned
+          specialties. Applies specialty-specific guidelines including cancer
+          staging, interventional procedure coding, and multi-component
+          surgical coding. Maintains current knowledge of specialty coding
+          updates and emerging procedures.
+        senior: >
+          Masters coding for high-complexity specialty encounters including
+          experimental procedures, multi-disciplinary cases, and rare
+          conditions. Serves as the organization's specialty coding expert,
+          resolves escalated coding questions, and provides specialty-specific
+          education to coding staff.
+        staff: >
+          Establishes specialty coding standards and quality programs across the
+          organization, ensuring consistent application of specialty-specific
+          guidelines. Evaluates AI tool performance for specialty coding,
+          identifies gaps in automated coding capabilities, and designs
+          targeted education programs.
+        principal: >
+          Drives the organization's specialty coding strategy, advising on
+          workforce specialization models, technology capabilities for
+          specialty coding, and the financial and compliance implications of
+          specialty coding quality. Engages with specialty coding professional
+          communities to influence guideline development.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI tools show variable performance across specialties, with stronger
+          results for high-volume common procedures and weaker performance for
+          rare conditions and complex multi-component cases. Specialty coding
+          expertise that combines deep clinical knowledge with coding precision
+          remains highly valued and difficult to automate fully.
+
+    - id: continuing_education
+      name: "Continuing Education & Professional Development"
+      category: interpersonal
+      description: >
+        Maintaining and advancing coding knowledge through continuing
+        education, credential maintenance, professional organization
+        participation, and self-directed learning to stay current with
+        evolving coding guidelines, regulatory changes, and industry
+        technology advances.
+      proficiency:
+        junior: >
+          Completes required continuing education units for credential
+          maintenance. Attends organizational coding education sessions and
+          team meetings focused on coding updates. Reads coding publications
+          and follows established resources for keeping current with annual
+          guideline changes.
+        mid: >
+          Proactively pursues continuing education beyond minimum requirements,
+          including specialty certifications and advanced coding workshops.
+          Shares knowledge with team members and contributes to internal
+          education efforts such as case study presentations and coding tip
+          distributions.
+        senior: >
+          Develops and delivers continuing education content for the coding
+          team including case-based learning, regulatory update presentations,
+          and specialty coding workshops. Mentors junior coders, designs
+          competency assessment programs, and maintains multiple professional
+          credentials.
+        staff: >
+          Establishes the organization's coding education strategy including
+          competency frameworks, learning pathways, and professional
+          development programs. Partners with credentialing bodies and external
+          educators to bring cutting-edge content to the organization.
+          Evaluates the impact of education on coding quality metrics.
+        principal: >
+          Shapes the organization's vision for coding workforce development in
+          an AI-transformed landscape. Designs career pathways that prepare
+          coders for evolving roles in AI oversight, compliance, and
+          documentation improvement. Engages with professional organizations
+          to influence credentialing standards and education requirements.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can personalize learning paths, generate practice scenarios, and
+          track competency metrics. However, designing education strategies
+          that prepare coders for an AI-augmented future, mentoring
+          professional development, and building a culture of continuous
+          learning remain human-driven activities.

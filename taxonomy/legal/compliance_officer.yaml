@@ -1,0 +1,710 @@
+role:
+  id: compliance_officer
+  function: legal
+  name: "Compliance Officer"
+  also_known_as:
+    - "Chief Compliance Officer"
+    - "Regulatory Compliance Manager"
+    - "Compliance Director"
+    - "Ethics & Compliance Officer"
+    - "Compliance Analyst"
+  description: >
+    Ensures the organization operates in accordance with applicable laws,
+    regulations, industry standards, and internal policies. Compliance
+    officers design and implement compliance programs, conduct risk
+    assessments, develop policies and training, monitor adherence, investigate
+    potential violations, and serve as the organizational conscience on
+    regulatory and ethical matters, balancing business agility with
+    compliance obligations across all operational domains.
+  ai_impact:
+    level: "moderate-high"
+    summary: >
+      AI is reshaping compliance work by automating regulatory monitoring,
+      policy mapping, and routine compliance testing, enabling compliance
+      teams to cover broader regulatory landscapes with fewer manual hours.
+      AI tools can scan regulatory updates, map them to organizational
+      obligations, monitor transactions for suspicious patterns, and generate
+      audit-ready documentation. However, interpreting novel regulations,
+      exercising ethical judgment in gray areas, building a compliance culture,
+      managing regulatory relationships, and leading investigations that
+      require human credibility assessments remain firmly human domains.
+      Compliance professionals who harness AI will shift from manual
+      monitoring toward strategic advisory and program design.
+    automating:
+      - "Regulatory change monitoring and impact flagging"
+      - "Policy-to-regulation mapping and gap identification"
+      - "Transaction monitoring and suspicious activity detection"
+      - "Routine compliance testing and control validation"
+      - "Compliance report generation and documentation assembly"
+      - "Training completion tracking and certification management"
+    augmenting:
+      - "Regulatory interpretation for novel business activities"
+      - "Risk assessment model development and calibration"
+      - "Investigation data analysis and pattern recognition"
+      - "Third-party risk scoring and due diligence reviews"
+      - "Compliance program effectiveness measurement"
+      - "Cross-jurisdictional regulatory comparison"
+    preserving:
+      - "Ethical judgment on ambiguous compliance questions"
+      - "Regulatory relationship management and engagement"
+      - "Compliance culture building and tone-from-the-top advocacy"
+      - "Investigation interviews and credibility assessments"
+      - "Board and executive communication on compliance matters"
+      - "Crisis response and remediation program design"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "O*NET - Compliance Officers"
+        url: "https://www.onetonline.org/link/summary/13-1041.01"
+      - name: "Society of Corporate Compliance and Ethics (SCCE)"
+        url: "https://www.corporatecompliance.org/"
+      - name: "Deloitte - The Future of Compliance"
+        url: "https://www.deloitte.com/global/en/services/risk-advisory/perspectives/the-future-of-compliance.html"
+  levels:
+    - id: junior
+      name: "Junior Compliance Analyst"
+      years_experience: "0-2"
+      summary: >
+        Supports the compliance program by conducting routine monitoring,
+        maintaining compliance records, and assisting with policy
+        documentation and training logistics. Learns the regulatory
+        landscape applicable to the organization and assists with
+        compliance assessments under senior supervision.
+    - id: mid
+      name: "Compliance Officer"
+      years_experience: "2-5"
+      summary: >
+        Manages compliance activities for assigned regulatory domains or
+        business areas independently. Conducts risk assessments, develops
+        policies and procedures, monitors compliance metrics, and
+        investigates potential violations. Advises business teams on
+        compliance requirements and coordinates with regulators as needed.
+    - id: senior
+      name: "Senior Compliance Officer"
+      years_experience: "5-9"
+      summary: >
+        Leads compliance programs for major regulatory domains or business
+        areas, designing risk assessment frameworks, developing monitoring
+        protocols, and managing complex investigations. Provides strategic
+        compliance guidance to senior business leaders and drives
+        improvements to compliance program effectiveness.
+    - id: staff
+      name: "Compliance Director"
+      years_experience: "9-14"
+      summary: >
+        Oversees multiple compliance domains or the enterprise compliance
+        program. Manages a team of compliance professionals, sets compliance
+        strategy aligned with business objectives, and reports on program
+        effectiveness to senior leadership. Drives compliance technology
+        adoption and organizational capability development.
+    - id: principal
+      name: "Chief Compliance Officer"
+      years_experience: "14+"
+      summary: >
+        Leads the organization's entire compliance function, setting
+        strategy, managing enterprise risk, and serving as the primary
+        regulatory liaison. Reports to the board and CEO on compliance
+        posture and emerging regulatory risks. Shapes organizational
+        culture around ethical conduct and regulatory integrity. Drives
+        the compliance function's evolution to meet changing regulatory
+        landscapes and business growth.
+  skills:
+    - id: regulatory_interpretation
+      name: "Regulatory Interpretation"
+      category: technical
+      description: >
+        Analyzing and interpreting laws, regulations, regulatory guidance,
+        and enforcement actions to determine their applicability and impact
+        on organizational operations, translating complex regulatory language
+        into clear, actionable compliance requirements that business teams
+        can implement effectively.
+      proficiency:
+        junior: >
+          Reads and summarizes relevant regulations, guidance documents,
+          and enforcement actions. Identifies key requirements and compiles
+          regulatory references for assigned compliance areas. Flags
+          ambiguous provisions for senior review and interpretation.
+        mid: >
+          Interprets regulations independently for assigned domains,
+          determining applicability to specific business activities and
+          identifying compliance obligations. Monitors regulatory updates
+          and assesses their impact on existing compliance programs with
+          clear documentation of analysis and conclusions.
+        senior: >
+          Provides authoritative regulatory interpretations for complex and
+          novel questions where guidance is limited or conflicting. Develops
+          interpretive positions that balance compliance conservatism with
+          business flexibility. Engages with industry peers and regulators
+          to test and refine interpretive approaches.
+        staff: >
+          Sets the organization's approach to regulatory interpretation
+          across domains, establishing consistency standards and escalation
+          frameworks. Develops interpretive guidelines that enable the
+          compliance team to handle routine questions independently while
+          appropriately escalating novel issues.
+        principal: >
+          Shapes the organization's regulatory positioning and advocacy
+          strategy, engaging with regulators and policymakers to influence
+          regulatory outcomes. Provides definitive interpretive guidance
+          on the most consequential regulatory questions facing the
+          organization and industry.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can surface relevant regulations and summarize requirements
+          efficiently. However, interpreting ambiguous regulatory language,
+          assessing how regulators will apply rules to novel situations,
+          and developing defensible compliance positions require experienced
+          human judgment and regulatory expertise.
+
+    - id: policy_development
+      name: "Policy Development"
+      category: technical
+      description: >
+        Creating, maintaining, and governing organizational compliance
+        policies, procedures, and standards that translate regulatory
+        requirements into operational guidance, ensuring policies are clear,
+        accessible, enforceable, and regularly updated to reflect regulatory
+        and business changes.
+      proficiency:
+        junior: >
+          Drafts policy and procedure documents from templates under
+          supervision, incorporating regulatory requirements identified
+          through research. Maintains policy libraries and tracks review
+          schedules to ensure documents remain current within established
+          governance frameworks.
+        mid: >
+          Develops compliance policies and procedures independently for
+          assigned regulatory domains, translating regulatory requirements
+          into clear operational guidance. Manages the policy review and
+          approval process and coordinates with business owners to ensure
+          policy practicality and adoption.
+        senior: >
+          Designs comprehensive policy frameworks for complex regulatory
+          areas, ensuring policies are coordinated across related domains
+          and aligned with organizational risk appetite. Leads policy
+          impact assessments for significant regulatory changes and drives
+          organization-wide policy communication and implementation.
+        staff: >
+          Defines the enterprise policy governance framework including
+          hierarchy, naming conventions, review cycles, and approval
+          authorities. Establishes policy effectiveness metrics and
+          continuous improvement processes. Ensures policy management
+          technology and processes scale with organizational complexity.
+        principal: >
+          Sets the organization's policy philosophy balancing prescriptive
+          requirements with principles-based guidance. Ensures the policy
+          framework supports organizational agility while maintaining
+          compliance rigor. Drives adoption of modern policy management
+          approaches including dynamic policies and real-time guidance
+          delivery.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can draft initial policy documents from regulatory sources and
+          identify policies needing updates when regulations change.
+          However, designing policy frameworks that balance compliance
+          rigor with operational practicality and building organizational
+          commitment to policies require human leadership.
+
+    - id: risk_assessment_frameworks
+      name: "Risk Assessment Frameworks"
+      category: technical
+      description: >
+        Designing and conducting compliance risk assessments using structured
+        methodologies to identify, evaluate, and prioritize regulatory and
+        compliance risks across the organization, informing resource
+        allocation, program design, and reporting to leadership on the
+        organization's compliance risk profile.
+      proficiency:
+        junior: >
+          Supports risk assessment activities by gathering data, conducting
+          interviews using prepared questionnaires, and populating risk
+          registers. Follows established risk assessment methodologies and
+          documents findings accurately for senior review and analysis.
+        mid: >
+          Conducts compliance risk assessments for assigned business areas
+          using established frameworks, identifying and evaluating risks
+          based on likelihood and impact. Produces risk assessment reports
+          with clear risk ratings, rationale, and recommended mitigation
+          actions for management review.
+        senior: >
+          Designs risk assessment methodologies tailored to the
+          organization's regulatory environment and business model.
+          Conducts enterprise-level risk assessments that inform compliance
+          program priorities and resource allocation. Facilitates risk
+          workshops with senior business leaders and drives consensus on
+          risk ratings and mitigation plans.
+        staff: >
+          Defines the organization's compliance risk assessment strategy
+          and governance framework. Integrates compliance risk assessment
+          with enterprise risk management and internal audit functions.
+          Establishes risk appetite frameworks and reporting cadences that
+          keep the board informed of the compliance risk landscape.
+        principal: >
+          Sets the enterprise compliance risk appetite in partnership with
+          the board and CEO. Drives a forward-looking risk identification
+          capability that anticipates emerging compliance risks before they
+          materialize. Ensures the risk assessment function supports
+          strategic decision-making and earns the confidence of regulators.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can aggregate risk data, identify patterns, and generate risk
+          scores. However, designing risk frameworks appropriate for
+          organizational context, calibrating risk appetite, facilitating
+          senior leadership risk discussions, and making judgment calls on
+          novel risks require experienced compliance professionals.
+
+    - id: training_program_design
+      name: "Training Program Design"
+      category: interpersonal
+      description: >
+        Designing, delivering, and measuring the effectiveness of compliance
+        training programs that build organizational awareness of regulatory
+        requirements, ethical standards, and compliance procedures, using
+        engaging formats that drive behavior change and create a culture
+        of compliance across all levels of the organization.
+      proficiency:
+        junior: >
+          Assists with compliance training logistics including scheduling,
+          enrollment tracking, and completion reporting. Helps develop
+          training materials such as slides and job aids from approved
+          content. Supports delivery of training sessions as a co-facilitator.
+        mid: >
+          Develops and delivers compliance training programs for assigned
+          topics, creating content that is engaging and relevant to the
+          target audience. Measures training effectiveness through
+          assessments and feedback surveys. Manages the annual training
+          calendar and certification tracking for assigned programs.
+        senior: >
+          Designs comprehensive compliance training curricula covering
+          multiple regulatory domains and audience segments. Implements
+          innovative training approaches including scenario-based learning,
+          microlearning, and role-specific content. Measures training
+          impact on compliance outcomes and continuously improves programs
+          based on effectiveness data.
+        staff: >
+          Defines the organization's compliance training strategy including
+          content governance, delivery technology, and effectiveness
+          measurement frameworks. Establishes training standards that
+          demonstrate program effectiveness to regulators and drives a
+          culture where compliance education is valued as a business
+          enabler.
+        principal: >
+          Shapes the organization's compliance culture through strategic
+          training and awareness initiatives. Ensures training programs
+          reflect tone-from-the-top messaging and support the
+          organization's ethical values. Drives investment in training
+          technology and approaches that scale with organizational growth
+          and evolving regulatory expectations.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can generate training content, personalize learning paths,
+          and automate completion tracking effectively. However, designing
+          training that drives genuine behavior change, delivering
+          engaging facilitation, and building organizational commitment to
+          compliance culture require human creativity and leadership.
+
+    - id: monitoring_testing
+      name: "Monitoring & Testing"
+      category: technical
+      description: >
+        Designing and executing ongoing monitoring and periodic testing
+        programs that validate the effectiveness of compliance controls,
+        detect potential violations, and provide assurance that the
+        organization's compliance program is operating as intended across
+        all regulatory domains and business operations.
+      proficiency:
+        junior: >
+          Executes routine compliance monitoring and testing procedures
+          following established scripts and checklists. Documents testing
+          results, identifies deviations from expected outcomes, and
+          escalates findings to senior team members for evaluation and
+          disposition.
+        mid: >
+          Designs and executes monitoring and testing programs for assigned
+          compliance areas, selecting appropriate sampling methodologies
+          and testing techniques. Analyzes results to identify control
+          weaknesses and compliance gaps. Produces testing reports with
+          clear findings and recommendations for remediation.
+        senior: >
+          Leads the organization's compliance monitoring and testing
+          program, designing risk-based testing plans, establishing
+          monitoring dashboards, and implementing continuous monitoring
+          capabilities. Evaluates the sufficiency of compliance controls
+          and drives remediation of identified weaknesses across business
+          areas.
+        staff: >
+          Defines the enterprise compliance monitoring and testing
+          strategy, establishing standards for testing frequency, coverage,
+          and methodology. Drives adoption of automated monitoring tools
+          and data analytics that provide real-time compliance assurance.
+          Reports monitoring program results and trends to senior leadership.
+        principal: >
+          Sets the organization's assurance philosophy, balancing monitoring
+          investment against risk tolerance. Ensures monitoring capabilities
+          satisfy regulatory expectations and provide the board with
+          confidence in the compliance program's effectiveness. Drives
+          adoption of advanced monitoring technologies including AI-powered
+          surveillance and predictive analytics.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI dramatically improves compliance monitoring through automated
+          transaction surveillance, anomaly detection, and continuous
+          control testing. However, designing monitoring programs that
+          focus on material risks, interpreting ambiguous findings, and
+          making judgment calls on escalation require experienced human
+          oversight.
+
+    - id: incident_investigation
+      name: "Incident Investigation"
+      category: technical
+      description: >
+        Conducting investigations into potential compliance violations,
+        regulatory breaches, and ethical misconduct, including evidence
+        gathering, witness interviews, root cause analysis, findings
+        documentation, and remediation recommendations, while maintaining
+        appropriate confidentiality and privilege protections.
+      proficiency:
+        junior: >
+          Assists with investigation activities including document
+          collection, evidence organization, and research on applicable
+          policies and regulations. Prepares interview summaries and
+          supports case file documentation under the direction of senior
+          investigators.
+        mid: >
+          Conducts investigations of moderate complexity independently,
+          planning investigation scope, gathering and analyzing evidence,
+          conducting interviews, and preparing investigation reports with
+          findings and recommendations. Maintains appropriate confidentiality
+          and follows investigation protocols consistently.
+        senior: >
+          Leads complex and sensitive investigations including matters
+          involving senior personnel, multi-jurisdictional issues, or
+          significant regulatory implications. Develops investigation
+          methodologies and quality standards. Manages external
+          investigation resources and coordinates with legal counsel on
+          privilege and disclosure considerations.
+        staff: >
+          Oversees the organization's investigation function, establishing
+          investigation protocols, training investigators, and ensuring
+          quality and consistency. Manages the most sensitive investigations
+          personally and advises senior leadership on investigation
+          findings, remediation actions, and disclosure obligations.
+        principal: >
+          Sets the organization's investigation philosophy and governance
+          framework. Ensures investigation capabilities meet regulatory
+          expectations and support the organization's commitment to ethical
+          conduct. Makes final recommendations to the board on investigation
+          outcomes, disciplinary actions, and voluntary disclosures for
+          the most consequential matters.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can assist with evidence analysis, communication review, and
+          pattern identification during investigations. However, conducting
+          witness interviews, assessing credibility, exercising judgment
+          on findings, and navigating the legal and ethical dimensions of
+          investigations remain inherently human activities.
+
+    - id: regulatory_reporting
+      name: "Reporting (SEC, FDA, etc.)"
+      category: technical
+      description: >
+        Preparing and submitting required regulatory reports, filings, and
+        disclosures to government agencies such as the SEC, FDA, FinCEN,
+        OCC, and other regulators, ensuring accuracy, completeness,
+        timeliness, and compliance with specific formatting and content
+        requirements across jurisdictions.
+      proficiency:
+        junior: >
+          Assists with regulatory report preparation by gathering data,
+          populating report templates, and conducting quality checks
+          against submission requirements. Maintains filing calendars and
+          tracks submission deadlines and confirmation receipts accurately.
+        mid: >
+          Prepares and submits regulatory reports independently for
+          assigned filing obligations, ensuring accuracy, completeness,
+          and timeliness. Coordinates with business units to gather
+          required data and resolves data quality issues. Responds to
+          regulatory follow-up inquiries on filed reports.
+        senior: >
+          Leads regulatory reporting programs for major filing obligations,
+          designing data collection processes, quality assurance procedures,
+          and submission workflows. Manages reporting responses to
+          regulatory examinations and implements improvements based on
+          regulatory feedback and changing requirements.
+        staff: >
+          Defines the organization's regulatory reporting strategy and
+          governance framework across all filing obligations. Drives
+          automation of data collection and report generation. Ensures
+          reporting processes scale with business growth and new
+          regulatory requirements. Manages relationships with regulatory
+          filing offices.
+        principal: >
+          Oversees the organization's entire regulatory reporting function,
+          ensuring it meets the highest standards of accuracy and
+          timeliness. Engages with regulators on reporting modernization
+          initiatives. Makes strategic decisions about reporting technology
+          investment and organizational design that support the enterprise's
+          regulatory obligations.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can automate data extraction, report generation, and quality
+          checking for structured regulatory filings. However, interpreting
+          novel reporting requirements, making judgment calls on
+          disclosure materiality, and managing regulatory relationships
+          around filing issues require experienced compliance professionals.
+
+    - id: ethics_program_management
+      name: "Ethics Program Management"
+      category: interpersonal
+      description: >
+        Designing and managing the organization's ethics program including
+        codes of conduct, ethics hotlines, conflict-of-interest management,
+        gifts and entertainment policies, and ethical culture initiatives
+        that promote integrity and responsible business conduct across all
+        levels of the organization.
+      proficiency:
+        junior: >
+          Supports ethics program operations by managing hotline intake,
+          tracking conflict-of-interest disclosures, and processing gifts
+          and entertainment approvals. Assists with ethics communication
+          campaigns and annual code of conduct acknowledgment processes.
+        mid: >
+          Manages ethics program components including hotline case
+          management, conflict-of-interest review processes, and annual
+          ethics awareness campaigns. Analyzes ethics program data to
+          identify trends and reports metrics to the compliance team.
+          Develops ethics communication materials for organizational use.
+        senior: >
+          Designs and leads comprehensive ethics programs including code
+          of conduct development, ethics risk assessment, and culture
+          measurement initiatives. Manages the ethics hotline and case
+          management process end-to-end. Develops innovative approaches
+          to promoting ethical culture beyond minimum compliance
+          requirements.
+        staff: >
+          Defines the organization's ethics strategy and program
+          architecture, establishing governance structures, measurement
+          frameworks, and reporting cadences. Ensures the ethics program
+          meets regulatory expectations including DOJ guidance on
+          effective compliance programs. Advises leadership on ethical
+          culture and tone-from-the-top initiatives.
+        principal: >
+          Shapes the organization's ethical culture as a core component
+          of corporate identity and competitive advantage. Serves as the
+          senior voice on ethics matters to the board and C-suite. Drives
+          industry leadership on business ethics and ensures the
+          organization's ethics program reflects best practices and
+          stakeholder expectations.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can assist with hotline triage, conflict-of-interest
+          screening, and ethics trend analysis. However, shaping ethical
+          culture, exercising judgment on ethics cases, and building
+          organizational commitment to integrity are fundamentally human
+          leadership responsibilities.
+
+    - id: third_party_risk
+      name: "Third-Party Risk"
+      category: technical
+      description: >
+        Assessing and managing compliance risks arising from the
+        organization's relationships with third parties including vendors,
+        agents, intermediaries, and business partners, through due diligence,
+        risk-based monitoring, contractual protections, and ongoing
+        oversight programs that prevent regulatory violations through
+        third-party channels.
+      proficiency:
+        junior: >
+          Conducts third-party due diligence screenings using established
+          tools and checklists. Collects and organizes due diligence
+          documentation from third parties. Maintains third-party risk
+          records and tracks due diligence refresh schedules accurately.
+        mid: >
+          Manages the third-party risk assessment process for assigned
+          vendor categories, conducting enhanced due diligence for higher-
+          risk relationships and recommending risk mitigation measures.
+          Monitors third-party compliance obligations and prepares risk
+          reports for management review.
+        senior: >
+          Designs and leads the organization's third-party risk management
+          program including risk tiering methodologies, due diligence
+          standards, and ongoing monitoring frameworks. Manages enhanced
+          due diligence for the highest-risk relationships and drives
+          remediation of identified third-party compliance gaps.
+        staff: >
+          Defines the enterprise third-party risk management strategy
+          integrating compliance requirements with procurement, legal, and
+          operational risk functions. Establishes technology platforms and
+          data sources that enable efficient risk assessment at scale.
+          Reports portfolio-level third-party risk to senior leadership.
+        principal: >
+          Sets the organization's third-party risk appetite and governance
+          framework at the enterprise level. Ensures third-party risk
+          capabilities meet evolving regulatory expectations across
+          jurisdictions. Drives industry collaboration on third-party
+          risk standards and shared due diligence utilities.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI excels at screening third parties against sanctions lists,
+          adverse media, and risk databases. However, assessing nuanced
+          relationship risks, designing risk-proportionate oversight
+          programs, and making judgment calls on high-risk relationships
+          require experienced human professionals.
+
+    - id: audit_coordination
+      name: "Audit Coordination"
+      category: interpersonal
+      description: >
+        Coordinating with internal audit, external auditors, and regulatory
+        examiners to support compliance-related audit and examination
+        activities, including preparation, document production, interview
+        facilitation, finding remediation, and ongoing audit relationship
+        management that demonstrates organizational commitment to compliance.
+      proficiency:
+        junior: >
+          Supports audit preparation by gathering requested documents,
+          scheduling interviews, and organizing audit work papers. Tracks
+          audit findings and remediation action items in management
+          systems. Assists with audit response drafts under supervision.
+        mid: >
+          Manages audit and examination coordination for assigned
+          compliance areas, preparing document responses, facilitating
+          auditor access, and drafting management responses to findings.
+          Coordinates remediation activities with business owners and
+          tracks completion against deadlines.
+        senior: >
+          Leads audit and examination management for significant
+          regulatory reviews, developing preparation plans, coaching
+          business team members, and managing the audit relationship.
+          Designs remediation programs for complex findings and provides
+          audit readiness assessments to senior leadership.
+        staff: >
+          Oversees the organization's regulatory examination and audit
+          management function, establishing preparation standards,
+          response protocols, and relationship management approaches.
+          Drives continuous audit readiness through proactive compliance
+          monitoring and ensures findings are remediated effectively
+          across the enterprise.
+        principal: >
+          Sets the organization's strategy for regulatory examination
+          management and external audit engagement. Maintains senior
+          relationships with regulators and ensures the organization's
+          examination posture reflects its commitment to compliance
+          excellence. Manages examination outcomes that could have
+          enterprise-level regulatory implications.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can accelerate document collection, organize audit evidence,
+          and track remediation progress. However, managing auditor and
+          examiner relationships, coaching business teams on examination
+          conduct, and developing effective remediation strategies require
+          human judgment and interpersonal skills.
+
+    - id: change_management
+      name: "Change Management"
+      category: interpersonal
+      description: >
+        Leading organizational change related to compliance requirements,
+        including new regulatory obligations, compliance program
+        enhancements, technology implementations, and cultural
+        transformation initiatives, using structured change management
+        approaches that ensure successful adoption and sustainable
+        compliance improvements.
+      proficiency:
+        junior: >
+          Supports change management activities by preparing communication
+          materials, tracking adoption metrics, and gathering stakeholder
+          feedback. Assists with pilot programs and training rollouts for
+          new compliance requirements and processes.
+        mid: >
+          Leads change management for compliance initiatives of moderate
+          scope, developing communication plans, training programs, and
+          stakeholder engagement strategies. Measures adoption progress
+          and adjusts approaches based on feedback and resistance patterns.
+        senior: >
+          Designs and leads change management for major compliance
+          transformations including new regulatory programs, technology
+          implementations, and organizational restructuring. Applies
+          structured methodologies to build sponsorship, manage resistance,
+          and sustain change across the organization.
+        staff: >
+          Defines the compliance function's change management capability
+          and methodology. Leads enterprise-level compliance transformations
+          that require coordinated change across multiple business units
+          and functions. Builds organizational resilience for ongoing
+          regulatory change through adaptive compliance frameworks.
+        principal: >
+          Drives the organization's ability to adapt rapidly to regulatory
+          change as a competitive advantage. Ensures the compliance
+          function's change management capabilities support business
+          agility and regulatory responsiveness. Champions a culture where
+          compliance change is embraced as essential to sustainable
+          business success.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can analyze stakeholder sentiment and suggest communication
+          strategies. However, building sponsorship, managing resistance,
+          coaching leaders through change, and sustaining cultural
+          transformation are deeply human leadership activities.
+
+    - id: stakeholder_communication
+      name: "Stakeholder Communication"
+      category: interpersonal
+      description: >
+        Communicating compliance matters effectively to diverse stakeholders
+        including the board of directors, executive leadership, business
+        unit leaders, regulators, and employees, translating complex
+        regulatory concepts into clear, actionable messages appropriate
+        for each audience and building organizational understanding of
+        compliance importance.
+      proficiency:
+        junior: >
+          Prepares compliance communications including policy updates,
+          training announcements, and awareness campaign materials using
+          approved templates and messaging. Assists with reporting
+          presentations and stakeholder meeting preparation for the
+          compliance team.
+        mid: >
+          Develops and delivers compliance communications for assigned
+          audiences, translating regulatory requirements into clear
+          business language. Prepares compliance reports and presentations
+          for management and participates in stakeholder meetings as the
+          compliance representative for assigned domains.
+        senior: >
+          Leads compliance communication strategy for major initiatives
+          and regulatory changes, developing multi-channel communication
+          plans tailored to diverse stakeholder groups. Presents to senior
+          leadership and board committees on compliance program
+          effectiveness, risk assessments, and emerging regulatory matters.
+        staff: >
+          Defines the compliance function's stakeholder engagement and
+          communication strategy. Ensures consistent messaging across
+          compliance domains and builds effective communication channels
+          with all key stakeholder groups. Develops the communication
+          skills of the compliance team through coaching and training.
+        principal: >
+          Serves as the organization's senior compliance voice to the
+          board, executive team, regulators, and external stakeholders.
+          Shapes the narrative around the organization's compliance
+          posture and regulatory standing. Builds trust with regulators
+          and stakeholders through transparent, credible, and strategic
+          communication.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can draft communications and generate compliance reports.
+          However, calibrating messages for diverse audiences, building
+          trust with regulators, presenting with credibility to boards,
+          and influencing organizational behavior through communication
+          are fundamentally human capabilities.

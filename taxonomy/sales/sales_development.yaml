@@ -1,0 +1,633 @@
+role:
+  id: sales_development
+  function: sales
+  name: "Sales Development Representative"
+  also_known_as:
+    - "SDR"
+    - "BDR"
+    - "Business Development Representative"
+    - "Outbound Sales Rep"
+    - "Pipeline Generation Rep"
+  description: >
+    Generates qualified pipeline for the sales organization through outbound
+    prospecting, inbound lead follow-up, and targeted account-based outreach.
+    SDRs research target accounts, craft personalized messaging across email,
+    phone, and social channels, qualify prospects against ideal customer
+    profiles, and book meetings that account executives convert into revenue.
+    The role serves as the front door to the sales process and is the primary
+    training ground for future account executives.
+  ai_impact:
+    level: "very-high"
+    summary: >
+      AI is transforming sales development faster than nearly any other sales
+      role. Automated email sequencing, AI-generated personalization, intent
+      data platforms, and conversational AI are automating large portions of
+      the traditional SDR workflow. However, the highest-performing SDRs
+      differentiate through creative outreach, authentic phone conversations,
+      and the ability to qualify complex opportunities that require nuanced
+      human judgment. The role is evolving from high-volume activity execution
+      toward strategic, account-based pipeline generation.
+    automating:
+      - "Email sequence creation and send-time optimization"
+      - "Lead enrichment and contact data gathering"
+      - "CRM data entry and activity logging"
+      - "Basic lead scoring and routing"
+      - "Template-based follow-up messaging"
+      - "Meeting scheduling and calendar coordination"
+    augmenting:
+      - "Account research and personalization at scale"
+      - "Objection handling coaching and response suggestions"
+      - "Intent signal identification and prioritization"
+      - "Call script optimization based on conversion data"
+      - "Ideal customer profile refinement"
+      - "A/B testing of messaging and subject lines"
+    preserving:
+      - "Authentic phone conversations that build human connection"
+      - "Creative outreach that cuts through noise"
+      - "Nuanced qualification of complex buying situations"
+      - "Relationship building with gatekeepers and champions"
+      - "Resilience and motivation through high rejection rates"
+      - "Judgment about when a lead is truly qualified versus forced"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Gartner - Future of Sales 2025"
+        url: "https://www.gartner.com/en/sales/trends/future-of-sales"
+      - name: "SalesLoft - State of Revenue Report"
+        url: "https://www.salesloft.com/resources/reports"
+      - name: "Bridge Group - SDR Metrics & Compensation Report"
+        url: "https://blog.bridgegroupinc.com/sdr-metrics-report"
+  levels:
+    - id: junior
+      name: "Sales Development Representative"
+      years_experience: "0-1"
+      summary: >
+        Executes outbound prospecting activities following prescribed
+        sequences, call scripts, and messaging templates. Learns the ICP,
+        product value propositions, and qualification frameworks. Focuses on
+        building activity volume and converting effort into booked meetings.
+    - id: mid
+      name: "Senior Sales Development Representative"
+      years_experience: "1-3"
+      summary: >
+        Consistently exceeds pipeline generation targets through personalized
+        multi-channel outreach. Qualifies opportunities with nuance using
+        established frameworks. Mentors new SDRs and contributes to messaging
+        and process improvements based on field experience.
+    - id: senior
+      name: "Lead SDR / SDR Team Lead"
+      years_experience: "3-5"
+      summary: >
+        Leads a pod of SDRs, coaching on messaging, call technique, and
+        qualification rigor. Manages team performance against pipeline
+        generation targets. Develops outreach playbooks for new market
+        segments and collaborates with marketing on campaign execution.
+    - id: staff
+      name: "SDR Manager"
+      years_experience: "5-8"
+      summary: >
+        Manages the SDR team including hiring, onboarding, coaching, and
+        performance management. Designs the outbound motion including
+        sequences, territory assignments, and tool stack. Partners with
+        sales and marketing leadership to align pipeline generation
+        with revenue targets and go-to-market strategy.
+    - id: principal
+      name: "Director of Sales Development"
+      years_experience: "8+"
+      summary: >
+        Leads the sales development function, setting strategy for pipeline
+        generation across inbound and outbound channels. Defines team
+        structure, career paths, compensation models, and technology
+        investments. Owns the pipeline generation number at the executive
+        level and influences broader go-to-market strategy.
+  skills:
+    - id: outbound_prospecting
+      name: "Outbound Prospecting"
+      category: execution
+      description: >
+        Systematically identifying and reaching out to potential buyers who
+        fit the ideal customer profile through cold outreach across email,
+        phone, LinkedIn, and other channels, with the goal of generating
+        initial interest and booking qualified meetings.
+      proficiency:
+        junior: >
+          Executes daily prospecting activities following prescribed sequences
+          and channel cadences. Builds target account lists using provided
+          criteria and tools. Meets minimum activity thresholds for calls,
+          emails, and LinkedIn touches each day.
+        mid: >
+          Develops personalized prospecting strategies for target accounts
+          that go beyond template-based outreach. Identifies creative angles
+          and trigger events to make outreach relevant. Consistently converts
+          prospecting activity into booked meetings above team benchmarks.
+        senior: >
+          Designs prospecting playbooks for different market segments and
+          persona types. Tests new channels and approaches to improve
+          conversion rates. Coaches SDRs on prospecting craft and helps them
+          develop their authentic outreach style.
+        staff: >
+          Defines the organization's outbound prospecting methodology,
+          including channel mix, sequence design, and personalization
+          standards. Evaluates and implements prospecting tools that improve
+          team efficiency and conversion rates at scale.
+        principal: >
+          Shapes the company's outbound strategy at the executive level,
+          balancing automation and human touch across the prospecting motion.
+          Aligns outbound investment with market opportunity and ensures
+          prospecting practices reflect brand values and compliance needs.
+      ai_impact:
+        rating: 0.65
+        detail: >
+          AI dramatically accelerates account research, contact finding, and
+          initial message drafting. However, crafting outreach that genuinely
+          resonates with a specific human, choosing the right moment to reach
+          out, and persisting creatively through non-response requires human
+          creativity and grit.
+
+    - id: cold_calling
+      name: "Cold Calling"
+      category: execution
+      description: >
+        Initiating phone conversations with prospects who have no prior
+        relationship with the seller, navigating gatekeepers, delivering
+        compelling opening statements, handling real-time objections, and
+        converting calls into meetings or next steps.
+      proficiency:
+        junior: >
+          Makes the required number of daily calls following the team's call
+          script and opener framework. Handles basic objections like "not
+          interested" or "send me an email" with prepared responses. Logs
+          call outcomes and dispositions accurately in the CRM.
+        mid: >
+          Opens calls with personalized hooks that reference the prospect's
+          business context. Navigates gatekeepers effectively and adapts
+          tone and messaging based on the prospect's response. Converts a
+          higher percentage of conversations into booked meetings.
+        senior: >
+          Coaches SDRs on cold calling technique including tone, pacing,
+          objection handling, and call control. Develops call scripts and
+          opener frameworks for new market segments. Analyzes call
+          recordings to identify patterns that distinguish top performers.
+        staff: >
+          Designs the organization's cold calling methodology, integrating
+          phone outreach into the broader multi-channel prospecting cadence.
+          Evaluates call intelligence tools and establishes quality standards
+          for phone-based prospecting across the SDR team.
+        principal: >
+          Shapes the strategic role of phone outreach in the company's
+          go-to-market motion, balancing investment in phone-based
+          prospecting against digital channels. Ensures calling practices
+          comply with regulatory requirements across markets and reflect
+          the brand's professional standards.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can suggest optimal call times, provide real-time objection
+          handling prompts, and transcribe calls for coaching. However, the
+          human voice, tone, empathy, and ability to build instant rapport
+          in a live conversation remain irreplaceable. Cold calling is one
+          of the most human-dependent SDR skills.
+
+    - id: email_sequencing
+      name: "Email Sequencing"
+      category: execution
+      description: >
+        Designing and executing multi-step email outreach campaigns that
+        combine personalization, compelling copywriting, strategic timing,
+        and A/B testing to generate replies and meeting bookings from
+        cold prospects.
+      proficiency:
+        junior: >
+          Follows prescribed email sequences, personalizing the required
+          fields for each prospect. Understands basic email metrics like
+          open rate, reply rate, and bounce rate. Sends the required volume
+          of emails daily and responds to replies promptly.
+        mid: >
+          Writes original email copy that resonates with specific personas
+          and industries. Designs multi-step sequences with varied messaging
+          angles and tests subject lines and calls-to-action. Achieves
+          reply rates consistently above team averages.
+        senior: >
+          Creates email sequence templates and messaging frameworks that the
+          broader SDR team uses. Analyzes sequence performance data to
+          identify winning patterns and retires underperforming approaches.
+          Coaches SDRs on copywriting craft and personalization technique.
+        staff: >
+          Designs the organization's email outreach strategy including
+          sequence architecture, personalization standards, and deliverability
+          practices. Evaluates email automation tools and ensures sequences
+          integrate effectively with the broader multi-channel cadence.
+        principal: >
+          Shapes the company's email outreach philosophy at the executive
+          level, balancing automation efficiency with personalization quality.
+          Ensures email practices comply with anti-spam regulations across
+          markets and align with the brand's communication standards and
+          reputation management goals.
+      ai_impact:
+        rating: 0.75
+        detail: >
+          AI is highly effective at generating email copy, personalizing
+          messages at scale, optimizing send times, and suggesting sequence
+          structures. This is one of the most automatable SDR skills.
+          Human value persists in creative messaging that breaks through
+          inbox noise and in strategic decisions about targeting and timing.
+
+    - id: lead_qualification
+      name: "Lead Qualification (BANT, MEDDIC)"
+      category: execution
+      description: >
+        Assessing whether a prospect meets the criteria for a qualified
+        opportunity using structured frameworks like BANT, MEDDIC, or
+        SPICED, evaluating budget, authority, need, timeline, and competitive
+        landscape to determine if a lead should be passed to an AE.
+      proficiency:
+        junior: >
+          Applies basic qualification criteria to determine if a prospect
+          matches the ICP. Asks prescribed qualification questions during
+          conversations and captures responses in the CRM. Distinguishes
+          between interested contacts and genuinely qualified opportunities.
+        mid: >
+          Uses qualification frameworks fluently to assess multi-dimensional
+          fit including business pain urgency, decision-making authority, and
+          budget availability. Makes informed judgment calls on borderline
+          leads and provides AEs with detailed qualification notes.
+        senior: >
+          Coaches SDRs on qualification rigor, helping them distinguish
+          between surface-level interest and genuine buying intent. Refines
+          qualification criteria based on win/loss analysis and feedback
+          from AEs about meeting quality and conversion rates.
+        staff: >
+          Defines the organization's qualification methodology, establishing
+          the criteria and process that determine when a lead becomes a
+          qualified opportunity. Aligns qualification standards with AE
+          expectations and optimizes the handoff process for conversion.
+        principal: >
+          Shapes the company's lead qualification philosophy at the strategic
+          level, balancing qualification rigor against pipeline volume.
+          Ensures qualification frameworks evolve with market dynamics and
+          that the definition of a qualified lead reflects the company's
+          current go-to-market strategy and ideal customer profile.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can score leads based on firmographic and behavioral data,
+          suggest qualification questions, and flag missing information.
+          However, reading between the lines in a live conversation,
+          assessing a prospect's genuine intent versus polite interest,
+          and making nuanced qualification decisions require human
+          judgment and emotional intelligence.
+
+    - id: crm_data_entry
+      name: "CRM Data Entry"
+      category: technical
+      description: >
+        Maintaining accurate and complete records in the CRM for all
+        prospecting activities, contact interactions, lead statuses, and
+        qualification details, ensuring the data foundation that enables
+        reporting, forecasting, and cross-team visibility.
+      proficiency:
+        junior: >
+          Logs all prospecting activities including calls, emails, and
+          LinkedIn touches in the CRM daily. Updates lead statuses and
+          contact information accurately. Follows the team's data entry
+          standards and field requirements without reminders.
+        mid: >
+          Maintains exemplary CRM hygiene with detailed notes on every
+          interaction, accurate lead scoring inputs, and timely status
+          updates. Uses CRM data to inform personal prospecting priorities
+          and identifies data quality issues proactively.
+        senior: >
+          Establishes CRM data entry standards and quality benchmarks for
+          the SDR team. Identifies process improvements that reduce data
+          entry burden while maintaining quality. Trains new SDRs on CRM
+          workflows and data management expectations.
+        staff: >
+          Partners with revenue operations to design CRM workflows that
+          capture the right data with minimal friction. Defines the data
+          architecture for lead management including custom fields, picklist
+          values, and automation rules that balance data richness with
+          usability.
+        principal: >
+          Influences the organization's CRM and data strategy for the
+          prospecting motion, ensuring data captured during pipeline
+          generation flows accurately into forecasting, attribution, and
+          go-to-market analytics. Evaluates tools that reduce manual data
+          entry while preserving data quality standards.
+      ai_impact:
+        rating: 0.85
+        detail: >
+          CRM data entry is among the most automatable SDR tasks. AI tools
+          can auto-log emails, transcribe and summarize calls, update
+          contact records from enrichment sources, and sync activity data
+          across platforms. Human involvement is mainly needed for quality
+          oversight and capturing nuanced qualitative context.
+
+    - id: social_selling
+      name: "Social Selling (LinkedIn)"
+      category: execution
+      description: >
+        Leveraging LinkedIn and other professional social platforms to
+        research prospects, build personal brand, engage with target accounts
+        through content and comments, send personalized connection requests
+        and InMails, and warm up prospects before direct outreach.
+      proficiency:
+        junior: >
+          Sends personalized LinkedIn connection requests to target prospects
+          following team guidelines. Engages with prospect content through
+          likes and comments. Uses LinkedIn Sales Navigator to research
+          accounts and identify decision-makers.
+        mid: >
+          Builds a professional LinkedIn presence that establishes credibility
+          with target personas. Creates and shares relevant content that
+          attracts prospect engagement. Integrates LinkedIn touchpoints
+          strategically into multi-channel outreach sequences.
+        senior: >
+          Develops social selling playbooks and content strategies for the
+          SDR team. Coaches on personal branding, content creation, and
+          effective InMail copywriting. Analyzes social selling metrics
+          to identify which approaches drive the most meeting conversions.
+        staff: >
+          Defines the organization's social selling strategy, including
+          platform guidelines, content pillars, and integration with the
+          broader prospecting motion. Evaluates social selling tools and
+          establishes governance that balances authenticity with scale.
+        principal: >
+          Shapes the company's social selling philosophy at the executive
+          level, aligning individual seller activity with corporate brand
+          strategy. Evaluates emerging social platforms and community-based
+          selling approaches as channels for pipeline generation.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI can draft LinkedIn messages, suggest content to share, identify
+          engagement opportunities, and optimize connection request timing.
+          However, building an authentic personal brand, engaging genuinely
+          in conversations, and developing the social proof that makes
+          prospects receptive requires consistent human presence.
+
+    - id: objection_handling
+      name: "Objection Handling"
+      category: execution
+      description: >
+        Responding effectively to prospect pushback during cold outreach,
+        including common objections like "not interested," "we already have a
+        solution," "not the right time," and "send me information," using
+        techniques that acknowledge concerns and redirect toward value.
+      proficiency:
+        junior: >
+          Handles the five to ten most common prospecting objections using
+          prepared responses from the team playbook. Practices objection
+          handling in role-play sessions and applies techniques consistently
+          during live calls and email replies.
+        mid: >
+          Responds to objections naturally by acknowledging the prospect's
+          concern, asking clarifying questions, and redirecting the
+          conversation toward relevant business value. Adapts responses
+          based on prospect persona and the specific objection context.
+        senior: >
+          Develops objection handling frameworks and training materials for
+          the SDR team. Conducts role-play coaching sessions and analyzes
+          call recordings to identify objection patterns and effective
+          responses that should be incorporated into the team playbook.
+        staff: >
+          Defines the organization's objection handling methodology,
+          integrating competitive intelligence, product positioning, and
+          customer proof points into a comprehensive response framework.
+          Ensures objection handling training evolves with market dynamics.
+        principal: >
+          Shapes how the organization responds to market-level objections
+          and competitive challenges at scale. Connects field objection
+          patterns to product positioning gaps and competitive weaknesses,
+          influencing product marketing strategy and messaging evolution.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can suggest objection responses, provide real-time coaching
+          prompts during calls, and analyze which responses convert best.
+          However, delivering responses with authentic empathy, reading
+          the prospect's emotional state, and knowing when to push versus
+          gracefully disengage require human interpersonal skills.
+
+    - id: icp_research
+      name: "ICP Research"
+      category: strategic
+      description: >
+        Researching target accounts and contacts to understand their business
+        model, industry challenges, technology stack, recent news, and
+        organizational structure, enabling personalized outreach that
+        demonstrates relevance and earns prospect attention.
+      proficiency:
+        junior: >
+          Researches target accounts using prescribed sources including
+          company websites, LinkedIn, and news alerts. Identifies basic
+          firmographic data like company size, industry, and technology
+          stack. Uses research to personalize the first line of outreach
+          emails and call openers.
+        mid: >
+          Conducts multi-source research that uncovers trigger events,
+          strategic initiatives, and specific business challenges relevant
+          to the company's value proposition. Synthesizes research into
+          account briefs that inform personalized multi-touch outreach.
+        senior: >
+          Develops research methodologies and source guides that help SDRs
+          find actionable intelligence efficiently. Identifies new data
+          sources and intent signals that improve targeting precision.
+          Trains the team on turning research into compelling personalization.
+        staff: >
+          Defines the organization's account research standards, including
+          minimum research requirements, preferred data sources, and
+          integration with intent data platforms. Evaluates research tools
+          that improve efficiency without sacrificing personalization quality.
+        principal: >
+          Shapes the company's approach to account intelligence, connecting
+          research investments with pipeline conversion outcomes. Influences
+          ICP definition and refinement based on field research patterns,
+          ensuring target account criteria reflect actual buying propensity.
+      ai_impact:
+        rating: 0.75
+        detail: >
+          AI excels at aggregating account information from multiple sources,
+          identifying trigger events, and summarizing relevant business
+          context. This is one of the most augmented SDR skills. Human
+          value remains in synthesizing research into genuinely creative
+          and relevant outreach angles.
+
+    - id: meeting_booking
+      name: "Meeting Booking"
+      category: execution
+      description: >
+        Converting prospecting conversations into confirmed calendar meetings
+        between qualified prospects and account executives, including
+        scheduling logistics, confirmation messaging, pre-meeting
+        preparation, and no-show follow-up processes.
+      proficiency:
+        junior: >
+          Books meetings using the team's scheduling tools and follows the
+          confirmation and reminder process. Provides basic meeting context
+          to the AE including prospect name, title, and stated interest.
+          Follows up on no-shows with rescheduling outreach.
+        mid: >
+          Books meetings with clear agendas and pre-meeting briefs that set
+          the AE up for a productive first conversation. Manages scheduling
+          across time zones and multiple stakeholders. Achieves a high
+          meeting-held rate through effective confirmation sequences.
+        senior: >
+          Develops meeting booking best practices including agenda templates,
+          confirmation sequences, and no-show recovery playbooks. Coaches
+          SDRs on techniques that improve meeting-held rates and AE
+          satisfaction with meeting quality.
+        staff: >
+          Designs the organization's meeting booking workflow, including
+          handoff protocols, scheduling tool configuration, and quality
+          standards for meeting briefs. Optimizes the booking-to-held
+          conversion rate through process improvements and tool evaluation.
+        principal: >
+          Defines how the organization measures and optimizes the full
+          meeting lifecycle from booking through opportunity creation.
+          Ensures the meeting booking process reflects the company's
+          brand experience and aligns SDR incentives with AE conversion
+          outcomes rather than raw meeting volume alone.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI automates scheduling logistics, generates confirmation
+          sequences, and can draft meeting agendas from qualification notes.
+          The most automatable aspects are the operational mechanics. Human
+          value persists in ensuring meetings are genuinely qualified and
+          in providing the nuanced context that helps AEs prepare.
+
+    - id: time_management
+      name: "Time Management"
+      category: professional
+      description: >
+        Organizing daily and weekly work to maximize productive prospecting
+        time, balancing activity volume across channels, managing energy
+        through high-rejection work, and maintaining consistent output
+        against aggressive pipeline generation targets.
+      proficiency:
+        junior: >
+          Follows the team's recommended daily schedule including call
+          blocks, email time, and research periods. Meets minimum activity
+          thresholds consistently and avoids spending excessive time on
+          low-value tasks. Uses time-blocking to protect prospecting hours.
+        mid: >
+          Designs a personal daily workflow that maximizes productive
+          prospecting time based on prospect responsiveness patterns.
+          Balances activity across channels strategically and maintains
+          consistent output even during high-rejection periods without
+          burnout.
+        senior: >
+          Coaches SDRs on time management and energy management techniques
+          that sustain high performance. Develops daily schedule templates
+          optimized for different prospecting motions and helps team
+          members identify and eliminate time-wasting activities.
+        staff: >
+          Designs the organization's activity management framework,
+          including recommended daily schedules, activity benchmarks, and
+          productivity metrics. Evaluates tools that reduce non-prospecting
+          administrative time and free SDRs to focus on revenue activities.
+        principal: >
+          Shapes the company's approach to SDR productivity, balancing
+          activity volume with quality metrics. Ensures productivity
+          expectations account for the mental and emotional demands of
+          high-volume prospecting and promotes sustainable performance
+          practices across the organization.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can suggest optimal times for different activities, automate
+          low-value administrative tasks, and prioritize prospect outreach
+          based on engagement signals. However, managing personal energy,
+          maintaining motivation through rejection, and making real-time
+          decisions about where to invest time require self-awareness
+          and discipline.
+
+    - id: messaging_personalization
+      name: "Messaging & Personalization"
+      category: execution
+      description: >
+        Crafting outreach messages across email, phone, and social channels
+        that are personalized to the prospect's specific situation, industry,
+        and role, demonstrating relevance that earns attention and
+        differentiates from generic automated outreach.
+      proficiency:
+        junior: >
+          Personalizes outreach templates with prospect-specific details
+          like company name, role, and a relevant observation from research.
+          Follows the team's personalization guidelines and achieves the
+          minimum personalization standard for each touch.
+        mid: >
+          Creates highly personalized messages that reference specific
+          business challenges, recent company events, or industry trends
+          relevant to the prospect. Develops original messaging angles
+          that consistently outperform standard templates in reply rates.
+        senior: >
+          Develops messaging frameworks and personalization playbooks that
+          help the broader team achieve higher-quality outreach at scale.
+          Tests and iterates on messaging approaches based on conversion
+          data and shares winning patterns across the team.
+        staff: >
+          Defines the organization's messaging strategy, balancing
+          personalization depth with outreach volume. Establishes quality
+          standards for personalization and evaluates AI tools that can
+          generate personalized content at scale while maintaining
+          authenticity and brand voice.
+        principal: >
+          Shapes the company's outreach messaging philosophy, ensuring
+          prospecting communications reflect brand values, competitive
+          positioning, and evolving buyer expectations. Connects messaging
+          strategy with product marketing and content teams for consistency.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI is highly effective at generating personalized messages from
+          account research data, adapting tone for different personas, and
+          optimizing messaging based on performance data. Human value
+          persists in truly creative and unexpected personalization that
+          breaks through inbox noise and in ensuring messages feel
+          authentically human rather than algorithmically generated.
+
+    - id: handoff_to_ae
+      name: "Handoff to AE"
+      category: execution
+      description: >
+        Transitioning qualified opportunities from SDR to account executive
+        with comprehensive context including qualification details, prospect
+        motivations, competitive landscape, and relationship dynamics, ensuring
+        a seamless buyer experience and maximizing AE conversion rates.
+      proficiency:
+        junior: >
+          Completes the standard handoff process by filling in all required
+          fields in the CRM and sending the AE a meeting brief with basic
+          qualification details. Introduces the AE to the prospect via
+          email and ensures calendar logistics are confirmed.
+        mid: >
+          Provides AEs with rich handoff context including the prospect's
+          stated pain points, decision-making process, competitive landscape,
+          and any rapport-building details from conversations. Follows up
+          post-meeting to get AE feedback on meeting quality.
+        senior: >
+          Develops handoff templates and best practices that improve AE
+          meeting conversion rates. Coaches SDRs on what context AEs need
+          most and establishes feedback loops that help SDRs continuously
+          improve qualification and handoff quality.
+        staff: >
+          Designs the organization's SDR-to-AE handoff process, including
+          required fields, meeting brief templates, and quality scoring
+          criteria. Aligns handoff standards with AE expectations and
+          optimizes the process for both speed and completeness.
+        principal: >
+          Shapes the company's approach to pipeline handoff quality,
+          ensuring the SDR-to-AE transition is measured not just by meeting
+          volume but by downstream conversion and revenue contribution.
+          Aligns incentive structures to reward handoff quality alongside
+          quantity across the pipeline generation function.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI can auto-generate meeting briefs from call transcripts and CRM
+          data, surface relevant account intelligence, and pre-populate
+          handoff templates. However, capturing the nuanced interpersonal
+          dynamics of a prospect interaction and providing the qualitative
+          context that helps an AE build on existing rapport remains a
+          human contribution.

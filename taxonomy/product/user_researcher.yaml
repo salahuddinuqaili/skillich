@@ -1,0 +1,235 @@
+role:
+  id: user_researcher
+  function: product
+  name: "User Researcher"
+  also_known_as:
+    - "UX Researcher"
+    - "Design Researcher"
+    - "Product Researcher"
+    - "Customer Researcher"
+  description: >
+    User Researchers plan and conduct studies to understand user behaviors, needs, and
+    motivations through both qualitative and quantitative methods. They translate research
+    findings into actionable insights that inform product strategy, feature design, and
+    user experience decisions across the organization.
+  ai_impact:
+    level: moderate
+    summary: >
+      AI is augmenting the user research workflow by automating transcription, coding qualitative
+      data, and synthesizing large volumes of feedback. Tools can now generate interview guides,
+      tag themes in transcripts, and summarize findings in minutes. However, the core research
+      skills of building rapport with participants, asking the right follow-up questions, and
+      interpreting nuanced human behavior remain deeply human capabilities that AI cannot replicate.
+    automating:
+      - "Transcribing and time-stamping interview recordings"
+      - "Tagging and coding qualitative data themes"
+      - "Generating initial drafts of discussion guides"
+      - "Summarizing large volumes of open-ended survey responses"
+    augmenting:
+      - "Rapid synthesis of research repositories across multiple studies"
+      - "AI-assisted participant recruitment and screening"
+      - "Sentiment and emotion analysis of user session recordings"
+      - "Automated highlight-reel creation from usability test videos"
+      - "Pattern detection across longitudinal research datasets"
+    preserving:
+      - "Building trust and rapport with research participants"
+      - "Asking probing follow-up questions in live interviews"
+      - "Interpreting body language, tone, and emotional nuance"
+      - "Making ethical judgments about research participant welfare"
+      - "Connecting research insights to product and business strategy"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Nielsen Norman Group - AI in UX Research"
+        url: "https://www.nngroup.com/articles/ai-ux-research/"
+      - name: "User Interviews - State of UX Research"
+        url: "https://www.userinterviews.com/state-of-user-research"
+  levels:
+    - id: junior
+      name: "Junior/Associate"
+      years_experience: "0-2"
+      summary: "Supports senior researchers by recruiting participants, taking notes during sessions, assisting with analysis, and conducting basic usability tests under guidance."
+    - id: mid
+      name: "Mid-Level"
+      years_experience: "2-5"
+      summary: "Independently plans and executes research studies for a product area, selects appropriate methods, and delivers actionable insights to product and design partners."
+    - id: senior
+      name: "Senior"
+      years_experience: "5-8"
+      summary: "Leads research strategy for a major product area, mentors junior researchers, drives methodological rigor, and ensures research has measurable impact on product decisions."
+    - id: staff
+      name: "Staff/Lead Researcher"
+      years_experience: "8-12"
+      summary: "Shapes the research practice across teams, establishes methodological standards, drives research operations, and partners with product and design leadership on strategic research."
+    - id: principal
+      name: "Principal/Head of Research"
+      years_experience: "12+"
+      summary: "Defines the company's research vision and strategy, builds and scales research teams, embeds user understanding into company culture, and advises executives on user-centered decision-making."
+  skills:
+    - id: research_methodology
+      name: "Research Methodology"
+      category: analytical
+      description: "The ability to select and apply the appropriate research method for a given question, understanding the strengths, limitations, and trade-offs of qualitative, quantitative, and mixed-method approaches."
+      proficiency:
+        junior: "Understands the difference between qualitative and quantitative methods, can explain when to use interviews versus surveys, and follows established research protocols accurately."
+        mid: "Independently selects appropriate methods for research questions, designs multi-method studies, and adapts methodology when initial approaches do not yield sufficient insight."
+        senior: "Designs sophisticated mixed-method research programs, introduces new methodologies to the team, and advises product partners on the right level of research rigor for different decisions."
+        staff: "Establishes methodological standards and a shared research toolkit across the organization, evaluates emerging research methods, and drives consistency in research quality."
+        principal: "Shapes the company's research methodology philosophy, publishes thought leadership on research practice, and ensures the research function stays at the forefront of methodological innovation."
+      ai_impact:
+        rating: 0.3
+        detail: "AI can suggest methods based on research questions and past studies, but selecting the right approach requires understanding organizational context, timeline constraints, and the nuances of what each method can reveal."
+
+    - id: interview_facilitation
+      name: "Interview Facilitation"
+      category: communication
+      description: "The skill of conducting one-on-one and group interviews that elicit rich, honest, and nuanced insights from participants through active listening, rapport building, and skilled questioning."
+      proficiency:
+        junior: "Conducts structured interviews following a prepared discussion guide, practices active listening, and captures participant quotes and key observations accurately."
+        mid: "Facilitates semi-structured interviews with natural conversation flow, asks effective follow-up questions, and adapts the discussion guide in real time based on participant responses."
+        senior: "Conducts interviews on sensitive topics with skill and empathy, draws out insights participants struggle to articulate, and facilitates group sessions with complex stakeholder dynamics."
+        staff: "Coaches other researchers on interviewing technique, develops interview training programs, and establishes standards for interview quality and ethical participant engagement."
+        principal: "Is a recognized expert in interview methodology, conducts high-stakes research with executive stakeholders and key customers, and shapes the company's approach to customer engagement."
+      ai_impact:
+        rating: 0.1
+        detail: "Live interview facilitation depends on human empathy, rapport, and real-time judgment. AI can assist with transcription and note-taking during sessions, but the interpersonal skill is irreplaceable."
+
+    - id: usability_testing
+      name: "Usability Testing"
+      category: analytical
+      description: "The practice of evaluating products and prototypes by observing real users attempting tasks, identifying usability problems, and recommending design improvements based on observed behavior."
+      proficiency:
+        junior: "Runs moderated usability tests following a prepared script, records observations and severity ratings, and compiles basic findings into usability reports."
+        mid: "Designs usability studies with appropriate task scenarios, runs both moderated and unmoderated sessions, analyzes patterns across participants, and presents prioritized recommendations."
+        senior: "Conducts expert usability evaluations, designs complex testing protocols for multi-flow products, and drives design changes by connecting usability findings to business impact metrics."
+        staff: "Establishes usability testing standards and benchmarks across the organization, builds unmoderated testing programs at scale, and integrates usability metrics into product KPIs."
+        principal: "Defines the company's usability quality bar, ensures usability testing is embedded in the product development lifecycle, and drives investment in testing tools and infrastructure."
+      ai_impact:
+        rating: 0.4
+        detail: "AI can analyze session recordings, flag usability issues, and generate highlight reels. Observing nuanced user confusion, understanding intent, and designing appropriate test scenarios remain human-dependent."
+
+    - id: survey_design
+      name: "Survey Design"
+      category: analytical
+      description: "The ability to design surveys that produce valid, reliable, and actionable data by crafting clear questions, appropriate scales, and logical flow while minimizing bias."
+      proficiency:
+        junior: "Writes basic survey questions following established guidelines, avoids obvious leading questions, and uses standard response scales appropriately."
+        mid: "Designs end-to-end surveys with logical flow, skip logic, and appropriate question types. Understands common survey biases and applies techniques to mitigate them."
+        senior: "Creates sophisticated survey instruments including conjoint analysis, MaxDiff, and validated scale construction. Designs sampling strategies and calculates required response rates."
+        staff: "Establishes survey design standards for the organization, builds reusable survey templates and question banks, and evaluates survey tools and distribution platforms."
+        principal: "Shapes the company's approach to customer measurement programs including NPS, CSAT, and custom trackers. Ensures survey practices meet research ethics standards and respect respondent burden."
+      ai_impact:
+        rating: 0.5
+        detail: "AI can draft survey questions and suggest improvements for clarity and bias. Designing valid measurement instruments and sampling strategies requires deep methodological expertise."
+
+    - id: qualitative_analysis
+      name: "Qualitative Analysis"
+      category: analytical
+      description: "The practice of systematically analyzing non-numerical data from interviews, observations, and open-ended responses to identify themes, patterns, and insights that illuminate user experience."
+      proficiency:
+        junior: "Applies basic coding and tagging to interview transcripts, identifies surface-level themes, and organizes qualitative data using established frameworks."
+        mid: "Conducts thematic analysis independently, develops codebooks, identifies meaningful patterns across multiple data sources, and triangulates qualitative findings with quantitative data."
+        senior: "Applies advanced qualitative frameworks such as grounded theory and affinity diagramming, synthesizes large qualitative datasets, and identifies non-obvious insights that shift product thinking."
+        staff: "Establishes qualitative analysis standards across the research team, builds research repositories for cumulative insight building, and trains others on rigorous qualitative methods."
+        principal: "Shapes the organization's approach to qualitative evidence, ensures qualitative insights carry appropriate weight in product decisions, and drives investment in qualitative analysis tools and processes."
+      ai_impact:
+        rating: 0.5
+        detail: "AI can automate initial coding and theme detection in qualitative data, significantly speeding up analysis. Interpreting meaning, assessing credibility, and drawing nuanced conclusions require human judgment."
+
+    - id: quantitative_research
+      name: "Quantitative UX Research"
+      category: analytical
+      description: "The application of quantitative methods including surveys, analytics, and statistical analysis to measure user attitudes, behaviors, and product experiences at scale."
+      proficiency:
+        junior: "Analyzes basic survey results using descriptive statistics, creates simple charts and tables, and interprets quantitative findings with guidance from senior researchers."
+        mid: "Designs quantitative studies with appropriate sampling, conducts statistical analyses beyond descriptive statistics, and combines survey data with behavioral analytics."
+        senior: "Applies advanced quantitative methods including factor analysis, cluster analysis, and structural equation modeling. Designs benchmarking programs and longitudinal measurement."
+        staff: "Builds the organization's quantitative research capability, establishes statistical rigor standards, and develops measurement frameworks that bridge research and analytics."
+        principal: "Defines the company's quantitative measurement strategy, ensures research metrics integrate with product analytics, and drives the adoption of advanced quantitative methods across the organization."
+      ai_impact:
+        rating: 0.5
+        detail: "AI can accelerate data analysis and statistical computation, but designing valid quantitative studies and interpreting results in the context of user experience requires trained human researchers."
+
+    - id: persona_development
+      name: "Persona Development"
+      category: domain
+      description: "The practice of creating research-backed user archetypes that capture key behavioral patterns, goals, and needs, serving as shared reference points that keep product teams aligned around real users."
+      proficiency:
+        junior: "Contributes to persona creation by synthesizing interview data, helps populate persona templates, and uses existing personas to inform their own thinking about users."
+        mid: "Develops research-based personas from primary data, validates personas with quantitative data, and presents personas to product teams in compelling and usable formats."
+        senior: "Creates sophisticated persona frameworks that include behavioral segments, jobs-to-be-done, and progression models. Drives persona adoption across product and design teams."
+        staff: "Establishes persona development standards and governance for the organization, ensures personas evolve with the user base, and drives the integration of personas into product processes."
+        principal: "Shapes the company's customer segmentation philosophy, aligns persona work with business strategy, and ensures user archetypes inform decisions from product development through marketing and sales."
+      ai_impact:
+        rating: 0.4
+        detail: "AI can help cluster behavioral data and draft persona narratives, but developing personas that genuinely represent user diversity and drive empathy requires deep qualitative research and human insight."
+
+    - id: journey_mapping
+      name: "Journey Mapping"
+      category: domain
+      description: "The technique of visualizing the end-to-end user experience across touchpoints, identifying pain points, moments of delight, and opportunities to improve the holistic product experience."
+      proficiency:
+        junior: "Creates basic journey maps following established templates, documents user steps and emotions across a defined flow, and identifies obvious pain points."
+        mid: "Develops research-informed journey maps that capture emotional states, cross-channel touchpoints, and backstage processes. Identifies actionable opportunities for experience improvement."
+        senior: "Creates comprehensive journey maps spanning complex multi-product experiences, quantifies the impact of pain points, and uses journey maps to drive cross-team alignment on experience priorities."
+        staff: "Establishes journey mapping as a standard practice across the organization, builds frameworks for maintaining and updating journey maps, and uses journey insights to shape product strategy."
+        principal: "Drives company-wide customer experience vision informed by journey research, ensures journey mapping informs strategic investment decisions, and builds organizational capability for experience-driven product development."
+      ai_impact:
+        rating: 0.3
+        detail: "AI can help visualize journey maps and aggregate touchpoint data, but understanding the emotional nuance of user experiences and identifying strategic opportunities requires human empathy and creativity."
+
+    - id: research_synthesis
+      name: "Research Synthesis"
+      category: analytical
+      description: "The ability to combine findings across multiple research studies, data sources, and time periods into integrated insights that build cumulative organizational knowledge about users."
+      proficiency:
+        junior: "Summarizes individual study findings clearly, connects results to original research questions, and contributes observations to synthesis sessions."
+        mid: "Synthesizes findings across two to three studies into integrated insights, identifies contradictions and gaps, and creates actionable recommendation documents for product teams."
+        senior: "Conducts large-scale synthesis across extensive research repositories, identifies macro patterns and emerging themes, and creates strategic insight frameworks that inform product direction."
+        staff: "Builds research repositories and knowledge management systems that enable cumulative synthesis, establishes synthesis practices across the research team, and ensures research knowledge compounds over time."
+        principal: "Shapes how the organization accumulates and applies user knowledge at scale, integrates research synthesis with market intelligence and analytics, and ensures insights inform company strategy."
+      ai_impact:
+        rating: 0.5
+        detail: "AI can process large volumes of past research and surface relevant findings, significantly accelerating synthesis. Weighing evidence quality, resolving contradictions, and generating novel strategic insights remain human strengths."
+
+    - id: stakeholder_presentation
+      name: "Stakeholder Presentation"
+      category: communication
+      description: "The skill of communicating research findings to diverse audiences in compelling, actionable formats that drive product decisions and build organizational trust in research."
+      proficiency:
+        junior: "Presents research findings to the immediate product team clearly, uses visuals and participant quotes effectively, and answers basic questions about methodology."
+        mid: "Tailors presentations to different audiences, tells compelling stories with research data, and frames findings as actionable recommendations rather than abstract insights."
+        senior: "Delivers executive-level research presentations that influence strategic decisions, handles challenging questions with confidence, and builds lasting organizational commitment to user-centered thinking."
+        staff: "Coaches researchers on presentation skills, establishes standards for research deliverables, and creates templates and formats that maximize research impact across the organization."
+        principal: "Presents research insights to the board and C-suite, shapes how the company communicates about customers externally, and builds a culture where research evidence is expected in strategic discussions."
+      ai_impact:
+        rating: 0.3
+        detail: "AI can help draft presentation slides and suggest narrative structures, but delivering research with conviction, reading audience reactions, and adapting communication in real time are human skills."
+
+    - id: research_operations
+      name: "Research Operations"
+      category: domain
+      description: "The management of research logistics including participant recruitment, scheduling, tool administration, repository maintenance, and process optimization that enables the research team to operate efficiently."
+      proficiency:
+        junior: "Manages participant recruitment, schedules research sessions, handles consent forms, and maintains organized research files and recordings."
+        mid: "Builds and manages participant panels, streamlines research workflows, selects and administers research tools, and ensures compliance with research ethics and privacy requirements."
+        senior: "Designs scalable research operations processes, manages research budgets, evaluates and implements new research tools, and optimizes the end-to-end research workflow for the team."
+        staff: "Builds the research operations function from the ground up or scales it across the organization, establishes governance frameworks, and drives efficiency through automation and standardization."
+        principal: "Defines the company's research operations strategy, builds partnerships with external research vendors, ensures compliance with evolving privacy regulations, and secures investment for research infrastructure."
+      ai_impact:
+        rating: 0.6
+        detail: "AI can automate participant screening, scheduling, and repository management. Strategic research operations decisions and vendor management still require human oversight and judgment."
+
+    - id: competitive_analysis
+      name: "Competitive & Market Analysis"
+      category: domain
+      description: "The practice of systematically evaluating competitor products, market trends, and industry dynamics to inform product positioning, feature differentiation, and strategic opportunity identification."
+      proficiency:
+        junior: "Conducts basic competitor product audits, documents feature comparisons, and monitors competitor announcements and reviews."
+        mid: "Performs structured competitive analyses including heuristic evaluations of competitor UX, identifies meaningful differentiators, and tracks market trends relevant to the product area."
+        senior: "Conducts deep competitive research integrating UX evaluation, user perception studies, and market positioning analysis. Identifies strategic gaps and opportunities that inform product direction."
+        staff: "Establishes competitive intelligence practices across the organization, builds frameworks for ongoing market monitoring, and integrates competitive insights into product planning processes."
+        principal: "Shapes the company's competitive strategy through research, advises leadership on market positioning and differentiation, and builds partnerships with market research firms and industry analysts."
+      ai_impact:
+        rating: 0.6
+        detail: "AI can scrape competitor data, summarize reviews, and track market changes at scale. Interpreting competitive dynamics, assessing strategic implications, and translating findings into product strategy require human judgment."

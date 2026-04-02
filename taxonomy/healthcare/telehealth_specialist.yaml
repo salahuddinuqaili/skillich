@@ -1,0 +1,681 @@
+role:
+  id: telehealth_specialist
+  function: healthcare
+  name: "Telehealth / Digital Health Specialist"
+  also_known_as:
+    - "Digital Health Specialist"
+    - "Telehealth Program Manager"
+    - "Virtual Care Specialist"
+    - "Remote Care Coordinator"
+    - "Connected Health Specialist"
+  description: >
+    Implements, manages, and optimizes telehealth and digital health programs
+    that enable remote patient care delivery, including video visit platforms,
+    remote patient monitoring systems, asynchronous care tools, and digital
+    health applications. Telehealth specialists bridge clinical operations and
+    technology, ensuring that virtual care programs are clinically effective,
+    compliant with interstate licensing and billing regulations, accessible
+    to diverse patient populations, and integrated into broader care delivery
+    workflows.
+  ai_impact:
+    level: "moderate-high"
+    summary: >
+      AI is significantly enhancing telehealth through intelligent triage
+      and symptom assessment, remote monitoring analytics that predict
+      clinical deterioration, and automated visit documentation. Virtual
+      care platforms are incorporating AI-powered clinical decision support,
+      patient communication bots, and smart scheduling. However, the
+      complexity of regulatory compliance across jurisdictions, the need
+      for clinical workflow integration, and the importance of patient
+      engagement strategy ensure that telehealth specialists remain essential
+      for program design, implementation, and governance.
+    automating:
+      - "Automated patient triage and visit routing based on acuity"
+      - "Remote monitoring alert threshold management and escalation"
+      - "Standard visit documentation generation from encounter data"
+      - "Appointment scheduling optimization and no-show prediction"
+      - "Basic patient communication and appointment reminders"
+    augmenting:
+      - "Clinical protocol design for virtual care pathways"
+      - "Remote monitoring data interpretation and trend analysis"
+      - "Patient engagement strategy and digital health literacy assessment"
+      - "Technology platform evaluation and vendor comparison"
+      - "Regulatory compliance monitoring across multiple jurisdictions"
+    preserving:
+      - "Clinical workflow redesign for virtual care integration"
+      - "Patient relationship building and trust in virtual care"
+      - "Regulatory strategy for interstate licensing and billing"
+      - "Stakeholder change management for provider adoption"
+      - "Health equity strategy for digital access and literacy"
+      - "Program governance and organizational alignment"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "ATA - American Telemedicine Association"
+        url: "https://www.americantelemed.org/"
+      - name: "O*NET - Health Information Technologists"
+        url: "https://www.onetonline.org/link/summary/29-9021.00"
+      - name: "McKinsey - Telehealth After COVID-19"
+        url: "https://www.mckinsey.com/industries/healthcare/our-insights/telehealth-a-quarter-trillion-dollar-post-covid-19-reality"
+  levels:
+    - id: junior
+      name: "Junior Telehealth Specialist"
+      years_experience: "0-2"
+      summary: >
+        Supports telehealth program operations by assisting with platform
+        configuration, patient onboarding, provider training, and basic
+        troubleshooting. Learns virtual care workflows, regulatory
+        requirements, and technology platforms. Collects utilization data
+        and assists with program reporting.
+    - id: mid
+      name: "Telehealth Specialist"
+      years_experience: "2-5"
+      summary: >
+        Independently manages telehealth program operations including platform
+        administration, workflow design, provider support, and regulatory
+        compliance. Implements remote monitoring programs, analyzes
+        utilization data, and drives patient and provider adoption through
+        training and engagement strategies.
+    - id: senior
+      name: "Senior Telehealth Specialist"
+      years_experience: "5-8"
+      summary: >
+        Leads the design and implementation of complex telehealth programs
+        spanning multiple specialties and care settings. Develops clinical
+        protocols for virtual care, manages vendor relationships, and drives
+        outcomes measurement. Mentors junior staff and serves as the
+        organizational expert on telehealth best practices and regulations.
+    - id: staff
+      name: "Staff Telehealth Specialist / Program Director"
+      years_experience: "8-12"
+      summary: >
+        Sets the strategic direction for telehealth programs across the
+        organization. Establishes governance frameworks, technology
+        standards, and outcome metrics. Drives integration of telehealth
+        into enterprise care delivery strategy and manages the digital
+        health technology portfolio.
+    - id: principal
+      name: "Principal Telehealth / Digital Health Director"
+      years_experience: "12+"
+      summary: >
+        Defines the organization's digital health vision and roadmap at
+        the executive level. Evaluates emerging technologies including
+        AI-powered virtual care, hospital-at-home platforms, and digital
+        therapeutics. Advises C-suite leadership on digital health
+        investment, regulatory strategy, and population health integration.
+  skills:
+    - id: telehealth_platforms
+      name: "Telehealth Platform Management"
+      category: technical
+      description: >
+        Selecting, implementing, configuring, and administering telehealth
+        technology platforms including video visit solutions, virtual waiting
+        rooms, and integrated scheduling, ensuring reliable performance,
+        HIPAA compliance, EHR integration, and positive user experience for
+        both patients and providers.
+      proficiency:
+        junior: >
+          Assists with telehealth platform administration including user
+          account management, basic configuration, and first-level
+          troubleshooting. Tests platform features in non-production
+          environments and documents technical issues for escalation to
+          vendor support teams.
+        mid: >
+          Manages day-to-day telehealth platform operations including
+          configuration, EHR integration monitoring, user provisioning, and
+          performance optimization. Implements new features, coordinates vendor
+          support for complex issues, and maintains platform documentation
+          and standard operating procedures.
+        senior: >
+          Architects telehealth platform strategy including multi-platform
+          governance, integration design, and scalability planning. Leads
+          platform selection and implementation projects, defines performance
+          standards and SLAs, and designs failover procedures that ensure
+          clinical continuity during technical disruptions.
+        staff: >
+          Defines the organization's telehealth technology standards and
+          platform governance framework. Manages the digital health technology
+          portfolio, evaluates emerging platforms and capabilities, and drives
+          vendor strategy that aligns technology investment with organizational
+          digital health objectives.
+        principal: >
+          Shapes the organization's telehealth technology vision at the
+          executive level, evaluating emerging platforms including AI-native
+          virtual care, ambient clinical intelligence, and augmented reality
+          for remote consultation. Advises leadership on technology
+          investment strategy and build-versus-buy decisions for the digital
+          health ecosystem.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI enhances telehealth platforms through intelligent routing, ambient
+          documentation, and automated quality monitoring. However, platform
+          selection, integration architecture, and ensuring reliable clinical
+          workflows across diverse care settings require human expertise in
+          both technology and clinical operations.
+
+    - id: remote_patient_monitoring
+      name: "Remote Patient Monitoring"
+      category: technical
+      description: >
+        Implementing and managing remote patient monitoring (RPM) programs
+        that use connected devices to collect patient health data outside
+        traditional care settings, including device selection, alert
+        threshold configuration, clinical escalation protocols, and
+        outcomes measurement for chronic disease management and post-acute
+        care.
+      proficiency:
+        junior: >
+          Assists with RPM program operations including patient device
+          enrollment, data review under clinical supervision, and basic device
+          troubleshooting. Follows established alert escalation protocols and
+          maintains patient engagement through scripted outreach activities.
+        mid: >
+          Manages RPM programs for assigned patient populations, configuring
+          alert thresholds, reviewing monitoring data, and coordinating
+          clinical interventions based on established protocols. Analyzes
+          program metrics, identifies engagement barriers, and optimizes device
+          workflows for patient adherence.
+        senior: >
+          Designs and implements RPM programs for complex patient populations
+          including multi-device monitoring, custom alert algorithms, and
+          clinical escalation protocols. Evaluates clinical outcomes, designs
+          program improvements, and partners with clinical leadership to
+          expand RPM into new care delivery contexts.
+        staff: >
+          Establishes organizational RPM standards including device governance,
+          clinical protocol frameworks, and outcome measurement systems.
+          Evaluates emerging monitoring technologies, drives payer contracting
+          strategy for RPM reimbursement, and ensures program scalability
+          across the enterprise.
+        principal: >
+          Drives the organization's remote monitoring strategy at the executive
+          level, integrating RPM with population health, hospital-at-home, and
+          value-based care programs. Evaluates AI-powered predictive monitoring,
+          continuous sensing technologies, and their implications for care
+          model transformation.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI significantly enhances RPM through predictive analytics, anomaly
+          detection, and automated alert triage. However, designing monitoring
+          protocols for complex patients, managing clinical escalation
+          decisions, and maintaining patient engagement require human clinical
+          and interpersonal expertise.
+
+    - id: digital_health_design
+      name: "Digital Health Program Design"
+      category: domain
+      description: >
+        Designing digital health programs that address specific clinical
+        needs including care model definition, technology selection,
+        workflow integration, patient experience design, and outcome
+        measurement frameworks, ensuring programs are clinically effective,
+        operationally sustainable, and financially viable.
+      proficiency:
+        junior: >
+          Contributes to digital health program design by researching best
+          practices, gathering stakeholder requirements, and documenting
+          workflow specifications. Assists with pilot program logistics and
+          collects user feedback under supervision of experienced program
+          designers.
+        mid: >
+          Designs and implements digital health programs for defined clinical
+          use cases, including care pathway definition, technology
+          configuration, staff training, and launch coordination. Develops
+          program evaluation plans and iterates based on utilization data
+          and stakeholder feedback.
+        senior: >
+          Leads complex digital health program design spanning multiple
+          clinical areas and technology platforms. Develops clinical protocols,
+          financial models, and governance structures for sustainable programs.
+          Applies human-centered design principles to optimize patient and
+          provider experience across virtual care touchpoints.
+        staff: >
+          Establishes organizational frameworks for digital health program
+          design including methodology standards, approval processes, and
+          portfolio management. Drives innovation by evaluating emerging
+          digital health models and piloting transformative care delivery
+          approaches that leverage technology.
+        principal: >
+          Defines the organization's digital health program strategy at the
+          executive level, connecting digital health innovation to
+          organizational strategic objectives, competitive positioning, and
+          population health outcomes. Evaluates digital therapeutics,
+          AI-native care models, and platform-based health delivery.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can assist with program analytics and evidence review, but
+          designing effective digital health programs requires human expertise
+          in clinical care delivery, organizational change, patient behavior,
+          and the complex interplay between technology and healthcare workflows.
+
+    - id: regulatory_compliance_telehealth
+      name: "Regulatory Compliance (Interstate Licensing, Billing)"
+      category: domain
+      description: >
+        Navigating the complex regulatory landscape governing telehealth
+        including state licensure requirements, interstate practice
+        compacts, telehealth-specific billing and coding rules, prescribing
+        regulations, informed consent requirements, and evolving federal
+        and state telehealth policies.
+      proficiency:
+        junior: >
+          Understands basic telehealth regulatory concepts including state
+          licensure requirements and telehealth billing modifiers. Follows
+          established compliance procedures and maintains awareness of
+          regulatory resources provided by the organization for reference.
+        mid: >
+          Manages telehealth regulatory compliance for assigned programs
+          including state-by-state licensure verification, billing compliance
+          for telehealth services, and informed consent documentation. Tracks
+          regulatory changes and communicates implications to clinical teams.
+        senior: >
+          Leads telehealth regulatory strategy across the organization,
+          navigating multi-state compliance requirements, interstate medical
+          licensure compact participation, and evolving CMS and commercial
+          payer telehealth policies. Advises clinical leadership on regulatory
+          constraints and opportunities for virtual care expansion.
+        staff: >
+          Establishes organizational telehealth compliance frameworks including
+          state-by-state policy databases, compliance monitoring systems, and
+          regulatory change management processes. Partners with legal and
+          compliance teams to ensure telehealth programs meet all applicable
+          regulatory requirements.
+        principal: >
+          Shapes the organization's telehealth regulatory strategy at the
+          executive level, anticipating policy changes, evaluating regulatory
+          risk, and positioning the organization to leverage favorable
+          regulatory developments. Engages with industry associations and
+          policymakers to influence telehealth regulation.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can track regulatory changes, flag compliance gaps, and automate
+          compliance checklists. However, interpreting complex and sometimes
+          conflicting state regulations, making strategic compliance decisions,
+          and navigating the rapidly evolving telehealth regulatory landscape
+          require experienced human judgment and legal expertise.
+
+    - id: patient_engagement
+      name: "Patient Engagement & Digital Literacy"
+      category: interpersonal
+      description: >
+        Developing and implementing strategies to engage patients in digital
+        health programs, addressing barriers including digital literacy,
+        technology access, language, and cultural considerations, while
+        ensuring equitable participation across diverse patient populations.
+      proficiency:
+        junior: >
+          Supports patient engagement activities including technology onboarding
+          assistance, scripted outreach calls, and educational material
+          distribution. Collects patient feedback on digital health experiences
+          and escalates access barriers to program coordinators.
+        mid: >
+          Designs and implements patient engagement strategies for digital
+          health programs including onboarding workflows, educational content,
+          and proactive outreach campaigns. Assesses digital literacy barriers,
+          coordinates technology assistance resources, and measures engagement
+          metrics.
+        senior: >
+          Leads patient engagement strategy for the organization's digital
+          health portfolio, designing equity-centered approaches that address
+          technology access, digital literacy, language, and cultural barriers.
+          Implements patient advisory programs, designs feedback mechanisms,
+          and connects engagement to clinical outcomes.
+        staff: >
+          Establishes organizational patient engagement standards for digital
+          health including equity frameworks, accessibility requirements, and
+          patient experience measurement. Drives community partnerships that
+          expand digital health access and builds organizational capability
+          for inclusive digital health program design.
+        principal: >
+          Shapes the organization's digital health equity strategy at the
+          executive level, connecting patient engagement to population health
+          outcomes, community benefit, and organizational mission. Evaluates
+          emerging patient engagement technologies and advocacy approaches
+          that advance health equity in the digital health era.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can personalize patient communications, predict engagement risk,
+          and automate routine outreach. However, addressing digital literacy
+          barriers, building trust with underserved populations, and designing
+          culturally appropriate engagement strategies require human empathy,
+          cultural competence, and interpersonal skills.
+
+    - id: technology_assessment
+      name: "Technology Assessment & Innovation"
+      category: technical
+      description: >
+        Evaluating emerging digital health technologies including wearable
+        devices, AI-powered clinical tools, digital therapeutics, and
+        connected health platforms for clinical effectiveness, usability,
+        interoperability, regulatory status, and organizational fit.
+      proficiency:
+        junior: >
+          Assists with technology evaluations by testing device functionality,
+          documenting user experience observations, and compiling comparison
+          data from vendor materials and published reviews. Follows established
+          evaluation frameworks under guidance.
+        mid: >
+          Conducts structured technology assessments for digital health tools
+          including clinical utility evaluation, technical architecture review,
+          interoperability assessment, and vendor due diligence. Prepares
+          recommendation reports and presents findings to program leadership.
+        senior: >
+          Leads technology assessment for strategic digital health investments,
+          designing evaluation criteria, conducting pilot programs, and
+          performing ROI analyses. Stays current with emerging digital health
+          innovations and advises leadership on technology trends and their
+          potential clinical and operational impact.
+        staff: >
+          Establishes organizational technology assessment standards including
+          evaluation frameworks, governance processes, and innovation pipeline
+          management. Builds relationships with digital health startups,
+          academic researchers, and industry partners to maintain awareness
+          of emerging capabilities.
+        principal: >
+          Drives the organization's digital health innovation strategy,
+          evaluating transformative technologies and their potential to
+          reshape care delivery. Advises executive leadership on technology
+          investment priorities, innovation partnerships, and competitive
+          positioning in the rapidly evolving digital health landscape.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can assist with market analysis and feature comparison, but
+          evaluating clinical effectiveness of emerging technologies,
+          assessing organizational readiness, and making strategic investment
+          decisions require human expertise in clinical care, technology,
+          and organizational dynamics.
+
+    - id: clinical_workflow_integration
+      name: "Clinical Workflow Integration"
+      category: domain
+      description: >
+        Integrating telehealth and digital health tools into existing clinical
+        workflows, ensuring that virtual care is seamlessly connected to
+        in-person care, EHR documentation, care coordination processes, and
+        clinical quality measurement without creating parallel or fragmented
+        care pathways.
+      proficiency:
+        junior: >
+          Assists with workflow documentation and testing for telehealth
+          integration projects. Maps current-state clinical workflows, records
+          integration requirements, and participates in user acceptance testing
+          for new virtual care workflows under senior guidance.
+        mid: >
+          Designs and implements telehealth workflow integrations including
+          scheduling, documentation, order management, and billing workflows.
+          Coordinates with clinical and IT teams to ensure seamless handoffs
+          between virtual and in-person care touchpoints.
+        senior: >
+          Leads complex clinical workflow integration projects spanning multiple
+          specialties, care settings, and technology platforms. Designs hybrid
+          care models that optimize the use of virtual and in-person modalities.
+          Measures workflow efficiency and drives continuous improvement of
+          integrated care pathways.
+        staff: >
+          Establishes organizational standards for clinical workflow
+          integration in digital health, including design principles,
+          integration patterns, and quality metrics. Drives enterprise-wide
+          adoption of integrated care delivery models that leverage virtual
+          care as a core component of clinical operations.
+        principal: >
+          Shapes the organization's vision for integrated virtual and in-person
+          care delivery, evaluating care model innovations that blur
+          traditional boundaries between care settings. Advises leadership on
+          workflow transformation strategy and positions the organization for
+          emerging care delivery paradigms.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can analyze workflow data and suggest integration points, but
+          redesigning clinical workflows to incorporate virtual care requires
+          deep understanding of clinical processes, provider preferences,
+          patient needs, and the complex interdependencies within healthcare
+          delivery systems.
+
+    - id: outcomes_measurement
+      name: "Outcomes Measurement & Program Evaluation"
+      category: technical
+      description: >
+        Designing and implementing frameworks to measure clinical,
+        operational, financial, and patient experience outcomes for
+        telehealth and digital health programs, including metric definition,
+        data collection, analysis, and reporting to demonstrate program
+        value and drive continuous improvement.
+      proficiency:
+        junior: >
+          Collects and compiles program data using established metrics and
+          reporting templates. Assists with data validation, basic
+          visualization, and report distribution. Understands the importance
+          of outcome measurement for program sustainability and stakeholder
+          communication.
+        mid: >
+          Designs and implements outcome measurement plans for assigned
+          programs, defining metrics, establishing data collection processes,
+          and producing regular performance reports. Analyzes utilization,
+          quality, and satisfaction data to identify improvement opportunities.
+        senior: >
+          Architects outcome measurement frameworks for the organization's
+          digital health portfolio, connecting program metrics to
+          organizational strategic objectives and financial performance.
+          Conducts program evaluations, publishes findings, and advises
+          leadership on program sustainability and expansion decisions.
+        staff: >
+          Establishes organizational standards for digital health program
+          evaluation including metric taxonomies, benchmarking methodologies,
+          and ROI calculation frameworks. Drives evidence-based decision-making
+          for the digital health portfolio and builds organizational capability
+          for rigorous program evaluation.
+        principal: >
+          Shapes the organization's approach to digital health value
+          demonstration at the executive level, connecting program outcomes
+          to organizational strategy, payer negotiations, and competitive
+          positioning. Evaluates emerging measurement approaches including
+          real-world evidence generation and AI-powered outcomes analytics.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI enhances outcomes measurement through automated data collection,
+          trend detection, and predictive analytics. However, defining
+          meaningful metrics, interpreting results in organizational context,
+          and making strategic program decisions based on outcomes data
+          require human analytical and leadership expertise.
+
+    - id: privacy_security_telehealth
+      name: "Privacy & Security (Telehealth)"
+      category: domain
+      description: >
+        Ensuring telehealth and digital health programs comply with HIPAA,
+        state privacy laws, and organizational security policies, including
+        platform security assessment, data encryption, access controls,
+        patient consent for virtual services, and incident response
+        procedures specific to remote care delivery.
+      proficiency:
+        junior: >
+          Follows established privacy and security procedures for telehealth
+          operations including HIPAA-compliant platform usage, appropriate
+          patient identity verification, and secure handling of remote
+          encounter data. Reports potential security concerns promptly.
+        mid: >
+          Implements privacy and security controls for telehealth programs
+          including platform security configuration, patient consent workflows,
+          and access management. Conducts basic security assessments for new
+          digital health tools and ensures vendor compliance with organizational
+          security requirements.
+        senior: >
+          Designs privacy and security frameworks for telehealth programs
+          spanning multiple platforms and care delivery models. Leads security
+          risk assessments, develops incident response procedures for virtual
+          care, and advises clinical leadership on privacy-preserving
+          approaches to remote care delivery.
+        staff: >
+          Establishes organizational privacy and security standards for digital
+          health, integrating telehealth-specific requirements with enterprise
+          security frameworks. Drives vendor security governance, defines data
+          protection requirements for emerging technologies, and partners with
+          information security teams on remote care risk management.
+        principal: >
+          Shapes the organization's digital health security strategy at the
+          executive level, evaluating emerging threats to remote care delivery,
+          driving investment in security infrastructure, and ensuring
+          compliance with evolving privacy regulations across jurisdictions.
+          Advises leadership on acceptable risk for innovative care models.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can automate security monitoring, threat detection, and
+          compliance checking for telehealth platforms. However, designing
+          security architectures for novel care delivery models, making risk
+          tolerance decisions, and navigating the intersection of privacy
+          regulations and clinical innovation require experienced human
+          judgment.
+
+    - id: training_education
+      name: "Training & Provider Education"
+      category: interpersonal
+      description: >
+        Developing and delivering training programs that build provider and
+        staff proficiency with telehealth technologies and virtual care
+        workflows, including platform-specific training, virtual care
+        etiquette, documentation best practices, and ongoing support to
+        sustain adoption and clinical quality.
+      proficiency:
+        junior: >
+          Delivers basic telehealth platform training sessions using
+          established curricula. Provides at-the-elbow support during initial
+          virtual visits, creates user guides, and documents common technical
+          issues and their solutions for knowledge base development.
+        mid: >
+          Designs and delivers comprehensive telehealth training programs
+          including platform functionality, virtual care workflow, clinical
+          documentation, and webside manner. Develops competency assessments,
+          tracks adoption metrics, and identifies providers requiring
+          additional support.
+        senior: >
+          Leads telehealth education strategy across the organization,
+          designing multi-modal training programs that address diverse
+          learning styles and clinical specialties. Implements super-user
+          programs, develops train-the-trainer curricula, and measures training
+          effectiveness through adoption analytics and patient experience data.
+        staff: >
+          Establishes organizational standards for digital health education
+          including competency frameworks, certification programs, and
+          continuous learning pathways. Builds internal training capability
+          and partners with clinical education teams to integrate virtual
+          care skills into broader professional development programs.
+        principal: >
+          Shapes the organization's digital health education vision,
+          connecting training investment to clinical quality, provider
+          satisfaction, and program sustainability. Evaluates emerging
+          education technologies including simulation-based training and
+          AI-powered personalized learning for virtual care skills
+          development.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can personalize learning content, track competency, and provide
+          intelligent help within platforms. However, developing effective
+          training that addresses provider resistance, builds confidence in
+          virtual care, and sustains long-term adoption requires human
+          instructional design and interpersonal expertise.
+
+    - id: vendor_management_telehealth
+      name: "Vendor Management"
+      category: interpersonal
+      description: >
+        Managing relationships with telehealth and digital health technology
+        vendors including platform providers, device manufacturers, and
+        integration partners, ensuring contractual compliance, service
+        quality, and alignment of vendor capabilities with organizational
+        digital health strategy.
+      proficiency:
+        junior: >
+          Logs and tracks vendor support requests, assists with product testing
+          during implementation and upgrade cycles, and documents vendor-
+          provided technical guidance. Participates in vendor training sessions
+          and maintains awareness of platform update schedules and release notes.
+        mid: >
+          Manages day-to-day vendor relationships for assigned digital health
+          platforms, including issue escalation, feature request tracking, and
+          contract compliance monitoring. Evaluates vendor performance against
+          SLAs and coordinates vendor participation in implementation projects.
+        senior: >
+          Leads vendor relationship management for the organization's
+          telehealth technology portfolio, negotiating priorities, influencing
+          product roadmaps, and ensuring service-level commitments are met.
+          Conducts vendor evaluations for new requirements and presents
+          recommendations with total cost of ownership and clinical value
+          analyses.
+        staff: >
+          Establishes vendor management standards for the digital health
+          portfolio including evaluation frameworks, contract templates, and
+          governance structures. Manages strategic vendor partnerships that
+          align technology development with organizational digital health
+          strategy and negotiates enterprise-level agreements.
+        principal: >
+          Drives digital health vendor strategy at the executive level,
+          evaluating build-versus-buy decisions, managing vendor portfolio
+          risk, and negotiating strategic partnerships. Represents the
+          organization in vendor advisory boards and shapes product direction
+          for critical digital health platforms.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          AI can assist with contract analysis and performance benchmarking,
+          but building strategic vendor relationships, negotiating favorable
+          terms, and aligning vendor capabilities with organizational strategy
+          require interpersonal skills and strategic judgment that remain
+          distinctly human.
+
+    - id: change_management_telehealth
+      name: "Change Management"
+      category: interpersonal
+      description: >
+        Leading organizational change associated with telehealth and digital
+        health program implementation, including stakeholder engagement,
+        communication planning, resistance management, and adoption
+        strategies to ensure that digital health initiatives achieve intended
+        clinical and operational outcomes.
+      proficiency:
+        junior: >
+          Supports change management activities by preparing communication
+          materials, collecting user feedback, and assisting with go-live
+          support events. Follows established change management processes and
+          communicates program changes to end users following approved
+          messaging templates.
+        mid: >
+          Develops change management plans for digital health initiatives
+          including stakeholder analysis, communication strategies, and
+          adoption metrics. Identifies resistance patterns, implements
+          targeted interventions, and monitors adoption progress for
+          assigned programs.
+        senior: >
+          Leads change management strategy for complex digital health
+          initiatives spanning multiple clinical departments and care settings.
+          Coaches clinical champions, designs governance structures for
+          ongoing optimization, and measures the impact of change efforts on
+          program adoption and clinical outcomes.
+        staff: >
+          Establishes organizational change management frameworks for digital
+          health initiatives. Builds internal change management capability,
+          creates reusable toolkits, and defines success metrics that connect
+          technology adoption to organizational performance and patient
+          experience.
+        principal: >
+          Drives the organization's change management philosophy for digital
+          health transformation at the executive level. Advises leadership on
+          organizational readiness for transformative digital health initiatives,
+          builds executive sponsorship models, and ensures that change
+          management is integral to all digital health investment decisions.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          AI can help analyze adoption data and generate communication
+          materials, but understanding organizational culture, building trust
+          with clinical stakeholders, and navigating the deeply human dynamics
+          of technology change in healthcare remain beyond AI capabilities.

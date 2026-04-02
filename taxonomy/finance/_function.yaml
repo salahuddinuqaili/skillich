@@ -1,0 +1,24 @@
+function:
+  id: finance
+  name: "Finance & Accounting"
+  description: >
+    Finance and accounting roles responsible for managing an organization's
+    financial health, ensuring regulatory compliance, and providing strategic
+    insights through analysis, reporting, and planning. Encompasses everything
+    from day-to-day bookkeeping and audit through capital allocation, forecasting,
+    and executive-level financial strategy.
+  roles:
+    - financial_analyst
+    - accountant
+    - fp_and_a
+    - controller
+    - auditor
+  sources:
+    - name: "O*NET - Financial Analysts"
+      url: "https://www.onetonline.org/link/summary/13-2051.00"
+    - name: "CFA Institute - Career Resources"
+      url: "https://www.cfainstitute.org/en/career"
+    - name: "AICPA - Accounting Career Resources"
+      url: "https://www.aicpa-cima.com/career"
+    - name: "Robert Half - Finance & Accounting Salary Guide"
+      url: "https://www.roberthalf.com/salary-guide/accounting-and-finance"

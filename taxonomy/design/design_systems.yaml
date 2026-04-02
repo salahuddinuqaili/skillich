@@ -1,0 +1,710 @@
+role:
+  id: design_systems
+  function: design
+  name: "Design Systems Engineer"
+  also_known_as:
+    - "Design Systems Developer"
+    - "Design Systems Lead"
+    - "Design Technologist"
+    - "UI Systems Engineer"
+    - "Design Infrastructure Engineer"
+  description: >
+    Builds and maintains the shared design language, component libraries,
+    documentation, and governance processes that enable consistent, efficient
+    product design and development at scale. Design systems engineers work at
+    the intersection of design and engineering, defining reusable components,
+    design tokens, accessibility standards, and contribution models that
+    serve multiple product teams while maintaining coherence across platforms
+    and touchpoints.
+
+  ai_impact:
+    level: moderate
+    summary: >
+      AI tools are beginning to assist with design-system tasks such as
+      generating component documentation, suggesting token values, and
+      producing code from component designs. Routine documentation and
+      variant generation are seeing productivity gains. However, design
+      systems work is fundamentally about organizational alignment,
+      principled abstraction, and cross-functional governance -- activities
+      that require deep understanding of both the product portfolio and the
+      teams that consume the system. Senior design-systems engineers
+      are using AI to reduce documentation burden while focusing on the
+      architectural and governance decisions that determine whether a
+      design system succeeds or fails.
+    automating:
+      - "Generating component documentation from design files and code implementations"
+      - "Producing design-token value suggestions based on existing usage patterns"
+      - "Creating component variant previews and usage example code snippets"
+      - "Detecting inconsistencies between design files and code implementations"
+    augmenting:
+      - "Auditing large codebases for design-system adoption gaps and inconsistencies"
+      - "Generating migration guides when components or tokens change"
+      - "Producing accessibility audit reports for component libraries"
+      - "Analyzing component usage analytics to inform deprecation and evolution decisions"
+      - "Translating design specifications into initial component code implementations"
+    preserving:
+      - "Defining the component architecture and abstraction boundaries for the system"
+      - "Establishing governance models that balance consistency with team autonomy"
+      - "Making trade-off decisions about component flexibility versus simplicity"
+      - "Building organizational buy-in and driving adoption across diverse teams"
+      - "Designing the contribution and evolution processes that keep the system alive"
+    last_reviewed: "2025-09"
+    confidence: medium
+    sources:
+      - name: "Design Systems Handbook (InVision)"
+        url: "https://www.designbetter.co/design-systems-handbook"
+      - name: "Figma Design Systems Resources"
+        url: "https://www.figma.com/design-systems/"
+      - name: "Brad Frost Atomic Design Methodology"
+        url: "https://atomicdesign.bradfrost.com/"
+
+  levels:
+    - id: junior
+      name: "Junior (L1-L2)"
+      years_experience: "0-2"
+      summary: >
+        Contributes to the design system by building and documenting
+        components under guidance. Follows established patterns for
+        component structure, token usage, and accessibility requirements.
+        Learns the principles of systematic design and component
+        architecture while supporting the needs of consuming teams.
+    - id: mid
+      name: "Mid-Level (L3)"
+      years_experience: "2-4"
+      summary: >
+        Independently designs and builds design-system components with
+        proper variants, accessibility, and documentation. Manages
+        component requests from product teams, contributes to token
+        architecture, and ensures the system remains consistent and
+        well-documented across design and code.
+    - id: senior
+      name: "Senior (L4)"
+      years_experience: "4-8"
+      summary: >
+        Leads the design system for a product area or platform, defining
+        component architecture, token strategy, and documentation
+        standards. Drives adoption by building relationships with
+        consuming teams, establishes quality criteria for system
+        contributions, and mentors other engineers on systematic
+        thinking.
+    - id: staff
+      name: "Staff (L5)"
+      years_experience: "8-12"
+      summary: >
+        Sets the design-system strategy across the organization,
+        defining the architectural vision, governance model, and
+        multi-platform approach. Aligns the design system with
+        organizational goals, builds the operational processes that
+        keep the system healthy, and influences executive investment
+        in design-system infrastructure.
+    - id: principal
+      name: "Principal (L6+)"
+      years_experience: "12+"
+      summary: >
+        Shapes the company's long-term design-system vision and the
+        role of systematic design in organizational efficiency and
+        product quality. Drives industry-level thought leadership on
+        design systems, evaluates emerging approaches and technologies,
+        and positions the design system as a strategic asset that
+        compounds value over time.
+
+  skills:
+    - id: component_architecture
+      name: "Component Architecture"
+      category: technical
+      description: >
+        Designing the structure, API, composition patterns, and
+        abstraction layers of design-system components. Includes
+        deciding component boundaries, prop interfaces, slot/children
+        patterns, compound-component composition, and the relationship
+        between primitive, composite, and pattern-level components.
+      proficiency:
+        junior: >
+          Builds simple components following established architectural
+          patterns. Understands the concept of component variants,
+          props, and slots, and creates components with proper state
+          handling (default, hover, active, disabled, error) under
+          guidance.
+        mid: >
+          Designs component APIs with appropriate flexibility, defining
+          props, variants, and composition patterns that serve multiple
+          use cases without excessive complexity. Builds compound
+          components and understands the trade-offs between composition
+          and configuration approaches.
+        senior: >
+          Defines the component architecture strategy for the design
+          system, establishing patterns for primitive, composite, and
+          pattern-level components. Makes principled decisions about
+          component boundaries, API surface area, and the composition
+          model that balances flexibility with consistency.
+        staff: >
+          Sets the architectural vision for the entire design-system
+          component library, defining abstraction layers, composition
+          philosophy, and migration strategies. Evaluates headless-
+          component approaches, web-component strategies, and multi-
+          framework architecture decisions with organizational impact.
+        principal: >
+          Shapes the long-term component architecture strategy as the
+          organization, technology stack, and product portfolio evolve.
+          Drives the adoption of emerging component paradigms (server
+          components, web components, cross-framework interop) and
+          positions the component architecture for multi-year scalability.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can generate component implementations from specifications
+          and suggest API patterns, but designing component architectures
+          that balance flexibility, simplicity, and consistency across an
+          organization requires deep understanding of consumer needs,
+          usage patterns, and the long-term evolution trajectory of the
+          system.
+
+    - id: design_tokens
+      name: "Design Tokens"
+      category: technical
+      description: >
+        Defining, organizing, and distributing the foundational design
+        decisions (colors, typography, spacing, elevation, motion) as
+        platform-agnostic tokens. Includes token taxonomy, naming
+        conventions, transformation pipelines (Style Dictionary, Tokens
+        Studio), and multi-platform token distribution.
+      proficiency:
+        junior: >
+          Understands the concept of design tokens and uses established
+          tokens correctly in designs and code. Follows naming
+          conventions and applies semantic tokens rather than hard-coded
+          values.
+        mid: >
+          Creates and manages design tokens across multiple categories
+          (color, spacing, typography, elevation). Configures token
+          transformation pipelines, maintains token documentation, and
+          ensures tokens map correctly between Figma and code platforms.
+        senior: >
+          Designs the token architecture for the design system, including
+          tier structure (global, alias, component), naming conventions,
+          and the transformation pipeline that delivers tokens to
+          multiple platforms. Establishes governance for token additions
+          and changes.
+        staff: >
+          Defines the organizational token strategy, including multi-
+          brand and multi-theme token architecture, cross-platform
+          distribution infrastructure, and the tooling pipeline from
+          design to production. Evaluates emerging token standards
+          (W3C Design Token Format) and adoption timelines.
+        principal: >
+          Shapes the industry understanding of design-token practice,
+          contributing to standards bodies and open-source tooling.
+          Drives the long-term token strategy as the organization
+          expands to new platforms, brands, and product lines, ensuring
+          tokens remain the source of truth for design decisions.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can suggest token values, generate token documentation, and
+          detect inconsistencies between token definitions and usage.
+          However, designing a token architecture that scales across
+          brands, platforms, and themes while remaining maintainable
+          requires deep systems thinking and understanding of how
+          organizations consume design decisions.
+
+    - id: documentation
+      name: "Design System Documentation"
+      category: communication
+      description: >
+        Creating and maintaining comprehensive documentation that
+        enables teams to use the design system correctly and
+        efficiently. Includes component usage guidelines, code
+        examples, accessibility notes, do/don't guidance, pattern
+        recipes, and the documentation platform itself.
+      proficiency:
+        junior: >
+          Writes clear component documentation following established
+          templates. Creates usage examples, documents component props
+          and variants, and maintains documentation accuracy as
+          components evolve.
+        mid: >
+          Develops comprehensive documentation for new components and
+          patterns, including usage guidelines, accessibility
+          requirements, do/don't examples, and code snippets for
+          multiple frameworks. Structures documentation for different
+          audiences (designers, engineers, product managers).
+        senior: >
+          Defines the documentation strategy and information
+          architecture for the design system, including content
+          templates, quality standards, and the documentation platform
+          configuration. Ensures documentation stays current through
+          review processes and automated checks.
+        staff: >
+          Establishes the organizational approach to design-system
+          documentation, including content strategy, platform selection,
+          contribution workflows, and integration with design and
+          engineering tools. Ensures documentation serves as the
+          authoritative reference that drives correct system usage.
+        principal: >
+          Shapes the vision for design-system documentation as a
+          product in its own right, evaluating how AI-assisted
+          documentation generation, interactive examples, and embedded
+          tooling can make documentation more effective and less costly
+          to maintain at organizational scale.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI is increasingly effective at generating component
+          documentation, code examples, and usage guidelines from
+          component source code and design files. However, crafting
+          documentation that guides correct usage, anticipates common
+          mistakes, and serves diverse audiences effectively requires
+          human understanding of how teams actually consume and
+          misuse the system.
+
+    - id: governance
+      name: "Design System Governance"
+      category: leadership
+      description: >
+        Establishing and maintaining the processes, decision-making
+        frameworks, and organizational structures that guide how the
+        design system evolves. Includes change management, deprecation
+        policies, quality review processes, prioritization of system
+        work, and balancing centralized control with distributed
+        ownership.
+      proficiency:
+        junior: >
+          Follows the design system's contribution and review processes.
+          Understands why governance exists and participates in review
+          cycles by providing feedback on proposed component changes.
+        mid: >
+          Manages the intake and review process for component requests
+          and contributions. Applies governance criteria to evaluate
+          proposals, communicates decisions to stakeholders, and helps
+          maintain the design system's quality bar through code and
+          design reviews.
+        senior: >
+          Defines governance processes for the design system, including
+          contribution guidelines, review criteria, deprecation policies,
+          and escalation paths. Builds a governance model that maintains
+          system quality while remaining accessible and not overly
+          bureaucratic.
+        staff: >
+          Establishes the organizational governance model for the design
+          system, balancing centralized quality control with distributed
+          ownership. Defines decision-making frameworks for breaking
+          changes, versioning policies, and the organizational structure
+          (federated, centralized, or hybrid) that supports the system.
+        principal: >
+          Shapes the long-term governance strategy for the design system
+          as the organization scales. Evaluates governance models from
+          industry leaders, adapts approaches to the company's culture
+          and structure, and ensures governance evolves to support rather
+          than hinder the system's growth and adoption.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          Design system governance is fundamentally about organizational
+          alignment, trust-building, and decision-making among diverse
+          stakeholders. AI can assist with tracking changes and detecting
+          policy violations, but the facilitation, negotiation, and
+          judgment required to govern a system used by many teams is
+          deeply human.
+
+    - id: accessibility_standards
+      name: "Accessibility Standards & Compliance"
+      category: technical
+      description: >
+        Embedding accessibility into the design system at the component
+        level, ensuring every element meets WCAG standards by default.
+        Includes ARIA patterns, keyboard navigation, focus management,
+        screen-reader testing, and establishing accessibility as a
+        non-negotiable quality attribute of the system.
+      proficiency:
+        junior: >
+          Applies accessibility requirements to components, including
+          proper ARIA attributes, keyboard navigation, and color
+          contrast. Tests components with basic accessibility tools
+          and follows the team's established accessibility checklist.
+        mid: >
+          Builds accessible components that handle complex interaction
+          patterns (comboboxes, tabs, disclosure widgets) following WAI-
+          ARIA authoring practices. Tests with screen readers, ensures
+          focus management is correct, and documents accessibility
+          requirements for each component.
+        senior: >
+          Defines the accessibility standards for the design system,
+          establishing component-level accessibility requirements,
+          testing protocols, and documentation standards. Ensures the
+          system makes the accessible path the default path, reducing
+          the accessibility burden on consuming teams.
+        staff: >
+          Establishes the organizational approach to accessibility
+          through the design system, including compliance targets, audit
+          processes, and the integration of accessibility testing into
+          CI/CD pipelines. Ensures accessibility improvements propagate
+          automatically to all consuming products through system updates.
+        principal: >
+          Champions accessibility as a core design-system value at the
+          organizational level. Drives the adoption of emerging
+          accessibility standards, evaluates the impact of new ARIA
+          specifications, and ensures the design system positions the
+          organization for long-term accessibility compliance and
+          inclusive design leadership.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI tools can audit components against WCAG standards, suggest
+          ARIA attributes, and identify common accessibility violations.
+          However, designing accessible interaction patterns for complex
+          components, making nuanced ARIA decisions, and ensuring the
+          system truly reduces the accessibility burden on consumers
+          require expert human judgment.
+
+    - id: tooling_figma
+      name: "Design System Tooling & Figma Libraries"
+      category: technical
+      description: >
+        Building and maintaining the tooling infrastructure that
+        supports the design system, including Figma component libraries,
+        design-to-code pipelines, Storybook configuration, visual
+        regression testing, and the integration between design and
+        engineering tools.
+      proficiency:
+        junior: >
+          Uses the design system's Figma libraries correctly and
+          contributes simple components. Understands how Figma components
+          map to code implementations and follows library organization
+          conventions.
+        mid: >
+          Builds well-structured Figma components with variants,
+          auto-layout, and responsive constraints that mirror code
+          implementations. Configures Storybook stories with controls
+          and accessibility checks, and maintains parity between Figma
+          and code versions of components.
+        senior: >
+          Architects the Figma library structure for the design system,
+          establishing component organization, naming conventions, and
+          branching workflows. Configures the Storybook documentation
+          site, visual regression testing, and the pipeline connecting
+          design tokens from Figma to code.
+        staff: >
+          Defines the organization's design-system tooling strategy,
+          including Figma plan architecture, design-to-code pipeline
+          infrastructure, testing automation, and integration with
+          CI/CD systems. Evaluates and adopts new tools that improve
+          system maintainability and consumer experience.
+        principal: >
+          Shapes the long-term tooling vision for the design system,
+          evaluating how AI-powered design tools, design-to-code
+          automation, and emerging platforms change the design-system
+          tooling landscape. Drives investment in tooling infrastructure
+          that maximizes the system's impact and maintainability.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI features in design tools are automating aspects of component
+          creation, variant generation, and design-code synchronization.
+          However, architecting Figma libraries that scale, configuring
+          testing infrastructure, and making strategic tooling decisions
+          for the organization require expertise that evolves with the
+          rapidly changing tool ecosystem.
+
+    - id: cross_platform_parity
+      name: "Cross-Platform Parity"
+      category: technical
+      description: >
+        Ensuring the design system delivers consistent component
+        behavior, visual appearance, and API patterns across multiple
+        platforms (web, iOS, Android, desktop). Includes managing
+        platform-specific adaptations, shared specifications, and the
+        strategy for how much parity to enforce versus where to embrace
+        platform conventions.
+      proficiency:
+        junior: >
+          Understands that design-system components exist across
+          platforms and follows platform-specific implementation
+          guidelines when contributing. Identifies discrepancies
+          between platforms and reports them to the team.
+        mid: >
+          Builds components that work consistently across the team's
+          primary platforms, adapting for platform conventions while
+          maintaining visual and behavioral parity where appropriate.
+          Documents platform-specific variations and ensures token
+          values produce consistent results cross-platform.
+        senior: >
+          Defines the cross-platform strategy for the design system,
+          establishing where strict parity is required versus where
+          platform-native behavior should prevail. Creates cross-platform
+          component specifications and coordinates implementation across
+          platform engineering teams.
+        staff: >
+          Sets the organizational approach to cross-platform design-
+          system delivery, including shared specification formats,
+          multi-platform token distribution, and the organizational
+          model for coordinating cross-platform implementation.
+          Evaluates cross-platform technologies (React Native, Flutter,
+          web components) for their impact on system strategy.
+        principal: >
+          Shapes the long-term cross-platform strategy for the design
+          system as new platforms emerge. Drives the organizational
+          framework for evaluating platform support, making investment
+          decisions about which platforms warrant first-class system
+          support, and positioning the system architecture for
+          multi-platform scalability.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can help generate platform-specific implementations from
+          shared specifications and detect cross-platform inconsistencies.
+          However, deciding where to enforce parity versus embrace
+          platform conventions, managing the organizational complexity
+          of multi-platform delivery, and making strategic platform-
+          support decisions require human judgment about user
+          expectations and engineering trade-offs.
+
+    - id: versioning_releases
+      name: "Versioning & Release Management"
+      category: technical
+      description: >
+        Managing the design system's release lifecycle, including
+        semantic versioning, changelog generation, breaking-change
+        communication, migration support, and coordinating upgrades
+        across consuming teams. Ensures the system evolves without
+        disrupting consumers.
+      proficiency:
+        junior: >
+          Follows the design system's versioning and release processes.
+          Understands semantic versioning basics (major, minor, patch)
+          and contributes to changelog entries for completed work.
+        mid: >
+          Manages the release process for design-system updates,
+          including version bumping, changelog preparation, and
+          coordinating release timing with consuming teams. Writes
+          migration notes for minor breaking changes and communicates
+          releases through established channels.
+        senior: >
+          Defines the versioning and release strategy for the design
+          system, including semver policies, release cadence, breaking-
+          change thresholds, and migration-support commitments.
+          Establishes automated release pipelines and changelog
+          generation.
+        staff: >
+          Establishes the organizational release-management strategy
+          for the design system, including canary releases, feature
+          flags for gradual rollout, and the support model for multiple
+          major versions. Coordinates release strategy across design
+          and engineering organizations.
+        principal: >
+          Shapes the long-term evolution strategy for the design system,
+          defining how major architectural changes are introduced,
+          communicated, and adopted across the organization. Drives the
+          approach to backward compatibility and long-term support that
+          earns and maintains consumer trust.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can automate changelog generation, detect breaking changes
+          in code, and generate migration guides. However, making
+          strategic decisions about versioning policy, coordinating
+          release timing across teams, and managing the organizational
+          change management around system updates require human
+          judgment and stakeholder management skills.
+
+    - id: developer_collaboration
+      name: "Developer Collaboration"
+      category: communication
+      description: >
+        Working effectively with frontend and platform engineers who
+        implement and consume the design system. Includes translating
+        design specifications into engineering-friendly requirements,
+        participating in code reviews, understanding implementation
+        constraints, and building the trust and shared language that
+        makes design-engineering collaboration productive.
+      proficiency:
+        junior: >
+          Communicates design decisions to engineers clearly, provides
+          implementation-ready specifications, and responds to
+          engineering questions about design intent. Understands basic
+          frontend concepts (HTML, CSS, component APIs) well enough
+          to discuss implementation.
+        mid: >
+          Collaborates with engineers throughout the component
+          development process, from API design through implementation
+          review. Understands engineering constraints and trade-offs,
+          participates in code reviews for visual and interaction
+          fidelity, and adjusts design specifications based on
+          technical feasibility.
+        senior: >
+          Acts as a bridge between design and engineering for the
+          design system, facilitating productive collaboration on
+          component architecture and API decisions. Establishes
+          collaboration workflows, review processes, and shared
+          vocabulary that reduce friction between disciplines.
+        staff: >
+          Defines the organizational model for design-engineering
+          collaboration on the design system, including shared
+          ownership structures, cross-functional review processes,
+          and the decision-making framework for balancing design
+          ideals with engineering constraints.
+        principal: >
+          Shapes the company's approach to design-engineering
+          collaboration as a cultural value. Drives organizational
+          structures and processes that dissolve silos between design
+          and engineering, ensuring the design system benefits from
+          deep expertise in both disciplines.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          Developer collaboration is fundamentally about building
+          relationships, shared understanding, and trust between
+          disciplines. AI tools may help with translating specifications
+          or generating implementation scaffolding, but the interpersonal
+          skills and organizational influence needed for effective
+          cross-disciplinary collaboration are irreplaceably human.
+
+    - id: adoption_measurement
+      name: "Adoption & Impact Measurement"
+      category: analytical
+      description: >
+        Tracking and measuring how effectively the design system is
+        adopted and the impact it delivers. Includes defining adoption
+        metrics, building analytics dashboards, conducting usage audits,
+        measuring design-system ROI, and using data to guide system
+        investment and evolution.
+      proficiency:
+        junior: >
+          Understands why adoption metrics matter and helps collect
+          usage data. Reviews analytics dashboards and contributes to
+          adoption reports by gathering information from consuming
+          teams.
+        mid: >
+          Tracks design-system adoption metrics including component
+          usage rates, coverage across products, and detachment
+          (custom implementations that bypass the system). Creates
+          dashboards and reports that communicate adoption status to
+          stakeholders.
+        senior: >
+          Defines the adoption-measurement strategy for the design
+          system, including key metrics, data-collection methods, and
+          reporting cadences. Conducts usage audits, identifies adoption
+          barriers, and develops targeted strategies to increase system
+          coverage and reduce inconsistency.
+        staff: >
+          Establishes the organizational framework for measuring
+          design-system impact, connecting adoption metrics to business
+          outcomes (developer velocity, design consistency, brand
+          coherence). Builds the business case for design-system
+          investment using quantitative evidence.
+        principal: >
+          Shapes the company's approach to valuing the design system
+          as a strategic investment, defining ROI frameworks and
+          ensuring system impact is understood at the executive level.
+          Drives the connection between design-system health metrics
+          and product quality, engineering efficiency, and brand
+          perception.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can analyze codebases for component usage, detect
+          inconsistencies, and generate adoption reports. However,
+          defining what metrics matter, interpreting adoption patterns
+          in organizational context, and developing strategies to
+          address adoption barriers require understanding of team
+          dynamics, organizational politics, and the value proposition
+          the system offers to each consumer.
+
+    - id: theming
+      name: "Theming & Multi-Brand Support"
+      category: technical
+      description: >
+        Designing the architecture that allows the design system to
+        support multiple visual themes, brands, and user preferences
+        (dark mode, high contrast, density modes). Includes theme
+        token architecture, runtime theme switching, and the design
+        patterns that enable visual customization without compromising
+        system consistency.
+      proficiency:
+        junior: >
+          Understands how the design system's theming works and applies
+          theme tokens correctly in component designs. Creates designs
+          that work across the system's existing themes (e.g., light
+          and dark mode).
+        mid: >
+          Builds components that support theming properly, using
+          semantic tokens that resolve correctly across theme contexts.
+          Creates theme-specific design files, tests component
+          appearance across themes, and ensures new components respect
+          the theming architecture.
+        senior: >
+          Designs the theming architecture for the design system,
+          including semantic token layers, theme-switching mechanisms,
+          and the strategy for supporting multiple density modes and
+          color schemes. Establishes guidelines for how themes should
+          differ while maintaining usability and accessibility.
+        staff: >
+          Defines the organizational theming strategy, including multi-
+          brand architecture, white-labeling capabilities, and the
+          infrastructure for managing theme complexity at scale.
+          Evaluates how theming architecture intersects with
+          accessibility requirements and platform capabilities.
+        principal: >
+          Shapes the company's long-term approach to visual
+          customization and brand flexibility through the design system.
+          Drives the theming architecture as the organization expands
+          to new brands, markets, and user-preference requirements,
+          ensuring the system scales without exponential complexity.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can generate theme variations, suggest accessible color
+          mappings, and detect theming inconsistencies across components.
+          However, designing a theming architecture that balances brand
+          expression, accessibility, and technical maintainability
+          requires deep systems thinking and understanding of how
+          themes will evolve with the organization's brand strategy.
+
+    - id: contribution_models
+      name: "Contribution Models & Community Building"
+      category: leadership
+      description: >
+        Designing and nurturing the processes through which product
+        teams contribute to the design system, including contribution
+        guidelines, review workflows, community engagement, and
+        building the culture of shared ownership that sustains a
+        design system over time.
+      proficiency:
+        junior: >
+          Contributes to the design system following established
+          guidelines. Participates in design-system community activities
+          (office hours, Slack channels, show-and-tells) and provides
+          feedback on system components as a consumer.
+        mid: >
+          Supports the contribution process by reviewing submissions,
+          helping contributors meet quality standards, and communicating
+          system decisions. Facilitates community engagement activities
+          and builds relationships with product teams to understand
+          their needs.
+        senior: >
+          Designs the contribution model for the design system,
+          including submission guidelines, review criteria, and the
+          workflow from proposal through implementation to release.
+          Builds a community of practice around the design system
+          through regular engagement, training, and recognition.
+        staff: >
+          Establishes the organizational contribution strategy,
+          defining the federated, centralized, or hybrid model that
+          matches the company's culture and scale. Creates incentive
+          structures, training programs, and organizational processes
+          that make contribution sustainable and rewarding for
+          product teams.
+        principal: >
+          Shapes the design system's community and contribution culture
+          as a strategic organizational asset. Drives the long-term
+          sustainability model for the system, ensuring it has the
+          organizational support, community engagement, and contribution
+          pipeline needed to thrive as the company scales.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Contribution models and community building are fundamentally
+          about human relationships, organizational culture, and
+          incentive design. AI can assist with automating review
+          checklists and tracking contributions, but inspiring
+          participation, building trust, and designing governance
+          that earns buy-in across teams is irreplaceably human work.
