@@ -304,6 +304,53 @@ function findResources(skillName){
   }
   return matches.slice(0,4);
 }
+// Universal 4-level assessment labels, customized per function
+const ASSESS_LEVELS={
+  engineering:[
+    {id:'junior',label:'Learning (0-2 yrs)',desc:'Following patterns and guidance'},
+    {id:'mid',label:'Independent (2-5 yrs)',desc:'Delivering without hand-holding'},
+    {id:'senior',label:'Leading (5-8 yrs)',desc:'Making trade-offs and mentoring'},
+    {id:'staff',label:'Shaping (8+ yrs)',desc:'Setting direction across teams'},
+  ],
+  product:[
+    {id:'junior',label:'Learning (0-2 yrs)',desc:'Supporting a senior PM'},
+    {id:'mid',label:'Owning (2-5 yrs)',desc:'Driving a product area independently'},
+    {id:'senior',label:'Leading (5-8 yrs)',desc:'Defining strategy and mentoring'},
+    {id:'staff',label:'Shaping (8+ yrs)',desc:'Setting product vision across the org'},
+  ],
+  finance:[
+    {id:'junior',label:'Learning (0-2 yrs)',desc:'Supporting analysis with guidance'},
+    {id:'mid',label:'Independent (2-5 yrs)',desc:'Owning analyses and deliverables'},
+    {id:'senior',label:'Leading (5-8 yrs)',desc:'Managing processes and advising stakeholders'},
+    {id:'staff',label:'Directing (8+ yrs)',desc:'Setting strategy and managing teams'},
+  ],
+  legal:[
+    {id:'junior',label:'Learning (0-2 yrs)',desc:'Drafting and researching with supervision'},
+    {id:'mid',label:'Independent (2-5 yrs)',desc:'Managing matters independently'},
+    {id:'senior',label:'Leading (5-8 yrs)',desc:'Advising on complex issues, mentoring'},
+    {id:'staff',label:'Directing (8+ yrs)',desc:'Setting policy and leading the function'},
+  ],
+  sales:[
+    {id:'junior',label:'Ramping (0-1 yrs)',desc:'Learning the process, building pipeline'},
+    {id:'mid',label:'Hitting quota (1-3 yrs)',desc:'Consistently closing deals'},
+    {id:'senior',label:'Top performer (3-6 yrs)',desc:'Strategic selling, mentoring others'},
+    {id:'staff',label:'Leading (6+ yrs)',desc:'Shaping go-to-market, managing teams'},
+  ],
+  healthcare:[
+    {id:'junior',label:'Learning (0-2 yrs)',desc:'Following protocols with supervision'},
+    {id:'mid',label:'Independent (2-5 yrs)',desc:'Managing workflows independently'},
+    {id:'senior',label:'Leading (5-8 yrs)',desc:'Improving processes and mentoring'},
+    {id:'staff',label:'Directing (8+ yrs)',desc:'Setting standards across the organization'},
+  ],
+  _default:[
+    {id:'junior',label:'Learning (0-2 yrs)',desc:'Building foundations with guidance'},
+    {id:'mid',label:'Independent (2-5 yrs)',desc:'Delivering work autonomously'},
+    {id:'senior',label:'Leading (5-8 yrs)',desc:'Making strategic decisions, mentoring'},
+    {id:'staff',label:'Shaping (8+ yrs)',desc:'Setting direction across the organization'},
+  ]
+};
+function getAssessLevels(funcId){return ASSESS_LEVELS[funcId]||ASSESS_LEVELS._default;}
+
 function actionLabel(r){
   if(r<=.3)return{text:'Invest Here',cls:'ab-invest',tip:'AI struggles with this. This is where your career value lives.'};
   if(r<=.6)return{text:'Use AI as Partner',cls:'ab-partner',tip:'AI helps with parts of this. Learn to combine your judgment with AI speed.'};
@@ -355,10 +402,11 @@ window.wizPickRole=function(fid,rid){
   const f=DATA.functions.find(x=>x.id===fid);
   const r=f.roles.find(x=>x.id===rid);
   wizState={funcId:fid,roleId:rid,func:f,role:r};
-  // Step 2 - levels
+  // Step 2 - use function-aware levels
   $('#wiz-role-name').textContent=r.name+' ('+f.name+')';
-  $('#wiz-levels').innerHTML=r.levels.map(l=>
-    `<button class="level-btn" onclick="wizPickLevel('${l.id}')">${l.name}<br><span style="font-size:.75rem;color:var(--muted)">${l.years} years</span></button>`
+  const aLevels=getAssessLevels(fid);
+  $('#wiz-levels').innerHTML=aLevels.map(l=>
+    `<button class="level-btn" onclick="wizPickLevel('${l.id}')">${l.label}<br><span style="font-size:.75rem;color:var(--muted)">${l.desc}</span></button>`
   ).join('');
   showWizStep(2);
 };
@@ -484,14 +532,14 @@ function renderRole(el,funcId,roleId){
   }
   h+=`</tbody></table></div>`;
 
-  // Self-assessment panel
+  // Self-assessment panel with function-aware levels
+  const aLevels=getAssessLevels(funcId);
   h+=`<div class="assess-panel"><h4>Quick Self-Assessment</h4><p style="font-size:.85rem;color:var(--muted);margin-bottom:.75rem">Rate your current level for each skill. We'll show your gaps and priorities.</p>
   <div id="assess-rows">`;
-  const levels=r.levels.map(l=>l.id);
   for(const s of r.skills){
     h+=`<div class="assess-row"><span class="skill-name">${s.name}</span>
     <select class="assess-select" data-skill="${s.id}" data-rating="${s.ai_impact_rating}">
-      <option value="">-- select --</option>${levels.map(l=>`<option value="${l}">${l}</option>`).join('')}
+      <option value="">-- select --</option>${aLevels.map(l=>`<option value="${l.id}" title="${l.desc}">${l.label}</option>`).join('')}
     </select></div>`;
   }
   h+=`</div><button class="btn btn-primary" style="margin-top:.75rem" onclick="runAssess('${funcId}','${roleId}')">Show My Gaps</button>
@@ -529,7 +577,10 @@ window.toggleSkill=function(tr,funcId,roleId,skillId){
 // ===================== SELF-ASSESS =====================
 window.runAssess=function(funcId,roleId){
   const f=DATA.functions.find(x=>x.id===funcId),r=f.roles.find(x=>x.id===roleId);
-  const levels=r.levels.map(l=>l.id);
+  const aLevels=getAssessLevels(funcId);
+  const levelIds=aLevels.map(l=>l.id);
+  const levelLabel=id=>aLevels.find(l=>l.id===id)?.label||id;
+
   const selects=document.querySelectorAll('#assess-rows .assess-select');
   const assessed=[];
   selects.forEach(sel=>{
@@ -539,21 +590,20 @@ window.runAssess=function(funcId,roleId){
   });
   if(!assessed.length){$('#assess-out').innerHTML='<p style="color:var(--muted)">Select at least one skill level above.</p>';return;}
 
-  // Find highest level selected as target (one above)
-  const maxIdx=Math.max(...assessed.map(a=>levels.indexOf(a.level)));
-  const targetIdx=Math.min(maxIdx+1,levels.length-1);
-  const targetLevel=levels[targetIdx];
+  // Target = one level above the highest selected
+  const maxIdx=Math.max(...assessed.map(a=>levelIds.indexOf(a.level)));
+  const targetIdx=Math.min(maxIdx+1,levelIds.length-1);
+  const targetLevel=levelIds[targetIdx];
 
   const gaps=[],strengths=[];
   assessed.forEach(a=>{
-    const curIdx=levels.indexOf(a.level);
+    const curIdx=levelIds.indexOf(a.level);
     if(curIdx<targetIdx)gaps.push({...a,target:targetLevel,delta:targetIdx-curIdx});
     else strengths.push(a);
   });
-  // Sort gaps: low AI impact first (most career-valuable)
   gaps.sort((a,b)=>a.rating-b.rating);
 
-  let h=`<div class="assess-result"><h5>Gap Analysis (target: ${targetLevel})</h5>`;
+  let h=`<div class="assess-result"><h5>Your Next Step: ${levelLabel(targetLevel)}</h5>`;
   if(gaps.length){
     h+=`<p style="font-size:.85rem;color:var(--muted);margin-bottom:.5rem">Focus on these skills first -- sorted by career value (lowest AI impact = highest priority):</p>`;
     gaps.forEach(g=>{
@@ -561,15 +611,15 @@ window.runAssess=function(funcId,roleId){
       const al=actionLabel(g.rating);
       h+=`<div style="padding:.4rem 0;border-bottom:1px solid var(--border)">
         <strong>${s?.name||g.skillId}</strong> <span class="action-badge ${al.cls}">${al.text}</span>
-        <span style="font-size:.8rem;color:var(--muted);margin-left:.5rem">${g.level} -> ${g.target} (${g.delta} level${g.delta>1?'s':''})</span>
+        <span style="font-size:.8rem;color:var(--muted);margin-left:.5rem">${levelLabel(g.level)} &rarr; ${levelLabel(g.target)}</span>
       </div>`;
     });
   }
   if(strengths.length){
-    h+=`<p style="margin-top:.75rem;font-size:.85rem;color:var(--green)"><strong>${strengths.length} skill${strengths.length>1?'s':''} already at or above target.</strong></p>`;
+    h+=`<p style="margin-top:.75rem;font-size:.85rem;color:var(--green)"><strong>${strengths.length} skill${strengths.length>1?'s':''} already at or above target level.</strong></p>`;
   }
   const unassessed=r.skills.length-assessed.length;
-  if(unassessed>0)h+=`<p style="font-size:.82rem;color:var(--muted);margin-top:.4rem">${unassessed} skill${unassessed>1?'s':''} not assessed yet.</p>`;
+  if(unassessed>0)h+=`<p style="font-size:.82rem;color:var(--muted);margin-top:.4rem">${unassessed} skill${unassessed>1?'s':''} not yet assessed.</p>`;
   h+='</div>';
   $('#assess-out').innerHTML=h;
 };
