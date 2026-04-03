@@ -1,0 +1,630 @@
+role:
+  id: ai_agent_developer
+  function: ai_and_agents
+  name: "AI Agent Developer"
+  also_known_as:
+    - "Agent Engineer"
+    - "AI Systems Developer"
+    - "Autonomous Systems Engineer"
+    - "AI Orchestration Engineer"
+  description: >
+    Designs, builds, and maintains autonomous AI agent systems that use tools,
+    make decisions, and complete multi-step tasks. Combines software engineering
+    with deep understanding of LLM capabilities to create reliable agent
+    architectures including tool chains, memory systems, planning loops, and
+    human-in-the-loop safeguards.
+  ai_impact:
+    level: "moderate"
+    summary: >
+      Agents can help build agents — generating scaffolding code, suggesting
+      tool integrations, and prototyping basic workflows. However, designing
+      agent architectures that are reliable, safe, and performant in
+      production requires deep human judgment about failure modes, trust
+      boundaries, and user experience. The gap between a demo agent and a
+      production agent is vast, and bridging it demands engineering rigor,
+      safety thinking, and systems design skills that remain firmly human.
+      As the field matures, the complexity of production agent systems will
+      continue to require skilled human architects.
+    automating:
+      - "Generating boilerplate agent scaffolding and tool registration code"
+      - "Creating basic tool wrappers and API integration code"
+      - "Writing unit tests for individual tool functions"
+      - "Generating documentation for agent capabilities and tool schemas"
+      - "Prototyping simple single-step agent workflows"
+      - "Log analysis and basic debugging of agent trajectories"
+    augmenting:
+      - "Designing multi-step agent planning and execution strategies"
+      - "Debugging complex agent failures and unexpected behavior chains"
+      - "Optimizing agent performance across latency, cost, and quality"
+      - "Designing tool schemas and descriptions for reliable tool use"
+      - "Implementing error recovery and graceful degradation strategies"
+      - "Evaluating agent behavior across diverse scenario distributions"
+    preserving:
+      - "Architectural decisions about trust boundaries and permission models"
+      - "Designing human-in-the-loop interaction patterns and escalation policies"
+      - "Production reliability engineering for non-deterministic systems"
+      - "Cross-team alignment on agent capabilities and safety boundaries"
+      - "Ethical reasoning about agent autonomy and user trust"
+      - "Mentoring teams on responsible agent development practices"
+    last_reviewed: "2026-04"
+    confidence: medium
+    sources:
+      - name: "Anthropic Agent Design Patterns"
+        url: "https://docs.anthropic.com/en/docs/build-with-claude/agent-patterns"
+      - name: "O*NET - Software Developers"
+        url: "https://www.onetonline.org/link/summary/15-1252.00"
+      - name: "Model Context Protocol Specification"
+        url: "https://modelcontextprotocol.io/specification"
+  levels:
+    - id: junior
+      name: "Junior AI Agent Developer"
+      years_experience: "0-1"
+      summary: >
+        Builds simple agent workflows using established frameworks under
+        guidance. Implements tool integrations and basic agent loops following
+        team patterns. Learns agent development practices through
+        experimentation and code review. Tests agent behavior against defined
+        scenarios and documents findings.
+    - id: mid
+      name: "AI Agent Developer"
+      years_experience: "1-3"
+      summary: >
+        Designs and builds multi-step agent systems with tool integration,
+        error handling, and basic memory capabilities. Implements reliable
+        agent workflows for moderate complexity use cases. Writes
+        comprehensive tests and evaluation suites for agent behavior.
+        Contributes to agent architecture discussions and documentation.
+    - id: senior
+      name: "Senior AI Agent Developer"
+      years_experience: "3-5"
+      summary: >
+        Leads the design and delivery of production agent systems with
+        complex tool chains, multi-agent coordination, and robust safety
+        guardrails. Makes sound architectural trade-offs considering
+        reliability, cost, and user trust. Mentors junior developers and
+        establishes agent development best practices for the team.
+    - id: staff
+      name: "Staff AI Agent Developer"
+      years_experience: "5-8"
+      summary: >
+        Sets agent architecture direction across multiple product areas.
+        Designs reusable agent frameworks, shared tool ecosystems, and
+        evaluation infrastructure that raise quality organization-wide.
+        Solves cross-cutting challenges in agent reliability, safety, and
+        observability. Influences product roadmaps based on agent
+        capability assessments.
+    - id: principal
+      name: "Principal AI Agent Developer"
+      years_experience: "8+"
+      summary: >
+        Defines the organization's agent architecture vision and long-term
+        strategy. Drives industry-leading practices in agent reliability,
+        safety, and human-AI collaboration. Navigates executive-level
+        trade-offs between agent autonomy, risk, and business value.
+        Shapes the company's approach to autonomous AI systems.
+  skills:
+    - id: agent_architecture
+      name: "Agent Architecture Design"
+      category: technical
+      description: >
+        Designing agent loops, planning strategies, and execution patterns
+        including ReAct, tree-of-thought, reflection, and multi-stage
+        pipelines that enable agents to complete complex tasks reliably.
+      proficiency:
+        junior: >
+          Understands basic agent loop patterns like observe-think-act.
+          Implements simple single-loop agents using established frameworks
+          such as LangChain or Claude Agent SDK. Follows existing
+          architectural patterns when extending agent capabilities.
+        mid: >
+          Designs agent architectures for moderate complexity tasks with
+          appropriate planning, execution, and reflection stages. Selects
+          between ReAct, chain-of-thought, and structured planning patterns
+          based on task requirements. Implements retry and fallback logic.
+        senior: >
+          Architects production agent systems with sophisticated planning
+          strategies, dynamic tool selection, and adaptive execution paths.
+          Designs agent architectures that balance autonomy with reliability
+          and degrade gracefully under unexpected conditions. Establishes
+          architectural patterns for the team.
+        staff: >
+          Defines agent architecture standards and reference implementations
+          used across the organization. Designs modular agent frameworks
+          that support diverse use cases while maintaining consistent
+          reliability and safety properties. Evaluates emerging agent
+          paradigms for organizational adoption.
+        principal: >
+          Shapes the organization's long-term agent architecture vision,
+          anticipating how advances in model capabilities will change
+          optimal agent designs. Drives the industry understanding of
+          production agent architecture through thought leadership and
+          pattern codification.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can suggest common agent patterns and generate scaffolding,
+          but designing architectures that are reliable under real-world
+          uncertainty, handle failure modes gracefully, and scale to
+          production complexity requires deep human systems thinking.
+
+    - id: tool_integration
+      name: "Tool Integration"
+      category: technical
+      description: >
+        Building and integrating tools for agent use including MCP servers,
+        function calling schemas, API wrappers, and tool ecosystems that
+        enable agents to interact with external systems reliably and safely.
+      proficiency:
+        junior: >
+          Implements tool wrappers for APIs and services following
+          established patterns. Writes clear tool descriptions and parameter
+          schemas. Tests tool integrations with basic input validation and
+          error handling.
+        mid: >
+          Designs tool ecosystems for specific agent use cases with
+          appropriate granularity, error handling, and rate limiting.
+          Implements MCP servers and function calling schemas that models
+          can use reliably. Handles authentication, pagination, and
+          complex API interactions.
+        senior: >
+          Architects tool integration frameworks that support dynamic tool
+          discovery, versioning, and access control. Designs tool
+          descriptions that optimize model tool selection accuracy. Leads
+          integration of complex enterprise systems as agent tools.
+        staff: >
+          Defines organization-wide tool integration standards including
+          MCP server conventions, tool registries, and shared infrastructure.
+          Designs tool ecosystems that multiple agent systems can leverage
+          with consistent reliability and security properties.
+        principal: >
+          Shapes the organization's tool integration strategy and
+          contributes to industry standards for agent-tool interoperability.
+          Evaluates emerging tool integration paradigms and drives
+          investment decisions in shared tool infrastructure.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can generate tool wrappers and API integration code effectively,
+          but designing tool ecosystems with appropriate granularity, security
+          boundaries, and descriptions that enable reliable model tool
+          selection requires human architectural judgment.
+
+    - id: memory_systems
+      name: "Agent Memory Systems"
+      category: technical
+      description: >
+        Implementing short-term, long-term, and episodic memory for agents
+        including conversation state management, knowledge persistence,
+        experience replay, and retrieval strategies that enable agents to
+        maintain context across interactions.
+      proficiency:
+        junior: >
+          Implements basic conversation memory using context window
+          management and message history truncation. Understands the
+          difference between short-term and long-term memory patterns.
+          Uses existing memory frameworks as directed.
+        mid: >
+          Designs memory systems that combine in-context memory with
+          persistent storage for specific agent applications. Implements
+          retrieval strategies for injecting relevant past experience into
+          agent context. Handles memory serialization and deserialization.
+        senior: >
+          Architects multi-tier memory systems combining working memory,
+          episodic memory, and semantic memory for complex agent
+          applications. Designs memory retrieval strategies that balance
+          relevance with context budget. Implements memory consolidation
+          and forgetting mechanisms.
+        staff: >
+          Defines organization-wide memory architecture patterns and shared
+          memory infrastructure. Designs memory systems that support
+          cross-agent knowledge sharing while maintaining appropriate
+          isolation boundaries. Evaluates emerging memory paradigms.
+        principal: >
+          Shapes the organization's approach to agent knowledge management
+          and learning. Drives research-informed memory architecture
+          decisions and evaluates how advances in long-context models and
+          retrieval systems change optimal memory design patterns.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can implement standard memory patterns and retrieval pipelines,
+          but designing memory architectures that balance relevance,
+          freshness, privacy, and computational cost for specific agent
+          use cases requires human judgment about what to remember and why.
+
+    - id: orchestration
+      name: "Multi-Agent Orchestration"
+      category: technical
+      description: >
+        Coordinating multiple agents through delegation, supervisor patterns,
+        parallel execution, and consensus mechanisms to solve complex tasks
+        that exceed single-agent capabilities.
+      proficiency:
+        junior: >
+          Understands basic multi-agent concepts like delegation and
+          supervisor patterns. Implements simple two-agent workflows where
+          one agent delegates subtasks to another. Follows established
+          orchestration patterns in the codebase.
+        mid: >
+          Designs multi-agent systems with clear role separation, delegation
+          protocols, and result aggregation strategies. Implements parallel
+          agent execution with proper synchronization and error handling.
+          Monitors and debugs inter-agent communication.
+        senior: >
+          Architects complex multi-agent orchestration systems with dynamic
+          delegation, load balancing, and consensus mechanisms. Designs
+          agent hierarchies that scale to diverse task types while
+          maintaining observability and control. Implements inter-agent
+          communication protocols.
+        staff: >
+          Defines organization-wide multi-agent orchestration patterns and
+          shared coordination infrastructure. Designs orchestration
+          frameworks that support diverse multi-agent topologies while
+          ensuring consistent reliability and safety guarantees.
+        principal: >
+          Shapes the organization's strategy for multi-agent systems,
+          evaluating when multi-agent approaches outperform single-agent
+          solutions. Drives the long-term vision for agent collaboration
+          architectures and their implications for system reliability.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can generate orchestration code and suggest common patterns,
+          but designing multi-agent systems with appropriate trust
+          boundaries, failure handling, and coordination mechanisms that
+          work reliably at scale requires deep human systems design
+          expertise.
+
+    - id: reliability_engineering
+      name: "Agent Reliability Engineering"
+      category: technical
+      description: >
+        Implementing error handling, retry strategies, graceful degradation,
+        sandboxing, and fault tolerance mechanisms that ensure agents operate
+        reliably in production environments with non-deterministic behavior.
+      proficiency:
+        junior: >
+          Implements basic error handling and retry logic for agent
+          operations. Understands common agent failure modes like infinite
+          loops, hallucinated tool calls, and context overflow. Follows
+          established reliability patterns in the codebase.
+        mid: >
+          Designs comprehensive error handling strategies for agent systems
+          including circuit breakers, timeout management, and fallback
+          behaviors. Implements sandboxing for agent actions and validates
+          agent outputs before executing side effects.
+        senior: >
+          Architects reliability frameworks for production agent systems
+          including graceful degradation paths, human escalation triggers,
+          and self-healing mechanisms. Designs reliability testing suites
+          including chaos testing for agent systems. Leads incident
+          response for agent failures.
+        staff: >
+          Defines organization-wide agent reliability standards and shared
+          reliability infrastructure. Establishes SLOs for agent systems
+          that account for non-deterministic behavior. Drives adoption of
+          reliability patterns across teams building agent applications.
+        principal: >
+          Shapes the organization's approach to reliability for
+          non-deterministic AI systems. Drives the industry understanding
+          of production agent reliability through novel approaches to
+          fault tolerance, monitoring, and recovery in autonomous systems.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          Production reliability for non-deterministic systems presents
+          novel challenges that require creative human engineering. AI can
+          identify common failure patterns, but designing reliability
+          strategies for systems whose behavior is inherently unpredictable
+          requires deep human expertise in both software engineering and
+          AI system behavior.
+
+    - id: safety_guardrails
+      name: "Safety Guardrails & Permissions"
+      category: domain
+      description: >
+        Implementing permission systems, human-in-the-loop checkpoints,
+        action validation, and safety boundaries that ensure agents operate
+        within intended scope and do not take harmful or unauthorized actions.
+      proficiency:
+        junior: >
+          Implements basic permission checks and action validation for
+          agent operations. Understands the importance of human-in-the-loop
+          patterns and implements simple approval workflows. Follows
+          established safety guidelines for agent behavior.
+        mid: >
+          Designs permission models for agent systems with appropriate
+          granularity and default-deny policies. Implements human-in-the-loop
+          checkpoints at high-risk decision points. Builds action validation
+          pipelines that prevent unintended side effects.
+        senior: >
+          Architects comprehensive safety frameworks for production agent
+          systems including multi-level permission models, risk-based
+          escalation policies, and automated safety monitoring. Designs
+          safety testing suites including adversarial scenarios. Leads
+          safety reviews for agent deployments.
+        staff: >
+          Defines organization-wide agent safety standards and shared
+          safety infrastructure. Designs safety frameworks that balance
+          agent capability with risk management across product areas.
+          Influences policy decisions about agent autonomy levels and
+          deployment approval processes.
+        principal: >
+          Shapes the organization's agent safety philosophy at the
+          executive level. Drives responsible agent deployment practices
+          and contributes to industry standards for autonomous AI system
+          safety. Navigates the tension between agent capability and
+          organizational risk tolerance.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          Safety guardrail design requires anticipating adversarial
+          scenarios, reasoning about trust boundaries, and making ethical
+          judgments about appropriate agent autonomy. These are fundamentally
+          human responsibilities that cannot be delegated to the systems
+          being constrained.
+
+    - id: evaluation_testing
+      name: "Agent Evaluation & Testing"
+      category: analytical
+      description: >
+        End-to-end agent evaluation including trajectory analysis, task
+        completion assessment, regression testing, and benchmarking agent
+        performance across diverse scenarios and difficulty levels.
+      proficiency:
+        junior: >
+          Runs agent evaluation suites and records results systematically.
+          Writes test cases for specific agent scenarios following
+          established patterns. Understands the difference between
+          deterministic tests and statistical evaluations for agent behavior.
+        mid: >
+          Designs evaluation suites for agent systems covering happy paths,
+          edge cases, and failure scenarios. Implements trajectory analysis
+          tools that assess not just outcomes but agent reasoning quality.
+          Runs statistical evaluations with appropriate sample sizes.
+        senior: >
+          Architects comprehensive agent evaluation frameworks combining
+          automated benchmarks, human evaluation, and production monitoring.
+          Designs evaluation strategies that capture agent reliability,
+          efficiency, and safety across diverse task distributions.
+          Establishes evaluation standards for the team.
+        staff: >
+          Defines organization-wide agent evaluation methodology and shared
+          evaluation infrastructure. Develops novel evaluation approaches
+          for complex multi-agent systems and long-horizon tasks. Ensures
+          evaluation practices keep pace with expanding agent capabilities.
+        principal: >
+          Shapes the organization's approach to agent quality assurance
+          and drives development of evaluation methodologies that provide
+          deployment confidence for high-stakes agent applications.
+          Influences industry standards for agent evaluation and benchmarking.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can execute evaluation suites and compute metrics at scale,
+          but designing evaluations that meaningfully capture agent quality
+          for novel use cases, identifying what failure modes to test for,
+          and interpreting results in business context require human
+          judgment about quality and risk.
+
+    - id: llm_integration
+      name: "LLM API Integration"
+      category: technical
+      description: >
+        Working with model APIs including structured outputs, streaming,
+        token management, multi-model routing, and provider abstraction
+        layers that enable agents to leverage language models effectively
+        and efficiently.
+      proficiency:
+        junior: >
+          Integrates with model APIs using established SDKs and wrappers.
+          Understands basic API concepts like streaming, token limits, and
+          rate limiting. Implements simple model calls with appropriate
+          error handling and retry logic.
+        mid: >
+          Designs model integration layers with provider abstraction,
+          structured output extraction, and efficient streaming handling.
+          Implements token management strategies including context window
+          optimization and cost tracking. Handles multi-model workflows.
+        senior: >
+          Architects model integration infrastructure supporting multiple
+          providers, automatic fallback, and intelligent routing based on
+          task characteristics. Designs abstraction layers that enable
+          seamless model swapping and version upgrades. Optimizes for
+          latency, cost, and quality simultaneously.
+        staff: >
+          Defines organization-wide model integration standards and shared
+          infrastructure. Designs model abstraction layers that support
+          diverse use cases while maintaining consistent reliability and
+          observability. Drives model provider evaluation and selection
+          processes.
+        principal: >
+          Shapes the organization's model integration strategy and vendor
+          relationships. Evaluates emerging model capabilities and API
+          paradigms for organizational adoption. Drives architectural
+          decisions about model infrastructure investment versus
+          provider dependency.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can generate API integration code and suggest common patterns,
+          but designing model integration architectures that handle provider
+          differences, optimize across multiple dimensions, and evolve
+          gracefully as the model landscape changes requires human
+          architectural judgment.
+
+    - id: state_management
+      name: "Agent State Management"
+      category: technical
+      description: >
+        Managing conversation state, checkpoint and resume capabilities,
+        persistence across sessions, and state recovery mechanisms that
+        enable agents to handle long-running tasks and survive interruptions.
+      proficiency:
+        junior: >
+          Implements basic state persistence for agent conversations using
+          established serialization patterns. Understands the importance
+          of checkpointing for long-running agent tasks. Handles simple
+          state recovery scenarios.
+        mid: >
+          Designs state management systems for specific agent applications
+          with appropriate serialization, storage, and retrieval strategies.
+          Implements checkpoint and resume capabilities that handle
+          interruptions gracefully. Manages state across distributed
+          agent components.
+        senior: >
+          Architects state management infrastructure for production agent
+          systems supporting concurrent users, long-running tasks, and
+          cross-session continuity. Designs state schemas that evolve
+          gracefully as agent capabilities change. Implements state
+          migration and cleanup strategies.
+        staff: >
+          Defines organization-wide agent state management patterns and
+          shared persistence infrastructure. Designs state architectures
+          that support diverse agent applications while maintaining
+          consistent durability and performance guarantees.
+        principal: >
+          Shapes the organization's approach to agent persistence and
+          continuity. Evaluates how emerging infrastructure capabilities
+          change optimal state management patterns and drives investment
+          decisions in shared state infrastructure.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can implement standard state management patterns, but designing
+          state architectures that handle the unique challenges of
+          non-deterministic agent systems — including state divergence,
+          recovery from partial failures, and schema evolution — requires
+          human systems engineering expertise.
+
+    - id: debugging_observability
+      name: "Agent Debugging & Observability"
+      category: technical
+      description: >
+        Tracing agent decisions, logging tool calls, debugging failures,
+        and building observability systems that make non-deterministic agent
+        behavior understandable and diagnosable in development and production.
+      proficiency:
+        junior: >
+          Uses existing debugging tools and logs to investigate agent
+          failures. Understands agent execution traces and can identify
+          where an agent diverged from expected behavior. Documents bugs
+          with clear reproduction steps and trace information.
+        mid: >
+          Implements structured logging and tracing for agent systems
+          that capture decision points, tool calls, and reasoning chains.
+          Builds dashboards that surface agent health metrics and failure
+          patterns. Debugs moderate complexity agent failures independently.
+        senior: >
+          Architects observability systems for production agent deployments
+          including distributed tracing, decision replay, and automated
+          anomaly detection. Designs debugging workflows for complex
+          multi-agent failures. Leads incident response and post-mortem
+          analysis for agent systems.
+        staff: >
+          Defines organization-wide agent observability standards and
+          shared debugging infrastructure. Designs observability frameworks
+          that make non-deterministic agent behavior tractable at scale.
+          Establishes agent reliability metrics and monitoring practices.
+        principal: >
+          Shapes the organization's approach to understanding and debugging
+          autonomous AI systems. Drives development of novel observability
+          techniques for agent systems and influences industry practices
+          for AI system transparency and interpretability.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can assist with log analysis and pattern recognition in agent
+          traces, but debugging novel agent failures requires creative
+          hypothesis generation and deep understanding of the interaction
+          between model behavior, tool execution, and system state that
+          remains a human-driven activity.
+
+    - id: prompt_engineering
+      name: "Agent Prompt Engineering"
+      category: technical
+      description: >
+        Designing system prompts for agent behavior, tool descriptions,
+        few-shot examples, and instruction hierarchies that shape how
+        agents plan, reason, and interact with tools and users.
+      proficiency:
+        junior: >
+          Writes basic agent system prompts and tool descriptions following
+          established templates. Understands how prompt design affects agent
+          behavior and tool selection. Iterates on prompts based on observed
+          agent trajectories.
+        mid: >
+          Designs comprehensive agent system prompts including behavioral
+          guidelines, tool usage instructions, and safety boundaries.
+          Crafts tool descriptions that enable reliable tool selection and
+          parameter extraction. Implements few-shot examples for complex
+          tool usage patterns.
+        senior: >
+          Architects prompt systems for complex agent applications spanning
+          multiple tools and interaction modes. Designs prompt structures
+          that produce consistent agent behavior across diverse inputs
+          while remaining robust to model updates. Establishes prompt
+          standards for agent development.
+        staff: >
+          Defines organization-wide agent prompt patterns and templates.
+          Develops novel prompt techniques for challenging agent behaviors
+          like planning, self-correction, and appropriate escalation.
+          Mentors teams on effective agent prompt engineering practices.
+        principal: >
+          Shapes the organization's understanding of how prompt design
+          drives agent behavior at scale. Drives research-informed prompt
+          strategies and evaluates how model capability advances change
+          optimal agent prompting approaches.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can suggest prompt variations and generate initial drafts,
+          but designing agent prompts that produce reliable, safe behavior
+          across diverse scenarios requires deep understanding of the
+          relationship between prompt structure and agent behavior that
+          comes from extensive human experimentation.
+
+    - id: user_experience
+      name: "Human-Agent Interaction Design"
+      category: communication
+      description: >
+        Designing human-agent interaction patterns, feedback loops, trust
+        calibration mechanisms, and user experience flows that make agent
+        behavior transparent, controllable, and trustworthy for end users.
+      proficiency:
+        junior: >
+          Implements basic user-facing agent interactions including progress
+          indicators, confirmation dialogs, and error messages. Understands
+          the importance of user trust and transparency in agent interactions.
+          Follows established interaction patterns.
+        mid: >
+          Designs human-agent interaction flows for specific applications
+          including appropriate transparency about agent reasoning, clear
+          permission prompts, and informative progress updates. Implements
+          feedback mechanisms that help users calibrate trust in agent
+          outputs.
+        senior: >
+          Architects human-agent interaction frameworks that balance
+          automation efficiency with user control and understanding.
+          Designs interaction patterns that build appropriate trust through
+          progressive disclosure, uncertainty communication, and graceful
+          failure handling. Conducts user research on agent interactions.
+        staff: >
+          Defines organization-wide standards for human-agent interaction
+          design. Develops interaction patterns that scale across diverse
+          agent applications while maintaining consistent user trust and
+          control principles. Influences product strategy with insights
+          about human-agent collaboration dynamics.
+        principal: >
+          Shapes the organization's philosophy of human-AI interaction
+          and trust. Drives industry understanding of effective human-agent
+          collaboration patterns. Advises leadership on user experience
+          implications of increasing agent autonomy.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          Designing human-agent interactions that build appropriate trust,
+          provide meaningful control, and handle failure gracefully requires
+          deep empathy for user psychology and contextual judgment about
+          when automation helps versus hinders. These remain fundamentally
+          human design challenges.

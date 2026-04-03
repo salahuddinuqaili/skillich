@@ -1,0 +1,481 @@
+role:
+  id: electrician
+  function: trades
+  name: "Electrician"
+  also_known_as:
+    - "Electrical Technician"
+    - "Journeyman Electrician"
+    - "Wireman"
+    - "Electrical Installer"
+  description: >
+    Installs, maintains, and repairs electrical systems in residential,
+    commercial, and industrial settings. Reads blueprints, runs conduit and
+    wiring, installs panels and fixtures, troubleshoots faults, and ensures all
+    work meets the National Electrical Code and local regulations. Increasingly
+    works with smart building systems, solar installations, and EV charging
+    infrastructure.
+  ai_impact:
+    level: "low"
+    summary: >
+      AI has minimal impact on the core work of electricians. The physical
+      nature of electrical installation and repair — pulling wire through
+      walls, bending conduit, wiring panels, troubleshooting live circuits
+      in confined spaces — is fundamentally impossible for AI to automate.
+      AI tools are augmenting peripheral tasks like estimating, code lookup,
+      and diagnostic analysis, but these represent a small fraction of the
+      job. The growing demand for electrical work driven by EV charging,
+      solar installations, building electrification, and data center
+      construction further strengthens this trade's resilience. Electricians
+      who adopt AI-assisted estimating and diagnostic tools will gain
+      efficiency, but the hands-on craft remains irreducibly human.
+    automating:
+      - "Material quantity takeoffs from digital blueprints"
+      - "Standard permit application form filling"
+      - "Basic load calculation for simple residential circuits"
+      - "Inventory tracking and reorder point alerts"
+      - "Scheduling and dispatching optimization"
+    augmenting:
+      - "Fault diagnosis using thermal imaging and pattern recognition"
+      - "NEC code lookup and compliance checking against plans"
+      - "Job cost estimation and competitive bid preparation"
+      - "Energy audit analysis and efficiency recommendations"
+      - "Smart building system configuration and programming"
+      - "Solar PV system design and production modeling"
+    preserving:
+      - "Physical wire pulling, conduit bending, and panel termination"
+      - "On-site judgment about routing, load balancing, and safety"
+      - "Troubleshooting live electrical systems with meters and experience"
+      - "Code compliance interpretation for unusual or complex installations"
+      - "Apprentice training and hands-on mentorship"
+      - "Customer trust-building and on-site communication"
+    last_reviewed: "2026-04"
+    confidence: medium
+    sources:
+      - name: "O*NET - Electricians"
+        url: "https://www.onetonline.org/link/summary/47-2111.00"
+      - name: "Bureau of Labor Statistics - Electricians"
+        url: "https://www.bls.gov/ooh/construction-and-extraction/electricians.htm"
+      - name: "McKinsey - The Economic Potential of Generative AI"
+        url: "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier"
+  levels:
+    - id: apprentice
+      name: "Apprentice Electrician"
+      years_experience: "0-4"
+      summary: >
+        Works under the supervision of a journeyman or master electrician,
+        learning fundamental skills through a combination of classroom
+        instruction and on-the-job training. Assists with installations,
+        learns to read blueprints, develops tool proficiency, and builds
+        foundational knowledge of the National Electrical Code. Progresses
+        through increasingly complex tasks as competence grows.
+    - id: journeyman
+      name: "Journeyman Electrician"
+      years_experience: "4-8"
+      summary: >
+        Licensed electrician who works independently on residential,
+        commercial, or industrial projects. Reads and interprets blueprints,
+        plans and executes installations, troubleshoots faults, and ensures
+        code compliance. Supervises apprentices and coordinates with other
+        trades on job sites. Handles a full range of electrical work without
+        direct supervision.
+    - id: master
+      name: "Master Electrician"
+      years_experience: "8-15"
+      summary: >
+        Holds a master electrician license demonstrating advanced expertise
+        in electrical theory, code knowledge, and practical skill. Designs
+        electrical systems, pulls permits, leads complex projects, and
+        supervises multiple journeymen and apprentices. Specializes in
+        areas such as industrial controls, renewable energy, or high-voltage
+        systems. Serves as the technical authority on job sites.
+    - id: contractor
+      name: "Electrical Contractor"
+      years_experience: "15+"
+      summary: >
+        Owns or operates an electrical contracting business, combining
+        master-level technical expertise with business acumen. Manages
+        estimating, bidding, project management, crew scheduling, and
+        customer relationships. Ensures profitability while maintaining
+        quality and safety standards. Mentors the next generation of
+        electricians and shapes the trade's future in the community.
+  skills:
+    - id: electrical_installation
+      name: "Electrical Installation"
+      category: technical
+      description: >
+        Running conduit, pulling wire, installing panels, outlets, switches,
+        and fixtures in residential, commercial, and industrial settings.
+        Includes bending conduit, making terminations, and ensuring neat,
+        code-compliant workmanship.
+      proficiency:
+        apprentice: >
+          Assists with basic installations under direct supervision. Learns
+          to strip and terminate wires, install boxes and covers, and pull
+          wire through conduit. Develops proficiency with hand and power tools.
+        journeyman: >
+          Independently plans and executes installations from blueprints.
+          Bends conduit accurately, pulls wire through complex runs, installs
+          panels with proper terminations, and ensures all work meets code.
+          Works efficiently and produces clean, professional results.
+        master: >
+          Handles the most complex installations including switchgear,
+          industrial motor controls, and high-voltage systems. Designs conduit
+          routing and wire sizing for optimal performance. Sets quality
+          standards for the crew and troubleshoots installation challenges.
+        contractor: >
+          Oversees installation quality across multiple concurrent projects
+          and crews. Establishes company standards for workmanship, material
+          selection, and installation methods. Evaluates and adopts new
+          products and techniques that improve efficiency and quality.
+      ai_impact:
+        rating: 0.05
+        detail: >
+          Physical electrical installation is almost entirely immune to AI
+          automation. The hands-on work of pulling wire, bending conduit,
+          and making terminations in real-world building conditions requires
+          human dexterity and spatial reasoning that no AI system can replicate.
+
+    - id: blueprint_reading
+      name: "Blueprint & Schematic Reading"
+      category: technical
+      description: >
+        Interpreting electrical drawings, schematics, one-line diagrams, and
+        specifications to understand system design, circuit layouts, panel
+        schedules, and equipment requirements before and during installation.
+      proficiency:
+        apprentice: >
+          Reads simple residential wiring diagrams and identifies basic
+          symbols for outlets, switches, and fixtures. Follows along with
+          journeymen to understand how prints translate to physical work.
+        journeyman: >
+          Reads and interprets full commercial and industrial electrical
+          drawings including panel schedules, riser diagrams, and control
+          schematics. Identifies discrepancies between prints and field
+          conditions and raises RFIs when needed.
+        master: >
+          Reviews and marks up complex electrical designs, identifying
+          potential issues before construction begins. Interprets
+          specifications, submittals, and change orders. Creates as-built
+          drawings that accurately reflect installed conditions.
+        contractor: >
+          Reviews architectural and engineering drawings for bidding
+          purposes, accurately scoping the electrical work required.
+          Coordinates with engineers on design-build projects and ensures
+          drawings support efficient installation sequences.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can assist with digitizing and searching blueprints, extracting
+          quantities, and cross-referencing specifications. However,
+          interpreting how drawings translate to real-world installation
+          conditions and identifying constructability issues requires
+          experienced trade judgment.
+
+    - id: code_compliance
+      name: "Electrical Code Compliance"
+      category: regulatory
+      description: >
+        Knowledge of the National Electrical Code (NEC), local amendments,
+        and jurisdictional requirements. Includes understanding permit
+        processes, preparing for inspections, and ensuring all work meets
+        current code requirements for safety and compliance.
+      proficiency:
+        apprentice: >
+          Learns basic NEC requirements for wire sizing, box fill, grounding,
+          and circuit protection. Understands why code compliance matters for
+          safety and follows journeyman guidance on code-related decisions.
+        journeyman: >
+          Applies NEC requirements confidently across residential and
+          commercial work. Sizes conductors, selects overcurrent protection,
+          calculates box fill, and ensures proper grounding and bonding.
+          Prepares work to pass inspection on the first visit.
+        master: >
+          Has deep knowledge of the NEC including complex provisions for
+          hazardous locations, healthcare facilities, and industrial
+          applications. Interprets ambiguous code sections, applies for
+          variances when appropriate, and serves as the code authority for
+          the team.
+        contractor: >
+          Stays current with code cycle changes and local amendments.
+          Maintains relationships with inspectors and code officials.
+          Ensures company-wide code compliance through training programs
+          and quality control processes. Anticipates how upcoming code
+          changes will affect business operations.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI tools can quickly look up code sections and check basic
+          compliance rules against plans. However, interpreting code intent
+          for unusual installations, navigating local amendments, and
+          understanding how inspectors apply requirements in practice
+          requires experienced human judgment.
+
+    - id: troubleshooting
+      name: "Electrical Troubleshooting"
+      category: analytical
+      description: >
+        Diagnosing electrical faults in existing systems using multimeters,
+        clamp meters, megohmmeters, circuit tracers, thermal cameras, and
+        systematic logical reasoning combined with hands-on experience.
+      proficiency:
+        apprentice: >
+          Uses a multimeter to measure voltage, current, and resistance
+          under supervision. Learns systematic troubleshooting approaches
+          and begins to recognize common fault patterns like open neutrals
+          and ground faults.
+        journeyman: >
+          Diagnoses a wide range of electrical faults independently using
+          appropriate test instruments. Traces circuits through complex
+          systems, identifies intermittent problems, and repairs faults
+          efficiently. Documents findings and corrective actions clearly.
+        master: >
+          Handles the most challenging diagnostic situations including
+          power quality issues, harmonics, motor control faults, and
+          intermittent failures in complex industrial systems. Mentors
+          others in systematic troubleshooting methodology and root cause
+          analysis.
+        contractor: >
+          Manages diagnostic service operations, ensuring technicians have
+          the right tools and training. Handles escalated customer issues
+          where previous troubleshooting has failed. Uses diagnostic data
+          to identify recurring problems and recommend system upgrades.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI-powered diagnostic tools can analyze thermal images, suggest
+          probable causes from symptom patterns, and reference known issues.
+          However, hands-on fault tracing in real wiring systems, interpreting
+          ambiguous meter readings, and safely working on energized equipment
+          remain firmly human skills.
+
+    - id: safety_practices
+      name: "Electrical Safety Practices"
+      category: regulatory
+      description: >
+        Lockout/tagout procedures, personal protective equipment selection
+        and use, arc flash awareness, OSHA compliance, confined space
+        protocols, and maintaining a safety-first culture on job sites.
+      proficiency:
+        apprentice: >
+          Learns and follows basic safety procedures including PPE
+          requirements, lockout/tagout steps, and ladder safety. Recognizes
+          common electrical hazards and knows when to ask for help before
+          proceeding.
+        journeyman: >
+          Performs lockout/tagout independently and correctly every time.
+          Selects appropriate PPE based on arc flash hazard analysis. Identifies
+          safety hazards proactively and corrects them. Maintains a clean,
+          organized work area that minimizes risk.
+        master: >
+          Develops and enforces safety plans for complex projects. Conducts
+          arc flash studies, creates equipment labeling programs, and trains
+          crews on safe work practices. Investigates incidents and implements
+          corrective measures to prevent recurrence.
+        contractor: >
+          Establishes company safety culture, programs, and policies. Manages
+          OSHA compliance documentation, insurance requirements, and safety
+          training programs. Holds crews accountable for safety performance
+          and leads by example.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          AI can help with safety documentation, training material creation,
+          and incident pattern analysis. But the physical practices of
+          lockout/tagout, PPE use, and real-time hazard recognition on a live
+          job site are entirely human responsibilities that cannot be delegated
+          to AI.
+
+    - id: smart_building_systems
+      name: "Smart Building Systems"
+      category: technical
+      description: >
+        Installing and configuring home automation, building management
+        systems (BMS), IoT devices, networked lighting controls, and
+        integrated access and security systems that combine electrical
+        and data infrastructure.
+      proficiency:
+        apprentice: >
+          Assists with running low-voltage cabling and mounting smart
+          devices. Learns the basics of network wiring, device addressing,
+          and system terminology. Follows instructions for device placement
+          and connection.
+        journeyman: >
+          Installs and configures smart switches, sensors, controllers, and
+          networked lighting systems. Runs structured cabling to support
+          building automation. Troubleshoots connectivity and integration
+          issues between devices and control systems.
+        master: >
+          Designs and commissions integrated smart building systems spanning
+          lighting, HVAC, security, and energy management. Programs
+          controllers and sequences of operation. Ensures interoperability
+          between vendors and protocols such as BACnet and KNX.
+        contractor: >
+          Positions the company for smart building opportunities by investing
+          in training and partnerships with technology vendors. Advises
+          building owners on system selection, lifecycle costs, and
+          integration strategies. Manages smart building projects from
+          design through commissioning.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI assists with system configuration, energy optimization
+          algorithms, and predictive maintenance scheduling for building
+          automation. However, the physical installation of devices and
+          cabling, on-site commissioning, and troubleshooting integration
+          issues require hands-on human skill.
+
+    - id: renewable_energy
+      name: "Renewable Energy Systems"
+      category: technical
+      description: >
+        Installing solar photovoltaic systems, battery energy storage,
+        EV charging stations, and related electrical infrastructure.
+        Includes system design basics, inverter configuration, utility
+        interconnection, and compliance with NEC Article 690/694/706.
+      proficiency:
+        apprentice: >
+          Assists with solar panel mounting, conduit runs, and equipment
+          placement under supervision. Learns the components of a PV system
+          and basic safety requirements for working with DC circuits and
+          rooftop installations.
+        journeyman: >
+          Installs complete residential and small commercial solar PV
+          systems including racking, panels, inverters, disconnects, and
+          utility interconnection. Installs Level 2 and DC fast charging
+          stations. Follows NEC requirements for PV and energy storage.
+        master: >
+          Designs solar PV and battery storage systems, performing string
+          sizing, inverter selection, and production estimates. Manages
+          utility interconnection applications and ensures compliance with
+          NEC Articles 690, 694, and 706. Commissions and tests systems.
+        contractor: >
+          Builds a renewable energy division within the contracting business.
+          Manages relationships with solar equipment distributors, utility
+          interconnection departments, and incentive program administrators.
+          Stays current with rapidly evolving technology and incentive
+          landscapes.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          AI tools assist with solar system design, production modeling,
+          and permit package preparation. However, the physical rooftop
+          installation, wiring, and commissioning work is entirely manual,
+          and navigating local utility interconnection requirements demands
+          human expertise and relationship management.
+
+    - id: estimating_bidding
+      name: "Estimating & Bidding"
+      category: analytical
+      description: >
+        Preparing accurate job cost estimates by performing material takeoffs,
+        calculating labor hours, pricing materials, assessing project
+        complexity, and preparing competitive bids that balance winning work
+        with maintaining profitability.
+      proficiency:
+        apprentice: >
+          Assists with material counting and organization for estimates.
+          Learns to identify materials in catalogs and understand basic
+          pricing. Observes the estimating process to build foundational
+          understanding.
+        journeyman: >
+          Prepares estimates for straightforward residential and small
+          commercial jobs. Performs material takeoffs from blueprints,
+          estimates labor hours based on experience, and prices materials
+          from supplier catalogs. Understands markup and overhead basics.
+        master: >
+          Estimates complex commercial and industrial projects with
+          accuracy. Accounts for project-specific variables like site
+          conditions, phasing, overtime, and subcontractor coordination.
+          Reviews estimates prepared by others for accuracy and
+          completeness.
+        contractor: >
+          Manages the full estimating and bidding pipeline. Develops
+          pricing strategies that reflect market conditions, company
+          capacity, and risk. Analyzes win rates and adjusts bidding
+          approach. Uses estimating data to improve future project
+          planning and profitability.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI significantly accelerates material takeoffs from digital plans,
+          price lookups, and historical cost analysis. This is one of the
+          areas where AI has the most impact on electrical work. However,
+          assessing site-specific complexity, labor productivity variables,
+          and competitive positioning still requires experienced human
+          judgment.
+
+    - id: customer_relations
+      name: "Customer Relations"
+      category: interpersonal
+      description: >
+        Communicating effectively with homeowners, building managers,
+        general contractors, and other clients to explain work scope,
+        provide options, manage expectations, and build long-term
+        relationships that generate repeat business and referrals.
+      proficiency:
+        apprentice: >
+          Presents a professional appearance and demeanor on job sites.
+          Learns to communicate respectfully with customers and defers
+          technical questions to the journeyman or master electrician.
+        journeyman: >
+          Explains work scope and findings clearly to customers in
+          non-technical language. Provides options when appropriate and
+          manages expectations about timelines and costs. Handles routine
+          customer interactions independently and professionally.
+        master: >
+          Manages complex customer relationships including dispute
+          resolution, change order negotiations, and technical
+          consultations. Builds trust through expertise and clear
+          communication. Generates repeat business and referrals through
+          consistent quality and professionalism.
+        contractor: >
+          Develops and maintains customer relationships at the business
+          level. Creates marketing and referral programs. Manages online
+          reputation, reviews, and customer feedback. Builds strategic
+          partnerships with general contractors, property managers, and
+          facility owners.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          AI can assist with scheduling communications, generating
+          proposals, and managing CRM data. But the face-to-face trust
+          building, on-site explanations, and relationship management that
+          drive repeat business in the trades are fundamentally human
+          interactions.
+
+    - id: apprentice_mentoring
+      name: "Apprentice Mentoring"
+      category: interpersonal
+      description: >
+        Training and developing the next generation of electricians through
+        hands-on instruction, knowledge transfer, progress assessment, and
+        modeling professional conduct and craftsmanship on the job site.
+      proficiency:
+        apprentice: >
+          Receives mentoring and instruction from journeymen and masters.
+          Asks questions, takes notes, and practices skills repeatedly to
+          build competence. Demonstrates willingness to learn and accepts
+          constructive feedback.
+        journeyman: >
+          Begins mentoring first- and second-year apprentices on basic
+          tasks. Explains the reasoning behind methods, not just the steps.
+          Models safe work practices and professional conduct. Provides
+          patient, constructive feedback on apprentice work.
+        master: >
+          Serves as the primary mentor for apprentices at all levels.
+          Designs progression plans that build skills systematically.
+          Evaluates apprentice readiness for increasingly complex tasks
+          and provides honest assessments of strengths and areas for growth.
+        contractor: >
+          Establishes company apprenticeship programs in partnership with
+          unions or trade schools. Invests in training facilities, materials,
+          and instructor development. Creates a culture where mentorship is
+          valued and expected at every level.
+      ai_impact:
+        rating: 0.05
+        detail: >
+          AI can supplement training with interactive learning modules
+          and code reference tools. However, the hands-on, in-person
+          mentorship that transfers tacit knowledge, judgment, and
+          craftsmanship from experienced electricians to apprentices is
+          an irreplaceable human activity.

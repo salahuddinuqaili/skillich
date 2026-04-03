@@ -25,26 +25,31 @@ role:
       handle bidding, placement, and creative optimization autonomously.
       However, strategic campaign planning, brand positioning, cross-channel
       orchestration, and interpreting nuanced customer behavior remain
-      firmly human-driven competencies.
+      firmly human-driven competencies. Agentic AI can now manage
+      multi-step campaign workflows across platforms, from setup through
+      optimization and reporting, increasing the importance of strategic
+      oversight and cross-channel judgment.
     automating:
       - "Generating ad copy variants and creative assets from briefs"
       - "Automating bid management and budget allocation across platforms"
       - "Building standard performance reports and dashboards"
       - "Scheduling and publishing social media content"
       - "Segmenting audiences based on behavioral and demographic data"
+      - "AI agent-managed campaign optimization across platforms"
     augmenting:
       - "Analyzing campaign performance to identify optimization opportunities"
       - "A/B testing ad creatives, landing pages, and email sequences"
       - "Personalizing content and offers across customer segments"
       - "Forecasting campaign outcomes and budget scenarios"
       - "Competitive analysis and market trend identification"
+      - "Agent-assisted cross-channel campaign orchestration and reporting"
     preserving:
       - "Defining brand strategy and positioning in crowded markets"
       - "Building cross-channel marketing strategies aligned with business goals"
       - "Managing stakeholder relationships and aligning marketing with sales"
       - "Making budget allocation decisions across competing priorities"
       - "Navigating privacy regulations and ethical marketing boundaries"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "HubSpot State of Marketing Report"
@@ -441,7 +446,7 @@ role:
           sets the standard for how the organization communicates with
           its markets.
       ai_impact:
-        rating: 0.75
+        rating: 0.8
         detail: >
           AI tools generate competent marketing copy for ads, emails, and
           social posts at speed. However, crafting breakthrough creative
@@ -487,7 +492,7 @@ role:
           testing, and AI-powered insights that inform strategic
           investment decisions.
       ai_impact:
-        rating: 0.65
+        rating: 0.7
         detail: >
           AI automates report generation, anomaly detection, and basic
           insight extraction from marketing data. However, designing

@@ -27,6 +27,7 @@ role:
       - Identifying patterns in engineering metrics and team performance data
       - Generating first drafts of organizational communications and updates
       - Scheduling optimization and meeting load balancing
+      - AI agent-generated strategic briefings and organizational health reports
     augmenting:
       - Organizational design decisions informed by network analysis
       - Hiring pipeline optimization with AI-assisted candidate screening
@@ -39,7 +40,7 @@ role:
       - Making high-judgment calls about team structure and people
       - Coaching and developing engineering managers into leaders
       - Representing engineering perspective in cross-functional leadership forums
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "McKinsey - The State of AI in 2024"

@@ -1,0 +1,568 @@
+role:
+  id: ai_trainer
+  function: ai_and_agents
+  name: "AI Training & Fine-Tuning Specialist"
+  also_known_as:
+    - "RLHF Specialist"
+    - "Data Curator"
+    - "Model Fine-Tuner"
+    - "AI Data Specialist"
+  description: >
+    Prepares training data, designs fine-tuning strategies, and implements
+    reinforcement learning from human feedback (RLHF) to improve AI model
+    behavior. Combines data curation expertise with understanding of model
+    training dynamics to create high-quality datasets, preference rankings,
+    and training pipelines that align model outputs with human intent.
+  ai_impact:
+    level: "moderate-high"
+    summary: >
+      Data curation and labeling are increasingly automated through
+      synthetic data generation and AI-assisted annotation, making the
+      volume-oriented aspects of this role highly automatable. However,
+      the strategic dimensions — deciding what to train on, designing
+      annotation schemas that capture nuanced quality distinctions,
+      selecting fine-tuning approaches, and validating that training
+      actually improves model behavior in the ways that matter — remain
+      human-driven. The role is shifting from hands-on data work toward
+      training strategy, quality assurance, and pipeline architecture,
+      with AI handling more of the execution.
+    automating:
+      - "High-volume data labeling and annotation for standard categories"
+      - "Synthetic training data generation for common patterns"
+      - "Data deduplication and basic quality filtering"
+      - "Format conversion and data pipeline boilerplate"
+      - "Basic annotation consistency checking"
+      - "Training run monitoring and checkpoint management"
+    augmenting:
+      - "Designing annotation schemas for nuanced quality distinctions"
+      - "Identifying gaps and biases in training data distributions"
+      - "Fine-tuning hyperparameter selection and optimization"
+      - "Evaluating training data quality at scale"
+      - "Generating and validating preference rankings for RLHF"
+      - "Analyzing training dynamics and loss curves for insights"
+    preserving:
+      - "Training strategy design aligned with organizational goals"
+      - "Judgment about data quality, relevance, and representativeness"
+      - "Ethical reasoning about training data sourcing and consent"
+      - "Cross-functional alignment on model improvement priorities"
+      - "Managing annotation teams and maintaining quality standards"
+      - "Novel fine-tuning approaches for specialized domains"
+    last_reviewed: "2026-04"
+    confidence: medium
+    sources:
+      - name: "O*NET - Data Scientists"
+        url: "https://www.onetonline.org/link/summary/15-2051.00"
+      - name: "Anthropic RLHF Research"
+        url: "https://www.anthropic.com/research"
+      - name: "Hugging Face Fine-Tuning Documentation"
+        url: "https://huggingface.co/docs/transformers/training"
+  levels:
+    - id: junior
+      name: "Junior AI Training Specialist"
+      years_experience: "0-1"
+      summary: >
+        Performs data curation and annotation tasks under guidance following
+        established guidelines and quality standards. Assists with training
+        data pipeline operations and learns fine-tuning workflows through
+        hands-on practice. Documents data quality issues and contributes
+        to annotation guideline improvements.
+    - id: mid
+      name: "AI Training Specialist"
+      years_experience: "1-3"
+      summary: >
+        Designs annotation schemas and manages data curation workflows for
+        specific training objectives. Executes fine-tuning runs with
+        appropriate hyperparameter selection and evaluation. Implements
+        data quality validation pipelines and produces training data that
+        measurably improves model performance. Works with domain experts
+        to ensure training data accuracy.
+    - id: senior
+      name: "Senior AI Training & Fine-Tuning Specialist"
+      years_experience: "3-5"
+      summary: >
+        Leads training data strategy for major model improvement initiatives.
+        Designs end-to-end training pipelines from data sourcing through
+        evaluation. Selects and implements fine-tuning approaches (LoRA,
+        full fine-tuning, RLHF, DPO) based on objectives and constraints.
+        Mentors junior specialists and establishes training methodology
+        standards for the team.
+    - id: staff
+      name: "Staff AI Training & Fine-Tuning Specialist"
+      years_experience: "5-8"
+      summary: >
+        Defines organization-wide training data strategy and fine-tuning
+        methodology. Architects scalable training pipelines and data
+        infrastructure that support diverse model improvement initiatives.
+        Drives innovation in training approaches and evaluates emerging
+        alignment methods for organizational adoption. Influences model
+        development priorities based on training insights.
+    - id: principal
+      name: "Principal AI Training & Fine-Tuning Specialist"
+      years_experience: "8+"
+      summary: >
+        Shapes the organization's model training philosophy and long-term
+        data strategy at the executive level. Drives industry-leading
+        practices in training methodology, data quality, and alignment
+        techniques. Navigates executive-level trade-offs between training
+        investment, model capability, and time-to-market. Contributes
+        to the scientific understanding of effective model training.
+  skills:
+    - id: data_curation
+      name: "Training Data Curation"
+      category: domain
+      description: >
+        Sourcing, cleaning, deduplicating, and balancing training datasets
+        to create high-quality data that improves model behavior in targeted
+        ways while avoiding harmful biases and quality degradation.
+      proficiency:
+        junior: >
+          Performs data cleaning and deduplication tasks using established
+          tools and procedures. Follows data quality checklists and flags
+          issues for review. Understands basic concepts of data balance
+          and representativeness.
+        mid: >
+          Designs data curation workflows for specific training objectives
+          including sourcing strategies, quality filters, and balance
+          criteria. Implements automated data quality pipelines and
+          monitors data distributions. Identifies and addresses gaps in
+          training data coverage.
+        senior: >
+          Architects comprehensive data curation strategies that produce
+          training datasets aligned with model improvement goals. Designs
+          data quality frameworks that scale across diverse data sources
+          and formats. Establishes data curation standards and review
+          processes for the team.
+        staff: >
+          Defines organization-wide data curation methodology and shared
+          data infrastructure. Develops novel approaches to data sourcing
+          and quality assurance for emerging training needs. Influences
+          data strategy decisions based on deep understanding of how data
+          quality affects model behavior.
+        principal: >
+          Shapes the organization's training data strategy at the executive
+          level. Drives industry practices in data quality and curation
+          methodology. Navigates complex decisions about data sourcing,
+          licensing, and ethical use that affect model capabilities and
+          organizational reputation.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can automate much of the mechanical data cleaning, deduplication,
+          and quality filtering work. However, strategic decisions about
+          what data to collect, how to balance datasets, and whether data
+          quality is sufficient for training objectives require human
+          judgment about representativeness and relevance.
+
+    - id: annotation_design
+      name: "Annotation Schema Design"
+      category: analytical
+      description: >
+        Designing labeling schemas, annotation guidelines, quality rubrics,
+        and calibration procedures that enable consistent, high-quality
+        human annotations for training data and evaluation purposes.
+      proficiency:
+        junior: >
+          Follows annotation guidelines to label data consistently.
+          Understands the importance of clear labeling criteria and
+          calibration. Flags ambiguous cases and suggests guideline
+          improvements based on practical annotation experience.
+        mid: >
+          Designs annotation schemas with clear category definitions,
+          boundary cases, and scoring rubrics. Creates calibration
+          exercises and quality control mechanisms. Manages small
+          annotation teams and monitors inter-annotator agreement.
+        senior: >
+          Architects comprehensive annotation programs including schema
+          design, annotator training, quality assurance pipelines, and
+          continuous improvement processes. Designs annotation approaches
+          for complex, subjective tasks where simple labeling is
+          insufficient. Establishes annotation standards for the team.
+        staff: >
+          Defines organization-wide annotation methodology and shared
+          annotation infrastructure. Develops novel annotation approaches
+          for emerging AI training needs. Ensures annotation quality
+          scales with expanding training data requirements across teams.
+        principal: >
+          Shapes the organization's approach to human annotation and
+          training data quality. Drives innovation in annotation
+          methodology and evaluates how AI-assisted annotation changes
+          optimal annotation program design. Influences industry practices
+          for training data quality assurance.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can assist with annotation through pre-labeling and quality
+          checking, but designing annotation schemas that capture nuanced
+          quality distinctions meaningful for training — especially for
+          subjective or novel tasks — requires human understanding of
+          both the domain and the training objectives.
+
+    - id: fine_tuning
+      name: "Model Fine-Tuning"
+      category: technical
+      description: >
+        Executing parameter-efficient fine-tuning (LoRA, QLoRA), full
+        fine-tuning, and instruction tuning with appropriate hyperparameter
+        selection, training monitoring, and evaluation to improve model
+        behavior for specific tasks or domains.
+      proficiency:
+        junior: >
+          Runs fine-tuning jobs using established configurations and
+          frameworks. Understands basic fine-tuning concepts like learning
+          rate, batch size, and epoch count. Monitors training runs and
+          flags anomalies in loss curves.
+        mid: >
+          Configures and executes fine-tuning runs with appropriate
+          hyperparameter selection for specific objectives. Implements
+          LoRA and QLoRA configurations with proper rank and target module
+          selection. Evaluates fine-tuned models against baselines and
+          iterates on training configurations.
+        senior: >
+          Designs fine-tuning strategies that select the right approach
+          (LoRA, full fine-tuning, instruction tuning) based on data
+          availability, compute budget, and performance requirements.
+          Diagnoses and resolves training issues including overfitting,
+          catastrophic forgetting, and quality regressions. Establishes
+          fine-tuning best practices for the team.
+        staff: >
+          Defines organization-wide fine-tuning methodology and shared
+          training infrastructure. Evaluates and adopts emerging fine-tuning
+          techniques for organizational use. Designs fine-tuning workflows
+          that balance model quality, compute cost, and iteration speed
+          across diverse training objectives.
+        principal: >
+          Shapes the organization's model customization strategy at the
+          executive level. Drives adoption of state-of-the-art fine-tuning
+          approaches and influences compute investment decisions. Evaluates
+          the trade-offs between fine-tuning, prompt engineering, and
+          retrieval-augmented approaches for different use cases.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can suggest hyperparameters and automate training pipeline
+          execution, but selecting the right fine-tuning approach,
+          diagnosing training dynamics, and making strategic decisions
+          about model customization versus alternative approaches require
+          human expertise in both ML engineering and business context.
+
+    - id: rlhf_dpo
+      name: "RLHF & Alignment Training"
+      category: technical
+      description: >
+        Implementing reinforcement learning from human feedback (RLHF),
+        direct preference optimization (DPO), and other alignment training
+        methods that shape model behavior to better match human preferences
+        and values.
+      proficiency:
+        junior: >
+          Understands the conceptual framework of RLHF and preference-based
+          training. Assists with preference data collection and formatting.
+          Runs alignment training scripts using established configurations
+          and monitors training metrics.
+        mid: >
+          Implements RLHF and DPO training pipelines with appropriate
+          preference data, reward model training, and policy optimization.
+          Designs preference collection workflows and validates preference
+          data quality. Evaluates alignment training results against
+          behavioral objectives.
+        senior: >
+          Designs alignment training strategies that select between RLHF,
+          DPO, and emerging methods based on data availability and
+          behavioral objectives. Diagnoses and resolves alignment training
+          issues including reward hacking and mode collapse. Leads
+          alignment training for major model improvement initiatives.
+        staff: >
+          Defines organization-wide alignment training methodology and
+          infrastructure. Evaluates emerging alignment techniques for
+          organizational adoption. Designs alignment approaches for
+          complex behavioral objectives that standard methods struggle
+          to capture.
+        principal: >
+          Shapes the organization's alignment strategy and contributes
+          to the scientific understanding of effective alignment training.
+          Drives adoption of state-of-the-art alignment methods and
+          influences research priorities. Navigates the complex trade-offs
+          between alignment, capability, and safety.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          Alignment training involves deep decisions about human values,
+          behavioral objectives, and the subtle ways training shapes model
+          behavior. While AI can execute training pipelines, the strategic
+          decisions about what to align toward and how to validate alignment
+          remain fundamentally human responsibilities.
+
+    - id: quality_assurance
+      name: "Training Data Quality Assurance"
+      category: analytical
+      description: >
+        Validating training data quality through annotation agreement
+        metrics, bias auditing, distribution analysis, and systematic
+        review processes that ensure training data meets quality standards.
+      proficiency:
+        junior: >
+          Performs quality checks on training data using established
+          procedures and tools. Computes basic quality metrics like
+          annotation agreement rates and class distributions. Flags
+          quality issues for review by senior team members.
+        mid: >
+          Designs quality assurance workflows for training data pipelines
+          including automated quality checks, sampling strategies, and
+          escalation procedures. Implements bias auditing and distribution
+          analysis for training datasets. Produces quality reports with
+          actionable findings.
+        senior: >
+          Architects comprehensive quality assurance frameworks that ensure
+          training data quality at scale. Designs statistical quality
+          control methods tailored to training data characteristics.
+          Establishes quality standards and review processes. Leads
+          quality improvement initiatives.
+        staff: >
+          Defines organization-wide training data quality standards and
+          shared quality assurance infrastructure. Develops novel quality
+          assurance approaches for emerging data types and training methods.
+          Ensures quality practices scale with expanding training data needs.
+        principal: >
+          Shapes the organization's approach to training data quality at
+          the executive level. Drives innovation in quality assurance
+          methodology and influences industry standards for training data
+          quality. Advises leadership on quality-related risks and
+          investments.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can automate many quality checks and flag potential issues,
+          but judging whether training data is actually good enough for
+          its intended purpose — especially for nuanced tasks where quality
+          is subjective — requires human expertise in both data quality
+          and the training objectives.
+
+    - id: synthetic_data
+      name: "Synthetic Data Generation"
+      category: technical
+      description: >
+        Generating and validating synthetic training data using AI models,
+        rule-based systems, and augmentation techniques to supplement
+        real-world data while maintaining quality, diversity, and
+        representativeness.
+      proficiency:
+        junior: >
+          Generates synthetic data using established tools and templates.
+          Performs basic quality checks on synthetic outputs including
+          format validation and obvious error detection. Understands the
+          risks and limitations of synthetic data.
+        mid: >
+          Designs synthetic data generation pipelines for specific training
+          needs with appropriate diversity controls and quality validation.
+          Implements data augmentation strategies and validates that
+          synthetic data improves downstream model performance. Monitors
+          for common synthetic data pitfalls.
+        senior: >
+          Architects synthetic data programs that combine multiple
+          generation approaches with rigorous quality validation. Designs
+          strategies for using synthetic data that avoid model collapse
+          and maintain output diversity. Establishes synthetic data
+          standards and validation procedures for the team.
+        staff: >
+          Defines organization-wide synthetic data methodology and shared
+          generation infrastructure. Evaluates emerging synthetic data
+          techniques for organizational adoption. Designs synthetic data
+          strategies that balance scale with quality across diverse
+          training objectives.
+        principal: >
+          Shapes the organization's synthetic data strategy at the
+          executive level. Drives research-informed approaches to synthetic
+          data generation and validates methodologies against emerging
+          research on model collapse and data quality. Influences industry
+          practices for responsible synthetic data use.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI is central to synthetic data generation, making this a
+          highly AI-augmented activity. However, designing generation
+          strategies that produce genuinely useful training data, avoiding
+          model collapse risks, and validating synthetic data quality
+          require human judgment about what makes data valuable for training.
+
+    - id: model_evaluation
+      name: "Pre/Post Training Evaluation"
+      category: analytical
+      description: >
+        Evaluating model performance before and after training interventions
+        including A/B testing model versions, measuring capability changes,
+        detecting regressions, and validating that training achieves its
+        intended behavioral objectives.
+      proficiency:
+        junior: >
+          Runs evaluation suites against model versions before and after
+          training. Records metrics and flags significant changes for
+          review. Understands the importance of controlled comparisons
+          and consistent evaluation methodology.
+        mid: >
+          Designs evaluation strategies for specific training interventions
+          with appropriate metrics, baselines, and success criteria.
+          Implements A/B testing workflows for model version comparison.
+          Produces evaluation reports that clearly demonstrate training
+          impact.
+        senior: >
+          Architects comprehensive evaluation frameworks that measure
+          training impact across multiple dimensions including target
+          capabilities, potential regressions, and safety properties.
+          Designs evaluation strategies that provide deployment confidence
+          for model updates. Establishes evaluation standards for training
+          initiatives.
+        staff: >
+          Defines organization-wide model evaluation methodology for
+          training interventions. Develops evaluation approaches for
+          complex training objectives where standard metrics are
+          insufficient. Ensures evaluation practices provide reliable
+          signals for model deployment decisions.
+        principal: >
+          Shapes the organization's approach to training validation and
+          model release criteria. Drives innovation in training evaluation
+          methodology and influences deployment policies based on
+          evaluation rigor. Advises leadership on training investment
+          effectiveness.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can execute evaluations and compute metrics efficiently, but
+          designing evaluation strategies that capture whether training
+          actually improved model behavior in the ways that matter —
+          especially for nuanced behavioral objectives — requires human
+          judgment about quality and relevance.
+
+    - id: pipeline_engineering
+      name: "Training Pipeline Engineering"
+      category: technical
+      description: >
+        Building scalable, reliable data and training pipelines including
+        data ingestion, preprocessing, training job orchestration, model
+        artifact management, and pipeline monitoring.
+      proficiency:
+        junior: >
+          Implements pipeline components using established frameworks and
+          tools. Understands the end-to-end training pipeline from data
+          ingestion through model export. Monitors pipeline runs and
+          handles basic failures.
+        mid: >
+          Designs and builds training pipelines for specific projects
+          including data preprocessing, training job configuration, and
+          artifact management. Implements pipeline monitoring, alerting,
+          and error handling. Optimizes pipeline performance for cost
+          and throughput.
+        senior: >
+          Architects scalable training pipeline infrastructure supporting
+          diverse training workflows and data sources. Designs pipeline
+          abstractions that enable team members to run training experiments
+          efficiently. Leads pipeline reliability and performance
+          optimization efforts.
+        staff: >
+          Defines organization-wide training pipeline standards and shared
+          infrastructure. Designs pipeline architectures that support
+          diverse training methods while maintaining consistent reliability
+          and observability. Drives adoption of infrastructure improvements
+          that accelerate training iteration.
+        principal: >
+          Shapes the organization's training infrastructure strategy and
+          compute investment decisions. Evaluates emerging training
+          infrastructure paradigms and drives adoption of approaches that
+          improve training efficiency and scale. Influences vendor
+          relationships for training compute.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can generate pipeline code and suggest common patterns, but
+          designing training pipelines that are reliable, efficient, and
+          flexible enough to support diverse training workflows at scale
+          requires human systems engineering expertise and organizational
+          context.
+
+    - id: domain_specialization
+      name: "Domain-Specific Training Strategy"
+      category: domain
+      description: >
+        Understanding specific domains deeply enough to guide training
+        priorities, identify high-value training data, and evaluate whether
+        trained models meet domain-specific quality standards.
+      proficiency:
+        junior: >
+          Applies basic domain knowledge to identify relevant training
+          data and evaluate model outputs in their area of expertise.
+          Follows domain-specific guidelines for data quality and
+          annotation accuracy.
+        mid: >
+          Leverages domain expertise to design training strategies that
+          target specific capability improvements. Identifies high-value
+          training data sources within the domain and designs domain-specific
+          evaluation criteria. Collaborates with domain experts to validate
+          training data quality.
+        senior: >
+          Leads domain-specific training initiatives with deep expertise
+          in both the domain and training methodology. Designs training
+          approaches that capture nuanced domain knowledge effectively.
+          Builds relationships with domain expert communities for data
+          sourcing and validation.
+        staff: >
+          Develops domain specialization strategies across the organization,
+          identifying high-priority domains and designing training
+          approaches tailored to each. Builds domain expert networks and
+          advisory relationships that inform training priorities.
+        principal: >
+          Shapes the organization's domain specialization roadmap at the
+          executive level. Drives strategic decisions about which domains
+          to prioritize for model specialization and influences
+          partnerships with domain-specific organizations for training
+          data and evaluation.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          Domain expertise for training strategy requires genuine deep
+          knowledge that AI models approximate but cannot reliably provide,
+          especially for deciding what training priorities will produce
+          the most meaningful model improvements within specialized fields.
+
+    - id: vendor_management
+      name: "Annotation Vendor Management"
+      category: interpersonal
+      description: >
+        Managing annotation teams, contractors, and labeling platforms
+        including vendor selection, quality SLAs, throughput management,
+        and cost optimization for data labeling operations.
+      proficiency:
+        junior: >
+          Communicates task requirements clearly to annotation teams.
+          Monitors annotation progress and quality metrics. Escalates
+          issues with vendor performance or quality to senior team members.
+        mid: >
+          Manages day-to-day relationships with annotation vendors
+          including work allocation, quality feedback, and throughput
+          monitoring. Evaluates vendor performance against SLAs and
+          implements quality improvement actions. Handles vendor onboarding
+          for new annotation tasks.
+        senior: >
+          Designs vendor management programs with appropriate SLAs, quality
+          assurance processes, and escalation procedures. Evaluates and
+          selects annotation vendors for new projects. Optimizes annotation
+          operations for cost and quality. Manages complex multi-vendor
+          annotation workflows.
+        staff: >
+          Defines organization-wide annotation vendor strategy and
+          management standards. Negotiates enterprise-level vendor
+          agreements and establishes vendor performance frameworks.
+          Drives adoption of AI-assisted annotation approaches that
+          change the vendor relationship model.
+        principal: >
+          Shapes the organization's annotation operations strategy at
+          the executive level. Drives strategic decisions about insource
+          versus outsource annotation operations. Evaluates how AI-assisted
+          annotation changes the economics and quality of data labeling
+          at scale.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Vendor management relies on relationship-building, negotiation,
+          and organizational judgment that remain fundamentally human
+          skills. AI can assist with performance analytics and quality
+          monitoring, but managing vendor relationships and making sourcing
+          decisions require human interpersonal skills.

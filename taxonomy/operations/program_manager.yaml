@@ -23,23 +23,28 @@ role:
       navigating organizational politics, resolving ambiguity across teams,
       and making judgment calls under uncertainty, remains deeply human.
       PMs who leverage AI for administrative efficiency will free capacity
-      for higher-value strategic coordination.
+      for higher-value strategic coordination. Agentic AI can now
+      manage multi-step program tracking workflows, automatically
+      gathering updates, detecting risks, and drafting stakeholder
+      communications, amplifying PM productivity on administrative tasks.
     automating:
       - "Status report compilation and dashboard generation"
       - "Meeting note summarization and action-item extraction"
       - "Schedule variance detection and critical-path alerts"
       - "Resource utilization tracking and capacity forecasting"
+      - "AI agent-automated documentation updates and process workflows"
     augmenting:
       - "Risk identification and scenario modeling"
       - "Stakeholder communication drafting and alignment"
       - "Dependency mapping and impact analysis"
       - "Budget forecasting and cost-trend analysis"
+      - "Agent-assisted program status aggregation and executive briefing preparation"
     preserving:
       - "Cross-functional negotiation and conflict resolution"
       - "Organizational change leadership and influence"
       - "Executive stakeholder trust-building and escalation judgment"
       - "Strategic alignment of programs to business outcomes"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "PMI - The Project Management Body of Knowledge"
@@ -294,7 +299,7 @@ role:
           course correction. Presents program portfolio status and
           strategic recommendations to the executive team and board.
       ai_impact:
-        rating: 0.7
+        rating: 0.75
         detail: >
           AI excels at aggregating data, generating status summaries, and
           highlighting variances from plan. Routine status compilation

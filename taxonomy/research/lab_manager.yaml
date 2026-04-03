@@ -1,0 +1,498 @@
+role:
+  id: lab_manager
+  function: research
+  name: "Laboratory Manager"
+  also_known_as:
+    - "Lab Operations Manager"
+    - "Research Lab Coordinator"
+    - "Facility Manager"
+    - "Lab Supervisor"
+  description: >
+    Manages the day-to-day operations of research laboratories including
+    equipment maintenance, safety compliance, inventory management, staff
+    training, and protocol development. Ensures the lab environment
+    supports productive and safe research by maintaining quality standards,
+    managing budgets, and coordinating across research groups.
+  ai_impact:
+    level: "low"
+    summary: >
+      Laboratory management is predominantly a hands-on, physical, and
+      interpersonal role that AI augments at the margins but cannot
+      fundamentally transform. AI tools can help with inventory
+      optimization, predictive maintenance scheduling, and compliance
+      tracking, but the core responsibilities — ensuring physical safety,
+      maintaining complex equipment, training researchers, and managing
+      the human dynamics of shared laboratory spaces — require physical
+      presence, manual dexterity, and interpersonal judgment. Lab
+      managers who adopt AI-assisted inventory and scheduling tools will
+      gain efficiency, but the essential nature of the role remains
+      unchanged.
+    automating:
+      - "Inventory tracking and automated reordering"
+      - "Equipment maintenance scheduling based on usage logs"
+      - "Generating compliance checklists and safety documentation"
+      - "Tracking chemical expiration dates and disposal schedules"
+      - "Generating standard operating procedure templates"
+      - "Budget tracking and spend analysis reporting"
+    augmenting:
+      - "Predictive equipment maintenance based on usage patterns"
+      - "Optimizing lab space allocation using utilization data"
+      - "Analyzing safety incident patterns to identify systemic risks"
+      - "Streamlining procurement through vendor comparison tools"
+      - "Monitoring environmental conditions with IoT sensors"
+      - "Generating training materials and assessment quizzes"
+    preserving:
+      - "Physical safety inspections and emergency response"
+      - "Hands-on equipment troubleshooting and repair coordination"
+      - "In-person training and technique demonstration"
+      - "Managing interpersonal dynamics in shared lab spaces"
+      - "Regulatory audit navigation and inspector relationships"
+      - "Judgment calls about safety risks and lab access decisions"
+    last_reviewed: "2026-04"
+    confidence: medium
+    sources:
+      - name: "O*NET - Natural Sciences Managers"
+        url: "https://www.onetonline.org/link/summary/11-9121.00"
+      - name: "AALAS - Laboratory Management"
+        url: "https://www.aalas.org/"
+      - name: "Lab Manager Magazine"
+        url: "https://www.labmanager.com/"
+  levels:
+    - id: junior
+      name: "Junior Laboratory Manager"
+      years_experience: "0-3"
+      summary: >
+        Supports laboratory operations under the guidance of senior staff,
+        maintaining equipment, managing basic inventory, and ensuring
+        compliance with safety protocols. Learns institutional procedures
+        and builds relationships with research groups using the facility.
+    - id: mid
+      name: "Laboratory Manager"
+      years_experience: "3-6"
+      summary: >
+        Manages laboratory operations independently, overseeing safety
+        compliance, equipment maintenance, inventory, and budget for one
+        or more labs. Trains new researchers and technicians, develops
+        standard operating procedures, and coordinates with vendors and
+        service providers.
+    - id: senior
+      name: "Senior Laboratory Manager"
+      years_experience: "6-10"
+      summary: >
+        Oversees operations for multiple laboratories or a large facility,
+        managing staff, budgets, and complex regulatory requirements.
+        Drives process improvements, leads safety initiatives, and serves
+        as the primary point of contact for institutional compliance
+        audits and facility planning.
+    - id: director
+      name: "Director of Laboratory Operations"
+      years_experience: "10+"
+      summary: >
+        Leads laboratory operations strategy at the institutional level,
+        overseeing facility planning, major equipment acquisitions, and
+        organizational safety programs. Sets policies and standards
+        across multiple facilities, manages significant budgets, and
+        represents laboratory operations in institutional leadership
+        discussions.
+  skills:
+    - id: lab_safety
+      name: "Laboratory Safety"
+      category: regulatory
+      description: >
+        Developing, implementing, and enforcing safety protocols for
+        research laboratories including chemical hygiene, biosafety,
+        radiation safety, emergency response procedures, and personal
+        protective equipment programs. Encompasses hazard assessment,
+        incident investigation, and creating a culture of safety.
+      proficiency:
+        junior: >
+          Follows and enforces established safety protocols consistently.
+          Conducts routine safety inspections, maintains safety equipment,
+          and ensures researchers complete required safety training.
+          Reports incidents promptly and accurately.
+        mid: >
+          Develops and updates safety protocols for the laboratory,
+          conducting hazard assessments for new procedures and chemicals.
+          Leads safety orientations, investigates incidents thoroughly,
+          and implements corrective actions to prevent recurrence.
+        senior: >
+          Designs comprehensive safety programs across multiple labs,
+          integrating chemical, biological, and physical safety
+          requirements. Leads emergency response planning and drills,
+          and serves as the primary liaison with institutional safety
+          officers and regulatory inspectors.
+        director: >
+          Sets safety strategy and culture at the institutional level,
+          establishing policies and training programs that achieve
+          sustained compliance. Manages relationships with regulatory
+          agencies and leads institutional response to serious safety
+          incidents.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          AI can assist with hazard database lookup, SDS management,
+          and compliance tracking, but physical safety inspections,
+          emergency response, and the judgment required to assess
+          real-world hazards are fundamentally human activities.
+
+    - id: equipment_management
+      name: "Equipment Management"
+      category: operational
+      description: >
+        Managing research equipment lifecycle from procurement through
+        installation, calibration, maintenance, and eventual
+        decommissioning. Includes vendor relationship management,
+        service contract negotiation, troubleshooting, and ensuring
+        equipment availability for researchers.
+      proficiency:
+        junior: >
+          Performs routine equipment maintenance following manufacturer
+          protocols and schedules. Tracks calibration records, schedules
+          service visits, and assists researchers with basic equipment
+          troubleshooting.
+        mid: >
+          Manages the full equipment lifecycle including procurement
+          evaluation, installation coordination, maintenance scheduling,
+          and vendor relationships. Troubleshoots equipment issues
+          independently and coordinates repairs efficiently.
+        senior: >
+          Oversees equipment strategy for multiple labs, managing
+          capital budgets and making procurement decisions that balance
+          research needs with cost and reliability. Negotiates service
+          contracts and leads equipment planning for facility
+          renovations.
+        director: >
+          Sets institutional equipment strategy including major
+          capital planning, shared instrumentation policies, and
+          technology refresh cycles. Leads procurement for
+          high-value research instruments and manages institutional
+          core facility equipment programs.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can help predict maintenance needs from usage data and
+          streamline procurement comparisons, but hands-on
+          troubleshooting, vendor relationship management, and
+          strategic equipment planning require human expertise and
+          judgment.
+
+    - id: inventory_management
+      name: "Inventory Management"
+      category: operational
+      description: >
+        Managing laboratory supplies, reagents, chemicals, and
+        consumables to ensure availability while minimizing waste and
+        cost. Includes tracking stock levels, managing orders, handling
+        hazardous material storage requirements, and optimizing
+        procurement across research groups.
+      proficiency:
+        junior: >
+          Tracks inventory levels and places orders following
+          established procedures. Maintains organized storage areas
+          and ensures proper labeling and storage conditions for
+          chemicals and reagents.
+        mid: >
+          Manages complete inventory systems including reorder points,
+          vendor selection, and cost tracking. Implements organization
+          systems that reduce waste from expired reagents and
+          coordinates bulk purchasing across research groups.
+        senior: >
+          Designs inventory management strategies across multiple
+          labs, implementing systems for shared purchasing, central
+          storage, and waste reduction. Negotiates institutional
+          pricing agreements and optimizes supply chain logistics.
+        director: >
+          Sets institutional procurement and inventory policies,
+          managing vendor relationships at the organizational level.
+          Implements enterprise inventory management systems and
+          drives cost optimization across all laboratory operations.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI significantly improves inventory tracking, demand
+          forecasting, and automated reordering. However, managing
+          the physical realities of chemical storage, handling
+          hazardous materials, and adapting to the unpredictable
+          supply needs of active research still require human
+          oversight.
+
+    - id: protocol_development
+      name: "Protocol & SOP Development"
+      category: domain
+      description: >
+        Writing, maintaining, and improving standard operating procedures
+        and protocols for laboratory operations, equipment use, safety
+        procedures, and research methods. Ensures protocols are clear,
+        current, accessible, and compliant with regulatory requirements.
+      proficiency:
+        junior: >
+          Follows existing protocols accurately and identifies when
+          procedures need updating. Assists in drafting new SOPs by
+          documenting current practices and gathering input from
+          experienced researchers.
+        mid: >
+          Writes clear, comprehensive SOPs independently, incorporating
+          safety requirements, quality standards, and regulatory
+          compliance. Establishes a review schedule to keep protocols
+          current and manages the document control system.
+        senior: >
+          Designs protocol frameworks and templates that ensure
+          consistency across labs. Leads protocol development for
+          complex procedures, coordinates review by subject matter
+          experts, and ensures integration with training programs.
+        director: >
+          Sets institutional standards for protocol development and
+          document control. Ensures alignment with accreditation
+          requirements and leads harmonization of procedures across
+          facilities.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can help draft protocol templates and check for
+          completeness, but developing protocols that accurately
+          capture laboratory procedures, address safety
+          considerations, and work in practice requires hands-on
+          domain expertise.
+
+    - id: regulatory_compliance
+      name: "Regulatory Compliance"
+      category: regulatory
+      description: >
+        Ensuring laboratory operations comply with federal, state, and
+        institutional regulations including OSHA, EPA, NRC, institutional
+        biosafety committees, IACUC, and IRB requirements. Encompasses
+        permit management, inspection preparation, record keeping, and
+        responding to regulatory changes.
+      proficiency:
+        junior: >
+          Maintains compliance records and prepares documentation for
+          routine inspections. Understands the basic regulatory
+          framework governing laboratory operations and follows
+          established compliance procedures.
+        mid: >
+          Manages compliance programs for the laboratory, tracking
+          regulatory requirements, maintaining permits, and preparing
+          for inspections. Stays current with regulatory changes and
+          implements necessary updates to lab operations.
+        senior: >
+          Oversees compliance across multiple labs, serving as the
+          primary point of contact for institutional compliance
+          officers and external inspectors. Designs compliance
+          tracking systems and leads audit preparation efforts.
+        director: >
+          Sets institutional compliance strategy and manages
+          relationships with regulatory agencies. Leads institutional
+          response to regulatory changes, represents the organization
+          in industry compliance forums, and ensures sustainable
+          compliance programs across all facilities.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can track regulatory changes and automate compliance
+          documentation, but interpreting complex regulations in the
+          context of specific laboratory operations and managing
+          inspector relationships require human judgment and
+          interpersonal skills.
+
+    - id: budget_management
+      name: "Laboratory Budget Management"
+      category: operational
+      description: >
+        Managing laboratory budgets including operating costs, capital
+        equipment, consumables, maintenance contracts, and personnel
+        costs. Encompasses budget planning, expenditure tracking, cost
+        optimization, and financial reporting to principal investigators
+        and institutional administrators.
+      proficiency:
+        junior: >
+          Tracks expenditures against budget allocations and processes
+          purchase orders following institutional procedures. Flags
+          budget variances and maintains organized financial records
+          for the laboratory.
+        mid: >
+          Manages laboratory budgets independently, balancing
+          competing needs across research projects and categories.
+          Identifies cost-saving opportunities through vendor
+          negotiation, bulk purchasing, and waste reduction.
+        senior: >
+          Oversees budgets across multiple labs, developing annual
+          budget plans and managing capital equipment requests.
+          Provides financial analysis to support resource allocation
+          decisions and facility planning.
+        director: >
+          Manages institutional laboratory operations budgets,
+          including capital planning, shared facility cost recovery,
+          and strategic investment decisions. Presents budget
+          proposals to institutional leadership and ensures
+          financial sustainability of laboratory operations.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can automate budget tracking, generate spending reports,
+          and identify cost anomalies, but strategic budget decisions,
+          vendor negotiations, and balancing the competing financial
+          needs of multiple research groups require human judgment.
+
+    - id: staff_training
+      name: "Staff Training & Development"
+      category: interpersonal
+      description: >
+        Training laboratory personnel including researchers, students,
+        technicians, and visiting scientists on equipment operation,
+        safety procedures, laboratory protocols, and institutional
+        policies. Encompasses needs assessment, training program design,
+        competency evaluation, and ongoing professional development.
+      proficiency:
+        junior: >
+          Assists with conducting training sessions on basic equipment
+          and safety procedures. Demonstrates proper techniques and
+          verifies that trainees can perform procedures safely and
+          correctly before working independently.
+        mid: >
+          Designs and delivers comprehensive training programs for the
+          laboratory, including onboarding sequences, equipment
+          certification, and refresher courses. Evaluates trainee
+          competency and maintains training records.
+        senior: >
+          Creates training frameworks and materials used across
+          multiple labs. Implements competency-based training
+          programs with assessment rubrics. Mentors junior lab
+          managers in developing their training skills.
+        director: >
+          Sets institutional training standards for laboratory
+          operations. Designs training programs that meet regulatory
+          requirements and accreditation standards. Evaluates
+          training effectiveness through outcome metrics and
+          continuous improvement processes.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          AI can generate training materials and quizzes, but
+          hands-on training in laboratory techniques, assessing
+          trainee competency through observation, and building
+          a safety-conscious culture require in-person human
+          instruction and mentoring.
+
+    - id: quality_control
+      name: "Quality Control & Assurance"
+      category: analytical
+      description: >
+        Ensuring the quality and reliability of laboratory operations
+        and research outputs through instrument validation, calibration
+        verification, contamination prevention, and systematic quality
+        assurance practices. Encompasses implementing quality management
+        systems and maintaining standards that support reproducible
+        research.
+      proficiency:
+        junior: >
+          Performs routine quality control checks following established
+          procedures, including instrument calibration verification
+          and reagent quality testing. Documents results and flags
+          deviations to supervisors promptly.
+        mid: >
+          Designs and implements quality control programs for the
+          laboratory, establishing control charts, acceptance criteria,
+          and corrective action procedures. Investigates quality
+          deviations systematically to identify root causes.
+        senior: >
+          Oversees quality assurance across multiple labs, implementing
+          quality management systems that ensure consistent, reliable
+          research outputs. Leads validation studies for new equipment
+          and methods, and coordinates proficiency testing programs.
+        director: >
+          Sets institutional quality standards for laboratory
+          operations, aligning with accreditation requirements and
+          best practices. Designs quality management frameworks
+          that support reproducible research while remaining
+          practical for active research environments.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can help monitor quality metrics and detect trends in
+          control data, but diagnosing quality issues in the physical
+          laboratory, implementing corrective actions, and ensuring
+          the complex interplay of instruments and procedures
+          produces reliable results require hands-on human expertise.
+
+    - id: space_planning
+      name: "Laboratory Space Planning"
+      category: operational
+      description: >
+        Planning and managing laboratory space including layout design,
+        renovation coordination, utility requirements, safety
+        considerations, and optimization of shared spaces across
+        research groups. Encompasses understanding building systems,
+        regulatory requirements for laboratory spaces, and balancing
+        competing space needs.
+      proficiency:
+        junior: >
+          Maintains organized laboratory spaces and identifies basic
+          space utilization issues. Assists with moves and
+          reorganizations by coordinating logistics and updating
+          space records.
+        mid: >
+          Plans laboratory layouts that optimize workflow, safety,
+          and equipment placement. Coordinates minor renovations and
+          space modifications, working with facilities staff and
+          contractors to meet research needs.
+        senior: >
+          Leads space planning for laboratory facilities, conducting
+          needs assessments and developing layout proposals for
+          renovations and new construction. Manages shared space
+          allocation across research groups with fairness and
+          transparency.
+        director: >
+          Drives institutional laboratory space strategy including
+          long-term facility planning, capital renovation programs,
+          and space allocation policies. Represents laboratory
+          operations needs in building design and construction
+          projects.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can help model space utilization and generate layout
+          options, but understanding the physical, safety, and
+          workflow requirements of specific research activities and
+          navigating the interpersonal dynamics of space allocation
+          require human judgment and presence.
+
+    - id: cross_group_coordination
+      name: "Cross-Group Coordination"
+      category: interpersonal
+      description: >
+        Managing shared laboratory resources, equipment, and spaces
+        across multiple research groups with different needs, schedules,
+        and working styles. Requires diplomacy, fairness, clear
+        communication, and the ability to resolve conflicts while
+        maintaining productive working relationships.
+      proficiency:
+        junior: >
+          Communicates scheduling and resource availability clearly
+          to all groups using the facility. Follows established
+          protocols for shared resource management and escalates
+          conflicts to supervisors when needed.
+        mid: >
+          Manages shared resource scheduling, coordinates equipment
+          access across groups, and resolves routine conflicts
+          diplomatically. Establishes clear communication channels
+          and usage norms for shared spaces.
+        senior: >
+          Designs and implements governance structures for shared
+          facilities, including advisory committees, usage policies,
+          and cost-sharing models. Mediates complex conflicts between
+          research groups and builds consensus around resource
+          allocation decisions.
+        director: >
+          Establishes institutional frameworks for shared laboratory
+          governance, including core facility management models,
+          recharge rate structures, and strategic resource sharing
+          agreements. Navigates institutional politics to ensure
+          fair and productive shared resource utilization.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Coordinating across research groups requires interpersonal
+          skills, diplomacy, and institutional knowledge that are
+          fundamentally human. AI can help with scheduling
+          optimization, but building trust and resolving conflicts
+          require personal relationships.

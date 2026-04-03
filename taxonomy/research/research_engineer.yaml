@@ -1,0 +1,547 @@
+role:
+  id: research_engineer
+  function: research
+  name: "Research Engineer"
+  also_known_as:
+    - "Research Software Engineer"
+    - "Scientific Software Developer"
+    - "Computational Scientist"
+    - "Research Programmer"
+  description: >
+    Builds the software, tools, and infrastructure that enable research.
+    Bridges the gap between prototype research code and production-quality
+    systems, creating reusable libraries, data pipelines, simulation
+    frameworks, and analysis tools that accelerate scientific discovery.
+  ai_impact:
+    level: "moderate-high"
+    summary: >
+      AI code generation is significantly accelerating research software
+      development, enabling research engineers to produce data pipelines,
+      analysis scripts, and visualization tools faster than ever. AI-assisted
+      debugging, documentation generation, and test writing reduce the time
+      spent on routine engineering tasks. However, understanding the scientific
+      requirements behind software — ensuring that algorithms correctly
+      implement mathematical models, that numerical precision is maintained,
+      and that results are reproducible — requires deep domain expertise that
+      AI cannot yet provide. Research engineers who combine AI-augmented coding
+      with scientific understanding will see their productivity multiply.
+    automating:
+      - "Boilerplate code generation for data pipelines and ETL"
+      - "Unit test scaffolding for scientific software"
+      - "Documentation generation from code and docstrings"
+      - "Standard data format conversion and parsing"
+      - "Routine code refactoring and style enforcement"
+      - "Dependency management and environment configuration"
+    augmenting:
+      - "Complex algorithm implementation from mathematical specifications"
+      - "Performance profiling and optimization of scientific code"
+      - "Debugging numerical issues and precision errors"
+      - "Designing data models for complex research datasets"
+      - "Porting research code between languages and platforms"
+      - "Creating interactive visualizations from raw data"
+    preserving:
+      - "Understanding scientific requirements and translating them to software"
+      - "Validating software correctness against known scientific results"
+      - "Designing reproducible computational workflows"
+      - "Building trust and communication with research collaborators"
+      - "Making architectural decisions that balance research flexibility with robustness"
+      - "Ensuring ethical data handling and privacy in research contexts"
+    last_reviewed: "2026-04"
+    confidence: medium
+    sources:
+      - name: "US-RSE Association"
+        url: "https://us-rse.org/"
+      - name: "Society of Research Software Engineering"
+        url: "https://society-rse.org/"
+      - name: "Nature - The Rise of Research Software Engineers"
+        url: "https://www.nature.com/articles/d41586-019-02581-4"
+  levels:
+    - id: junior
+      name: "Junior Research Engineer"
+      years_experience: "0-2"
+      summary: >
+        Implements software components under guidance using established
+        patterns and tools. Writes clean, tested code for data processing
+        tasks and analysis scripts. Learns the scientific domain and
+        codebase conventions while contributing to existing projects.
+    - id: mid
+      name: "Research Engineer"
+      years_experience: "2-5"
+      summary: >
+        Owns significant software components end-to-end, from requirements
+        gathering with researchers through implementation and deployment.
+        Writes production-quality scientific software with proper testing,
+        documentation, and version control. Bridges the communication gap
+        between researchers and engineering best practices.
+    - id: senior
+      name: "Senior Research Engineer"
+      years_experience: "5-8"
+      summary: >
+        Leads the design and implementation of major research software
+        systems. Makes architectural decisions balancing research flexibility
+        with engineering robustness. Mentors junior engineers and researchers
+        in software best practices. Drives improvements to development
+        workflows and computational reproducibility.
+    - id: staff
+      name: "Staff Research Engineer"
+      years_experience: "8-12"
+      summary: >
+        Sets technical direction for research software infrastructure across
+        multiple projects or groups. Designs shared platforms and frameworks
+        that accelerate research across the organization. Defines software
+        engineering standards that ensure reproducibility and quality while
+        remaining accessible to non-engineer researchers.
+    - id: principal
+      name: "Principal Research Engineer"
+      years_experience: "12+"
+      summary: >
+        Defines the long-term vision for research computing infrastructure
+        at the organizational level. Drives adoption of best practices
+        across the institution, influences investment in computational
+        resources, and shapes the profession of research software engineering
+        through community leadership and advocacy.
+  skills:
+    - id: scientific_programming
+      name: "Scientific Programming"
+      category: technical
+      description: >
+        Proficiency in programming languages and libraries commonly used
+        in scientific computing, including Python (NumPy, SciPy, pandas),
+        R, Julia, MATLAB, and Fortran/C++ for performance-critical
+        applications. Encompasses numerical computing, data manipulation,
+        and scientific library ecosystems.
+      proficiency:
+        junior: >
+          Writes functional scientific code in one primary language,
+          using standard libraries for numerical computing and data
+          manipulation. Follows team coding conventions and produces
+          readable, documented scripts.
+        mid: >
+          Writes efficient, well-structured scientific code leveraging
+          advanced library features like vectorized operations and
+          parallel processing. Proficient in at least two scientific
+          languages and selects appropriate tools for each task.
+        senior: >
+          Designs scientific software architectures that balance
+          performance with maintainability. Implements custom algorithms
+          with careful attention to numerical stability and precision.
+          Establishes coding standards for research groups.
+        staff: >
+          Evaluates and recommends language and library choices across
+          the organization based on performance requirements, community
+          support, and researcher capabilities. Contributes to shared
+          scientific computing frameworks.
+        principal: >
+          Shapes the organization's scientific computing strategy,
+          evaluating emerging languages, paradigms, and hardware
+          architectures. Influences community standards and contributes
+          to open-source scientific software ecosystems.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI code generation tools significantly accelerate routine
+          scientific programming tasks, but implementing numerically
+          correct algorithms, choosing appropriate precision, and
+          designing scientific software architectures require domain
+          expertise and careful human oversight.
+
+    - id: software_architecture
+      name: "Research Software Architecture"
+      category: technical
+      description: >
+        Designing research software systems that are correct, reproducible,
+        maintainable, and extensible. Includes choosing appropriate
+        architectural patterns, designing clean interfaces, managing
+        complexity in evolving codebases, and balancing the exploratory
+        nature of research with engineering best practices.
+      proficiency:
+        junior: >
+          Understands the structure of existing research software and
+          follows established architectural patterns. Writes modular code
+          with clear function boundaries and appropriate separation of
+          concerns.
+        mid: >
+          Designs small-to-medium research software components with clean
+          APIs and appropriate abstraction layers. Makes thoughtful
+          decisions about data structures, error handling, and
+          configuration management.
+        senior: >
+          Architects research software systems that accommodate evolving
+          scientific requirements while maintaining code quality. Designs
+          plugin architectures and extension points that allow researchers
+          to customize without breaking core functionality.
+        staff: >
+          Defines software architecture standards across the organization,
+          balancing research flexibility with maintainability. Designs
+          shared platforms that serve multiple research groups while
+          remaining adaptable to diverse scientific workflows.
+        principal: >
+          Shapes the organization's approach to research software
+          architecture, establishing patterns that ensure long-term
+          sustainability. Influences the field's best practices through
+          publications, community engagement, and mentoring.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can suggest architectural patterns and generate code
+          scaffolding, but designing software architectures that
+          balance the unique demands of research — flexibility,
+          reproducibility, and correctness — with engineering best
+          practices requires deep understanding of both domains.
+
+    - id: data_pipelines
+      name: "Research Data Pipelines"
+      category: technical
+      description: >
+        Building robust ETL and data processing pipelines for research
+        data, from raw instrument output through cleaned, validated
+        datasets ready for analysis. Includes workflow orchestration,
+        data validation, format conversion, and handling the unique
+        challenges of scientific data at scale.
+      proficiency:
+        junior: >
+          Implements data processing scripts that transform raw data
+          into analysis-ready formats. Follows established pipeline
+          patterns and handles common data quality issues like missing
+          values and format inconsistencies.
+        mid: >
+          Designs and builds complete data pipelines with proper
+          validation, error handling, and logging. Implements workflow
+          orchestration for multi-step processing and manages data
+          provenance tracking.
+        senior: >
+          Architects scalable data pipeline systems that handle diverse
+          data sources and large volumes. Implements automated quality
+          checks, schema evolution strategies, and recovery mechanisms.
+          Optimizes pipelines for throughput and reliability.
+        staff: >
+          Defines data pipeline standards and shared infrastructure
+          across research groups. Designs self-service pipeline
+          frameworks that enable researchers to build their own
+          processing workflows with guardrails for quality and
+          reproducibility.
+        principal: >
+          Drives the organization's research data infrastructure
+          strategy, evaluating emerging technologies and ensuring
+          pipelines support FAIR data principles, long-term archival,
+          and cross-institutional data sharing requirements.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI accelerates pipeline code generation and can automate
+          routine data transformation tasks, but designing pipelines
+          that correctly handle the nuances of scientific data —
+          instrument-specific artifacts, domain-specific quality
+          criteria, and provenance requirements — requires domain
+          knowledge and careful engineering.
+
+    - id: hpc_computing
+      name: "High-Performance Computing"
+      category: technical
+      description: >
+        Programming and managing high-performance computing resources
+        including clusters, GPU computing, and cloud-based HPC services.
+        Encompasses parallel programming paradigms (MPI, OpenMP, CUDA),
+        job scheduling, resource optimization, and scaling computations
+        to handle large-scale scientific workloads.
+      proficiency:
+        junior: >
+          Runs computations on HPC clusters using job schedulers like
+          SLURM or PBS. Writes basic parallel code using established
+          frameworks and follows cluster usage policies and resource
+          management practices.
+        mid: >
+          Designs parallel algorithms for scientific workloads,
+          optimizing data decomposition and communication patterns.
+          Profiles code to identify bottlenecks and implements GPU
+          acceleration for appropriate workloads.
+        senior: >
+          Architects scalable computational workflows that efficiently
+          utilize large cluster and GPU resources. Optimizes across
+          memory hierarchies, communication costs, and I/O patterns.
+          Designs hybrid CPU/GPU implementations for complex scientific
+          computations.
+        staff: >
+          Defines HPC standards and best practices across the
+          organization. Designs shared computational infrastructure
+          and advises on hardware procurement decisions. Implements
+          frameworks that make HPC resources accessible to researchers
+          without deep parallel programming expertise.
+        principal: >
+          Shapes the organization's HPC strategy, evaluating emerging
+          architectures such as quantum computing, neuromorphic chips,
+          and cloud-native HPC. Negotiates resource allocations at
+          national computing facilities and influences institutional
+          computing investment.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can help generate parallel code and suggest optimization
+          strategies, but designing efficient parallel algorithms for
+          specific scientific problems, managing complex resource
+          allocation, and debugging subtle concurrency issues in HPC
+          environments require deep expertise and hands-on experience.
+
+    - id: reproducibility
+      name: "Computational Reproducibility"
+      category: domain
+      description: >
+        Ensuring that computational research can be independently
+        reproduced through proper version control, dependency management,
+        containerization, workflow documentation, and data management.
+        Encompasses tools like Docker, Singularity, Conda, and workflow
+        managers like Snakemake and Nextflow.
+      proficiency:
+        junior: >
+          Uses version control for all code and follows established
+          practices for dependency management and environment
+          specification. Documents computational steps and parameters
+          in lab notebooks or README files.
+        mid: >
+          Creates reproducible computational environments using
+          containers and environment managers. Implements version-pinned
+          dependencies, deterministic builds, and automated workflow
+          execution that others can replicate.
+        senior: >
+          Designs reproducibility frameworks for the research group,
+          including standardized container images, workflow templates,
+          and continuous integration pipelines that validate
+          reproducibility automatically.
+        staff: >
+          Establishes organizational standards for computational
+          reproducibility, including shared infrastructure for container
+          registries, workflow management, and long-term archival of
+          computational environments.
+        principal: >
+          Influences community standards for computational
+          reproducibility through publications, tool development, and
+          policy advocacy. Shapes institutional and funder requirements
+          for reproducible research practices.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can help generate configuration files and detect
+          reproducibility issues, but designing robust reproducibility
+          frameworks that work across diverse scientific workflows and
+          ensuring long-term computational reproducibility require
+          deep engineering expertise and institutional knowledge.
+
+    - id: visualization
+      name: "Scientific Data Visualization"
+      category: technical
+      description: >
+        Creating effective visual representations of scientific data
+        using tools like matplotlib, ggplot2, D3.js, Plotly, and
+        specialized domain-specific visualization packages. Encompasses
+        static publication figures, interactive exploratory dashboards,
+        and domain-specific visualizations like molecular structures
+        or geospatial maps.
+      proficiency:
+        junior: >
+          Creates standard plots and figures using established
+          visualization libraries. Follows publication formatting
+          guidelines and produces clear, labeled graphics for
+          manuscripts and presentations.
+        mid: >
+          Designs multi-panel figures and interactive visualizations
+          that effectively communicate complex data relationships.
+          Selects appropriate chart types for different data structures
+          and implements custom styling for publication quality.
+        senior: >
+          Creates novel visualization approaches for complex scientific
+          data. Builds interactive dashboards that enable researchers
+          to explore datasets and discover patterns. Establishes
+          visualization standards for the research group.
+        staff: >
+          Designs shared visualization infrastructure and component
+          libraries that serve multiple research groups. Implements
+          domain-specific visualization tools that become standard
+          practice in the organization.
+        principal: >
+          Advances scientific visualization practice through novel
+          tools and approaches. Influences how the community
+          visualizes and communicates scientific data through
+          publications and open-source contributions.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can generate standard plots and suggest visualization
+          types, but designing visualizations that reveal meaningful
+          patterns in complex scientific data, creating domain-specific
+          visual idioms, and building interactive exploration tools
+          require both technical skill and scientific understanding.
+
+    - id: domain_knowledge
+      name: "Scientific Domain Knowledge"
+      category: domain
+      description: >
+        Understanding the scientific domain well enough to implement
+        correct algorithms, validate results, and communicate effectively
+        with researchers. Requires learning the domain's concepts,
+        terminology, and methodological standards without necessarily
+        being a domain expert.
+      proficiency:
+        junior: >
+          Learns key concepts and terminology of the research domain
+          to understand requirements and communicate with researchers.
+          Asks clarifying questions about scientific assumptions and
+          validates implementations against expected results.
+        mid: >
+          Develops working knowledge of the domain sufficient to
+          anticipate researcher needs and propose technical solutions.
+          Reads relevant papers to understand the scientific context
+          of software requirements.
+        senior: >
+          Maintains deep working knowledge of the research domain,
+          enabling independent decision-making about implementation
+          approaches. Identifies when scientific assumptions in code
+          may be incorrect and raises concerns proactively.
+        staff: >
+          Bridges multiple research domains, understanding enough
+          about each to design shared infrastructure that serves
+          diverse scientific needs. Contributes domain insights to
+          software design that researchers find valuable.
+        principal: >
+          Recognized by researchers as a valued intellectual partner
+          who enhances the scientific work through technical insight.
+          Identifies opportunities where computational approaches
+          could transform scientific practice in the domain.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          While AI can provide summaries of scientific concepts, the
+          deep working understanding needed to implement correct
+          scientific software — knowing when results look wrong, what
+          edge cases matter, and how methodological choices affect
+          validity — requires sustained engagement with the domain.
+
+    - id: testing_validation
+      name: "Scientific Software Testing & Validation"
+      category: technical
+      description: >
+        Validating scientific software against known analytical solutions,
+        benchmark datasets, and published results. Encompasses unit
+        testing, regression testing, numerical validation, convergence
+        testing, and designing test suites that ensure scientific
+        correctness as code evolves.
+      proficiency:
+        junior: >
+          Writes unit tests for individual functions and validates
+          outputs against known results. Follows established testing
+          patterns and uses the team's testing framework consistently.
+        mid: >
+          Designs comprehensive test suites including unit, integration,
+          and regression tests. Validates scientific software against
+          benchmark datasets and analytical solutions, with appropriate
+          tolerance for numerical precision.
+        senior: >
+          Implements validation frameworks that ensure scientific
+          correctness across software versions. Designs convergence
+          tests, property-based tests, and cross-validation approaches
+          for complex scientific algorithms.
+        staff: >
+          Establishes testing and validation standards across the
+          organization, including shared benchmark datasets, continuous
+          integration pipelines, and quality gates that prevent
+          incorrect scientific software from reaching production.
+        principal: >
+          Drives community standards for scientific software validation,
+          contributing to benchmark suites and validation frameworks
+          used across institutions. Advocates for testing practices
+          that improve the reliability of computational science.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can generate test scaffolding and suggest edge cases, but
+          designing validation strategies for scientific software —
+          knowing what benchmarks to use, what numerical tolerances
+          are appropriate, and how to test complex scientific
+          algorithms — requires deep domain and engineering expertise.
+
+    - id: collaboration_researchers
+      name: "Researcher Collaboration"
+      category: interpersonal
+      description: >
+        Working effectively with researchers to understand their needs,
+        translate scientific requirements into software specifications,
+        and deliver tools that genuinely accelerate their work. Requires
+        patience, active listening, and the ability to communicate
+        across the researcher-engineer divide.
+      proficiency:
+        junior: >
+          Communicates with researchers respectfully and asks clarifying
+          questions to understand requirements. Provides regular
+          updates on progress and seeks feedback on deliverables to
+          ensure alignment with scientific needs.
+        mid: >
+          Translates researcher needs into clear software specifications
+          independently. Proposes technical solutions that address
+          scientific goals while managing expectations about feasibility
+          and timelines.
+        senior: >
+          Serves as a trusted partner to research groups, proactively
+          identifying opportunities where software can accelerate
+          science. Navigates competing priorities across multiple
+          research projects with diplomacy and clarity.
+        staff: >
+          Builds collaborative relationships across research groups
+          and establishes processes for prioritizing and managing
+          research software requests. Creates frameworks that enable
+          researchers and engineers to work together productively.
+        principal: >
+          Shapes the organizational model for researcher-engineer
+          collaboration, establishing embedded team structures, shared
+          governance, and career paths that attract and retain top
+          research engineering talent.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          The interpersonal skills of understanding researcher needs,
+          building trust, and navigating the cultural differences
+          between research and engineering communities are fundamentally
+          human capabilities that AI cannot replicate.
+
+    - id: documentation
+      name: "Research Software Documentation"
+      category: communication
+      description: >
+        Documenting research software comprehensively for diverse
+        audiences including researchers, other engineers, and future
+        maintainers. Encompasses API documentation, user guides,
+        tutorials, methodology descriptions, and the rationale behind
+        design decisions to support reproducibility and knowledge
+        transfer.
+      proficiency:
+        junior: >
+          Writes clear docstrings and inline comments following team
+          conventions. Contributes to README files and basic user
+          guides that help others use the software.
+        mid: >
+          Creates comprehensive documentation including API references,
+          tutorials, and usage examples. Documents design decisions
+          and scientific methodology to support reproducibility and
+          future maintenance.
+        senior: >
+          Designs documentation architectures for complex research
+          software projects. Creates documentation that serves both
+          engineering and scientific audiences, including methodology
+          papers that describe computational approaches.
+        staff: >
+          Establishes documentation standards across the organization,
+          including templates, automated documentation generation
+          pipelines, and review processes that ensure documentation
+          stays current as software evolves.
+        principal: >
+          Advances research software documentation practices through
+          community contributions and publications. Champions
+          documentation as essential infrastructure for reproducible
+          science and knowledge transfer.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI significantly accelerates documentation generation,
+          especially for API references and standard usage guides.
+          However, documenting scientific rationale, explaining design
+          decisions in context, and creating effective tutorials for
+          diverse audiences require human understanding of both the
+          software and the science it serves.

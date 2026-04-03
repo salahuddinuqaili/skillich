@@ -1,0 +1,668 @@
+role:
+  id: game_designer
+  function: creative
+  name: "Game Designer"
+  also_known_as:
+    - "Game Developer"
+    - "Level Designer"
+    - "Systems Designer"
+    - "Gameplay Designer"
+    - "Interactive Designer"
+  description: >
+    Designs interactive experiences including mechanics, systems, levels,
+    narratives, and player progression for video games, mobile games, and
+    interactive media. Combines creative design with player psychology,
+    systems thinking, and iterative playtesting to create engaging,
+    balanced, and commercially successful games.
+  ai_impact:
+    level: "moderate"
+    summary: >
+      AI assists game designers with asset generation, NPC behavior
+      scripting, level layout suggestions, and playtest data analysis.
+      Procedural content generation powered by AI is expanding the scale
+      of game worlds and reducing the cost of content creation. However,
+      the core of game design — creating mechanics that feel satisfying,
+      designing systems that balance challenge and reward, crafting
+      narratives that emotionally engage players, and understanding the
+      deep psychology of play — requires creative vision and human
+      understanding that AI cannot replicate. Designers who leverage AI
+      to handle content production while focusing on creative direction
+      and player experience will find their impact significantly amplified.
+    automating:
+      - "Procedural level and terrain generation"
+      - "NPC dialogue generation for background characters"
+      - "Asset variation generation (textures, props, environmental details)"
+      - "Bug detection and QA test automation"
+      - "Localization and translation of game text"
+      - "Basic balancing calculations and economy simulations"
+    augmenting:
+      - "Level design prototyping with AI-generated layouts"
+      - "Narrative branching exploration with AI-written draft scenarios"
+      - "Player behavior analysis and engagement pattern detection"
+      - "Dynamic difficulty adjustment based on AI player modeling"
+      - "Concept art and visual prototyping with AI image tools"
+      - "Game economy balancing with AI-powered simulation"
+    preserving:
+      - "Core mechanic invention and gameplay feel"
+      - "Player psychology understanding and motivation design"
+      - "Creative vision and artistic direction for game experiences"
+      - "Playtesting facilitation and qualitative player feedback interpretation"
+      - "Cross-functional team leadership and creative alignment"
+      - "Cultural sensitivity and representation in game worlds"
+    last_reviewed: "2026-04"
+    confidence: medium
+    sources:
+      - name: "O*NET - Software Developers, Applications"
+        url: "https://www.onetonline.org/link/summary/15-1252.00"
+      - name: "International Game Developers Association"
+        url: "https://igda.org/"
+      - name: "GDC State of the Game Industry"
+        url: "https://gdconf.com/state-of-game-industry"
+      - name: "Bureau of Labor Statistics - Software Developers"
+        url: "https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm"
+  levels:
+    - id: junior
+      name: "Junior Game Designer"
+      years_experience: "0-2"
+      summary: >
+        Contributes design work under supervision, including documentation,
+        level blockouts, encounter scripting, and content implementation.
+        Learns design tools, engine workflows, and playtesting methods.
+        Participates in design reviews and incorporates feedback from
+        senior designers. Builds portfolio demonstrating design thinking
+        and iterative improvement.
+    - id: mid
+      name: "Game Designer"
+      years_experience: "2-5"
+      summary: >
+        Owns design responsibility for features, systems, or content
+        areas within a game project. Creates detailed design documents,
+        implements and iterates on designs through playtesting, and
+        collaborates with engineering, art, and audio teams. Makes
+        informed design decisions balancing player experience, technical
+        constraints, and production realities.
+    - id: senior
+      name: "Senior Game Designer"
+      years_experience: "5-8"
+      summary: >
+        Leads design for major game features or systems with creative
+        authority and technical depth. Defines design pillars and
+        player experience goals. Mentors junior designers on craft and
+        methodology. Drives innovation in game mechanics while ensuring
+        designs are feasible, fun, and commercially viable.
+    - id: lead
+      name: "Lead Game Designer"
+      years_experience: "8-12"
+      summary: >
+        Sets the design vision for entire game projects or major game
+        modes, aligning all design decisions with the creative vision
+        and business objectives. Manages design teams, establishes
+        design processes and quality standards, and represents design
+        in cross-functional leadership discussions. Drives adoption
+        of AI design tools while preserving creative quality.
+    - id: director
+      name: "Game Design Director"
+      years_experience: "12+"
+      summary: >
+        Defines the creative and design direction for game studios or
+        major franchises at the executive level. Shapes the studio's
+        design philosophy and creative culture. Makes high-stakes
+        creative decisions that affect multi-year projects and millions
+        of players. Bridges business strategy, market positioning, and
+        creative vision at the organizational level.
+  skills:
+    - id: mechanics_design
+      name: "Mechanics Design"
+      category: domain
+      description: >
+        Designing core game mechanics including interaction models, control
+        schemes, feedback systems, and the fundamental loops that make
+        games feel satisfying to play. Creating mechanics that are
+        intuitive to learn, deep enough to master, and emotionally
+        engaging through responsive, impactful player actions.
+      proficiency:
+        junior: >
+          Understands fundamental game mechanics concepts like input-
+          response loops, feedback systems, and player affordances.
+          Implements mechanics from design specifications and identifies
+          basic feel issues through playtesting. Analyzes existing games
+          to understand how their mechanics create engagement.
+        mid: >
+          Designs original game mechanics with attention to player feel,
+          responsiveness, and depth. Creates mechanics that are intuitive
+          to learn with satisfying feedback loops. Iterates on mechanics
+          through playtesting, tuning variables like timing, force, and
+          reward to achieve desired player experience.
+        senior: >
+          Creates innovative mechanics that define the core identity of
+          game projects. Masters the subtle craft of game feel — the
+          precise tuning of input response, animation timing, camera
+          behavior, and haptic feedback that makes interactions
+          satisfying. Designs mechanics that support both casual enjoyment
+          and competitive depth.
+        lead: >
+          Defines mechanical design pillars for game projects and ensures
+          all features align with the core gameplay vision. Evaluates
+          mechanic innovations across the industry and identifies
+          opportunities for differentiation. Mentors designers on the
+          craft of mechanics design and iterative tuning.
+        director: >
+          Shapes the studio's mechanical design philosophy and defines
+          the gameplay signatures that distinguish the studio's games.
+          Makes strategic decisions about core mechanic direction that
+          affect multi-year development investments. Ensures mechanical
+          innovation serves both player satisfaction and market
+          positioning.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          Game mechanics design is one of the most AI-resistant creative
+          skills because it requires an intuitive understanding of how
+          interactions feel to human players. AI can suggest mechanic
+          variations and simulate outcomes, but the craft of making a
+          game feel right — the precise tuning that creates joy and
+          satisfaction — requires deeply human creative sensibility.
+
+    - id: systems_design
+      name: "Systems Design"
+      category: technical
+      description: >
+        Designing interconnected game systems including economy balancing,
+        progression systems, difficulty curves, loot tables, crafting
+        systems, and the mathematical models that govern player advancement,
+        resource management, and long-term engagement.
+      proficiency:
+        junior: >
+          Understands basic game system concepts like progression curves,
+          resource economies, and reward schedules. Implements system
+          parameters from design documents and uses spreadsheets to model
+          simple game math. Identifies obvious balance issues through
+          playtesting.
+        mid: >
+          Designs game systems with well-modeled economies, balanced
+          progression curves, and engaging reward structures. Uses
+          spreadsheets and simulation tools to test system behavior at
+          scale. Identifies and resolves balance issues and degenerate
+          strategies through analytical testing and player observation.
+        senior: >
+          Architects complex, interconnected game systems that remain
+          balanced and engaging across hundreds of hours of play.
+          Designs self-balancing economies and progression systems that
+          resist exploitation while rewarding diverse play styles.
+          Creates mathematical models that predict system behavior and
+          guide tuning decisions.
+        lead: >
+          Defines systems design standards and methodologies for game
+          projects. Builds analytical frameworks and simulation tools
+          that improve team-wide systems design quality. Evaluates AI
+          tools for economy simulation and balance testing. Resolves
+          cross-system conflicts and ensures systemic coherence.
+        director: >
+          Shapes the studio's systems design philosophy at the strategic
+          level. Defines how interconnected systems serve long-term
+          engagement and monetization goals. Evaluates emerging
+          approaches to dynamic balancing and AI-driven live service
+          optimization while maintaining player-first design values.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI excels at simulating system behavior, identifying balance
+          outliers, and suggesting parameter adjustments. However,
+          designing systems that feel fair, reward diverse strategies,
+          and maintain long-term engagement requires understanding of
+          player psychology and ethical design principles that remain
+          deeply human.
+
+    - id: level_design
+      name: "Level Design"
+      category: technical
+      description: >
+        Designing game spaces including spatial layout, encounter pacing,
+        environmental storytelling, puzzle design, and flow through game
+        environments. Creating levels that guide players intuitively,
+        offer meaningful choices, and deliver memorable experiences through
+        carefully choreographed spatial sequences.
+      proficiency:
+        junior: >
+          Creates basic level blockouts using engine tools, following
+          established design patterns and metrics. Understands fundamental
+          level design principles like sight lines, chokepoints, and
+          player flow. Implements encounters and trigger scripts from
+          design specifications.
+        mid: >
+          Designs complete levels with effective pacing, clear navigation,
+          and engaging encounters. Uses environmental storytelling to
+          enrich the game world. Creates spaces that guide players
+          intuitively through visual language and spatial design without
+          relying on explicit waypoints.
+        senior: >
+          Creates memorable game spaces that define the player experience
+          through masterful spatial design, pacing, and environmental
+          narrative. Designs levels that support multiple play styles
+          and offer rewarding exploration. Pushes technical and creative
+          boundaries of level design within engine constraints.
+        lead: >
+          Defines level design standards, metrics, and review processes
+          for game projects. Ensures spatial consistency and quality
+          across large design teams. Evaluates AI procedural generation
+          tools and their role in level production. Mentors level
+          designers on craft and creative development.
+        director: >
+          Shapes the studio's approach to world building and spatial
+          design at the strategic level. Defines how level design serves
+          the game's overall experience and narrative goals. Evaluates
+          procedural generation strategies that balance handcrafted
+          quality with production efficiency at scale.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI procedural generation creates competent level layouts and
+          terrain, and is improving at encounter placement. However,
+          designing spaces that tell stories, create emotional responses,
+          and guide players through carefully crafted experiences
+          requires spatial creativity and player empathy that remain
+          human strengths.
+
+    - id: narrative_design
+      name: "Narrative Design"
+      category: domain
+      description: >
+        Designing interactive narratives including story structure,
+        character development, dialogue systems, branching storylines,
+        world-building, and the integration of narrative with gameplay
+        mechanics. Creating stories that leverage interactivity to
+        create unique emotional experiences impossible in linear media.
+      proficiency:
+        junior: >
+          Writes game dialogue and narrative content following established
+          story guidelines and character voice documents. Understands
+          basic interactive narrative structures like branching dialogue
+          and quest design. Implements narrative scripts using the
+          project's tools and pipelines.
+        mid: >
+          Designs narrative systems including branching dialogue trees,
+          quest structures, and environmental storytelling. Creates
+          compelling characters with consistent voices and meaningful
+          arcs. Integrates narrative with gameplay mechanics so story
+          and play reinforce each other.
+        senior: >
+          Creates innovative narrative designs that leverage interactivity
+          for experiences impossible in linear media. Masters complex
+          branching structures, emergent storytelling, and player agency
+          design. Writes narrative that responds meaningfully to player
+          choices while maintaining emotional coherence and thematic
+          depth.
+        lead: >
+          Defines narrative design vision and standards for game projects.
+          Ensures narrative consistency across large writing teams and
+          content volumes. Evaluates AI narrative tools for dialogue
+          generation and branching scenario exploration while maintaining
+          story quality and thematic coherence.
+        director: >
+          Shapes the studio's narrative design philosophy and storytelling
+          identity. Defines how narrative serves the studio's creative
+          brand and audience expectations. Makes strategic decisions about
+          narrative scope, branching complexity, and story investment that
+          affect multi-year development plans.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI generates competent game dialogue and can explore branching
+          narrative possibilities at scale. However, creating stories
+          with genuine emotional depth, designing narrative systems that
+          make player choices feel meaningful, and crafting characters
+          that players remember require human storytelling craft and
+          emotional intelligence.
+
+    - id: player_psychology
+      name: "Player Psychology"
+      category: analytical
+      description: >
+        Understanding player motivation, engagement patterns, flow states,
+        cognitive load, emotional response, and behavioral psychology as
+        they apply to game design. Using psychological principles to
+        create experiences that are intrinsically motivating, emotionally
+        engaging, and ethically respectful of players.
+      proficiency:
+        junior: >
+          Understands basic player motivation frameworks like Bartle types
+          and self-determination theory. Recognizes common engagement
+          patterns and can identify when a design creates frustration
+          or boredom through playtesting. Applies basic UX principles
+          to game interface design.
+        mid: >
+          Applies player psychology principles to design decisions,
+          creating experiences that support flow states, manage cognitive
+          load, and satisfy diverse motivations. Designs onboarding
+          sequences, difficulty curves, and reward schedules informed by
+          behavioral psychology. Identifies engagement issues through
+          player observation.
+        senior: >
+          Masters the application of psychological principles to game
+          design, creating deeply engaging experiences that feel
+          intrinsically motivating rather than manipulative. Designs
+          player journeys that balance challenge, mastery, and reward
+          across diverse player types. Advocates for ethical design that
+          respects player wellbeing.
+        lead: >
+          Defines player experience standards and ethical design
+          guidelines for game projects. Establishes player research
+          methodologies and analytics frameworks. Ensures design decisions
+          across the team are grounded in player understanding and
+          ethical principles.
+        director: >
+          Shapes the studio's player-first design philosophy at the
+          strategic level. Defines ethical boundaries for engagement
+          design and monetization. Balances business objectives with
+          player wellbeing and long-term community health. Influences
+          industry conversation about responsible game design.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          AI can analyze player behavior data and identify engagement
+          patterns, but understanding why players feel the way they do,
+          designing for intrinsic motivation, and making ethical
+          judgments about engagement mechanics require human empathy
+          and moral reasoning that AI cannot provide.
+
+    - id: prototyping
+      name: "Prototyping & Iteration"
+      category: technical
+      description: >
+        Rapidly creating playable prototypes to test design hypotheses,
+        including paper prototyping, digital mockups, engine-based
+        greybox levels, and minimum viable feature implementations.
+        Using iterative design methodology to refine ideas through
+        build-test-learn cycles.
+      proficiency:
+        junior: >
+          Creates simple prototypes using engine tools or paper prototyping
+          to test basic game concepts. Understands the purpose of
+          prototyping in the design process and participates in
+          prototype evaluation sessions. Iterates on assigned designs
+          based on playtest feedback.
+        mid: >
+          Builds functional prototypes quickly using appropriate tools
+          for the design question being tested. Designs focused
+          prototypes that isolate specific mechanics or experience
+          elements. Uses iterative methodology to refine designs
+          efficiently, knowing when to pivot versus polish.
+        senior: >
+          Masters rapid prototyping across multiple tools and methods,
+          selecting the right fidelity level for each design question.
+          Creates prototypes that communicate design vision effectively
+          to stakeholders and team members. Establishes prototyping
+          as a core design practice, building shared tools and templates
+          that accelerate team-wide iteration.
+        lead: >
+          Defines prototyping standards and processes for design teams.
+          Establishes greenlight criteria and prototyping gates that
+          improve design decision quality. Evaluates AI prototyping
+          tools that could accelerate the build-test-learn cycle.
+        director: >
+          Embeds prototyping culture in the studio's creative process at
+          the organizational level. Ensures production timelines and
+          budgets support meaningful prototyping and iteration. Balances
+          prototyping investment against production deadlines, knowing
+          when to prototype and when to commit.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI is increasingly useful for generating prototype assets,
+          creating placeholder content, and even producing functional
+          game prototypes from descriptions. However, designing
+          prototypes that test the right questions, interpreting
+          playtest results, and making design decisions based on
+          qualitative player feedback remain deeply human activities.
+
+    - id: playtesting
+      name: "Playtesting & Player Research"
+      category: analytical
+      description: >
+        Designing and conducting playtests, analyzing player behavior
+        data, interpreting qualitative feedback, and translating research
+        findings into design improvements. Building systematic approaches
+        to understanding player experience and validating design
+        decisions through evidence.
+      proficiency:
+        junior: >
+          Participates in playtesting sessions as an observer, taking
+          notes on player behavior and recording feedback. Understands
+          basic playtesting methodology including avoiding leading
+          questions and observer bias. Organizes and summarizes playtest
+          data for team review.
+        mid: >
+          Designs and facilitates playtest sessions with appropriate
+          protocols, tasks, and data collection methods. Analyzes both
+          quantitative telemetry and qualitative observation data.
+          Translates playtest findings into actionable design
+          recommendations with clear priority and rationale.
+        senior: >
+          Leads comprehensive player research programs including lab
+          playtests, remote testing, beta analysis, and live game
+          analytics. Designs research methodologies that answer critical
+          design questions efficiently. Identifies patterns in player
+          behavior that reveal deeper design issues or opportunities.
+        lead: >
+          Defines playtesting standards, infrastructure, and cadences
+          for game projects. Builds player research capabilities
+          including analytics pipelines, research labs, and community
+          feedback channels. Establishes data-informed design culture
+          across the team.
+        director: >
+          Shapes the studio's approach to player research and evidence-
+          based design at the organizational level. Invests in research
+          capabilities that improve design quality across projects.
+          Ensures player voice influences strategic design decisions
+          and creative direction.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI is powerful at analyzing player behavior telemetry, detecting
+          engagement patterns, and identifying balance issues from data.
+          However, designing playtests that reveal genuine player
+          experience, interpreting qualitative feedback with empathy, and
+          translating ambiguous findings into design improvements require
+          human research skills and design intuition.
+
+    - id: ai_game_tools
+      name: "AI Game Development Tools"
+      category: technical
+      description: >
+        Using AI tools for game development including procedural content
+        generation, NPC behavior systems, AI-assisted asset creation,
+        automated testing, and machine learning integration. Evaluating
+        and integrating AI technologies that enhance game design and
+        production.
+      proficiency:
+        junior: >
+          Uses AI game tools for basic tasks like asset generation,
+          automated testing, and NPC behavior scripting. Understands the
+          capabilities and limitations of current AI game development
+          tools. Follows team guidelines for AI tool integration and
+          content quality standards.
+        mid: >
+          Integrates AI tools effectively into design workflows for
+          tasks like procedural level generation, NPC dialogue, and
+          concept art exploration. Evaluates AI output quality against
+          design standards and knows when AI-generated content enhances
+          versus diminishes the player experience.
+        senior: >
+          Designs AI-augmented game development workflows that accelerate
+          content creation while maintaining design quality. Evaluates
+          emerging AI game technologies and recommends adoption decisions.
+          Pushes AI tools creatively for novel applications like emergent
+          NPC behavior and adaptive game experiences.
+        lead: >
+          Defines the project's AI game development strategy including
+          tool selection, integration standards, and quality governance.
+          Balances AI content generation efficiency against handcrafted
+          quality. Establishes guidelines for AI usage that serve the
+          game's creative vision.
+        director: >
+          Shapes the studio's AI game development strategy at the
+          executive level. Evaluates strategic investments in AI
+          technology for game development. Positions the studio to
+          leverage AI for competitive advantage while preserving the
+          human-crafted quality that distinguishes great games.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          This skill is about directing and leveraging AI as a game
+          development tool. As AI capabilities in game development
+          mature, the ability to evaluate, integrate, and creatively
+          direct these tools becomes a critical competitive advantage
+          for game designers and studios.
+
+    - id: game_engine_proficiency
+      name: "Game Engine Proficiency"
+      category: technical
+      description: >
+        Working with game engines like Unity, Unreal Engine, and Godot
+        for design implementation, level building, scripting, and
+        prototyping. Using engine tools to bring designs to life, test
+        ideas in real-time, and collaborate with engineering and art
+        teams within shared development environments.
+      proficiency:
+        junior: >
+          Operates a game engine at a functional level for level
+          blockouts, basic scripting, and content implementation.
+          Navigates the engine editor, uses built-in tools, and follows
+          established workflows for asset integration and scene setup.
+        mid: >
+          Uses engine tools confidently for level design, gameplay
+          scripting, and prototyping. Creates functional game content
+          using visual scripting or code with appropriate use of engine
+          systems like physics, animation, and UI. Collaborates
+          effectively with engineers and artists within the engine
+          pipeline.
+        senior: >
+          Demonstrates advanced engine proficiency, using editor tools,
+          scripting, and engine systems to rapidly prototype and implement
+          complex design ideas. Creates custom editor tools and workflows
+          that improve team productivity. Works across multiple engines
+          as projects require.
+        lead: >
+          Defines engine workflow standards and tool requirements for
+          design teams. Evaluates engine capabilities against project
+          needs and makes technology recommendations. Ensures design
+          teams have the engine training and custom tooling needed for
+          efficient content creation.
+        director: >
+          Shapes the studio's engine technology strategy, including
+          engine selection, custom tool investment, and pipeline
+          architecture. Evaluates engine evolution and emerging platforms.
+          Ensures technology choices support the studio's creative
+          ambitions and production efficiency goals.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI features are being integrated into game engines for tasks
+          like code generation, asset placement, and behavior scripting.
+          However, using an engine effectively as a creative tool for
+          design implementation and rapid prototyping requires deep
+          familiarity and creative fluency that comes from extensive
+          practice.
+
+    - id: cross_functional_leadership
+      name: "Cross-Functional Leadership"
+      category: interpersonal
+      description: >
+        Coordinating art, engineering, audio, QA, and production teams
+        around a unified design vision. Communicating design intent
+        clearly across disciplines, resolving creative conflicts, and
+        building collaborative relationships that enable teams to
+        create their best work together.
+      proficiency:
+        junior: >
+          Communicates design specifications clearly to engineering and
+          art team members. Participates in cross-functional meetings
+          and understands how different disciplines contribute to the
+          game. Asks questions that help clarify implementation
+          requirements and constraints.
+        mid: >
+          Collaborates effectively with engineering, art, and audio
+          partners on feature development. Communicates design intent
+          in terms each discipline understands. Navigates technical and
+          artistic constraints to find solutions that serve the design
+          vision within production realities.
+        senior: >
+          Leads cross-functional feature teams, aligning diverse
+          disciplines around shared design goals. Resolves creative and
+          technical conflicts through facilitation and compromise.
+          Builds trust with engineering, art, and production partners
+          through consistent communication and mutual respect.
+        lead: >
+          Defines cross-functional collaboration models and communication
+          standards for game projects. Manages relationships between
+          design and other departments at the team-lead level. Ensures
+          design vision is understood and supported across all
+          disciplines throughout production.
+        director: >
+          Builds organizational structures and cultures that support
+          effective cross-functional game development. Resolves inter-
+          departmental conflicts at the executive level. Ensures all
+          disciplines contribute to the creative vision while maintaining
+          their professional excellence and team health.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Cross-functional leadership is fundamentally about human
+          relationships, communication, and organizational dynamics.
+          AI can assist with project tracking and communication tools,
+          but building trust, resolving creative conflicts, and
+          inspiring diverse teams toward a shared vision remain
+          irreducibly human leadership skills.
+
+    - id: monetization_design
+      name: "Monetization Design"
+      category: strategic
+      description: >
+        Designing ethical, sustainable monetization systems including
+        free-to-play models, battle passes, cosmetic stores, subscription
+        services, and premium pricing strategies. Balancing revenue
+        generation with player satisfaction, fairness, and long-term
+        community health.
+      proficiency:
+        junior: >
+          Understands common game monetization models and their trade-offs.
+          Analyzes monetization implementations in existing games.
+          Assists with content creation for monetization features like
+          battle passes and cosmetic stores following established design
+          patterns.
+        mid: >
+          Designs monetization features including store layouts, battle
+          pass progression, and pricing structures. Balances monetization
+          pressure against player experience and fairness. Analyzes
+          conversion and spending data to optimize monetization
+          performance while maintaining player satisfaction.
+        senior: >
+          Architects comprehensive monetization systems that generate
+          sustainable revenue while maintaining player trust and game
+          integrity. Designs monetization that feels fair and optional,
+          rewarding spending without punishing free players. Advocates
+          for ethical monetization practices that serve long-term
+          community health.
+        lead: >
+          Defines monetization strategy and ethical guidelines for game
+          projects. Balances revenue targets with player experience
+          goals. Manages live service monetization including seasonal
+          content, events, and promotional strategies. Establishes
+          analytics frameworks for monetization performance and player
+          sentiment.
+        director: >
+          Shapes the studio's monetization philosophy at the strategic
+          level. Defines ethical boundaries and positions monetization
+          as player-respectful rather than extractive. Navigates
+          regulatory environment and industry standards. Ensures
+          monetization strategy supports both business sustainability
+          and positive player relationships.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can analyze spending patterns, optimize pricing, and predict
+          conversion rates. However, designing monetization that feels
+          fair and respectful to players, making ethical judgments about
+          engagement mechanics, and building trust through transparent
+          business models require human values and player empathy that
+          AI cannot provide.

@@ -1,0 +1,560 @@
+role:
+  id: academic_faculty
+  function: research
+  name: "Academic Faculty"
+  also_known_as:
+    - "Professor"
+    - "Lecturer"
+    - "Academic Researcher"
+    - "Tenure-Track Faculty"
+    - "University Instructor"
+  description: >
+    Combines research, teaching, and institutional service at universities
+    and colleges. Designs curricula, delivers instruction, mentors students,
+    conducts original research, secures funding, and contributes to
+    departmental and university governance. Balances multiple demanding
+    roles while advancing their field.
+  ai_impact:
+    level: "low"
+    summary: >
+      The core activities of academic faculty — teaching, mentoring, and
+      research leadership — are deeply human endeavors that AI augments but
+      cannot replace. AI tools help with lecture preparation, grading
+      assistance, literature review, and administrative tasks, freeing
+      faculty to focus more on the high-value activities of inspiring
+      students, building scholarly relationships, and advancing knowledge.
+      However, the scholarly relationship between faculty and students, the
+      exercise of academic judgment, and the institutional leadership
+      required for effective governance remain fundamentally human. Faculty
+      who thoughtfully integrate AI into their teaching and research will
+      enhance their effectiveness without diminishing their essential role.
+    automating:
+      - "Routine grading of objective assessments"
+      - "Generating first drafts of syllabi and course materials"
+      - "Scheduling and administrative coordination"
+      - "Basic literature search and summarization"
+      - "Formatting citations and references"
+      - "Generating practice problems and study materials"
+    augmenting:
+      - "Creating personalized learning pathways for students"
+      - "Analyzing student performance data to identify at-risk learners"
+      - "Drafting grant proposals and research papers"
+      - "Developing interactive course content and simulations"
+      - "Conducting literature reviews for research projects"
+      - "Preparing accreditation documentation and reports"
+    preserving:
+      - "Live classroom teaching and real-time student engagement"
+      - "One-on-one student mentoring and career advising"
+      - "Research vision and intellectual leadership"
+      - "Academic governance and institutional service"
+      - "Peer collaboration and scholarly discourse"
+      - "Ethical judgment in research and teaching"
+    last_reviewed: "2026-04"
+    confidence: medium
+    sources:
+      - name: "O*NET - Postsecondary Teachers"
+        url: "https://www.onetonline.org/link/summary/25-1099.00"
+      - name: "AAUP - The Role of Faculty"
+        url: "https://www.aaup.org/"
+      - name: "Chronicle of Higher Education"
+        url: "https://www.chronicle.com/"
+  levels:
+    - id: assistant_professor
+      name: "Assistant Professor"
+      years_experience: "0-6"
+      summary: >
+        Establishes an independent academic career by building a research
+        program, developing courses, and beginning to attract funding.
+        Balances the demands of teaching, research, and service while
+        working toward tenure. Mentors graduate students and contributes
+        to departmental activities.
+    - id: associate_professor
+      name: "Associate Professor"
+      years_experience: "6-12"
+      summary: >
+        Has achieved tenure based on demonstrated excellence in research,
+        teaching, and service. Leads an established research group with
+        a track record of funded projects and publications. Takes on
+        greater institutional leadership roles and mentors junior faculty.
+    - id: full_professor
+      name: "Full Professor"
+      years_experience: "12-20"
+      summary: >
+        Recognized as a leading scholar with sustained contributions
+        to research, teaching, and the institution. Holds significant
+        leadership positions in the department and university. Shapes
+        the direction of their field through research, editorial roles,
+        and professional service.
+    - id: distinguished_professor
+      name: "Distinguished Professor"
+      years_experience: "20+"
+      summary: >
+        Holds an endowed or named chair recognizing exceptional
+        contributions to the field and institution. Serves as a
+        senior leader and advisor, shaping university strategy and
+        policy. Maintains an active research and mentoring presence
+        while focusing increasingly on legacy and field-level impact.
+  skills:
+    - id: teaching
+      name: "Teaching & Pedagogy"
+      category: domain
+      description: >
+        Designing and delivering effective instruction using evidence-based
+        pedagogical approaches. Includes lecture design, active learning
+        facilitation, classroom management, use of educational technology,
+        and adapting teaching strategies to diverse learner needs and
+        learning modalities.
+      proficiency:
+        assistant_professor: >
+          Designs and delivers courses in their area of expertise,
+          experimenting with active learning techniques and educational
+          technology. Seeks student feedback and adjusts teaching
+          approaches based on learning outcomes and peer observations.
+        associate_professor: >
+          Delivers consistently effective instruction across multiple
+          courses, integrating research into teaching. Implements
+          innovative pedagogical approaches and mentors junior faculty
+          on teaching practices.
+        full_professor: >
+          Recognized for teaching excellence with a well-developed
+          pedagogical philosophy. Creates transformative learning
+          experiences that inspire students and shape how the subject
+          is taught in the department.
+        distinguished_professor: >
+          Influences teaching practice across the institution and
+          discipline through pedagogical innovation, textbook
+          authorship, or educational leadership. Their courses are
+          landmark experiences that define the student journey.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can help prepare materials and personalize learning, but
+          the act of teaching — inspiring curiosity, facilitating
+          discussion, adapting in real time to student confusion, and
+          modeling intellectual engagement — is fundamentally human.
+
+    - id: curriculum_design
+      name: "Curriculum Design"
+      category: domain
+      description: >
+        Designing academic programs, courses, and learning experiences
+        that achieve defined educational outcomes. Includes program-level
+        curriculum mapping, learning objective development, assessment
+        strategy design, and continuous improvement based on student
+        outcomes and disciplinary evolution.
+      proficiency:
+        assistant_professor: >
+          Designs individual courses with clear learning objectives,
+          aligned assessments, and logical content progression. Adapts
+          existing curricula to incorporate new developments in the
+          field and responds to student feedback.
+        associate_professor: >
+          Leads curriculum development at the program level, ensuring
+          coherent progression across courses and alignment with
+          accreditation standards. Designs new courses that fill
+          identified gaps in the curriculum.
+        full_professor: >
+          Shapes departmental curriculum strategy, leading program
+          reviews and redesigns. Ensures curricula prepare students
+          for evolving career landscapes and integrates
+          interdisciplinary perspectives.
+        distinguished_professor: >
+          Influences curriculum standards at the disciplinary level
+          through professional society leadership, accreditation body
+          participation, and widely adopted educational resources.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can analyze learning outcomes data and suggest curriculum
+          structures, but designing programs that develop students
+          holistically, respond to disciplinary and societal changes,
+          and meet accreditation standards requires deep pedagogical
+          and domain expertise.
+
+    - id: research_leadership
+      name: "Research Leadership"
+      category: leadership
+      description: >
+        Setting and executing a research agenda, building a productive
+        research group, and making strategic decisions about research
+        direction. Includes identifying impactful problems, securing
+        resources, managing research teams, and positioning work for
+        maximum scholarly and societal impact.
+      proficiency:
+        assistant_professor: >
+          Establishes an independent research program building on
+          doctoral and postdoctoral work. Identifies a niche that is
+          both personally compelling and fundable, and begins building
+          a small research team.
+        associate_professor: >
+          Leads a productive research group with a clear identity and
+          growing reputation. Pivots research direction strategically
+          to pursue high-impact questions and secures sustained
+          external funding.
+        full_professor: >
+          Runs a research enterprise that shapes the direction of the
+          subfield. Makes strategic investments in emerging research
+          areas and builds collaborative networks that amplify impact.
+          Attracts top talent to the research group.
+        distinguished_professor: >
+          Defines research agendas that influence the entire field
+          and attract national or international attention. Advises
+          funding agencies and policy makers on research priorities
+          and mentors the next generation of research leaders.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          AI can provide data on research trends and help analyze
+          citation patterns, but setting a visionary research agenda,
+          building and motivating a team, and making strategic
+          decisions about resource allocation require human judgment,
+          creativity, and leadership.
+
+    - id: student_mentoring
+      name: "Student Mentoring"
+      category: interpersonal
+      description: >
+        Advising and mentoring students at all levels — undergraduate,
+        graduate, and postdoctoral — through their academic and
+        professional development. Includes thesis supervision, career
+        guidance, personal support, and creating an inclusive environment
+        that enables diverse students to thrive.
+      proficiency:
+        assistant_professor: >
+          Mentors graduate students through coursework and early
+          research, learning to balance guidance with fostering
+          independence. Provides career advice based on recent
+          personal experience navigating the academic job market.
+        associate_professor: >
+          Mentors students at multiple career stages with an
+          established track record of successful completions.
+          Develops individualized mentoring approaches that address
+          diverse student needs and backgrounds.
+        full_professor: >
+          Maintains a legacy of mentees who have gone on to successful
+          careers in academia and industry. Creates mentoring
+          structures within the group that provide peer support and
+          builds networks that help mentees advance.
+        distinguished_professor: >
+          Recognized for exceptional mentoring with awards or formal
+          recognition. Their mentoring network spans multiple
+          academic generations and produces field leaders. Shapes
+          institutional mentoring programs and policies.
+      ai_impact:
+        rating: 0.05
+        detail: >
+          Mentoring is fundamentally a human relationship built on
+          trust, empathy, and shared experience. AI cannot replace
+          the personal connection, emotional support, and
+          individualized career guidance that effective mentoring
+          requires.
+
+    - id: grant_acquisition
+      name: "Grant Acquisition & Management"
+      category: communication
+      description: >
+        Writing and winning competitive research grants from federal
+        agencies, foundations, and industry partners. Encompasses
+        identifying funding opportunities, crafting compelling proposals,
+        building collaborative teams, managing awarded funds, and
+        maintaining relationships with program officers.
+      proficiency:
+        assistant_professor: >
+          Writes proposals for early-career awards and smaller grants,
+          learning to articulate research significance and innovation.
+          Manages first awarded grants including budgets, reporting,
+          and compliance requirements.
+        associate_professor: >
+          Secures sustained funding from major agencies as lead PI.
+          Writes compelling multi-year proposals and builds the track
+          record of successful completion that strengthens future
+          applications.
+        full_professor: >
+          Maintains a portfolio of funded grants that sustain a large
+          research group. Leads multi-PI and center-level grant
+          applications, coordinating across institutions and
+          disciplines.
+        distinguished_professor: >
+          Secures transformative funding at the highest levels and
+          influences funding agency priorities through advisory
+          roles. Their grant portfolio supports institutional
+          research infrastructure and trains the next generation.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can assist with proposal drafting, compliance checking,
+          and budget preparation, but building a compelling research
+          narrative, demonstrating innovation, and cultivating
+          relationships with funding agencies remain fundamentally
+          human activities.
+
+    - id: scholarly_publishing
+      name: "Scholarly Publishing"
+      category: communication
+      description: >
+        Publishing research in peer-reviewed journals, managing the
+        submission and revision process, and building a publication
+        record that advances knowledge and establishes scholarly
+        reputation. Includes selecting appropriate venues, responding
+        to reviews, and navigating the evolving landscape of open
+        access and preprints.
+      proficiency:
+        assistant_professor: >
+          Publishes regularly in respected journals, building a
+          coherent publication record. Manages the revision process
+          effectively and begins serving as a reviewer for journals
+          in the field.
+        associate_professor: >
+          Publishes in top-tier journals with a growing citation
+          record. Manages a pipeline of publications from the
+          research group and serves on editorial boards. Navigates
+          open access requirements and preprint strategies.
+        full_professor: >
+          Maintains a sustained publication record with high-impact
+          contributions that shape the field. Serves in senior
+          editorial roles and contributes to the evolution of
+          scholarly communication in the discipline.
+        distinguished_professor: >
+          Has a publication record that defines the field, with
+          landmark papers that are widely cited and taught. Influences
+          the direction of scholarly publishing through editorial
+          leadership and advocacy for best practices.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI accelerates manuscript preparation, literature
+          integration, and formatting, but crafting a compelling
+          scholarly narrative, exercising judgment about what to
+          publish and where, and navigating the social dimensions
+          of peer review remain human activities.
+
+    - id: academic_service
+      name: "Academic Service & Governance"
+      category: professional
+      description: >
+        Contributing to the functioning and improvement of the
+        department, university, and profession through committee work,
+        administrative roles, journal editing, conference organization,
+        and professional society leadership.
+      proficiency:
+        assistant_professor: >
+          Serves on departmental committees and contributes to
+          program administration. Begins reviewing for journals
+          and organizing conference sessions in their area of
+          expertise.
+        associate_professor: >
+          Takes on significant committee leadership roles within the
+          department and university. Serves on editorial boards,
+          organizes conference tracks, and contributes to professional
+          society governance.
+        full_professor: >
+          Holds major leadership positions such as department chair,
+          program director, or center director. Serves in senior
+          roles in professional societies and on grant review panels
+          for funding agencies.
+        distinguished_professor: >
+          Provides strategic leadership to the institution through
+          advisory roles, task forces, and governance bodies. Leads
+          professional societies, shapes accreditation standards,
+          and contributes to higher education policy at the national
+          level.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          AI can help with scheduling, document preparation, and
+          data analysis for governance decisions, but the leadership,
+          negotiation, and consensus-building required for effective
+          academic service are fundamentally interpersonal activities.
+
+    - id: public_engagement
+      name: "Public Engagement & Science Communication"
+      category: communication
+      description: >
+        Communicating research and scholarly ideas to audiences beyond
+        academia, including media, policy makers, industry partners,
+        and the general public. Encompasses public lectures, media
+        interviews, expert commentary, op-eds, and community engagement
+        that bridges the gap between scholarship and society.
+      proficiency:
+        assistant_professor: >
+          Communicates research to non-specialist audiences through
+          departmental events and local outreach. Begins developing
+          a public voice through blog posts, social media, or
+          community presentations.
+        associate_professor: >
+          Engages regularly with media and public audiences, providing
+          expert commentary and translating research for broader
+          impact. Builds relationships with journalists and
+          communicators in their area of expertise.
+        full_professor: >
+          Serves as a recognized public voice for their field, giving
+          keynote lectures, media interviews, and policy briefings.
+          Writes for general audiences and contributes to public
+          understanding of science.
+        distinguished_professor: >
+          Is a prominent public intellectual whose engagement shapes
+          public discourse and policy. Their communication reaches
+          national or international audiences and influences how
+          society understands and values the field.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can help draft communications and suggest framing, but
+          authentic public engagement — building trust, responding to
+          live questions, and serving as a credible expert voice —
+          requires human presence, credibility, and communication
+          skills.
+
+    - id: lab_management
+      name: "Research Group Management"
+      category: operational
+      description: >
+        Managing the operations of a research group or laboratory,
+        including budgets, personnel, equipment, space, and
+        administrative processes. Ensures the research environment
+        supports productive work and that resources are allocated
+        effectively across projects and personnel.
+      proficiency:
+        assistant_professor: >
+          Sets up and manages a small research group including
+          budgets, equipment procurement, and space allocation.
+          Learns institutional processes for hiring, compliance,
+          and financial management.
+        associate_professor: >
+          Manages a growing research group with multiple funding
+          sources, staff categories, and ongoing projects. Develops
+          efficient administrative processes and delegates operational
+          responsibilities appropriately.
+        full_professor: >
+          Runs a large research enterprise with complex budgets,
+          diverse personnel, and significant equipment and space
+          needs. Manages shared resources across projects and
+          ensures sustainable operations through financial planning.
+        distinguished_professor: >
+          Oversees research operations at the center or institute
+          level, managing shared facilities and large collaborative
+          grants. Advises junior faculty on research group management
+          and contributes to institutional resource planning.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can help with budget tracking, scheduling, and
+          administrative automation, but the people management,
+          resource negotiation, and strategic decision-making
+          involved in running a research group are fundamentally
+          human leadership activities.
+
+    - id: academic_leadership
+      name: "Academic Leadership"
+      category: leadership
+      description: >
+        Providing strategic leadership in academic settings including
+        department leadership, program direction, strategic planning,
+        faculty recruitment, and contributing to the intellectual and
+        institutional direction of the university.
+      proficiency:
+        assistant_professor: >
+          Contributes to departmental discussions about direction and
+          priorities. Participates in faculty searches and program
+          reviews, learning the dynamics of academic governance.
+        associate_professor: >
+          Takes on leadership roles such as program coordinator or
+          committee chair. Contributes to strategic planning and
+          helps shape departmental priorities and hiring decisions.
+        full_professor: >
+          Serves in major leadership roles such as department chair
+          or associate dean. Leads strategic initiatives, manages
+          faculty recruitment, and shapes the intellectual direction
+          of the department.
+        distinguished_professor: >
+          Provides senior leadership to the institution through
+          decanal roles, provostial advisory committees, or
+          equivalent positions. Shapes university strategy and
+          advocates for the role of research and education in
+          society.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Academic leadership requires vision, interpersonal skill,
+          political acumen, and deep understanding of institutional
+          culture — all fundamentally human capabilities that AI
+          can inform but cannot perform.
+
+    - id: interdisciplinary_collaboration
+      name: "Interdisciplinary Collaboration"
+      category: interpersonal
+      description: >
+        Working productively across disciplinary boundaries to address
+        complex research and educational challenges. Requires the
+        ability to learn new disciplinary languages, find common ground,
+        navigate different methodological traditions, and build trust
+        across academic cultures.
+      proficiency:
+        assistant_professor: >
+          Engages in collaborations beyond their immediate discipline,
+          learning to communicate across methodological and
+          terminological differences. Identifies complementary
+          expertise that strengthens their research.
+        associate_professor: >
+          Leads interdisciplinary projects that produce scholarship
+          valued by multiple fields. Navigates the challenges of
+          co-authorship, methodology integration, and publication
+          venue selection across disciplines.
+        full_professor: >
+          Builds and sustains interdisciplinary research programs
+          that attract funding and produce innovative scholarship.
+          Creates institutional structures that support
+          interdisciplinary work.
+        distinguished_professor: >
+          Catalyzes new interdisciplinary fields or programs,
+          bringing together communities that had not previously
+          collaborated. Their cross-disciplinary network generates
+          transformative insights and attracts top talent.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          AI can help translate terminology and identify cross-
+          disciplinary connections, but building the trust,
+          intellectual humility, and shared understanding required
+          for productive interdisciplinary work is an inherently
+          human endeavor.
+
+    - id: assessment_evaluation
+      name: "Assessment & Evaluation"
+      category: analytical
+      description: >
+        Designing and implementing assessment strategies that accurately
+        measure student learning, from formative classroom assessments
+        through summative examinations and program-level evaluation.
+        Includes rubric design, exam construction, learning analytics,
+        and using assessment data to improve teaching and curriculum.
+      proficiency:
+        assistant_professor: >
+          Designs assessments aligned with learning objectives using
+          a mix of formative and summative approaches. Creates rubrics
+          for consistent grading and uses assessment results to
+          adjust teaching in real time.
+        associate_professor: >
+          Implements sophisticated assessment strategies including
+          authentic assessments, portfolio evaluation, and peer
+          review. Analyzes assessment data to identify patterns in
+          student learning and adjusts curriculum accordingly.
+        full_professor: >
+          Leads program-level assessment and accreditation efforts,
+          designing assessment plans that demonstrate student
+          learning outcomes across the curriculum. Mentors faculty
+          in assessment best practices.
+        distinguished_professor: >
+          Influences assessment practice at the disciplinary level
+          through research, publications, or leadership in
+          accreditation bodies. Pioneers novel assessment approaches
+          that are adopted across institutions.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI is increasingly capable of automated grading for
+          objective assessments and can analyze student performance
+          data, but designing assessments that measure deep learning,
+          providing formative feedback that guides growth, and making
+          holistic judgments about student progress remain human
+          responsibilities.

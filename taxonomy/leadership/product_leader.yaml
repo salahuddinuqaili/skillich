@@ -29,6 +29,7 @@ role:
       - Customer feedback aggregation and sentiment analysis
       - Market sizing and opportunity scoring models
       - Feature impact prediction and prioritization scoring
+      - AI agent-driven customer insight synthesis and strategic briefing generation
     augmenting:
       - Product strategy development with AI-powered market analysis
       - Pricing optimization through AI-driven elasticity modeling
@@ -41,7 +42,7 @@ role:
       - Navigating organizational politics to secure resources and alignment
       - Making high-stakes product bets that define the company's direction
       - Building deep customer empathy and translating it into product strategy
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "Reforge - AI and the Future of Product Management"

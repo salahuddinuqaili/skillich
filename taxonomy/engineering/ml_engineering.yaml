@@ -24,26 +24,30 @@ role:
       advances in AI. Foundational model APIs, AutoML platforms, and code-generation assistants
       are automating significant portions of routine model development, while the demand for
       engineers who can architect novel ML systems, fine-tune large models, and operate them
-      responsibly at scale continues to accelerate.
+      responsibly at scale continues to accelerate. Agentic AI with tool use
+      and MCP integration is expanding the scope of automated ML pipeline
+      construction and experiment orchestration.
     automating:
       - "Boilerplate model training scripts and hyperparameter searches"
       - "Standard feature transformation and preprocessing pipelines"
       - "Routine model selection for well-understood problem types"
       - "Generation of evaluation reports and visualization dashboards"
       - "Writing unit tests and integration tests for ML pipelines"
+      - "AI agent-driven experiment orchestration and pipeline scaffolding"
     augmenting:
       - "Rapid prototyping of novel architectures and training strategies"
       - "Debugging training failures and diagnosing data-quality issues"
       - "Literature review and staying current with research advances"
       - "Code review and refactoring of ML codebases"
       - "Incident triage when production models degrade"
+      - "Agent-assisted model debugging and training configuration exploration"
     preserving:
       - "End-to-end ML system design and architectural decision-making"
       - "Cross-functional collaboration and stakeholder communication"
       - "Responsible AI governance, fairness audits, and ethical judgment"
       - "Novel research translation and adaptation to business domains"
       - "Mentoring junior engineers and building team culture"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "O*NET - Software Developers and ML Engineers"
@@ -460,7 +464,7 @@ role:
           partnerships with foundation model providers. Defines governance frameworks for
           LLM deployment and advises leadership on capability evolution and risk management.
       ai_impact:
-        rating: 0.65
+        rating: 0.7
         detail: >
           AI-powered tools are accelerating LLM development by automating dataset preparation,
           suggesting prompt strategies, and simplifying RAG pipeline construction. However,

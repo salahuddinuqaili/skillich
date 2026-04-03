@@ -36,6 +36,7 @@ role:
       - "DRG grouping and reimbursement impact estimation"
       - "Code-to-documentation reconciliation for completeness checks"
       - "Denial pattern analysis and root cause identification"
+      - "AI agent-assisted end-to-end coding workflows from documentation to claim submission"
     augmenting:
       - "Complex inpatient coding with AI-suggested code candidates"
       - "Documentation improvement queries generated from NLP analysis"
@@ -49,7 +50,7 @@ role:
       - "Appeals and denial management requiring human argumentation"
       - "Ethical judgment in upcoding/downcoding gray areas"
       - "Training and mentorship of new coders"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "AHIMA - The Impact of AI on HIM"

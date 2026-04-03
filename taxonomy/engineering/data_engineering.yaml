@@ -31,7 +31,9 @@ role:
       architecture, cross-team data contracts, and compliance strategy are
       augmented rather than replaced. Net effect is a shift from hand-coding
       boilerplate to curating, reviewing, and orchestrating AI-generated
-      artifacts within well-governed frameworks.
+      artifacts within well-governed frameworks. Agentic AI can now
+      orchestrate multi-step pipeline creation and data migration workflows,
+      further accelerating routine development tasks.
     automating:
       - "Boilerplate SQL and transformation code generation"
       - "Schema inference and initial data-model scaffolding"
@@ -39,6 +41,7 @@ role:
       - "Pipeline documentation and column-level lineage description"
       - "Simple source-to-staging ingestion pipeline creation"
       - "Routine data-format conversion and normalization scripts"
+      - "AI agent-driven multi-step pipeline scaffolding and data migration workflows"
     augmenting:
       - "Complex data-model design and dimensional modeling"
       - "Pipeline performance tuning and cost optimization"
@@ -46,6 +49,7 @@ role:
       - "Data contract negotiation between producer and consumer teams"
       - "Migration planning across warehouse platforms"
       - "Streaming architecture design and exactly-once semantics"
+      - "Agent-assisted data lineage exploration and schema impact analysis"
     preserving:
       - "Cross-functional stakeholder communication and requirements gathering"
       - "Data governance policy design and regulatory interpretation"
@@ -53,7 +57,7 @@ role:
       - "Production incident response and on-call triage"
       - "Mentoring junior engineers and building team culture"
       - "Vendor evaluation and build-vs-buy decisions"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "dbt Labs - Analytics Engineering Guide"
@@ -146,7 +150,7 @@ role:
           selection, query governance policies, and cost-attribution models
           for compute-intensive analytical workloads at enterprise scale.
       ai_impact:
-        rating: 0.7
+        rating: 0.75
         detail: >
           LLMs can generate correct SQL for most common patterns and
           explain query plans. However, performance tuning against specific
@@ -184,7 +188,7 @@ role:
           investing in Rust-based connectors for performance-critical
           paths.
       ai_impact:
-        rating: 0.65
+        rating: 0.7
         detail: >
           AI code-generation tools accelerate boilerplate Python scripting
           and can scaffold connectors quickly. Complex performance tuning
@@ -542,7 +546,7 @@ role:
           Engages with the dbt community and dbt Labs to influence product
           direction based on large-scale production experience.
       ai_impact:
-        rating: 0.65
+        rating: 0.7
         detail: >
           AI tools can generate dbt models, tests, and documentation from
           natural language descriptions. Complex macro engineering,

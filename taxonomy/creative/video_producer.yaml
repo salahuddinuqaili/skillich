@@ -1,0 +1,562 @@
+role:
+  id: video_producer
+  function: creative
+  name: "Video Producer"
+  also_known_as:
+    - "Video Editor"
+    - "Filmmaker"
+    - "Content Producer"
+    - "Video Content Creator"
+    - "Motion Media Specialist"
+  description: >
+    Plans, shoots, edits, and produces video content for marketing,
+    entertainment, education, and corporate communications. Manages the full
+    production lifecycle from concept and scripting through filming,
+    post-production, and distribution across platforms.
+  ai_impact:
+    level: "moderate-high"
+    summary: >
+      AI video generation and editing tools are advancing rapidly — from
+      auto-captioning and rough-cut assembly to AI-generated b-roll and
+      synthetic presenters. Routine editing tasks like color correction,
+      audio cleanup, and format adaptation are increasingly automated.
+      However, creative direction, cinematography, storytelling through
+      visual narrative, and the ability to evoke genuine emotional responses
+      through video remain deeply human capabilities. Producers who leverage
+      AI to accelerate production while focusing on creative vision and
+      audience connection will see their output quality and volume increase
+      significantly.
+    automating:
+      - "Auto-captioning and subtitle generation"
+      - "Rough-cut assembly from raw footage using AI scene detection"
+      - "Color correction and basic color grading"
+      - "Audio noise reduction and cleanup"
+      - "Thumbnail generation and format adaptation across platforms"
+      - "B-roll generation and stock footage matching"
+    augmenting:
+      - "AI-assisted editing with intelligent clip suggestions"
+      - "Motion graphics generation from text descriptions"
+      - "Script-to-storyboard visualization"
+      - "Performance analytics and audience retention optimization"
+      - "Multilingual voiceover and dubbing"
+      - "Visual effects compositing with AI-powered tools"
+    preserving:
+      - "Creative direction and visual storytelling vision"
+      - "On-set cinematography and lighting decisions"
+      - "Emotional pacing and narrative arc construction"
+      - "Client relationship management and creative brief interpretation"
+      - "Live event coverage and real-time production decisions"
+      - "Cultural sensitivity and audience-appropriate content judgment"
+    last_reviewed: "2026-04"
+    confidence: medium
+    sources:
+      - name: "O*NET - Film and Video Editors"
+        url: "https://www.onetonline.org/link/summary/27-4032.00"
+      - name: "Bureau of Labor Statistics - Film and Video Editors"
+        url: "https://www.bls.gov/ooh/media-and-communication/film-and-video-editors-and-camera-operators.htm"
+      - name: "McKinsey - The Economic Potential of Generative AI"
+        url: "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier"
+  levels:
+    - id: junior
+      name: "Junior Video Producer"
+      years_experience: "0-2"
+      summary: >
+        Assists with video production tasks including basic editing, file
+        management, and equipment setup. Cuts simple videos from provided
+        footage following established templates and brand guidelines.
+        Learns production workflows, editing software, and platform
+        requirements under supervision.
+    - id: mid
+      name: "Video Producer"
+      years_experience: "2-5"
+      summary: >
+        Produces video content independently from concept through
+        delivery, managing shoots, editing, and post-production. Creates
+        engaging content optimized for target platforms. Manages production
+        schedules and coordinates with talent, clients, and stakeholders.
+        Builds a consistent portfolio across content types.
+    - id: senior
+      name: "Senior Video Producer"
+      years_experience: "5-8"
+      summary: >
+        Leads complex video productions including multi-day shoots,
+        documentary-style content, and high-profile campaigns. Defines
+        creative direction and visual style for projects. Mentors junior
+        producers on craft and production management. Drives innovation in
+        production techniques and tools adoption.
+    - id: lead
+      name: "Lead Video Producer"
+      years_experience: "8-12"
+      summary: >
+        Shapes video strategy across the organization, defining production
+        standards, workflow processes, and quality benchmarks. Manages
+        production teams and vendor relationships. Aligns video content
+        with business objectives and brand strategy. Drives adoption of
+        AI production tools while maintaining creative excellence.
+    - id: executive_producer
+      name: "Executive Producer"
+      years_experience: "12+"
+      summary: >
+        Defines the organization's video content vision and strategy at the
+        executive level. Oversees budgets, team structure, and production
+        capabilities. Builds partnerships with agencies, platforms, and
+        talent. Positions video as a strategic business asset and represents
+        the production function in leadership discussions.
+  skills:
+    - id: video_editing
+      name: "Video Editing"
+      category: technical
+      description: >
+        Cutting, sequencing, and assembling raw footage into polished video
+        content, including pacing, transitions, color grading, and timing
+        edits to music and narrative beats using professional editing
+        software like Premiere Pro, Final Cut, or DaVinci Resolve.
+      proficiency:
+        junior: >
+          Performs basic cuts, trims, and assemblies using editing software.
+          Follows established templates for intro/outro sequences, lower
+          thirds, and transitions. Understands timeline organization, file
+          management, and export settings for common platforms.
+        mid: >
+          Edits complete videos with polished pacing, smooth transitions,
+          and effective use of b-roll and cutaways. Applies color correction
+          and basic color grading to achieve consistent visual tone. Manages
+          multi-track timelines confidently with efficient keyboard-driven
+          workflows.
+        senior: >
+          Creates edits that elevate raw footage through masterful pacing,
+          rhythmic cutting, and emotionally resonant sequencing. Develops
+          signature editing styles that define brand visual identity. Pushes
+          creative boundaries with advanced techniques like match cuts,
+          montage, and non-linear narrative structures.
+        lead: >
+          Establishes editing standards, templates, and workflows that
+          enable team consistency and efficiency. Evaluates and integrates
+          AI editing tools into production pipelines. Reviews and elevates
+          the work of other editors through constructive creative direction.
+        executive_producer: >
+          Defines the organization's post-production quality bar and
+          invests in editing capabilities that support strategic content
+          goals. Evaluates emerging editing technologies and their impact
+          on production efficiency and creative quality at scale.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI tools increasingly automate rough cuts, scene detection, and
+          basic assembly. However, the creative decisions that make an
+          edit compelling — pacing, emotional timing, narrative flow, and
+          visual rhythm — require human artistic judgment that AI cannot
+          yet replicate.
+
+    - id: cinematography
+      name: "Cinematography"
+      category: technical
+      description: >
+        Camera work, lighting design, composition, and shot design that
+        create the visual language of video content. Selecting lenses,
+        framing shots, designing lighting setups, and making on-set
+        decisions that establish mood, direct attention, and serve
+        the story.
+      proficiency:
+        junior: >
+          Operates cameras with basic understanding of exposure, focus,
+          and composition rules like the rule of thirds. Sets up simple
+          lighting configurations for interviews and product shots.
+          Follows shot lists provided by senior producers.
+        mid: >
+          Designs and executes shot lists independently with thoughtful
+          composition, camera movement, and lighting. Selects appropriate
+          lenses and camera settings for different scenarios. Creates
+          visually consistent footage that matches the intended mood and
+          style of the project.
+        senior: >
+          Creates distinctive visual styles through advanced lighting
+          design, camera movement, and compositional choices. Makes
+          confident on-set decisions that serve the narrative under
+          time pressure. Pushes creative boundaries while maintaining
+          technical excellence in challenging shooting conditions.
+        lead: >
+          Defines cinematographic standards and visual language for the
+          organization's video content. Mentors camera operators and
+          lighting technicians. Evaluates new camera technology, lighting
+          equipment, and virtual production techniques for adoption.
+        executive_producer: >
+          Sets the organization's visual production standards at the
+          strategic level. Evaluates investments in production technology
+          and facilities. Builds relationships with cinematographers and
+          production partners that elevate the organization's visual
+          content quality.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          AI can generate synthetic video environments and suggest
+          compositions, but the on-set craft of cinematography —
+          responding to real-world conditions, directing talent through
+          the lens, and creating authentic visual storytelling — remains
+          a deeply physical and human creative skill.
+
+    - id: storytelling_narrative
+      name: "Storytelling & Narrative"
+      category: domain
+      description: >
+        Constructing compelling narratives through video, including story
+        structure, emotional pacing, character development, and audience
+        engagement techniques. Translating ideas, briefs, and raw material
+        into stories that connect with viewers and drive intended responses.
+      proficiency:
+        junior: >
+          Understands basic story structure — beginning, middle, end — and
+          applies it to simple video formats. Follows narrative templates
+          for testimonials, tutorials, and explainer videos. Identifies
+          the core message and structures content to deliver it clearly.
+        mid: >
+          Crafts engaging narratives across video formats with effective
+          hooks, rising tension, and satisfying resolutions. Uses visual
+          storytelling techniques like juxtaposition, parallel editing,
+          and reveal sequences. Balances information delivery with
+          emotional engagement.
+        senior: >
+          Creates powerful narratives that move audiences emotionally and
+          drive action. Masters complex storytelling techniques including
+          non-linear structure, multiple storylines, and documentary
+          approaches. Translates abstract brand messages into concrete,
+          relatable stories.
+        lead: >
+          Defines narrative frameworks and storytelling standards for the
+          organization. Develops story-finding processes that consistently
+          surface compelling content ideas. Mentors producers on advanced
+          narrative techniques and audience psychology.
+        executive_producer: >
+          Shapes the organization's storytelling philosophy at the
+          strategic level. Identifies the signature narratives that define
+          the brand's content identity. Ensures storytelling quality scales
+          across productions, teams, and platforms.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          AI can suggest story structures and generate script outlines,
+          but the deeply human ability to find universal truths in specific
+          stories, create genuine emotional resonance, and understand what
+          moves a particular audience at a particular cultural moment
+          remains beyond AI's current capabilities.
+
+    - id: motion_graphics
+      name: "Motion Graphics & Animation"
+      category: technical
+      description: >
+        Creating animated visual elements including title sequences,
+        lower thirds, data visualizations, explainer animations, logo
+        reveals, and visual effects using tools like After Effects,
+        Cinema 4D, or Blender.
+      proficiency:
+        junior: >
+          Creates basic motion graphics from templates including lower
+          thirds, title cards, and simple transitions. Understands
+          keyframing, easing, and basic animation principles. Follows
+          brand motion guidelines for consistent visual treatment.
+        mid: >
+          Designs and animates custom motion graphics for video projects
+          including animated infographics, logo animations, and explainer
+          sequences. Applies animation principles like anticipation,
+          follow-through, and timing to create polished, professional
+          motion design.
+        senior: >
+          Creates sophisticated motion graphics that define a project's
+          visual identity, including complex character animation, 3D
+          elements, and procedural effects. Develops motion design systems
+          and templates that enable team-wide consistency and efficiency.
+        lead: >
+          Establishes motion design standards and asset libraries for the
+          organization. Evaluates and integrates AI animation tools into
+          production workflows. Mentors motion designers and ensures
+          animation quality across all video productions.
+        executive_producer: >
+          Defines the organization's motion design capabilities and
+          investment strategy. Evaluates emerging animation technologies
+          including AI-generated motion graphics and real-time rendering.
+          Builds motion design teams that can deliver at the scale and
+          quality the brand requires.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI tools are increasingly capable of generating motion graphics
+          from text descriptions and automating repetitive animation
+          tasks. However, designing motion systems that express brand
+          personality, creating animations with refined timing and
+          personality, and solving complex visual communication problems
+          through motion still require skilled human designers.
+
+    - id: audio_design
+      name: "Audio Design for Video"
+      category: technical
+      description: >
+        Sound mixing, music selection and licensing, voiceover recording
+        and editing, audio cleanup, sound effects, and ensuring audio
+        quality supports the video narrative across all delivery formats
+        and platforms.
+      proficiency:
+        junior: >
+          Performs basic audio editing including level adjustment, noise
+          reduction, and syncing audio to video. Selects music from
+          licensed libraries and understands basic audio formats and
+          export requirements for different platforms.
+        mid: >
+          Mixes multi-track audio with balanced levels, appropriate
+          compression, and clean transitions between music, dialogue, and
+          effects. Records and edits voiceover with professional quality.
+          Selects and edits music that enhances the emotional tone of the
+          video.
+        senior: >
+          Creates immersive audio landscapes that elevate video content
+          through sophisticated sound design, mixing, and music editing.
+          Manages audio workflows for complex productions including
+          multi-location shoots and live events. Ensures consistent audio
+          quality across diverse playback environments.
+        lead: >
+          Defines audio production standards and workflows for the
+          organization. Evaluates AI audio tools for noise reduction,
+          music generation, and voice synthesis. Manages relationships
+          with voice talent, composers, and music licensing services.
+        executive_producer: >
+          Sets the organization's audio quality standards and investment
+          priorities. Evaluates emerging audio technologies including
+          AI-generated music and spatial audio. Ensures audio production
+          capabilities match the organization's content ambitions.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI excels at audio cleanup, noise reduction, and generating
+          background music. However, creative sound design decisions,
+          music selection that enhances emotional narrative, and mixing
+          for professional broadcast quality require trained human ears
+          and artistic judgment.
+
+    - id: ai_video_tools
+      name: "AI Video Tools"
+      category: technical
+      description: >
+        Using AI-powered tools for video generation, editing assistance,
+        auto-captioning, synthetic media creation, and production
+        automation. Evaluating and integrating emerging AI video
+        technologies into production workflows while maintaining
+        quality and ethical standards.
+      proficiency:
+        junior: >
+          Uses AI tools for basic tasks like auto-captioning, background
+          removal, and simple video enhancements. Understands the
+          capabilities and limitations of current AI video tools. Follows
+          team guidelines for AI tool usage and content disclosure.
+        mid: >
+          Integrates AI tools effectively into personal production
+          workflows for tasks like rough-cut assembly, b-roll generation,
+          and format adaptation. Evaluates AI output critically and knows
+          when AI-generated content meets quality standards versus when
+          human production is required.
+        senior: >
+          Designs AI-augmented production workflows that multiply team
+          output while maintaining quality. Evaluates new AI video tools
+          and recommends adoption decisions. Establishes quality gates and
+          review processes for AI-generated video content.
+        lead: >
+          Defines the organization's AI video strategy including tool
+          selection, workflow integration, and governance policies.
+          Balances AI efficiency gains against quality, authenticity, and
+          ethical considerations. Trains teams on effective AI tool usage
+          and establishes best practices.
+        executive_producer: >
+          Shapes the organization's vision for AI-augmented video
+          production at the executive level. Evaluates strategic
+          investments in AI video technology. Navigates regulatory and
+          ethical implications of synthetic media while positioning the
+          organization to leverage AI for competitive advantage.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          This skill is inherently about leveraging AI rather than being
+          replaced by it. As AI video tools mature rapidly, the ability
+          to evaluate, integrate, and direct these tools effectively
+          becomes a critical differentiator for video producers.
+
+    - id: project_management
+      name: "Production Project Management"
+      category: execution
+      description: >
+        Managing video production schedules, budgets, crew coordination,
+        equipment logistics, location scouting, and the end-to-end
+        workflow from pre-production through delivery. Ensuring projects
+        are delivered on time, on budget, and to specification.
+      proficiency:
+        junior: >
+          Assists with production logistics including equipment
+          preparation, location coordination, and schedule tracking.
+          Follows production checklists and communicates progress to
+          the production lead. Manages file organization and asset
+          delivery for assigned projects.
+        mid: >
+          Manages complete production projects independently, including
+          scheduling, budget tracking, crew coordination, and equipment
+          logistics. Creates production timelines with realistic milestones
+          and communicates proactively about risks and delays.
+        senior: >
+          Leads complex, multi-day productions with multiple crews,
+          locations, and stakeholders. Manages production budgets and
+          negotiates vendor contracts. Builds contingency plans and makes
+          confident decisions when productions encounter unexpected
+          challenges.
+        lead: >
+          Defines production management standards and workflows for the
+          organization. Manages team capacity planning, resource allocation,
+          and production pipeline prioritization. Implements project
+          management tools and processes that improve production efficiency.
+        executive_producer: >
+          Oversees production budgets and resource allocation at the
+          organizational level. Builds production capabilities that scale
+          with business needs. Negotiates strategic partnerships with
+          production vendors, studios, and equipment providers.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can assist with scheduling optimization, budget tracking,
+          and workflow automation. However, managing the human dynamics
+          of production — coordinating talent, making real-time decisions
+          on set, and navigating client relationships — requires
+          interpersonal skills and judgment that remain deeply human.
+
+    - id: platform_optimization
+      name: "Platform Optimization"
+      category: analytical
+      description: >
+        Optimizing video content for different platforms including YouTube,
+        TikTok, Instagram, LinkedIn, and broadcast, understanding each
+        platform's algorithm, audience behavior, format requirements, and
+        best practices for maximizing reach and engagement.
+      proficiency:
+        junior: >
+          Exports video in correct formats and specifications for target
+          platforms. Understands basic platform differences in aspect
+          ratio, length, and captioning requirements. Follows team
+          guidelines for platform-specific optimizations.
+        mid: >
+          Optimizes content strategy and execution for multiple platforms,
+          understanding algorithm preferences, audience behavior patterns,
+          and format best practices. Creates platform-native content that
+          feels appropriate for each channel rather than simply reformatted.
+        senior: >
+          Develops platform-specific content strategies based on deep
+          understanding of algorithm mechanics and audience behavior data.
+          Identifies emerging platforms and formats early. Designs content
+          architectures that maximize a single production's value across
+          the platform ecosystem.
+        lead: >
+          Defines multi-platform video distribution strategies for the
+          organization. Evaluates platform partnerships and paid
+          distribution opportunities. Establishes analytics frameworks
+          that measure cross-platform content performance and inform
+          strategic decisions.
+        executive_producer: >
+          Sets the organization's platform strategy at the executive
+          level. Negotiates platform partnerships and evaluates emerging
+          distribution channels. Positions the organization's video
+          content for maximum reach and business impact across the
+          evolving platform landscape.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI excels at analyzing platform performance data and suggesting
+          optimizations for timing, thumbnails, and format. However,
+          understanding audience culture on each platform, making
+          strategic platform investment decisions, and creating genuinely
+          platform-native content require human creative and strategic
+          judgment.
+
+    - id: client_direction
+      name: "Client & Creative Direction"
+      category: interpersonal
+      description: >
+        Understanding client vision, presenting creative concepts, managing
+        feedback and revision cycles, and translating business objectives
+        into compelling video content. Building trust and managing
+        expectations throughout the production process.
+      proficiency:
+        junior: >
+          Receives and incorporates client feedback on video projects
+          professionally. Presents work-in-progress edits clearly and
+          explains creative choices when asked. Communicates production
+          timelines and flags potential issues to senior team members.
+        mid: >
+          Manages client relationships through the production lifecycle,
+          from initial brief through delivery. Presents creative concepts
+          confidently and navigates feedback effectively. Translates
+          client objectives into actionable creative direction for the
+          production team.
+        senior: >
+          Leads client engagements for complex productions, building trust
+          through creative excellence and reliable delivery. Pushes back
+          constructively on client direction when it would compromise
+          quality. Shapes client thinking about video strategy and
+          creative possibilities.
+        lead: >
+          Defines client engagement models and creative review processes
+          for the organization. Manages executive-level client
+          relationships and presents production capabilities and strategy.
+          Resolves escalations and navigates complex stakeholder dynamics.
+        executive_producer: >
+          Builds strategic client partnerships at the executive level.
+          Positions the production team as creative partners rather than
+          vendors. Shapes client relationships that lead to ambitious,
+          award-winning work and long-term business growth.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Client direction is fundamentally a human relationship skill.
+          AI can assist with presentation materials, feedback tracking,
+          and concept visualization, but building creative trust,
+          navigating subjective feedback, and inspiring clients to invest
+          in bold creative choices remain irreducibly human.
+
+    - id: scripting
+      name: "Scripting & Storyboarding"
+      category: communication
+      description: >
+        Writing video scripts, creating storyboards, and developing shot
+        lists that translate concepts into actionable production plans.
+        Structuring content for visual storytelling with attention to
+        pacing, dialogue, visual cues, and audience engagement.
+      proficiency:
+        junior: >
+          Writes basic scripts for simple video formats like tutorials,
+          social clips, and product demos using established templates.
+          Creates simple storyboards that communicate key shots and
+          sequences. Develops shot lists under the guidance of senior
+          producers.
+        mid: >
+          Writes polished scripts across video formats with effective
+          structure, natural dialogue, and clear visual direction.
+          Creates detailed storyboards that serve as effective production
+          blueprints. Develops comprehensive shot lists that ensure
+          efficient shooting.
+        senior: >
+          Writes compelling scripts that balance narrative engagement with
+          business objectives. Creates storyboards that inspire creative
+          teams and align stakeholder expectations. Adapts scripting
+          approach for different genres, formats, and audience contexts.
+        lead: >
+          Defines scripting standards and storyboarding processes for the
+          organization. Develops script templates and frameworks that
+          improve team efficiency and consistency. Reviews and elevates
+          scripts from other producers through editorial direction.
+        executive_producer: >
+          Sets the organization's storytelling and scripting quality bar
+          at the strategic level. Evaluates AI scripting tools and their
+          integration into the creative development process. Ensures
+          scripting capabilities support the organization's content
+          ambitions across formats and markets.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI generates competent first-draft scripts for standard video
+          formats and can create basic storyboard visualizations from
+          descriptions. However, writing scripts that surprise, move, and
+          engage specific audiences — and creating storyboards that
+          inspire creative teams — require human creative vision and
+          storytelling instinct.

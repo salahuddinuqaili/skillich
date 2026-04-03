@@ -1,0 +1,506 @@
+role:
+  id: hvac_technician
+  function: trades
+  name: "HVAC Technician"
+  also_known_as:
+    - "HVAC/R Technician"
+    - "Heating and Cooling Technician"
+    - "Refrigeration Mechanic"
+    - "Climate Control Specialist"
+  description: >
+    Installs, maintains, and repairs heating, ventilation, air conditioning,
+    and refrigeration systems. Combines mechanical, electrical, and controls
+    knowledge to ensure indoor climate comfort and energy efficiency. Works
+    with increasingly complex systems including heat pumps, building
+    automation, and smart thermostats.
+  ai_impact:
+    level: "low"
+    summary: >
+      HVAC work is highly AI-resilient due to its physical, on-site nature.
+      Installing ductwork, brazing refrigerant lines, wiring controls, and
+      servicing rooftop units in varied building conditions requires human
+      dexterity, spatial reasoning, and mechanical aptitude that AI cannot
+      replicate. AI is augmenting diagnostics through sensor data analysis,
+      energy optimization through smart controls, and estimating through
+      automated takeoffs, but these tools make HVAC technicians more
+      effective rather than replaceable. The growing demand driven by
+      electrification, heat pump adoption, indoor air quality awareness,
+      and an aging HVAC workforce further solidifies this career path.
+      Technicians who embrace smart building technology and AI-assisted
+      diagnostics will command premium compensation.
+    automating:
+      - "Equipment sizing calculations from standard load inputs"
+      - "Warranty claim form preparation and submission"
+      - "Parts lookup and cross-referencing across manufacturers"
+      - "Routine maintenance scheduling based on equipment runtime"
+      - "Basic energy consumption reporting from smart thermostat data"
+    augmenting:
+      - "Fault diagnosis using sensor data patterns and manufacturer databases"
+      - "Energy audit analysis and efficiency improvement recommendations"
+      - "Load calculation assistance using digital building models"
+      - "Refrigerant charge optimization using superheat/subcool analysis"
+      - "Building automation system programming and optimization"
+      - "Job cost estimation and proposal generation"
+    preserving:
+      - "Physical equipment installation, ductwork fabrication, and piping"
+      - "Refrigerant handling, charging, and leak repair"
+      - "On-site troubleshooting of mechanical and electrical faults"
+      - "Customer interaction, trust-building, and on-site explanation"
+      - "Safety judgment in confined spaces, rooftops, and electrical work"
+      - "Apprentice mentoring and hands-on skill transfer"
+    last_reviewed: "2026-04"
+    confidence: medium
+    sources:
+      - name: "O*NET - HVAC Mechanics and Installers"
+        url: "https://www.onetonline.org/link/summary/49-9021.00"
+      - name: "Bureau of Labor Statistics - HVAC Mechanics and Installers"
+        url: "https://www.bls.gov/ooh/installation-maintenance-and-repair/heating-air-conditioning-and-refrigeration-mechanics-and-installers.htm"
+      - name: "McKinsey - The Economic Potential of Generative AI"
+        url: "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier"
+  levels:
+    - id: apprentice
+      name: "Apprentice HVAC Technician"
+      years_experience: "0-4"
+      summary: >
+        Works under the supervision of a journeyman or master HVAC
+        technician, learning the fundamentals of heating, cooling, and
+        refrigeration systems. Assists with installations and service
+        calls, learns to use gauges and diagnostic instruments, and
+        builds foundational knowledge of refrigeration theory, electrical
+        controls, and safety practices. Obtains EPA Section 608
+        certification for refrigerant handling.
+    - id: journeyman
+      name: "Journeyman HVAC Technician"
+      years_experience: "4-8"
+      summary: >
+        Licensed HVAC technician who independently installs, services,
+        and repairs residential and commercial heating and cooling
+        systems. Diagnoses mechanical and electrical faults, performs
+        refrigerant work, handles preventive maintenance, and ensures
+        code compliance. Supervises apprentices and handles the full
+        range of HVAC work without direct oversight.
+    - id: master
+      name: "Master HVAC Technician"
+      years_experience: "8-15"
+      summary: >
+        Advanced HVAC professional with deep expertise across all system
+        types including commercial rooftop units, chillers, boilers, VRF
+        systems, and building automation. Designs system layouts,
+        performs complex load calculations, commissions new installations,
+        and serves as the technical escalation point for difficult
+        diagnostic challenges. Mentors journeymen and apprentices.
+    - id: contractor
+      name: "HVAC Contractor"
+      years_experience: "15+"
+      summary: >
+        Owns or operates an HVAC contracting business, combining deep
+        technical expertise with business management. Oversees estimating,
+        installation, service operations, and customer relationships.
+        Manages equipment supplier relationships, service agreement
+        portfolios, and workforce development. Positions the company
+        for growth in heat pump adoption and building electrification.
+  skills:
+    - id: system_installation
+      name: "HVAC System Installation"
+      category: technical
+      description: >
+        Installing heating and cooling equipment including furnaces, air
+        conditioners, heat pumps, boilers, and rooftop units, along with
+        associated ductwork, piping, refrigerant lines, and controls.
+      proficiency:
+        apprentice: >
+          Assists with equipment placement, ductwork assembly, and piping
+          runs under supervision. Learns to use sheet metal tools, flaring
+          tools, and brazing equipment. Develops understanding of system
+          components and their functions.
+        journeyman: >
+          Independently installs complete residential and light commercial
+          HVAC systems including equipment setting, ductwork fabrication
+          and installation, refrigerant line sets, and control wiring.
+          Produces clean, code-compliant installations efficiently.
+        master: >
+          Handles complex commercial installations including multi-zone
+          systems, VRF installations, and chiller plant setups. Coordinates
+          with other trades, manages installation sequences, and
+          commissions systems to ensure design performance is achieved.
+        contractor: >
+          Oversees installation quality and efficiency across multiple
+          crews and projects. Evaluates new equipment lines and installation
+          methods. Establishes company installation standards and training
+          programs that ensure consistent quality and productivity.
+      ai_impact:
+        rating: 0.05
+        detail: >
+          Physical HVAC installation — setting equipment, fabricating
+          ductwork, brazing refrigerant lines, running control wiring —
+          is entirely hands-on work that AI cannot automate. The varied
+          conditions of each building make this work resistant to any
+          form of automation.
+
+    - id: refrigeration
+      name: "Refrigeration & Refrigerant Handling"
+      category: technical
+      description: >
+        Understanding refrigeration cycles, handling refrigerants safely
+        and legally, charging and recovering refrigerant, diagnosing
+        refrigerant-side problems, and maintaining EPA Section 608
+        certification compliance.
+      proficiency:
+        apprentice: >
+          Studies refrigeration theory and learns the vapor compression
+          cycle. Obtains EPA Section 608 certification. Assists with
+          refrigerant recovery and observes charging procedures performed
+          by journeymen. Learns to read gauge manifolds.
+        journeyman: >
+          Charges and recovers refrigerant accurately using proper
+          procedures. Diagnoses refrigerant-side issues including
+          incorrect charge, restrictions, and non-condensables.
+          Calculates superheat and subcooling to verify proper system
+          operation. Handles multiple refrigerant types safely.
+        master: >
+          Handles complex refrigeration work including chiller maintenance,
+          industrial refrigeration, and low-temperature applications.
+          Diagnoses subtle refrigerant-side problems, manages refrigerant
+          conversions, and ensures compliance with evolving EPA regulations
+          including the AIM Act phase-downs.
+        contractor: >
+          Manages company-wide refrigerant tracking, EPA compliance
+          documentation, and technician certification programs. Stays
+          current with refrigerant phase-down schedules and transition
+          strategies. Ensures proper equipment and training for low-GWP
+          refrigerant handling.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          AI can assist with refrigerant charge calculations, superheat
+          and subcooling analysis, and regulatory compliance tracking.
+          However, the physical handling of refrigerant, connecting and
+          disconnecting gauges, and diagnosing system behavior through
+          hands-on observation require human skill and EPA-certified
+          judgment.
+
+    - id: electrical_controls
+      name: "Electrical Controls & Wiring"
+      category: technical
+      description: >
+        Wiring and troubleshooting HVAC electrical systems including
+        thermostats, control boards, contactors, relays, transformers,
+        capacitors, variable frequency drives, and safety controls that
+        govern system operation.
+      proficiency:
+        apprentice: >
+          Learns to read basic HVAC wiring diagrams and identify
+          electrical components. Assists with thermostat installation
+          and basic control wiring under supervision. Develops safe
+          electrical work practices using meters and proper procedures.
+        journeyman: >
+          Reads wiring diagrams and independently wires thermostats,
+          control boards, and safety controls. Troubleshoots electrical
+          faults in HVAC systems using multimeters and systematic
+          diagnosis. Replaces failed components and verifies proper
+          operation.
+        master: >
+          Handles complex electrical work including VFD programming,
+          multi-stage control sequences, and integration with building
+          automation systems. Diagnoses intermittent electrical problems
+          and designs custom control solutions for non-standard
+          applications.
+        contractor: >
+          Ensures technicians have proper electrical training and tools
+          for safe, effective control work. Evaluates new control
+          technologies and determines which to adopt. Manages
+          relationships with controls manufacturers and training programs.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          AI can assist with wiring diagram interpretation and fault
+          code lookup, but physically wiring controls, testing circuits,
+          and troubleshooting electrical issues in the field requires
+          human hands and real-time judgment about safety and system
+          behavior.
+
+    - id: troubleshooting
+      name: "HVAC Troubleshooting & Diagnostics"
+      category: analytical
+      description: >
+        Diagnosing heating and cooling system faults using gauges,
+        meters, temperature instruments, manufacturer diagnostic codes,
+        and systematic logical reasoning to identify root causes and
+        determine appropriate repairs.
+      proficiency:
+        apprentice: >
+          Learns to use basic diagnostic instruments including
+          thermometers, multimeters, and gauge manifolds. Observes
+          experienced technicians' diagnostic processes and begins to
+          recognize common fault symptoms and their causes.
+        journeyman: >
+          Diagnoses a wide range of HVAC faults independently using
+          appropriate instruments and systematic methods. Interprets
+          fault codes, measures system performance against specifications,
+          and identifies root causes rather than just symptoms. Repairs
+          efficiently and verifies proper operation after service.
+        master: >
+          Handles the most challenging diagnostic situations including
+          intermittent failures, comfort complaints in complex buildings,
+          and performance issues in aging equipment. Uses data logging,
+          trend analysis, and deep system knowledge to solve problems
+          that have stumped other technicians.
+        contractor: >
+          Manages technical escalation processes, ensuring difficult
+          diagnostic situations are resolved efficiently. Uses service
+          call data to identify recurring problems across equipment types
+          and develops preventive strategies. Maintains manufacturer
+          technical support relationships.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI diagnostic tools are increasingly capable of analyzing
+          sensor data, correlating fault patterns, and suggesting probable
+          causes. However, hands-on investigation — feeling vibrations,
+          hearing unusual sounds, checking physical connections — and
+          making repair decisions under time pressure remain human skills.
+
+    - id: load_calculation
+      name: "Load Calculation & System Sizing"
+      category: analytical
+      description: >
+        Performing heating and cooling load calculations using Manual J,
+        Manual D, Manual S, and equivalent methods to properly size HVAC
+        equipment and design duct systems for comfort, efficiency, and
+        code compliance.
+      proficiency:
+        apprentice: >
+          Learns the concept of heat gain and heat loss and the factors
+          that affect building loads. Assists with gathering building
+          measurements and characteristics needed for load calculations.
+          Begins using load calculation software under guidance.
+        journeyman: >
+          Performs Manual J load calculations for residential projects
+          and selects properly sized equipment using Manual S. Designs
+          duct systems using Manual D. Understands how insulation,
+          windows, orientation, and occupancy affect system sizing.
+        master: >
+          Performs complex commercial load calculations using software
+          tools, accounting for diverse zone requirements, internal
+          loads, and ventilation requirements. Designs multi-zone
+          systems with proper air distribution. Identifies and corrects
+          existing system sizing problems.
+        contractor: >
+          Ensures all company installations are based on proper load
+          calculations rather than rule-of-thumb sizing. Establishes
+          standards for documentation and presentation of load
+          calculations to customers. Uses energy modeling to demonstrate
+          return on investment for efficiency upgrades.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI significantly accelerates load calculations by processing
+          building data and generating results quickly. This is one of
+          the highest AI-impact areas in HVAC work. However, gathering
+          accurate field measurements, validating software inputs against
+          real conditions, and making judgment calls on unusual buildings
+          require experienced human oversight.
+
+    - id: energy_efficiency
+      name: "Energy Efficiency & Heat Pump Technology"
+      category: technical
+      description: >
+        Evaluating building energy performance, recommending and
+        installing high-efficiency equipment including heat pumps,
+        performing energy audits, and helping customers reduce energy
+        consumption through equipment upgrades and system optimization.
+      proficiency:
+        apprentice: >
+          Learns the basics of energy efficiency ratings (SEER, HSPF,
+          AFUE) and how they compare across equipment types. Understands
+          the general advantages of heat pump technology over combustion
+          heating. Assists with high-efficiency equipment installations.
+        journeyman: >
+          Installs and services high-efficiency equipment including
+          heat pumps, variable-speed systems, and condensing furnaces.
+          Explains efficiency ratings and energy savings to customers.
+          Performs basic energy assessments and recommends appropriate
+          upgrades.
+        master: >
+          Designs comprehensive energy efficiency solutions including
+          cold-climate heat pump systems, dual-fuel configurations, and
+          integrated water heating. Performs detailed energy audits and
+          models savings projections. Stays current with evolving heat
+          pump technology and incentive programs.
+        contractor: >
+          Positions the company as an energy efficiency leader, training
+          crews on heat pump installation and building relationships with
+          utility incentive programs. Develops energy efficiency service
+          offerings that differentiate the business. Advises commercial
+          clients on electrification strategies and carbon reduction.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI tools can model energy savings, compare equipment options,
+          and generate rebate documentation. However, assessing real
+          building conditions, recommending appropriate solutions for
+          specific situations, and physically installing high-efficiency
+          equipment require human expertise and hands-on work.
+
+    - id: building_automation
+      name: "Building Automation Systems"
+      category: technical
+      description: >
+        Installing, programming, and troubleshooting building automation
+        systems (BAS) that integrate HVAC, lighting, and other building
+        systems for centralized monitoring, control, energy management,
+        and zone-by-zone comfort optimization.
+      proficiency:
+        apprentice: >
+          Learns the purpose and basic components of building automation
+          systems including controllers, sensors, and actuators. Assists
+          with mounting devices and running control wiring. Begins to
+          understand network communication concepts.
+        journeyman: >
+          Installs BAS field devices including sensors, actuators, and
+          zone controllers. Runs communication wiring and configures
+          basic control points. Troubleshoots communication issues and
+          sensor faults using BAS front-end software and diagnostic tools.
+        master: >
+          Programs building automation controllers, writes sequences of
+          operation, and commissions complete BAS installations. Integrates
+          multiple HVAC systems into a unified control platform. Optimizes
+          schedules, setpoints, and control logic for energy efficiency
+          and occupant comfort.
+        contractor: >
+          Develops building automation as a business line, partnering
+          with BAS manufacturers and offering ongoing monitoring and
+          optimization services. Positions the company for smart building
+          opportunities and trains technicians in controls and networking.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI enhances BAS capabilities through predictive scheduling,
+          fault detection and diagnostics, and energy optimization
+          algorithms. However, installing field devices, programming
+          controllers for specific building needs, commissioning systems,
+          and troubleshooting integration issues remain human-intensive
+          work.
+
+    - id: code_compliance
+      name: "Mechanical Code Compliance"
+      category: regulatory
+      description: >
+        Knowledge of the International Mechanical Code, International
+        Fuel Gas Code, EPA refrigerant regulations, and local
+        jurisdictional requirements governing HVAC installation,
+        including permit processes and inspection preparation.
+      proficiency:
+        apprentice: >
+          Learns basic mechanical code requirements for equipment
+          clearances, venting, combustion air, and refrigerant piping.
+          Understands EPA refrigerant handling requirements and maintains
+          Section 608 certification.
+        journeyman: >
+          Applies mechanical code requirements consistently for
+          residential and commercial installations. Ensures proper
+          clearances, venting, combustion air, and refrigerant line
+          sizing. Prepares installations to pass inspection reliably.
+        master: >
+          Has comprehensive knowledge of mechanical and fuel gas codes
+          including complex provisions for commercial kitchens, healthcare
+          facilities, and high-rise buildings. Interprets code for unusual
+          installations and coordinates with code officials on
+          challenging projects.
+        contractor: >
+          Stays current with code changes across all relevant mechanical,
+          fuel gas, and energy codes. Ensures company-wide compliance
+          through training and quality processes. Maintains relationships
+          with code officials and participates in code development
+          processes when possible.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can efficiently search and cross-reference code sections,
+          check basic compliance parameters, and track regulatory
+          changes. However, interpreting code intent for non-standard
+          installations and understanding how local jurisdictions apply
+          code requirements require experienced human judgment.
+
+    - id: preventive_maintenance
+      name: "Preventive Maintenance Programs"
+      category: operational
+      description: >
+        Performing scheduled maintenance on HVAC systems including
+        filter replacement, coil cleaning, belt inspection, lubrication,
+        electrical connection tightening, refrigerant checks, and
+        systematic inspection to extend equipment life and prevent
+        failures.
+      proficiency:
+        apprentice: >
+          Performs basic maintenance tasks including filter replacement,
+          condensate drain clearing, and visual inspections under
+          supervision. Learns to use maintenance checklists and document
+          equipment conditions accurately.
+        journeyman: >
+          Performs comprehensive preventive maintenance independently
+          across residential and commercial equipment types. Cleans
+          coils, checks refrigerant charge, tightens electrical
+          connections, inspects belts and bearings, and documents
+          equipment condition. Identifies developing problems before
+          they become failures.
+        master: >
+          Designs preventive maintenance programs for commercial and
+          institutional facilities, determining appropriate task
+          frequencies and inspection criteria. Analyzes maintenance
+          data to optimize schedules and predict equipment replacement
+          timing. Trains technicians on thorough maintenance procedures.
+        contractor: >
+          Manages the company's maintenance agreement portfolio as a
+          core business revenue stream. Develops competitive maintenance
+          offerings, manages technician routing for efficiency, and uses
+          maintenance data to drive equipment replacement sales. Ensures
+          consistent service quality across all maintenance technicians.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can optimize maintenance schedules, predict equipment
+          failures from sensor data, and automate service reminders.
+          However, the physical maintenance work — cleaning coils,
+          tightening connections, inspecting components — and the
+          on-site judgment about equipment condition remain human tasks.
+
+    - id: customer_service
+      name: "Customer Service & Communication"
+      category: interpersonal
+      description: >
+        Communicating effectively with homeowners, building managers,
+        and facility operators to explain system issues, present repair
+        and replacement options, manage expectations about comfort and
+        costs, and build relationships that drive repeat business.
+      proficiency:
+        apprentice: >
+          Presents a professional appearance and respectful demeanor
+          in customers' homes and businesses. Learns to communicate
+          courteously and defers technical questions to the lead
+          technician. Practices customer interaction skills.
+        journeyman: >
+          Explains HVAC problems and repair options clearly to customers
+          in accessible language. Provides honest recommendations,
+          presents options at different price points, and manages
+          expectations about repair timelines and system performance.
+        master: >
+          Handles complex customer consultations including system
+          replacement proposals, energy efficiency upgrades, and
+          commercial comfort complaints. Builds long-term client
+          relationships through expertise and dependable follow-through.
+          Resolves customer disputes with professionalism and empathy.
+        contractor: >
+          Develops the company's customer experience strategy, training
+          technicians in communication and sales skills. Manages online
+          reputation, customer feedback programs, and referral incentives.
+          Builds strategic relationships with property managers, builders,
+          and commercial facility operators.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          AI can generate proposals, manage scheduling communications,
+          and maintain customer records. But the face-to-face trust
+          building, in-home explanations of comfort issues, and
+          relationship management that sustain HVAC service businesses
+          are fundamentally human interactions.

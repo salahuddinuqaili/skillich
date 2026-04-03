@@ -18,23 +18,27 @@ role:
       context-switching cost across languages and frameworks. Boilerplate generation,
       CRUD scaffolding, and routine integration code are heavily automatable. The
       premium shifts to architectural judgment, product intuition, and the ability to
-      evaluate AI-generated code across the entire stack.
+      evaluate AI-generated code across the entire stack. Agentic AI can now handle
+      multi-file refactoring and end-to-end feature scaffolding across frontend
+      and backend layers.
     automating:
       - "CRUD endpoint and form scaffolding"
       - "Database migration generation"
       - "Boilerplate API client code"
       - "Basic component creation from designs"
+      - "AI agent-driven multi-file refactoring and code migrations"
     augmenting:
       - "Cross-stack debugging and root cause analysis"
       - "Performance profiling across client and server"
       - "Dependency evaluation and upgrade planning"
       - "Code review across multiple languages"
+      - "Agent-assisted codebase exploration and dependency impact analysis"
     preserving:
       - "Product intuition and feature scoping"
       - "End-to-end system design decisions"
       - "Cross-team technical communication"
       - "Trade-off evaluation between frontend and backend approaches"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "GitHub Copilot Research 2024"
@@ -120,7 +124,7 @@ role:
           when micro-frontends justify their coordination cost versus monolithic
           builds. Drives investments in design system infrastructure and web perf.
       ai_impact:
-        rating: 0.6
+        rating: 0.65
         detail: "AI generates component code effectively from designs. Complex state management, accessibility, and cross-browser edge cases still require human judgment."
 
     - id: backend_development
@@ -149,7 +153,7 @@ role:
           deployment topology, and infrastructure investment. Balances long-term
           platform bets against near-term delivery pressure across the org.
       ai_impact:
-        rating: 0.55
+        rating: 0.6
         detail: "AI handles CRUD and glue code well. Database optimization, distributed system design, and security architecture remain human-intensive."
 
     - id: database_design
@@ -265,7 +269,7 @@ role:
           infrastructure. Champions practices like production canary testing and
           AI-assisted test generation, connecting testing spend to business risk.
       ai_impact:
-        rating: 0.65
+        rating: 0.7
         detail: "AI generates unit and integration tests effectively from existing code. Test strategy design, edge case identification from domain knowledge, and flaky test debugging remain human tasks."
 
     - id: performance_optimization
@@ -381,7 +385,7 @@ role:
           conferences and in blog posts. Authors influential technical content
           that shapes industry conversation and strengthens recruiting brand.
       ai_impact:
-        rating: 0.5
+        rating: 0.55
         detail: "AI drafts documentation and READMEs effectively. Persuasive writing, stakeholder-aware communication, and architectural decision framing require human nuance."
 
     - id: code_quality

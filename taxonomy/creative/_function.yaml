@@ -1,0 +1,22 @@
+function:
+  id: creative
+  name: "Creative & Media"
+  description: >
+    Creative professionals who produce written, visual, audio, and interactive
+    content. Generative AI is transforming these roles faster than almost any
+    other function — automating first drafts, generating visual assets, and
+    composing music. Yet the most valuable creative work requires taste,
+    cultural context, emotional resonance, and original vision that AI cannot
+    replicate. Creatives who master AI as a production tool while doubling
+    down on uniquely human creative judgment will thrive.
+  roles:
+    - content_writer
+    - video_producer
+    - graphic_designer
+    - musician_audio
+    - game_designer
+  sources:
+    - name: "Bureau of Labor Statistics - Arts, Design, Entertainment"
+      url: "https://www.bls.gov/ooh/arts-and-design/"
+    - name: "World Economic Forum - Future of Jobs Report 2025"
+      url: "https://www.weforum.org/publications/the-future-of-jobs-report-2025/"

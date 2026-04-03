@@ -30,7 +30,9 @@ role:
       who leverage AI for analytical acceleration while investing in
       strategic advisory and change management will become increasingly
       valuable as the go-to-market technology landscape grows more
-      complex.
+      complex. Agentic AI now enables autonomous multi-step data quality,
+      pipeline hygiene, and reporting workflows that previously required
+      significant manual RevOps effort.
     automating:
       - "CRM data cleansing and deduplication"
       - "Standard report and dashboard generation"
@@ -38,6 +40,7 @@ role:
       - "Lead routing rule execution"
       - "Data enrichment and field population"
       - "Commission calculation and statement generation"
+      - "AI agent-managed lead scoring and CRM data enrichment"
     augmenting:
       - "Predictive forecasting model development"
       - "Territory optimization and account scoring"
@@ -45,6 +48,7 @@ role:
       - "Tech stack integration and workflow design"
       - "Quota modeling and scenario analysis"
       - "Funnel conversion analysis and anomaly detection"
+      - "Agent-assisted multi-step pipeline hygiene workflows with automated data remediation"
     preserving:
       - "Sales process design that drives behavior change"
       - "Cross-functional alignment between sales, marketing, and CS"
@@ -52,7 +56,7 @@ role:
       - "Strategic advisory to revenue leadership"
       - "Vendor negotiation and technology strategy"
       - "Organizational design and resource allocation decisions"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "Forrester - The Rise of Revenue Operations"
@@ -391,7 +395,7 @@ role:
           tactical function and connects data quality investments to
           business outcomes.
       ai_impact:
-        rating: 0.7
+        rating: 0.75
         detail: >
           AI is highly effective at identifying data quality issues,
           automating deduplication, enriching records from external

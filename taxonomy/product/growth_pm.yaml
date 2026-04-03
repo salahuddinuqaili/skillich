@@ -27,6 +27,7 @@ role:
       - "Optimizing email and notification send times"
       - "Basic cohort segmentation and churn prediction"
       - "Monitoring experiment metrics and flagging significance"
+      - "AI agent-orchestrated multi-variant experiment setup and deployment"
     augmenting:
       - "Personalization at scale through AI-driven recommendation systems"
       - "Predictive lifetime value modeling for acquisition targeting"
@@ -39,7 +40,7 @@ role:
       - "Balancing aggressive growth with user experience quality"
       - "Cross-functional alignment on growth strategy"
       - "Ethical judgment on growth tactics and dark patterns"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "Reforge Growth Series"

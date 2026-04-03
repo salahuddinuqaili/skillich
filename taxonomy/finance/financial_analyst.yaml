@@ -27,7 +27,9 @@ role:
       ambiguous strategic questions where quantitative models alone are
       insufficient. Analysts who leverage AI to compress research cycles while
       sharpening their strategic insight will become substantially more
-      productive.
+      productive. Agentic AI can now autonomously execute multi-step
+      research and analysis workflows, further compressing routine
+      analytical cycles.
     automating:
       - "Data aggregation from financial databases and market feeds"
       - "Routine financial model construction and template generation"
@@ -35,6 +37,7 @@ role:
       - "Ratio analysis and peer comparison calculations"
       - "Earnings transcript summarization and sentiment analysis"
       - "Historical trend identification and charting"
+      - "AI agent-driven multi-source data gathering and preliminary analysis pipelines"
     augmenting:
       - "Scenario analysis and sensitivity modeling"
       - "Valuation assumption validation and stress testing"
@@ -42,6 +45,7 @@ role:
       - "Presentation narrative development and data storytelling"
       - "Anomaly detection in financial statements"
       - "Real-time market monitoring and alert generation"
+      - "Agent-assisted scenario generation and sensitivity analysis across multiple models"
     preserving:
       - "Investment thesis development and strategic judgment"
       - "Stakeholder relationship management and trust building"
@@ -49,7 +53,7 @@ role:
       - "Ethical reasoning about conflicts of interest and fiduciary duty"
       - "Cross-functional influence and executive communication"
       - "Contextual interpretation of qualitative business factors"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "O*NET - Financial Analysts"
@@ -245,7 +249,7 @@ role:
           that creates sustainable competitive advantages in analytical speed,
           depth, and accuracy.
       ai_impact:
-        rating: 0.65
+        rating: 0.7
         detail: >
           AI excels at generating SQL queries from natural language, automating
           data cleaning workflows, and identifying patterns in large datasets.
@@ -294,7 +298,7 @@ role:
           Drives innovation in financial reporting practices including real-time
           dashboards and integrated ESG reporting.
       ai_impact:
-        rating: 0.65
+        rating: 0.7
         detail: >
           AI can automate routine report generation, draft variance commentary,
           and format presentations from templates. However, crafting narratives

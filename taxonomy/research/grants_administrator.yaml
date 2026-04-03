@@ -1,0 +1,519 @@
+role:
+  id: grants_administrator
+  function: research
+  name: "Research Grants Administrator"
+  also_known_as:
+    - "Grants Manager"
+    - "Research Administrator"
+    - "Sponsored Programs Officer"
+    - "Funding Coordinator"
+  description: >
+    Manages the administrative lifecycle of research grants from pre-award
+    proposal preparation through post-award compliance, reporting, and
+    closeout. Ensures institutional compliance with funder requirements,
+    manages budgets, navigates regulatory frameworks, and serves as the
+    critical bridge between researchers and funding agencies.
+  ai_impact:
+    level: "moderate-high"
+    summary: >
+      Grants administration is being significantly impacted by AI through
+      automation of proposal formatting, compliance checking, budget
+      calculations, and reporting. AI tools can now draft budget
+      justifications, check submissions against funder requirements, and
+      generate progress reports from project data. However, the role
+      requires deep understanding of complex and frequently changing
+      federal regulations, the ability to interpret ambiguous policy
+      guidance in specific institutional contexts, and the interpersonal
+      skills to guide researchers through the proposal and award process.
+      The most effective grants administrators will leverage AI to handle
+      routine compliance and formatting tasks while focusing their
+      expertise on complex regulatory interpretation and strategic
+      researcher support.
+    automating:
+      - "Proposal formatting and compliance checklist verification"
+      - "Budget arithmetic and cost calculations"
+      - "Standard progress report generation from project data"
+      - "Funder deadline tracking and notification"
+      - "Citation and biographical sketch formatting"
+      - "Routine financial reconciliation and transaction categorization"
+    augmenting:
+      - "Complex budget modeling and scenario analysis"
+      - "Policy interpretation against institutional context"
+      - "Audit preparation and documentation assembly"
+      - "Cross-referencing proposals against funder eligibility criteria"
+      - "Identifying applicable funding opportunities for researchers"
+      - "Analyzing spending patterns and forecasting budget needs"
+    preserving:
+      - "Building relationships with program officers and funding agencies"
+      - "Guiding researchers through complex proposal processes"
+      - "Interpreting ambiguous regulations in institutional context"
+      - "Navigating institutional politics and policy exceptions"
+      - "Managing multi-stakeholder negotiations for collaborative grants"
+      - "Ethical judgment about compliance gray areas"
+    last_reviewed: "2026-04"
+    confidence: medium
+    sources:
+      - name: "NCURA - National Council of University Research Administrators"
+        url: "https://www.ncura.edu/"
+      - name: "SRA International - Society of Research Administrators"
+        url: "https://www.srainternational.org/"
+      - name: "O*NET - Administrative Services Managers"
+        url: "https://www.onetonline.org/link/summary/11-3012.00"
+  levels:
+    - id: junior
+      name: "Junior Grants Administrator"
+      years_experience: "0-2"
+      summary: >
+        Supports grants administration under supervision, handling
+        routine tasks such as proposal formatting, budget data entry,
+        and compliance checklists. Learns federal regulations, funder
+        requirements, and institutional policies while building
+        foundational skills in research administration.
+    - id: mid
+      name: "Grants Administrator"
+      years_experience: "2-5"
+      summary: >
+        Manages the full grants lifecycle independently for a portfolio
+        of researchers, from pre-award proposal preparation through
+        post-award management and closeout. Interprets funder
+        regulations, manages complex budgets, and serves as the primary
+        administrative contact for assigned research projects.
+    - id: senior
+      name: "Senior Grants Administrator"
+      years_experience: "5-10"
+      summary: >
+        Handles the most complex grants including multi-PI, multi-
+        institutional, and center-level awards. Provides expert guidance
+        on regulatory compliance, leads audit responses, and mentors
+        junior staff. Serves as a subject matter expert on specific
+        funding agencies or regulatory areas.
+    - id: director
+      name: "Director of Research Administration"
+      years_experience: "10+"
+      summary: >
+        Leads the institutional research administration function,
+        setting policies, managing staff, and ensuring organizational
+        compliance. Represents the institution to funding agencies,
+        drives process improvements, and shapes the strategic direction
+        of research administration services.
+  skills:
+    - id: proposal_preparation
+      name: "Proposal Preparation & Submission"
+      category: execution
+      description: >
+        Managing the administrative preparation and submission of
+        research proposals including budget development, compliance
+        verification, document formatting, institutional approvals,
+        and electronic submission through systems like Research.gov,
+        eRA Commons, and Grants.gov.
+      proficiency:
+        junior: >
+          Assists with proposal preparation tasks including budget
+          data entry, document formatting, and compliance checklist
+          verification. Learns submission systems and follows
+          established procedures for routing and approval.
+        mid: >
+          Manages complete proposal submissions independently,
+          developing budgets from researcher inputs, verifying
+          compliance with funder guidelines, and coordinating
+          institutional review and approval. Troubleshoots submission
+          system issues and meets deadlines reliably.
+        senior: >
+          Handles complex multi-institutional proposals with
+          subcontracts, cost-sharing, and collaborative agreements.
+          Advises researchers on proposal strategy, budget
+          optimization, and competitive positioning. Coordinates
+          large team proposals with multiple co-PIs and institutions.
+        director: >
+          Sets institutional standards for proposal preparation
+          quality and compliance. Designs workflows and systems that
+          improve proposal success rates and reduce administrative
+          burden on researchers. Evaluates and implements proposal
+          management technologies.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI significantly accelerates formatting, compliance
+          checking, and budget calculations for proposals. However,
+          understanding the nuances of specific funding opportunities,
+          advising researchers on competitive positioning, and
+          coordinating complex multi-institutional submissions
+          require experienced human judgment.
+
+    - id: regulatory_compliance
+      name: "Federal Regulatory Compliance"
+      category: regulatory
+      description: >
+        Ensuring institutional compliance with federal regulations
+        governing sponsored research including 2 CFR 200 (Uniform
+        Guidance), OMB circulars, agency-specific terms and conditions,
+        and institutional policies. Encompasses cost allowability,
+        effort reporting, conflict of interest, and export control
+        requirements.
+      proficiency:
+        junior: >
+          Understands the basic regulatory framework governing
+          sponsored research. Applies standard compliance checks
+          to proposals and expenditures following established
+          guidelines and escalates complex questions to supervisors.
+        mid: >
+          Interprets federal regulations and funder policies to
+          determine cost allowability, approve expenditures, and
+          ensure compliance across assigned portfolios. Stays
+          current with regulatory changes and communicates
+          implications to researchers.
+        senior: >
+          Provides expert interpretation of complex regulatory
+          situations, including cost-sharing arrangements, program
+          income, and multi-institutional compliance coordination.
+          Leads institutional responses to regulatory changes and
+          advises leadership on compliance risk.
+        director: >
+          Sets institutional compliance strategy and policy,
+          managing the interface between federal regulations and
+          institutional operations. Represents the institution to
+          federal agencies on compliance matters and leads
+          institutional audit responses at the highest level.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can track regulatory changes and flag potential
+          compliance issues, but interpreting ambiguous regulations
+          in specific institutional contexts, navigating gray areas,
+          and managing compliance relationships with federal
+          agencies require deep expertise and human judgment.
+
+    - id: budget_management
+      name: "Grant Budget Management"
+      category: analytical
+      description: >
+        Managing the financial lifecycle of research grants including
+        budget development, cost allocation, expenditure monitoring,
+        financial reporting, and closeout. Encompasses understanding
+        direct and indirect cost structures, fringe benefit rates,
+        subcontract management, and financial compliance requirements.
+      proficiency:
+        junior: >
+          Tracks expenditures against grant budgets and prepares
+          basic financial reports. Understands the difference between
+          direct and indirect costs and follows established
+          procedures for purchase approvals and cost transfers.
+        mid: >
+          Develops detailed grant budgets, monitors spending patterns,
+          and projects future expenditures to ensure grants are spent
+          appropriately and on time. Processes budget modifications,
+          no-cost extensions, and cost transfers with proper
+          justification.
+        senior: >
+          Manages complex financial portfolios across multiple grants
+          and funding sources. Provides strategic financial advice
+          to researchers on budget optimization, cost allocation
+          strategies, and financial risk management.
+        director: >
+          Oversees institutional grant financial management, setting
+          policies for indirect cost recovery, cost-sharing, and
+          financial reporting standards. Leads negotiation of
+          institutional indirect cost rates with federal agencies.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI excels at budget tracking, projection, and anomaly
+          detection. However, developing competitive budgets that
+          align with research plans, interpreting cost allowability
+          in ambiguous situations, and advising researchers on
+          strategic financial decisions require human expertise.
+
+    - id: post_award_management
+      name: "Post-Award Grant Management"
+      category: execution
+      description: >
+        Managing awarded grants through their active lifecycle
+        including progress reporting, budget monitoring, compliance
+        maintenance, modification requests, and closeout. Ensures
+        ongoing compliance with terms and conditions while supporting
+        researchers in meeting their deliverables and obligations.
+      proficiency:
+        junior: >
+          Supports post-award activities including tracking reporting
+          deadlines, assembling documentation for progress reports,
+          and maintaining award files. Follows established procedures
+          for routine award modifications.
+        mid: >
+          Manages post-award administration independently, preparing
+          progress reports, processing modifications and no-cost
+          extensions, and coordinating award closeout. Monitors
+          compliance with terms and conditions and flags potential
+          issues proactively.
+        senior: >
+          Manages complex post-award scenarios including grant
+          transfers, PI changes, scope modifications, and multi-
+          institutional coordination. Negotiates with program
+          officers on behalf of researchers and resolves compliance
+          issues diplomatically.
+        director: >
+          Sets institutional post-award management policies and
+          quality standards. Designs systems for proactive
+          compliance monitoring and risk management. Leads
+          institutional responses to systemic post-award issues
+          and implements continuous improvement programs.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can automate deadline tracking, report generation,
+          and routine compliance monitoring. However, managing
+          complex award modifications, navigating sensitive
+          compliance situations, and maintaining productive
+          relationships with program officers require human
+          judgment and interpersonal skill.
+
+    - id: funder_relations
+      name: "Funder Relations"
+      category: interpersonal
+      description: >
+        Building and maintaining productive relationships with program
+        officers, grants management staff, and other representatives
+        at funding agencies. Encompasses understanding funder
+        priorities, communicating institutional capabilities, and
+        navigating the interpersonal dimensions of the research
+        funding ecosystem.
+      proficiency:
+        junior: >
+          Communicates professionally with funder representatives
+          on routine matters such as submission questions and
+          administrative clarifications. Learns the organizational
+          structure and communication norms of major funding agencies.
+        mid: >
+          Maintains working relationships with program officers and
+          grants management specialists at assigned agencies.
+          Communicates effectively on behalf of researchers regarding
+          proposal inquiries, award modifications, and compliance
+          questions.
+        senior: >
+          Builds strategic relationships with key funder
+          representatives, understanding their priorities and
+          communication preferences. Advises researchers on how
+          to engage productively with program officers and represents
+          the institution in funder discussions.
+        director: >
+          Cultivates institutional relationships with funding
+          agencies at the leadership level. Represents the
+          institution at funder meetings, contributes to policy
+          discussions, and positions the institution favorably
+          for future funding opportunities.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Building and maintaining relationships with funding
+          agency personnel is a fundamentally interpersonal activity
+          that requires trust, diplomacy, and institutional
+          knowledge that AI cannot replicate.
+
+    - id: audit_preparation
+      name: "Audit Preparation & Response"
+      category: execution
+      description: >
+        Preparing for and managing audits of sponsored research
+        activities including federal single audits, agency-specific
+        audits, and internal reviews. Encompasses maintaining audit-
+        ready documentation, coordinating responses, implementing
+        corrective actions, and building institutional audit readiness.
+      proficiency:
+        junior: >
+          Maintains organized award documentation that supports
+          audit readiness. Assists with gathering documents and
+          preparing materials for audit requests under supervision.
+        mid: >
+          Prepares documentation packages for audits and coordinates
+          responses to auditor inquiries. Understands common audit
+          findings and maintains practices that prevent issues in
+          assigned portfolios.
+        senior: >
+          Leads institutional audit preparation and response for
+          sponsored research, coordinating across departments and
+          serving as primary contact for auditors. Implements
+          corrective action plans and designs preventive measures.
+        director: >
+          Sets institutional audit readiness strategy, ensuring
+          systems and practices support consistent compliance.
+          Negotiates audit findings and corrective actions at the
+          institutional level and represents the organization to
+          external audit agencies.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can help organize documentation, identify potential
+          compliance gaps, and prepare standard audit responses.
+          However, managing auditor relationships, interpreting
+          audit findings in institutional context, and designing
+          effective corrective actions require human expertise
+          and judgment.
+
+    - id: policy_interpretation
+      name: "Policy Interpretation"
+      category: domain
+      description: >
+        Interpreting complex and sometimes ambiguous funding policies,
+        federal regulations, and institutional rules to provide clear
+        guidance to researchers and administrators. Requires the
+        ability to read regulatory language carefully, understand
+        legislative intent, and apply rules consistently while
+        recognizing when situations warrant escalation or exception.
+      proficiency:
+        junior: >
+          Applies established policy interpretations to routine
+          situations, referring to guidance documents and precedents.
+          Recognizes when situations are beyond standard guidance
+          and escalates to senior staff for interpretation.
+        mid: >
+          Interprets policies independently for common scenarios,
+          providing clear guidance to researchers with appropriate
+          citations. Identifies when policies conflict or are
+          ambiguous and proposes reasonable interpretations with
+          supporting rationale.
+        senior: >
+          Provides authoritative policy interpretation on complex
+          matters, drawing on deep knowledge of regulatory history
+          and intent. Develops institutional guidance documents that
+          translate regulatory requirements into practical procedures.
+        director: >
+          Shapes institutional policy positions on ambiguous
+          regulatory matters. Participates in national discussions
+          about regulation interpretation through professional
+          organizations and contributes to the development of
+          best practices for the research administration community.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can retrieve and summarize policy text, but interpreting
+          ambiguous regulations in specific institutional contexts,
+          understanding legislative intent, and balancing compliance
+          with practical research needs require deep expertise and
+          seasoned human judgment.
+
+    - id: researcher_support
+      name: "Researcher Support & Service"
+      category: interpersonal
+      description: >
+        Providing high-quality administrative support to researchers
+        navigating the grants process, from identifying funding
+        opportunities through proposal submission, award management,
+        and closeout. Requires patience, clear communication, and the
+        ability to translate administrative requirements into language
+        that researchers can act on.
+      proficiency:
+        junior: >
+          Responds to researcher inquiries promptly and directs them
+          to appropriate resources. Provides clear guidance on
+          routine administrative procedures and deadlines, building
+          trust through reliability and responsiveness.
+        mid: >
+          Serves as a trusted administrative partner to assigned
+          researchers, proactively identifying needs and offering
+          solutions. Translates complex regulatory requirements
+          into clear, actionable guidance tailored to each
+          researcher's experience level.
+        senior: >
+          Provides strategic administrative support to senior
+          researchers managing large portfolios. Anticipates
+          challenges, offers proactive solutions, and serves
+          as a valued advisor on the administrative dimensions
+          of research management.
+        director: >
+          Designs researcher support services that balance high-
+          touch service with operational efficiency. Implements
+          feedback mechanisms, training programs, and service
+          standards that ensure consistently excellent support
+          across the institution.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          AI can provide self-service answers to common questions
+          and automate routine notifications, but the personal
+          relationship, patience, and tailored guidance that
+          effective researcher support requires are fundamentally
+          human qualities.
+
+    - id: systems_management
+      name: "Research Administration Systems"
+      category: technical
+      description: >
+        Managing and utilizing the technology systems that support
+        research administration including grant management databases,
+        electronic submission platforms, financial systems, and
+        reporting tools. Encompasses system configuration, data
+        management, report development, and evaluating new technologies.
+      proficiency:
+        junior: >
+          Uses institutional grants management systems proficiently
+          for data entry, record keeping, and generating standard
+          reports. Learns system workflows and follows established
+          data management procedures.
+        mid: >
+          Manages data quality across research administration
+          systems and generates custom reports for decision-making.
+          Troubleshoots system issues, trains other users, and
+          identifies opportunities for workflow improvements.
+        senior: >
+          Serves as a power user and subject matter expert for
+          research administration systems. Designs reporting
+          solutions, leads system testing and implementation
+          projects, and bridges the gap between administrative
+          needs and IT capabilities.
+        director: >
+          Drives institutional technology strategy for research
+          administration, evaluating and implementing new systems.
+          Leads digital transformation initiatives and ensures
+          systems support institutional reporting and compliance
+          requirements effectively.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI is increasingly integrated into research administration
+          platforms for data validation, anomaly detection, and
+          automated reporting. However, configuring systems for
+          institutional needs, ensuring data integrity, and
+          managing complex system integrations still require
+          human technical expertise.
+
+    - id: institutional_coordination
+      name: "Institutional Coordination"
+      category: interpersonal
+      description: >
+        Coordinating across institutional departments including
+        legal, finance, procurement, HR, IRB, and departmental
+        administration to support sponsored research. Requires
+        understanding institutional structures, building productive
+        working relationships, and navigating organizational
+        processes efficiently on behalf of researchers.
+      proficiency:
+        junior: >
+          Communicates professionally with counterparts in other
+          institutional departments. Follows established procedures
+          for routing requests through institutional review
+          processes and tracks progress to ensure timely completion.
+        mid: >
+          Coordinates efficiently across departments to assemble
+          proposal components, process awards, and resolve
+          administrative issues. Understands the requirements and
+          timelines of each institutional office and manages
+          expectations appropriately.
+        senior: >
+          Serves as a hub of institutional knowledge, navigating
+          complex cross-departmental processes for the most
+          challenging grants. Builds relationships that enable
+          expedited processing when needed and identifies process
+          improvement opportunities.
+        director: >
+          Designs institutional coordination frameworks that
+          streamline the research administration process. Leads
+          cross-departmental process improvement initiatives and
+          resolves systemic coordination challenges at the
+          organizational level.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Coordinating across institutional departments requires
+          relationship-building, organizational knowledge, and
+          interpersonal diplomacy that are fundamentally human
+          capabilities. AI can help with workflow tracking but
+          cannot navigate institutional politics.

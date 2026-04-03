@@ -27,6 +27,7 @@ role:
       - Security vulnerability assessment and compliance monitoring
       - Vendor comparison and evaluation data gathering
       - Technical debt quantification and impact analysis
+      - AI agent-driven technology evaluation and proof-of-concept generation
     augmenting:
       - Technology strategy development with AI-powered scenario modeling
       - Architecture decision evaluation with AI-assisted impact analysis
@@ -39,7 +40,7 @@ role:
       - Making high-stakes technology bets under deep uncertainty
       - Representing the company's technology story to investors and customers
       - Building engineering culture and attracting world-class talent
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "Deloitte - CTO as Strategist"

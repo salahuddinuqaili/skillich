@@ -37,6 +37,7 @@ role:
       - "Producing icon and illustration variations from style references"
       - "Creating dark-mode and high-contrast theme variants from light-mode designs"
       - "Generating visual assets like placeholder images and background patterns"
+      - "AI agent-driven batch asset generation and format adaptation across platforms"
     augmenting:
       - "Exploring more visual directions in less time through AI-generated variations"
       - "Checking visual designs against accessibility contrast and readability standards"
@@ -49,7 +50,7 @@ role:
       - "Designing novel visual treatments for unique product experiences"
       - "Building and evolving design systems that maintain visual coherence at scale"
       - "Mentoring junior designers and shaping the team's visual craft standards"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "AIGA Designer Career Framework"

@@ -1,0 +1,667 @@
+role:
+  id: ai_ops_engineer
+  function: ai_and_agents
+  name: "AI Operations Engineer"
+  also_known_as:
+    - "LLMOps Engineer"
+    - "MLOps Engineer"
+    - "AI Platform Engineer"
+    - "AI Infrastructure Engineer"
+  description: >
+    Builds and operates the infrastructure that runs AI models and agents in
+    production. Manages model serving, scaling, monitoring, cost optimization,
+    and reliability for LLM-powered applications. Combines traditional
+    DevOps/SRE skills with AI-specific expertise in inference optimization,
+    model routing, and observability for non-deterministic systems.
+  ai_impact:
+    level: "moderate-high"
+    summary: >
+      Infrastructure automation is advancing rapidly, and many operational
+      tasks — deployment scripting, monitoring configuration, cost reporting —
+      are increasingly automatable. However, production AI systems present
+      unique reliability challenges that distinguish this role from
+      traditional DevOps. Non-deterministic behavior, quality drift,
+      model-specific failure modes, and the rapidly evolving model provider
+      landscape create challenges that require specialized human judgment.
+      The role is shifting from manual infrastructure management toward
+      designing self-healing systems and making strategic decisions about
+      AI infrastructure architecture.
+    automating:
+      - "Infrastructure-as-code generation for standard deployment patterns"
+      - "Monitoring dashboard and alert configuration from templates"
+      - "Cost reporting and usage analytics generation"
+      - "Routine deployment pipeline execution and rollback procedures"
+      - "Log analysis and anomaly pattern recognition"
+      - "Documentation generation for operational runbooks"
+    augmenting:
+      - "Designing model routing and fallback strategies"
+      - "Debugging production AI quality issues and regressions"
+      - "Optimizing inference performance across cost and latency"
+      - "Capacity planning and demand forecasting for AI workloads"
+      - "Security analysis and compliance verification for AI systems"
+      - "Evaluating new model providers and deployment options"
+    preserving:
+      - "Architectural decisions about AI infrastructure strategy"
+      - "Incident response for novel AI-specific failure modes"
+      - "Vendor relationship management and contract negotiation"
+      - "Cross-team alignment on AI platform capabilities and limitations"
+      - "Balancing reliability, cost, and capability in infrastructure decisions"
+      - "Designing trust and safety infrastructure for AI systems"
+    last_reviewed: "2026-04"
+    confidence: medium
+    sources:
+      - name: "O*NET - Software Quality Assurance Analysts and Testers"
+        url: "https://www.onetonline.org/link/summary/15-1253.00"
+      - name: "Google SRE Book"
+        url: "https://sre.google/sre-book/table-of-contents/"
+      - name: "MLOps Community"
+        url: "https://mlops.community/"
+  levels:
+    - id: junior
+      name: "Junior AI Operations Engineer"
+      years_experience: "0-1"
+      summary: >
+        Operates AI infrastructure under guidance using established
+        deployment pipelines and monitoring tools. Monitors model serving
+        health metrics and responds to alerts following runbooks. Learns
+        AI-specific operational practices and assists with routine
+        maintenance tasks. Documents operational procedures and incident
+        findings.
+    - id: mid
+      name: "AI Operations Engineer"
+      years_experience: "1-3"
+      summary: >
+        Manages AI model deployments end-to-end including serving
+        infrastructure, monitoring, and cost tracking. Implements model
+        routing, caching, and scaling strategies for specific applications.
+        Responds to production incidents independently for moderate
+        complexity issues. Contributes to operational standards and
+        tooling improvements.
+    - id: senior
+      name: "Senior AI Operations Engineer"
+      years_experience: "3-5"
+      summary: >
+        Leads AI infrastructure design and operations for complex
+        production deployments. Architects model serving, monitoring, and
+        cost optimization strategies. Drives reliability improvements and
+        establishes operational standards for the team. Mentors junior
+        engineers and leads incident response for AI-specific failures.
+    - id: staff
+      name: "Staff AI Operations Engineer"
+      years_experience: "5-8"
+      summary: >
+        Sets AI infrastructure direction across the organization. Designs
+        shared AI platform services that support diverse model deployments
+        at scale. Solves cross-cutting challenges in AI reliability, cost
+        management, and security. Influences platform roadmaps and vendor
+        strategy based on deep operational expertise.
+    - id: principal
+      name: "Principal AI Operations Engineer"
+      years_experience: "8+"
+      summary: >
+        Defines the organization's AI infrastructure vision and long-term
+        platform strategy. Drives industry-leading practices in AI
+        operations, reliability, and cost management. Navigates
+        executive-level trade-offs between infrastructure investment,
+        operational risk, and business velocity. Shapes the company's
+        approach to running AI systems at scale.
+  skills:
+    - id: model_serving
+      name: "Model Serving Infrastructure"
+      category: technical
+      description: >
+        Deploying and serving AI models via APIs including inference server
+        management, container orchestration, GPU resource allocation, and
+        serving framework selection for reliable, low-latency model access.
+      proficiency:
+        junior: >
+          Deploys models to serving infrastructure using established
+          pipelines and configurations. Understands basic model serving
+          concepts like inference endpoints, batching, and health checks.
+          Monitors serving health and escalates issues as needed.
+        mid: >
+          Configures and optimizes model serving infrastructure for
+          specific deployment requirements including GPU allocation,
+          batching strategies, and autoscaling policies. Implements health
+          checking, load balancing, and graceful shutdown procedures.
+          Manages model artifact storage and versioning.
+        senior: >
+          Architects model serving infrastructure supporting multiple
+          model types, sizes, and deployment patterns. Designs serving
+          strategies that optimize for latency, throughput, and cost
+          simultaneously. Evaluates serving frameworks and makes technology
+          selection recommendations. Leads serving reliability improvements.
+        staff: >
+          Defines organization-wide model serving standards and shared
+          infrastructure. Designs serving platforms that support diverse
+          deployment needs while maintaining consistent reliability and
+          performance guarantees. Drives adoption of advanced serving
+          techniques and evaluates emerging serving paradigms.
+        principal: >
+          Shapes the organization's model serving strategy and
+          infrastructure investment decisions. Evaluates build-versus-buy
+          decisions for serving infrastructure at the executive level.
+          Drives the long-term vision for model serving architecture as
+          model sizes and deployment patterns evolve.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can generate deployment configurations and suggest serving
+          optimizations, but designing serving architectures that meet
+          production requirements across reliability, latency, and cost
+          while handling the unique challenges of model serving requires
+          human infrastructure engineering expertise.
+
+    - id: cost_optimization
+      name: "AI Cost Management"
+      category: analytical
+      description: >
+        Managing and optimizing the costs of running AI systems in production
+        including token cost tracking, model routing for cost efficiency,
+        caching strategies, and batching optimizations that reduce spend
+        without sacrificing quality.
+      proficiency:
+        junior: >
+          Monitors AI infrastructure costs using established dashboards
+          and reporting tools. Understands the cost drivers for AI systems
+          including compute, tokens, and storage. Flags cost anomalies
+          for review.
+        mid: >
+          Implements cost optimization strategies including response
+          caching, prompt compression, and model tier routing for different
+          use cases. Designs cost tracking and attribution systems.
+          Produces cost analysis reports with optimization recommendations.
+        senior: >
+          Architects comprehensive cost management frameworks for AI
+          operations including usage-based budgeting, cost allocation,
+          and automated optimization. Designs model routing strategies
+          that dynamically balance cost and quality. Leads cost reduction
+          initiatives across the AI infrastructure.
+        staff: >
+          Defines organization-wide AI cost management strategy and FinOps
+          practices. Designs cost optimization infrastructure that serves
+          multiple teams and product areas. Influences vendor pricing
+          negotiations based on detailed usage analytics and forecasting.
+        principal: >
+          Shapes the organization's AI economics strategy at the executive
+          level. Models long-term cost trajectories and drives investment
+          decisions about self-hosted versus API-based model deployments.
+          Balances cost optimization against capability, latency, and
+          strategic positioning.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can analyze cost patterns and suggest optimizations, but
+          making strategic decisions about cost-quality tradeoffs,
+          negotiating vendor contracts, and designing cost management
+          frameworks that align with business priorities require human
+          judgment and organizational context.
+
+    - id: monitoring_observability
+      name: "AI-Specific Monitoring & Observability"
+      category: technical
+      description: >
+        Implementing monitoring and observability systems tailored to AI
+        workloads including inference latency tracking, token usage
+        monitoring, quality drift detection, hallucination rate measurement,
+        and non-deterministic system health indicators.
+      proficiency:
+        junior: >
+          Uses existing monitoring dashboards to track AI system health
+          metrics. Understands AI-specific metrics like token usage,
+          inference latency, and error rates. Responds to alerts following
+          established runbooks and escalation procedures.
+        mid: >
+          Implements AI-specific monitoring including quality metrics,
+          token usage tracking, and latency distribution analysis. Builds
+          dashboards that surface AI system health indicators and
+          configures alerts with appropriate thresholds. Monitors for
+          quality drift and model degradation.
+        senior: >
+          Architects comprehensive observability systems for AI workloads
+          including quality drift detection, hallucination monitoring,
+          and cross-model comparison. Designs observability strategies
+          that make non-deterministic system behavior tractable. Leads
+          incident response and post-mortem analysis for AI-specific
+          failures.
+        staff: >
+          Defines organization-wide AI observability standards and shared
+          monitoring infrastructure. Designs monitoring systems that scale
+          across diverse AI applications while providing consistent
+          visibility into system health and quality. Drives adoption of
+          advanced observability techniques for AI systems.
+        principal: >
+          Shapes the organization's AI observability strategy and drives
+          innovation in monitoring for non-deterministic systems. Evaluates
+          emerging observability approaches and influences industry
+          practices for AI system transparency. Connects observability
+          investment to business risk management.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can assist with anomaly detection and pattern recognition in
+          monitoring data, but designing observability systems that
+          capture meaningful health signals for non-deterministic AI
+          systems and making operational decisions based on monitoring
+          data require human expertise in both infrastructure and AI
+          system behavior.
+
+    - id: scaling_infrastructure
+      name: "AI Scaling & GPU Management"
+      category: technical
+      description: >
+        Auto-scaling inference infrastructure, managing GPU resources,
+        implementing load balancing for AI workloads, and ensuring AI
+        systems handle traffic spikes while maintaining performance and
+        cost efficiency.
+      proficiency:
+        junior: >
+          Understands basic scaling concepts for AI workloads including
+          GPU allocation and horizontal scaling. Monitors resource
+          utilization and flags capacity issues. Follows established
+          scaling procedures and runbooks.
+        mid: >
+          Implements autoscaling policies for AI inference workloads
+          based on traffic patterns and resource utilization. Manages GPU
+          allocation and scheduling for training and inference. Configures
+          load balancing and traffic management for model endpoints.
+        senior: >
+          Architects scaling strategies for complex AI deployments
+          including multi-model scaling, GPU cluster management, and
+          burst capacity planning. Designs scaling policies that balance
+          performance, cost, and availability. Leads capacity planning
+          for AI infrastructure.
+        staff: >
+          Defines organization-wide AI scaling architecture and shared
+          GPU management infrastructure. Designs scaling frameworks that
+          support diverse AI workloads while optimizing resource
+          utilization across the organization. Drives adoption of
+          advanced scaling techniques.
+        principal: >
+          Shapes the organization's AI compute strategy and GPU
+          procurement decisions at the executive level. Evaluates emerging
+          compute architectures and scaling paradigms. Drives long-term
+          infrastructure planning that aligns compute capacity with
+          organizational AI ambitions.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can assist with scaling policy recommendations and resource
+          optimization, but designing scaling architectures for AI
+          workloads with unique characteristics like GPU dependencies,
+          variable inference costs, and non-uniform traffic patterns
+          requires human infrastructure engineering expertise.
+
+    - id: gateway_routing
+      name: "API Gateway & Model Routing"
+      category: technical
+      description: >
+        Designing API gateway architecture for AI services including
+        intelligent model routing, fallback strategies, rate limiting,
+        request transformation, and multi-provider management that ensures
+        reliable, efficient access to AI capabilities.
+      proficiency:
+        junior: >
+          Configures API gateway rules and routing policies using
+          established patterns. Understands basic concepts like rate
+          limiting, authentication, and request routing. Monitors gateway
+          health and performance metrics.
+        mid: >
+          Designs gateway configurations for AI services with appropriate
+          routing rules, fallback strategies, and rate limiting policies.
+          Implements multi-model routing based on request characteristics.
+          Handles gateway security including API key management and access
+          controls.
+        senior: >
+          Architects intelligent model routing systems that dynamically
+          select models based on cost, latency, capability, and
+          availability. Designs multi-provider gateway architectures with
+          automatic failover and degradation strategies. Leads gateway
+          performance optimization efforts.
+        staff: >
+          Defines organization-wide AI gateway architecture and shared
+          routing infrastructure. Designs routing frameworks that support
+          diverse AI applications while maintaining consistent reliability
+          and security properties. Drives adoption of advanced routing
+          strategies across the organization.
+        principal: >
+          Shapes the organization's AI access architecture and
+          multi-provider strategy. Drives long-term vision for
+          intelligent model routing that adapts to the evolving provider
+          landscape. Influences vendor relationships and partnership
+          decisions based on routing and availability requirements.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can suggest routing configurations and optimize based on
+          historical patterns, but designing gateway architectures that
+          handle provider outages gracefully, implement intelligent model
+          selection, and evolve with the rapidly changing provider
+          landscape requires human architectural judgment.
+
+    - id: security_compliance
+      name: "AI Security & Compliance"
+      category: domain
+      description: >
+        Implementing security controls and compliance measures for AI
+        systems including PII handling, data residency requirements,
+        model access controls, audit logging, and regulatory compliance
+        for AI-powered applications.
+      proficiency:
+        junior: >
+          Follows established security procedures for AI system operations.
+          Understands basic security concepts like access controls,
+          encryption, and audit logging. Implements security configurations
+          as directed and reports potential security issues.
+        mid: >
+          Implements security controls for AI systems including PII
+          detection and handling, access control policies, and audit
+          logging. Ensures AI deployments meet data residency and
+          compliance requirements. Conducts security reviews for AI
+          infrastructure changes.
+        senior: >
+          Designs security architectures for AI systems addressing data
+          protection, model access controls, and compliance requirements.
+          Leads security assessments and threat modeling for AI
+          infrastructure. Implements security monitoring and incident
+          response procedures specific to AI system threats.
+        staff: >
+          Defines organization-wide AI security standards and compliance
+          frameworks. Designs shared security infrastructure that
+          protects AI systems across product areas while enabling
+          development velocity. Influences security policy and compliance
+          strategy for AI operations.
+        principal: >
+          Shapes the organization's AI security posture at the executive
+          level. Navigates regulatory requirements across jurisdictions
+          and influences compliance strategy. Drives industry practices
+          for AI system security and contributes to emerging regulatory
+          frameworks.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can assist with security scanning and compliance checking,
+          but designing security architectures for AI systems, navigating
+          complex regulatory requirements, and making risk-based security
+          decisions require human judgment about threats, regulatory
+          interpretation, and organizational risk tolerance.
+
+    - id: ci_cd_pipelines
+      name: "AI CI/CD Pipelines"
+      category: technical
+      description: >
+        Building continuous integration and deployment pipelines for AI
+        applications including automated testing for prompts and models,
+        staged rollout strategies, canary deployments, and automated
+        rollback mechanisms.
+      proficiency:
+        junior: >
+          Uses existing CI/CD pipelines to deploy AI applications and
+          prompt changes. Understands the basic stages of deployment
+          including testing, staging, and production. Monitors deployments
+          and escalates issues.
+        mid: >
+          Designs CI/CD pipelines for AI applications with appropriate
+          testing stages, evaluation gates, and deployment strategies.
+          Implements automated testing for prompts and model configurations.
+          Configures canary deployments and rollback procedures.
+        senior: >
+          Architects CI/CD infrastructure for AI deployments supporting
+          evaluation-gated releases, staged rollouts, and automated
+          quality validation. Designs deployment strategies that account
+          for the non-deterministic nature of AI systems. Establishes
+          deployment standards and best practices.
+        staff: >
+          Defines organization-wide AI deployment standards and shared
+          CI/CD infrastructure. Designs deployment frameworks that support
+          safe, rapid iteration for AI applications while maintaining
+          quality and safety guarantees. Drives adoption of advanced
+          deployment practices across teams.
+        principal: >
+          Shapes the organization's AI deployment philosophy and
+          infrastructure strategy. Drives the long-term vision for AI
+          release engineering that balances velocity with safety and
+          quality assurance. Evaluates emerging deployment paradigms for
+          AI systems.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI can generate pipeline configurations and deployment scripts
+          effectively. However, designing deployment strategies that
+          account for the unique challenges of AI systems — non-deterministic
+          behavior, quality drift, and safety validation — requires human
+          judgment about risk and release readiness.
+
+    - id: incident_response
+      name: "AI Incident Response"
+      category: operational
+      description: >
+        Responding to AI-specific production incidents including quality
+        degradation, safety violations, model provider outages, and
+        unexpected behavioral changes, with appropriate triage, mitigation,
+        and communication procedures.
+      proficiency:
+        junior: >
+          Follows incident response runbooks for AI system issues.
+          Monitors alerting channels and escalates incidents appropriately.
+          Documents incident timelines and contributes to post-mortem
+          discussions. Understands the difference between AI-specific and
+          general infrastructure incidents.
+        mid: >
+          Responds independently to moderate-severity AI incidents
+          including quality regressions, provider outages, and performance
+          degradation. Implements mitigation strategies like model
+          failover and traffic rerouting. Leads post-mortem analysis and
+          produces actionable follow-up items.
+        senior: >
+          Leads incident response for complex AI-specific failures
+          including quality drift, safety violations, and multi-system
+          cascading failures. Designs incident response procedures and
+          runbooks for AI systems. Drives incident prevention through
+          architectural improvements and monitoring enhancements.
+        staff: >
+          Defines organization-wide AI incident response standards and
+          procedures. Designs incident classification frameworks that
+          account for AI-specific failure modes. Leads cross-organizational
+          incident response for critical AI system failures. Drives
+          reliability improvements based on incident trend analysis.
+        principal: >
+          Shapes the organization's approach to AI system reliability
+          and incident management at the executive level. Drives cultural
+          improvements in incident response and post-mortem practices.
+          Communicates AI reliability posture and incident trends to
+          executive leadership and board audiences.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can assist with log analysis and pattern recognition during
+          incidents, but responding to novel AI-specific failures requires
+          creative hypothesis generation, rapid decision-making under
+          uncertainty, and the judgment to balance mitigation speed
+          against investigation thoroughness — deeply human skills.
+
+    - id: capacity_planning
+      name: "AI Capacity Planning"
+      category: analytical
+      description: >
+        Forecasting inference demand, planning GPU capacity, managing
+        compute budgets, and ensuring AI infrastructure scales ahead of
+        business growth while optimizing utilization and cost.
+      proficiency:
+        junior: >
+          Monitors capacity utilization metrics and reports on current
+          resource usage. Understands the relationship between traffic
+          patterns, model requirements, and infrastructure capacity.
+          Assists with capacity tracking and reporting tasks.
+        mid: >
+          Develops capacity forecasts based on historical usage patterns
+          and business growth projections. Plans GPU and compute capacity
+          for upcoming deployments. Implements capacity monitoring and
+          alerting for approaching limits. Produces capacity reports
+          with procurement recommendations.
+        senior: >
+          Architects capacity planning frameworks that account for diverse
+          AI workloads, seasonal patterns, and business growth scenarios.
+          Designs capacity models that balance buffer margins against
+          cost efficiency. Leads procurement planning for GPU and compute
+          resources.
+        staff: >
+          Defines organization-wide AI capacity planning methodology and
+          processes. Designs capacity forecasting models that serve
+          multiple product areas and workload types. Influences vendor
+          negotiations and procurement decisions based on capacity
+          analytics and projections.
+        principal: >
+          Shapes the organization's AI compute strategy at the executive
+          level. Drives long-term capacity planning that aligns
+          infrastructure investment with organizational AI ambitions.
+          Navigates vendor relationships, procurement timing, and
+          technology transitions for compute resources.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can analyze usage patterns and generate forecasts, but
+          capacity planning for AI workloads involves strategic decisions
+          about infrastructure investment, vendor relationships, and
+          technology bets that require human business judgment and
+          organizational context.
+
+    - id: eval_integration
+      name: "Evaluation Integration"
+      category: technical
+      description: >
+        Integrating evaluation systems into deployment pipelines including
+        canary testing with evaluations, quality gates for model and prompt
+        deployments, and continuous production quality monitoring.
+      proficiency:
+        junior: >
+          Runs evaluation suites as part of deployment pipelines following
+          established procedures. Understands the role of evaluations in
+          deployment decisions. Monitors evaluation results and flags
+          failures for review.
+        mid: >
+          Integrates evaluation suites into CI/CD pipelines with
+          appropriate quality gates and pass/fail criteria. Implements
+          canary evaluation systems that compare new deployments against
+          baselines. Designs evaluation monitoring for production quality
+          tracking.
+        senior: >
+          Architects comprehensive evaluation integration frameworks
+          connecting evaluation systems with deployment pipelines,
+          monitoring, and alerting. Designs quality gate criteria that
+          balance deployment confidence with velocity. Establishes
+          evaluation integration standards for the team.
+        staff: >
+          Defines organization-wide evaluation integration standards and
+          shared infrastructure. Designs evaluation pipeline architectures
+          that support diverse AI applications while maintaining
+          consistent quality assurance. Drives adoption of evaluation-driven
+          deployment practices across teams.
+        principal: >
+          Shapes the organization's approach to evaluation-driven AI
+          deployment and continuous quality assurance. Drives the
+          long-term vision for integrating evaluation into every stage
+          of the AI application lifecycle. Influences industry practices
+          for evaluation-gated AI deployments.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can execute evaluations and compute quality metrics, but
+          designing evaluation integration strategies that provide
+          meaningful deployment confidence, setting appropriate quality
+          thresholds, and deciding when evaluation results warrant blocking
+          a deployment require human judgment about risk and quality.
+
+    - id: vendor_management
+      name: "AI Vendor Management"
+      category: interpersonal
+      description: >
+        Managing relationships with model providers, negotiating API
+        contracts, evaluating vendor capabilities, and maintaining
+        multi-provider strategies that ensure reliable, cost-effective
+        access to AI capabilities.
+      proficiency:
+        junior: >
+          Understands the landscape of major AI model providers and their
+          offerings. Monitors vendor SLAs and reports on provider
+          reliability and performance. Assists with vendor evaluation
+          tasks and documentation.
+        mid: >
+          Manages day-to-day vendor relationships including issue
+          escalation, SLA monitoring, and usage reporting. Evaluates new
+          model providers based on capability, reliability, and cost
+          criteria. Contributes to vendor selection decisions with
+          technical assessments.
+        senior: >
+          Leads vendor evaluation and selection processes for AI
+          infrastructure. Designs multi-provider strategies that balance
+          capability, cost, and risk. Negotiates technical terms and
+          SLAs with vendor engineering teams. Manages vendor relationships
+          for critical AI infrastructure.
+        staff: >
+          Defines organization-wide AI vendor strategy and management
+          standards. Leads vendor negotiations for enterprise agreements.
+          Designs vendor diversification strategies that manage
+          concentration risk while maintaining operational efficiency.
+        principal: >
+          Shapes the organization's AI vendor strategy at the executive
+          level. Drives strategic partnerships and investment decisions
+          with model providers. Navigates the competitive dynamics of
+          the AI provider landscape and positions the organization for
+          long-term infrastructure resilience.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          Vendor management relies on relationship-building, negotiation
+          skills, and strategic judgment about partnerships and risk
+          that remain fundamentally human activities. AI can assist with
+          analysis and benchmarking, but the interpersonal and strategic
+          dimensions are human-driven.
+
+    - id: performance_optimization
+      name: "AI Inference Optimization"
+      category: technical
+      description: >
+        Optimizing AI inference performance through techniques like
+        quantization, speculative decoding, KV cache management, batching
+        strategies, and hardware-specific optimizations that reduce latency
+        and improve throughput.
+      proficiency:
+        junior: >
+          Understands basic inference optimization concepts like batching,
+          caching, and quantization. Monitors inference performance
+          metrics and identifies bottlenecks. Implements optimization
+          configurations as directed.
+        mid: >
+          Implements inference optimizations including quantization
+          (INT8, INT4), KV cache configuration, and batching strategies
+          for specific deployments. Measures optimization impact on
+          latency, throughput, and quality. Selects appropriate
+          optimization techniques based on model and hardware constraints.
+        senior: >
+          Architects comprehensive inference optimization strategies
+          combining multiple techniques for maximum performance. Designs
+          optimization pipelines that automatically tune inference
+          parameters. Evaluates emerging optimization techniques and
+          hardware accelerators. Leads performance optimization initiatives.
+        staff: >
+          Defines organization-wide inference optimization standards and
+          shared optimization infrastructure. Designs optimization
+          frameworks that serve diverse model deployments while maintaining
+          quality guarantees. Drives adoption of advanced optimization
+          techniques across the organization.
+        principal: >
+          Shapes the organization's inference performance strategy and
+          hardware investment decisions. Evaluates emerging compute
+          architectures and optimization paradigms. Drives the long-term
+          vision for inference efficiency that aligns with model
+          capability and cost trajectories.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can suggest optimization configurations and analyze
+          performance bottlenecks, but designing optimization strategies
+          that balance quality, latency, and cost across diverse model
+          deployments while accounting for hardware constraints requires
+          deep human expertise in both ML systems and infrastructure
+          engineering.

@@ -28,7 +28,10 @@ role:
       strategic conversations about business value--remains fundamentally
       human. CSMs who leverage AI for data-driven insights while investing
       their time in strategic relationship management will see their
-      impact per account increase substantially.
+      impact per account increase substantially. Agentic AI can now
+      autonomously manage multi-step customer engagement workflows
+      including health-driven outreach, QBR preparation, and renewal
+      risk mitigation sequences.
     automating:
       - "Health score calculation from usage and engagement data"
       - "Renewal timeline tracking and notification"
@@ -36,6 +39,7 @@ role:
       - "Standard onboarding task management and checklists"
       - "Customer communication drafting for routine touchpoints"
       - "NPS and CSAT survey distribution and aggregation"
+      - "AI agent-managed routine customer touchpoints and health-driven outreach sequences"
     augmenting:
       - "Churn prediction and early warning signal identification"
       - "Personalized engagement playbook recommendations"
@@ -43,6 +47,7 @@ role:
       - "Expansion opportunity identification from usage patterns"
       - "Product adoption gap analysis and recommendation"
       - "Stakeholder sentiment analysis from interaction data"
+      - "Agent-assisted renewal preparation with automated risk assessment and proposal generation"
     preserving:
       - "Building trusted advisor relationships with executive sponsors"
       - "Navigating at-risk situations with empathy and creative solutions"
@@ -50,7 +55,7 @@ role:
       - "Cross-functional escalation and internal advocacy for customers"
       - "Coaching customers through organizational change management"
       - "Negotiating renewal and expansion terms that preserve relationships"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "Gainsight - State of Customer Success Report"

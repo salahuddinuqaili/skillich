@@ -26,26 +26,32 @@ role:
       architectural decision-making for infrastructure evolution, vendor
       negotiations, and organizational change management remain firmly
       human-driven. IT ops professionals who combine AI-powered tooling
-      with deep systems judgment will thrive.
+      with deep systems judgment will thrive. Agentic AI systems can
+      now orchestrate multi-step operational workflows including
+      incident triage, remediation, and documentation updates
+      autonomously, further accelerating the shift toward strategic
+      oversight and architecture-level thinking.
     automating:
       - "Log analysis and anomaly detection"
       - "Ticket classification and routing"
       - "Standard change execution and validation"
       - "Routine patch management and compliance scanning"
       - "Basic capacity trend reporting"
+      - "AI agent-automated documentation updates and process workflows"
     augmenting:
       - "Complex incident root-cause analysis"
       - "Capacity planning and cost optimization modeling"
       - "Security event correlation and threat assessment"
       - "Infrastructure-as-code generation and review"
       - "Disaster recovery testing and validation"
+      - "Agent-assisted incident response with automated triage and remediation"
     preserving:
       - "Architectural decisions for infrastructure evolution"
       - "Vendor relationship management and contract negotiation"
       - "Crisis leadership during major incidents"
       - "Organizational change management for new platforms"
       - "Cross-team coordination and stakeholder communication"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "ITIL 4 Foundation"
@@ -622,7 +628,7 @@ role:
           documentation practices with automation and self-service
           capabilities.
       ai_impact:
-        rating: 0.65
+        rating: 0.7
         detail: >
           AI excels at generating draft documentation from system
           configurations, updating runbooks from incident records,
@@ -670,7 +676,7 @@ role:
           Drives executive investment in automation platforms
           that transform operational capability and efficiency.
       ai_impact:
-        rating: 0.65
+        rating: 0.7
         detail: >
           AI can generate automation scripts, suggest automation
           opportunities from repetitive patterns, and even

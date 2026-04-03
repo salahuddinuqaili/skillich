@@ -28,7 +28,10 @@ role:
       stakeholder alignment, and the strategic aspects of vendor relationship
       management continue to require human expertise. Contract managers who
       adopt AI tools will manage larger portfolios more effectively, while
-      those focused solely on manual review face role compression.
+      those focused solely on manual review face role compression. Agentic
+      AI now orchestrates multi-step contract review, extraction, and
+      compliance checking workflows autonomously, further accelerating
+      portfolio-scale contract management.
     automating:
       - "Clause extraction and contract data population"
       - "Standard contract generation from approved templates"
@@ -36,6 +39,7 @@ role:
       - "Compliance checking against playbook terms"
       - "Contract comparison and deviation identification"
       - "Renewal notification and auto-generated renewal packages"
+      - "AI agent-driven end-to-end contract review and clause extraction workflows"
     augmenting:
       - "Risk scoring and prioritization of non-standard terms"
       - "Negotiation preparation with benchmarking data"
@@ -43,6 +47,7 @@ role:
       - "Vendor performance analysis and relationship insights"
       - "Redlining complex agreements against playbooks"
       - "Cross-contract dependency and conflict detection"
+      - "Agent-assisted obligation extraction and compliance monitoring across contract portfolios"
     preserving:
       - "Relationship-driven vendor and partner negotiations"
       - "Cross-functional stakeholder alignment and influence"
@@ -50,7 +55,7 @@ role:
       - "Strategic vendor management and partnership development"
       - "Process design and organizational change management"
       - "Escalation handling and conflict resolution"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "O*NET - Purchasing Managers"
@@ -241,7 +246,7 @@ role:
           Drives the industry-leading use of technology-assisted contract
           review across the enterprise.
       ai_impact:
-        rating: 0.7
+        rating: 0.75
         detail: >
           AI excels at comparing contracts against playbooks, flagging
           deviations, and suggesting standard alternative language.

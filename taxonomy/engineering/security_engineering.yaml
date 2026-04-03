@@ -19,24 +19,29 @@ role:
       pattern matching. However, security is fundamentally adversarial -- attackers
       adapt, and the contextual judgment needed for threat modeling, incident response
       leadership, and security architecture remains deeply human. AI creates new
-      attack surfaces even as it helps defend existing ones.
+      attack surfaces even as it helps defend existing ones. Agentic AI is
+      enabling more sophisticated automated security scanning and remediation
+      workflows, but also introducing novel attack vectors through tool-use
+      and agent architectures.
     automating:
       - "Vulnerability scanning and triage of known CVEs"
       - "Log analysis and anomaly detection"
       - "Security policy template generation"
       - "Basic code security review for known patterns"
+      - "AI agent-driven vulnerability scanning and automated patch generation"
     augmenting:
       - "Threat hunting and advanced persistent threat detection"
       - "Incident forensics and root cause analysis"
       - "Penetration testing with AI-assisted reconnaissance"
       - "Security architecture review for complex systems"
+      - "Agent-assisted security audit workflows with automated evidence collection"
     preserving:
       - "Threat modeling in novel application domains"
       - "Security incident leadership and crisis communication"
       - "Regulatory interpretation and compliance strategy"
       - "Adversarial thinking and red team creativity"
       - "Trust and relationship building with engineering teams"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "NICE Workforce Framework for Cybersecurity"
@@ -129,7 +134,7 @@ role:
           allocation between tooling, training, and manual review based on
           threat intelligence and defect trend data.
       ai_impact:
-        rating: 0.5
+        rating: 0.55
         detail: "AI detects known vulnerability patterns in code effectively. Business logic flaws, complex race conditions, and context-dependent security issues require human review."
 
     - id: penetration_testing
@@ -294,7 +299,7 @@ role:
           to accept, transfer, or mitigate risk based on threat intelligence,
           business context, and resource constraints.
       ai_impact:
-        rating: 0.55
+        rating: 0.6
         detail: "AI excels at scanning and CVSS-based prioritization. Contextual risk assessment considering exploitability, business impact, and remediation cost requires human judgment."
 
     - id: compliance_frameworks

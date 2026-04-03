@@ -21,25 +21,30 @@ role:
       foundation models are automating routine modeling tasks, but the need to design
       novel approaches, validate model behavior, ensure ethical deployment, and translate
       complex results into business decisions keeps human data scientists essential. The
-      role is shifting toward higher-level orchestration of AI systems.
+      role is shifting toward higher-level orchestration of AI systems. Agentic AI
+      capable of executing multi-step research and modeling workflows now handles
+      tasks that previously required significant hands-on effort, accelerating
+      the shift toward strategic oversight and novel problem formulation.
     automating:
       - "Hyperparameter tuning and model selection"
       - "Feature engineering for tabular data"
       - "Standard predictive modeling tasks"
       - "Code generation for common ML patterns"
       - "Routine data exploration and profiling"
+      - "AI agent-driven end-to-end data pipeline creation and monitoring"
     augmenting:
       - "Rapid prototyping with foundation models and transfer learning"
       - "Automated experiment tracking and reproducibility"
       - "AI-assisted literature review and method discovery"
       - "Synthetic data generation for model training"
+      - "Agent-assisted iterative model development and evaluation workflows"
     preserving:
       - "Problem formulation and research question design"
       - "Model interpretability and ethical AI assessment"
       - "Novel algorithm development and research"
       - "Cross-functional collaboration and stakeholder education"
       - "Strategic decisions about what to model and why"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "Stanford HAI - AI Index Report 2024"
@@ -278,7 +283,7 @@ role:
           organization. Evaluates feature platform technologies and guides investment in
           feature infrastructure.
       ai_impact:
-        rating: 0.7
+        rating: 0.75
         detail: >
           AutoML and foundation models are reducing the need for manual feature engineering
           in many domains. However, domain-specific feature creation and feature store

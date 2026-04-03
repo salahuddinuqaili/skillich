@@ -29,7 +29,10 @@ role:
       with AI assistance. However, the strategic heart of FP&A, including
       challenging business assumptions, facilitating cross-functional trade-off
       discussions, and translating numbers into executive-ready narratives,
-      remains deeply human and relational.
+      remains deeply human and relational. Agentic AI now enables
+      autonomous multi-step planning workflows including data
+      consolidation, baseline forecasting, and draft variance commentary
+      generation.
     automating:
       - "Data consolidation from multiple ERP and operational systems"
       - "Baseline forecast generation from historical patterns"
@@ -37,6 +40,7 @@ role:
       - "KPI dashboard population and routine management reporting"
       - "Budget template distribution and input collection tracking"
       - "Trend identification and anomaly flagging in financial data"
+      - "AI agent-automated budget data consolidation and variance report generation"
     augmenting:
       - "Scenario modeling with rapid sensitivity analysis"
       - "Revenue and cost driver analysis across business segments"
@@ -44,6 +48,7 @@ role:
       - "What-if analysis for capital allocation decisions"
       - "Competitive benchmarking and market intelligence synthesis"
       - "Rolling forecast accuracy improvement through ML-based adjustments"
+      - "Agent-assisted multi-scenario planning with automated assumption stress-testing"
     preserving:
       - "Cross-functional partnership and assumption challenging"
       - "Strategic narrative development connecting numbers to business context"
@@ -51,7 +56,7 @@ role:
       - "Organizational change management during planning cycles"
       - "Judgment about qualitative factors affecting forecasts"
       - "Facilitation of trade-off discussions between competing priorities"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "O*NET - Financial Analysts"

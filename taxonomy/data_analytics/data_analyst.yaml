@@ -21,25 +21,30 @@ role:
       can generate SQL queries, build dashboards, and surface preliminary insights from
       natural language prompts. However, the human ability to contextualize findings within
       business strategy, ask the right questions, and communicate nuanced stories from
-      data remains essential.
+      data remains essential. Agentic AI systems can now orchestrate multi-step
+      analytical workflows end-to-end, from data extraction through insight
+      generation, further raising the bar for human analysts to focus on
+      strategic interpretation and stakeholder engagement.
     automating:
       - "Routine SQL query generation and optimization"
       - "Basic exploratory data analysis and summary statistics"
       - "Standard chart and visualization creation"
       - "Data cleaning and formatting tasks"
       - "Anomaly detection in recurring reports"
+      - "AI agent-driven end-to-end data pipeline creation and monitoring"
     augmenting:
       - "Advanced pattern recognition across large datasets"
       - "Natural language querying of databases and data lakes"
       - "Automated insight suggestion and hypothesis generation"
       - "Real-time dashboard monitoring with intelligent alerting"
+      - "Agent-assisted multi-step analytical workflows with human oversight"
     preserving:
       - "Business context interpretation and strategic framing"
       - "Stakeholder relationship management and communication"
       - "Defining what questions to ask and which metrics matter"
       - "Ethical judgment on data usage and privacy"
       - "Cross-functional collaboration to drive data-informed culture"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "McKinsey - The State of AI in 2024"
@@ -108,7 +113,7 @@ role:
           Defines organizational SQL standards and data access patterns. Evaluates and selects
           query engines and database technologies to support enterprise-scale analytics.
       ai_impact:
-        rating: 0.7
+        rating: 0.75
         detail: >
           AI copilots can generate SQL from natural language and suggest optimizations, but
           understanding data models, business logic, and edge cases still requires human expertise.
@@ -201,7 +206,7 @@ role:
           Sets the vision for data communication across the organization. Influences industry
           practices and evaluates emerging visualization technologies and paradigms.
       ai_impact:
-        rating: 0.6
+        rating: 0.65
         detail: >
           AI can auto-generate charts and suggest visualization types, but designing visualizations
           that tell a compelling story and resonate with a specific audience requires human
@@ -230,7 +235,7 @@ role:
           Sets the strategic vision for self-service analytics and dashboard platforms across
           the enterprise. Drives adoption and measures impact on organizational decision-making.
       ai_impact:
-        rating: 0.5
+        rating: 0.55
         detail: >
           AI can suggest dashboard layouts and auto-generate basic dashboards, but understanding
           user needs, designing for usability, and ensuring dashboards drive action requires
@@ -407,7 +412,7 @@ role:
           Evaluates the role of spreadsheets within the broader analytics tool ecosystem.
           Guides strategic decisions about tool adoption and workflow modernization.
       ai_impact:
-        rating: 0.7
+        rating: 0.75
         detail: >
           AI copilots integrated into spreadsheets can generate formulas, create charts, and
           perform analyses from natural language, significantly automating routine spreadsheet

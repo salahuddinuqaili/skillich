@@ -25,6 +25,7 @@ role:
       - "Tagging and coding qualitative data themes"
       - "Generating initial drafts of discussion guides"
       - "Summarizing large volumes of open-ended survey responses"
+      - "AI agent-driven research repository synthesis and insight extraction"
     augmenting:
       - "Rapid synthesis of research repositories across multiple studies"
       - "AI-assisted participant recruitment and screening"
@@ -37,7 +38,7 @@ role:
       - "Interpreting body language, tone, and emotional nuance"
       - "Making ethical judgments about research participant welfare"
       - "Connecting research insights to product and business strategy"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "Nielsen Norman Group - AI in UX Research"

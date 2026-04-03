@@ -18,23 +18,26 @@ role:
       Infrastructure-as-code generation and cloud resource configuration are increasingly
       AI-assisted. However, cost optimization across complex environments, security posture
       management, and multi-cloud strategy require deep contextual understanding that
-      remains human-driven.
+      remains human-driven. Agentic AI can now orchestrate multi-step
+      infrastructure provisioning and configuration workflows end-to-end.
     automating:
       - "Terraform/CloudFormation template generation"
       - "Security group and IAM policy drafting"
       - "Cost anomaly detection and right-sizing recommendations"
       - "Documentation of infrastructure topology"
+      - "AI agent-driven multi-step infrastructure provisioning and drift remediation"
     augmenting:
       - "Architecture design for scalability and resilience"
       - "Migration planning from on-premises to cloud"
       - "Multi-cloud strategy evaluation"
       - "Compliance and security posture assessment"
+      - "Agent-assisted infrastructure debugging and configuration analysis"
     preserving:
       - "Vendor relationship management and contract negotiation"
       - "Organizational cloud adoption strategy"
       - "Cross-team platform requirements gathering"
       - "Incident escalation and executive communication during outages"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "Pluralsight Cloud Career Guide 2025"
@@ -135,7 +138,7 @@ role:
           influences open-source IaC projects, and guides the company's
           infrastructure automation philosophy.
       ai_impact:
-        rating: 0.6
+        rating: 0.65
         detail: "AI generates IaC templates effectively for known patterns. State management strategy, module architecture, and migration of existing infrastructure require human planning."
 
     - id: networking
@@ -474,7 +477,7 @@ role:
           and ensures automation capabilities scale with organizational
           growth without creating fragile dependency chains.
       ai_impact:
-        rating: 0.65
+        rating: 0.7
         detail: "AI generates scripts and automation code effectively. Identifying what to automate, designing idempotent workflows, and building self-service platforms require human judgment."
 
     - id: platform_engineering

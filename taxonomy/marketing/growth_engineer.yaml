@@ -27,26 +27,31 @@ role:
       identify high-leverage growth opportunities. The ability to
       design novel growth loops, build experimentation infrastructure,
       and make strategic technical decisions about what to build
-      remains fundamentally human-driven.
+      remains fundamentally human-driven. Agentic AI now enables
+      multi-step experiment implementation and analysis workflows,
+      accelerating the build-measure-learn cycle but increasing the
+      premium on strategic growth thinking and novel loop design.
     automating:
       - "Generating boilerplate code for A/B test implementations and feature flags"
       - "Writing event tracking instrumentation code from specifications"
       - "Analyzing experiment results and generating statistical summaries"
       - "Creating data pipelines for growth metrics dashboards"
       - "Generating variations of onboarding flows and paywall designs"
+      - "AI agent-managed experiment lifecycle from setup through analysis"
     augmenting:
       - "Identifying growth opportunities from user behavior data patterns"
       - "Debugging complex instrumentation and data pipeline issues"
       - "Designing experiment architectures for multi-variant tests"
       - "Optimizing referral system mechanics and incentive structures"
       - "Building personalized user experiences based on behavioral signals"
+      - "Agent-assisted growth feature development with automated testing and deployment"
     preserving:
       - "Identifying and designing novel growth loops and viral mechanics"
       - "Making strategic decisions about what growth levers to invest in"
       - "Architecting experimentation platforms that scale with organizational needs"
       - "Bridging technical implementation with growth strategy and user psychology"
       - "Navigating ethical boundaries in growth tactics and dark pattern avoidance"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "Reforge – Growth Engineering Program"
@@ -531,7 +536,7 @@ role:
           infrastructure that compounds the team's ability to ship
           and learn from experiments.
       ai_impact:
-        rating: 0.55
+        rating: 0.6
         detail: >
           AI code generation significantly accelerates full-stack
           development for growth features. However, making

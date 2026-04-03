@@ -29,7 +29,10 @@ role:
       coaching individuals through behavioral change remain deeply human.
       L&D professionals who leverage AI for content production and
       personalization while focusing on strategic program design and facilitation
-      will multiply their impact.
+      will multiply their impact. Agentic AI can now orchestrate
+      multi-step content creation workflows from needs analysis through
+      content generation, assessment creation, and publication,
+      dramatically accelerating course development velocity.
     automating:
       - "Course content drafting from subject matter expert interviews"
       - "Quiz and assessment question generation"
@@ -37,6 +40,7 @@ role:
       - "Translation and localization of training materials"
       - "LMS report generation and completion tracking"
       - "Microlearning content creation from existing materials"
+      - "AI agent-automated course creation pipelines from subject matter expert input to published content"
     augmenting:
       - "Instructional design with AI-generated content drafts"
       - "Learner engagement analysis and intervention recommendations"
@@ -44,6 +48,7 @@ role:
       - "Simulation and scenario-based learning development"
       - "Accessibility optimization for diverse learning needs"
       - "ROI measurement through advanced analytics"
+      - "Agent-assisted adaptive learning path orchestration with real-time skill gap remediation"
     preserving:
       - "Organizational needs analysis and strategic learning alignment"
       - "Live facilitation of workshops and experiential learning"
@@ -51,7 +56,7 @@ role:
       - "Cultural and behavioral change initiatives"
       - "Stakeholder relationship management for program sponsorship"
       - "Ethical judgment in learning content and assessment design"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "O*NET - Training and Development Specialists"
@@ -245,7 +250,7 @@ role:
           content libraries, drives innovation in learning formats, and
           ensures content investment delivers measurable capability impact.
       ai_impact:
-        rating: 0.7
+        rating: 0.75
         detail: >
           AI dramatically accelerates content creation, generating text, images,
           quizzes, and even video from prompts. However, ensuring content

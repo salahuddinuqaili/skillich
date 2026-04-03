@@ -31,7 +31,10 @@ role:
       regulation is still forming. The net effect is that while AI automates
       routine privacy compliance tasks, the strategic and advisory demands
       on privacy professionals are expanding faster than automation reduces
-      their workload.
+      their workload. Agentic AI now enables multi-step privacy
+      compliance workflows including automated data mapping, impact
+      assessment drafting, and regulatory change tracking across
+      jurisdictions.
     automating:
       - "Data subject access request intake and initial processing"
       - "Privacy impact assessment questionnaire distribution and collection"
@@ -39,6 +42,7 @@ role:
       - "Data inventory updates from system scanning"
       - "Privacy policy template generation and comparison"
       - "Regulatory change monitoring and initial impact flagging"
+      - "AI agent-automated data subject request processing and fulfillment workflows"
     augmenting:
       - "Complex privacy impact assessment analysis"
       - "Cross-border data transfer mechanism evaluation"
@@ -46,6 +50,7 @@ role:
       - "Data mapping across complex system architectures"
       - "Breach notification timeline and obligation analysis"
       - "Privacy regulation comparison across jurisdictions"
+      - "Agent-assisted cross-jurisdictional privacy impact assessment with automated gap analysis"
     preserving:
       - "Strategic privacy program design and evolution"
       - "Regulatory engagement and relationship management"
@@ -53,7 +58,7 @@ role:
       - "Balancing business innovation with privacy obligations"
       - "Crisis leadership during data breach response"
       - "Ethical judgment on privacy-by-design for emerging technologies"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "O*NET - Lawyers"

@@ -29,6 +29,9 @@ role:
       organizational change. Analysts who combine AI-powered data processing
       with strong business acumen and stakeholder influence will see their
       impact multiply as the volume of analyzable customer data grows.
+      Agentic AI can now execute multi-step analytical workflows
+      autonomously, from data aggregation through trend identification
+      and draft insight generation.
     automating:
       - "Sentiment scoring of customer interactions and feedback"
       - "Aggregation and summarization of survey responses"
@@ -36,6 +39,7 @@ role:
       - "Basic trend detection in customer satisfaction metrics"
       - "Automated report generation from standard data sources"
       - "Real-time alerting on satisfaction metric anomalies"
+      - "AI agent-automated multi-source customer feedback aggregation and trend reporting"
     augmenting:
       - "Thematic analysis of large-volume qualitative feedback"
       - "Predictive modeling of customer churn and satisfaction drivers"
@@ -43,6 +47,7 @@ role:
       - "Natural language querying of customer experience databases"
       - "Automated insight summarization for stakeholder consumption"
       - "Correlation analysis across feedback channels and touchpoints"
+      - "Agent-assisted end-to-end insight generation from raw feedback to stakeholder-ready recommendations"
     preserving:
       - "Strategic interpretation of insights within business context"
       - "Designing research programs that ask the right questions"
@@ -50,7 +55,7 @@ role:
       - "Judgment on what insights matter versus statistical noise"
       - "Navigating organizational politics to drive customer-centric change"
       - "Ethical considerations in customer data analysis and privacy"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "Qualtrics XM Institute"
@@ -147,7 +152,7 @@ role:
           and predictive experience management. Ensures analytical rigor
           underpins all customer experience decisions at the executive level.
       ai_impact:
-        rating: 0.6
+        rating: 0.65
         detail: >
           AI significantly accelerates data preparation, pattern detection,
           and basic analysis tasks. However, framing the right analytical

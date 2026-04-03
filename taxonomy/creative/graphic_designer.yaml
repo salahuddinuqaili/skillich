@@ -1,0 +1,574 @@
+role:
+  id: graphic_designer
+  function: creative
+  name: "Graphic Designer"
+  also_known_as:
+    - "Visual Designer"
+    - "Brand Designer"
+    - "Digital Designer"
+    - "Creative Designer"
+  description: >
+    Creates visual communications including brand identities, marketing
+    materials, digital assets, packaging, and publication design. Combines
+    aesthetic sensibility with technical execution to solve visual problems
+    and communicate messages effectively through typography, color, layout,
+    and imagery.
+  ai_impact:
+    level: "high"
+    summary: >
+      AI image generation tools like Midjourney, DALL-E, and Adobe Firefly
+      have fundamentally altered the graphic design landscape. Routine tasks
+      like creating social media graphics, generating layout variations, and
+      producing stock-style imagery are increasingly automated. However,
+      brand systems design, creative direction, design thinking as a problem-
+      solving discipline, and the ability to create cohesive visual identities
+      that resonate culturally remain deeply human. Designers who integrate
+      AI as a powerful ideation and production tool while focusing on
+      strategic and conceptual work will see their creative leverage multiply.
+    automating:
+      - "Social media graphic generation from templates"
+      - "Image background removal and basic photo editing"
+      - "Layout variation generation for A/B testing"
+      - "Stock image and illustration generation"
+      - "Color palette and font pairing suggestions"
+      - "Batch resizing and format adaptation across channels"
+    augmenting:
+      - "Concept exploration and rapid ideation with AI image tools"
+      - "Design system component generation from specifications"
+      - "Accessibility checking and compliance suggestions"
+      - "Brand consistency auditing across large asset libraries"
+      - "Mockup generation and presentation visualization"
+      - "Photo retouching and enhancement at scale"
+    preserving:
+      - "Brand identity creation and visual language definition"
+      - "Creative direction and art direction across campaigns"
+      - "Design thinking and problem-framing for visual challenges"
+      - "Cultural sensitivity and audience-appropriate visual choices"
+      - "Client relationship management and creative collaboration"
+      - "Taste, aesthetic judgment, and design trend anticipation"
+    last_reviewed: "2026-04"
+    confidence: medium
+    sources:
+      - name: "O*NET - Graphic Designers"
+        url: "https://www.onetonline.org/link/summary/27-1024.00"
+      - name: "AIGA Design Census"
+        url: "https://www.aiga.org/resources/design-census"
+      - name: "Bureau of Labor Statistics - Graphic Designers"
+        url: "https://www.bls.gov/ooh/arts-and-design/graphic-designers.htm"
+  levels:
+    - id: junior
+      name: "Junior Graphic Designer"
+      years_experience: "0-2"
+      summary: >
+        Creates design deliverables from established templates and brand
+        guidelines under supervision. Executes assigned design tasks
+        including social media graphics, presentation slides, and marketing
+        collateral. Learns design tools, brand systems, and production
+        workflows. Incorporates feedback and develops foundational design
+        skills.
+    - id: mid
+      name: "Graphic Designer"
+      years_experience: "2-5"
+      summary: >
+        Designs visual assets independently across multiple formats and
+        channels, maintaining brand consistency without constant oversight.
+        Manages multiple design projects simultaneously from brief through
+        delivery. Contributes creative ideas to campaigns and makes
+        informed design decisions about layout, typography, and color.
+    - id: senior
+      name: "Senior Graphic Designer"
+      years_experience: "5-8"
+      summary: >
+        Leads design projects from concept through execution, defining
+        visual direction and making strategic design decisions. Creates
+        original design concepts for campaigns, brand extensions, and
+        new initiatives. Mentors junior designers on craft, tools, and
+        design thinking. Pushes creative boundaries while meeting
+        business objectives.
+    - id: lead
+      name: "Lead Graphic Designer"
+      years_experience: "8-12"
+      summary: >
+        Defines design standards, systems, and workflows across the
+        organization. Manages design teams and vendor relationships.
+        Ensures brand visual consistency across all touchpoints. Drives
+        adoption of AI design tools while maintaining creative
+        excellence. Represents design in cross-functional strategy
+        discussions.
+    - id: creative_director
+      name: "Creative Director"
+      years_experience: "12+"
+      summary: >
+        Defines the organization's visual identity and creative direction
+        at the executive level. Builds and leads creative teams, sets
+        budgets, and shapes the creative culture. Makes high-stakes
+        creative decisions that affect brand perception and market
+        positioning. Bridges business strategy and creative execution
+        at the leadership level.
+  skills:
+    - id: visual_design
+      name: "Visual Design"
+      category: technical
+      description: >
+        Core visual design competencies including layout composition,
+        color theory, typography, hierarchy, and spacing. The ability
+        to create visually harmonious, effective designs that guide the
+        viewer's eye and communicate messages clearly across print and
+        digital media.
+      proficiency:
+        junior: >
+          Applies fundamental design principles including alignment, contrast,
+          repetition, and proximity. Uses color palettes and typography
+          selections from brand guidelines appropriately. Creates clean,
+          organized layouts that communicate information clearly.
+        mid: >
+          Creates sophisticated compositions with confident use of visual
+          hierarchy, whitespace, and typographic systems. Applies color
+          theory intentionally to evoke specific moods and guide attention.
+          Produces designs that are both visually polished and functionally
+          effective.
+        senior: >
+          Demonstrates mastery of visual design through work that balances
+          aesthetic excellence with communication clarity. Creates original
+          typographic treatments, color systems, and compositional approaches
+          that push creative boundaries. Sets the visual quality standard
+          for the team through exemplary work.
+        lead: >
+          Defines visual design standards and quality benchmarks for the
+          organization. Establishes design systems that encode visual design
+          principles into reusable components. Reviews and elevates the
+          work of other designers through expert art direction.
+        creative_director: >
+          Shapes the organization's visual design philosophy at the
+          strategic level. Influences visual design trends and sets
+          the creative ambition level for the team. Ensures visual
+          design excellence serves business differentiation and brand
+          equity.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI generates layouts and visual compositions that follow basic
+          design principles, but creating designs with genuine visual
+          sophistication, cultural relevance, and emotional impact
+          requires the trained aesthetic judgment that skilled designers
+          develop over years of practice.
+
+    - id: brand_identity
+      name: "Brand Identity Design"
+      category: domain
+      description: >
+        Creating complete brand identity systems including logos,
+        typography, color palettes, iconography, photography direction,
+        and comprehensive visual language that expresses a brand's
+        personality, values, and positioning across all touchpoints.
+      proficiency:
+        junior: >
+          Applies existing brand identity guidelines to design deliverables
+          consistently. Understands the components of a brand identity
+          system and how they work together. Creates assets that fit within
+          established brand parameters.
+        mid: >
+          Contributes to brand identity projects by designing logo
+          concepts, exploring visual directions, and developing brand
+          collateral. Understands how brand identity translates across
+          different media and contexts. Creates brand assets that feel
+          cohesive and intentional.
+        senior: >
+          Leads brand identity projects from strategy through execution,
+          creating complete visual systems that express brand positioning.
+          Designs flexible brand architectures that work across sub-brands
+          and co-branding scenarios. Creates brand guidelines that enable
+          consistent execution by others.
+        lead: >
+          Defines brand identity processes and standards for the
+          organization. Manages brand evolution and ensures consistency
+          across all touchpoints including AI-generated content. Builds
+          brand governance frameworks that balance consistency with
+          creative flexibility.
+        creative_director: >
+          Shapes brand identity strategy at the executive level, connecting
+          visual identity to business positioning and market differentiation.
+          Makes high-stakes decisions about brand evolution, refresh, and
+          architecture that affect how millions of people perceive the
+          organization.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          AI can generate logo concepts and suggest color palettes, but
+          creating a brand identity system that authentically expresses an
+          organization's values, differentiates in a competitive landscape,
+          and resonates with specific audiences requires strategic and
+          cultural understanding that remains deeply human.
+
+    - id: design_tools
+      name: "Design Tools Proficiency"
+      category: technical
+      description: >
+        Proficiency in professional design software including Figma, Adobe
+        Creative Suite (Photoshop, Illustrator, InDesign), Canva, Sketch,
+        and emerging AI-powered design tools. Efficient use of features,
+        shortcuts, and workflows that maximize productivity and output
+        quality.
+      proficiency:
+        junior: >
+          Operates core design tools at a functional level, using basic
+          features for layout, typography, and image editing. Creates
+          deliverables using templates and follows file organization
+          conventions established by the team.
+        mid: >
+          Uses design tools efficiently with keyboard shortcuts, advanced
+          features, and organized file structures. Works across multiple
+          tools confidently, selecting the right tool for each task.
+          Creates reusable components, templates, and design systems
+          that improve team efficiency.
+        senior: >
+          Demonstrates expert-level proficiency across the design tool
+          ecosystem. Creates advanced workflows including automation,
+          plugin usage, and cross-tool integration. Evaluates and adopts
+          new tools and AI design features that improve creative output
+          and team productivity.
+        lead: >
+          Defines tool standards and workflows for the design organization.
+          Manages design tool licenses, training, and adoption strategies.
+          Integrates AI design tools into production workflows while
+          establishing governance and quality standards.
+        creative_director: >
+          Sets the organization's design technology strategy, evaluating
+          tool investments against creative quality and team productivity.
+          Ensures the design team has access to tools that support their
+          creative ambitions and competitive position.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI features are being embedded directly into design tools,
+          automating many production tasks. However, using tools
+          creatively, developing efficient workflows, and making
+          tool selection decisions that match project requirements
+          continue to require experienced human judgment.
+
+    - id: ai_image_generation
+      name: "AI Image Generation"
+      category: technical
+      description: >
+        Using AI image generation tools like Midjourney, DALL-E, Adobe
+        Firefly, and Stable Diffusion for concept exploration, asset
+        creation, and production acceleration. Crafting effective prompts,
+        evaluating output quality, and integrating AI-generated assets
+        into professional design workflows.
+      proficiency:
+        junior: >
+          Uses AI image generation tools for basic tasks like concept
+          exploration and placeholder imagery. Understands fundamental
+          prompt techniques and can identify obvious quality issues in
+          AI output. Follows team guidelines for AI usage and disclosure.
+        mid: >
+          Crafts effective prompts that generate on-brand imagery for
+          production use. Integrates AI-generated assets into design
+          projects with appropriate post-processing and refinement.
+          Evaluates when AI generation is appropriate versus custom
+          illustration or photography.
+        senior: >
+          Develops sophisticated AI image workflows for concept exploration,
+          rapid prototyping, and production asset creation. Pushes AI tools
+          to produce distinctive, on-brand results through advanced prompt
+          engineering and iterative refinement. Trains team members on
+          effective AI integration.
+        lead: >
+          Defines the organization's AI image generation strategy including
+          tool selection, usage guidelines, and ethical standards. Balances
+          AI efficiency with brand differentiation and creative originality.
+          Establishes quality gates for AI-generated visual assets.
+        creative_director: >
+          Shapes the organization's vision for AI-augmented visual creation
+          at the executive level. Navigates intellectual property, ethical,
+          and regulatory implications of AI-generated imagery. Positions
+          the design team to leverage AI for competitive advantage while
+          preserving the human creative judgment that defines the brand.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          This skill is fundamentally about directing AI rather than being
+          replaced by it. As AI image tools improve, the ability to
+          effectively direct, curate, and integrate AI-generated imagery
+          into professional design work becomes a critical differentiator
+          for designers.
+
+    - id: illustration
+      name: "Illustration & Custom Graphics"
+      category: technical
+      description: >
+        Creating custom illustrations, icons, infographics, and graphic
+        elements that communicate complex ideas visually. Developing
+        distinctive illustrative styles that express brand personality
+        and differentiate content from stock imagery and AI-generated
+        alternatives.
+      proficiency:
+        junior: >
+          Creates simple illustrations, icons, and graphic elements using
+          vector tools. Follows established illustration styles and icon
+          systems. Understands basic principles of visual metaphor and
+          information hierarchy in graphic communication.
+        mid: >
+          Produces polished custom illustrations and infographics that
+          communicate complex ideas clearly and engagingly. Develops
+          consistent illustrative styles across series of assets.
+          Creates icon systems and graphic elements that integrate
+          seamlessly with broader design systems.
+        senior: >
+          Creates distinctive illustration work with a recognizable
+          personal or brand-specific style. Designs complex infographics
+          and data visualizations that make information accessible and
+          compelling. Pushes illustrative boundaries with techniques
+          that differentiate the brand's visual content.
+        lead: >
+          Defines illustration standards and style guides for the
+          organization. Commissions and directs illustrators and agencies.
+          Evaluates how AI illustration tools complement or compete with
+          custom illustration capabilities and adjusts strategy accordingly.
+        creative_director: >
+          Shapes the organization's illustration and custom visual asset
+          strategy at the executive level. Evaluates investment in
+          illustration capabilities versus AI-generated alternatives.
+          Ensures custom illustration serves brand differentiation and
+          visual storytelling goals.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI generates competent illustrations in many common styles, but
+          creating truly distinctive illustrative work with consistent
+          character, cultural sensitivity, and conceptual depth that
+          differentiates a brand from AI-generated sameness remains a
+          valuable human skill.
+
+    - id: print_production
+      name: "Print Production"
+      category: technical
+      description: >
+        Preparing print-ready files with correct color management (CMYK,
+        Pantone), resolution, bleed, trim marks, and prepress specifications.
+        Understanding paper stocks, printing processes, finishing techniques,
+        and managing vendor relationships for printed materials.
+      proficiency:
+        junior: >
+          Prepares basic print files with correct resolution, bleed, and
+          color settings following team templates. Understands the difference
+          between RGB and CMYK color spaces. Communicates with print vendors
+          using provided specifications.
+        mid: >
+          Creates production-ready print files across formats including
+          brochures, packaging, and large-format output. Manages Pantone
+          color specifications, spot colors, and overprint settings.
+          Evaluates print proofs and communicates corrections to vendors
+          effectively.
+        senior: >
+          Masters print production across complex formats including
+          specialty finishes, die-cuts, and multi-material printing.
+          Specifies paper stocks, binding methods, and finishing techniques
+          that elevate printed materials. Troubleshoots production issues
+          and optimizes specifications for quality and cost.
+        lead: >
+          Defines print production standards and vendor management
+          processes for the organization. Negotiates print contracts and
+          evaluates new production technologies. Ensures print quality
+          standards are maintained across all vendors and production runs.
+        creative_director: >
+          Sets the organization's print and physical production strategy,
+          balancing quality, sustainability, and cost. Evaluates investment
+          in printed versus digital materials as channel strategies evolve.
+          Ensures physical brand expressions match digital quality standards.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI has limited impact on the physical craft of print production,
+          which requires understanding of materials, processes, and vendor
+          relationships. However, AI can assist with prepress checking
+          and file preparation automation, reducing routine technical
+          errors.
+
+    - id: design_thinking
+      name: "Design Thinking"
+      category: analytical
+      description: >
+        Problem framing, user-centered design process, iterative
+        refinement, and structured creative problem-solving. Applying
+        empathy, ideation, prototyping, and testing methodologies to
+        visual communication challenges.
+      proficiency:
+        junior: >
+          Follows design briefs and asks clarifying questions to understand
+          the problem before designing. Produces multiple concepts for
+          review and iterates based on feedback. Considers the end user's
+          perspective when making basic design decisions.
+        mid: >
+          Frames design problems clearly, conducting research and gathering
+          requirements before beginning visual work. Generates diverse
+          concept directions and evaluates them against project goals.
+          Uses feedback and testing to refine designs iteratively toward
+          effective solutions.
+        senior: >
+          Applies design thinking rigorously to complex visual challenges,
+          reframing problems when initial approaches prove insufficient.
+          Conducts user research and competitive analysis to inform design
+          direction. Champions iterative, evidence-based design over
+          assumption-driven approaches.
+        lead: >
+          Establishes design thinking processes and methodologies across
+          the organization. Integrates user research, testing, and
+          iteration into standard design workflows. Trains designers on
+          structured creative problem-solving approaches.
+        creative_director: >
+          Embeds design thinking in organizational culture beyond the
+          design team. Positions design as a strategic problem-solving
+          discipline at the executive level. Ensures design thinking
+          informs product, marketing, and business decisions alongside
+          visual output.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Design thinking as a problem-solving methodology is fundamentally
+          human — requiring empathy, contextual understanding, and the
+          ability to navigate ambiguity. AI can assist with research
+          synthesis and concept generation, but framing problems correctly
+          and evaluating solutions holistically remains a deeply human
+          cognitive skill.
+
+    - id: presentation_design
+      name: "Presentation Design"
+      category: technical
+      description: >
+        Designing compelling slide decks, pitch materials, and data
+        visualizations that support clear communication of ideas, stories,
+        and business cases. Creating visual narratives that enhance
+        presenter impact across keynotes, sales decks, board
+        presentations, and investor materials.
+      proficiency:
+        junior: >
+          Creates clean presentation slides using established templates
+          and brand guidelines. Understands basic principles of slide
+          layout, chart design, and text hierarchy. Follows presentation
+          design best practices for readability and visual clarity.
+        mid: >
+          Designs polished presentations that effectively support the
+          narrative arc of the content. Creates custom data visualizations,
+          diagrams, and visual metaphors that clarify complex information.
+          Adapts presentation style for different contexts from internal
+          updates to external pitches.
+        senior: >
+          Creates high-stakes presentations for executive, investor, and
+          keynote contexts with sophisticated visual storytelling.
+          Designs presentation systems and templates that empower non-
+          designers to create effective slides. Transforms complex data
+          and ideas into visually compelling narratives.
+        lead: >
+          Defines presentation design standards and template systems
+          across the organization. Establishes workflows for high-priority
+          presentation requests. Ensures presentation quality supports
+          the organization's professional image across all stakeholder
+          interactions.
+        creative_director: >
+          Sets the organization's visual communication standards for
+          presentations at the executive level. Ensures presentation
+          design capabilities support business-critical communications
+          including fundraising, partnerships, and major client
+          engagements.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI tools can generate slide layouts, suggest data visualizations,
+          and create presentation drafts from text content. However,
+          designing presentations that truly support a speaker's narrative,
+          clarify complex ideas through visual metaphor, and adapt to
+          high-stakes contexts requires human design judgment and
+          communication understanding.
+
+    - id: creative_direction
+      name: "Creative Direction"
+      category: leadership
+      description: >
+        Guiding the visual direction of projects, campaigns, and brand
+        expressions. Providing art direction to designers, photographers,
+        and illustrators. Defining creative vision and ensuring execution
+        quality matches strategic intent across all visual outputs.
+      proficiency:
+        junior: >
+          Understands creative direction given by senior designers and
+          executes accordingly. Identifies examples and references that
+          align with the intended visual direction. Asks thoughtful
+          questions about creative intent to ensure alignment.
+        mid: >
+          Contributes creative direction to projects by developing mood
+          boards, visual references, and concept presentations. Provides
+          constructive feedback to peers that improves design quality.
+          Articulates design rationale clearly to stakeholders.
+        senior: >
+          Provides art direction for projects, guiding photographers,
+          illustrators, and junior designers toward cohesive visual
+          outcomes. Develops creative concepts for campaigns and brand
+          initiatives. Makes confident creative decisions that balance
+          aesthetics, brand, and business objectives.
+        lead: >
+          Defines creative direction across the organization, ensuring
+          visual consistency and quality. Manages creative teams and
+          external agencies. Reviews and elevates creative work through
+          expert direction and mentorship.
+        creative_director: >
+          Sets the organization's creative vision and aesthetic
+          standards at the executive level. Makes high-stakes creative
+          decisions that shape brand perception. Inspires and attracts
+          creative talent through the quality and ambition of the
+          organization's visual work.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Creative direction is fundamentally about human judgment —
+          defining what looks right, feels right, and communicates the
+          intended message. AI can generate options for review, but
+          the taste, cultural awareness, and strategic thinking that
+          guide creative decisions remain irreducibly human.
+
+    - id: client_communication
+      name: "Client Communication"
+      category: interpersonal
+      description: >
+        Presenting design work to clients and stakeholders, incorporating
+        feedback effectively, managing expectations, and building
+        productive creative partnerships. Articulating design decisions
+        in terms that resonate with non-designers and connect design
+        choices to business outcomes.
+      proficiency:
+        junior: >
+          Presents work-in-progress designs to immediate team members and
+          incorporates feedback constructively. Communicates design
+          choices using basic design vocabulary. Asks clarifying questions
+          about feedback to ensure correct interpretation.
+        mid: >
+          Presents design concepts to clients and stakeholders with clear
+          articulation of design rationale. Manages feedback cycles
+          professionally, synthesizing input from multiple reviewers.
+          Pushes back diplomatically when feedback would compromise
+          design quality.
+        senior: >
+          Leads design presentations for complex projects, building client
+          confidence through strategic framing and thoughtful rationale.
+          Navigates subjective feedback and conflicting stakeholder
+          preferences. Shapes client expectations about what great design
+          can achieve for their business.
+        lead: >
+          Defines client communication standards and review processes for
+          the design team. Manages executive-level client relationships
+          and resolves escalations. Trains designers on effective
+          presentation and feedback management techniques.
+        creative_director: >
+          Builds strategic client partnerships at the executive level.
+          Sells creative vision and ambitious design approaches to
+          organizational leadership. Represents the design function's
+          value in business terms that resonate with executives and
+          board members.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Client communication and relationship building is irreducibly
+          human. AI can assist with presentation preparation and feedback
+          organization, but the interpersonal skills of building creative
+          trust, managing subjective preferences, and inspiring confidence
+          in design direction cannot be automated.

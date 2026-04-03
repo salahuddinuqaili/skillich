@@ -1,0 +1,619 @@
+role:
+  id: prompt_engineer
+  function: ai_and_agents
+  name: "Prompt Engineer"
+  also_known_as:
+    - "AI Interaction Designer"
+    - "LLM Whisperer"
+    - "Prompt Designer"
+    - "AI Communication Specialist"
+  description: >
+    Designs, tests, and optimizes prompts and system instructions that shape
+    how AI models respond across applications. Bridges the gap between model
+    capabilities and user needs through systematic prompt design, few-shot
+    engineering, chain-of-thought structuring, and evaluation of output
+    quality.
+  ai_impact:
+    level: "moderate"
+    summary: >
+      AI can suggest prompt variations and auto-optimize phrasing for known
+      tasks, but crafting effective prompts for novel, high-stakes, or
+      ambiguous use cases requires deep understanding of model behavior,
+      domain context, and user intent. The role is paradoxically both
+      empowered and challenged by AI — models can draft prompts, but
+      evaluating whether those prompts produce reliable, safe, and
+      contextually appropriate outputs across edge cases remains a deeply
+      human skill. As models improve, the bar for prompt engineering rises
+      rather than disappears.
+    automating:
+      - "Generating initial prompt drafts from task descriptions"
+      - "Suggesting few-shot example variations"
+      - "Formatting and syntax optimization for structured outputs"
+      - "Basic A/B test result analysis and statistical summaries"
+      - "Documentation generation from prompt templates"
+      - "Token count estimation and context window calculations"
+    augmenting:
+      - "Exploring model behavioral boundaries and failure modes"
+      - "Evaluating prompt quality across diverse edge cases"
+      - "Designing chain-of-thought and reasoning structures"
+      - "Iterating on system prompts based on production feedback"
+      - "Cross-model prompt adaptation and portability testing"
+      - "Cost-quality tradeoff analysis across model tiers"
+    preserving:
+      - "Understanding nuanced domain requirements from stakeholders"
+      - "Creative problem framing for novel use cases"
+      - "Judgment about safety, bias, and ethical prompt design"
+      - "Building organizational prompt strategy and best practices"
+      - "Navigating ambiguous requirements where no benchmark exists"
+      - "Teaching and mentoring teams on effective AI interaction"
+    last_reviewed: "2026-04"
+    confidence: medium
+    sources:
+      - name: "Anthropic Prompt Engineering Guide"
+        url: "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
+      - name: "OpenAI Prompt Engineering Best Practices"
+        url: "https://platform.openai.com/docs/guides/prompt-engineering"
+      - name: "O*NET - AI and Machine Learning Specialists"
+        url: "https://www.onetonline.org/link/summary/15-2051.00"
+  levels:
+    - id: junior
+      name: "Junior Prompt Engineer"
+      years_experience: "0-1"
+      summary: >
+        Writes and tests prompts for well-defined tasks under guidance.
+        Follows established prompt patterns and templates. Learns model
+        behavior through systematic experimentation and documents findings.
+        Incorporates feedback from senior engineers to improve prompt quality.
+    - id: mid
+      name: "Prompt Engineer"
+      years_experience: "1-3"
+      summary: >
+        Designs prompts end-to-end for moderate complexity use cases,
+        including system prompts, few-shot examples, and evaluation criteria.
+        Runs structured experiments to compare prompt variants and documents
+        best practices. Works independently with product and domain teams to
+        translate requirements into effective AI interactions.
+    - id: senior
+      name: "Senior Prompt Engineer"
+      years_experience: "3-5"
+      summary: >
+        Leads prompt design for complex, high-stakes applications spanning
+        multiple models and use cases. Develops evaluation frameworks and
+        establishes prompt engineering standards for the team. Mentors
+        junior engineers and drives improvements to prompt quality,
+        reliability, and cost efficiency.
+    - id: staff
+      name: "Staff Prompt Engineer"
+      years_experience: "5-8"
+      summary: >
+        Sets prompt engineering strategy across multiple product areas.
+        Designs reusable prompt architectures and evaluation infrastructure
+        that raise quality organization-wide. Influences model selection and
+        integration decisions based on deep understanding of model behavior
+        across providers.
+    - id: principal
+      name: "Principal Prompt Engineer"
+      years_experience: "8+"
+      summary: >
+        Defines the organization's AI interaction philosophy and long-term
+        prompt engineering vision. Drives industry-leading practices in
+        prompt reliability, safety, and evaluation methodology. Advises
+        executive leadership on AI capability adoption and shapes the
+        company's approach to human-AI collaboration.
+  skills:
+    - id: prompt_design
+      name: "Prompt Design"
+      category: technical
+      description: >
+        Designing effective prompts including system prompts, few-shot
+        examples, chain-of-thought reasoning, and instruction hierarchies
+        that reliably elicit desired model behavior across diverse inputs
+        and edge cases.
+      proficiency:
+        junior: >
+          Writes basic prompts following established templates and patterns.
+          Understands the difference between system prompts, user messages,
+          and assistant prefills. Iterates on prompts based on observed
+          outputs and feedback.
+        mid: >
+          Designs multi-turn prompt architectures with effective system
+          instructions, few-shot examples, and chain-of-thought scaffolding.
+          Structures prompts that handle edge cases gracefully and produce
+          consistent outputs across varied inputs.
+        senior: >
+          Architects complex prompt systems spanning multiple models and
+          interaction stages. Designs prompt patterns that are robust to
+          input variation, model updates, and adversarial inputs. Establishes
+          reusable prompt templates and design patterns for the organization.
+        staff: >
+          Defines prompt design standards and architectural patterns used
+          across multiple product areas. Develops novel prompt techniques
+          that push beyond established patterns to solve unique organizational
+          challenges. Mentors teams on advanced prompt design principles.
+        principal: >
+          Shapes the industry understanding of prompt design through research,
+          publication, or tooling contributions. Defines the organization's
+          prompt architecture strategy accounting for model evolution, cost
+          trajectories, and emerging capabilities.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can generate initial prompt drafts and suggest variations, but
+          designing prompts that work reliably across edge cases, maintain
+          safety, and align with nuanced business requirements requires deep
+          human understanding of both the model and the domain.
+
+    - id: model_behavior
+      name: "Model Behavior Understanding"
+      category: technical
+      description: >
+        Understanding AI model capabilities, limitations, failure modes, and
+        behavioral patterns across different model families, sizes, and
+        configurations, including knowledge of how temperature, top-p, and
+        other parameters affect output quality.
+      proficiency:
+        junior: >
+          Understands basic model parameters like temperature and max tokens.
+          Recognizes common failure modes such as hallucination and
+          instruction drift. Tests prompts against simple edge cases to
+          observe model behavior.
+        mid: >
+          Predicts model behavior across different input types and parameter
+          settings with reasonable accuracy. Understands the practical
+          differences between model families and sizes. Identifies when a
+          model is likely to fail and designs appropriate fallbacks.
+        senior: >
+          Maintains deep mental models of how different architectures and
+          training approaches affect behavior. Anticipates model limitations
+          before they manifest in production. Guides model selection decisions
+          based on nuanced understanding of capability profiles.
+        staff: >
+          Tracks model evolution across providers and advises the organization
+          on capability shifts that affect product strategy. Develops
+          frameworks for systematically evaluating model behavior changes
+          when new versions are released.
+        principal: >
+          Shapes the organization's model strategy based on deep
+          understanding of capability trajectories across the industry.
+          Advises leadership on when emerging model capabilities enable new
+          product categories or require changes to existing approaches.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          Understanding model behavior requires meta-cognitive reasoning
+          about AI systems that current models struggle to perform on
+          themselves. While AI can surface behavioral data, interpreting
+          patterns and predicting failures in novel contexts remains a
+          distinctly human analytical skill.
+
+    - id: evaluation_design
+      name: "Evaluation Design"
+      category: analytical
+      description: >
+        Creating evaluation rubrics, test suites, and benchmarks for prompt
+        quality, including designing metrics that capture output correctness,
+        relevance, safety, and consistency across diverse input distributions.
+      proficiency:
+        junior: >
+          Runs basic quality checks on prompt outputs using provided rubrics
+          and checklists. Records evaluation results systematically and flags
+          outputs that fail quality thresholds. Understands the importance
+          of consistent evaluation criteria.
+        mid: >
+          Designs evaluation rubrics with clear scoring criteria for new
+          prompt applications. Creates test suites covering happy paths,
+          edge cases, and adversarial inputs. Implements automated evaluation
+          scripts that scale beyond manual review.
+        senior: >
+          Architects comprehensive evaluation frameworks that combine
+          automated metrics, LLM-as-judge scoring, and human review
+          processes. Designs evaluation strategies that balance coverage,
+          cost, and turnaround time. Establishes evaluation standards for
+          the team.
+        staff: >
+          Defines organization-wide evaluation methodology and shared
+          evaluation infrastructure. Develops novel evaluation approaches
+          for use cases where standard metrics are insufficient. Ensures
+          evaluation practices keep pace with expanding AI applications.
+        principal: >
+          Shapes the company's quality assurance philosophy for AI outputs.
+          Drives development of evaluation methodologies that provide
+          confidence guarantees for high-stakes deployments. Influences
+          industry evaluation standards and benchmarks.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can run evaluations and compute metrics at scale, but designing
+          evaluation criteria that capture what actually matters for a given
+          use case — especially for subjective, safety-critical, or novel
+          applications — requires human judgment about quality and risk.
+
+    - id: output_parsing
+      name: "Structured Output Extraction"
+      category: technical
+      description: >
+        Extracting structured data from model outputs using JSON mode,
+        function calling schemas, XML parsing, and regex-based extraction,
+        including designing output schemas that balance reliability with
+        expressiveness.
+      proficiency:
+        junior: >
+          Uses built-in JSON mode and function calling features to extract
+          structured outputs. Handles basic parsing errors and validates
+          outputs against expected schemas. Follows established output
+          format patterns.
+        mid: >
+          Designs output schemas for new use cases balancing structure
+          with model flexibility. Implements robust parsing pipelines with
+          fallback strategies for malformed outputs. Handles multi-step
+          extraction workflows reliably.
+        senior: >
+          Architects output extraction systems that work reliably across
+          model providers and versions. Designs schemas that degrade
+          gracefully when models produce unexpected formats. Establishes
+          parsing patterns and shared libraries for the organization.
+        staff: >
+          Defines organization-wide standards for structured output design
+          including schema registries, validation frameworks, and cross-model
+          compatibility layers. Drives adoption of output patterns that
+          improve reliability across product areas.
+        principal: >
+          Influences the organization's data extraction architecture at
+          scale, connecting output parsing strategies with downstream data
+          pipelines and product quality requirements. Evaluates emerging
+          standards for model output interoperability.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          Output parsing is increasingly automated through native JSON mode
+          and function calling capabilities built into model APIs. However,
+          designing schemas for complex domains, handling edge cases, and
+          building resilient parsing pipelines still benefit from human
+          engineering expertise.
+
+    - id: context_management
+      name: "Context Window Management"
+      category: technical
+      description: >
+        Managing context windows effectively including information density
+        optimization, retrieval-augmented generation (RAG) integration,
+        context prioritization, and strategies for working within token
+        limits while preserving critical information.
+      proficiency:
+        junior: >
+          Understands context window limits and token counting basics.
+          Follows established patterns for including relevant context in
+          prompts. Avoids common mistakes like exceeding context limits
+          or including irrelevant information.
+        mid: >
+          Designs context management strategies for specific applications
+          including chunking, summarization, and prioritization approaches.
+          Implements RAG pipelines that retrieve and inject relevant context
+          effectively. Monitors and optimizes context utilization.
+        senior: >
+          Architects context management systems for complex applications
+          with large knowledge bases. Designs retrieval strategies that
+          balance recall with precision and context budget. Implements
+          multi-stage context pipelines with filtering and reranking.
+        staff: >
+          Defines organization-wide context management patterns and shared
+          retrieval infrastructure. Evaluates and selects embedding models
+          and vector stores. Drives adoption of context strategies that
+          improve answer quality while managing costs.
+        principal: >
+          Shapes the organization's knowledge management and retrieval
+          architecture. Evaluates emerging approaches like long-context
+          models versus RAG tradeoffs. Guides investment decisions in
+          retrieval infrastructure based on capability trajectories.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          As context windows grow, some manual context management becomes
+          unnecessary. However, deciding what information is most relevant,
+          designing effective retrieval strategies, and optimizing the
+          quality-cost tradeoff of context inclusion remain human-driven
+          decisions.
+
+    - id: safety_alignment
+      name: "Prompt Safety & Alignment"
+      category: domain
+      description: >
+        Designing prompts that maintain safety guardrails, avoid jailbreaks,
+        handle adversarial inputs gracefully, and ensure outputs align with
+        organizational values and policies across diverse usage scenarios.
+      proficiency:
+        junior: >
+          Follows established safety guidelines when writing prompts.
+          Recognizes common jailbreak patterns and avoids prompt designs
+          that are vulnerable to injection attacks. Escalates safety
+          concerns appropriately.
+        mid: >
+          Designs system prompts with robust safety boundaries that handle
+          adversarial inputs gracefully. Tests prompts against known attack
+          vectors and implements mitigation strategies. Understands the
+          tension between helpfulness and safety.
+        senior: >
+          Leads safety review processes for prompt deployments. Designs
+          multi-layered safety architectures combining prompt-level,
+          filter-level, and monitoring-level protections. Develops safety
+          testing suites and red-teaming procedures for the team.
+        staff: >
+          Defines organization-wide prompt safety standards and review
+          processes. Architects safety frameworks that scale across product
+          areas while adapting to different risk profiles. Influences model
+          provider relationships regarding safety capabilities.
+        principal: >
+          Shapes the organization's AI safety posture at the executive
+          level. Drives industry dialogue on responsible prompt engineering
+          practices. Balances safety investment against capability
+          deployment velocity and competitive dynamics.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can help identify known attack patterns, but designing safety
+          boundaries that anticipate novel adversarial approaches and
+          balance safety with utility requires creative human reasoning
+          and ethical judgment that models struggle to apply to themselves.
+
+    - id: domain_translation
+      name: "Domain Translation"
+      category: communication
+      description: >
+        Translating domain expert requirements into effective AI interactions,
+        bridging the gap between subject matter expertise and model
+        capabilities through collaborative prompt development and iterative
+        refinement.
+      proficiency:
+        junior: >
+          Asks clarifying questions to understand domain expert needs.
+          Translates simple requirements into prompt specifications with
+          guidance. Documents domain-specific terminology and constraints
+          for reference.
+        mid: >
+          Conducts effective discovery sessions with domain experts to
+          elicit requirements, edge cases, and quality criteria. Translates
+          complex domain workflows into multi-step prompt architectures.
+          Communicates model limitations in domain-relevant terms.
+        senior: >
+          Builds deep working relationships with domain teams, proactively
+          identifying opportunities for AI augmentation. Designs prompt
+          solutions that domain experts can understand, evaluate, and
+          maintain. Facilitates cross-functional alignment on AI capabilities
+          and limitations.
+        staff: >
+          Develops frameworks and playbooks for domain translation that
+          scale across the organization. Trains domain teams on effective
+          AI interaction patterns and self-service prompt development.
+          Identifies systemic gaps between domain needs and model capabilities.
+        principal: >
+          Shapes the organization's approach to human-AI collaboration
+          across all business domains. Advises leadership on which domain
+          problems are ready for AI augmentation versus those that require
+          further capability development. Builds organizational AI literacy.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          Translating between domain expertise and AI capabilities requires
+          understanding both worlds deeply and navigating ambiguity in
+          human communication. AI can assist with terminology and examples
+          but cannot replace the relationship-building and contextual
+          judgment needed for effective domain translation.
+
+    - id: ab_testing
+      name: "Prompt A/B Testing"
+      category: analytical
+      description: >
+        Running controlled experiments to compare prompt variants, including
+        experimental design, statistical significance testing, metric
+        selection, and interpreting results to drive prompt optimization
+        decisions.
+      proficiency:
+        junior: >
+          Runs A/B tests using established experimental frameworks and
+          records results systematically. Understands basic statistical
+          concepts like sample size and confidence intervals. Reports
+          results clearly to senior team members.
+        mid: >
+          Designs A/B experiments with appropriate controls, sample sizes,
+          and success metrics. Analyzes results with proper statistical
+          methods and avoids common pitfalls like p-hacking. Makes
+          data-driven recommendations for prompt selection.
+        senior: >
+          Architects multi-variate testing frameworks for complex prompt
+          optimization across multiple dimensions simultaneously. Designs
+          experiments that account for confounding variables and population
+          drift. Establishes experimentation standards for the team.
+        staff: >
+          Defines organization-wide experimentation infrastructure and
+          best practices for prompt optimization. Develops automated
+          optimization pipelines that continuously improve prompt
+          performance. Connects experimentation results to business
+          outcome metrics.
+        principal: >
+          Shapes the organization's data-driven prompt optimization
+          philosophy. Drives adoption of advanced experimental methods
+          including Bayesian optimization, multi-armed bandits, and
+          automated prompt search. Connects prompt quality metrics to
+          company-level KPIs.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can automate test execution, compute statistics, and suggest
+          variants to test. However, designing meaningful experiments,
+          choosing the right metrics, and interpreting results in business
+          context require human judgment about what matters and what to
+          optimize for.
+
+    - id: documentation
+      name: "Prompt Documentation"
+      category: communication
+      description: >
+        Documenting prompt patterns, best practices, playbooks, and
+        institutional knowledge about effective AI interactions, creating
+        resources that enable teams to build on proven approaches rather
+        than starting from scratch.
+      proficiency:
+        junior: >
+          Documents prompt templates, test results, and learnings using
+          established formats. Maintains prompt libraries and version
+          histories. Writes clear descriptions of prompt behavior and
+          known limitations.
+        mid: >
+          Creates comprehensive prompt playbooks for specific use cases
+          including design rationale, edge case handling, and evaluation
+          criteria. Writes documentation that enables other engineers to
+          use and extend prompts independently.
+        senior: >
+          Establishes documentation standards and knowledge management
+          systems for the prompt engineering team. Creates architectural
+          decision records for significant prompt design choices. Builds
+          onboarding materials that accelerate new team members.
+        staff: >
+          Defines organization-wide prompt knowledge management strategy.
+          Creates frameworks and templates that standardize documentation
+          across teams while accommodating domain-specific needs. Drives
+          adoption of documentation practices that preserve institutional
+          knowledge.
+        principal: >
+          Shapes the organization's approach to AI knowledge management
+          and institutional learning. Publishes thought leadership that
+          influences industry understanding of prompt engineering practices.
+          Builds documentation cultures that compound organizational AI
+          capability over time.
+      ai_impact:
+        rating: 0.6
+        detail: >
+          AI is highly effective at generating documentation drafts from
+          prompts and test results. However, curating institutional
+          knowledge, deciding what to document, and maintaining documentation
+          that remains useful as models and practices evolve requires
+          human editorial judgment.
+
+    - id: cross_functional_collaboration
+      name: "Cross-Functional Collaboration"
+      category: interpersonal
+      description: >
+        Working effectively with product managers, engineers, domain experts,
+        and other stakeholders to align prompt engineering work with business
+        objectives and user needs.
+      proficiency:
+        junior: >
+          Participates in cross-functional meetings and communicates prompt
+          engineering work clearly to non-technical stakeholders. Asks
+          clarifying questions to understand project requirements and
+          constraints.
+        mid: >
+          Builds productive working relationships with product, engineering,
+          and domain teams. Proactively communicates prompt capabilities
+          and limitations to shape realistic expectations. Contributes to
+          product planning with AI feasibility assessments.
+        senior: >
+          Leads cross-functional initiatives involving prompt engineering
+          deliverables. Facilitates alignment between technical capabilities
+          and business objectives. Resolves conflicts between competing
+          stakeholder requirements through data-driven recommendations.
+        staff: >
+          Drives cross-organizational alignment on AI interaction standards
+          and best practices. Builds consensus across engineering, product,
+          and leadership on prompt engineering investment and priorities.
+          Influences product roadmaps with AI capability insights.
+        principal: >
+          Shapes organizational strategy at the intersection of AI
+          capabilities and business objectives. Advises executive leadership
+          on human-AI collaboration opportunities. Builds bridges between
+          research, engineering, and business teams to accelerate AI
+          adoption.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Cross-functional collaboration relies on relationship-building,
+          empathy, political navigation, and contextual judgment that
+          remain fundamentally human skills. AI can assist with meeting
+          preparation and communication drafting but cannot replace the
+          interpersonal dynamics of effective collaboration.
+
+    - id: version_control
+      name: "Prompt Version Control"
+      category: technical
+      description: >
+        Managing prompt versions, tracking changes over time, implementing
+        regression testing, and maintaining audit trails for prompt
+        modifications in production systems.
+      proficiency:
+        junior: >
+          Uses version control systems to track prompt changes. Follows
+          established branching and review processes for prompt modifications.
+          Documents changes with clear commit messages and change descriptions.
+        mid: >
+          Implements prompt versioning strategies that support rollback,
+          A/B testing, and gradual rollout. Designs regression test suites
+          that catch quality degradation from prompt changes. Manages
+          prompt configurations across development, staging, and production
+          environments.
+        senior: >
+          Architects prompt management platforms that support versioning,
+          deployment, and monitoring at scale. Designs review workflows
+          that ensure prompt quality and safety before production deployment.
+          Establishes change management processes for high-risk prompt updates.
+        staff: >
+          Defines organization-wide prompt lifecycle management standards
+          including versioning, review, deployment, and deprecation
+          processes. Builds or selects tooling that supports prompt
+          management across multiple teams and products.
+        principal: >
+          Shapes the organization's prompt infrastructure strategy,
+          evaluating build-versus-buy decisions for prompt management
+          platforms. Drives standards that enable safe, rapid prompt
+          iteration at organizational scale while maintaining audit
+          compliance.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can assist with generating change summaries, identifying
+          potentially breaking changes, and running regression tests.
+          However, designing versioning strategies, making deployment
+          decisions, and managing the organizational processes around
+          prompt changes require human judgment and coordination.
+
+    - id: cost_optimization
+      name: "Cost & Latency Optimization"
+      category: analytical
+      description: >
+        Optimizing token usage, model selection, and latency versus quality
+        tradeoffs to deliver AI-powered features within budget and
+        performance constraints.
+      proficiency:
+        junior: >
+          Monitors token usage and costs for prompts they maintain.
+          Understands the relationship between prompt length, model choice,
+          and cost. Implements basic optimizations like reducing unnecessary
+          context or shortening system prompts.
+        mid: >
+          Designs prompts that balance quality with cost efficiency. Selects
+          appropriate model tiers for different use cases based on
+          quality-cost analysis. Implements caching strategies and prompt
+          compression techniques to reduce per-request costs.
+        senior: >
+          Architects cost-optimization strategies across product areas
+          including model routing, tiered processing, and intelligent
+          caching. Designs quality-cost tradeoff frameworks that enable
+          teams to make informed decisions. Establishes cost monitoring
+          and alerting for AI spend.
+        staff: >
+          Defines organization-wide AI cost management strategy including
+          model selection frameworks, usage budgets, and optimization
+          targets. Drives adoption of cost-efficient patterns across
+          teams and influences vendor negotiations based on usage analytics.
+        principal: >
+          Shapes the organization's AI economics strategy at the executive
+          level. Models long-term cost trajectories and capability-per-dollar
+          trends to inform investment decisions. Balances cost optimization
+          against quality, latency, and competitive positioning.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can analyze usage patterns and suggest optimization
+          opportunities, but making strategic tradeoffs between cost,
+          quality, and latency — especially when those tradeoffs affect
+          user experience and business outcomes — requires human business
+          judgment and organizational context.

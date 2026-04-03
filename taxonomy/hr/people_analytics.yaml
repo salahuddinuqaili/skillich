@@ -36,6 +36,7 @@ role:
       - "Survey response coding and theme extraction"
       - "Anomaly detection in workforce metrics"
       - "Natural language summaries of analytical findings"
+      - "AI agent-automated workforce reporting pipelines from data extraction through insight delivery"
     augmenting:
       - "Predictive model development for attrition and performance"
       - "Advanced statistical analysis and hypothesis testing"
@@ -43,6 +44,7 @@ role:
       - "Organizational network analysis from communication data"
       - "Skills taxonomy development from job and performance data"
       - "Sentiment analysis across employee feedback channels"
+      - "Agent-assisted end-to-end attrition analysis with automated driver identification and intervention recommendations"
     preserving:
       - "Research design and causal inference methodology"
       - "Ethical judgment on data privacy and algorithmic fairness"
@@ -50,7 +52,7 @@ role:
       - "Contextual interpretation of findings within organizational reality"
       - "Building organizational trust in data-driven people decisions"
       - "Navigating political sensitivities around workforce data"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "O*NET - Management Analysts"
@@ -148,7 +150,7 @@ role:
           adoption of real-time workforce monitoring and connects people
           metrics to financial and operational performance outcomes.
       ai_impact:
-        rating: 0.65
+        rating: 0.7
         detail: >
           AI dramatically accelerates workforce reporting, anomaly detection,
           and trend analysis from HRIS data. However, designing meaningful

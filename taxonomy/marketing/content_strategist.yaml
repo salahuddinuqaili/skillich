@@ -27,26 +27,32 @@ role:
       judgment, brand voice curation, content architecture, and the
       strategic decisions about what to create, for whom, and why.
       Strategists who leverage AI for production while focusing on
-      quality, originality, and measurement will thrive.
+      quality, originality, and measurement will thrive. Agentic AI
+      workflows can now manage multi-step content production pipelines,
+      from brief creation through drafting, editing, and publishing,
+      making editorial governance and quality oversight more critical
+      than ever.
     automating:
       - "Generating first drafts for blog posts, social copy, and product descriptions"
       - "Repurposing long-form content into multiple format derivatives"
       - "Creating content briefs from keyword research and competitive data"
       - "Producing content performance reports and dashboards"
       - "Translating and localizing content across languages"
+      - "AI agent-managed end-to-end content production from brief to publication"
     augmenting:
       - "Identifying content gaps and opportunities through audience research"
       - "Editing and refining AI-generated drafts to meet quality and voice standards"
       - "Planning content calendars that balance editorial themes with SEO targets"
       - "Analyzing content performance to inform strategy refinement"
       - "Building content taxonomies and metadata frameworks"
+      - "Agent-assisted content repurposing and distribution across channels"
     preserving:
       - "Defining content strategy that aligns with business goals and audience needs"
       - "Establishing and evolving brand voice and editorial standards"
       - "Making editorial judgment calls about quality, authenticity, and appropriateness"
       - "Building narrative frameworks that differentiate the brand in crowded markets"
       - "Leading cross-functional content governance and stakeholder alignment"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "Content Science – Content Strategy Research"
@@ -238,7 +244,7 @@ role:
           content in an environment of abundant AI-generated
           search content.
       ai_impact:
-        rating: 0.75
+        rating: 0.8
         detail: >
           AI tools produce competent SEO content rapidly, including
           keyword-optimized articles and meta tags. However, creating
@@ -657,7 +663,7 @@ role:
           on AI content ethics, disclosure, and the evolving role
           of human creativity in an AI-augmented content landscape.
       ai_impact:
-        rating: 0.8
+        rating: 0.85
         detail: >
           This skill is inherently intertwined with AI, as it involves
           mastering AI tools themselves. The meta-challenge is that

@@ -24,7 +24,9 @@ role:
       relationship building, cultural assessment, nuanced negotiation, and
       sell-side storytelling remain essential. Recruiters who leverage AI to
       eliminate administrative overhead and focus on strategic advisory and
-      candidate experience will thrive.
+      candidate experience will thrive. Agentic AI can now autonomously
+      execute multi-step recruiting workflows including candidate
+      sourcing, screening, outreach sequencing, and interview scheduling.
     automating:
       - "Resume parsing and keyword-based screening"
       - "Interview scheduling and calendar coordination"
@@ -32,6 +34,7 @@ role:
       - "Boolean search string generation for sourcing"
       - "Job description drafting from intake notes"
       - "Market salary range lookups for offer benchmarking"
+      - "AI agent-automated candidate screening and outreach sequences"
     augmenting:
       - "Candidate sourcing across platforms and passive talent identification"
       - "Pipeline analytics and bottleneck detection"
@@ -39,6 +42,7 @@ role:
       - "Offer competitiveness analysis and counter-offer modeling"
       - "Hiring manager intake and role scoping"
       - "Employer brand content creation and campaign optimization"
+      - "Agent-assisted end-to-end sourcing workflows with automated candidate engagement and scheduling"
     preserving:
       - "Relationship building and trust with candidates through the process"
       - "Cultural and values alignment assessment during interviews"
@@ -46,7 +50,7 @@ role:
       - "Hiring manager coaching and calibration on selection criteria"
       - "Candidate experience design for high-touch executive searches"
       - "Ethical judgment on candidate privacy and fair hiring practices"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "O*NET - Human Resources Specialists"
@@ -181,7 +185,7 @@ role:
           organizational values. Partners with legal and I/O psychology experts
           to validate assessment approaches at scale and industry benchmarks.
       ai_impact:
-        rating: 0.65
+        rating: 0.7
         detail: >
           AI excels at resume parsing, skills matching, and flagging candidates
           who meet objective criteria, but assessing soft skills, cultural

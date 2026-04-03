@@ -1,0 +1,24 @@
+function:
+  id: research
+  name: "Research & Academia"
+  description: >
+    Roles in academic research, scientific inquiry, and research operations
+    across universities, government labs, and industry R&D. AI is accelerating
+    literature review, data analysis, and experimental design while preserving
+    the fundamentally human activities of formulating novel hypotheses, designing
+    rigorous studies, mentoring researchers, and navigating the social and
+    institutional dimensions of science. These roles span the full research
+    lifecycle from grant acquisition through publication and translation.
+  roles:
+    - research_scientist
+    - research_engineer
+    - academic_faculty
+    - lab_manager
+    - grants_administrator
+  sources:
+    - name: "O*NET - Natural Sciences Managers"
+      url: "https://www.onetonline.org/link/summary/11-9121.00"
+    - name: "National Academies - The Future of Research"
+      url: "https://www.nationalacademies.org/"
+    - name: "Nature - AI in Science"
+      url: "https://www.nature.com/collections/ai-in-science"

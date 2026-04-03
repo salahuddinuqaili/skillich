@@ -34,7 +34,9 @@ role:
       novel outages, architectural trade-off decisions, organizational
       reliability culture, and cross-team negotiation of error budgets -- remain
       firmly human. The net effect is that junior toil-heavy tasks shrink while
-      senior strategic responsibilities expand.
+      senior strategic responsibilities expand. Agentic AI systems can now
+      orchestrate multi-step infrastructure changes and execute runbook
+      workflows end-to-end with human oversight.
     automating:
       - "Boilerplate infrastructure-as-code generation"
       - "Log pattern recognition and alert correlation"
@@ -42,6 +44,7 @@ role:
       - "Dependency vulnerability scanning and patching"
       - "Cost anomaly detection and right-sizing recommendations"
       - "Basic deployment rollback decisions based on metrics"
+      - "AI agent-driven runbook execution and multi-step infrastructure remediation"
     augmenting:
       - "Incident root-cause analysis with AI-suggested hypotheses"
       - "Capacity forecasting using ML-based demand modeling"
@@ -49,6 +52,7 @@ role:
       - "Chaos experiment design guided by topology analysis"
       - "Pipeline optimization recommendations"
       - "Security policy generation and compliance auditing"
+      - "Agent-assisted incident diagnosis with automated telemetry correlation"
     preserving:
       - "Incident command and cross-team coordination during novel outages"
       - "Architectural decisions on reliability vs. velocity trade-offs"
@@ -56,7 +60,7 @@ role:
       - "Error budget negotiation with product stakeholders"
       - "Mentorship and team development"
       - "Ethical judgment in automated remediation boundaries"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "Google SRE Book"
@@ -161,7 +165,7 @@ role:
           for CI/CD infrastructure, sets organizational policies on deployment
           risk tolerance, and mentors staff engineers on pipeline architecture.
       ai_impact:
-        rating: 0.65
+        rating: 0.7
         detail: >
           AI tools can generate pipeline configurations from natural-language
           descriptions, suggest optimization opportunities, and auto-fix common
@@ -252,7 +256,7 @@ role:
           open-source IaC projects, and guides the industry on infrastructure
           management at scale.
       ai_impact:
-        rating: 0.7
+        rating: 0.75
         detail: >
           AI excels at generating boilerplate IaC modules, converting between
           providers, and suggesting security best practices for resource

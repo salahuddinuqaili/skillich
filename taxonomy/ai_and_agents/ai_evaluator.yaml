@@ -1,0 +1,558 @@
+role:
+  id: ai_evaluator
+  function: ai_and_agents
+  name: "AI Evaluation & Safety Specialist"
+  also_known_as:
+    - "AI Red Teamer"
+    - "LLM Evaluator"
+    - "AI Safety Engineer"
+    - "Model Quality Analyst"
+  description: >
+    Designs and conducts evaluations that measure AI system quality, safety,
+    and reliability. Combines adversarial testing, benchmark design,
+    statistical analysis, and domain expertise to identify model weaknesses,
+    measure improvement over time, and ensure AI systems meet safety and
+    performance standards before deployment.
+  ai_impact:
+    level: "low"
+    summary: >
+      Evaluation requires the kind of creative adversarial thinking and
+      nuanced judgment that AI struggles to apply to itself. While AI can
+      execute evaluation suites at scale and compute metrics efficiently,
+      the core challenges of designing meaningful evaluations, discovering
+      novel failure modes, and making deployment recommendations based on
+      incomplete evidence remain deeply human. Red teaming in particular
+      demands creative, adversarial reasoning that current models cannot
+      reliably direct at themselves. This role is likely to grow in
+      importance as AI systems become more capable and the stakes of
+      deployment decisions increase.
+    automating:
+      - "Running standardized evaluation benchmarks at scale"
+      - "Computing statistical metrics and generating summary reports"
+      - "Detecting known vulnerability patterns from established databases"
+      - "Generating evaluation dataset variations and augmentations"
+      - "Flagging outputs that match known harmful content patterns"
+      - "Producing formatted evaluation reports from structured results"
+    augmenting:
+      - "Exploring model behavioral boundaries through guided probing"
+      - "Analyzing large-scale evaluation results for subtle patterns"
+      - "Generating adversarial test case candidates for human review"
+      - "Cross-referencing evaluation results with known failure taxonomies"
+      - "Suggesting evaluation dimensions that may be underrepresented"
+      - "Automating regression testing across model versions"
+    preserving:
+      - "Creative adversarial thinking and novel attack discovery"
+      - "Judgment about evaluation completeness and deployment readiness"
+      - "Ethical reasoning about AI safety and societal impact"
+      - "Designing evaluation frameworks for genuinely novel capabilities"
+      - "Stakeholder communication about risk and confidence levels"
+      - "Balancing thoroughness against deployment velocity in safety reviews"
+    last_reviewed: "2026-04"
+    confidence: medium
+    sources:
+      - name: "Anthropic Research on AI Safety"
+        url: "https://www.anthropic.com/research"
+      - name: "NIST AI Risk Management Framework"
+        url: "https://www.nist.gov/artificial-intelligence/ai-risk-management-framework"
+      - name: "O*NET - AI and Machine Learning Specialists"
+        url: "https://www.onetonline.org/link/summary/15-2051.00"
+  levels:
+    - id: junior
+      name: "Junior AI Evaluator"
+      years_experience: "0-1"
+      summary: >
+        Executes evaluation protocols and test suites under guidance.
+        Records evaluation results systematically and flags outputs that
+        fail quality or safety thresholds. Learns evaluation methodology
+        through hands-on testing and feedback. Assists with red-teaming
+        exercises and documents findings.
+    - id: mid
+      name: "AI Evaluation Specialist"
+      years_experience: "1-3"
+      summary: >
+        Designs and runs evaluations for specific model capabilities or
+        application domains. Creates test datasets, scoring rubrics, and
+        automated evaluation pipelines. Conducts structured red-teaming
+        exercises and produces actionable evaluation reports. Works
+        independently on evaluation projects with moderate complexity.
+    - id: senior
+      name: "Senior AI Evaluation & Safety Specialist"
+      years_experience: "3-5"
+      summary: >
+        Leads evaluation strategy for major model releases or product
+        deployments. Designs comprehensive evaluation frameworks that
+        combine automated benchmarks, human evaluation, and adversarial
+        testing. Makes deployment recommendations based on evaluation
+        results. Mentors junior evaluators and establishes evaluation
+        standards for the team.
+    - id: staff
+      name: "Staff AI Evaluation & Safety Specialist"
+      years_experience: "5-8"
+      summary: >
+        Defines organization-wide evaluation methodology and safety
+        assessment standards. Architects shared evaluation infrastructure
+        that supports diverse model and product evaluation needs. Drives
+        evaluation innovation by developing novel approaches for emerging
+        AI capabilities. Influences deployment policies and risk
+        management frameworks.
+    - id: principal
+      name: "Principal AI Evaluation & Safety Specialist"
+      years_experience: "8+"
+      summary: >
+        Shapes the organization's AI safety and evaluation philosophy at
+        the executive level. Drives industry standards for AI evaluation
+        methodology and contributes to regulatory frameworks. Navigates
+        executive-level trade-offs between deployment velocity, safety
+        assurance, and competitive positioning. Serves as the
+        organization's authority on AI evaluation rigor and safety posture.
+  skills:
+    - id: benchmark_design
+      name: "Benchmark Design"
+      category: analytical
+      description: >
+        Creating evaluation benchmarks, test datasets, and scoring rubrics
+        that meaningfully measure AI system capabilities, limitations, and
+        safety properties across diverse task types and difficulty levels.
+      proficiency:
+        junior: >
+          Creates test cases following established benchmark formats and
+          scoring rubrics. Understands the importance of diverse, balanced
+          test sets and avoids common pitfalls like data leakage. Assists
+          with dataset curation and quality checking.
+        mid: >
+          Designs evaluation benchmarks for specific capabilities with
+          appropriate difficulty distributions, scoring criteria, and
+          baseline comparisons. Creates test datasets that cover edge cases
+          and adversarial inputs. Validates benchmark reliability through
+          statistical analysis.
+        senior: >
+          Architects comprehensive benchmark suites that measure
+          multi-dimensional model capabilities with rigorous methodology.
+          Designs benchmarks that resist gaming and remain meaningful as
+          models improve. Establishes benchmark design standards and
+          review processes for the team.
+        staff: >
+          Defines organization-wide benchmark methodology and shared
+          evaluation datasets. Develops novel benchmark approaches for
+          capabilities where standard evaluation methods are insufficient.
+          Ensures benchmarks keep pace with evolving model capabilities
+          and organizational needs.
+        principal: >
+          Shapes the industry understanding of meaningful AI evaluation
+          through benchmark design innovation. Contributes to community
+          benchmarks and evaluation standards. Drives the organization's
+          evaluation methodology strategy and influences academic and
+          industry evaluation practices.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can generate test case variations and compute benchmark
+          statistics, but designing benchmarks that meaningfully capture
+          model capabilities, resist gaming, and remain relevant as models
+          improve requires deep human understanding of what matters to
+          measure and why.
+
+    - id: red_teaming
+      name: "Red Teaming & Adversarial Testing"
+      category: domain
+      description: >
+        Conducting adversarial testing to discover model vulnerabilities,
+        jailbreak vectors, harmful output patterns, and failure modes that
+        standard evaluations miss, using creative and systematic approaches
+        to probe model boundaries.
+      proficiency:
+        junior: >
+          Executes red-teaming exercises using established attack
+          taxonomies and playbooks. Documents discovered vulnerabilities
+          with clear reproduction steps and severity assessments. Learns
+          adversarial thinking through structured exercises and mentorship.
+        mid: >
+          Designs and conducts structured red-teaming sessions targeting
+          specific model capabilities or safety boundaries. Develops novel
+          attack vectors beyond established playbooks. Produces actionable
+          reports with severity rankings and remediation recommendations.
+        senior: >
+          Leads comprehensive red-teaming campaigns for major model
+          releases and product deployments. Develops red-teaming
+          methodologies that combine automated probing with creative
+          human adversarial testing. Trains and mentors red team members.
+          Designs red-teaming programs that scale across the organization.
+        staff: >
+          Defines organization-wide red-teaming methodology and standards.
+          Architects automated red-teaming infrastructure that complements
+          human adversarial testing. Establishes severity frameworks and
+          escalation processes for discovered vulnerabilities. Influences
+          model development priorities based on safety findings.
+        principal: >
+          Shapes the organization's adversarial testing philosophy and
+          contributes to industry standards for AI red teaming. Drives
+          innovation in adversarial testing methodology for emerging AI
+          capabilities. Advises executive leadership on threat landscapes
+          and safety posture.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Red teaming fundamentally requires creative adversarial thinking
+          directed at AI systems — exactly the kind of recursive,
+          out-of-distribution reasoning that current AI models struggle to
+          apply to themselves. AI can assist with scaling known attack
+          patterns, but discovering novel vulnerabilities remains a deeply
+          human creative endeavor.
+
+    - id: statistical_analysis
+      name: "Statistical Analysis for Evaluation"
+      category: analytical
+      description: >
+        Applying statistical methods to evaluation results including
+        inter-rater agreement calculation, significance testing, confidence
+        interval estimation, and effect size analysis to ensure evaluation
+        conclusions are reliable and actionable.
+      proficiency:
+        junior: >
+          Computes basic statistical metrics for evaluation results
+          including means, standard deviations, and pass rates. Understands
+          the importance of sample sizes and confidence intervals. Uses
+          statistical tools and libraries as directed.
+        mid: >
+          Applies appropriate statistical tests to evaluation results
+          including significance testing, inter-rater reliability metrics,
+          and effect size calculations. Designs evaluation studies with
+          sufficient statistical power. Avoids common statistical pitfalls
+          like multiple comparisons without correction.
+        senior: >
+          Designs statistically rigorous evaluation studies accounting for
+          confounding variables, population drift, and measurement error.
+          Develops custom statistical frameworks for evaluation domains
+          where standard methods are insufficient. Communicates statistical
+          findings clearly to non-technical stakeholders.
+        staff: >
+          Defines organization-wide statistical standards for AI evaluation.
+          Develops novel statistical approaches for evaluating
+          non-deterministic systems with complex output distributions.
+          Ensures statistical rigor across evaluation teams and advises
+          on methodology for high-stakes deployment decisions.
+        principal: >
+          Shapes the organization's approach to statistical rigor in AI
+          evaluation. Contributes to academic and industry understanding
+          of statistical methodology for AI systems. Drives adoption of
+          advanced statistical techniques that improve evaluation
+          reliability and decision confidence.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI excels at computing statistical metrics and running standard
+          tests, but choosing appropriate statistical methods, interpreting
+          results in context, and designing studies that account for the
+          unique properties of non-deterministic AI systems require human
+          statistical expertise and domain judgment.
+
+    - id: safety_assessment
+      name: "Safety & Bias Assessment"
+      category: domain
+      description: >
+        Evaluating AI system outputs for harmful content, bias, fairness
+        violations, and safety risks using systematic assessment frameworks
+        that account for diverse user populations and use contexts.
+      proficiency:
+        junior: >
+          Applies established safety and bias assessment checklists to
+          model outputs. Identifies obviously harmful, biased, or
+          inappropriate outputs and documents findings with appropriate
+          context. Understands basic concepts of fairness and representation.
+        mid: >
+          Conducts structured safety assessments across demographic groups
+          and use contexts. Implements bias detection metrics and fairness
+          criteria for specific applications. Produces safety assessment
+          reports with clear findings and severity classifications.
+        senior: >
+          Designs comprehensive safety assessment frameworks that account
+          for intersectional harms, context-dependent risks, and emerging
+          threat categories. Leads safety reviews for high-stakes
+          deployments. Develops safety testing suites that evolve with
+          the threat landscape.
+        staff: >
+          Defines organization-wide safety assessment methodology and
+          standards. Architects automated safety monitoring systems that
+          complement human review. Influences product and model development
+          priorities based on safety assessment findings. Establishes
+          safety assessment cadence and coverage requirements.
+        principal: >
+          Shapes the organization's AI safety posture at the executive
+          level and contributes to regulatory frameworks. Drives industry
+          best practices for safety assessment methodology. Navigates
+          complex trade-offs between safety, capability, and deployment
+          velocity across the organization.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          Safety assessment requires understanding subtle harms, cultural
+          context, and the experiences of diverse populations — areas where
+          AI models have known blind spots. AI can scale pattern detection,
+          but the judgment to identify novel harms and make deployment
+          recommendations remains fundamentally human.
+
+    - id: automated_evaluation
+      name: "Automated Evaluation Pipelines"
+      category: technical
+      description: >
+        Building automated evaluation pipelines including LLM-as-judge
+        systems, programmatic scoring, continuous evaluation infrastructure,
+        and integration with CI/CD systems for model and prompt deployments.
+      proficiency:
+        junior: >
+          Implements automated evaluation scripts using established
+          frameworks and scoring functions. Runs evaluation pipelines and
+          monitors for failures. Understands the difference between
+          automated metrics and human evaluation.
+        mid: >
+          Designs automated evaluation pipelines for specific applications
+          including LLM-as-judge implementations, custom scoring functions,
+          and result aggregation. Integrates evaluations into CI/CD
+          pipelines and implements alerting for quality regressions.
+        senior: >
+          Architects scalable evaluation infrastructure supporting diverse
+          evaluation types, parallel execution, and result versioning.
+          Designs LLM-as-judge systems with calibration and consistency
+          validation. Establishes automated evaluation standards for the
+          team.
+        staff: >
+          Defines organization-wide automated evaluation infrastructure
+          and shared evaluation services. Develops novel automated
+          evaluation approaches for domains where existing methods are
+          insufficient. Ensures evaluation infrastructure scales with
+          expanding AI applications.
+        principal: >
+          Shapes the organization's automated evaluation strategy and
+          infrastructure investment decisions. Drives innovation in
+          automated evaluation methodology and evaluates emerging
+          approaches for organizational adoption. Influences industry
+          standards for evaluation automation.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI powers many automated evaluation approaches (LLM-as-judge)
+          and can execute pipelines efficiently. However, designing
+          automated evaluations that correlate with real-world quality,
+          calibrating LLM-as-judge systems, and knowing when automated
+          evaluation is insufficient require human expertise.
+
+    - id: human_evaluation
+      name: "Human Evaluation Design"
+      category: analytical
+      description: >
+        Designing and managing human evaluation studies including rater
+        recruitment, calibration procedures, annotation interfaces, quality
+        control mechanisms, and inter-annotator agreement analysis.
+      proficiency:
+        junior: >
+          Participates in human evaluation studies as a rater, following
+          established guidelines and calibration procedures. Understands
+          the importance of consistent rating criteria and flags ambiguous
+          cases for clarification.
+        mid: >
+          Designs human evaluation studies with clear rating guidelines,
+          calibration exercises, and quality control mechanisms. Manages
+          small rater pools and monitors inter-annotator agreement.
+          Analyzes evaluation results and identifies systematic biases in
+          human ratings.
+        senior: >
+          Architects comprehensive human evaluation programs balancing
+          coverage, cost, and turnaround time. Designs calibration
+          procedures that ensure rating consistency across diverse rater
+          pools. Develops annotation interfaces optimized for evaluation
+          tasks. Establishes human evaluation standards for the team.
+        staff: >
+          Defines organization-wide human evaluation methodology and
+          infrastructure. Designs human evaluation programs that scale
+          efficiently across product areas and evaluation types. Develops
+          novel approaches for evaluating capabilities where human judgment
+          is essential but difficult to calibrate.
+        principal: >
+          Shapes the organization's approach to human judgment in AI
+          evaluation. Drives innovation in human evaluation methodology
+          and builds partnerships with academic institutions for evaluation
+          research. Advises on the appropriate balance between human and
+          automated evaluation investment.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Human evaluation design requires deep understanding of human
+          cognition, rating psychology, and the specific aspects of AI
+          output quality that only human judgment can assess. AI can
+          assist with logistics and analysis, but the core design
+          decisions remain human-driven.
+
+    - id: regression_testing
+      name: "Model Regression Testing"
+      category: technical
+      description: >
+        Tracking AI system quality over time, detecting regressions across
+        model versions and prompt changes, and maintaining evaluation
+        baselines that ensure continuous quality improvement.
+      proficiency:
+        junior: >
+          Runs regression test suites against model updates and records
+          results. Flags significant changes in evaluation metrics for
+          review. Maintains evaluation baselines and version tracking
+          as directed.
+        mid: >
+          Designs regression testing strategies for specific applications
+          with appropriate metric selection and significance thresholds.
+          Implements automated regression detection and alerting. Manages
+          evaluation baselines across model versions and prompt changes.
+        senior: >
+          Architects regression testing frameworks that detect subtle
+          quality changes across multi-dimensional evaluation spaces.
+          Designs testing strategies that balance sensitivity with false
+          positive rates. Establishes regression testing standards and
+          response procedures for the team.
+        staff: >
+          Defines organization-wide regression testing infrastructure and
+          methodology. Designs systems that track quality trends across
+          model providers, versions, and applications at scale. Ensures
+          regression testing keeps pace with the organization's expanding
+          AI footprint.
+        principal: >
+          Shapes the organization's approach to continuous quality
+          monitoring for AI systems. Drives development of advanced
+          regression detection methods and influences deployment policies
+          based on quality trend analysis. Advises leadership on quality
+          risk management.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI can execute regression tests efficiently and detect metric
+          changes, but designing testing strategies that capture meaningful
+          quality regressions without excessive false alarms, and making
+          deployment decisions based on regression results, require human
+          judgment about acceptable quality thresholds.
+
+    - id: domain_expertise
+      name: "Domain-Specific Evaluation Expertise"
+      category: domain
+      description: >
+        Deep understanding of specific domains such as medicine, law,
+        finance, or science to evaluate the factual accuracy, completeness,
+        and appropriateness of AI outputs within specialized contexts.
+      proficiency:
+        junior: >
+          Applies domain knowledge to evaluate AI outputs for basic
+          factual accuracy within their area of expertise. Identifies
+          obvious errors and flags uncertain cases for expert review.
+          Learns domain-specific evaluation criteria through guided
+          practice.
+        mid: >
+          Evaluates AI outputs for domain-specific accuracy, completeness,
+          and appropriateness using established domain standards. Identifies
+          subtle errors that require domain expertise to detect. Creates
+          domain-specific evaluation criteria and test cases.
+        senior: >
+          Leads domain-specific evaluation efforts with deep expertise
+          in evaluation methodology and domain knowledge. Designs
+          evaluation frameworks that capture the nuances of domain-specific
+          quality. Recruits and calibrates domain expert evaluators.
+        staff: >
+          Develops evaluation methodology for domain-specific AI
+          applications across the organization. Builds partnerships with
+          domain experts for evaluation purposes. Designs frameworks that
+          make domain expertise accessible to the broader evaluation team.
+        principal: >
+          Shapes the organization's approach to domain-specific AI quality
+          assurance. Builds networks of domain experts for evaluation and
+          advises leadership on domain-specific risks of AI deployment.
+          Influences industry standards for domain-specific AI evaluation.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Evaluating domain-specific accuracy requires genuine expertise
+          that AI models may superficially approximate but cannot reliably
+          provide, especially for cutting-edge knowledge, nuanced
+          professional judgment, and context-dependent correctness.
+
+    - id: reporting_communication
+      name: "Evaluation Reporting & Communication"
+      category: communication
+      description: >
+        Presenting evaluation findings to diverse stakeholders including
+        technical teams, product managers, and executive leadership through
+        clear reports, visualizations, and recommendations that drive
+        informed deployment decisions.
+      proficiency:
+        junior: >
+          Writes clear evaluation summaries with key metrics and findings.
+          Creates basic visualizations of evaluation results. Communicates
+          findings to immediate team members with appropriate context.
+        mid: >
+          Produces comprehensive evaluation reports with methodology
+          descriptions, result analysis, and actionable recommendations.
+          Creates visualizations that effectively communicate quality
+          trends and risk areas. Presents findings to cross-functional
+          stakeholders.
+        senior: >
+          Designs evaluation reporting frameworks that serve diverse
+          stakeholder needs from technical deep-dives to executive
+          summaries. Communicates nuanced evaluation findings and
+          uncertainty clearly. Drives deployment decisions through
+          compelling, evidence-based recommendations.
+        staff: >
+          Defines organization-wide evaluation reporting standards and
+          templates. Builds reporting systems that provide continuous
+          visibility into AI system quality across the organization.
+          Advises leadership on evaluation-informed risk management.
+        principal: >
+          Shapes the organization's approach to AI quality communication
+          and transparency. Presents evaluation findings to board-level
+          audiences and external stakeholders. Influences industry
+          reporting standards for AI system quality and safety.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can generate report drafts and visualizations from evaluation
+          data, but framing findings for specific audiences, making
+          deployment recommendations under uncertainty, and communicating
+          risk in ways that drive appropriate organizational action require
+          human communication judgment.
+
+    - id: ethical_reasoning
+      name: "AI Ethics & Responsible Deployment"
+      category: interpersonal
+      description: >
+        Reasoning about AI ethics, societal impact, responsible deployment
+        practices, and the broader implications of AI system behavior for
+        diverse communities and stakeholders.
+      proficiency:
+        junior: >
+          Understands basic AI ethics concepts including fairness, bias,
+          and responsible use. Identifies ethical concerns in AI outputs
+          and escalates appropriately. Participates in ethics discussions
+          and incorporates feedback.
+        mid: >
+          Applies ethical reasoning frameworks to evaluate AI system
+          behavior and deployment decisions. Identifies potential societal
+          impacts of AI applications and proposes mitigation strategies.
+          Contributes to ethics review processes for product launches.
+        senior: >
+          Leads ethical review processes for AI deployments, balancing
+          capability benefits against potential harms. Develops ethical
+          evaluation frameworks tailored to the organization's AI
+          applications. Mentors team members on ethical reasoning and
+          responsible AI practices.
+        staff: >
+          Defines organization-wide responsible AI practices and ethical
+          review processes. Advises product and engineering teams on
+          ethical implications of AI design decisions. Influences policy
+          development on responsible AI deployment.
+        principal: >
+          Shapes the organization's AI ethics philosophy and public
+          commitments. Engages with policymakers, academics, and civil
+          society on responsible AI practices. Drives industry dialogue
+          on ethical AI deployment and contributes to emerging governance
+          frameworks.
+      ai_impact:
+        rating: 0.05
+        detail: >
+          Ethical reasoning about AI systems requires moral judgment,
+          understanding of diverse human experiences, and the ability to
+          weigh competing values in context — capabilities that remain
+          fundamentally human and that AI should support rather than
+          replace.

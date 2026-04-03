@@ -28,6 +28,9 @@ role:
       and judgment-heavy interactions. Agents who master AI-assisted workflows
       and focus on empathy-driven problem-solving will remain essential, but
       the overall headcount demand for routine support work is declining.
+      Agentic AI can now resolve multi-step customer issues end-to-end,
+      handling account lookups, troubleshooting, and resolution actions
+      autonomously for an expanding range of query types.
     automating:
       - "Answering common FAQs and known-issue inquiries"
       - "Ticket classification, tagging, and priority routing"
@@ -35,6 +38,7 @@ role:
       - "Password resets, account lookups, and status checks"
       - "Post-interaction survey distribution and basic CSAT tracking"
       - "Spelling and grammar correction in outbound messages"
+      - "AI agents resolving multi-step customer issues end-to-end"
     augmenting:
       - "Real-time sentiment analysis to flag at-risk conversations"
       - "AI-drafted responses for agent review and personalization"
@@ -42,6 +46,7 @@ role:
       - "Automated summarization of long ticket threads"
       - "Translation assistance for multilingual support queues"
       - "Pattern detection across tickets to identify emerging issues"
+      - "Agent-assisted complex ticket investigation with automated context gathering"
     preserving:
       - "Empathetic handling of frustrated or emotionally distressed customers"
       - "Judgment calls on exceptions, refunds, and policy flexibility"
@@ -49,7 +54,7 @@ role:
       - "Building genuine rapport and trust with high-value customers"
       - "Navigating ambiguous situations not covered by documentation"
       - "Providing nuanced product feedback to internal teams"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "Gartner - AI in Customer Service"
@@ -141,7 +146,7 @@ role:
           the final escalation point before issues are routed to engineering
           or product leadership.
       ai_impact:
-        rating: 0.7
+        rating: 0.75
         detail: >
           AI auto-classification, suggested responses, and end-to-end bot
           resolution handle a growing share of routine tickets. However,

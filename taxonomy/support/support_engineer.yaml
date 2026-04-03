@@ -28,6 +28,9 @@ role:
       judgment on complex customer environments. Engineers who leverage AI
       for faster pattern identification while applying deep systems thinking
       to ambiguous problems will see significant productivity gains.
+      Agentic AI can now execute multi-step diagnostic workflows
+      autonomously, including log correlation, pattern matching, and
+      initial remediation for known issue categories.
     automating:
       - "Parsing and summarizing log files for known error patterns"
       - "Matching incoming issues to known bugs and existing fixes"
@@ -35,6 +38,7 @@ role:
       - "Routine API response validation and error code lookup"
       - "Auto-categorization of technical issues by component and severity"
       - "Basic system health checks and status verification"
+      - "AI agents resolving multi-step technical issues through automated log analysis and remediation"
     augmenting:
       - "Root cause analysis through AI-assisted log correlation"
       - "Suggesting debugging approaches based on symptom patterns"
@@ -42,6 +46,7 @@ role:
       - "Identifying similar historical incidents and their resolutions"
       - "Code snippet analysis for integration troubleshooting"
       - "Performance anomaly detection across system metrics"
+      - "Agent-assisted multi-system diagnostic workflows with automated hypothesis generation"
     preserving:
       - "Diagnosing novel failures in complex, multi-system environments"
       - "Judgment calls on severity, workarounds, and escalation timing"
@@ -49,7 +54,7 @@ role:
       - "Cross-team negotiation to prioritize fixes in engineering sprints"
       - "Reproducing intermittent bugs that require creative test setups"
       - "Assessing customer environment risks that logs alone cannot reveal"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "O*NET - Computer User Support Specialists"

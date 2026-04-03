@@ -25,6 +25,7 @@ role:
       - "Performance review draft generation"
       - "Status report compilation from project tools"
       - "Interview scheduling and candidate pipeline management"
+      - "AI agent-generated strategic briefings and board presentation drafts"
     augmenting:
       - "1:1 preparation with context gathering"
       - "Team health analysis from survey and engagement data"
@@ -36,7 +37,7 @@ role:
       - "Navigating organizational politics and conflict"
       - "Hiring judgment and culture fit assessment"
       - "Making difficult people decisions (PIPs, terminations, reorgs)"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "Dropbox Engineering Career Framework - Management"

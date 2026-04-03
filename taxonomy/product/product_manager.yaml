@@ -26,18 +26,20 @@ role:
       - "Generating competitive landscape summaries from public data"
       - "Writing SQL queries and basic data pulls for product metrics"
       - "Summarizing user feedback and support ticket themes"
+      - "AI agent-driven end-to-end competitive analysis and market research"
     augmenting:
       - "Prioritization modeling with AI-assisted scoring frameworks"
       - "Rapid prototyping and wireframing with generative design tools"
       - "Scenario planning and market sizing with AI forecasting"
       - "Automated experiment analysis and statistical significance testing"
+      - "AI agent-assisted roadmap scenario modeling and dependency mapping"
     preserving:
       - "Setting product vision and long-term strategy"
       - "Making high-stakes trade-off decisions under ambiguity"
       - "Building cross-functional trust and influencing without authority"
       - "Navigating organizational politics and stakeholder alignment"
       - "Ethical judgment on user impact and data privacy"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "Reforge AI for Product Managers"

@@ -25,7 +25,9 @@ role:
       incident response, and cross-team architectural decision-making remain
       deeply human. Senior-and-above engineers who leverage AI for acceleration
       while applying judgment to ambiguous, high-stakes problems will see their
-      leverage multiply rather than their roles diminish.
+      leverage multiply rather than their roles diminish. Agentic AI systems
+      can now execute multi-step coding tasks including cross-file refactoring,
+      test generation, and migration workflows with increasing reliability.
     automating:
       - "Boilerplate CRUD endpoint generation"
       - "Unit and integration test scaffolding"
@@ -33,6 +35,7 @@ role:
       - "Routine code reviews for style and simple bug detection"
       - "Documentation generation from code and API schemas"
       - "Log analysis and anomaly pattern recognition"
+      - "AI agent-driven multi-file refactoring and code migrations"
     augmenting:
       - "System design exploration and trade-off analysis"
       - "Complex debugging and root-cause analysis"
@@ -40,6 +43,7 @@ role:
       - "Database query optimization and schema evolution"
       - "Security vulnerability detection and remediation"
       - "Incident response triage and runbook execution"
+      - "Agent-assisted codebase exploration and dependency impact analysis"
     preserving:
       - "Architectural vision and long-term system evolution"
       - "Cross-team technical alignment and stakeholder negotiation"
@@ -47,7 +51,7 @@ role:
       - "Mentorship, culture-building, and team development"
       - "Ethical reasoning about data handling and privacy"
       - "Business-context-driven prioritization of technical work"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "O*NET - Software Developers"
@@ -137,7 +141,7 @@ role:
           communities and influences internal tooling investment decisions at
           the executive level.
       ai_impact:
-        rating: 0.6
+        rating: 0.65
         detail: >
           AI code-generation tools accelerate boilerplate and routine
           implementations significantly, but choosing the right language,
@@ -421,7 +425,7 @@ role:
           practices such as production testing, formal verification for
           critical paths, and AI-assisted test generation at scale.
       ai_impact:
-        rating: 0.65
+        rating: 0.7
         detail: >
           AI significantly accelerates test generation, especially for unit
           and integration tests with clear specifications. However, designing

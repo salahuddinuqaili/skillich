@@ -26,7 +26,10 @@ role:
       differentiate through creative outreach, authentic phone conversations,
       and the ability to qualify complex opportunities that require nuanced
       human judgment. The role is evolving from high-volume activity execution
-      toward strategic, account-based pipeline generation.
+      toward strategic, account-based pipeline generation. Agentic AI can
+      now autonomously execute multi-step prospecting workflows including
+      research, personalized outreach, and follow-up sequences, further
+      compressing the manual activity portion of the SDR role.
     automating:
       - "Email sequence creation and send-time optimization"
       - "Lead enrichment and contact data gathering"
@@ -34,6 +37,7 @@ role:
       - "Basic lead scoring and routing"
       - "Template-based follow-up messaging"
       - "Meeting scheduling and calendar coordination"
+      - "AI agent-managed lead scoring and CRM data enrichment"
     augmenting:
       - "Account research and personalization at scale"
       - "Objection handling coaching and response suggestions"
@@ -41,6 +45,7 @@ role:
       - "Call script optimization based on conversion data"
       - "Ideal customer profile refinement"
       - "A/B testing of messaging and subject lines"
+      - "Agent-assisted multi-step outreach orchestration with dynamic personalization"
     preserving:
       - "Authentic phone conversations that build human connection"
       - "Creative outreach that cuts through noise"
@@ -48,7 +53,7 @@ role:
       - "Relationship building with gatekeepers and champions"
       - "Resilience and motivation through high rejection rates"
       - "Judgment about when a lead is truly qualified versus forced"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "Gartner - Future of Sales 2025"
@@ -314,7 +319,7 @@ role:
           go-to-market analytics. Evaluates tools that reduce manual data
           entry while preserving data quality standards.
       ai_impact:
-        rating: 0.85
+        rating: 0.9
         detail: >
           CRM data entry is among the most automatable SDR tasks. AI tools
           can auto-log emails, transcribe and summarize calls, update

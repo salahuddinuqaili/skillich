@@ -1,0 +1,483 @@
+role:
+  id: automotive_technician
+  function: trades
+  name: "Automotive Technician"
+  also_known_as:
+    - "Auto Mechanic"
+    - "Automotive Service Technician"
+    - "Vehicle Technician"
+    - "ASE Certified Technician"
+  description: >
+    Diagnoses, maintains, and repairs automobiles and light trucks. Uses
+    diagnostic computers, hand tools, and specialized equipment to service
+    engines, transmissions, brakes, electrical systems, and increasingly
+    complex electronic and hybrid/EV systems. Combines mechanical aptitude
+    with evolving technical knowledge as vehicles become more software-defined
+    and electrified.
+  ai_impact:
+    level: "low"
+    summary: >
+      AI is augmenting automotive diagnostics through advanced scan tools,
+      predictive maintenance algorithms, and repair information databases,
+      but the physical work of removing, repairing, and reinstalling
+      components remains entirely human. The shift to electric vehicles
+      is transforming the skill mix — reducing engine repair demand while
+      increasing electrical and high-voltage system work — but does not
+      reduce the need for hands-on technicians. AI-powered diagnostic
+      tools help technicians identify faults faster, but interpreting
+      results in context, handling corroded or damaged components, and
+      solving unusual problems still requires experienced human judgment
+      and manual dexterity.
+    automating:
+      - "Retrieving diagnostic trouble codes and repair procedures"
+      - "Generating repair estimates from labor time databases"
+      - "Scheduling service appointments and customer notifications"
+      - "Parts lookup and cross-referencing across suppliers"
+      - "Service history tracking and maintenance interval alerts"
+    augmenting:
+      - "AI-assisted fault diagnosis using sensor data pattern analysis"
+      - "Guided repair procedures with step-by-step visual instructions"
+      - "Predictive maintenance recommendations from vehicle telemetry"
+      - "ADAS camera and radar calibration procedures"
+      - "Wiring diagram navigation and circuit tracing assistance"
+      - "Technical service bulletin and recall database search"
+    preserving:
+      - "Physical component removal, repair, and reinstallation"
+      - "Hands-on diagnosis of intermittent or multi-system problems"
+      - "Customer trust-building and repair recommendation conversations"
+      - "Adapting repair procedures to corroded, damaged, or modified vehicles"
+      - "High-voltage battery and electric motor service requiring safety protocols"
+      - "Road testing and real-world verification of repairs"
+    last_reviewed: "2026-04"
+    confidence: medium
+    sources:
+      - name: "O*NET - Automotive Service Technicians and Mechanics"
+        url: "https://www.onetonline.org/link/summary/49-3023.00"
+      - name: "Bureau of Labor Statistics - Automotive Service Technicians"
+        url: "https://www.bls.gov/ooh/installation-maintenance-and-repair/automotive-service-technicians-and-mechanics.htm"
+      - name: "ASE - National Institute for Automotive Service Excellence"
+        url: "https://www.ase.com/"
+  levels:
+    - id: apprentice
+      name: "Apprentice Technician"
+      years_experience: "0-3"
+      summary: >
+        Performs basic maintenance tasks such as oil changes, tire rotations,
+        brake inspections, and fluid services under supervision. Learns to
+        use scan tools, hand tools, and shop equipment. Builds foundational
+        knowledge of vehicle systems, safety procedures, and shop workflow.
+        Begins pursuing ASE certifications.
+    - id: journeyman
+      name: "Journeyman Technician"
+      years_experience: "3-7"
+      summary: >
+        Diagnoses and repairs a wide range of vehicle systems independently
+        including engines, transmissions, brakes, steering, suspension, and
+        electrical systems. Holds multiple ASE certifications. Uses advanced
+        scan tools and diagnostic equipment effectively. Produces consistent,
+        quality work at flat-rate efficiency.
+    - id: master
+      name: "Master Technician"
+      years_experience: "7-12"
+      summary: >
+        ASE Master Certified technician who handles the most complex
+        diagnostic and repair challenges. Specializes in areas such as
+        driveability, diesel, hybrid/EV, or advanced electronics. Serves as
+        the go-to diagnostic expert for the shop. Mentors junior technicians
+        and influences shop procedures and tool investments.
+    - id: shop_owner
+      name: "Shop Owner / Service Director"
+      years_experience: "12+"
+      summary: >
+        Owns or directs an automotive service operation, combining master-level
+        technical knowledge with business management. Oversees workflow,
+        quality control, customer relationships, staffing, and profitability.
+        Makes strategic decisions about equipment investment, training
+        programs, and service offerings including EV readiness.
+  skills:
+    - id: engine_repair
+      name: "Engine Diagnostics & Repair"
+      category: technical
+      description: >
+        Diagnosing and repairing internal combustion engine problems including
+        mechanical, fuel, ignition, and emissions system issues. Covers
+        everything from routine tune-ups to complex internal engine repairs
+        and performance diagnostics.
+      proficiency:
+        apprentice: >
+          Performs basic engine maintenance including spark plug replacement,
+          air filter changes, and fluid services. Learns to identify common
+          engine sounds and symptoms. Assists with more complex repairs under
+          supervision.
+        journeyman: >
+          Diagnoses engine performance problems using scan tools, lab scopes,
+          and compression testers. Repairs fuel injection systems, ignition
+          systems, and emission controls. Performs timing belt/chain
+          replacements and head gasket repairs independently.
+        master: >
+          Diagnoses the most challenging driveability problems including
+          intermittent misfires, complex emission failures, and multi-system
+          interactions. Performs internal engine repairs and determines
+          repair-vs-replace decisions based on cost-benefit analysis.
+        shop_owner: >
+          Evaluates engine repair profitability and decides which services
+          to offer in-house versus outsource. Stays current with engine
+          technology trends and trains staff on new systems. Manages warranty
+          and come-back rates for engine work.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          AI scan tools can retrieve codes and suggest probable causes, but
+          verifying and repairing engine problems requires physically
+          accessing components, interpreting real-world conditions, and
+          applying mechanical skill that AI cannot perform.
+
+    - id: electrical_systems
+      name: "Vehicle Electrical Systems"
+      category: technical
+      description: >
+        Diagnosing and repairing vehicle electrical systems including starting
+        and charging circuits, lighting, body control modules, CAN bus
+        networks, and module programming. Increasingly important as vehicles
+        become more electronically complex.
+      proficiency:
+        apprentice: >
+          Tests batteries and charging systems with basic test equipment.
+          Replaces bulbs, fuses, and simple electrical components. Learns
+          to read basic wiring diagrams and use a multimeter for voltage
+          and continuity checks.
+        journeyman: >
+          Diagnoses electrical faults using wiring diagrams, multimeters,
+          and scan tools. Repairs wiring harness damage, diagnoses parasitic
+          draws, and troubleshoots module communication issues on CAN bus
+          networks. Programs modules as required after replacement.
+        master: >
+          Handles advanced electrical diagnostics including intermittent
+          faults, network communication failures, and complex module
+          interactions. Uses oscilloscopes and lab scopes for signal
+          analysis. Serves as the shop's electrical specialist for
+          difficult cases.
+        shop_owner: >
+          Invests in electrical diagnostic equipment and training as
+          vehicles become increasingly electronic. Evaluates which
+          electrical services to offer and which to refer to specialists
+          or dealers. Manages programming subscription services.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI assists with wiring diagram navigation and code interpretation,
+          but physically tracing wires, testing connections, repairing
+          harnesses, and interpreting ambiguous electrical symptoms in the
+          context of a specific vehicle's condition requires hands-on
+          human expertise.
+
+    - id: diagnostic_technology
+      name: "Diagnostic Technology"
+      category: technical
+      description: >
+        Using OBD-II scanners, manufacturer-specific diagnostic tools,
+        oscilloscopes, and diagnostic software to read fault codes, view
+        live data streams, perform bi-directional tests, and interpret
+        diagnostic results to guide repair decisions.
+      proficiency:
+        apprentice: >
+          Uses basic OBD-II scan tools to read and clear diagnostic trouble
+          codes. Learns to navigate scan tool menus and view basic live data
+          parameters. Understands that codes indicate system areas, not
+          specific failed parts.
+        journeyman: >
+          Uses advanced scan tools to view live data, perform actuator tests,
+          and access module-specific functions. Interprets data patterns and
+          freeze frame information to pinpoint faults. Accesses manufacturer
+          technical information and service procedures effectively.
+        master: >
+          Leverages the full capability of diagnostic platforms including
+          guided diagnostics, flight recorder functions, and advanced data
+          analysis. Uses AI-assisted diagnostic tools to accelerate
+          troubleshooting while applying experienced judgment to validate
+          recommendations. Evaluates new diagnostic technology for the shop.
+        shop_owner: >
+          Makes strategic investments in diagnostic equipment and
+          information subscriptions. Ensures technicians are trained on
+          current tools and evaluates ROI on diagnostic technology upgrades.
+          Maintains relationships with tool vendors and training providers.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          This is the area where AI has the most impact on automotive repair.
+          AI-powered diagnostic tools can analyze data patterns, suggest
+          probable causes, and guide repair procedures. However, selecting
+          the right tests, interpreting results in context, and making
+          repair decisions still require experienced technician judgment.
+
+    - id: brake_systems
+      name: "Brake System Service"
+      category: technical
+      description: >
+        Inspecting, maintaining, and repairing hydraulic brake systems
+        including disc and drum brakes, ABS, electronic stability control,
+        and advanced brake-by-wire systems. Includes proper measurement,
+        hardware replacement, and hydraulic system service.
+      proficiency:
+        apprentice: >
+          Performs brake inspections and basic pad and rotor replacements
+          under supervision. Learns to measure rotor thickness, pad
+          remaining, and drum diameter. Understands the safety-critical
+          nature of brake work and follows procedures carefully.
+        journeyman: >
+          Performs complete brake service independently including caliper
+          rebuilds, hydraulic line replacement, ABS diagnostics, and
+          brake fluid exchange. Diagnoses brake noise, vibration, and
+          pulling issues. Ensures proper bedding and break-in procedures.
+        master: >
+          Diagnoses complex ABS and stability control system faults.
+          Handles advanced brake systems including electronic parking
+          brakes and regenerative braking in hybrid/EV vehicles. Sets
+          shop standards for brake inspection and service procedures.
+        shop_owner: >
+          Manages brake service as a core profit center. Ensures proper
+          documentation for liability purposes. Evaluates brake parts
+          quality and supplier relationships. Maintains staff certifications
+          for brake work.
+      ai_impact:
+        rating: 0.05
+        detail: >
+          Brake work is almost entirely physical — removing wheels,
+          inspecting components, measuring wear, and installing parts.
+          AI cannot perform any of this work. Diagnostic scan tools help
+          with ABS codes, but the hands-on inspection and repair is
+          irreducibly human.
+
+    - id: transmission_drivetrain
+      name: "Transmission & Drivetrain"
+      category: technical
+      description: >
+        Diagnosing and repairing automatic and manual transmissions, transfer
+        cases, differentials, CV joints, driveshafts, and related drivetrain
+        components. Includes fluid services, electronic control diagnostics,
+        and component replacement.
+      proficiency:
+        apprentice: >
+          Performs transmission fluid services and inspections. Replaces
+          CV boots and axle shafts on common applications. Learns to
+          identify drivetrain noise and vibration symptoms and the basic
+          operation of automatic and manual transmissions.
+        journeyman: >
+          Diagnoses transmission shift quality issues, fluid leaks, and
+          noise complaints. Replaces transmissions, transfer cases, and
+          differential assemblies. Performs clutch replacements and
+          driveline angle checks. Uses scan tools for transmission
+          adaptive learning resets.
+        master: >
+          Handles complex transmission diagnostics including valve body
+          issues, torque converter problems, and electronic control faults.
+          Evaluates repair-vs-replace decisions for expensive drivetrain
+          components. Advises on transmission flush versus drain-and-fill
+          based on vehicle condition and history.
+        shop_owner: >
+          Decides which drivetrain services to offer in-house versus
+          outsource to transmission specialists. Manages core return
+          programs and parts warranties. Evaluates profitability of
+          transmission work relative to shop capabilities.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          AI-assisted scan tools help interpret transmission codes and
+          adaptive data, but physically removing, inspecting, and
+          reinstalling heavy drivetrain components is entirely manual work
+          that requires significant mechanical skill and physical effort.
+
+    - id: hybrid_ev_systems
+      name: "Hybrid & EV Systems"
+      category: technical
+      description: >
+        Servicing hybrid and battery electric vehicles including high-voltage
+        battery systems, electric drive motors, regenerative braking, thermal
+        management, charging systems, and the safety protocols required for
+        working with high-voltage components.
+      proficiency:
+        apprentice: >
+          Learns high-voltage safety procedures and obtains required safety
+          training. Identifies high-voltage components and orange cabling.
+          Performs basic EV maintenance such as cabin air filters, tire
+          rotations, and coolant services under supervision.
+        journeyman: >
+          Services hybrid and EV systems including battery coolant flush,
+          charging system diagnostics, and 12V auxiliary battery replacement.
+          Follows high-voltage isolation procedures correctly. Diagnoses
+          basic HV system faults using manufacturer scan tools.
+        master: >
+          Performs advanced HV battery diagnostics including cell balancing
+          analysis and thermal management evaluation. Replaces HV battery
+          modules and electric drive components. Diagnoses complex
+          interactions between ICE and electric drive in hybrid systems.
+          Trains other technicians on HV safety and procedures.
+        shop_owner: >
+          Invests in EV service capability including training, tooling,
+          lift capacity, and safety equipment. Positions the business
+          for the transition to electrified transportation. Manages
+          relationships with EV manufacturers and aftermarket suppliers.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          AI diagnostics can analyze battery cell data and predict
+          degradation patterns. However, physically servicing high-voltage
+          systems requires rigorous safety protocols, specialized tooling,
+          and hands-on skill that AI cannot replicate. The human safety
+          judgment required for HV work is non-negotiable.
+
+    - id: preventive_maintenance
+      name: "Preventive Maintenance"
+      category: operational
+      description: >
+        Performing scheduled maintenance services including oil changes,
+        fluid exchanges, filter replacements, tire rotations, inspections,
+        and manufacturer-recommended service intervals to maintain vehicle
+        reliability and warranty compliance.
+      proficiency:
+        apprentice: >
+          Performs oil changes, tire rotations, air filter replacements,
+          and multi-point inspections following checklists. Learns to
+          identify fluid conditions, tire wear patterns, and items
+          requiring attention. Develops efficient workflow habits.
+        journeyman: >
+          Performs all scheduled maintenance services efficiently and
+          thoroughly. Identifies emerging problems during inspections
+          and recommends additional services based on vehicle condition
+          and mileage. Follows manufacturer service schedules accurately.
+        master: >
+          Develops maintenance recommendations that go beyond manufacturer
+          minimums based on driving conditions and vehicle history. Trains
+          staff on thorough inspection techniques. Identifies service
+          interval adjustments for fleet and commercial vehicles.
+        shop_owner: >
+          Manages maintenance services as a customer retention strategy
+          and entry point for larger repairs. Designs service packages and
+          loyalty programs. Uses maintenance data to forecast parts needs
+          and staffing requirements.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI-powered vehicle telemetry can predict maintenance needs and
+          schedule services proactively. Automated service reminders and
+          digital inspection reports reduce administrative work. However,
+          the physical maintenance tasks themselves — changing oil, rotating
+          tires, replacing filters — remain entirely manual.
+
+    - id: customer_communication
+      name: "Customer Communication"
+      category: interpersonal
+      description: >
+        Explaining diagnoses, repair options, and cost estimates to vehicle
+        owners in clear, non-technical language. Building trust through
+        honest recommendations, transparent pricing, and professional
+        interaction that generates repeat business and referrals.
+      proficiency:
+        apprentice: >
+          Presents a professional appearance and communicates respectfully
+          with customers. Learns to explain basic services clearly and
+          defers complex questions to senior technicians or service
+          advisors.
+        journeyman: >
+          Explains diagnostic findings and repair recommendations clearly
+          to customers or service writers. Provides honest assessments of
+          urgency and prioritizes recommendations by safety importance.
+          Handles routine customer interactions with confidence.
+        master: >
+          Communicates complex technical issues to non-technical customers
+          in a way that builds trust and understanding. Handles difficult
+          conversations about expensive repairs with empathy and honesty.
+          Builds a personal reputation that generates customer loyalty.
+        shop_owner: >
+          Develops customer communication standards and training for staff.
+          Manages customer satisfaction programs, handles escalated
+          complaints, and builds long-term relationships with fleet
+          customers and regular clients. Manages online reputation and
+          reviews.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          AI can generate repair estimates and digital inspection reports
+          with photos, making communication more visual and transparent.
+          However, the trust-building conversation between technician and
+          customer — explaining findings, answering questions, making
+          honest recommendations — is a fundamentally human interaction.
+
+    - id: adas_calibration
+      name: "ADAS Calibration"
+      category: technical
+      description: >
+        Calibrating advanced driver-assistance systems including forward-facing
+        cameras, radar sensors, blind spot monitors, lane departure systems,
+        and automatic emergency braking after windshield replacement, collision
+        repair, or wheel alignment to ensure safety system accuracy.
+      proficiency:
+        apprentice: >
+          Learns to identify ADAS components and understands that many
+          routine repairs now require ADAS recalibration. Assists with
+          setting up calibration targets and equipment under supervision.
+        journeyman: >
+          Performs static and dynamic ADAS calibrations using manufacturer
+          and aftermarket calibration tools. Sets up targets accurately,
+          follows calibration procedures, and verifies successful
+          completion. Identifies which repairs trigger recalibration
+          requirements.
+        master: >
+          Handles complex multi-sensor calibrations and diagnoses ADAS
+          system faults that prevent successful calibration. Understands
+          the interactions between different ADAS systems and the
+          importance of proper vehicle setup. Trains other technicians
+          on calibration procedures and requirements.
+        shop_owner: >
+          Invests in ADAS calibration equipment and dedicated calibration
+          space. Positions the shop as an ADAS calibration resource for
+          body shops and glass companies. Manages the rapidly evolving
+          calibration requirements across vehicle manufacturers.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          ADAS calibration tools are increasingly automated in their
+          procedures, but physically setting up targets, ensuring correct
+          vehicle positioning, and troubleshooting calibration failures
+          requires hands-on human work and understanding of the specific
+          vehicle's systems.
+
+    - id: shop_management
+      name: "Shop Management & Workflow"
+      category: operational
+      description: >
+        Managing repair shop operations including work order processing,
+        bay assignment, parts ordering, workflow optimization, and
+        coordination between service writers, technicians, and parts
+        departments to maintain productivity and customer satisfaction.
+      proficiency:
+        apprentice: >
+          Follows shop workflow procedures, keeps work area organized,
+          and communicates job status to service writers. Learns the shop
+          management system for clocking on and off jobs and documenting
+          work performed.
+        journeyman: >
+          Manages personal workflow efficiently to maintain productivity
+          targets. Communicates parts needs and job status proactively.
+          Helps coordinate with other technicians when jobs require
+          multiple bays or shared equipment.
+        master: >
+          Influences shop workflow by mentoring on efficiency and helping
+          dispatchers assign work appropriately. Identifies bottlenecks
+          and suggests process improvements. Assists with training on
+          shop management systems and documentation standards.
+        shop_owner: >
+          Designs and optimizes shop workflow, bay utilization, and
+          scheduling systems. Manages staff productivity, training
+          investments, and equipment purchasing. Uses shop management
+          data to drive business decisions on pricing, capacity, and
+          service offerings.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI-powered shop management systems can optimize scheduling,
+          predict parts needs, and analyze technician productivity. This
+          is a meaningful augmentation area. However, managing people,
+          handling daily workflow disruptions, and making real-time
+          staffing decisions require human judgment and interpersonal
+          skill.

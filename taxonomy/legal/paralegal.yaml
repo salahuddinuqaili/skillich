@@ -28,7 +28,9 @@ role:
       workflows and legal technology management will remain valuable, but
       those relying solely on traditional manual skills face significant
       displacement as AI handles high-volume, pattern-based legal tasks with
-      increasing accuracy and speed.
+      increasing accuracy and speed. Agentic AI now enables autonomous
+      multi-step document review and contract analysis workflows,
+      further reducing manual throughput requirements.
     automating:
       - "Keyword-based and predictive coding document review in e-discovery"
       - "Citation format checking and Shepardizing case references"
@@ -36,6 +38,7 @@ role:
       - "Docket calendar generation and deadline tracking from court rules"
       - "Initial document categorization and privilege screening"
       - "Boilerplate legal document assembly from clause libraries"
+      - "AI agent-driven contract review and clause extraction"
     augmenting:
       - "Complex legal research requiring source evaluation and synthesis"
       - "Deposition preparation including exhibit organization and witness outlines"
@@ -43,6 +46,7 @@ role:
       - "Regulatory filing compilation across multiple jurisdictions"
       - "Client communication drafting and intake coordination"
       - "Project management for multi-workstream legal matters"
+      - "Agent-assisted due diligence document analysis with automated issue flagging"
     preserving:
       - "Attorney-client relationship support requiring confidentiality judgment"
       - "Courtroom and deposition logistics requiring real-time adaptation"
@@ -50,7 +54,7 @@ role:
       - "Quality assurance review of AI-generated legal work product"
       - "Mentoring junior staff and managing legal support teams"
       - "Navigating ambiguous procedural situations with court clerks and officials"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "O*NET - Paralegals and Legal Assistants"
@@ -190,7 +194,7 @@ role:
           judicial scrutiny, and advises leadership on technology investments
           that transform document review economics.
       ai_impact:
-        rating: 0.8
+        rating: 0.85
         detail: >
           AI-powered predictive coding and classification have dramatically
           reduced the volume of documents requiring human review. However,

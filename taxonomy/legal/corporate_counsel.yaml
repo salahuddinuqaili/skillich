@@ -26,7 +26,10 @@ role:
       landscapes -- remains firmly human. Lawyers who integrate AI into their
       workflows will handle larger portfolios with greater speed, but the
       profession's reliance on contextual reasoning, persuasion, and ethical
-      judgment limits full automation.
+      judgment limits full automation. Agentic AI systems can now
+      autonomously execute multi-step contract analysis and due diligence
+      workflows, accelerating deal velocity while still requiring human
+      oversight for judgment-intensive decisions.
     automating:
       - "First-draft contract generation from templates and playbooks"
       - "Case law and statute research across jurisdictions"
@@ -34,6 +37,7 @@ role:
       - "Standard NDA and low-risk contract review"
       - "Due diligence document collection and initial categorization"
       - "Routine regulatory filing preparation"
+      - "AI agent-driven contract review and clause extraction"
     augmenting:
       - "Complex contract negotiation strategy and redlining"
       - "M&A due diligence analysis and risk identification"
@@ -41,6 +45,7 @@ role:
       - "Regulatory change impact analysis across business units"
       - "Intellectual property portfolio strategy"
       - "Cross-jurisdictional compliance gap analysis"
+      - "Agent-assisted multi-step due diligence analysis with automated risk flagging"
     preserving:
       - "Executive advisory on business risk and strategic direction"
       - "Negotiation of high-value deals and dispute settlements"
@@ -48,7 +53,7 @@ role:
       - "Board communication and corporate governance leadership"
       - "Relationship management with regulators and outside counsel"
       - "Crisis management and real-time legal decision-making"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "O*NET - Lawyers"

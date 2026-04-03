@@ -25,6 +25,7 @@ role:
       - "Generating standard dashboards and recurring reports"
       - "Detecting metric anomalies and alerting stakeholders"
       - "Summarizing A/B test results and statistical outputs"
+      - "AI agent-driven end-to-end data pipeline creation and metric monitoring"
     augmenting:
       - "Exploratory data analysis with AI-assisted pattern discovery"
       - "Complex experiment design with AI-powered sample size and power calculators"
@@ -36,7 +37,7 @@ role:
       - "Synthesizing multiple data sources into strategic narratives"
       - "Ensuring data quality, governance, and ethical use"
       - "Translating statistical nuance for non-technical stakeholders"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "Amplitude - Future of Product Analytics"

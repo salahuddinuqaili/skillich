@@ -21,25 +21,30 @@ role:
       configuration. Routine report building and metric monitoring are increasingly
       automated. However, designing effective BI architectures, understanding nuanced
       business requirements, and governing data quality across the organization remain
-      critical human responsibilities.
+      critical human responsibilities. Agentic AI can now autonomously build
+      and iterate on dashboards and reports through multi-step workflows,
+      further automating routine BI tasks and elevating the importance of
+      strategic governance and stakeholder-facing skills.
     automating:
       - "Standard report generation and scheduling"
       - "Basic dashboard creation from templates"
       - "Data quality checks and anomaly flagging"
       - "Metric calculations and KPI tracking"
       - "Natural language to dashboard queries"
+      - "AI agent-driven end-to-end report creation and scheduled delivery"
     augmenting:
       - "Intelligent insight surfacing and trend detection"
       - "Automated data lineage and impact analysis"
       - "AI-assisted semantic layer design"
       - "Smart alerting with contextual explanations"
+      - "Agent-assisted dashboard iteration with automated data validation"
     preserving:
       - "BI platform architecture and governance"
       - "Complex business requirement translation"
       - "Stakeholder relationship management and training"
       - "Data quality strategy and organizational data culture"
       - "Cross-functional data standardization and alignment"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "Gartner - Magic Quadrant for Analytics and BI Platforms"
@@ -145,7 +150,7 @@ role:
           Evaluates Power BI's role alongside other platforms and advises on long-term
           technology investments.
       ai_impact:
-        rating: 0.6
+        rating: 0.65
         detail: >
           Copilot in Power BI enables natural language report creation and DAX generation,
           automating routine tasks. However, designing robust data models and governance
@@ -391,7 +396,7 @@ role:
           Evaluates emerging automation technologies and guides the transition toward
           proactive, AI-driven reporting.
       ai_impact:
-        rating: 0.8
+        rating: 0.85
         detail: >
           AI significantly enhances report automation through intelligent scheduling, dynamic
           content generation, and anomaly-based alerting. Routine report creation is

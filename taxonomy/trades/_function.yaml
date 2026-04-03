@@ -1,0 +1,24 @@
+function:
+  id: trades
+  name: "Skilled Trades"
+  description: >
+    Licensed and certified trades professionals who install, maintain, repair,
+    and build physical systems and infrastructure. AI is augmenting diagnostics,
+    estimating, and project management, but the core physical dexterity,
+    spatial reasoning, on-site judgment, and code compliance work remain
+    overwhelmingly human. Skilled trades represent some of the most AI-resilient
+    career paths, with growing demand driven by infrastructure investment,
+    electrification, and an aging workforce.
+  roles:
+    - electrician
+    - plumber
+    - hvac_technician
+    - construction_manager
+    - automotive_technician
+  sources:
+    - name: "Bureau of Labor Statistics - Construction and Extraction"
+      url: "https://www.bls.gov/ooh/construction-and-extraction/"
+    - name: "Bureau of Labor Statistics - Installation, Maintenance, and Repair"
+      url: "https://www.bls.gov/ooh/installation-maintenance-and-repair/"
+    - name: "McKinsey - Building the Workforce of Tomorrow"
+      url: "https://www.mckinsey.com/industries/public-sector/our-insights/"

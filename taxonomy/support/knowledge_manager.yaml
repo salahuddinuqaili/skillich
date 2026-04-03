@@ -31,7 +31,10 @@ role:
       architectures, maintaining editorial quality, and making strategic
       content decisions still require human expertise. Knowledge managers
       who leverage AI as a force multiplier while applying editorial
-      judgment will see their impact scale significantly.
+      judgment will see their impact scale significantly. Agentic AI can
+      now orchestrate multi-step content creation workflows from gap
+      identification through draft generation and style enforcement,
+      dramatically increasing content velocity.
     automating:
       - "First-draft generation of help articles from ticket resolution data"
       - "Auto-tagging and categorization of knowledge base content"
@@ -39,6 +42,7 @@ role:
       - "Basic content formatting and style consistency enforcement"
       - "Search query analysis and synonym mapping"
       - "Translation of help content into additional languages"
+      - "AI agent-automated content lifecycle management including freshness checks and updates"
     augmenting:
       - "Gap analysis identifying missing content from ticket and search patterns"
       - "Content optimization recommendations based on engagement analytics"
@@ -46,6 +50,7 @@ role:
       - "Automated content summarization for different audience levels"
       - "Intelligent content recommendation for agents during live interactions"
       - "Predictive identification of content needs before product launches"
+      - "Agent-assisted end-to-end article creation from ticket patterns through draft to publication review"
     preserving:
       - "Information architecture design and content strategy decisions"
       - "Editorial judgment on accuracy, tone, and brand voice"
@@ -53,7 +58,7 @@ role:
       - "Governance decisions on content lifecycle and ownership"
       - "Understanding nuanced customer needs that data alone cannot capture"
       - "Strategic prioritization of content investments for maximum impact"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "Knowledge-Centered Service (KCS) Consortium"

@@ -35,6 +35,7 @@ role:
       - "Standard regulatory document preparation and tracking"
       - "Enrollment forecasting and recruitment funnel analytics"
       - "Protocol deviation categorization and trend reporting"
+      - "AI agent-automated regulatory document tracking and submission preparation"
     augmenting:
       - "Adverse event signal detection and safety reporting"
       - "Site monitoring visit preparation and finding prioritization"
@@ -48,7 +49,7 @@ role:
       - "IRB/ethics committee navigation and protocol amendment negotiation"
       - "Site-level problem solving for recruitment and retention challenges"
       - "Cross-functional coordination with sponsors, CROs, and internal teams"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "ACRP - Clinical Research Professional Competencies"

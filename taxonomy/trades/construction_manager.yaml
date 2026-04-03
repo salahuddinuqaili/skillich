@@ -1,0 +1,601 @@
+role:
+  id: construction_manager
+  function: trades
+  name: "Construction Manager"
+  also_known_as:
+    - "General Contractor"
+    - "Project Manager (Construction)"
+    - "Site Superintendent"
+    - "Construction Superintendent"
+  description: >
+    Plans, coordinates, and oversees construction projects from inception
+    through completion. Manages budgets, schedules, subcontractors, safety
+    compliance, and quality control. Serves as the central coordinator
+    between owners, architects, engineers, and trade workers to deliver
+    projects on time, on budget, and to specification.
+  ai_impact:
+    level: "moderate"
+    summary: >
+      Construction management is more exposed to AI augmentation than the
+      hands-on trades because a significant portion of the role involves
+      information processing — scheduling, estimating, document management,
+      and reporting — that AI tools are increasingly capable of accelerating.
+      AI-powered estimating software can perform quantity takeoffs from BIM
+      models in minutes, scheduling tools can optimize critical paths and
+      flag delays, and documentation platforms can automate RFI responses
+      and daily report generation. However, the human core of the role —
+      leading crews on a chaotic job site, negotiating with subcontractors,
+      making real-time decisions when plans meet reality, managing safety,
+      and building trust with owners and architects — remains firmly human.
+      Construction managers who leverage AI for administrative efficiency
+      will be able to manage more complex projects with greater confidence.
+    automating:
+      - "Quantity takeoffs from BIM models and digital plans"
+      - "Daily report generation from site data and photos"
+      - "RFI response drafting from specification databases"
+      - "Schedule variance detection and delay notifications"
+      - "Invoice processing and payment application matching"
+      - "Safety inspection checklist digitization and tracking"
+    augmenting:
+      - "Critical path schedule optimization and resource leveling"
+      - "Cost estimation and bid analysis with historical data"
+      - "BIM clash detection and constructability review"
+      - "Risk identification from project data patterns"
+      - "Document management, search, and cross-referencing"
+      - "Weather impact analysis and schedule adjustment"
+    preserving:
+      - "On-site leadership, crew motivation, and conflict resolution"
+      - "Subcontractor negotiation, selection, and relationship management"
+      - "Real-time problem-solving when conditions differ from plans"
+      - "Owner and architect communication, trust-building, and expectation management"
+      - "Safety culture enforcement and incident response"
+      - "Complex change order negotiation and claims management"
+    last_reviewed: "2026-04"
+    confidence: medium
+    sources:
+      - name: "O*NET - Construction Managers"
+        url: "https://www.onetonline.org/link/summary/11-9021.00"
+      - name: "Bureau of Labor Statistics - Construction Managers"
+        url: "https://www.bls.gov/ooh/management/construction-managers.htm"
+      - name: "McKinsey - Reinventing Construction"
+        url: "https://www.mckinsey.com/capabilities/operations/our-insights/reinventing-construction-through-a-productivity-revolution"
+      - name: "Autodesk Construction Cloud Research"
+        url: "https://construction.autodesk.com/resources/"
+  levels:
+    - id: assistant
+      name: "Assistant Construction Manager"
+      years_experience: "0-3"
+      summary: >
+        Supports senior project managers and superintendents with daily
+        project coordination tasks. Assists with scheduling, document
+        control, subcontractor communication, and field reporting. Learns
+        construction methods, contract administration, and safety
+        management through direct project exposure. Develops foundational
+        knowledge of building codes, cost tracking, and quality control.
+    - id: project_manager
+      name: "Construction Project Manager"
+      years_experience: "3-7"
+      summary: >
+        Manages construction projects independently from pre-construction
+        through closeout. Develops and maintains schedules, manages budgets
+        and change orders, coordinates subcontractors, and ensures quality
+        and safety compliance. Serves as the primary point of contact
+        between the owner, design team, and field operations for assigned
+        projects.
+    - id: senior_manager
+      name: "Senior Construction Manager"
+      years_experience: "7-12"
+      summary: >
+        Oversees large or complex construction projects and may manage
+        multiple concurrent projects. Handles high-value negotiations,
+        complex claims, and challenging stakeholder dynamics. Mentors
+        project managers and assistant managers. Makes strategic decisions
+        about construction methods, phasing, and risk mitigation that
+        significantly impact project outcomes.
+    - id: director
+      name: "Director of Construction"
+      years_experience: "12+"
+      summary: >
+        Leads the construction organization, setting standards for project
+        delivery, safety, and quality across the portfolio. Manages client
+        relationships at the executive level, develops new business
+        opportunities, and makes strategic decisions about company
+        capabilities, technology adoption, and market positioning.
+        Shapes company culture and mentors the next generation of
+        construction leaders.
+  skills:
+    - id: project_scheduling
+      name: "Project Scheduling"
+      category: execution
+      description: >
+        Creating and managing construction schedules using the Critical
+        Path Method (CPM), tracking milestones, managing float, leveling
+        resources, and updating schedules to reflect actual progress and
+        changed conditions throughout the project lifecycle.
+      proficiency:
+        assistant: >
+          Updates schedules with actual progress data and assists with
+          milestone tracking. Understands basic CPM concepts including
+          predecessor relationships, float, and the critical path.
+          Generates schedule reports for the project team.
+        project_manager: >
+          Develops and maintains detailed CPM schedules for projects
+          using software like Primavera P6 or Microsoft Project. Manages
+          schedule updates, identifies critical path shifts, and
+          coordinates with subcontractors to maintain milestone dates.
+          Communicates schedule status to stakeholders clearly.
+        senior_manager: >
+          Creates master schedules for complex projects with multiple
+          phases and overlapping trades. Performs resource leveling,
+          develops recovery schedules when delays occur, and uses
+          schedule analysis to support delay claims or defend against
+          them. Mentors project managers in effective scheduling practices.
+        director: >
+          Establishes company scheduling standards and review processes.
+          Uses portfolio-level scheduling to manage resource allocation
+          across projects. Evaluates scheduling technologies and AI-
+          powered tools for adoption. Ensures schedules are used as
+          active management tools rather than contract artifacts.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can optimize schedule sequences, predict delays from
+          historical patterns, and automate progress tracking from site
+          data. However, negotiating schedule commitments with
+          subcontractors, making judgment calls about recovery strategies,
+          and managing the human dynamics of schedule pressure remain
+          human responsibilities.
+
+    - id: cost_estimating
+      name: "Cost Estimating & Analysis"
+      category: analytical
+      description: >
+        Performing quantity takeoffs, developing unit-cost estimates,
+        analyzing subcontractor bids, preparing budgets, and forecasting
+        costs throughout the project lifecycle to ensure financial
+        control and profitability.
+      proficiency:
+        assistant: >
+          Assists with quantity takeoffs and organizes bid documents.
+          Learns to read plans for estimating purposes and understands
+          how costs are structured into labor, material, equipment,
+          and overhead categories.
+        project_manager: >
+          Prepares conceptual and detailed estimates for assigned projects.
+          Performs quantity takeoffs, solicits and analyzes subcontractor
+          bids, and develops project budgets. Tracks costs against budget
+          and prepares accurate cost forecasts throughout construction.
+        senior_manager: >
+          Leads estimating for complex projects, developing pricing
+          strategies that balance competitiveness with risk management.
+          Analyzes historical cost data to improve estimating accuracy.
+          Reviews and validates estimates prepared by project managers.
+        director: >
+          Establishes company estimating standards, databases, and
+          review processes. Uses cost data analytics to identify trends,
+          improve accuracy, and inform strategic decisions about project
+          types and markets to pursue. Evaluates AI-powered estimating
+          tools for adoption.
+      ai_impact:
+        rating: 0.5
+        detail: >
+          AI excels at automated quantity takeoffs from BIM models,
+          historical cost analysis, and bid comparison. Estimating is
+          one of the areas where AI has the greatest impact on
+          construction management. However, assessing risk factors,
+          evaluating subcontractor capability, and developing competitive
+          pricing strategies require human judgment and market knowledge.
+
+    - id: subcontractor_management
+      name: "Subcontractor Management"
+      category: interpersonal
+      description: >
+        Selecting, qualifying, negotiating with, and managing
+        subcontractors throughout the project. Includes prequalification,
+        scope definition, contract negotiation, performance monitoring,
+        dispute resolution, and building long-term trade partner
+        relationships.
+      proficiency:
+        assistant: >
+          Assists with subcontractor communication, meeting coordination,
+          and document distribution. Learns how subcontracts are
+          structured and how scope is defined. Observes negotiation
+          and dispute resolution processes.
+        project_manager: >
+          Manages subcontractor relationships for assigned projects
+          including scope review, contract administration, performance
+          monitoring, and payment processing. Coordinates between trades
+          to resolve conflicts and maintain schedule. Handles routine
+          disputes and change order negotiations.
+        senior_manager: >
+          Leads complex subcontractor negotiations and resolves
+          significant disputes. Prequalifies subcontractors for major
+          projects and makes selection recommendations. Develops trade
+          partner relationships that benefit the company across multiple
+          projects. Manages subcontractor default situations.
+        director: >
+          Establishes company subcontractor management standards and
+          prequalification programs. Builds strategic trade partner
+          relationships at the executive level. Develops policies for
+          subcontractor diversity, payment practices, and dispute
+          resolution that reflect company values and legal requirements.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          AI can assist with subcontractor prequalification data analysis
+          and performance tracking metrics. But the core of subcontractor
+          management — negotiation, relationship building, on-site
+          coordination, and dispute resolution — requires human
+          interpersonal skills, trust, and judgment.
+
+    - id: safety_management
+      name: "Construction Safety Management"
+      category: regulatory
+      description: >
+        Developing and enforcing safety programs, conducting site safety
+        inspections, ensuring OSHA compliance, investigating incidents,
+        and maintaining a safety-first culture across all project
+        activities and subcontractor operations.
+      proficiency:
+        assistant: >
+          Conducts daily safety walks and documents hazards. Assists
+          with toolbox talks, safety orientation for new workers, and
+          incident documentation. Learns OSHA standards relevant to
+          construction and understands reporting requirements.
+        project_manager: >
+          Manages project safety programs including site-specific safety
+          plans, regular inspections, subcontractor safety compliance,
+          and incident investigation. Conducts safety meetings, enforces
+          PPE requirements, and ensures OSHA compliance. Stops work
+          when unsafe conditions are observed.
+        senior_manager: >
+          Develops safety programs for complex projects with high-risk
+          activities like crane operations, deep excavations, and steel
+          erection. Leads incident investigations using root-cause
+          analysis methods. Manages regulatory interactions including
+          OSHA inspections. Mentors project managers in safety leadership.
+        director: >
+          Establishes company safety culture, programs, and policies.
+          Sets safety performance targets, manages EMR and insurance
+          programs, and represents the company in industry safety
+          organizations. Ensures safety investment and leadership are
+          priorities at every level of the organization.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          AI can assist with safety inspection tracking, hazard
+          identification from site photos, and incident pattern analysis.
+          However, on-site safety leadership — recognizing hazards in
+          real time, stopping unsafe work, and maintaining crew
+          accountability — is an inherently human responsibility that
+          requires physical presence and authority.
+
+    - id: quality_control
+      name: "Quality Control & Inspection"
+      category: operational
+      description: >
+        Implementing quality assurance programs, conducting inspections
+        at critical construction milestones, managing punch lists,
+        verifying specification compliance, and ensuring workmanship
+        meets project standards and owner expectations.
+      proficiency:
+        assistant: >
+          Assists with quality inspections and documents deficiencies
+          with photos and descriptions. Learns to read specifications
+          and compare installed work against requirements. Manages
+          punch list tracking and follow-up.
+        project_manager: >
+          Implements quality control programs for assigned projects
+          including inspection schedules, testing requirements, and
+          specification compliance verification. Manages punch lists
+          efficiently and ensures deficiencies are corrected before
+          substantial completion.
+        senior_manager: >
+          Develops quality management systems for complex projects with
+          demanding specifications. Establishes inspection protocols for
+          critical work such as structural concrete, waterproofing, and
+          curtain wall installation. Resolves quality disputes between
+          the design team and subcontractors.
+        director: >
+          Establishes company-wide quality standards and assurance
+          programs. Analyzes quality data across projects to identify
+          systemic issues and improvement opportunities. Ensures quality
+          management reflects the company's reputation goals and client
+          expectations.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can assist with photo-based deficiency identification,
+          specification cross-referencing, and punch list management.
+          However, on-site quality judgment — assessing workmanship,
+          determining acceptability of deviations, and negotiating
+          corrections — requires experienced human evaluation and
+          interpersonal skills.
+
+    - id: blueprint_reading
+      name: "Construction Document Interpretation"
+      category: technical
+      description: >
+        Reading and interpreting architectural, structural, mechanical,
+        electrical, and civil drawings, specifications, and contract
+        documents to understand project scope, coordinate between
+        disciplines, and manage requests for information (RFIs).
+      proficiency:
+        assistant: >
+          Reads basic architectural and structural drawings and
+          understands standard symbols and conventions. Assists with
+          document control and distribution. Learns to identify
+          discrepancies that require RFIs.
+        project_manager: >
+          Reads and interprets full construction document sets across
+          all disciplines. Identifies coordination conflicts between
+          drawings, writes clear RFIs, and reviews submittals for
+          specification compliance. Manages document control processes
+          and revision tracking.
+        senior_manager: >
+          Reviews complex construction documents for constructability,
+          value engineering opportunities, and potential claims issues.
+          Manages high-volume RFI processes and ensures timely responses.
+          Coordinates multi-discipline document reviews and resolves
+          conflicts between design intent and field conditions.
+        director: >
+          Establishes company document management standards and
+          technology platforms. Evaluates BIM-integrated document
+          workflows and AI-powered plan review tools. Ensures the
+          organization's document practices support efficient project
+          delivery and protect the company's contractual interests.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can search and cross-reference construction documents,
+          flag potential conflicts, and assist with RFI drafting.
+          However, interpreting design intent, evaluating
+          constructability, and making judgment calls about document
+          discrepancies require experienced construction knowledge.
+
+    - id: building_codes
+      name: "Building Code & Permitting"
+      category: regulatory
+      description: >
+        Understanding and ensuring compliance with building codes,
+        zoning requirements, and jurisdictional regulations. Managing
+        the permitting process, coordinating third-party inspections,
+        and resolving code compliance issues during construction.
+      proficiency:
+        assistant: >
+          Assists with permit application preparation and inspection
+          scheduling. Learns basic building code requirements and
+          understands the role of inspections in the construction process.
+          Tracks inspection results and coordinates re-inspections.
+        project_manager: >
+          Manages the permitting process for assigned projects, ensuring
+          timely submissions and responses. Coordinates building
+          inspections, resolves code compliance issues with inspectors,
+          and ensures all work meets applicable codes before covering.
+        senior_manager: >
+          Navigates complex permitting situations including multi-
+          jurisdictional projects, phased permits, and code variances.
+          Builds relationships with code officials and understands the
+          appeals process. Manages code compliance for projects with
+          unusual or challenging requirements.
+        director: >
+          Establishes company relationships with building departments
+          and code officials across the company's markets. Stays current
+          with code changes that affect the company's project types.
+          Ensures company-wide code compliance training and awareness.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can assist with code search, compliance checking against
+          plans, and permit application preparation. However, navigating
+          jurisdictional interpretations, building relationships with
+          code officials, and resolving compliance disputes require
+          human communication and local knowledge.
+
+    - id: budget_management
+      name: "Budget Management & Cost Control"
+      category: analytical
+      description: >
+        Tracking project costs against budget, managing change orders,
+        preparing cost forecasts, processing pay applications, and
+        ensuring projects are delivered within financial targets through
+        proactive cost control and reporting.
+      proficiency:
+        assistant: >
+          Assists with cost tracking, invoice processing, and budget
+          report preparation. Learns how costs flow through a
+          construction project and how change orders are processed.
+          Maintains organized financial documentation.
+        project_manager: >
+          Manages project budgets, tracks costs, and prepares monthly
+          cost forecasts. Processes change orders, reviews subcontractor
+          pay applications, and prepares owner billing. Identifies
+          cost variances early and develops corrective strategies.
+        senior_manager: >
+          Manages financial performance across large or multiple projects.
+          Handles complex change order negotiations, develops cost
+          recovery strategies, and prepares financial analyses for
+          executive review. Identifies and manages financial risk
+          throughout the project lifecycle.
+        director: >
+          Establishes company financial management standards, reporting
+          requirements, and cost control processes. Analyzes financial
+          performance across the project portfolio and makes strategic
+          decisions about resource allocation, cash flow management,
+          and profitability targets.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI significantly accelerates cost tracking, variance analysis,
+          and financial reporting from project data. However, negotiating
+          change orders, making strategic cost decisions under uncertainty,
+          and managing the financial relationships with owners and
+          subcontractors require human judgment and negotiation skill.
+
+    - id: stakeholder_communication
+      name: "Stakeholder Communication"
+      category: communication
+      description: >
+        Communicating effectively with project owners, architects,
+        engineers, subcontractors, inspectors, and the public throughout
+        the construction process. Includes progress reporting, meeting
+        facilitation, conflict resolution, and managing expectations.
+      proficiency:
+        assistant: >
+          Prepares meeting agendas and minutes, distributes project
+          information, and maintains communication logs. Learns
+          professional communication practices and begins participating
+          in project meetings. Drafts routine correspondence for review.
+        project_manager: >
+          Leads regular project meetings with owners, designers, and
+          subcontractors. Prepares clear progress reports and communicates
+          project status, issues, and decisions effectively. Manages
+          day-to-day stakeholder expectations and resolves routine
+          conflicts professionally.
+        senior_manager: >
+          Manages complex stakeholder dynamics including contentious
+          negotiations, public presentations, and executive-level
+          reporting. Facilitates resolution of significant disputes
+          and builds consensus among parties with competing interests.
+          Communicates bad news and recovery plans with credibility.
+        director: >
+          Represents the company at the highest levels with clients,
+          partners, and the community. Develops new client relationships,
+          negotiates major contracts, and manages the company's
+          reputation in the market. Mentors managers in effective
+          communication and stakeholder management.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can draft reports, generate meeting minutes, and prepare
+          correspondence. But the human elements of stakeholder
+          management — reading a room, building trust, navigating
+          conflict, and making commitments — cannot be delegated to AI
+          and are central to construction management success.
+
+    - id: risk_management
+      name: "Risk Management"
+      category: analytical
+      description: >
+        Identifying, assessing, and mitigating risks throughout the
+        construction project lifecycle including schedule risk, cost risk,
+        safety risk, quality risk, and contractual risk. Includes claims
+        management, insurance coordination, and dispute resolution.
+      proficiency:
+        assistant: >
+          Assists with risk documentation and tracking. Learns to
+          identify common construction risks and understands the basics
+          of construction insurance and bonding. Maintains risk registers
+          and issue logs.
+        project_manager: >
+          Identifies and documents project risks, develops mitigation
+          strategies, and monitors risk indicators throughout construction.
+          Manages claims documentation, coordinates with insurance
+          providers, and escalates significant risk issues appropriately.
+        senior_manager: >
+          Leads risk management for complex projects with significant
+          exposure. Develops comprehensive risk mitigation plans,
+          manages claims and dispute resolution processes, and makes
+          strategic decisions about risk acceptance versus avoidance.
+          Mentors project managers in risk identification and management.
+        director: >
+          Establishes company risk management standards, insurance
+          programs, and claims management processes. Evaluates risk
+          across the project portfolio and makes strategic decisions
+          about project types and contract structures. Manages
+          relationships with legal counsel, insurance brokers, and
+          surety companies.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can analyze historical project data to identify risk
+          patterns, flag early warning indicators, and model risk
+          scenarios. However, assessing qualitative risk factors,
+          negotiating risk allocation in contracts, and making judgment
+          calls about risk tolerance require experienced human
+          decision-making.
+
+    - id: bim_technology
+      name: "BIM & Construction Technology"
+      category: technical
+      description: >
+        Using Building Information Modeling for 3D coordination, clash
+        detection, 4D scheduling, 5D cost integration, and field
+        management. Includes adoption of drones, reality capture, project
+        management platforms, and emerging construction technology tools.
+      proficiency:
+        assistant: >
+          Uses BIM viewers to navigate models and identify design elements.
+          Assists with clash detection reporting and learns to interpret
+          model information for field coordination. Uses project
+          management software for daily tasks.
+        project_manager: >
+          Manages BIM coordination processes including clash detection
+          meetings, model-based coordination, and digital plan
+          distribution. Uses construction management platforms for
+          document control, RFIs, and submittals. Leverages BIM for
+          constructability review and field communication.
+        senior_manager: >
+          Leads BIM implementation strategies for complex projects
+          including 4D schedule integration and model-based quantity
+          verification. Evaluates and adopts new construction technologies
+          including drones, reality capture, and AI-powered tools that
+          improve project delivery.
+        director: >
+          Defines the company's construction technology strategy and
+          investment priorities. Evaluates emerging technologies for
+          competitive advantage, manages technology vendor relationships,
+          and drives digital transformation across the organization.
+          Ensures technology investments deliver measurable improvements
+          in project delivery.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI is rapidly advancing BIM capabilities through automated
+          clash detection, generative design, and predictive analytics.
+          Construction technology is one of the most AI-impacted aspects
+          of construction management. However, interpreting model data
+          for field decisions, managing the human side of technology
+          adoption, and integrating technology into practical workflows
+          require human leadership.
+
+    - id: site_logistics
+      name: "Site Logistics & Operations"
+      category: operational
+      description: >
+        Planning and managing job site operations including material
+        staging and delivery, crane and equipment planning, temporary
+        facilities, traffic management, site security, and coordination
+        of concurrent construction activities in constrained spaces.
+      proficiency:
+        assistant: >
+          Assists with material tracking, delivery coordination, and
+          site cleanliness. Learns how site logistics affect productivity
+          and safety. Helps maintain site layout plans and coordinates
+          with delivery drivers.
+        project_manager: >
+          Plans and manages site logistics for assigned projects including
+          material staging areas, crane placement, dumpster locations,
+          and temporary utilities. Coordinates deliveries to avoid
+          conflicts and maintains an organized, safe job site.
+        senior_manager: >
+          Develops comprehensive logistics plans for complex projects
+          in constrained urban environments. Manages multi-crane
+          operations, phased occupancy logistics, and coordination of
+          high-volume material deliveries. Optimizes site operations
+          for maximum productivity and minimum disruption.
+        director: >
+          Establishes company standards for site logistics planning
+          and management. Evaluates logistics technologies and
+          equipment strategies. Ensures site operations reflect the
+          company's commitment to safety, environmental responsibility,
+          and community relations.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          AI can assist with delivery scheduling optimization and
+          crane utilization analysis. But the physical reality of
+          managing a construction site — directing traffic, adapting
+          to weather, solving unexpected access problems, and keeping
+          crews productive — requires on-site human presence and
+          real-time decision-making.

@@ -1,0 +1,21 @@
+function:
+  id: ai_and_agents
+  name: "AI & Agents"
+  description: >
+    Roles focused on building, deploying, evaluating, and governing AI systems
+    and autonomous agents. These roles represent the emerging discipline of
+    working WITH AI as a core competency — from prompt engineering and agent
+    orchestration to safety evaluation and model operations. As AI becomes
+    infrastructure, these roles bridge the gap between raw model capabilities
+    and reliable, safe, production-grade AI applications.
+  roles:
+    - prompt_engineer
+    - ai_agent_developer
+    - ai_evaluator
+    - ai_trainer
+    - ai_ops_engineer
+  sources:
+    - name: "Anthropic Economic Index"
+      url: "https://www.anthropic.com/research/the-anthropic-economic-index"
+    - name: "O*NET - AI and Machine Learning Specialists"
+      url: "https://www.onetonline.org/link/summary/15-2051.00"

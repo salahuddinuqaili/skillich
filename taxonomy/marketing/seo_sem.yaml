@@ -25,26 +25,32 @@ role:
       However, search strategy, technical SEO architecture, content
       differentiation, and adapting to algorithm changes remain deeply
       expert-driven. The specialists who thrive will leverage AI tools
-      while focusing on strategic and technical judgment.
+      while focusing on strategic and technical judgment. Agentic AI
+      can now execute end-to-end SEO audit and optimization workflows,
+      from crawling through issue identification and fix implementation,
+      further automating tactical work and elevating the need for
+      strategic search expertise.
     automating:
       - "Generating keyword lists and search volume estimates from seed topics"
       - "Writing initial meta descriptions and title tag variations"
       - "Automating bid adjustments and keyword-level optimizations in paid search"
       - "Crawling sites for technical SEO issues and generating fix recommendations"
       - "Producing templated SEO performance reports"
+      - "AI agent-managed technical SEO audit and remediation workflows"
     augmenting:
       - "Analyzing SERP features and competitive positioning to refine strategy"
       - "Identifying content gaps and topical clusters for editorial planning"
       - "Diagnosing complex technical SEO issues like crawl budget and rendering"
       - "Optimizing landing pages for quality score and conversion rate"
       - "Building and analyzing backlink profiles for authority development"
+      - "Agent-assisted content optimization workflows with automated testing"
     preserving:
       - "Defining search strategy that aligns with business objectives and user intent"
       - "Navigating algorithm updates and adapting SEO programs accordingly"
       - "Making architectural decisions about site structure, URL taxonomy, and internationalization"
       - "Building relationships for high-quality link acquisition and digital PR"
       - "Balancing organic and paid search investment across the customer journey"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "Google Search Central Documentation"
@@ -237,7 +243,7 @@ role:
           change the value of on-page optimization and adapts the
           organization's approach accordingly.
       ai_impact:
-        rating: 0.75
+        rating: 0.8
         detail: >
           AI tools generate optimized meta tags, suggest content
           improvements, and identify on-page issues at scale. However,
@@ -424,7 +430,7 @@ role:
           to maintain content authority as search experiences
           fundamentally transform.
       ai_impact:
-        rating: 0.7
+        rating: 0.75
         detail: >
           AI tools generate SEO content, create content briefs, and
           identify optimization opportunities at scale. However,

@@ -1,0 +1,591 @@
+role:
+  id: musician_audio
+  function: creative
+  name: "Musician & Audio Producer"
+  also_known_as:
+    - "Music Producer"
+    - "Sound Designer"
+    - "Audio Engineer"
+    - "Composer"
+    - "Beat Maker"
+  description: >
+    Creates, produces, and engineers music and audio content across genres
+    and formats — from songwriting and composition through recording,
+    mixing, mastering, and distribution. Combines musical artistry with
+    technical audio engineering to produce commercially viable and
+    emotionally resonant audio.
+  ai_impact:
+    level: "moderate"
+    summary: >
+      AI generates competent music in common styles and can produce
+      functional background tracks, jingles, and production music with
+      increasing quality. Tools for stem separation, auto-mastering, and
+      audio restoration have become highly capable. However, original
+      artistry, live performance, cultural authenticity, emotional depth,
+      and the deeply human connection between artist and audience remain
+      beyond AI's reach. Musicians who use AI to accelerate production,
+      explore sonic possibilities, and handle technical tasks will free
+      more time for the creative and performative work that audiences
+      value most.
+    automating:
+      - "Background and stock music generation for media"
+      - "Basic audio mastering and loudness normalization"
+      - "Stem separation and audio isolation"
+      - "Noise reduction and audio cleanup"
+      - "Music transcription and notation from audio"
+      - "Simple beat and loop generation"
+    augmenting:
+      - "Composition ideation and harmonic exploration with AI tools"
+      - "Sound design through AI-assisted synthesis and sampling"
+      - "Mixing assistance with AI-powered plugin suggestions"
+      - "Music production workflow acceleration through AI co-pilots"
+      - "Vocal tuning and timing correction at scale"
+      - "Genre-blending experimentation with AI-generated elements"
+    preserving:
+      - "Original songwriting and artistic vision"
+      - "Live performance and audience connection"
+      - "Cultural authenticity and genre-specific sensibility"
+      - "Emotional expression and artistic vulnerability"
+      - "Artist collaboration and creative chemistry"
+      - "Music industry relationship building and career development"
+    last_reviewed: "2026-04"
+    confidence: medium
+    sources:
+      - name: "O*NET - Music Directors and Composers"
+        url: "https://www.onetonline.org/link/summary/27-2041.00"
+      - name: "Bureau of Labor Statistics - Musicians and Singers"
+        url: "https://www.bls.gov/ooh/entertainment-and-sports/musicians-and-singers.htm"
+      - name: "Music Business Worldwide"
+        url: "https://www.musicbusinessworldwide.com/"
+  levels:
+    - id: junior
+      name: "Junior Musician / Audio Producer"
+      years_experience: "0-2"
+      summary: >
+        Creates music and audio content at a foundational level, producing
+        tracks in established genres with developing technical skills.
+        Learns DAW workflows, recording techniques, and mixing fundamentals.
+        Assists senior producers with session preparation, editing, and
+        basic post-production tasks. Builds a portfolio demonstrating
+        creative range and technical growth.
+    - id: mid
+      name: "Musician / Audio Producer"
+      years_experience: "2-5"
+      summary: >
+        Produces complete tracks and audio projects independently with
+        professional-quality sound and artistic coherence. Manages
+        recording sessions, mixing, and mastering workflows. Develops a
+        recognizable creative voice while working effectively within
+        genre conventions and client requirements.
+    - id: senior
+      name: "Senior Musician / Audio Producer"
+      years_experience: "5-8"
+      summary: >
+        Leads complex music and audio productions with distinctive
+        artistic vision and technical excellence. Produces work that
+        achieves commercial success or critical recognition. Mentors
+        emerging artists and producers. Pushes creative boundaries while
+        maintaining the technical polish that professional contexts demand.
+    - id: lead
+      name: "Lead Audio Producer"
+      years_experience: "8-12"
+      summary: >
+        Shapes audio strategy and production standards for organizations
+        or artist rosters. Manages production teams and studio operations.
+        Defines sonic direction for brands, labels, or media properties.
+        Drives adoption of AI audio tools while maintaining artistic
+        integrity and production quality.
+    - id: principal
+      name: "Principal Producer / Music Director"
+      years_experience: "12+"
+      summary: >
+        Defines artistic and production vision at the highest level,
+        shaping the sound of labels, studios, or major media properties.
+        Influences industry practices and production standards. Builds
+        and leads creative organizations. Navigates the intersection of
+        artistry, technology, and business at the executive level.
+  skills:
+    - id: music_composition
+      name: "Music Composition"
+      category: domain
+      description: >
+        Creating original music through melody writing, harmonic
+        development, arrangement, and song structure. Composing across
+        genres and formats — from pop songs and film scores to electronic
+        productions and commercial jingles — with attention to emotional
+        impact, memorability, and artistic originality.
+      proficiency:
+        junior: >
+          Writes basic melodies and chord progressions in familiar genres.
+          Understands common song structures like verse-chorus and
+          AABA forms. Creates simple arrangements using available
+          instruments and virtual instruments with guidance on genre
+          conventions.
+        mid: >
+          Composes complete, well-structured pieces with effective
+          melodies, harmonies, and arrangements. Writes confidently
+          across multiple genres and adapts compositional approach to
+          project requirements. Creates arrangements that serve the
+          emotional arc and production context.
+        senior: >
+          Creates compositions with distinctive artistic voice and
+          emotional depth. Masters complex harmonic language, orchestration
+          techniques, and cross-genre fusion approaches. Writes music
+          that connects with audiences through authentic artistic
+          expression and sophisticated craft.
+        lead: >
+          Defines compositional direction for artist rosters, brand
+          properties, or media productions. Mentors composers and
+          songwriters on craft development. Evaluates AI composition
+          tools and their role in creative workflows while preserving
+          artistic originality.
+        principal: >
+          Shapes musical direction at the organizational or industry
+          level. Creates work that influences genre evolution and
+          production trends. Defines the artistic standards and creative
+          culture that attract exceptional musical talent.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI generates competent compositions in established styles,
+          particularly for background and production music. However,
+          creating music with genuine emotional depth, artistic
+          originality, and cultural relevance — the qualities that
+          make music meaningful to audiences — remains a deeply human
+          creative act.
+
+    - id: audio_engineering
+      name: "Audio Engineering"
+      category: technical
+      description: >
+        Recording, mixing, and mastering audio with professional quality,
+        including microphone selection and placement, signal chain design,
+        equalization, compression, spatial effects, and final mastering
+        for distribution. Understanding acoustics, signal flow, and
+        technical standards across delivery formats.
+      proficiency:
+        junior: >
+          Records audio using basic microphone techniques and understands
+          fundamental signal flow. Performs simple mixing tasks including
+          level balancing, basic EQ, and panning. Understands gain staging
+          and avoids common recording errors like clipping and phase
+          issues.
+        mid: >
+          Records professional-quality audio across instrument and vocal
+          sources. Mixes multi-track sessions with effective use of EQ,
+          compression, reverb, and spatial effects. Creates mixes that
+          translate well across playback systems. Handles basic mastering
+          for distribution.
+        senior: >
+          Engineers recordings and mixes at a commercially competitive
+          level. Masters advanced techniques including parallel processing,
+          mid-side processing, and automation for dynamic, impactful mixes.
+          Troubleshoots acoustic and technical issues in recording
+          environments. Delivers masters that meet broadcast and streaming
+          platform specifications.
+        lead: >
+          Defines engineering standards and workflows for studios or
+          production facilities. Specifies equipment and room treatment
+          for recording environments. Evaluates AI mixing and mastering
+          tools and integrates them into production workflows while
+          maintaining quality standards.
+        principal: >
+          Sets audio engineering standards at the organizational or
+          industry level. Evaluates investments in studio technology,
+          acoustic design, and production infrastructure. Shapes the
+          technical direction of major productions with attention to
+          both artistic vision and technical excellence.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI mastering and mixing assistance tools have become highly
+          capable for standard applications. However, engineering audio
+          for complex recording sessions, making creative mixing decisions
+          that serve the artistic vision, and achieving the sonic
+          character that defines great recordings require trained human
+          ears and artistic judgment.
+
+    - id: daw_proficiency
+      name: "DAW Proficiency"
+      category: technical
+      description: >
+        Expert use of digital audio workstations such as Ableton Live,
+        Logic Pro, Pro Tools, FL Studio, and Cubase, including efficient
+        workflows, MIDI programming, audio editing, plugin management,
+        and session organization for professional music production.
+      proficiency:
+        junior: >
+          Operates a primary DAW at a functional level, creating basic
+          arrangements with MIDI and audio tracks. Understands session
+          organization, basic MIDI editing, and audio recording workflows.
+          Uses stock plugins and virtual instruments with guidance.
+        mid: >
+          Works efficiently in one or more DAWs with keyboard shortcuts,
+          advanced MIDI programming, and organized session management.
+          Uses third-party plugins effectively and manages signal
+          routing for complex sessions. Adapts workflows for different
+          production contexts.
+        senior: >
+          Demonstrates expert-level DAW proficiency with optimized
+          workflows for professional production speed. Programs complex
+          MIDI arrangements, designs custom templates, and uses advanced
+          features like scripting, macro automation, and external hardware
+          integration. Works across multiple DAWs as projects require.
+        lead: >
+          Defines DAW standards and workflow templates for production
+          teams. Evaluates new DAW features and AI-powered plugins for
+          adoption. Manages session sharing, collaboration workflows,
+          and production infrastructure. Trains team members on efficient
+          production techniques.
+        principal: >
+          Shapes the organization's production technology strategy
+          including DAW selection, plugin ecosystem, and hardware
+          integration. Evaluates emerging production technologies
+          and their impact on creative workflow and output quality
+          at the strategic level.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI features are being integrated directly into DAWs for tasks
+          like MIDI generation, audio editing, and mixing assistance.
+          However, leveraging a DAW as a creative instrument — making
+          fast, intuitive production decisions that serve the artistic
+          vision — requires deep familiarity and creative fluency that
+          comes from extensive human practice.
+
+    - id: sound_design
+      name: "Sound Design"
+      category: technical
+      description: >
+        Creating original sounds through synthesis, sampling, processing,
+        and recording, including foley, atmospheric design, effects
+        creation, and sonic branding. Developing unique sonic textures
+        and palettes that serve musical, cinematic, and commercial
+        contexts.
+      proficiency:
+        junior: >
+          Creates basic sounds using presets and simple synthesis
+          techniques. Understands fundamental synthesis parameters like
+          oscillators, filters, and envelopes. Uses sampling to capture
+          and manipulate real-world sounds for music production.
+        mid: >
+          Designs original sounds using subtractive, FM, wavetable, and
+          granular synthesis techniques. Creates effective sound design
+          for music productions, including custom drums, bass sounds,
+          and atmospheric textures. Records and processes foley and
+          environmental sounds for creative use.
+        senior: >
+          Creates distinctive sonic identities for productions through
+          sophisticated sound design. Masters advanced synthesis, modular
+          systems, and creative processing chains. Develops signature
+          sounds that define artistic identity or brand sonic character.
+          Designs complete sonic palettes for film, games, or commercial
+          projects.
+        lead: >
+          Defines sound design standards and sonic direction for
+          organizations or major productions. Builds and manages sound
+          libraries and sample collections. Evaluates AI sound design
+          tools and integrates them into creative workflows while
+          preserving sonic originality.
+        principal: >
+          Shapes sound design vision at the organizational or industry
+          level. Defines sonic branding strategies for major properties.
+          Influences the direction of sound design technology and
+          practice. Creates sonic environments that become culturally
+          significant.
+      ai_impact:
+        rating: 0.4
+        detail: >
+          AI can generate sounds from descriptions and assist with
+          synthesis parameter exploration. However, creating truly
+          original sonic textures, developing signature sounds that
+          define an artist or brand, and designing immersive audio
+          experiences require creative hearing and artistic vision
+          that remain deeply human.
+
+    - id: ai_music_tools
+      name: "AI Music Tools"
+      category: technical
+      description: >
+        Using AI-powered tools for music creation, production assistance,
+        and audio processing, including AI composition tools, stem
+        separation, automated mastering, AI-assisted mixing, and
+        generative audio tools. Evaluating and integrating AI into
+        music production workflows effectively.
+      proficiency:
+        junior: >
+          Uses AI music tools for basic tasks like stem separation,
+          reference track analysis, and simple generation experiments.
+          Understands the capabilities and limitations of current AI
+          music tools. Follows team guidelines for AI tool usage in
+          productions.
+        mid: >
+          Integrates AI tools effectively into production workflows for
+          tasks like rough idea generation, audio cleanup, and mixing
+          reference analysis. Evaluates AI output critically and knows
+          when AI-generated elements meet production quality standards.
+          Uses AI to accelerate routine production tasks.
+        senior: >
+          Designs AI-augmented production workflows that multiply creative
+          output while maintaining artistic integrity. Evaluates new AI
+          music tools and recommends adoption decisions. Pushes AI tools
+          creatively, using generated elements as starting points for
+          human artistic development.
+        lead: >
+          Defines the organization's AI music tool strategy including
+          selection, workflow integration, and creative guidelines.
+          Balances AI efficiency with artistic authenticity. Establishes
+          ethical standards for AI-generated music usage and attribution.
+        principal: >
+          Shapes the organization's vision for AI-augmented music
+          production at the executive level. Navigates copyright,
+          ethical, and cultural implications of AI music tools.
+          Positions the organization to leverage AI for creative
+          advantage while preserving the human artistry audiences value.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          This skill is inherently about directing and leveraging AI
+          rather than being replaced by it. As AI music tools mature,
+          the ability to evaluate, integrate, and creatively direct
+          these tools becomes a critical differentiator for music
+          producers and audio professionals.
+
+    - id: live_performance
+      name: "Live Performance"
+      category: domain
+      description: >
+        Stage performance, audience engagement, improvisation, and live
+        sound management. The ability to connect with audiences through
+        real-time musical performance, whether as an instrumentalist,
+        vocalist, DJ, or electronic performer, including stage presence,
+        setlist design, and performance technology.
+      proficiency:
+        junior: >
+          Performs live in small venue settings with developing stage
+          presence and audience awareness. Manages basic performance
+          technology including instrument amplification and backing
+          tracks. Handles performance nerves and maintains musical
+          quality under live conditions.
+        mid: >
+          Delivers engaging live performances with confident stage
+          presence and audience connection. Designs effective setlists
+          and adapts performances to audience energy in real time.
+          Manages performance technology including in-ear monitors,
+          effects, and live electronic elements.
+        senior: >
+          Commands stages with compelling performance that creates
+          memorable audience experiences. Masters improvisation and
+          real-time creative decisions that make each performance unique.
+          Designs and operates complex live performance systems including
+          synchronized visuals and electronics.
+        lead: >
+          Defines live performance standards and production requirements
+          for tours, residencies, or event series. Coordinates technical
+          production, stage design, and performance logistics. Mentors
+          performers on stage craft and audience engagement techniques.
+        principal: >
+          Shapes live performance strategy at the organizational level,
+          defining the role of live events in artist development and
+          audience relationships. Evaluates emerging performance
+          technologies and format innovations. Builds live performance
+          programs that create cultural impact.
+      ai_impact:
+        rating: 0.05
+        detail: >
+          Live performance is one of the most AI-resistant activities in
+          the creative economy. The physical, emotional, and social
+          dimensions of performing music for a live audience — reading
+          the room, improvising, creating shared moments — are
+          irreducibly human and increasingly valuable as recorded music
+          becomes commoditized.
+
+    - id: music_theory
+      name: "Music Theory"
+      category: domain
+      description: >
+        Understanding scales, modes, chord progressions, harmony,
+        counterpoint, rhythm, meter, orchestration, and formal structures
+        that underpin music across genres. Applying theoretical knowledge
+        to composition, arrangement, analysis, and musical communication.
+      proficiency:
+        junior: >
+          Understands fundamental music theory including major and minor
+          scales, basic chord types, and common progressions. Reads
+          standard notation or chord charts. Applies theory to write
+          simple melodies and harmonies in familiar genres.
+        mid: >
+          Commands intermediate theory including modal interchange,
+          secondary dominants, extended chords, and rhythmic complexity.
+          Analyzes existing music to understand compositional techniques.
+          Applies theory fluently across multiple genres and production
+          contexts.
+        senior: >
+          Masters advanced harmonic concepts including voice leading,
+          counterpoint, and orchestration. Applies theoretical knowledge
+          intuitively and creatively, using theory as a tool for artistic
+          expression rather than a constraint. Communicates complex
+          musical ideas effectively to collaborators.
+        lead: >
+          Leverages deep theoretical knowledge to guide compositional
+          direction and evaluate musical quality. Mentors developing
+          musicians on theory application. Bridges theoretical
+          understanding with production technology and AI music tools.
+        principal: >
+          Applies comprehensive music theory knowledge at the highest
+          creative and strategic level. Shapes musical direction based
+          on deep understanding of how harmonic, melodic, and rhythmic
+          structures affect audience response. Influences educational
+          and developmental approaches to musicianship.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can analyze harmonic structures, suggest chord progressions,
+          and generate theory-informed compositions. However, applying
+          music theory as a creative tool — knowing when to follow
+          conventions and when to break them for artistic effect —
+          requires the intuitive understanding that comes from deep
+          human engagement with music.
+
+    - id: genre_cultural_knowledge
+      name: "Genre & Cultural Knowledge"
+      category: domain
+      description: >
+        Understanding genre conventions, historical context, cultural
+        significance, and audience expectations across musical styles.
+        Navigating genre authenticity, cultural sensitivity, and the
+        social dimensions of music creation and consumption.
+      proficiency:
+        junior: >
+          Understands the conventions and history of primary genres they
+          work in. Recognizes key influences, production signatures, and
+          audience expectations within familiar styles. Approaches
+          unfamiliar genres with curiosity and respect.
+        mid: >
+          Demonstrates working knowledge across multiple genres with
+          understanding of their cultural origins, evolution, and current
+          landscape. Produces authentic-sounding work within genre
+          conventions while developing a personal creative perspective.
+          Engages thoughtfully with questions of cultural context and
+          appropriation.
+        senior: >
+          Commands deep genre knowledge that informs creative decisions
+          with cultural sensitivity and artistic integrity. Navigates
+          cross-genre fusion with respect for source traditions. Creates
+          work that advances genre conventions while honoring their
+          cultural roots. Contributes to genre discourse and community.
+        lead: >
+          Shapes genre direction and cultural positioning for artist
+          rosters or brand properties. Navigates complex questions of
+          cultural authenticity and representation in music production.
+          Builds diverse creative teams that bring authentic genre
+          perspectives.
+        principal: >
+          Influences genre evolution and cultural discourse at the
+          industry level. Positions organizations and artists within
+          cultural movements authentically. Shapes industry practices
+          around cultural respect, diversity, and representation in
+          music production and distribution.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          Cultural knowledge and genre sensitivity are deeply human
+          competencies rooted in lived experience, community participation,
+          and social understanding. AI can catalog genre conventions but
+          cannot provide the cultural authenticity, social context, or
+          ethical sensitivity that meaningful music creation requires.
+
+    - id: collaboration
+      name: "Musical Collaboration"
+      category: interpersonal
+      description: >
+        Working effectively with artists, producers, session musicians,
+        labels, and clients in creative partnership. Managing creative
+        chemistry, navigating artistic differences, giving and receiving
+        creative feedback, and building productive working relationships
+        in the music industry.
+      proficiency:
+        junior: >
+          Participates in collaborative music-making with openness to
+          feedback and creative direction. Communicates musical ideas
+          clearly using appropriate terminology. Contributes positively
+          to recording sessions and creative meetings.
+        mid: >
+          Collaborates productively with diverse creative partners,
+          adapting communication and working style to different artists
+          and project contexts. Navigates creative differences
+          diplomatically. Builds a network of reliable collaborators
+          across production roles.
+        senior: >
+          Leads collaborative creative processes, drawing the best
+          performances and ideas from artists and collaborators. Creates
+          studio environments that encourage creative risk-taking and
+          authentic expression. Manages complex creative dynamics across
+          multi-artist projects.
+        lead: >
+          Defines collaboration standards and processes for production
+          teams. Manages creative partnerships with external artists,
+          songwriters, and producers. Builds creative teams with
+          complementary skills and productive working dynamics.
+        principal: >
+          Builds strategic creative partnerships at the industry level.
+          Connects artists and producers for collaborations that create
+          exceptional work. Shapes organizational culture that attracts
+          and retains exceptional musical talent through creative
+          excellence and collaborative opportunity.
+      ai_impact:
+        rating: 0.05
+        detail: >
+          Musical collaboration is fundamentally about human creative
+          chemistry — the energy, inspiration, and emotional connection
+          that arise when talented people create together. AI can assist
+          with logistics and file sharing, but the interpersonal dynamics
+          that produce great collaborative music are irreducibly human.
+
+    - id: music_business
+      name: "Music Business"
+      category: professional
+      description: >
+        Understanding music distribution, licensing, royalty structures,
+        marketing, and the business side of music creation. Navigating
+        streaming platforms, sync licensing, publishing, and building
+        sustainable creative careers in the evolving music industry.
+      proficiency:
+        junior: >
+          Understands basic music distribution through streaming platforms
+          and digital stores. Knows fundamental copyright concepts and
+          royalty structures. Distributes own music through standard
+          channels and manages basic social media presence for artist
+          promotion.
+        mid: >
+          Manages music business activities including distribution
+          strategy, sync licensing opportunities, and royalty collection
+          through PROs and mechanical rights organizations. Markets music
+          effectively across social media and streaming platforms. Builds
+          professional relationships with industry contacts.
+        senior: >
+          Navigates complex music business scenarios including publishing
+          deals, licensing negotiations, and multi-platform distribution
+          strategies. Builds sustainable income streams from music through
+          diverse revenue channels. Advises other artists on business
+          decisions and career development.
+        lead: >
+          Defines music business strategy for labels, production
+          companies, or artist management firms. Manages catalogs,
+          licensing portfolios, and distribution partnerships. Negotiates
+          industry deals and builds revenue-generating music operations.
+        principal: >
+          Shapes music business strategy at the organizational or industry
+          level. Influences distribution models, licensing frameworks,
+          and compensation structures. Navigates the evolving landscape
+          of AI-generated music rights and positions the organization
+          for long-term commercial success.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI assists with royalty tracking, catalog management, and
+          market trend analysis. However, negotiating deals, building
+          industry relationships, making strategic business decisions,
+          and navigating the rapidly evolving legal landscape of music
+          rights require human judgment, relationships, and business
+          acumen.

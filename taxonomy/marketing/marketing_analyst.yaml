@@ -25,26 +25,31 @@ role:
       spent on data wrangling. However, the strategic interpretation of
       data, causal reasoning about marketing effectiveness, and the
       judgment to translate analysis into actionable recommendations
-      remain deeply human competencies.
+      remain deeply human competencies. Agentic AI can now execute
+      end-to-end analytical workflows from data extraction through
+      visualization and narrative generation, making strategic
+      framing and stakeholder communication even more important.
     automating:
       - "Generating standard marketing performance reports and dashboards"
       - "Detecting anomalies and trends in campaign data"
       - "Writing SQL queries and data transformations from natural language"
       - "Creating data visualizations from descriptive prompts"
       - "Pulling and cleaning data from marketing platform APIs"
+      - "AI agent-driven end-to-end marketing data pipeline creation and monitoring"
     augmenting:
       - "Building attribution models and interpreting multi-touch journeys"
       - "Designing and analyzing A/B tests and experiments"
       - "Forecasting campaign performance and budget scenarios"
       - "Identifying customer segments and lifetime value patterns"
       - "Conducting competitive intelligence and market analysis"
+      - "Agent-assisted multi-step campaign analysis and insight generation"
     preserving:
       - "Defining measurement frameworks that align with business objectives"
       - "Making strategic recommendations based on nuanced data interpretation"
       - "Navigating data quality issues and privacy constraints in measurement"
       - "Communicating complex analytical findings to non-technical stakeholders"
       - "Designing the marketing data architecture and analytics roadmap"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "Marketing Analytics Association"
@@ -654,7 +659,7 @@ role:
           infrastructure that enables self-serve, real-time
           marketing intelligence.
       ai_impact:
-        rating: 0.7
+        rating: 0.75
         detail: >
           AI is rapidly automating report creation, data
           transformation, and insight extraction. However,

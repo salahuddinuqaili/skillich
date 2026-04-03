@@ -32,17 +32,19 @@ role:
       - "Meeting scheduling and agenda preparation"
       - "Retrospective theme analysis from historical data"
       - "Standard ceremony documentation and note-taking"
+      - "AI agent-automated sprint documentation and metric reporting workflows"
     augmenting:
       - "Team health assessment and pattern identification"
       - "Impediment trend analysis and systemic issue detection"
       - "Agile maturity assessment and improvement recommendations"
       - "Stakeholder communication drafting and alignment"
+      - "Agent-assisted team health data gathering and trend analysis"
     preserving:
       - "Team facilitation, coaching, and interpersonal dynamics"
       - "Conflict resolution and building psychological safety"
       - "Organizational change leadership and culture transformation"
       - "Servant leadership and individual mentoring relationships"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "Scrum.org Professional Scrum Competencies"

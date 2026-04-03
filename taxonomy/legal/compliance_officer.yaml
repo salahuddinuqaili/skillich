@@ -29,7 +29,10 @@ role:
       managing regulatory relationships, and leading investigations that
       require human credibility assessments remain firmly human domains.
       Compliance professionals who harness AI will shift from manual
-      monitoring toward strategic advisory and program design.
+      monitoring toward strategic advisory and program design. Agentic AI
+      can now execute multi-step compliance workflows autonomously,
+      including regulatory change assessment, policy gap analysis, and
+      monitoring report generation.
     automating:
       - "Regulatory change monitoring and impact flagging"
       - "Policy-to-regulation mapping and gap identification"
@@ -37,6 +40,7 @@ role:
       - "Routine compliance testing and control validation"
       - "Compliance report generation and documentation assembly"
       - "Training completion tracking and certification management"
+      - "AI agent-automated regulatory change assessment and policy update workflows"
     augmenting:
       - "Regulatory interpretation for novel business activities"
       - "Risk assessment model development and calibration"
@@ -44,6 +48,7 @@ role:
       - "Third-party risk scoring and due diligence reviews"
       - "Compliance program effectiveness measurement"
       - "Cross-jurisdictional regulatory comparison"
+      - "Agent-assisted compliance monitoring with automated exception investigation and escalation"
     preserving:
       - "Ethical judgment on ambiguous compliance questions"
       - "Regulatory relationship management and engagement"
@@ -51,7 +56,7 @@ role:
       - "Investigation interviews and credibility assessments"
       - "Board and executive communication on compliance matters"
       - "Crisis response and remediation program design"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "O*NET - Compliance Officers"
@@ -452,7 +457,7 @@ role:
           investment and organizational design that support the enterprise's
           regulatory obligations.
       ai_impact:
-        rating: 0.55
+        rating: 0.6
         detail: >
           AI can automate data extraction, report generation, and quality
           checking for structured regulatory filings. However, interpreting

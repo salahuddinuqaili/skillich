@@ -18,23 +18,26 @@ role:
       AI accelerates UI component generation and boilerplate code, but platform-specific
       constraints (memory, battery, network), app store policies, and native API integration
       require deep human expertise. Cross-platform frameworks add complexity that AI
-      handles unevenly.
+      handles unevenly. Agentic AI can now scaffold entire feature modules
+      and generate platform-specific code across iOS and Android simultaneously.
     automating:
       - "UI component scaffolding from designs"
       - "Boilerplate platform code generation"
       - "Unit test generation for view models"
       - "Localization string management"
+      - "AI agent-driven multi-file refactoring and platform code generation"
     augmenting:
       - "Platform API integration and migration"
       - "Performance profiling and optimization"
       - "Cross-platform code sharing decisions"
       - "Accessibility compliance implementation"
+      - "Agent-assisted codebase exploration and dependency impact analysis"
     preserving:
       - "Platform-specific UX judgment"
       - "App store review compliance strategy"
       - "Offline-first architecture design"
       - "Device fragmentation troubleshooting"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "State of Mobile Engineering 2025"
@@ -96,7 +99,7 @@ role:
           multi-year technology bets on platform direction and positions the
           organization to adopt new SDK capabilities early.
       ai_impact:
-        rating: 0.5
+        rating: 0.55
         detail: "AI generates platform-specific code effectively for common patterns. Platform-specific edge cases, OS version compatibility, and native API nuances require human knowledge."
 
     - id: cross_platform
@@ -266,7 +269,7 @@ role:
           cases) and making investment decisions that balance confidence
           against developer velocity.
       ai_impact:
-        rating: 0.6
+        rating: 0.65
         detail: "AI generates unit and basic UI tests well. Device-specific test scenarios, visual regression analysis, and flaky test debugging on real devices remain human tasks."
 
     - id: app_distribution

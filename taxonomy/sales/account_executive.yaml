@@ -26,7 +26,10 @@ role:
       committees, and exercising judgment in high-stakes negotiations--remains
       fundamentally human. AEs who leverage AI for preparation and follow-up
       will close more efficiently, but the interpersonal craft of selling
-      resists full automation.
+      resists full automation. Agentic AI can now manage multi-step deal
+      support workflows autonomously, including research, follow-up
+      sequencing, and CRM updates, freeing AEs for higher-value
+      relationship work.
     automating:
       - "Prospect and account research aggregation"
       - "Call transcript summarization and action-item extraction"
@@ -34,6 +37,7 @@ role:
       - "Follow-up email drafting after meetings"
       - "Competitive battlecard generation from public sources"
       - "Pipeline report generation and formatting"
+      - "AI agent-managed lead scoring and CRM data enrichment"
     augmenting:
       - "Deal risk scoring and next-best-action recommendations"
       - "Personalized proposal and business case generation"
@@ -41,6 +45,7 @@ role:
       - "Stakeholder mapping and org chart research"
       - "Forecasting accuracy through pattern recognition"
       - "Objection response coaching in real time"
+      - "Agent-assisted deal progression with automated stakeholder follow-up sequencing"
     preserving:
       - "Building trust and rapport with economic buyers"
       - "Navigating multi-stakeholder political dynamics"
@@ -48,7 +53,7 @@ role:
       - "Executive-level storytelling and vision selling"
       - "Judgment calls on when to walk away from a deal"
       - "Mentoring junior sellers and shaping team culture"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "Gartner - Future of Sales 2025"
@@ -354,7 +359,7 @@ role:
           company's evolving sales methodology and reporting requirements
           at the board level.
       ai_impact:
-        rating: 0.7
+        rating: 0.75
         detail: >
           AI is rapidly automating CRM data entry, activity logging, and
           report generation. Tools that auto-capture meeting notes and

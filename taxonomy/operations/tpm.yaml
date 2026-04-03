@@ -30,6 +30,7 @@ role:
       - "Dependency graph visualization and conflict detection"
       - "Technical status report compilation from engineering tools"
       - "Meeting summarization and action-item tracking"
+      - "AI agent-automated cross-team dependency tracking and risk alerting"
     augmenting:
       - "Architecture review preparation and risk surface analysis"
       - "Incident timeline reconstruction and post-mortem drafting"
@@ -40,7 +41,7 @@ role:
       - "Judgment calls on launch readiness under uncertainty"
       - "Building engineering trust and credibility as a non-coding leader"
       - "Navigating organizational dynamics to unblock technical work"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "Dropbox Engineering Career Framework - TPM"

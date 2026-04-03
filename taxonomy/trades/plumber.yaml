@@ -1,0 +1,483 @@
+role:
+  id: plumber
+  function: trades
+  name: "Plumber"
+  also_known_as:
+    - "Pipefitter"
+    - "Plumbing Technician"
+    - "Journeyman Plumber"
+    - "Plumbing Contractor"
+  description: >
+    Installs, maintains, and repairs piping systems for water supply,
+    drainage, gas, and heating in residential, commercial, and industrial
+    buildings. Reads blueprints, cuts and joins pipes, installs fixtures,
+    diagnoses leaks and blockages, and ensures compliance with plumbing
+    codes. Works with increasingly complex systems including water
+    treatment, medical gas, and sustainable water management.
+  ai_impact:
+    level: "low"
+    summary: >
+      Plumbing is one of the most AI-resilient trades. The physical work
+      of cutting, fitting, and joining pipes in real buildings — often in
+      tight crawl spaces, behind walls, or underground — is fundamentally
+      impossible to automate. Every building presents unique conditions
+      that require on-site judgment, spatial reasoning, and manual
+      dexterity. AI is beginning to augment peripheral tasks like
+      estimating, code lookup, and leak detection analytics, but these
+      enhancements make plumbers more productive rather than replaceable.
+      Strong demand driven by aging infrastructure, water conservation
+      requirements, and new construction ensures plumbing remains a
+      highly secure career path.
+    automating:
+      - "Material quantity takeoffs from digital plans"
+      - "Standard permit application preparation"
+      - "Basic pipe sizing calculations for simple systems"
+      - "Parts lookup and supplier price comparison"
+      - "Appointment scheduling and route optimization"
+    augmenting:
+      - "Camera-based pipe inspection with AI-assisted defect identification"
+      - "Plumbing code lookup and plan review assistance"
+      - "Job cost estimation and bid preparation"
+      - "Water flow modeling and system design calculations"
+      - "Predictive maintenance scheduling based on system age and usage"
+      - "Customer communication templates and proposal generation"
+    preserving:
+      - "Physical pipe cutting, fitting, soldering, and joining"
+      - "On-site problem-solving in unpredictable building conditions"
+      - "Leak detection and repair requiring hands-on investigation"
+      - "Fixture installation and connection in varied spaces"
+      - "Code compliance judgment for complex or unusual installations"
+      - "Apprentice training and hands-on skill transfer"
+    last_reviewed: "2026-04"
+    confidence: medium
+    sources:
+      - name: "O*NET - Plumbers, Pipefitters, and Steamfitters"
+        url: "https://www.onetonline.org/link/summary/47-2152.00"
+      - name: "Bureau of Labor Statistics - Plumbers, Pipefitters, and Steamfitters"
+        url: "https://www.bls.gov/ooh/construction-and-extraction/plumbers-pipefitters-and-steamfitters.htm"
+      - name: "McKinsey - The Economic Potential of Generative AI"
+        url: "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier"
+  levels:
+    - id: apprentice
+      name: "Apprentice Plumber"
+      years_experience: "0-4"
+      summary: >
+        Works under the supervision of a journeyman or master plumber,
+        learning the trade through formal instruction and hands-on
+        experience. Assists with installations and repairs, learns to
+        read blueprints, develops proficiency with tools and materials,
+        and builds foundational knowledge of plumbing codes. Progresses
+        through increasingly responsible tasks as skills develop.
+    - id: journeyman
+      name: "Journeyman Plumber"
+      years_experience: "4-8"
+      summary: >
+        Licensed plumber who performs the full range of plumbing work
+        independently. Plans and executes installations from blueprints,
+        diagnoses and repairs problems, ensures code compliance, and
+        supervises apprentices. Handles residential, commercial, and
+        light industrial plumbing with confidence and efficiency.
+    - id: master
+      name: "Master Plumber"
+      years_experience: "8-15"
+      summary: >
+        Holds a master plumber license demonstrating advanced expertise
+        in system design, code knowledge, and practical skill. Designs
+        plumbing systems, pulls permits, manages complex projects, and
+        serves as the technical authority. Specializes in areas such as
+        medical gas, industrial process piping, or fire protection.
+    - id: contractor
+      name: "Plumbing Contractor"
+      years_experience: "15+"
+      summary: >
+        Owns or operates a plumbing contracting business, combining
+        master-level technical expertise with business management.
+        Oversees estimating, bidding, project execution, crew management,
+        and customer relationships. Builds a profitable business while
+        maintaining the highest standards of quality and code compliance.
+  skills:
+    - id: pipe_installation
+      name: "Pipe Installation & Joining"
+      category: technical
+      description: >
+        Cutting, fitting, soldering, brazing, threading, and joining pipe
+        systems using copper, PEX, PVC, cast iron, steel, and other
+        materials appropriate to the application, pressure, and code
+        requirements.
+      proficiency:
+        apprentice: >
+          Learns to cut and deburr pipe, make basic PVC solvent-weld joints,
+          and crimp PEX connections under supervision. Develops tool
+          proficiency and learns which materials are used for different
+          applications.
+        journeyman: >
+          Independently cuts, fits, and joins all common pipe materials
+          including copper soldering and brazing, PEX crimping, PVC
+          cementing, and steel threading. Produces leak-free joints
+          consistently and works efficiently in tight spaces.
+        master: >
+          Handles specialized joining techniques including medical gas
+          brazing, high-pressure steam piping, and process piping for
+          industrial applications. Sets quality standards for joint
+          integrity and mentors others in advanced techniques.
+        contractor: >
+          Evaluates and standardizes material and joining method selections
+          across the company for consistency and efficiency. Stays current
+          with new piping materials and joining technologies. Ensures crews
+          are trained and equipped for all required joining methods.
+      ai_impact:
+        rating: 0.05
+        detail: >
+          Physical pipe installation is almost completely immune to AI
+          automation. Cutting, fitting, and joining pipes in real building
+          conditions requires human dexterity, spatial reasoning, and
+          hands-on skill that no AI or robotic system can currently replicate.
+
+    - id: blueprint_reading
+      name: "Plumbing Blueprint Reading"
+      category: technical
+      description: >
+        Interpreting plumbing drawings, riser diagrams, isometric views,
+        and specifications to understand system layouts, pipe sizes,
+        fixture locations, and material requirements before and during
+        construction.
+      proficiency:
+        apprentice: >
+          Reads simple plumbing floor plans and identifies basic symbols
+          for fixtures, pipes, and valves. Follows along with journeymen
+          to understand how drawings translate to installed systems.
+        journeyman: >
+          Reads and interprets full commercial plumbing drawings including
+          riser diagrams, isometric views, and fixture schedules.
+          Identifies discrepancies between plans and field conditions and
+          communicates issues to the project lead.
+        master: >
+          Reviews complex plumbing designs for constructability, code
+          compliance, and coordination with other trades. Marks up drawings
+          with field changes and produces accurate as-built documentation.
+          Creates isometric sketches for custom fabrication.
+        contractor: >
+          Reviews architectural and engineering drawings for bidding
+          accuracy, scoping the complete plumbing work including items
+          not explicitly shown. Coordinates with engineers on design-build
+          projects and value engineering opportunities.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can assist with digitizing plans, extracting quantities, and
+          cross-referencing specifications. However, interpreting how
+          drawings translate to real-world installation in existing
+          buildings with hidden conditions requires experienced trade
+          knowledge.
+
+    - id: code_compliance
+      name: "Plumbing Code Compliance"
+      category: regulatory
+      description: >
+        Knowledge of the Uniform Plumbing Code (UPC) or International
+        Plumbing Code (IPC), local amendments, and jurisdictional
+        requirements. Includes fixture unit calculations, venting
+        requirements, permit processes, and inspection preparation.
+      proficiency:
+        apprentice: >
+          Learns basic plumbing code requirements for pipe sizing, trap
+          sizing, venting, and fixture spacing. Understands why code
+          compliance is critical for health and safety.
+        journeyman: >
+          Applies plumbing code requirements confidently for residential
+          and commercial work. Calculates fixture units, sizes drain and
+          vent piping, determines trap arm lengths, and ensures proper
+          clearances. Prepares work to pass inspection consistently.
+        master: >
+          Has comprehensive knowledge of the plumbing code including
+          complex provisions for healthcare facilities, industrial
+          applications, and alternative engineered designs. Interprets
+          ambiguous code sections and applies for variances when justified.
+        contractor: >
+          Stays current with code cycle changes, local amendments, and
+          emerging requirements. Maintains relationships with inspectors
+          and code officials. Ensures company-wide code compliance through
+          training and quality assurance processes.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI tools can quickly search code sections and perform basic
+          fixture unit calculations. But interpreting code intent for
+          unusual installations, understanding local amendment nuances,
+          and knowing how inspectors apply requirements in practice
+          requires experienced human judgment.
+
+    - id: leak_diagnosis
+      name: "Leak Diagnosis & Repair"
+      category: analytical
+      description: >
+        Locating and repairing leaks in supply, drain, and gas piping
+        using inspection cameras, pressure tests, acoustic detection,
+        tracer gas, visual inspection, and experienced reasoning about
+        building construction and piping behavior.
+      proficiency:
+        apprentice: >
+          Assists with leak detection by helping with pressure tests,
+          holding cameras, and observing experienced plumbers' diagnostic
+          processes. Learns to recognize common leak indicators like
+          water stains, mold, and unusual sounds.
+        journeyman: >
+          Locates leaks independently using a combination of pressure
+          testing, camera inspection, visual assessment, and knowledge
+          of common failure points. Repairs leaks using appropriate methods
+          and materials. Documents findings for customer communication.
+        master: >
+          Handles the most challenging leak scenarios including slab
+          leaks, concealed gas leaks, and intermittent failures in
+          complex systems. Uses advanced diagnostic equipment and
+          techniques. Determines root causes and recommends system
+          corrections beyond simple repair.
+        contractor: >
+          Manages leak detection service operations, ensuring technicians
+          have proper equipment and training. Handles escalated cases
+          and insurance-related documentation. Uses service data to
+          identify patterns and recommend preventive solutions to clients.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI-assisted camera systems can help identify pipe defects and
+          blockages, and acoustic sensors can narrow leak locations.
+          However, the hands-on investigation, interpretive judgment in
+          complex building conditions, and physical repair work remain
+          firmly human activities.
+
+    - id: fixture_installation
+      name: "Fixture Installation"
+      category: technical
+      description: >
+        Installing plumbing fixtures including sinks, toilets, bathtubs,
+        showers, water heaters, dishwashers, and other water-using
+        appliances with proper connections, sealing, and code compliance.
+      proficiency:
+        apprentice: >
+          Assists with fixture placement and learns to make basic supply
+          and drain connections. Practices setting toilets, connecting
+          faucets, and mounting fixtures under supervision. Learns proper
+          sealing techniques.
+        journeyman: >
+          Installs all common residential and commercial fixtures
+          independently, including water heaters, garbage disposals, and
+          commercial kitchen equipment. Makes accurate rough-in
+          measurements, ensures proper venting, and produces leak-free
+          connections with professional appearance.
+        master: >
+          Handles complex fixture installations including commercial
+          restroom banks, specialty medical fixtures, and industrial
+          equipment connections. Coordinates fixture placement with
+          accessibility requirements, aesthetic considerations, and
+          optimal serviceability.
+        contractor: >
+          Selects fixture product lines for company standardization,
+          negotiates supplier relationships, and trains crews on new
+          fixture types and installation methods. Advises clients on
+          fixture selection based on durability, efficiency, and
+          lifecycle cost.
+      ai_impact:
+        rating: 0.05
+        detail: >
+          Fixture installation is entirely hands-on work requiring
+          physical dexterity in varied and often awkward spaces. AI has
+          virtually no path to automating the physical act of setting
+          fixtures, making connections, and ensuring watertight results.
+
+    - id: drainage_systems
+      name: "Drainage & Vent Systems"
+      category: technical
+      description: >
+        Designing and installing drain, waste, and vent (DWV) systems
+        that properly convey wastewater and sewage while maintaining
+        trap seals through adequate venting, including sizing, slope
+        calculations, and material selection.
+      proficiency:
+        apprentice: >
+          Learns DWV system components, proper pipe slopes, and basic
+          venting principles. Assists with installing drain lines and
+          vent stacks under supervision. Understands the importance of
+          trap seals and proper drainage flow.
+        journeyman: >
+          Designs and installs complete DWV systems for residential and
+          light commercial projects. Calculates proper pipe sizes, slopes,
+          and vent configurations. Installs cleanouts at required intervals
+          and ensures code-compliant connections.
+        master: >
+          Designs complex DWV systems for multi-story commercial buildings
+          and institutional facilities. Handles engineered venting systems,
+          sump and ejector systems, and grease interceptor installations.
+          Reviews designs for optimal performance and code compliance.
+        contractor: >
+          Oversees DWV installation quality across projects, ensuring
+          consistent slope, proper venting, and correct material usage.
+          Advises clients on system upgrades, root intrusion prevention,
+          and long-term maintenance strategies for aging drainage
+          infrastructure.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          AI can assist with DWV system sizing calculations and code
+          requirement lookups. However, the physical installation in
+          real building conditions — maintaining precise slopes, fitting
+          through framing, and coordinating with other trades — requires
+          hands-on skill and spatial judgment.
+
+    - id: water_treatment
+      name: "Water Treatment Systems"
+      category: technical
+      description: >
+        Installing and servicing water filtration, softening, purification,
+        and reclamation systems for residential, commercial, and industrial
+        applications, including understanding water chemistry basics and
+        treatment technology selection.
+      proficiency:
+        apprentice: >
+          Assists with water treatment equipment installation including
+          piping connections and electrical hookups. Learns basic water
+          quality concepts and the purpose of different treatment
+          technologies.
+        journeyman: >
+          Installs common water treatment systems including softeners,
+          whole-house filters, reverse osmosis systems, and UV
+          disinfection units. Performs basic water testing and recommends
+          appropriate treatment solutions for common water quality issues.
+        master: >
+          Designs water treatment solutions for complex applications
+          including commercial buildings, restaurants, and light industrial
+          facilities. Specifies equipment based on water analysis data,
+          flow requirements, and regulatory standards. Commissions and
+          validates system performance.
+        contractor: >
+          Develops water treatment as a business line, partnering with
+          equipment manufacturers and offering ongoing service contracts.
+          Advises clients on water quality issues, regulatory compliance,
+          and sustainable water management strategies including rainwater
+          harvesting and greywater reuse.
+      ai_impact:
+        rating: 0.15
+        detail: >
+          AI can assist with water quality analysis interpretation and
+          treatment system selection based on known parameters. However,
+          the physical installation, plumbing connections, and on-site
+          commissioning are manual work, and understanding site-specific
+          water chemistry requires experienced judgment.
+
+    - id: safety_practices
+      name: "Plumbing Safety Practices"
+      category: regulatory
+      description: >
+        Safe work practices specific to plumbing including confined space
+        entry, trenching and excavation safety, handling of hazardous
+        materials like lead and asbestos, propane and gas safety, and
+        OSHA compliance for construction environments.
+      proficiency:
+        apprentice: >
+          Learns and follows basic safety procedures including PPE
+          requirements, safe tool handling, and awareness of plumbing-
+          specific hazards like hot surfaces, gas leaks, and biological
+          contamination. Asks questions before entering unfamiliar or
+          potentially hazardous situations.
+        journeyman: >
+          Follows all safety protocols independently and consistently.
+          Recognizes confined space and excavation hazards, handles
+          gas piping safely, and manages exposure to sewage and biological
+          hazards with proper protection. Maintains a safe work area.
+        master: >
+          Develops safety plans for complex projects involving confined
+          spaces, deep excavations, or hazardous materials. Trains crews
+          on safe work practices and investigates near-misses and incidents.
+          Ensures compliance with OSHA regulations and company safety
+          policies.
+        contractor: >
+          Establishes company-wide safety programs, maintains OSHA
+          compliance records, and manages workers' compensation and
+          insurance requirements. Creates a safety-first culture through
+          training, accountability, and personal example. Tracks and
+          analyzes safety metrics to drive continuous improvement.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          AI can help with safety documentation, training content, and
+          incident pattern analysis. But the physical practice of safe
+          work — recognizing hazards, using PPE, and making real-time
+          safety decisions on the job site — is entirely a human
+          responsibility.
+
+    - id: estimating_bidding
+      name: "Estimating & Bidding"
+      category: analytical
+      description: >
+        Preparing accurate job cost estimates by performing material
+        takeoffs from plumbing drawings, calculating labor hours,
+        pricing materials, assessing project complexity, and preparing
+        competitive bids that win work while maintaining profitability.
+      proficiency:
+        apprentice: >
+          Assists with material counting and learn to identify plumbing
+          materials and fittings in catalogs. Observes the estimating
+          process and begins to understand how job costs are built up
+          from labor, materials, and overhead.
+        journeyman: >
+          Estimates straightforward residential and small commercial
+          plumbing jobs. Performs material takeoffs from blueprints,
+          estimates labor based on experience, and prices materials
+          from supplier lists. Understands basic markup and overhead
+          concepts.
+        master: >
+          Estimates complex commercial and industrial plumbing projects
+          with consistent accuracy. Accounts for site conditions, phasing,
+          coordination with other trades, and project-specific risk
+          factors. Reviews and validates estimates prepared by others.
+        contractor: >
+          Manages the full estimating and bidding operation. Develops
+          competitive pricing strategies based on market conditions,
+          company capacity, and strategic goals. Analyzes win rates and
+          profitability by project type to refine bidding approach.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI accelerates material takeoffs from digital plans, price
+          comparisons, and historical cost analysis. Estimating is the
+          area where AI has the greatest impact on plumbing work. However,
+          assessing site-specific complexity, labor productivity, and
+          competitive positioning requires experienced trade judgment.
+
+    - id: customer_service
+      name: "Customer Service"
+      category: interpersonal
+      description: >
+        Communicating effectively with homeowners, property managers,
+        general contractors, and other clients to explain plumbing issues,
+        present repair options, manage expectations, and build lasting
+        relationships that drive repeat business and referrals.
+      proficiency:
+        apprentice: >
+          Maintains a professional and courteous demeanor on job sites.
+          Learns to communicate respectfully with customers and defers
+          technical questions to the journeyman or master plumber.
+        journeyman: >
+          Explains plumbing problems and repair options clearly to
+          customers in non-technical language. Provides honest
+          recommendations, manages expectations about costs and timelines,
+          and handles routine customer interactions with professionalism.
+        master: >
+          Manages complex customer situations including emergency calls,
+          insurance claims, and major system replacement discussions.
+          Builds long-term client relationships through expertise,
+          honesty, and reliable follow-through. Generates referral
+          business through consistent quality service.
+        contractor: >
+          Develops the company's customer service standards and training.
+          Manages online reputation, reviews, and customer feedback
+          systems. Builds strategic relationships with property management
+          companies, general contractors, and commercial facility managers.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          AI can generate proposals, manage scheduling communications,
+          and maintain CRM records. But the in-person trust building,
+          on-site diagnostic explanations, and relationship management
+          that drive plumbing service business are inherently human
+          interactions.

@@ -32,7 +32,9 @@ role:
       qualitative factors that resist algorithmic evaluation. Auditors
       who leverage AI for data-intensive procedures while focusing their
       human expertise on judgment, investigation, and communication will
-      deliver significantly more value.
+      deliver significantly more value. Agentic AI can now execute
+      multi-step audit procedures autonomously, including data extraction,
+      population testing, and preliminary finding documentation.
     automating:
       - "Data extraction and population analysis from financial systems"
       - "Three-way matching and transaction testing at full population"
@@ -40,6 +42,7 @@ role:
       - "Compliance checklist execution against known regulatory requirements"
       - "Recalculation and reperformance of mathematical computations"
       - "Trend analysis and outlier identification across large datasets"
+      - "AI agent-automated end-to-end audit evidence gathering and workpaper assembly"
     augmenting:
       - "Risk assessment and audit scoping with data-driven insights"
       - "Anomaly investigation with AI-generated hypotheses"
@@ -47,6 +50,7 @@ role:
       - "Control effectiveness evaluation across process populations"
       - "Continuous monitoring and real-time risk alerting"
       - "Benchmarking organizational practices against industry standards"
+      - "Agent-assisted risk-based audit scoping with AI-generated focus area recommendations"
     preserving:
       - "Professional skepticism and independent judgment"
       - "Investigative interviewing and evidence corroboration"
@@ -54,7 +58,7 @@ role:
       - "Ethical reasoning about independence and objectivity"
       - "Fraud risk assessment requiring behavioral observation"
       - "Contextual evaluation of organizational culture and tone at the top"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "O*NET - Accountants and Auditors"

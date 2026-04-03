@@ -27,26 +27,30 @@ role:
       that serve real human needs remains deeply judgment-driven. Senior
       frontend engineers are shifting toward architecture, design-system
       governance, and performance strategy, using AI as a productivity
-      multiplier rather than a replacement.
+      multiplier rather than a replacement. Agentic AI can now handle
+      multi-file component refactoring and framework migration tasks with
+      increasing reliability.
     automating:
       - "Generating boilerplate component markup and styling from design mockups"
       - "Writing unit and snapshot tests for presentational components"
       - "Converting Figma frames to initial component code via design-to-code tools"
       - "Scaffolding CRUD forms, data tables, and standard UI patterns"
       - "Auto-fixing common accessibility lint violations"
+      - "AI agent-driven cross-file component refactoring and framework migrations"
     augmenting:
       - "Debugging complex cross-browser rendering and layout issues"
       - "Refactoring large component trees and migrating between frameworks"
       - "Writing integration and end-to-end tests for stateful user flows"
       - "Optimizing bundle size, code splitting, and Core Web Vitals"
       - "Reviewing pull requests for performance regressions and accessibility gaps"
+      - "Agent-assisted codebase exploration and dependency impact analysis"
     preserving:
       - "Defining frontend architecture and module boundaries for large applications"
       - "Making nuanced UX trade-offs that balance business goals, user needs, and technical constraints"
       - "Establishing and evolving design-system APIs and component contracts"
       - "Mentoring junior engineers and shaping team coding standards"
       - "Navigating ambiguous product requirements and driving technical strategy"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "GitHub Copilot Research on Developer Productivity"
@@ -142,7 +146,7 @@ role:
           architecture or native CSS nesting across the entire product
           surface.
       ai_impact:
-        rating: 0.7
+        rating: 0.75
         detail: >
           AI tools reliably generate correct HTML structure and CSS for
           standard layouts and can convert designs to markup. However,
@@ -185,7 +189,7 @@ role:
           internal or external TypeScript tooling and shapes the
           organization's approach to type safety as a quality lever.
       ai_impact:
-        rating: 0.5
+        rating: 0.55
         detail: >
           AI excels at generating syntactically correct JavaScript and
           TypeScript for well-defined problems, but struggles with complex
@@ -408,7 +412,7 @@ role:
           contract testing for micro-frontends), and ensures testing
           practices evolve with the architecture.
       ai_impact:
-        rating: 0.6
+        rating: 0.65
         detail: >
           AI is increasingly effective at generating unit and component
           tests from existing code, especially for well-typed functions

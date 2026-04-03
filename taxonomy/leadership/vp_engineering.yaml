@@ -27,6 +27,7 @@ role:
       - Budget variance tracking and financial forecasting
       - Meeting preparation and briefing document synthesis
       - Competitive technology landscape monitoring
+      - AI agent-driven organizational analytics and executive briefing preparation
     augmenting:
       - Organizational health analysis with AI-powered engagement and retention signals
       - Workforce planning models informed by market data and attrition predictions
@@ -39,7 +40,7 @@ role:
       - Organizational culture shaping and values reinforcement
       - High-stakes people decisions including executive hiring and terminations
       - Navigating company politics and building cross-functional coalitions
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "Gartner - Future of Work for Engineering Leaders"

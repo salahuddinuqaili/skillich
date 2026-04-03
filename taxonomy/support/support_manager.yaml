@@ -27,7 +27,10 @@ role:
       coaching, strategic planning, and organizational development. However,
       the fundamentally human aspects of leadership including motivation,
       judgment on personnel decisions, cultural development, and navigating
-      organizational politics remain firmly in the human domain.
+      organizational politics remain firmly in the human domain. Agentic
+      AI can now resolve increasingly complex multi-step customer issues
+      end-to-end, requiring managers to rethink team sizing, skill
+      profiles, and the balance between human and AI-handled volume.
     automating:
       - "Routine performance report generation and distribution"
       - "Basic quality scoring of agent interactions"
@@ -35,6 +38,7 @@ role:
       - "SLA compliance monitoring and alerting"
       - "Survey result aggregation and trend summaries"
       - "Standard meeting agenda preparation from metrics dashboards"
+      - "AI agents resolving multi-step customer issues end-to-end without agent involvement"
     augmenting:
       - "Coaching recommendations based on agent performance patterns"
       - "Predictive workforce planning and capacity modeling"
@@ -42,6 +46,7 @@ role:
       - "Identification of training gaps from quality evaluation patterns"
       - "Customer satisfaction driver analysis and prioritization"
       - "Benchmarking against industry standards and peer organizations"
+      - "Agent-assisted workforce planning with AI-driven volume forecasting and staffing recommendations"
     preserving:
       - "Team motivation, morale, and culture development"
       - "Judgment on hiring, promotion, and performance management decisions"
@@ -49,7 +54,7 @@ role:
       - "Coaching agents through personal and professional growth challenges"
       - "Strategic decision-making on support model and vendor relationships"
       - "Managing sensitive situations involving agent performance or conduct"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "ICMI Contact Center Management Practices"

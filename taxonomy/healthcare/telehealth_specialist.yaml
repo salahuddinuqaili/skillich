@@ -35,6 +35,7 @@ role:
       - "Standard visit documentation generation from encounter data"
       - "Appointment scheduling optimization and no-show prediction"
       - "Basic patient communication and appointment reminders"
+      - "AI agent-managed patient intake workflows and pre-visit data collection"
     augmenting:
       - "Clinical protocol design for virtual care pathways"
       - "Remote monitoring data interpretation and trend analysis"
@@ -48,7 +49,7 @@ role:
       - "Stakeholder change management for provider adoption"
       - "Health equity strategy for digital access and literacy"
       - "Program governance and organizational alignment"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "ATA - American Telemedicine Association"

@@ -28,6 +28,9 @@ role:
       and judgment. Sales engineers who leverage AI for preparation and
       documentation will handle more deals with higher quality, but the
       consultative and architectural dimensions of the role resist automation.
+      Agentic AI can now orchestrate multi-step technical preparation
+      workflows including RFP assembly, competitive analysis, and demo
+      environment configuration autonomously.
     automating:
       - "RFP/RFI response drafting from knowledge base"
       - "Demo environment provisioning and reset"
@@ -35,6 +38,7 @@ role:
       - "Feature comparison matrix creation"
       - "Meeting notes and action item extraction"
       - "Standard integration documentation assembly"
+      - "AI agent-automated RFP response assembly from knowledge bases"
     augmenting:
       - "Solution architecture design for common patterns"
       - "Competitive technical analysis and differentiation"
@@ -42,6 +46,7 @@ role:
       - "Technical objection response preparation"
       - "Customer environment analysis and compatibility assessment"
       - "Post-demo follow-up content creation"
+      - "Agent-assisted solution design with automated integration compatibility assessment"
     preserving:
       - "Live technical discovery and consultative problem-solving"
       - "Custom solution design for complex enterprise architectures"
@@ -49,7 +54,7 @@ role:
       - "Navigating ambiguous requirements with incomplete information"
       - "Executive-level technical storytelling"
       - "Cross-functional influence on product roadmap priorities"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "PreSales Collective - State of PreSales Report"
@@ -384,7 +389,7 @@ role:
           certifications that improve RFP competitiveness across the
           most common enterprise evaluation criteria.
       ai_impact:
-        rating: 0.7
+        rating: 0.75
         detail: >
           RFP response is one of the most AI-augmented SE activities. AI
           can draft responses from knowledge bases, maintain response

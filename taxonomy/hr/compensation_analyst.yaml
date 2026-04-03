@@ -28,7 +28,9 @@ role:
       communicating sensitive changes to employees, and exercising judgment
       on edge cases where data conflicts with organizational values remain
       deeply human. Analysts who combine AI-powered analytics with strategic
-      advisory skills will be most valuable.
+      advisory skills will be most valuable. Agentic AI can now execute
+      multi-step compensation workflows autonomously, including market
+      data aggregation, pay equity screening, and scenario modeling.
     automating:
       - "Market data aggregation and survey participation"
       - "Standard pay range calculations and midpoint adjustments"
@@ -36,6 +38,7 @@ role:
       - "Routine pay equity statistical analyses"
       - "Job matching to benchmark surveys"
       - "Compensation report generation and data visualization"
+      - "AI agent-automated market data aggregation and pay range recalculation workflows"
     augmenting:
       - "Complex pay equity analysis with intersectional factors"
       - "Total rewards scenario modeling for organizational changes"
@@ -43,6 +46,7 @@ role:
       - "Benefits plan design optimization and cost modeling"
       - "Geographic pay differential analysis for remote work"
       - "Attrition prediction linked to compensation competitiveness"
+      - "Agent-assisted end-to-end merit cycle modeling with automated equity analysis and budget allocation"
     preserving:
       - "Compensation philosophy design aligned with business strategy"
       - "Sensitive communication of pay decisions to employees and managers"
@@ -50,7 +54,7 @@ role:
       - "Judgment on edge cases in job evaluation and leveling"
       - "Vendor negotiation for benefits and compensation survey providers"
       - "Ethical reasoning about pay transparency and fairness"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "O*NET - Compensation and Benefits Managers"
@@ -194,7 +198,7 @@ role:
           boards, evaluates real-time compensation data platforms, and ensures
           benchmarking practices support pay transparency and equity goals.
       ai_impact:
-        rating: 0.7
+        rating: 0.75
         detail: >
           AI excels at aggregating survey data, identifying comparable roles
           across taxonomies, and applying statistical adjustments. However,

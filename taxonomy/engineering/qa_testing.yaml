@@ -19,25 +19,29 @@ role:
       automates visual regression testing, and identifies flaky tests. Routine manual
       testing is rapidly being automated. The role is evolving from test execution
       toward test strategy, quality architecture, and exploratory testing that
-      requires human creativity and domain knowledge.
+      requires human creativity and domain knowledge. Agentic AI can now
+      autonomously generate comprehensive test suites from codebases and
+      specifications, further shifting the role toward quality strategy.
     automating:
       - "Test case generation from specifications"
       - "Regression test maintenance and self-healing locators"
       - "Visual regression testing"
       - "API test generation from OpenAPI specs"
       - "Test data generation"
+      - "AI agent-driven end-to-end test suite generation from codebase analysis"
     augmenting:
       - "Exploratory testing with AI-suggested scenarios"
       - "Performance test analysis and bottleneck identification"
       - "Test coverage gap analysis"
       - "Flaky test root cause analysis"
+      - "Agent-assisted test coverage analysis and gap identification"
     preserving:
       - "Test strategy and quality architecture design"
       - "Usability and user experience evaluation"
       - "Edge case identification from domain expertise"
       - "Cross-functional quality advocacy"
       - "Risk-based testing prioritization"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "Master Software Testing QA Roadmap 2025"
@@ -130,7 +134,7 @@ role:
           for test infrastructure and drives the industry on sustainable
           automation architecture at scale.
       ai_impact:
-        rating: 0.65
+        rating: 0.7
         detail: "AI generates test code and maintains locators effectively. Framework architecture, reliability engineering for tests, and tool selection require human expertise."
 
     - id: manual_exploratory
@@ -230,7 +234,7 @@ role:
           API testing infrastructure and drives industry practices on contract
           testing at microservice scale.
       ai_impact:
-        rating: 0.7
+        rating: 0.75
         detail: "AI generates API tests from OpenAPI/GraphQL schemas very effectively. Custom business logic validation, security testing, and contract evolution strategy are more human-dependent."
 
     - id: ci_cd_quality

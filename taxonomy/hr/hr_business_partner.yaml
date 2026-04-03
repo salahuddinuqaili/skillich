@@ -28,6 +28,9 @@ role:
       which require emotional intelligence and contextual judgment that AI
       cannot replicate. HRBPs who leverage AI for data-driven insights while
       focusing on strategic partnership will become more impactful.
+      Agentic AI can now handle multi-step HR operational workflows
+      autonomously, including employee inquiry resolution, onboarding
+      task orchestration, and workforce data analysis.
     automating:
       - "Routine employee policy inquiries and FAQ responses"
       - "Standard HR report generation and data compilation"
@@ -35,6 +38,7 @@ role:
       - "Calendar scheduling for performance review cycles"
       - "Basic workforce demographic and headcount reporting"
       - "Exit interview summarization and theme extraction"
+      - "AI agent-automated employee inquiry resolution and policy lookup workflows"
     augmenting:
       - "Attrition risk prediction and early warning identification"
       - "Engagement survey analysis and action plan recommendations"
@@ -42,6 +46,7 @@ role:
       - "Performance review calibration with data-driven comparisons"
       - "Compensation equity analysis within supported business units"
       - "Change impact assessment and stakeholder mapping"
+      - "Agent-assisted workforce planning with automated scenario modeling and gap identification"
     preserving:
       - "Trusted advisory relationships with business leaders"
       - "Sensitive employee relations investigations and resolution"
@@ -49,7 +54,7 @@ role:
       - "Navigating organizational politics and cultural dynamics"
       - "Ethical judgment in complex termination and restructuring decisions"
       - "Building psychological safety and team health within organizations"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "O*NET - Human Resources Managers"

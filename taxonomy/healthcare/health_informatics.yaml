@@ -33,6 +33,7 @@ role:
       - "Documentation of system build specifications and change logs"
       - "Basic help desk triage for known EHR issues"
       - "Template generation for standard clinical documentation"
+      - "AI agent-driven interoperability testing and data mapping validation"
     augmenting:
       - "Clinical workflow analysis and optimization recommendations"
       - "Clinical decision support rule design and testing"
@@ -45,7 +46,7 @@ role:
       - "Ethical and safety evaluation of clinical decision support"
       - "Organizational governance of health information systems"
       - "Cross-departmental workflow redesign and process improvement"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "AMIA - Clinical Informatics Competencies"

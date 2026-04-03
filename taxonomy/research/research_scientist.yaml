@@ -1,0 +1,615 @@
+role:
+  id: research_scientist
+  function: research
+  name: "Research Scientist"
+  also_known_as:
+    - "Scientist"
+    - "Principal Investigator"
+    - "Research Fellow"
+    - "Senior Researcher"
+  description: >
+    Designs and conducts original research to advance scientific knowledge,
+    from hypothesis formulation through experimental design, data collection,
+    analysis, and publication. Works across disciplines — biology, chemistry,
+    physics, computer science, social sciences — combining deep domain
+    expertise with rigorous methodology.
+  ai_impact:
+    level: "moderate"
+    summary: >
+      AI is transforming research science by dramatically accelerating literature
+      review, data analysis, and pattern recognition across large datasets. Tools
+      for automated experiment logging, statistical analysis, and even hypothesis
+      suggestion are becoming commonplace. However, the core of scientific work —
+      formulating truly novel hypotheses, designing experiments that account for
+      real-world constraints, exercising scientific judgment about what results
+      mean, and navigating the social dimensions of peer review and collaboration
+      — remains deeply human. Researchers who master AI tools will significantly
+      amplify their output while those who resist adoption risk falling behind in
+      productivity.
+    automating:
+      - "Systematic literature search and citation mapping"
+      - "Routine statistical analysis and data cleaning"
+      - "Generating first drafts of methods sections and summaries"
+      - "Formatting manuscripts and references for submission"
+      - "Anomaly detection in large experimental datasets"
+      - "Protocol optimization from historical experiment data"
+    augmenting:
+      - "Hypothesis refinement through AI-assisted pattern discovery"
+      - "Experimental design optimization and power analysis"
+      - "Complex multivariate data analysis and visualization"
+      - "Identifying relevant cross-disciplinary literature"
+      - "Accelerating peer review with AI-assisted quality checks"
+      - "Grant proposal drafting and budget modeling"
+    preserving:
+      - "Novel hypothesis generation from intuition and domain mastery"
+      - "Experimental design under real-world resource constraints"
+      - "Scientific judgment about result significance and meaning"
+      - "Mentoring students and junior researchers"
+      - "Navigating peer review and scholarly discourse"
+      - "Ethical reasoning about research implications and applications"
+    last_reviewed: "2026-04"
+    confidence: medium
+    sources:
+      - name: "O*NET - Natural Sciences Managers"
+        url: "https://www.onetonline.org/link/summary/11-9121.00"
+      - name: "Nature - AI in Science"
+        url: "https://www.nature.com/collections/ai-in-science"
+      - name: "Science - AI-Assisted Research"
+        url: "https://www.science.org/"
+  levels:
+    - id: postdoc
+      name: "Postdoctoral Researcher"
+      years_experience: "0-3"
+      summary: >
+        Conducts research under the mentorship of a principal investigator,
+        developing independent research skills and building a publication
+        record. Executes experiments, analyzes data, and contributes to
+        manuscripts while transitioning from student to independent researcher.
+    - id: junior_researcher
+      name: "Junior Research Scientist"
+      years_experience: "3-6"
+      summary: >
+        Leads defined research projects with increasing independence, from
+        study design through publication. Begins developing an independent
+        research agenda, writing grant proposals, and mentoring students.
+        Builds a reputation within their subfield through publications and
+        conference presentations.
+    - id: senior_researcher
+      name: "Senior Research Scientist"
+      years_experience: "6-10"
+      summary: >
+        Drives multiple research projects as primary investigator, securing
+        funding and managing research teams. Makes significant contributions
+        to their field through high-impact publications. Mentors junior
+        researchers and postdocs, and shapes the direction of their research
+        group.
+    - id: principal_investigator
+      name: "Principal Investigator"
+      years_experience: "10-15"
+      summary: >
+        Leads a research program with national or international recognition.
+        Sets strategic research direction, secures major grants, and manages
+        large teams. Influences their field through seminal contributions,
+        editorial roles, and invited keynotes. Builds institutional research
+        capacity and fosters the next generation of scientists.
+    - id: distinguished
+      name: "Distinguished Scientist"
+      years_experience: "15+"
+      summary: >
+        Recognized as a leading authority in their field with a transformative
+        body of work. Shapes entire research agendas across institutions,
+        advises funding agencies and policy makers, and attracts top talent
+        globally. Defines new paradigms and bridges disciplines to open novel
+        avenues of inquiry.
+  skills:
+    - id: hypothesis_formulation
+      name: "Hypothesis Formulation"
+      category: analytical
+      description: >
+        Identifying gaps in existing knowledge, synthesizing disparate
+        findings, and formulating testable hypotheses that advance
+        understanding. Requires creativity, deep domain knowledge, and the
+        ability to see connections across bodies of literature.
+      proficiency:
+        postdoc: >
+          Formulates focused hypotheses within a well-defined research area
+          under supervisor guidance. Identifies gaps in the immediate
+          literature and proposes incremental extensions to existing work.
+        junior_researcher: >
+          Develops independent hypotheses that address meaningful gaps in
+          the subfield. Connects findings across multiple studies to propose
+          novel research questions with clear experimental implications.
+        senior_researcher: >
+          Formulates hypotheses that open new lines of inquiry within the
+          field. Synthesizes across subdisciplines to identify non-obvious
+          connections and designs research programs around bold questions.
+        principal_investigator: >
+          Shapes the hypothesis landscape for an entire research group,
+          identifying paradigm-level questions that attract funding and
+          talent. Mentors others in developing their hypothesis-generation
+          capabilities.
+        distinguished: >
+          Identifies transformative research questions that redefine
+          subfields or create entirely new ones. Their hypotheses influence
+          the direction of national and international research agendas and
+          attract cross-disciplinary collaboration.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          AI can surface patterns in data and literature that suggest
+          hypotheses, but the creative leap of formulating truly novel,
+          testable questions that advance a field remains one of the most
+          human-dependent aspects of scientific research.
+
+    - id: experimental_design
+      name: "Experimental Design"
+      category: analytical
+      description: >
+        Designing rigorous experiments that test hypotheses while controlling
+        for confounding variables, ensuring statistical power, managing
+        practical constraints, and maintaining reproducibility across
+        different contexts and scales.
+      proficiency:
+        postdoc: >
+          Designs experiments within established protocols, selecting
+          appropriate controls and sample sizes. Follows best practices for
+          the discipline and seeks feedback on design choices from mentors.
+        junior_researcher: >
+          Designs multi-factor experiments independently, balancing
+          statistical power with practical constraints like budget and time.
+          Adapts standard methodologies to novel research questions.
+        senior_researcher: >
+          Designs complex experimental programs spanning multiple studies
+          with sophisticated controls and validation strategies. Innovates
+          on methodology to address questions that standard approaches
+          cannot answer.
+        principal_investigator: >
+          Sets experimental design standards for the research group,
+          introducing novel methodologies that push the boundaries of what
+          is testable. Reviews and improves designs across multiple projects
+          to ensure rigor and efficiency.
+        distinguished: >
+          Pioneers experimental approaches that become standards in the
+          field. Designs studies of national or international scope with
+          complex multi-site coordination and novel validation frameworks.
+      ai_impact:
+        rating: 0.2
+        detail: >
+          AI can optimize experimental parameters and suggest statistical
+          designs, but accounting for real-world constraints, domain-specific
+          pitfalls, and the practical realities of conducting experiments
+          requires deep human expertise and judgment.
+
+    - id: data_analysis
+      name: "Data Analysis & Interpretation"
+      category: analytical
+      description: >
+        Applying statistical methods, computational tools, and analytical
+        frameworks to extract meaning from experimental data. Encompasses
+        everything from basic descriptive statistics to advanced machine
+        learning, with emphasis on correct interpretation and honest
+        reporting of results.
+      proficiency:
+        postdoc: >
+          Applies standard statistical methods appropriate to the discipline
+          using established tools and software. Produces clear visualizations
+          and interprets results with guidance from experienced researchers.
+        junior_researcher: >
+          Selects and applies appropriate analytical methods for complex
+          datasets, including multivariate analysis and basic computational
+          approaches. Identifies potential confounds and addresses them in
+          the analysis plan.
+        senior_researcher: >
+          Employs advanced analytical techniques including computational
+          modeling, machine learning, and custom statistical methods. Designs
+          analysis pipelines that ensure reproducibility and critically
+          evaluates results for artifacts and biases.
+        principal_investigator: >
+          Oversees data analysis strategy across multiple projects, ensuring
+          methodological rigor and appropriate statistical practice. Introduces
+          novel analytical approaches to the group and reviews analyses for
+          correctness and completeness.
+        distinguished: >
+          Advances analytical methodology in the field through the development
+          or adaptation of novel techniques. Sets standards for data analysis
+          practice that influence the broader research community and ensure
+          scientific integrity.
+      ai_impact:
+        rating: 0.55
+        detail: >
+          AI significantly accelerates data analysis through automated
+          statistical testing, pattern recognition, and visualization
+          generation. However, choosing appropriate methods, interpreting
+          results in scientific context, and avoiding statistical pitfalls
+          still require trained human judgment.
+
+    - id: literature_review
+      name: "Literature Review & Synthesis"
+      category: analytical
+      description: >
+        Conducting comprehensive, systematic reviews of existing research
+        literature to identify the current state of knowledge, gaps, and
+        opportunities. Includes searching databases, evaluating study quality,
+        synthesizing findings across studies, and producing structured reviews
+        that guide future research.
+      proficiency:
+        postdoc: >
+          Conducts thorough literature searches using major databases and
+          synthesizes findings relevant to a specific research question.
+          Identifies key papers and understands citation networks within
+          the immediate subfield.
+        junior_researcher: >
+          Performs systematic reviews covering broader areas, critically
+          evaluating methodology and evidence quality across studies.
+          Identifies trends, contradictions, and gaps that inform research
+          direction.
+        senior_researcher: >
+          Synthesizes literature across related subfields to identify
+          cross-cutting themes and non-obvious connections. Produces
+          influential review articles that shape how the community
+          understands a topic.
+        principal_investigator: >
+          Maintains comprehensive awareness of the research landscape across
+          the entire field, identifying emerging trends and paradigm shifts
+          early. Guides the group's literature engagement strategy and sets
+          reading priorities.
+        distinguished: >
+          Provides authoritative synthesis of entire fields, identifying
+          the most consequential open questions and future directions.
+          Their reviews and perspectives shape funding priorities and
+          research agendas across the discipline.
+      ai_impact:
+        rating: 0.7
+        detail: >
+          AI dramatically accelerates literature search, citation analysis,
+          and summary generation. Tools can now process thousands of papers
+          and identify relevant findings quickly. However, critically
+          evaluating study quality, understanding methodological nuances,
+          and synthesizing knowledge into novel frameworks still require
+          deep domain expertise.
+
+    - id: scientific_writing
+      name: "Scientific Writing"
+      category: communication
+      description: >
+        Writing clear, precise, and compelling scientific manuscripts,
+        including journal articles, review papers, book chapters, and
+        technical reports. Requires mastery of disciplinary conventions,
+        logical argumentation, data presentation, and the ability to
+        communicate complex ideas to specialized audiences.
+      proficiency:
+        postdoc: >
+          Writes clear methods and results sections following journal
+          conventions. Contributes to manuscripts under the guidance of
+          senior authors and responds to reviewer feedback with appropriate
+          revisions.
+        junior_researcher: >
+          Writes complete manuscripts as lead author, structuring
+          arguments logically and presenting data effectively. Navigates
+          the submission and revision process with increasing independence.
+        senior_researcher: >
+          Produces high-impact publications with compelling narratives
+          that frame contributions within the broader field. Writes
+          authoritative review articles and mentors others in developing
+          their scientific writing skills.
+        principal_investigator: >
+          Sets writing standards for the research group and ensures
+          consistent quality across all publications. Writes influential
+          perspective pieces and commentaries that shape discourse in
+          the field.
+        distinguished: >
+          Produces seminal publications that define subfields. Their
+          writing style and argumentation frameworks become models for
+          the discipline. Writes for broad audiences including policy
+          makers and the general public.
+      ai_impact:
+        rating: 0.45
+        detail: >
+          AI can generate drafts, improve grammar, and help structure
+          arguments, significantly speeding up the writing process.
+          However, crafting a compelling scientific narrative, ensuring
+          intellectual honesty, and writing with the precision required
+          for peer-reviewed publication still demand deep human expertise.
+
+    - id: peer_review
+      name: "Peer Review & Critical Evaluation"
+      category: analytical
+      description: >
+        Reviewing research manuscripts, proposals, and presentations with
+        constructive rigor. Evaluating methodological soundness, statistical
+        validity, novelty of contribution, and clarity of presentation
+        while providing actionable feedback that improves the work.
+      proficiency:
+        postdoc: >
+          Reviews manuscripts with guidance from mentors, identifying
+          basic methodological issues and assessing clarity of
+          presentation. Provides constructive feedback focused on
+          technical accuracy.
+        junior_researcher: >
+          Conducts independent peer reviews for journals, evaluating
+          experimental design, statistical analysis, and contribution
+          significance. Provides balanced reviews that are both rigorous
+          and constructive.
+        senior_researcher: >
+          Serves as a sought-after reviewer recognized for thorough,
+          fair evaluations. Reviews for top journals and grant panels,
+          identifying subtle methodological issues and providing
+          mentoring-quality feedback.
+        principal_investigator: >
+          Serves on editorial boards and grant review panels, setting
+          quality standards for the field. Evaluates work across
+          subfields and provides reviews that advance the reviewer's
+          and author's understanding alike.
+        distinguished: >
+          Shapes peer review standards and processes at the field level.
+          Serves as editor-in-chief or review panel chair, establishing
+          the criteria by which scientific contributions are evaluated
+          and published.
+      ai_impact:
+        rating: 0.3
+        detail: >
+          AI can check for statistical errors, identify potential
+          plagiarism, and flag methodological red flags, but assessing
+          the true novelty, significance, and methodological soundness
+          of research contributions requires deep domain expertise and
+          scholarly judgment.
+
+    - id: methodology
+      name: "Research Methodology"
+      category: domain
+      description: >
+        Mastery of the specific research methods, techniques, and
+        instruments used in the discipline, including quantitative and
+        qualitative approaches, specialized laboratory or field techniques,
+        and the ability to select and adapt methods to novel research
+        questions.
+      proficiency:
+        postdoc: >
+          Executes established methods with high technical proficiency.
+          Understands the assumptions and limitations of standard
+          approaches in the discipline and troubleshoots common issues.
+        junior_researcher: >
+          Adapts existing methodologies to new research questions and
+          develops competence in complementary techniques. Understands
+          when standard methods are insufficient and explores alternatives.
+        senior_researcher: >
+          Masters multiple methodological approaches and innovates on
+          technique to address questions at the frontier. Trains others
+          in advanced methods and publishes methodological contributions.
+        principal_investigator: >
+          Establishes the methodological toolkit for the research group,
+          driving adoption of cutting-edge techniques and ensuring
+          methodological rigor. Contributes to the development of new
+          methods that advance the field.
+        distinguished: >
+          Pioneers methodological innovations that become widely adopted
+          in the discipline. Their contributions to research methodology
+          have lasting impact on how science is conducted in their field
+          and beyond.
+      ai_impact:
+        rating: 0.25
+        detail: >
+          AI can optimize experimental parameters and automate routine
+          methodological steps, but selecting the right methodology for
+          a given question, adapting techniques to novel contexts, and
+          innovating on method require deep disciplinary expertise and
+          hands-on experience.
+
+    - id: grant_writing
+      name: "Grant Writing & Funding Acquisition"
+      category: communication
+      description: >
+        Writing competitive research proposals for funding agencies,
+        foundations, and industry sponsors. Requires articulating the
+        significance and innovation of proposed work, designing realistic
+        budgets and timelines, and persuasively arguing for the feasibility
+        and impact of the research program.
+      proficiency:
+        postdoc: >
+          Contributes sections to grant proposals and understands the
+          basic structure of funding applications. Assists with budget
+          preparation and literature review for proposals under PI
+          guidance.
+        junior_researcher: >
+          Writes small grant proposals independently, such as early-career
+          awards and seed funding applications. Articulates research
+          significance and designs feasible project plans within budget
+          constraints.
+        senior_researcher: >
+          Writes competitive proposals for major funding agencies as
+          principal investigator. Builds compelling narratives that connect
+          research to broader impact, designs multi-year research programs,
+          and manages the full proposal lifecycle.
+        principal_investigator: >
+          Maintains a portfolio of funded grants sustaining the research
+          group. Writes successful proposals for large-scale, multi-PI
+          grants and center-level funding. Mentors others in developing
+          their grant writing skills.
+        distinguished: >
+          Secures transformative funding that shapes institutional
+          research direction. Writes proposals for initiatives of national
+          or international scope. Serves on review panels and advises
+          funding agencies on program design and priorities.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can help draft proposal sections, check compliance with
+          funder requirements, and format budgets, but crafting a
+          persuasive research narrative, demonstrating true innovation,
+          and building the relationships that support competitive
+          proposals remain fundamentally human activities.
+
+    - id: mentoring
+      name: "Mentoring & Supervision"
+      category: interpersonal
+      description: >
+        Supervising and mentoring students, postdoctoral researchers, and
+        junior scientists through their professional development. Includes
+        guiding research projects, providing career advice, fostering
+        independence, and creating an inclusive and productive research
+        environment.
+      proficiency:
+        postdoc: >
+          Co-mentors undergraduate and master's students on specific
+          projects. Provides technical guidance and shares knowledge
+          about research practices and career paths in an informal
+          capacity.
+        junior_researcher: >
+          Supervises graduate students and technicians on defined
+          projects. Provides regular feedback on research progress,
+          writing, and presentation skills while developing their
+          own mentoring approach.
+        senior_researcher: >
+          Mentors a diverse group of researchers at multiple career
+          stages with individualized development plans. Creates a
+          supportive lab culture and actively addresses challenges
+          in mentee progress and wellbeing.
+        principal_investigator: >
+          Develops a mentoring philosophy that produces successful
+          independent researchers. Tracks long-term career outcomes
+          of mentees, builds networks that support their placement,
+          and fosters a culture of peer mentoring within the group.
+        distinguished: >
+          Recognized for exceptional mentoring with a track record of
+          producing leaders in the field. Shapes mentoring standards
+          and programs at the institutional and disciplinary level.
+          Their mentoring network spans generations of researchers.
+      ai_impact:
+        rating: 0.05
+        detail: >
+          Mentoring is fundamentally a human relationship that requires
+          empathy, trust, and individualized judgment. AI cannot replace
+          the personal connection, career wisdom, and emotional
+          support that effective mentoring provides, though it may
+          help mentors track progress and identify development needs.
+
+    - id: collaboration
+      name: "Research Collaboration"
+      category: interpersonal
+      description: >
+        Building and maintaining productive research collaborations across
+        institutions, disciplines, and cultures. Includes identifying
+        complementary expertise, negotiating intellectual contributions,
+        managing multi-site projects, and navigating the interpersonal
+        dynamics of scientific teamwork.
+      proficiency:
+        postdoc: >
+          Collaborates effectively within the research group and with
+          immediate partners. Communicates technical details clearly
+          across subfield boundaries and contributes to shared projects
+          reliably.
+        junior_researcher: >
+          Initiates collaborations with researchers at other institutions
+          to access complementary expertise or resources. Manages
+          shared data and contributions across small collaborative teams.
+        senior_researcher: >
+          Leads multi-institutional collaborations, defining roles,
+          timelines, and intellectual property agreements. Bridges
+          disciplinary differences and ensures productive integration
+          of diverse perspectives.
+        principal_investigator: >
+          Builds and sustains a network of collaborative relationships
+          that amplifies research impact. Leads consortium-level
+          collaborations with complex governance structures and shared
+          resources.
+        distinguished: >
+          Catalyzes field-shaping collaborations that bring together
+          diverse communities to address grand challenges. Their
+          collaborative network spans disciplines, institutions, and
+          countries, creating lasting infrastructure for scientific
+          cooperation.
+      ai_impact:
+        rating: 0.1
+        detail: >
+          AI can facilitate collaboration logistics such as scheduling
+          and document sharing, but building trust, navigating
+          intellectual dynamics, and fostering productive partnerships
+          across cultural and disciplinary boundaries are inherently
+          human capabilities.
+
+    - id: presentation
+      name: "Scientific Presentation"
+      category: communication
+      description: >
+        Presenting research findings effectively in diverse formats
+        including conference talks, poster presentations, seminars,
+        departmental colloquia, and public lectures. Requires the ability
+        to tailor complex content to different audiences and engage them
+        in scientific ideas.
+      proficiency:
+        postdoc: >
+          Delivers clear conference presentations and poster sessions on
+          their research. Structures talks logically and responds to
+          audience questions with composure and accuracy.
+        junior_researcher: >
+          Gives polished talks at national conferences and departmental
+          seminars. Adapts presentation style and depth to different
+          audiences, from specialists to general scientific audiences.
+        senior_researcher: >
+          Delivers compelling invited talks and keynotes that frame
+          research within broader field narratives. Engages audiences
+          through effective storytelling and visual communication while
+          maintaining scientific rigor.
+        principal_investigator: >
+          Recognized as an outstanding speaker sought for plenary talks
+          and high-profile symposia. Represents the research group and
+          institution on national and international stages with
+          authority and charisma.
+        distinguished: >
+          Delivers landmark lectures that shape how the community
+          thinks about a topic. Communicates complex science to policy
+          makers, media, and the general public with clarity and
+          impact. Their presentations become reference points in the
+          field.
+      ai_impact:
+        rating: 0.35
+        detail: >
+          AI can help create slides, suggest visualizations, and even
+          generate presentation outlines, but delivering a compelling
+          talk, reading the audience, handling tough questions, and
+          building scientific reputation through presence are inherently
+          human skills.
+
+    - id: ethical_research
+      name: "Research Ethics & Integrity"
+      category: domain
+      description: >
+        Upholding the highest standards of research integrity including
+        responsible data management, honest reporting, appropriate
+        attribution, informed consent, IRB and IACUC compliance,
+        reproducibility practices, and ethical reasoning about the
+        implications and applications of research findings.
+      proficiency:
+        postdoc: >
+          Follows established ethical guidelines and institutional
+          policies for data management, authorship, and human or animal
+          subjects research. Completes required ethics training and
+          applies principles in daily research practice.
+        junior_researcher: >
+          Identifies and navigates ethical issues in research design
+          and reporting independently. Ensures reproducibility through
+          transparent methods documentation and data sharing practices.
+          Contributes to IRB or ethics committee processes.
+        senior_researcher: >
+          Champions ethical research practices within the group,
+          establishing norms for data integrity, authorship, and
+          conflict of interest management. Mentors others in navigating
+          complex ethical situations and designs studies with ethical
+          considerations integrated from the start.
+        principal_investigator: >
+          Sets the ethical culture for the research group and ensures
+          compliance across all projects. Serves on institutional
+          ethics committees and contributes to the development of
+          discipline-specific ethical guidelines.
+        distinguished: >
+          Shapes ethical standards at the national or disciplinary
+          level through committee leadership, policy development, and
+          public advocacy. Addresses emerging ethical challenges posed
+          by new technologies and research paradigms.
+      ai_impact:
+        rating: 0.05
+        detail: >
+          AI can assist with compliance checking and data management,
+          but ethical reasoning about research implications, navigating
+          moral ambiguity, and making judgment calls about responsible
+          science require deeply human values, empathy, and wisdom.

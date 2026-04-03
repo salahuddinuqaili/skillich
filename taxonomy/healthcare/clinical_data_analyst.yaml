@@ -31,6 +31,7 @@ role:
       - "Standard SQL query generation from natural language requests"
       - "Automated anomaly and outlier flagging in clinical datasets"
       - "Chart abstraction and structured data extraction from notes"
+      - "AI agent-driven clinical data pipeline monitoring and quality alerting"
     augmenting:
       - "Complex cohort identification and risk stratification modeling"
       - "Root cause analysis for quality and safety events"
@@ -43,7 +44,7 @@ role:
       - "Regulatory compliance decisions involving PHI and data governance"
       - "Study design and analytical framework selection for novel questions"
       - "Ethical reasoning about data use, bias, and patient equity"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "O*NET - Health Information Technologists and Medical Registrars"

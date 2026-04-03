@@ -23,24 +23,29 @@ role:
       However, understanding business semantics, designing scalable data architectures,
       and ensuring data quality and governance at the organizational level remain essential
       human responsibilities that grow in importance as data complexity increases.
+      Agentic AI can now execute multi-step data transformation workflows
+      autonomously, from schema discovery through model building and testing,
+      making oversight and governance skills increasingly critical.
     automating:
       - "Boilerplate SQL transformation generation"
       - "Standard data quality test creation"
       - "Schema documentation and column descriptions"
       - "Basic data model scaffolding from source schemas"
       - "Routine dependency and lineage mapping"
+      - "AI agent-driven end-to-end data pipeline creation and monitoring"
     augmenting:
       - "AI-assisted data model design and optimization"
       - "Intelligent data quality monitoring and anomaly detection"
       - "Automated impact analysis for schema changes"
       - "Natural language to transformation code generation"
+      - "Agent-assisted data model iteration with automated testing and validation"
     preserving:
       - "Business logic translation and metric definition"
       - "Cross-team data contract negotiation"
       - "Data architecture and modeling strategy"
       - "Organizational data quality culture and governance"
       - "Stakeholder collaboration on evolving business requirements"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "dbt Labs - Analytics Engineering Guide"
@@ -144,7 +149,7 @@ role:
           Evaluates SQL-based versus alternative transformation paradigms and guides technology
           adoption.
       ai_impact:
-        rating: 0.7
+        rating: 0.75
         detail: >
           AI tools can generate SQL transformations from descriptions and optimize existing
           queries. However, understanding business semantics and designing transformation
@@ -275,7 +280,7 @@ role:
           enterprise. Evaluates emerging data catalog technologies and guides investments in
           metadata infrastructure.
       ai_impact:
-        rating: 0.7
+        rating: 0.75
         detail: >
           AI can auto-generate documentation from code, suggest descriptions, and maintain
           data dictionaries. However, ensuring documentation accurately reflects business

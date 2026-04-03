@@ -29,6 +29,7 @@ role:
       - Dependency mapping and impact analysis
       - Performance bottleneck identification through automated profiling
       - Security vulnerability scanning and compliance checking
+      - AI agent-driven codebase analysis and migration path generation
     augmenting:
       - Architecture decision evaluation with AI-assisted tradeoff analysis
       - Migration planning with AI-powered risk and effort estimation
@@ -41,7 +42,7 @@ role:
       - Mentoring engineers on architectural thinking and system design
       - Navigating the politics of architectural governance
       - Translating business strategy into technical architecture decisions
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "ThoughtWorks Technology Radar"

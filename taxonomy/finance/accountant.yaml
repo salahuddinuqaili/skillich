@@ -28,7 +28,9 @@ role:
       internal controls design, client advisory services, and ethical
       stewardship of financial integrity remains essential and human.
       Accountants who embrace AI tools will shift from transaction processing
-      toward advisory and analytical roles.
+      toward advisory and analytical roles. Agentic AI systems can now
+      orchestrate multi-step accounting workflows end-to-end, further
+      accelerating the shift from manual processing to oversight roles.
     automating:
       - "Transaction coding and journal entry posting"
       - "Bank and credit card reconciliation"
@@ -36,6 +38,7 @@ role:
       - "Standard month-end accrual calculations"
       - "Routine tax form preparation and filing"
       - "Data entry from source documents into ERP systems"
+      - "AI agent-automated invoice processing and reconciliation workflows"
     augmenting:
       - "Complex account reconciliation with anomaly detection"
       - "Financial statement drafting and variance analysis"
@@ -43,6 +46,7 @@ role:
       - "Audit workpaper preparation and evidence gathering"
       - "Regulatory change impact assessment"
       - "Cash flow forecasting and working capital analysis"
+      - "Agent-assisted month-end close task orchestration and exception routing"
     preserving:
       - "Professional judgment on accounting estimates and reserves"
       - "Internal controls design and effectiveness evaluation"
@@ -50,7 +54,7 @@ role:
       - "Ethical reasoning about financial reporting integrity"
       - "Complex transaction structuring and accounting treatment"
       - "Cross-functional collaboration with legal, tax, and operations"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "O*NET - Accountants and Auditors"
@@ -307,7 +311,7 @@ role:
           transformation that reduces cost while improving cash flow
           predictability and stakeholder experience.
       ai_impact:
-        rating: 0.75
+        rating: 0.8
         detail: >
           AI and automation tools handle invoice processing, three-way
           matching, and routine collections effectively, making AP/AR one of
@@ -360,7 +364,7 @@ role:
           change the speed and reliability of financial reporting across
           the enterprise.
       ai_impact:
-        rating: 0.8
+        rating: 0.85
         detail: >
           AI and automated reconciliation tools excel at matching transactions,
           identifying discrepancies, and categorizing outstanding items,

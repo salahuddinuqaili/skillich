@@ -1,16 +1,18 @@
 <p align="center">
   <h1 align="center">skillich</h1>
   <p align="center"><strong>Know exactly which skills to invest in to become irreplaceable in the age of AI.</strong></p>
-  <p align="center">The open-source career transformation guide for every knowledge worker.<br>68 roles. 815 skills. Each rated for AI impact. Free forever.</p>
+  <p align="center">The open-source career transformation guide for every knowledge worker.<br>88 roles. 1,028 skills. Each rated for AI impact. Free forever.</p>
   <p align="center">
     <a href="https://salahuddinuqaili.github.io/skillich/"><strong>Get My Action Plan</strong></a> &nbsp;&middot;&nbsp;
     <a href="docs/playbook.md"><strong>Read the Playbook</strong></a> &nbsp;&middot;&nbsp;
+    <a href="docs/skills.md"><strong>Top 15 AI Skills</strong></a> &nbsp;&middot;&nbsp;
+    <a href="docs/ai-skills.md"><strong>Skills by Function</strong></a> &nbsp;&middot;&nbsp;
     <a href="https://github.com/salahuddinuqaili/skillich/issues/new?template=feedback.yml"><strong>Give Feedback</strong></a>
   </p>
   <p align="center">
-    <img alt="Roles" src="https://img.shields.io/badge/roles-68-blue">
-    <img alt="Skills" src="https://img.shields.io/badge/skills-815-blue">
-    <img alt="Functions" src="https://img.shields.io/badge/functions-13-blue">
+    <img alt="Roles" src="https://img.shields.io/badge/roles-88-blue">
+    <img alt="Skills" src="https://img.shields.io/badge/skills-1028-blue">
+    <img alt="Functions" src="https://img.shields.io/badge/functions-17-blue">
     <img alt="License" src="https://img.shields.io/badge/license-MIT-green">
     <img alt="Python" src="https://img.shields.io/badge/python-3.10+-yellow">
   </p>
@@ -22,11 +24,26 @@
 
 | Finding | Details |
 |---------|---------|
-| **CRM Data Entry is 85% automatable** | The most automatable skill in the entire taxonomy. SDRs spending hours on data entry are fighting a losing battle. |
-| **Leadership skills are the most AI-resilient** | Leadership averages just 33% automation risk -- the lowest of all 13 functions. Human judgment at scale can't be automated. |
-| **Marketing is the most exposed function** | 53% average automation risk across all marketing skills. Content generation, ad optimization, and analytics are rapidly AI-driven. |
-| **7 roles are rated "very-high" AI impact** | Including Paralegal, Medical Coder, and SDR. These roles are transforming fastest. |
-| **The #1 most resilient skill?** | Conflict Resolution (5% automatable). Empathy, emotional intelligence, and trust can't be delegated to a model. |
+| **Skilled Trades are the most AI-resilient function** | Trades average just 21% automation risk -- the lowest of all 17 functions. You can't automate pulling wire through walls or soldering pipes. |
+| **8 roles have "low" AI impact** | 4 of them are skilled trades (electrician, plumber, HVAC, automotive). Physical dexterity and on-site judgment can't be automated. |
+| **Marketing is the most exposed function** | 54% average automation risk across all marketing skills. Content generation, ad optimization, and analytics are rapidly AI-driven. |
+| **7 roles are rated "very-high" AI impact** | Including Content Writer, Paralegal, Medical Coder, Technical Writer, and SDR. These roles are transforming fastest. |
+| **The most resilient skills?** | Electrical Installation, Live Performance, Apprentice Mentoring, and Conflict Resolution -- all at 5%. Hands-on craft and human connection can't be delegated to a model. |
+
+---
+
+## [Top 15 Skills for Every AI User](docs/skills.md)
+
+No matter your role, these are the skills that matter most in the agentic age:
+
+| Tier | Skills | Why |
+|------|--------|-----|
+| **AI Fluency** | Prompt Design, AI Output Evaluation, Model Behavior Understanding | Direct AI effectively and spot when it's wrong |
+| **Human Anchors** | Cross-Functional Collaboration, Stakeholder Management, Mentoring, Ethical Judgment, Conflict Resolution | What AI can't do -- your career insurance |
+| **AI-Optimised Skills** | Data-Driven Decisions, Strategic Communication, Process Improvement, Statistical Analysis, Change Management | Where AI amplifies you 10x |
+| **Domain Depth** | Your core expertise, Adaptability | What makes AI work *for you* specifically |
+
+**[Read the full guide &rarr;](docs/skills.md)** | **[Skills by function &rarr;](docs/ai-skills.md)**
 
 ---
 
@@ -34,7 +51,7 @@
 
 ### [Get My Action Plan](https://salahuddinuqaili.github.io/skillich/)
 
-1. Type your job title (accountant, PM, backend engineer -- we cover 68 roles)
+1. Type your job title (accountant, PM, backend engineer, electrician -- we cover 88 roles)
 2. Select your current level
 3. Get a personalized plan: green skills to invest in, yellow skills to partner with AI on, red skills to let AI handle
 
@@ -44,7 +61,7 @@
 
 ## What's Inside
 
-For every role across **13 functions** -- engineering, product, design, data, marketing, operations, leadership, finance, legal, sales, support, HR, healthcare:
+For every role across **17 functions** -- engineering, product, design, data, marketing, operations, leadership, finance, legal, sales, support, HR, healthcare, AI & agents, creative, research, and skilled trades:
 
 - **What AI is automating** -- stop doing these manually
 - **What AI is augmenting** -- learn to use AI as your 10x multiplier here
@@ -87,19 +104,23 @@ If you're an accountant, recruiter, PM, engineer, or anything in between -- your
 
 | Function | Roles | Avg AI Impact | Most Resilient Skill |
 |----------|-------|--------------|---------------------|
-| **Engineering** | 10 | 45% | Concurrency & Distributed Systems |
-| **Product** | 4 | 42% | Product Vision & Strategy |
+| **AI & Agents** | 5 | 31% | AI Ethics & Responsible Deployment |
+| **Creative & Media** | 5 | 32% | Live Performance |
+| **Research & Academia** | 5 | 29% | Mentoring & Supervision |
+| **Skilled Trades** | 5 | 21% | Electrical Installation |
+| **Engineering** | 10 | 46% | Product & Design Collaboration |
+| **Product** | 4 | 42% | Stakeholder Management |
 | **Design** | 4 | 41% | Cross-Functional Collaboration |
-| **Data & Analytics** | 4 | 48% | Stakeholder Communication |
-| **Marketing & Growth** | 5 | 53% | Brand Strategy |
+| **Data & Analytics** | 4 | 49% | Stakeholder Communication |
+| **Marketing & Growth** | 5 | 54% | Brand Strategy |
 | **Operations** | 5 | 41% | Servant Leadership |
 | **Leadership** | 6 | 33% | Engineering Culture |
-| **Finance** | 5 | 45% | Financial Judgment |
-| **Legal** | 5 | 47% | Legal Judgment |
-| **Sales** | 5 | 51% | Relationship Building |
-| **Customer Support** | 5 | 46% | De-escalation |
-| **HR & People Ops** | 5 | 46% | Employee Relations |
-| **Healthcare** | 5 | 42% | Clinical Judgment |
+| **Finance** | 5 | 46% | Team Management |
+| **Legal** | 5 | 47% | Cross-Functional Collaboration |
+| **Sales** | 5 | 52% | Relationship Building |
+| **Customer Support** | 5 | 46% | Empathy & Emotional Intelligence |
+| **HR & People Ops** | 5 | 46% | Conflict Resolution |
+| **Healthcare** | 5 | 42% | Cross-Functional Collaboration |
 
 ---
 

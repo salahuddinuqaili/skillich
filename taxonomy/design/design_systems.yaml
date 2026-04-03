@@ -36,6 +36,7 @@ role:
       - "Producing design-token value suggestions based on existing usage patterns"
       - "Creating component variant previews and usage example code snippets"
       - "Detecting inconsistencies between design files and code implementations"
+      - "AI agent-automated design-token propagation and cross-platform synchronization"
     augmenting:
       - "Auditing large codebases for design-system adoption gaps and inconsistencies"
       - "Generating migration guides when components or tokens change"
@@ -48,7 +49,7 @@ role:
       - "Making trade-off decisions about component flexibility versus simplicity"
       - "Building organizational buy-in and driving adoption across diverse teams"
       - "Designing the contribution and evolution processes that keep the system alive"
-    last_reviewed: "2025-09"
+    last_reviewed: "2026-04"
     confidence: medium
     sources:
       - name: "Design Systems Handbook (InVision)"
