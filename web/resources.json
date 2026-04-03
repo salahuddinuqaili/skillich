@@ -1,5 +1,51 @@
 {
   "_comment": "Curated learning resources mapped by skill keyword. The web UI matches skill names against these keywords to surface relevant resources.",
+
+  "prompt engineering": [
+    {"type": "free", "name": "Anthropic Prompt Engineering Guide", "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"},
+    {"type": "free", "name": "OpenAI Prompt Engineering Guide", "url": "https://platform.openai.com/docs/guides/prompt-engineering"},
+    {"type": "free", "name": "Google Prompt Engineering Guide", "url": "https://ai.google.dev/gemini-api/docs/prompting-intro"},
+    {"type": "course", "name": "DeepLearning.AI ChatGPT Prompt Engineering", "url": "https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/"}
+  ],
+  "prompt design": [
+    {"type": "free", "name": "Anthropic Prompt Engineering Guide", "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"},
+    {"type": "free", "name": "Anthropic Prompt Library", "url": "https://docs.anthropic.com/en/prompt-library"},
+    {"type": "free", "name": "OpenAI Prompt Engineering Guide", "url": "https://platform.openai.com/docs/guides/prompt-engineering"}
+  ],
+  "ai agent": [
+    {"type": "free", "name": "Anthropic Agent Design Patterns", "url": "https://docs.anthropic.com/en/docs/build-with-claude/agent-patterns"},
+    {"type": "free", "name": "LangChain Agent Documentation", "url": "https://python.langchain.com/docs/concepts/agents/"},
+    {"type": "free", "name": "Model Context Protocol Specification", "url": "https://modelcontextprotocol.io/specification"},
+    {"type": "course", "name": "DeepLearning.AI Building AI Agents", "url": "https://www.deeplearning.ai/short-courses/"}
+  ],
+  "ai evaluation": [
+    {"type": "free", "name": "HELM Benchmark (Stanford)", "url": "https://crfm.stanford.edu/helm/"},
+    {"type": "free", "name": "NIST AI Risk Management Framework", "url": "https://www.nist.gov/artificial-intelligence/ai-risk-management-framework"},
+    {"type": "free", "name": "Anthropic Research on AI Safety", "url": "https://www.anthropic.com/research"}
+  ],
+  "ai output evaluation": [
+    {"type": "free", "name": "Anthropic Prompt Engineering Guide — Evaluation", "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"},
+    {"type": "free", "name": "NIST AI Risk Management Framework", "url": "https://www.nist.gov/artificial-intelligence/ai-risk-management-framework"}
+  ],
+  "model behavior": [
+    {"type": "free", "name": "Anthropic Model Card (Claude)", "url": "https://docs.anthropic.com/en/docs/about-claude/models"},
+    {"type": "free", "name": "OpenAI Model Overview", "url": "https://platform.openai.com/docs/models"}
+  ],
+  "ai training": [
+    {"type": "free", "name": "Hugging Face Fine-Tuning Documentation", "url": "https://huggingface.co/docs/transformers/training"},
+    {"type": "course", "name": "DeepLearning.AI Fine-Tuning LLMs", "url": "https://www.deeplearning.ai/short-courses/finetuning-large-language-models/"}
+  ],
+  "ai ops": [
+    {"type": "free", "name": "MLOps Community Resources", "url": "https://mlops.community/"},
+    {"type": "free", "name": "Google SRE Book", "url": "https://sre.google/sre-book/table-of-contents/"},
+    {"type": "free", "name": "vLLM Documentation", "url": "https://docs.vllm.ai/"}
+  ],
+  "ai ethics": [
+    {"type": "free", "name": "NIST AI Risk Management Framework", "url": "https://www.nist.gov/artificial-intelligence/ai-risk-management-framework"},
+    {"type": "free", "name": "UNESCO AI Ethics Recommendation", "url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics"},
+    {"type": "course", "name": "Coursera AI Ethics", "url": "https://www.coursera.org/learn/ai-ethics"}
+  ],
+
   "system design": [
     {"type": "course", "name": "Grokking System Design (DesignGurus)", "url": "https://www.designgurus.io/course/grokking-the-system-design-interview"},
     {"type": "book", "name": "Designing Data-Intensive Applications (Kleppmann)", "url": "https://dataintensive.net/"},
@@ -45,9 +91,73 @@
     {"type": "course", "name": "fast.ai Practical Deep Learning", "url": "https://course.fast.ai/"},
     {"type": "free", "name": "Google ML Crash Course", "url": "https://developers.google.com/machine-learning/crash-course"}
   ],
+
+  "content writing": [
+    {"type": "book", "name": "On Writing Well (Zinsser)", "url": "https://www.harpercollins.com/products/on-writing-well-william-zinsser"},
+    {"type": "free", "name": "Google Technical Writing Course", "url": "https://developers.google.com/tech-writing"},
+    {"type": "course", "name": "Coursera Content Strategy", "url": "https://www.coursera.org/learn/content-strategy"}
+  ],
+  "content strategy": [
+    {"type": "book", "name": "Content Strategy for the Web (Halvorson)", "url": "https://www.contentstrategy.com/"},
+    {"type": "free", "name": "HubSpot Content Marketing Certification", "url": "https://academy.hubspot.com/courses/content-marketing"}
+  ],
+  "video production": [
+    {"type": "free", "name": "YouTube Creator Academy", "url": "https://creatoracademy.youtube.com/"},
+    {"type": "course", "name": "Skillshare Video Editing", "url": "https://www.skillshare.com/browse/video-editing"}
+  ],
+  "graphic design": [
+    {"type": "free", "name": "Canva Design School", "url": "https://www.canva.com/designschool/"},
+    {"type": "course", "name": "Google UX Design Certificate", "url": "https://www.coursera.org/professional-certificates/google-ux-design"},
+    {"type": "free", "name": "Figma Learn", "url": "https://www.figma.com/resources/learn-design/"}
+  ],
+  "music production": [
+    {"type": "free", "name": "Ableton Learning Music", "url": "https://learningmusic.ableton.com/"},
+    {"type": "course", "name": "Berklee Online Music Production", "url": "https://online.berklee.edu/courses/music-production"}
+  ],
+  "game design": [
+    {"type": "free", "name": "Game Design Concepts (Ian Schreiber)", "url": "https://gamedesignconcepts.wordpress.com/"},
+    {"type": "book", "name": "The Art of Game Design (Schell)", "url": "https://www.schellgames.com/art-of-game-design"},
+    {"type": "free", "name": "Unity Learn", "url": "https://learn.unity.com/"}
+  ],
+
+  "research methods": [
+    {"type": "free", "name": "Nature Guide to Experimental Design", "url": "https://www.nature.com/articles/nmeth.3414"},
+    {"type": "course", "name": "Coursera Research Methods", "url": "https://www.coursera.org/learn/research-methods"}
+  ],
+  "scientific writing": [
+    {"type": "free", "name": "Stanford Scientific Writing Course (YouTube)", "url": "https://www.youtube.com/playlist?list=PLfpQKluLRiJfX7yQNKU1TUxLZhQEkLb26"},
+    {"type": "book", "name": "How to Write and Publish a Scientific Paper (Day & Gastel)", "url": "https://www.cambridge.org/core/books/how-to-write-and-publish-a-scientific-paper/"}
+  ],
+  "grant writing": [
+    {"type": "free", "name": "NIH Grant Writing Tips", "url": "https://grants.nih.gov/grants/how-to-apply-application-guide/format-and-write/write-your-application.htm"},
+    {"type": "course", "name": "Coursera Grant Writing", "url": "https://www.coursera.org/learn/grant-writing"}
+  ],
+
+  "electrical": [
+    {"type": "free", "name": "NFPA 70 NEC Code Resources", "url": "https://www.nfpa.org/codes-and-standards/nfpa-70-standard-development/70"},
+    {"type": "course", "name": "EC&M Online Training", "url": "https://www.ecmweb.com/training"}
+  ],
+  "plumbing": [
+    {"type": "free", "name": "International Plumbing Code Resources", "url": "https://www.iccsafe.org/products-and-services/i-codes/2021-i-codes/ipc/"},
+    {"type": "course", "name": "PHCC Apprenticeship Programs", "url": "https://www.phccweb.org/education/"}
+  ],
+  "hvac": [
+    {"type": "free", "name": "ASHRAE Learning Institute", "url": "https://www.ashrae.org/professional-development/learning-institute"},
+    {"type": "course", "name": "HVAC Excellence Training", "url": "https://www.hvacexcellence.org/"}
+  ],
+  "construction management": [
+    {"type": "free", "name": "OSHA Construction Safety", "url": "https://www.osha.gov/construction"},
+    {"type": "course", "name": "PMP Certification (PMI)", "url": "https://www.pmi.org/certifications/project-management-pmp"}
+  ],
+  "automotive": [
+    {"type": "free", "name": "ASE Test Preparation Guides", "url": "https://www.ase.com/test-prep"},
+    {"type": "course", "name": "UTI Automotive Training", "url": "https://www.uti.edu/programs/automotive"}
+  ],
+
   "leadership": [
     {"type": "book", "name": "The Manager's Path (Fournier)", "url": "https://www.oreilly.com/library/view/the-managers-path/9781491973882/"},
-    {"type": "free", "name": "Lara Hogan's Management Resources", "url": "https://larahogan.me/management/"}
+    {"type": "free", "name": "Lara Hogan's Management Resources", "url": "https://larahogan.me/management/"},
+    {"type": "book", "name": "An Elegant Puzzle (Larson)", "url": "https://press.stripe.com/an-elegant-puzzle"}
   ],
   "product management": [
     {"type": "book", "name": "Inspired (Cagan)", "url": "https://www.svpg.com/inspired-how-to-create-tech-products-customers-love/"},
@@ -57,9 +167,22 @@
     {"type": "free", "name": "Nielsen Norman Group Articles", "url": "https://www.nngroup.com/articles/"},
     {"type": "course", "name": "Google UX Design Certificate", "url": "https://www.coursera.org/professional-certificates/google-ux-design"}
   ],
+  "ux research": [
+    {"type": "free", "name": "Nielsen Norman Group UX Research Methods", "url": "https://www.nngroup.com/articles/which-ux-research-methods/"},
+    {"type": "book", "name": "Just Enough Research (Hall)", "url": "https://abookapart.com/products/just-enough-research"}
+  ],
   "data analysis": [
     {"type": "free", "name": "Khan Academy Statistics", "url": "https://www.khanacademy.org/math/statistics-probability"},
     {"type": "course", "name": "Google Data Analytics Certificate", "url": "https://www.coursera.org/professional-certificates/google-data-analytics"}
+  ],
+  "data visualization": [
+    {"type": "book", "name": "Storytelling with Data (Knaflic)", "url": "https://www.storytellingwithdata.com/"},
+    {"type": "free", "name": "Observable Tutorials", "url": "https://observablehq.com/tutorials"}
+  ],
+  "statistical analysis": [
+    {"type": "free", "name": "Khan Academy Statistics", "url": "https://www.khanacademy.org/math/statistics-probability"},
+    {"type": "course", "name": "Coursera Statistics with R", "url": "https://www.coursera.org/specializations/statistics"},
+    {"type": "book", "name": "Naked Statistics (Wheelan)", "url": "https://wwnorton.com/books/Naked-Statistics/"}
   ],
   "security": [
     {"type": "free", "name": "OWASP Top 10", "url": "https://owasp.org/www-project-top-ten/"},
@@ -69,10 +192,39 @@
     {"type": "book", "name": "Crucial Conversations", "url": "https://cruciallearning.com/crucial-conversations-book/"},
     {"type": "book", "name": "The Pyramid Principle (Minto)", "url": "https://www.barbaraminto.com/"}
   ],
+  "strategic communication": [
+    {"type": "book", "name": "The Pyramid Principle (Minto)", "url": "https://www.barbaraminto.com/"},
+    {"type": "book", "name": "Crucial Conversations", "url": "https://cruciallearning.com/crucial-conversations-book/"},
+    {"type": "free", "name": "Harvard Business Review Communication Articles", "url": "https://hbr.org/topic/communication"}
+  ],
+  "change management": [
+    {"type": "book", "name": "Switch: How to Change Things When Change Is Hard (Heath)", "url": "https://heathbrothers.com/switch/"},
+    {"type": "course", "name": "Prosci Change Management Certification", "url": "https://www.prosci.com/certification"},
+    {"type": "free", "name": "Harvard Business Review Change Management", "url": "https://hbr.org/topic/change-management"}
+  ],
+  "conflict resolution": [
+    {"type": "book", "name": "Crucial Conversations", "url": "https://cruciallearning.com/crucial-conversations-book/"},
+    {"type": "book", "name": "Never Split the Difference (Voss)", "url": "https://www.blackswanltd.com/never-split-the-difference"},
+    {"type": "course", "name": "Harvard Negotiation Course", "url": "https://online.hbs.edu/courses/negotiation/"}
+  ],
+  "mentoring": [
+    {"type": "book", "name": "The Coaching Habit (Stanier)", "url": "https://boxofcrayons.com/the-coaching-habit/"},
+    {"type": "book", "name": "Radical Candor (Scott)", "url": "https://www.radicalcandor.com/the-book/"}
+  ],
   "negotiation": [
     {"type": "book", "name": "Never Split the Difference (Voss)", "url": "https://www.blackswanltd.com/never-split-the-difference"},
     {"type": "course", "name": "Harvard Negotiation Course", "url": "https://online.hbs.edu/courses/negotiation/"}
   ],
+  "process improvement": [
+    {"type": "book", "name": "The Goal (Goldratt)", "url": "https://www.tocinstitute.org/the-goal-summary.html"},
+    {"type": "course", "name": "Lean Six Sigma Green Belt", "url": "https://www.sixsigmacouncil.org/lean-six-sigma-green-belt-certification/"}
+  ],
+  "data-driven decision making": [
+    {"type": "book", "name": "Thinking, Fast and Slow (Kahneman)", "url": "https://us.macmillan.com/books/9780374533557/thinkingfastandslow"},
+    {"type": "course", "name": "Google Data Analytics Certificate", "url": "https://www.coursera.org/professional-certificates/google-data-analytics"},
+    {"type": "book", "name": "Naked Statistics (Wheelan)", "url": "https://wwnorton.com/books/Naked-Statistics/"}
+  ],
+
   "financial modeling": [
     {"type": "free", "name": "Corporate Finance Institute Free Courses", "url": "https://corporatefinanceinstitute.com/resources/"},
     {"type": "course", "name": "Wall Street Prep", "url": "https://www.wallstreetprep.com/"}
@@ -104,5 +256,26 @@
   "sales": [
     {"type": "book", "name": "SPIN Selling (Rackham)", "url": "https://www.spinsellingbook.com/"},
     {"type": "course", "name": "Pavilion Sales School", "url": "https://www.joinpavilion.com/"}
+  ],
+  "technical writing": [
+    {"type": "free", "name": "Google Technical Writing Course", "url": "https://developers.google.com/tech-writing"},
+    {"type": "free", "name": "Write the Docs Community", "url": "https://www.writethedocs.org/"},
+    {"type": "book", "name": "Docs for Developers (Bhatti et al.)", "url": "https://docsfordevelopers.com/"}
+  ],
+  "seo": [
+    {"type": "free", "name": "Google SEO Starter Guide", "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"},
+    {"type": "free", "name": "Moz SEO Learning Center", "url": "https://moz.com/learn/seo"}
+  ],
+  "observability": [
+    {"type": "free", "name": "OpenTelemetry Documentation", "url": "https://opentelemetry.io/docs/"},
+    {"type": "book", "name": "Observability Engineering (Majors et al.)", "url": "https://www.oreilly.com/library/view/observability-engineering/9781492076438/"}
+  ],
+  "clinical research": [
+    {"type": "free", "name": "FDA Clinical Trials Guidance", "url": "https://www.fda.gov/patients/clinical-trials-what-patients-need-know"},
+    {"type": "course", "name": "ACRP Clinical Research Certification", "url": "https://acrpnet.org/certifications/"}
+  ],
+  "medical coding": [
+    {"type": "free", "name": "CMS ICD-10 Resources", "url": "https://www.cms.gov/medicare/coding-billing/icd-10-codes"},
+    {"type": "course", "name": "AHIMA Coding Certification", "url": "https://www.ahima.org/certification-careers/certifications-overview/"}
   ]
 }

@@ -7,6 +7,7 @@
     <a href="docs/playbook.md"><strong>Read the Playbook</strong></a> &nbsp;&middot;&nbsp;
     <a href="docs/skills.md"><strong>Top 15 AI Skills</strong></a> &nbsp;&middot;&nbsp;
     <a href="docs/ai-skills.md"><strong>Skills by Function</strong></a> &nbsp;&middot;&nbsp;
+    <a href="docs/assessment.md"><strong>Self-Assessment</strong></a> &nbsp;&middot;&nbsp;
     <a href="https://github.com/salahuddinuqaili/skillich/issues/new?template=feedback.yml"><strong>Give Feedback</strong></a>
   </p>
   <p align="center">
@@ -69,6 +70,8 @@ For every role across **17 functions** -- engineering, product, design, data, ma
 - **Proficiency levels** -- what "good" looks like from junior through principal
 - **AI impact scores** -- every skill rated 0.0 (fully human) to 1.0 (fully automated)
 - **Career transitions** -- which roles you can move to based on skill overlap
+- **[Self-assessment](docs/assessment.md)** -- score yourself across 15 AI-era skills and get personalised gap analysis
+- **[Learning resources](web/resources.json)** -- curated courses, books, and free guides for every skill area
 
 ## Who This Is For
 
@@ -206,7 +209,7 @@ AI impact ratings (0.0-1.0) are **expert estimates** informed by the Anthropic E
 
 Every role has a `confidence` level (`low`/`medium`/`high`) and a `last_reviewed` date. Most are currently `medium`. The path to `high` is practitioner validation.
 
-**Known limitations:** Ratings are ranges, not precise numbers. Context matters (a 0.5 at a legacy enterprise may be 0.7 at an AI-native startup). Ratings decay as AI capabilities improve. See the full [methodology docs](docs/playbook.md).
+**Known limitations:** Ratings are ranges, not precise numbers. Context matters (a 0.5 at a legacy enterprise may be 0.7 at an AI-native startup). Ratings decay as AI capabilities improve — which is why we follow a [quarterly review cadence](docs/review-process.md). See the full [methodology docs](docs/playbook.md).
 
 ## Contributing
 
