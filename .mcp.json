@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "skillich": {
+      "command": "C:\\Users\\mulli\\PyCharmProjects\\Skillich\\.venv\\Scripts\\python.exe",
+      "args": ["-m", "mcp_server.server"],
+      "cwd": "C:\\Users\\mulli\\PyCharmProjects\\Skillich"
+    }
+  }
+}
