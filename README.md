@@ -133,7 +133,7 @@ If you're an accountant, recruiter, PM, engineer, or anything in between -- your
 ### CLI
 
 ```bash
-pip install skillich[cli]
+pip install "skillich[cli] @ git+https://github.com/salahuddinuqaili/skillich.git"
 
 skillich explore                                        # Browse all functions
 skillich explore --function engineering --role backend   # Full role detail
@@ -147,7 +147,7 @@ skillich export --function engineering --format csv      # Export for spreadshee
 ### MCP Server (Claude Desktop / Claude Code)
 
 ```bash
-pip install skillich[mcp]
+pip install "skillich[mcp] @ git+https://github.com/salahuddinuqaili/skillich.git"
 ```
 
 Add to Claude Desktop config:
