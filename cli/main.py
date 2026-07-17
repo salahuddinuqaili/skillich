@@ -418,6 +418,63 @@ def serve():
 
 
 @app.command()
+def narrate(
+    function_id: Optional[str] = typer.Option(None, "--function", "-f", help="Function ID"),
+    role_id: Optional[str] = typer.Option(None, "--role", "-r", help="Role ID"),
+    skill: Optional[str] = typer.Option(None, "--skill", "-s", help="Skill name for advice"),
+    level: str = typer.Option("mid", "--level", "-l", help="Your current level (junior/mid/senior)"),
+    brief: bool = typer.Option(False, "--brief", "-b", help="AI-resilience brief for a function"),
+    fmt: OutputFormat = _FMT,
+):
+    """Generate plain-English career narratives using your local Ollama model.
+
+    Requires Ollama running locally (default: http://localhost:11434).
+    Set OLLAMA_ENDPOINT and OLLAMA_MODEL env vars to override.
+    Returns raw taxonomy data if Ollama is unavailable.
+    """
+    from skills.taxonomy_skills.career_narrator import CareerNarratorSkill
+
+    loader = _loader()
+    narrator = CareerNarratorSkill(loader=loader)
+
+    if skill:
+        result = narrator.execute("skill_advice", skill_name=skill, current_level=level)
+    elif brief and function_id:
+        result = narrator.execute("resilience_brief", function_id=function_id)
+    elif function_id and role_id:
+        result = narrator.execute("role_summary", function_id=function_id, role_id=role_id)
+    else:
+        formatters.print_error(
+            "Provide --function + --role for a role summary, "
+            "--skill for skill advice, or --function + --brief for a resilience brief."
+        )
+        raise typer.Exit(1)
+
+    _emit(result.data, fmt)
+
+    if result.status.value == "partial":
+        formatters.console.print(f"[yellow]⚠ {result.error}[/yellow]")
+
+    if result.data:
+        narrative = result.data.get("narrative") or result.data.get("advice")
+        if narrative:
+            from rich.panel import Panel
+            model_label = result.data.get("model", "Ollama")
+            formatters.console.print(Panel(
+                narrative,
+                title=f"[bold cyan]Career Insight[/bold cyan] · {model_label}",
+                border_style="cyan",
+            ))
+        else:
+            # Ollama unavailable — show raw data as a table
+            from rich.table import Table
+            table = Table(show_header=False, box=None)
+            for k, v in result.data.items():
+                table.add_row(f"[cyan]{k}[/cyan]", str(v))
+            formatters.console.print(table)
+
+
+@app.command()
 def audit(
     stale_after: int = typer.Option(180, "--stale-after", help="Flag roles not reviewed in this many days"),
     fmt: OutputFormat = _FMT,
