@@ -30,14 +30,39 @@ _registry.register(SkillAssessorSkill(loader=_loader))
 _registry.register(LearningPathSkill(loader=_loader))
 _registry.register(CareerAdvisorSkill(loader=_loader))
 
+
+def _build_instructions(loader: TaxonomyLoader) -> str:
+    """Build MCP instructions dynamically from the live taxonomy so counts are always accurate."""
+    stats_result = _registry.call_skill("role_explorer", action="stats")
+    if stats_result.ok and stats_result.data:
+        s = stats_result.data
+        n_functions = s.get("functions", "?")
+        n_roles = s.get("roles", "?")
+        n_skills = s.get("skills", "?")
+    else:
+        # Fallback: count directly from loader
+        functions = loader.list_functions()
+        n_functions = len(functions)
+        n_roles = sum(len(loader.list_roles(f.id)) for f in functions)
+        n_skills = sum(
+            len(loader.get_role(f.id, r.id).skills)
+            for f in functions
+            for r in loader.list_roles(f.id)
+        )
+    return (
+        f"skillich is an AI career skills taxonomy covering {n_functions} functions, "
+        f"{n_roles} roles, and {n_skills} skills — each rated for AI automation impact. "
+        "Use these tools to explore roles, analyze AI impact on careers, assess skill gaps, "
+        "and generate learning paths. Start with explore_roles(action='list_functions') "
+        "to browse the taxonomy, or explore_roles(action='stats') for a full count."
+    )
+
+
 mcp = FastMCP(
     "skillich",
-    instructions=(
-        "skillich is an AI skills taxonomy covering 7 tech functions, 38 roles, and 455 skills. "
-        "Use these tools to explore roles, analyze AI impact on careers, assess skill gaps, "
-        "and generate learning paths. Start with explore_roles to browse the taxonomy."
-    ),
+    instructions=_build_instructions(_loader),
 )
+
 
 
 def _call(skill_name: str, **kwargs) -> str:
