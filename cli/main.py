@@ -417,5 +417,72 @@ def serve():
     mcp_main()
 
 
+@app.command()
+def audit(
+    stale_after: int = typer.Option(180, "--stale-after", help="Flag roles not reviewed in this many days"),
+    fmt: OutputFormat = _FMT,
+):
+    """Find roles with stale AI impact data (not reviewed recently).
+
+    Roles with a missing or unparseable last_reviewed date are always flagged.
+    """
+    from core.audit import find_stale_roles
+
+    loader = _loader()
+    stale = find_stale_roles(loader, days=stale_after)
+
+    if fmt == OutputFormat.json:
+        import dataclasses
+        print(json.dumps([dataclasses.asdict(r) for r in stale], indent=2, default=str))
+        raise typer.Exit(0)
+
+    if fmt == OutputFormat.csv:
+        import csv as csv_mod
+        import dataclasses
+        import io
+        if stale:
+            rows = [dataclasses.asdict(r) for r in stale]
+            buf = io.StringIO()
+            writer = csv_mod.DictWriter(buf, fieldnames=rows[0].keys())
+            writer.writeheader()
+            writer.writerows(rows)
+            print(buf.getvalue(), end="")
+        raise typer.Exit(0)
+
+    from rich.table import Table
+    from rich.text import Text
+
+    if not stale:
+        formatters.console.print(
+            f"[bold green]All roles reviewed within the last {stale_after} days. Taxonomy is fresh.[/bold green]"
+        )
+        return
+
+    table = Table(title=f"Stale AI Impact Data (>{stale_after} days)", show_lines=True)
+    table.add_column("Function", style="cyan", no_wrap=True)
+    table.add_column("Role", style="bold")
+    table.add_column("Last Reviewed")
+    table.add_column("Days Ago", justify="right")
+    table.add_column("AI Impact")
+    table.add_column("Skills", justify="right")
+    table.add_column("Confidence")
+
+    for r in stale:
+        days_str = str(r.days_since_review) if r.days_since_review is not None else "?"
+        date_str = r.last_reviewed or "[red]missing[/red]"
+        days_color = "red" if r.days_since_review is None or r.days_since_review > 365 else "yellow"
+        table.add_row(
+            r.function_name, r.role_name, date_str,
+            Text(days_str, style=days_color),
+            r.ai_impact_level, str(r.skill_count), r.confidence or "—",
+        )
+
+    formatters.console.print(table)
+    formatters.console.print(
+        f"\n[bold]{len(stale)} role(s) flagged.[/bold] "
+        f"Update [cyan]last_reviewed[/cyan] in the role YAML when you refresh the data."
+    )
+
+
 if __name__ == "__main__":
     app()
