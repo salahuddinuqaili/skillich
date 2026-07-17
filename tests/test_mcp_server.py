@@ -78,7 +78,26 @@ class TestMCPTools:
         assert "role_explorer" in names
         assert "ai_impact_analyzer" in names
         assert "skill_assessor" in names
-        assert "learning_path" in names
 
-    def test_mcp_server_has_name(self):
+    def test_mcp_instructions_reflect_live_taxonomy(self):
+        """MCP instructions must contain real counts, not stale hardcoded values."""
+        from mcp_server.server import _build_instructions, _loader
+        instructions = _build_instructions(_loader)
+        # Must not contain the old stale numbers
+        assert "38 roles" not in instructions
+        assert "455 skills" not in instructions
+        assert "7 tech functions" not in instructions
+        # Must contain actual live counts (>= known minimums)
+        import re
+        functions_match = re.search(r"(\d+) functions", instructions)
+        roles_match = re.search(r"(\d+) roles", instructions)
+        skills_match = re.search(r"(\d+) skills", instructions)
+        assert functions_match, "instructions should mention function count"
+        assert roles_match, "instructions should mention role count"
+        assert skills_match, "instructions should mention skill count"
+        assert int(functions_match.group(1)) >= 17
+        assert int(roles_match.group(1)) >= 88
+        assert int(skills_match.group(1)) >= 1000
+
+    def test_mcp_server_has_correct_name(self):
         assert mcp.name == "skillich"

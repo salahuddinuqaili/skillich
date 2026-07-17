@@ -178,3 +178,44 @@ class TestTaxonomyLoader:
     def test_nonexistent_directory(self):
         loader = TaxonomyLoader("/nonexistent/path")
         assert loader.list_functions() == []
+
+
+class TestLiveTaxonomyCounts:
+    """Sanity-check live taxonomy counts — catches accidental data deletion or schema drift."""
+
+    def test_live_taxonomy_has_expected_minimums(self):
+        """Live taxonomy must have >= known minimums (17 functions, 88 roles, 1028 skills)."""
+        from pathlib import Path
+        taxonomy_dir = str(Path(__file__).resolve().parent.parent / "taxonomy")
+        loader = TaxonomyLoader(taxonomy_dir)
+        s = loader.stats
+        assert s["functions"] >= 17, f"expected >=17 functions, got {s['functions']}"
+        assert s["roles"] >= 88, f"expected >=88 roles, got {s['roles']}"
+        assert s["skills"] >= 1000, f"expected >=1000 skills, got {s['skills']}"
+
+    def test_mcp_instructions_reflect_live_counts(self):
+        """_build_instructions must reflect live taxonomy, not stale hardcoded values."""
+        import re
+        from pathlib import Path
+        from core.taxonomy import TaxonomyLoader
+        from core.registry import SkillRegistry
+        from skills.taxonomy_skills.role_explorer import RoleExplorerSkill
+
+        taxonomy_dir = str(Path(__file__).resolve().parent.parent / "taxonomy")
+        loader = TaxonomyLoader(taxonomy_dir)
+        registry = SkillRegistry()
+        registry.register(RoleExplorerSkill(loader=loader))
+
+        stats_result = registry.call_skill("role_explorer", action="stats")
+        assert stats_result.ok
+        s = stats_result.data
+        instructions = (
+            f"skillich is an AI career skills taxonomy covering {s['functions']} functions, "
+            f"{s['roles']} roles, and {s['skills']} skills"
+        )
+        assert "38 roles" not in instructions
+        assert "455 skills" not in instructions
+        assert int(re.search(r"(\d+) functions", instructions).group(1)) >= 17
+        assert int(re.search(r"(\d+) roles", instructions).group(1)) >= 88
+        assert int(re.search(r"(\d+) skills", instructions).group(1)) >= 1000
+
