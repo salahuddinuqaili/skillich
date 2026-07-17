@@ -133,22 +133,30 @@ If you're an accountant, recruiter, PM, engineer, or anything in between -- your
 ### CLI
 
 ```bash
-pip install "skillich[cli] @ git+https://github.com/salahuddinuqaili/skillich.git"
+pip install "skillich[cli]"
 
-skillich explore                                        # Browse all functions
+skillich explore                                         # Browse all 17 functions
 skillich explore --function engineering --role backend   # Full role detail
-skillich impact --resilient --limit 10                  # Most AI-resilient skills
-skillich impact --function engineering --compare         # Compare AI impact across roles
+skillich impact --resilient --limit 10                   # Most AI-resilient skills
+skillich impact --function engineering --compare         # Compare roles in a function
+skillich impact --resilient --format json                # Machine-readable output
 skillich learn --function engineering --role backend --level senior  # Learning path
 skillich transitions --function engineering --role backend  # Career transitions
+skillich narrate --function engineering --role backend   # AI-written career insight (Ollama)
+skillich audit --stale-after 180                         # Find stale taxonomy data
 skillich export --function engineering --format csv      # Export for spreadsheets
 ```
 
 ### MCP Server (Claude Desktop / Claude Code)
 
 ```bash
-pip install "skillich[mcp] @ git+https://github.com/salahuddinuqaili/skillich.git"
+pip install "skillich[mcp]"
 ```
+
+> **Until the first PyPI release** (tag `v0.1.0`), install from source:
+> ```bash
+> pip install "skillich[mcp] @ git+https://github.com/salahuddinuqaili/skillich.git"
+> ```
 
 Add to Claude Desktop config:
 

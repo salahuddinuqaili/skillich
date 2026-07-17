@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "skillich"
 version = "0.1.0"
-description = "Know exactly which skills to invest in to become irreplaceable in the age of AI. 68 roles, 815 skills, each rated for AI impact."
+description = "Know exactly which skills to invest in to become irreplaceable in the age of AI. 88 roles, 1,028 skills, each rated for AI impact. Python SDK + MCP server + CLI."
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.10"
