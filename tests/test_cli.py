@@ -99,3 +99,57 @@ class TestStats:
         result = runner.invoke(app, ["stats"])
         assert result.exit_code == 0
         assert "functions" in result.output.lower() or "roles" in result.output.lower() or "skills" in result.output.lower()
+
+
+class TestFormatFlag:
+    """--format json/csv on explore, impact, learn, transitions commands."""
+
+    def test_explore_json_functions(self):
+        result = runner.invoke(app, ["explore", "--format", "json"])
+        assert result.exit_code == 0
+        data = json.loads(result.output)
+        assert "functions" in data
+        assert len(data["functions"]) >= 17
+
+    def test_explore_json_role(self):
+        result = runner.invoke(app, ["explore", "--function", "engineering", "--role", "backend", "--format", "json"])
+        assert result.exit_code == 0
+        data = json.loads(result.output)
+        assert data["name"] == "Backend Engineer"
+
+    def test_explore_json_roles_list(self):
+        result = runner.invoke(app, ["explore", "--function", "engineering", "--format", "json"])
+        assert result.exit_code == 0
+        data = json.loads(result.output)
+        assert "roles" in data
+        assert len(data["roles"]) >= 1
+
+    def test_explore_csv_functions(self):
+        result = runner.invoke(app, ["explore", "--format", "csv"])
+        assert result.exit_code == 0
+        # The functions list is a dict with a 'functions' key — CSV emits key-value pairs
+        # At minimum there must be output with the 'functions' key
+        assert "functions" in result.output
+
+    def test_impact_json_resilient(self):
+        result = runner.invoke(app, ["impact", "--resilient", "--limit", "5", "--format", "json"])
+        assert result.exit_code == 0
+        data = json.loads(result.output)
+        assert "skills" in data
+        assert len(data["skills"]) <= 5
+
+    def test_impact_json_role(self):
+        result = runner.invoke(app, [
+            "impact", "--function", "engineering", "--role", "backend", "--format", "json"
+        ])
+        assert result.exit_code == 0
+        data = json.loads(result.output)
+        assert "role" in data or "name" in data or "level" in data
+
+    def test_json_output_no_ansi(self):
+        """JSON output must contain no ANSI escape codes."""
+        result = runner.invoke(app, ["explore", "--format", "json"])
+        assert result.exit_code == 0
+        assert "\x1b[" not in result.output
+        assert "\033[" not in result.output
+
