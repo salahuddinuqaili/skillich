@@ -32,3 +32,10 @@ jobs:
 
       - name: Validate taxonomy
         run: python -c "from core.schema_validator import validate_taxonomy; r = validate_taxonomy(); assert r.ok, r.errors"
+
+      - name: Build wheel (packaging check)
+        run: |
+          pip install build
+          python -m build --wheel
+          pip install twine
+          twine check dist/*.whl
