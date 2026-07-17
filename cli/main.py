@@ -1,6 +1,7 @@
 """skillich CLI -- explore AI impact on tech roles from the terminal."""
 
 import json
+from enum import Enum
 from pathlib import Path
 from typing import Optional
 
@@ -18,6 +19,12 @@ app = typer.Typer(
 )
 
 _DEFAULT_TAXONOMY = str(Path(__file__).resolve().parent.parent / "taxonomy")
+
+
+class OutputFormat(str, Enum):
+    rich = "rich"
+    json = "json"
+    csv = "csv"
 
 
 def _loader(taxonomy_dir: str = _DEFAULT_TAXONOMY) -> TaxonomyLoader:
@@ -40,6 +47,39 @@ def _registry(loader: TaxonomyLoader) -> SkillRegistry:
     return reg
 
 
+def _emit(data: object, fmt: OutputFormat) -> None:
+    """Emit result data in the requested format.
+
+    rich: no-op — caller handles output via formatters.
+    json: print compact JSON to stdout (no ANSI codes), then exit 0.
+    csv:  flat CSV to stdout; falls back to JSON for deeply nested structures.
+    """
+    if fmt == OutputFormat.json:
+        print(json.dumps(data, indent=2, default=str))
+        raise typer.Exit(0)
+    if fmt == OutputFormat.csv:
+        import csv
+        import io
+        if isinstance(data, list) and data and isinstance(data[0], dict):
+            buf = io.StringIO()
+            writer = csv.DictWriter(buf, fieldnames=data[0].keys(), extrasaction="ignore")
+            writer.writeheader()
+            writer.writerows(data)
+            print(buf.getvalue(), end="")
+        elif isinstance(data, dict):
+            buf = io.StringIO()
+            writer = csv.writer(buf)
+            for k, v in data.items():
+                writer.writerow([k, v if not isinstance(v, (list, dict)) else json.dumps(v)])
+            print(buf.getvalue(), end="")
+        else:
+            print(json.dumps(data, indent=2, default=str))
+        raise typer.Exit(0)
+    # fmt == rich: caller handles output — nothing to do here
+
+
+_FMT = typer.Option(OutputFormat.rich, "--format", "-o", help="Output format: rich (default), json, csv")
+
 # ---------------------------------------------------------------------------
 # Commands
 # ---------------------------------------------------------------------------
@@ -50,6 +90,7 @@ def explore(
     function_id: Optional[str] = typer.Option(None, "--function", "-f", help="Function ID, e.g. 'engineering'"),
     role_id: Optional[str] = typer.Option(None, "--role", "-r", help="Role ID, e.g. 'backend'"),
     search: Optional[str] = typer.Option(None, "--search", "-s", help="Search skills by keyword"),
+    fmt: OutputFormat = _FMT,
 ):
     """Browse functions, roles, and skills in the taxonomy."""
     loader = _loader()
@@ -60,24 +101,28 @@ def explore(
         if not result.ok:
             formatters.print_error(result.error)
             raise typer.Exit(1)
+        _emit(result.data, fmt)
         formatters.print_search_results(search, result.data["skills"], result.data["count"])
     elif function_id and role_id:
         result = reg.call_skill("role_explorer", action="get_role", function_id=function_id, role_id=role_id)
         if not result.ok:
             formatters.print_error(result.error)
             raise typer.Exit(1)
+        _emit(result.data, fmt)
         formatters.print_role_detail(result.data)
     elif function_id:
         result = reg.call_skill("role_explorer", action="list_roles", function_id=function_id)
         if not result.ok:
             formatters.print_error(result.error)
             raise typer.Exit(1)
+        _emit(result.data, fmt)
         formatters.print_roles(function_id, result.data["roles"])
     else:
         result = reg.call_skill("role_explorer", action="list_functions")
         if not result.ok:
             formatters.print_error(result.error)
             raise typer.Exit(1)
+        _emit(result.data, fmt)
         formatters.print_functions(result.data["functions"])
 
 
@@ -89,6 +134,7 @@ def impact(
     resilient: bool = typer.Option(False, "--resilient", help="Show most AI-resilient skills"),
     automatable: bool = typer.Option(False, "--automatable", help="Show most automatable skills"),
     limit: int = typer.Option(20, "--limit", "-n", help="Max results"),
+    fmt: OutputFormat = _FMT,
 ):
     """Analyze AI impact on tech roles and skills."""
     loader = _loader()
@@ -99,18 +145,21 @@ def impact(
         if not result.ok:
             formatters.print_error(result.error)
             raise typer.Exit(1)
+        _emit(result.data, fmt)
         formatters.print_resilient_skills(result.data["skills"])
     elif automatable:
         result = reg.call_skill("ai_impact_analyzer", action="most_automatable", limit=limit)
         if not result.ok:
             formatters.print_error(result.error)
             raise typer.Exit(1)
+        _emit(result.data, fmt)
         formatters.print_automatable_skills(result.data["skills"])
     elif compare and function_id:
         result = reg.call_skill("ai_impact_analyzer", action="compare_roles", function_id=function_id)
         if not result.ok:
             formatters.print_error(result.error)
             raise typer.Exit(1)
+        _emit(result.data, fmt)
         formatters.print_impact_comparison(result.data)
     elif function_id and role_id:
         result = reg.call_skill(
@@ -119,6 +168,7 @@ def impact(
         if not result.ok:
             formatters.print_error(result.error)
             raise typer.Exit(1)
+        _emit(result.data, fmt)
         formatters.print_role_impact(result.data)
     else:
         formatters.print_error(
@@ -137,6 +187,7 @@ def assess(
         ..., "--skills", "-s",
         help='JSON array: [{"skill_id":"api_design","current_level":"mid"}, ...]',
     ),
+    fmt: OutputFormat = _FMT,
 ):
     """Assess your skills against a target role and identify gaps."""
     loader = _loader()
@@ -158,6 +209,7 @@ def assess(
     if not result.ok:
         formatters.print_error(result.error)
         raise typer.Exit(1)
+    _emit(result.data, fmt)
     formatters.print_assessment(result.data)
 
 
@@ -170,6 +222,7 @@ def learn(
     current_skills: Optional[str] = typer.Option(
         None, "--skills", "-s", help="JSON array of skill IDs you already have"
     ),
+    fmt: OutputFormat = _FMT,
 ):
     """Generate a prioritized learning path for a target role."""
     loader = _loader()
@@ -192,6 +245,7 @@ def learn(
     if not result.ok:
         formatters.print_error(result.error)
         raise typer.Exit(1)
+    _emit(result.data, fmt)
     formatters.print_learning_path(result.data)
 
 
@@ -254,6 +308,7 @@ def transitions(
     function_id: str = typer.Option(..., "--function", "-f", help="Your current function ID"),
     role_id: str = typer.Option(..., "--role", "-r", help="Your current role ID"),
     limit: int = typer.Option(10, "--limit", "-n", help="Max results"),
+    fmt: OutputFormat = _FMT,
 ):
     """Find roles you can transition to based on skill overlap."""
     loader = _loader()
@@ -269,6 +324,8 @@ def transitions(
     if not result.ok:
         formatters.print_error(result.error)
         raise typer.Exit(1)
+
+    _emit(result.data, fmt)
 
     from rich.table import Table
     from rich.text import Text
@@ -321,7 +378,6 @@ def content_check(
 
     if report.warnings:
         formatters.console.print(f"\n[bold yellow]Warnings ({len(report.warnings)}):[/bold yellow]")
-        # Group by category
         by_cat: dict[str, int] = {}
         for w in report.warnings:
             by_cat[w.category] = by_cat.get(w.category, 0) + 1
