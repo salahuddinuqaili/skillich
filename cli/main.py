@@ -86,6 +86,113 @@ _FMT = typer.Option(OutputFormat.rich, "--format", "-o", help="Output format: ri
 
 
 @app.command()
+def plan(
+    query: Optional[str] = typer.Argument(
+        None, help="Your job title, e.g. 'product manager', 'pm', 'electrician'"
+    ),
+    function_id: Optional[str] = typer.Option(None, "--function", "-f", help="Function ID (skips search)"),
+    role_id: Optional[str] = typer.Option(None, "--role", "-r", help="Role ID (skips search)"),
+    level: Optional[str] = typer.Option(None, "--level", "-l", help="Your level: junior, mid, senior, staff"),
+    show_all: bool = typer.Option(False, "--all", "-a", help="Show every skill, not just the top few"),
+    with_transitions: bool = typer.Option(
+        False, "--transitions", "-t", help="Include roles your skills transfer to"
+    ),
+    save: Optional[str] = typer.Option(None, "--save", "-s", help="Write the plan to a Markdown file"),
+    fmt: OutputFormat = _FMT,
+):
+    """Get your personalised AI action plan: what to invest in, partner on, and delegate.
+
+    Type your job title the way you'd say it out loud:
+
+        skillich plan "product manager"
+        skillich plan pm --level senior
+        skillich plan electrician --save plan.md
+    """
+    from core.plan import build_plan, confident_match, find_roles
+
+    loader = _loader()
+
+    if not (function_id and role_id):
+        if not query:
+            query = typer.prompt("What's your job title?")
+        matches = find_roles(loader, query, limit=8)
+        if not matches:
+            formatters.print_error(f"No role matches \"{query}\".")
+            formatters.console.print(
+                "  Browse what's covered with [cyan]skillich explore[/cyan], or request the role: "
+                "https://github.com/salahuddinuqaili/skillich/issues/new"
+            )
+            raise typer.Exit(1)
+
+        # An unambiguous winner: don't make the user confirm the obvious.
+        pick = confident_match(matches)
+        if pick is None:
+            formatters.print_role_matches(query, matches)
+            choice = typer.prompt("Which one? (number)", default="1")
+            try:
+                pick = matches[int(choice) - 1]
+            except (ValueError, IndexError):
+                formatters.print_error("Not a valid choice.")
+                raise typer.Exit(1)
+        function_id, role_id = pick["function_id"], pick["role_id"]
+
+    role = loader.get_role(function_id, role_id)
+    if role is None:
+        formatters.print_error(f"Role '{role_id}' not found in function '{function_id}'.")
+        raise typer.Exit(1)
+
+    if level is None and role.levels:
+        if fmt == OutputFormat.rich:
+            formatters.console.print(f"\n[bold]{role.name}[/bold] — what's your level?")
+            for i, lv in enumerate(role.levels, 1):
+                formatters.console.print(f"  [cyan]{i}[/cyan]. {lv.name} [dim]({lv.years_experience} yrs)[/dim]")
+            choice = typer.prompt("Level (number)", default="2")
+            try:
+                level = role.levels[int(choice) - 1].id
+            except (ValueError, IndexError):
+                level = role.levels[min(1, len(role.levels) - 1)].id
+        else:
+            level = role.levels[min(1, len(role.levels) - 1)].id
+
+    transitions_data = None
+    if with_transitions:
+        reg = _registry(loader)
+        result = reg.call_skill(
+            "career_advisor",
+            action="find_transitions",
+            source_function_id=function_id,
+            source_role_id=role_id,
+            limit=5,
+        )
+        if result.ok:
+            transitions_data = result.data["transitions"]
+
+    action_plan = build_plan(loader, function_id, role_id, level, transitions=transitions_data)
+    if action_plan is None:
+        formatters.print_error("Could not build a plan for that role.")
+        raise typer.Exit(1)
+
+    if save:
+        Path(save).write_text(action_plan.to_markdown(), encoding="utf-8")
+
+    _emit(action_plan.to_dict(), fmt)
+
+    formatters.print_plan(action_plan, show_all=show_all)
+    # soft_wrap keeps the URL and the path on one line so terminals can linkify
+    # them and the user can copy them without stitching the halves together.
+    formatters.console.print("\n[dim]Share this plan:[/dim]", end=" ")
+    formatters.console.print(
+        f"[dim]https://salahuddinuqaili.github.io/skillich/{action_plan.share_path}[/dim]",
+        soft_wrap=True,
+    )
+    if save:
+        formatters.console.print("[green]Saved to[/green]", end=" ")
+        formatters.console.print(f"[green]{save}[/green]", soft_wrap=True)
+    else:
+        formatters.console.print("[dim]Keep it: rerun with [cyan]--save plan.md[/cyan][/dim]")
+
+
+@app.command()
 def explore(
     function_id: Optional[str] = typer.Option(None, "--function", "-f", help="Function ID, e.g. 'engineering'"),
     role_id: Optional[str] = typer.Option(None, "--role", "-r", help="Role ID, e.g. 'backend'"),

@@ -1,0 +1,11 @@
+{
+  "name": "skillich-web-tests",
+  "private": true,
+  "description": "Headless smoke test for the generated skillich web app. Not published; not needed to use skillich.",
+  "scripts": {
+    "test": "node smoke.test.js"
+  },
+  "devDependencies": {
+    "jsdom": "^26.0.0"
+  }
+}

@@ -52,11 +52,20 @@ No matter your role, these are the skills that matter most in the agentic age:
 
 ### [Get My Action Plan](https://salahuddinuqaili.github.io/skillich/)
 
-1. Type your job title (accountant, PM, backend engineer, electrician -- we cover 88 roles)
-2. Select your current level
-3. Get a personalized plan: green skills to invest in, yellow skills to partner with AI on, red skills to let AI handle
+1. **Type your job title** -- accountant, PM, backend engineer, electrician, paralegal. Acronyms work too (`pm`, `sre`, `sdr`, `swe`).
+2. **Your plan appears**, with a level switcher on it -- flip between junior and staff to see how the advice changes.
 
-**60 seconds. No signup. No cost.**
+You get every skill in your role sorted into three actions, plus what "good" looks like at your **next** level and a concrete way to prove you got there.
+
+**60 seconds. No signup. No cost. Nothing leaves your browser.**
+
+And you can keep it:
+
+- **Copy link** -- every plan has its own URL (`.../#/plan/product/product_manager/senior`). Send it to your manager.
+- **Download as Markdown** -- drop it into Notion, Obsidian, or your 1:1 doc.
+- **Print / save as PDF** -- a real print stylesheet, not a screenshot.
+
+Prefer the terminal? `skillich plan "product manager" --save plan.md` gives you the same thing.
 
 ---
 
@@ -135,6 +144,11 @@ If you're an accountant, recruiter, PM, engineer, or anything in between -- your
 ```bash
 pip install "skillich[cli]"
 
+skillich plan "product manager"                          # Your action plan, start here
+skillich plan pm --level senior --save plan.md           # Same plan, saved as Markdown
+skillich plan electrician --transitions                  # ...plus where your skills transfer
+skillich plan pm --format json                           # Machine-readable
+
 skillich explore                                         # Browse all 17 functions
 skillich explore --function engineering --role backend   # Full role detail
 skillich impact --resilient --limit 10                   # Most AI-resilient skills
@@ -153,7 +167,7 @@ skillich export --function engineering --format csv      # Export for spreadshee
 pip install "skillich[mcp]"
 ```
 
-> **Until the first PyPI release** (tag `v0.1.0`), install from source:
+> **Until the first PyPI release** (tag `v0.2.0`), install from source:
 > ```bash
 > pip install "skillich[mcp] @ git+https://github.com/salahuddinuqaili/skillich.git"
 > ```
@@ -172,6 +186,19 @@ Add to Claude Desktop config:
 
 Then ask Claude: *"What skills should a mid-level PM invest in given AI?"*
 
+Claude answers from the `action_plan` tool -- one call takes a plain job title and returns the
+full invest / partner / delegate breakdown, the next-level gap, and a shareable link. Ambiguous
+titles ("engineer", "analyst") come back as a list of candidates rather than a confident guess.
+
+| Tool | What it does |
+|------|-------------|
+| `action_plan` | **Start here.** Job title in, full action plan out |
+| `explore_roles` | Browse functions, roles, skills, proficiency levels |
+| `analyze_ai_impact` | Compare AI impact across roles and skills |
+| `assess_skills` | Gap analysis against a target role |
+| `generate_learning_path` | Prioritised development plan |
+| `advise_career` | Skill transfer and transition analysis |
+
 ### Python API
 
 ```python
@@ -184,6 +211,20 @@ print(role.ai_impact.summary)
 # Most AI-resilient skills
 resilient = loader.get_skills_by_ai_impact(max_rating=0.3)
 ```
+
+```python
+from core.plan import build_plan, find_roles
+
+find_roles(loader, "pm")[0]["role_name"]          # 'Product Manager'
+
+plan = build_plan(loader, "product", "product_manager", "senior")
+plan.exposure                                      # 0.33
+[s.name for s in plan.invest]                      # skills AI can't touch
+print(plan.to_markdown())                          # the document the web app downloads
+```
+
+`core/plan.py` holds the action-band thresholds used by the CLI, the MCP server and the web app --
+change them there and all three follow.
 
 ### Agent Tool Export
 

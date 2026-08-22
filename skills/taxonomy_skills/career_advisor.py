@@ -5,6 +5,7 @@ career transitions based on current skills, and identify the skill delta
 needed to move from one role to another.
 """
 
+from functools import lru_cache
 from typing import Any, Dict, List, Optional
 
 from core.base import Skill, SkillResult, SkillStatus
@@ -212,7 +213,8 @@ class CareerAdvisorSkill(Skill):
     ]
 
     @classmethod
-    def _skill_keywords(cls, name: str) -> set[str]:
+    @lru_cache(maxsize=4096)
+    def _skill_keywords(cls, name: str) -> frozenset:
         """Extract canonical keywords from a skill name."""
         stop_words = {
             "and", "the", "for", "with", "in", "of", "a", "an", "to", "&",
@@ -224,9 +226,10 @@ class CareerAdvisorSkill(Skill):
             if len(word) > 2 and word not in stop_words:
                 canonical = cls._SYNONYMS.get(word, word)
                 words.add(canonical)
-        return words
+        return frozenset(words)
 
     @classmethod
+    @lru_cache(maxsize=200_000)
     def _skill_similarity(cls, name_a: str, name_b: str) -> float:
         """Compute similarity between two skill names using keywords + domain clusters."""
         kw_a = cls._skill_keywords(name_a)

@@ -6,7 +6,13 @@ import pytest
 
 mcp_mod = pytest.importorskip("mcp")
 
-from mcp_server.server import _registry, mcp, explore_roles, analyze_ai_impact  # noqa: E402
+from mcp_server.server import (  # noqa: E402
+    _registry,
+    action_plan,
+    analyze_ai_impact,
+    explore_roles,
+    mcp,
+)
 
 
 class TestMCPTools:
@@ -101,3 +107,87 @@ class TestMCPTools:
 
     def test_mcp_server_has_correct_name(self):
         assert mcp.name == "skillich"
+
+
+class TestActionPlanTool:
+    """`action_plan` is the one-call answer to 'what does AI mean for my job?'."""
+
+    def test_plan_from_a_plain_job_title(self):
+        data = json.loads(action_plan(job_title="electrician"))
+        assert data["ok"] is True
+        plan = data["data"]
+        assert plan["role_name"] == "Electrician"
+        assert plan["invest"], "electrician should have resilient skills"
+        assert plan["share_url"].endswith(plan["share_path"])
+        assert plan["available_levels"]
+
+    def test_plan_honours_an_explicit_level(self):
+        data = json.loads(action_plan(job_title="pm", level="senior"))
+        assert data["data"]["level_id"] == "senior"
+
+    def test_plan_from_explicit_ids(self):
+        data = json.loads(action_plan(function_id="engineering", role_id="backend"))
+        assert data["ok"] is True
+        assert data["data"]["role_name"] == "Backend Engineer"
+
+    def test_ambiguous_title_returns_candidates_instead_of_guessing(self):
+        data = json.loads(action_plan(job_title="engineer"))
+        assert data["ok"] is False
+        assert "ambiguous" in data["error"]
+        assert len(data["candidates"]) > 1
+
+    def test_unknown_title_is_an_honest_miss(self):
+        data = json.loads(action_plan(job_title="astronaut"))
+        assert data["ok"] is False
+        assert "No role matches" in data["error"]
+
+    def test_no_arguments_explains_what_is_needed(self):
+        data = json.loads(action_plan())
+        assert data["ok"] is False
+        assert "job_title" in data["error"]
+
+    def test_transitions_are_opt_in(self):
+        without = json.loads(action_plan(job_title="pm"))["data"]
+        assert without["transitions"] == []
+        with_ = json.loads(action_plan(job_title="pm", include_transitions=True))["data"]
+        assert with_["transitions"]
+
+    def test_tool_is_registered_with_the_server(self):
+        import asyncio
+
+        names = {t.name for t in asyncio.run(mcp.list_tools())}
+        assert "action_plan" in names
+
+
+class TestToolSchemas:
+    """A tool the model can't figure out how to call is a tool it won't call."""
+
+    @staticmethod
+    def _schema(tool):
+        # mcp 1.x exposes inputSchema; mcp 2.x renamed it to input_schema.
+        return getattr(tool, "input_schema", None) or tool.inputSchema
+
+    def test_every_parameter_is_documented(self):
+        import asyncio
+
+        undocumented = []
+        for tool in asyncio.run(mcp.list_tools()):
+            for name, spec in self._schema(tool)["properties"].items():
+                if not spec.get("description"):
+                    undocumented.append(f"{tool.name}.{name}")
+        assert not undocumented, (
+            "Annotated metadata must be Field(description=...) to reach the schema: "
+            f"{undocumented}"
+        )
+
+    def test_every_tool_has_a_description(self):
+        import asyncio
+
+        for tool in asyncio.run(mcp.list_tools()):
+            assert tool.description, tool.name
+
+    def test_server_class_resolved_across_sdk_majors(self):
+        """mcp 2.0 dropped mcp.server.fastmcp; the import shim must cover both."""
+        from mcp_server.server import _Server
+
+        assert _Server.__name__ in {"FastMCP", "MCPServer"}

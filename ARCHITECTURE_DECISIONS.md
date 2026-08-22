@@ -148,6 +148,42 @@ Structure the markdown guides with explicit AI assistant instructions (blockquot
 
 ---
 
+## ADR-9: One plan engine in Python, its rules inlined into the web app
+
+**Context:**
+The action plan (invest / partner / delegate, the level gap, the exposure band) has to exist in three places: the CLI, the MCP server, and a static web page that cannot run Python. Writing the rules twice guarantees the browser and the terminal eventually disagree about where the 30% line sits.
+
+**Decision:**
+`core/plan.py` owns the thresholds, the band copy, the proof points, the query synonyms and the confidence rule. `plan_constants()` serialises them to JSON and `web/generate.py` inlines that into the page at build time; the page's JavaScript reads the constants rather than hard-coding them. `tests/test_web_generate.py` asserts the shipped constants equal the Python ones, so a change in one place fails the build if it doesn't reach the other.
+
+**Trade-offs:**
+- *Given up:* Runtime independence of the web page from the Python codebase — the page must be regenerated when the rules change. CI does this on every push.
+- *Given up:* The plan *algorithm* is still written twice (Python `build_plan`, JS `buildPlan`). Only the constants are shared. A behavioural divergence in the traversal is possible; the jsdom suite checks band partitioning across all 88 roles to catch it.
+- *Accepted risk:* The JSON blob grows with the copy. It is a few kilobytes against a multi-megabyte page.
+- *Gained:* One place to argue about where "invest" ends. Adding a fourth surface costs nothing new.
+
+**Status:** Accepted
+
+---
+
+## ADR-10: Markup in a template file, and a static hero above the payload
+
+**Context:**
+The generated page is ~2.6 MB, because the entire taxonomy including five proficiency descriptions per skill is inlined. Every view was rendered by JavaScript, so nothing appeared on screen until the whole file had downloaded — the worst possible first impression for a tool whose promise is "60 seconds". The markup also lived as a 400-line string literal inside `generate.py`, where it was unreviewable.
+
+**Decision:**
+Move the markup to `web/template.html`, a real HTML file with `__PLACEHOLDER__` tokens that `generate.py` fills. Put the headline, the search input and the value proposition in the template as static markup, and stream the taxonomy in a `<script type="application/json">` block at the foot of the document. The router renders into a `#view` element below the static hero. Splitting data out also lets `_script_safe()` escape `<` so taxonomy prose can never close its own script tag.
+
+**Trade-offs:**
+- *Given up:* The single-file source. Markup and generator are now two files that must agree on the placeholder names; `render()` raises if any placeholder is missing rather than silently shipping a broken page.
+- *Given up:* Some duplication — the static hero's markup is not generated from the same code path as the rest of the home view.
+- *Rejected:* Fetching the taxonomy as a separate JSON request. It would cut first paint further but breaks the "one file you can email or open offline" property, which `skillich web` depends on.
+- *Gained:* First paint no longer waits on 2.6 MB. The template is diffable and reviewable, which is what made the accessibility and theming work tractable at all.
+
+**Status:** Accepted
+
+---
+
 ## TPM Narrative
 
 skillich is built around one core insight: career advice about AI is only useful if it's specific enough to act on. Telling someone "AI will change your job" is obvious. Telling them "your CRM Data Entry skill is 90% automatable, but your Conflict Resolution skill is 5% automatable — here's where to invest" is actionable. The architecture reflects this: a YAML taxonomy of 1,028 skills across 88 roles, each with a quantified AI impact rating, observable proficiency descriptions at 4-5 career levels, and structured lists of what's being automated, augmented, and preserved. Every design choice optimises for two things: practitioner trust (ratings are auditable, versioned, and open to correction) and multi-interface access (the same data serves a web app, CLI, MCP server for Claude, and function calling for ChatGPT).
