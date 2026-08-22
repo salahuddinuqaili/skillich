@@ -157,3 +157,37 @@ class TestActionPlanTool:
 
         names = {t.name for t in asyncio.run(mcp.list_tools())}
         assert "action_plan" in names
+
+
+class TestToolSchemas:
+    """A tool the model can't figure out how to call is a tool it won't call."""
+
+    @staticmethod
+    def _schema(tool):
+        # mcp 1.x exposes inputSchema; mcp 2.x renamed it to input_schema.
+        return getattr(tool, "input_schema", None) or tool.inputSchema
+
+    def test_every_parameter_is_documented(self):
+        import asyncio
+
+        undocumented = []
+        for tool in asyncio.run(mcp.list_tools()):
+            for name, spec in self._schema(tool)["properties"].items():
+                if not spec.get("description"):
+                    undocumented.append(f"{tool.name}.{name}")
+        assert not undocumented, (
+            "Annotated metadata must be Field(description=...) to reach the schema: "
+            f"{undocumented}"
+        )
+
+    def test_every_tool_has_a_description(self):
+        import asyncio
+
+        for tool in asyncio.run(mcp.list_tools()):
+            assert tool.description, tool.name
+
+    def test_server_class_resolved_across_sdk_majors(self):
+        """mcp 2.0 dropped mcp.server.fastmcp; the import shim must cover both."""
+        from mcp_server.server import _Server
+
+        assert _Server.__name__ in {"FastMCP", "MCPServer"}

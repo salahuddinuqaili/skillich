@@ -46,6 +46,14 @@ to keep.
   label, never in the text, so nothing depends on hue alone.
 
 ### Fixed
+- **The MCP server was broken on a fresh install.** `pip install "skillich[mcp]"`
+  resolves to mcp 2.0, which dropped `mcp.server.fastmcp` entirely. The server
+  now imports `MCPServer` where available and falls back to `FastMCP`, and the
+  test suite is verified against both majors.
+- **No MCP tool parameter had a description.** All 30 `Annotated[str, "..."]`
+  hints across the six tools were decorative — FastMCP needs
+  `Field(description=...)` to put them in the schema, so every carefully written
+  parameter hint was dropped before it reached the model. Now 30/30.
 - `skillich web` failed on a `pip install` — the `web` package was never
   included in the wheel.
 - Multiple spaces in a search query ("product   manager") silently degraded an
@@ -55,7 +63,7 @@ to keep.
   minutes to ~4 seconds.
 
 ### Tests
-- 265 Python tests (up from 173), plus 73 headless browser checks
+- 268 Python tests (up from 173), plus 75 headless browser checks
   (`web/smoke.test.js`, jsdom) that drive the real generated page. Both run in CI.
 
 ---

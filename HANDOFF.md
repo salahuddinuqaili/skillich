@@ -5,7 +5,7 @@
 
 ## State: v0.2.0 ready to ship
 
-Branch `feat/plan-v2`. 265 Python tests + 73 headless browser checks passing, ruff clean.
+Branch `feat/plan-v2`. 268 Python tests + 75 headless browser checks passing, ruff clean.
 
 **What shipped in this release:** see [CHANGELOG.md](CHANGELOG.md#020--2026-08--take-your-plan-with-you).
 Short version — the plan is now a thing you can keep: shareable URL, Markdown download,
@@ -39,13 +39,13 @@ GitHub Pages deploys on merge to `main` — no action needed there.
 
 ```bash
 # Python
-pytest -q                        # 265 tests
+pytest -q                        # 268 tests
 ruff check .
 
 # Web app — regenerate, then drive the real page in jsdom
 python web/generate.py           # writes web/index.html (gitignored, ~4s)
 npm --prefix web ci              # once
-node web/smoke.test.js           # 73 checks
+node web/smoke.test.js           # 75 checks
 
 # Look at it
 python -m http.server 8899 --directory web

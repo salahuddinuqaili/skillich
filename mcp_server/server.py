@@ -5,7 +5,13 @@ import os
 from pathlib import Path
 from typing import Annotated
 
-from mcp.server.fastmcp import FastMCP
+from pydantic import Field
+
+try:  # mcp >= 2.0 renamed FastMCP to MCPServer and dropped the fastmcp module
+    from mcp.server.mcpserver import MCPServer as _Server
+except ImportError:  # mcp 1.x
+    from mcp.server.fastmcp import FastMCP as _Server
+
 
 from core.plan import build_plan, confident_match, find_roles
 from core.registry import SkillRegistry
@@ -61,7 +67,7 @@ def _build_instructions(loader: TaxonomyLoader) -> str:
     )
 
 
-mcp = FastMCP(
+mcp = _Server(
     "skillich",
     instructions=_build_instructions(_loader),
 )
@@ -83,21 +89,21 @@ def _call(skill_name: str, **kwargs) -> str:
 def explore_roles(
     action: Annotated[
         str,
-        "Action to perform: 'list_functions' (all categories), 'list_roles' (roles in a function), "
-        "'get_role' (full detail), 'search_skills' (find skills by keyword), 'stats' (taxonomy counts)",
+        Field(description="Action to perform: 'list_functions' (all categories), 'list_roles' (roles in a function), "
+        "'get_role' (full detail), 'search_skills' (find skills by keyword), 'stats' (taxonomy counts)"),
     ],
     function_id: Annotated[
         str,
-        "Function category ID, e.g. 'engineering', 'product', 'design', 'data_analytics', "
-        "'marketing', 'operations', 'leadership'. Required for list_roles and get_role.",
+        Field(description="Function category ID, e.g. 'engineering', 'product', 'design', 'data_analytics', "
+        "'marketing', 'operations', 'leadership'. Required for list_roles and get_role."),
     ] = "",
     role_id: Annotated[
         str,
-        "Role ID, e.g. 'backend', 'product_manager', 'ux_designer'. Required for get_role.",
+        Field(description="Role ID, e.g. 'backend', 'product_manager', 'ux_designer'. Required for get_role."),
     ] = "",
     query: Annotated[
         str,
-        "Search term for search_skills action, e.g. 'system design', 'python', 'leadership'.",
+        Field(description="Search term for search_skills action, e.g. 'system design', 'python', 'leadership'."),
     ] = "",
 ) -> str:
     """Explore the skillich taxonomy of tech roles and skills.
@@ -120,20 +126,20 @@ def explore_roles(
 def analyze_ai_impact(
     action: Annotated[
         str,
-        "Action: 'role_impact' (AI breakdown for one role), 'most_automatable' (highest-risk skills), "
-        "'most_resilient' (safest skills), 'compare_roles' (compare roles in a function)",
+        Field(description="Action: 'role_impact' (AI breakdown for one role), 'most_automatable' (highest-risk skills), "
+        "'most_resilient' (safest skills), 'compare_roles' (compare roles in a function)"),
     ],
     function_id: Annotated[
         str,
-        "Function ID. Required for role_impact and compare_roles.",
+        Field(description="Function ID. Required for role_impact and compare_roles."),
     ] = "",
     role_id: Annotated[
         str,
-        "Role ID. Required for role_impact.",
+        Field(description="Role ID. Required for role_impact."),
     ] = "",
     limit: Annotated[
         int,
-        "Max results for most_automatable / most_resilient (default 20).",
+        Field(description="Max results for most_automatable / most_resilient (default 20)."),
     ] = 20,
 ) -> str:
     """Analyze how AI is transforming tech roles and skills.
@@ -154,16 +160,16 @@ def analyze_ai_impact(
 
 @mcp.tool()
 def assess_skills(
-    function_id: Annotated[str, "Target function, e.g. 'engineering'."],
-    role_id: Annotated[str, "Target role, e.g. 'backend'."],
+    function_id: Annotated[str, Field(description="Target function, e.g. 'engineering'.")],
+    role_id: Annotated[str, Field(description="Target role, e.g. 'backend'.")],
     target_level: Annotated[
         str,
-        "Level to assess against: 'junior', 'mid', 'senior', 'staff', or 'principal'.",
+        Field(description="Level to assess against: 'junior', 'mid', 'senior', 'staff', or 'principal'."),
     ],
     assessments: Annotated[
         str,
-        "JSON array of objects: [{\"skill_id\": \"api_design\", \"current_level\": \"mid\"}, ...]. "
-        "Use explore_roles with get_role to find valid skill IDs first.",
+        Field(description="JSON array of objects: [{\"skill_id\": \"api_design\", \"current_level\": \"mid\"}, ...]. "
+        "Use explore_roles with get_role to find valid skill IDs first."),
     ],
 ) -> str:
     """Assess your skills against a target role and identify gaps.
@@ -184,19 +190,19 @@ def assess_skills(
 
 @mcp.tool()
 def generate_learning_path(
-    target_function_id: Annotated[str, "Target function, e.g. 'engineering'."],
-    target_role_id: Annotated[str, "Target role, e.g. 'backend'."],
+    target_function_id: Annotated[str, Field(description="Target function, e.g. 'engineering'.")],
+    target_role_id: Annotated[str, Field(description="Target role, e.g. 'backend'.")],
     target_level: Annotated[
         str,
-        "Target level: 'junior', 'mid', 'senior', 'staff', or 'principal'.",
+        Field(description="Target level: 'junior', 'mid', 'senior', 'staff', or 'principal'."),
     ],
     current_level: Annotated[
         str,
-        "Your current level (default 'junior').",
+        Field(description="Your current level (default 'junior')."),
     ] = "junior",
     current_skills: Annotated[
         str,
-        "Optional JSON array of skill IDs you already have at target level, e.g. '[\"api_design\"]'.",
+        Field(description="Optional JSON array of skill IDs you already have at target level, e.g. '[\"api_design\"]'."),
     ] = "[]",
 ) -> str:
     """Generate a prioritized learning path for reaching a target role and level.
@@ -220,16 +226,16 @@ def generate_learning_path(
 def advise_career(
     action: Annotated[
         str,
-        "Action: 'find_transitions' (roles you can move to), 'transferable_skills' (your most portable skills), "
-        "'skill_overlap' (compare two roles), 'universal_skills' (most cross-functional skills)",
+        Field(description="Action: 'find_transitions' (roles you can move to), 'transferable_skills' (your most portable skills), "
+        "'skill_overlap' (compare two roles), 'universal_skills' (most cross-functional skills)"),
     ],
-    source_function_id: Annotated[str, "Your current function ID. Required for find_transitions."] = "",
-    source_role_id: Annotated[str, "Your current role ID. Required for find_transitions."] = "",
-    function_id: Annotated[str, "Function ID for transferable_skills or skill_overlap source."] = "",
-    role_id: Annotated[str, "Role ID for transferable_skills or skill_overlap source."] = "",
-    target_function_id: Annotated[str, "Target function ID for skill_overlap."] = "",
-    target_role_id: Annotated[str, "Target role ID for skill_overlap."] = "",
-    limit: Annotated[int, "Max results (default 10)."] = 10,
+    source_function_id: Annotated[str, Field(description="Your current function ID. Required for find_transitions.")] = "",
+    source_role_id: Annotated[str, Field(description="Your current role ID. Required for find_transitions.")] = "",
+    function_id: Annotated[str, Field(description="Function ID for transferable_skills or skill_overlap source.")] = "",
+    role_id: Annotated[str, Field(description="Role ID for transferable_skills or skill_overlap source.")] = "",
+    target_function_id: Annotated[str, Field(description="Target function ID for skill_overlap.")] = "",
+    target_role_id: Annotated[str, Field(description="Target role ID for skill_overlap.")] = "",
+    limit: Annotated[int, Field(description="Max results (default 10).")] = 10,
 ) -> str:
     """Analyze career transitions between tech roles.
 
@@ -259,20 +265,20 @@ def advise_career(
 def action_plan(
     job_title: Annotated[
         str,
-        "The person's job title in plain language, e.g. 'product manager', 'electrician', "
-        "'paralegal', 'SDR'. Matched against role names, aliases and acronyms.",
+        Field(description="The person's job title in plain language, e.g. 'product manager', 'electrician', "
+        "'paralegal', 'SDR'. Matched against role names, aliases and acronyms."),
     ] = "",
     function_id: Annotated[
-        str, "Function ID, if you already know it. Skips the job-title lookup."
+        str, Field(description="Function ID, if you already know it. Skips the job-title lookup.")
     ] = "",
-    role_id: Annotated[str, "Role ID, if you already know it. Skips the job-title lookup."] = "",
+    role_id: Annotated[str, Field(description="Role ID, if you already know it. Skips the job-title lookup.")] = "",
     level: Annotated[
         str,
-        "Career level: 'junior', 'mid', 'senior', 'staff' (ids vary by role — the role's "
-        "levels are returned in the result). Defaults to mid-level.",
+        Field(description="Career level: 'junior', 'mid', 'senior', 'staff' (ids vary by role — the role's "
+        "levels are returned in the result). Defaults to mid-level."),
     ] = "",
     include_transitions: Annotated[
-        bool, "Include roles this person's skills already transfer to. Slower."
+        bool, Field(description="Include roles this person's skills already transfer to. Slower.")
     ] = False,
 ) -> str:
     """Build a personalised AI action plan for a job title.
