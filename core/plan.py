@@ -47,9 +47,9 @@ ACTIONS: Dict[str, Dict[str, str]] = {
 # leadership-heavy roles have seven "invest" skills in one category.
 PROOF_POINTS: Dict[str, List[str]] = {
     "technical": [
-        "Ship something real that uses it, then have a peer review the decisions you made — not just the output.",
-        "Take the part of the system nobody wants to touch and make it the part you can explain from memory.",
-        "Find where the current approach breaks, write down why, and be the one who proposes what replaces it.",
+        "Do it on something that matters, then have someone whose work you respect check your decisions, not just the result.",
+        "Take the part of the job everyone else avoids and get good enough at it that they come to you.",
+        "Find where the usual approach falls down, work out why, and be the one who says what should replace it.",
     ],
     "analytical": [
         "Take one live question your team is arguing about, answer it with evidence, and write down what would change your mind.",
@@ -57,7 +57,7 @@ PROOF_POINTS: Dict[str, List[str]] = {
         "Make a call before the data is complete, record the odds you gave it, and check yourself later.",
     ],
     "domain": [
-        "Explain the trickiest edge case in this area to someone outside your team and have them repeat it back correctly.",
+        "Explain the situation that trips everyone up to someone outside your team, and have them repeat it back correctly.",
         "Be the person a colleague comes to when the standard answer doesn't fit their situation.",
         "Write down the three things newcomers always get wrong here, and hand it to the next newcomer.",
     ],
@@ -77,7 +77,7 @@ PROOF_POINTS: Dict[str, List[str]] = {
         "Make a decision your team disagrees with, explain the reasoning, and hold it when it gets hard.",
     ],
     "execution": [
-        "Run one delivery end to end where you set the checkpoints, and publish what slipped and why.",
+        "Run one job end to end where you set the checkpoints, and say plainly afterwards what slipped and why.",
         "Cut scope in public — name what you dropped and what it bought you.",
         "Take on work with a real deadline you don't control, and land it without a heroic last week.",
     ],
