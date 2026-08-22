@@ -72,7 +72,7 @@ h1,h2,h3,h4{line-height:1.25;font-weight:650}
 .mono-num{font-variant-numeric:tabular-nums}
 
 /* ---------- top bar ---------- */
-.topbar{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--plane) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.topbar{position:sticky;top:0;z-index:40;background:var(--plane);background:color-mix(in srgb,var(--plane) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
 .topbar .wrap{display:flex;align-items:center;gap:.75rem;height:56px}
 .brand{display:flex;align-items:center;gap:.5rem;font-weight:700;color:var(--ink);letter-spacing:-.01em}
 .brand:hover{text-decoration:none}
@@ -142,7 +142,11 @@ nav.bc .sep{color:var(--rule)}
 
 /* ---------- hero figure + meter ---------- */
 .plan-head{display:flex;gap:1.6rem;flex-wrap:wrap;align-items:flex-start;justify-content:space-between}
-.hero-fig{font-size:3.4rem;font-weight:680;letter-spacing:-.03em;line-height:1}
+/* The figure wears ink, not the band colour: status warning (#fab219) and
+   serious (#ec835a) sit at 1.79:1 and 2.57:1 on the light surface, well under
+   the 3:1 large-text minimum. The colour belongs on the meter, which is a mark;
+   the band name beside the figure carries the same meaning in text. */
+.hero-fig{font-size:3.4rem;font-weight:680;letter-spacing:-.03em;line-height:1;color:var(--ink)}
 .hero-fig-lab{font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-top:.25rem}
 .meter{margin-top:1rem}
 .meter-track{position:relative;height:12px;border-radius:6px;background:var(--track);overflow:hidden}
@@ -366,6 +370,12 @@ function exposureBand(x) {
   return PLAN.exposureBands[PLAN.exposureBands.length - 1];
 }
 const BAND_COLOR = { resilient: "var(--good)", shifting: "var(--warning)", exposed: "var(--serious)", "high-exposure": "var(--critical)" };
+const BAND_DOT = { resilient: "invest", shifting: "partner", exposed: "serious", "high-exposure": "delegate" };
+const BAND_NAME = { resilient: "Resilient", shifting: "Shifting", exposed: "Exposed", "high-exposure": "High exposure" };
+function bandChip(band) {
+  return '<span class="chip"><span class="dot dot-' + (BAND_DOT[band.key] || "partner") + '"></span>' +
+    esc(BAND_NAME[band.key] || band.key) + "</span>";
+}
 const ACTION_COLOR = { invest: "var(--good)", partner: "var(--warning)", delegate: "var(--critical)" };
 /* Role-level ordinal label -> the status role it maps onto. Five labels, four
    status colours: "high" and "very-high" share critical and are told apart by
@@ -712,8 +722,9 @@ function viewPlan(r) {
   h += "</div>";
   /* Hero figure — the one number this view leads with. */
   h += '<div style="text-align:right;min-width:9rem">';
-  h += '<div class="hero-fig" style="color:' + bandColor + '">' + x + "%</div>";
+  h += '<div class="hero-fig">' + x + "%</div>";
   h += '<div class="hero-fig-lab">AI exposure</div>';
+  h += '<div style="margin-top:.45rem">' + bandChip(p.band) + "</div>";
   h += "</div></div>";
 
   /* Meter: same-ramp track, fill carries severity, zone ticks are recessive. */
@@ -880,8 +891,9 @@ function viewCompare(r) {
       .sort((s1, s2) => s1.ai_impact_rating - s2.ai_impact_rating).slice(0, 5);
     return '<div class="panel"><h3>' + esc(role.name) + "</h3>" +
       '<div class="c-meta" style="color:var(--muted);font-size:.8rem">' + role.skills.length + " skills</div>" +
-      '<div class="hero-fig" style="font-size:2.2rem;margin-top:.6rem;color:' + (BAND_COLOR[band.key] || "var(--warning)") + '">' + Math.round(x * 100) + "%</div>" +
+      '<div class="hero-fig" style="font-size:2.2rem;margin-top:.6rem">' + Math.round(x * 100) + "%</div>" +
       '<div class="hero-fig-lab">AI exposure</div>' +
+      '<div style="margin-top:.4rem">' + bandChip(band) + "</div>" +
       '<div class="meter"><div class="meter-track"><div class="meter-fill" style="width:' + Math.max(Math.round(x * 100), 2) +
       "%;background:" + (BAND_COLOR[band.key] || "var(--warning)") + '"></div>' +
       '<span class="meter-tick" style="left:30%"></span><span class="meter-tick" style="left:60%"></span></div></div>' +

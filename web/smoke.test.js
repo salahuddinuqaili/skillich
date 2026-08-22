@@ -91,6 +91,10 @@ check("proof point present", /How you'll know you got there/.test(v));
 check("stop-doing list present", /Stop doing these by hand/.test(v));
 check("transitions table present", /Where your skills already transfer/.test(v));
 check("share actions present", /id="copy-link"/.test(v) && /id="dl-md"/.test(v) && /id="print-plan"/.test(v));
+check("band named in text, not colour alone", /class="chip"><span class="dot dot-\w+"><\/span>(Resilient|Shifting|Exposed|High exposure)/.test(v));
+check("hero figure is not painted a status colour",
+  !/class="hero-fig"[^>]*style="[^"]*color:/.test(v),
+  (v.match(/class="hero-fig"[^>]*/) || [""])[0]);
 check("hero hidden off-home", doc.getElementById("home-hero").hidden === true);
 check("document title updated", /Product Manager/.test(doc.title), doc.title);
 
