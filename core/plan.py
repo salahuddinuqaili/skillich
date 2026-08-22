@@ -42,22 +42,83 @@ ACTIONS: Dict[str, Dict[str, str]] = {
     },
 }
 
-# How to prove you've closed the gap, by skill category. Deliberately concrete:
-# a plan that only says "get better at X" is not a plan.
-PROOF_POINTS: Dict[str, str] = {
-    "technical": "Ship something real that uses it, then have a peer review the decisions you made — not just the output.",
-    "analytical": "Take one live question your team is arguing about, answer it with evidence, and write down what would change your mind.",
-    "domain": "Explain the trickiest edge case in this area to someone outside your team and have them repeat it back correctly.",
-    "interpersonal": "Handle one conversation you would normally avoid, and ask the other person afterwards how it landed.",
-    "communication": "Present a recommendation to a decision-maker in under five minutes and get a decision in the room.",
-    "leadership": "Own an outcome you can't deliver alone, and be judged on it rather than on your own output.",
-    "execution": "Run one delivery end to end where you set the checkpoints, and publish what slipped and why.",
-    "operational": "Take an operational process you inherited, measure it, and cut one step out of it.",
-    "strategic": "Write a one-page argument for what your team should stop doing, and defend it with people who disagree.",
-    "regulatory": "Walk a real case through the full process yourself, including the part everyone hands to someone else.",
-    "professional": "Put your judgement in writing where it will be checked later — then check it later.",
+# How to prove you've closed the gap, by skill category. Three variants each:
+# a plan that says the same sentence six times reads as filler, and the
+# leadership-heavy roles have seven "invest" skills in one category.
+PROOF_POINTS: Dict[str, List[str]] = {
+    "technical": [
+        "Ship something real that uses it, then have a peer review the decisions you made — not just the output.",
+        "Take the part of the system nobody wants to touch and make it the part you can explain from memory.",
+        "Find where the current approach breaks, write down why, and be the one who proposes what replaces it.",
+    ],
+    "analytical": [
+        "Take one live question your team is arguing about, answer it with evidence, and write down what would change your mind.",
+        "Reproduce a number someone else published, and reconcile the difference when it doesn't match.",
+        "Make a call before the data is complete, record the odds you gave it, and check yourself later.",
+    ],
+    "domain": [
+        "Explain the trickiest edge case in this area to someone outside your team and have them repeat it back correctly.",
+        "Be the person a colleague comes to when the standard answer doesn't fit their situation.",
+        "Write down the three things newcomers always get wrong here, and hand it to the next newcomer.",
+    ],
+    "interpersonal": [
+        "Handle one conversation you would normally avoid, and ask the other person afterwards how it landed.",
+        "Get someone who disagreed with you to change their position without you pulling rank.",
+        "Notice a problem between two other people early enough that it never becomes yours.",
+    ],
+    "communication": [
+        "Present a recommendation to a decision-maker in under five minutes and get a decision in the room.",
+        "Rewrite something you already sent until a reader outside your function gets it in one pass.",
+        "Deliver news nobody wants and have the room still trust your next update.",
+    ],
+    "leadership": [
+        "Own an outcome you can't deliver alone, and be judged on it rather than on your own output.",
+        "Hand something you're good at to someone who isn't yet, and let them do it their way.",
+        "Make a decision your team disagrees with, explain the reasoning, and hold it when it gets hard.",
+    ],
+    "execution": [
+        "Run one delivery end to end where you set the checkpoints, and publish what slipped and why.",
+        "Cut scope in public — name what you dropped and what it bought you.",
+        "Take on work with a real deadline you don't control, and land it without a heroic last week.",
+    ],
+    "operational": [
+        "Take an operational process you inherited, measure it, and cut one step out of it.",
+        "Be on the hook when it breaks, then fix the cause rather than the symptom.",
+        "Write the runbook well enough that someone else covers for you without calling.",
+    ],
+    "strategic": [
+        "Write a one-page argument for what your team should stop doing, and defend it with people who disagree.",
+        "Say no to something reasonable because it doesn't fit the plan, and explain the plan.",
+        "Make a bet with a time horizon longer than your review cycle, and write down how you'll know it worked.",
+    ],
+    "regulatory": [
+        "Walk a real case through the full process yourself, including the part everyone hands to someone else.",
+        "Find one place where you comply on paper but not in practice, and close it.",
+        "Explain a rule to the people it constrains in terms of what it protects, not what it forbids.",
+    ],
+    "professional": [
+        "Put your judgement in writing where it will be checked later — then check it later.",
+        "Say you don't know, in a room where that costs you something.",
+        "Hold a standard when the cheaper option was available and nobody would have noticed.",
+    ],
 }
-DEFAULT_PROOF = "Do this once in real conditions, with someone whose opinion you respect watching."
+DEFAULT_PROOF: List[str] = [
+    "Do this once in real conditions, with someone whose opinion you respect watching.",
+    "Do it a second time without the safety net you had the first time.",
+    "Teach it to one person, and fix whatever you couldn't explain.",
+]
+
+
+def proof_point(category: str, occurrence: int = 0) -> str:
+    """A concrete way to prove a skill has moved.
+
+    ``occurrence`` is how many skills of this category the plan has already
+    used, so a role with six technical skills cycles through the variants
+    instead of printing one sentence six times.
+    """
+    variants = PROOF_POINTS.get(category) or DEFAULT_PROOF
+    return variants[occurrence % len(variants)]
+
 
 # Exposure bands describe the whole role, not one skill.
 EXPOSURE_BANDS: List[Tuple[float, str, str]] = [
@@ -287,8 +348,11 @@ def build_plan(
     band, headline = exposure_band(exposure)
 
     buckets: Dict[str, List[PlanSkill]] = {"invest": [], "partner": [], "delegate": []}
+    seen_categories: Dict[str, int] = {}
     for s in sorted(role.skills, key=lambda x: x.ai_impact_rating):
         act = action_for(s.ai_impact_rating)
+        occurrence = seen_categories.get(s.category, 0)
+        seen_categories[s.category] = occurrence + 1
         buckets[act].append(
             PlanSkill(
                 id=s.id,
@@ -300,7 +364,7 @@ def build_plan(
                 action=act,
                 now=s.proficiency.get(lvl_id, ""),
                 next=s.proficiency.get(next_id, ""),
-                proof=PROOF_POINTS.get(s.category, DEFAULT_PROOF),
+                proof=proof_point(s.category, occurrence),
             )
         )
 

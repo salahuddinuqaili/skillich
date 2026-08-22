@@ -127,6 +127,30 @@ def test_invest_skills_carry_a_concrete_proof_point(loader):
     assert all(s.proof for s in plan.invest)
 
 
+def test_proof_points_vary_within_a_category(loader):
+    """Six technical skills must not print the same sentence six times."""
+    plan = build_plan(loader, "leadership", "engineering_manager", "senior")
+    same_category = [s for s in plan.invest if s.category == "leadership"]
+    assert len(same_category) >= 3, "fixture no longer exercises the repeat case"
+    assert len({s.proof for s in same_category[:3]}) == 3
+
+
+def test_proof_point_cycles_deterministically():
+    from core.plan import PROOF_POINTS, proof_point
+
+    variants = PROOF_POINTS["technical"]
+    assert [proof_point("technical", i) for i in range(len(variants))] == variants
+    assert proof_point("technical", len(variants)) == variants[0]
+    assert proof_point("technical", 0) == proof_point("technical", 0)
+
+
+def test_unknown_category_falls_back_without_crashing():
+    from core.plan import DEFAULT_PROOF, proof_point
+
+    assert proof_point("astrology", 0) == DEFAULT_PROOF[0]
+    assert proof_point("astrology", 99)
+
+
 def test_share_path_matches_the_web_route(loader):
     plan = build_plan(loader, "trades", "electrician", "journeyman")
     assert plan.share_path == "#/plan/trades/electrician/journeyman"
@@ -265,5 +289,7 @@ def test_proof_points_cover_every_category_in_the_taxonomy(loader):
         for r in loader.list_roles(f.id)
         for s in r.skills
     }
-    missing = categories - set(plan_constants()["proofPoints"])
+    proofs = plan_constants()["proofPoints"]
+    missing = categories - set(proofs)
     assert not missing, f"no proof point for categories: {sorted(missing)}"
+    assert all(len(v) >= 3 for v in proofs.values()), "each category needs variants to cycle"

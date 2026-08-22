@@ -13,6 +13,9 @@ to keep.
   partner / delegate split, what "good" looks like at your next level, and a
   concrete way to prove you got there.
 - **`--save plan.md`** writes the plan to a Markdown file you own.
+- Each invest skill comes with a concrete way to prove you closed the gap, and
+  the wording cycles so a leadership-heavy role doesn't print one sentence seven
+  times.
 - **`action_plan` MCP tool** — one call answers "what does AI mean for my job?"
   in Claude Desktop and Claude Code. Ambiguous titles return candidates to ask
   about instead of a confident guess.
@@ -52,7 +55,7 @@ to keep.
   minutes to ~4 seconds.
 
 ### Tests
-- 262 Python tests (up from 173), plus 70 headless browser checks
+- 265 Python tests (up from 173), plus 73 headless browser checks
   (`web/smoke.test.js`, jsdom) that drive the real generated page. Both run in CI.
 
 ---

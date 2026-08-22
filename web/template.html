@@ -479,6 +479,13 @@ function searchRoles(query, limit) {
 /* =====================================================================
    Plan building — mirrors core/plan.py::build_plan
    ===================================================================== */
+/* Cycle the variants so a role with six technical skills doesn't print one
+   sentence six times. Mirrors core/plan.py::proof_point. */
+function proofPoint(category, occurrence) {
+  const variants = PLAN.proofPoints[category] || PLAN.defaultProof;
+  return variants[occurrence % variants.length];
+}
+
 function resolveLevel(role, levelId) {
   const ids = role.levels.map((l) => l.id);
   if (!ids.length) return { id: "", name: "", nextId: "", nextName: "" };
@@ -495,13 +502,16 @@ function buildPlan(fid, rid, levelId) {
   const exposure = exposureOf(role);
   const band = exposureBand(exposure);
   const buckets = { invest: [], partner: [], delegate: [] };
+  const seen = {};
   role.skills.slice().sort((a, b) => a.ai_impact_rating - b.ai_impact_rating).forEach((s) => {
     const action = actionFor(s.ai_impact_rating);
+    const occurrence = seen[s.category] || 0;
+    seen[s.category] = occurrence + 1;
     buckets[action].push({
       id: s.id, name: s.name, category: s.category, description: s.description,
       rating: s.ai_impact_rating, detail: s.ai_impact_detail, action,
       now: s.proficiency[lv.id] || "", next: s.proficiency[lv.nextId] || "",
-      proof: PLAN.proofPoints[s.category] || PLAN.defaultProof,
+      proof: proofPoint(s.category, occurrence),
     });
   });
   return {

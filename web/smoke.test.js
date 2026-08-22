@@ -39,6 +39,7 @@ function nav(hash) {
 const view = () => doc.getElementById("view").innerHTML;
 const flush = () => window.dispatchEvent(new window.Event("hashchange"));
 const TAX = () => window.eval("DATA");
+const PLAN_PROOFS = window.eval("PLAN").proofPoints;
 
 console.log("\n--- boot ---");
 check("no script errors on load", errs.length === 0, errs.join(" | "));
@@ -100,6 +101,16 @@ juniorBtn.dispatchEvent(new window.Event("click", { bubbles: true }));
 flush();
 check("switching level changes route", window.location.hash === "#/plan/product/product_manager/junior", window.location.hash);
 check("junior proficiency now shown", /data-level="junior" aria-pressed="true"/.test(view()));
+
+console.log("\n--- proof point variety ---");
+const em = window.buildPlan("leadership", "engineering_manager", "senior");
+const leadership = em.invest.filter((s) => s.category === "leadership");
+check("repeat-heavy plan has >=3 leadership invest skills", leadership.length >= 3, leadership.length);
+check("consecutive same-category proofs differ",
+  new Set(leadership.slice(0, 3).map((s) => s.proof)).size === 3,
+  JSON.stringify(leadership.slice(0, 3).map((s) => s.proof.slice(0, 30))));
+check("browser proofs match the Python cycle",
+  leadership[0].proof === PLAN_PROOFS.leadership[0], leadership[0].proof.slice(0, 40));
 
 console.log("\n--- markdown export ---");
 const p = window.buildPlan("product", "product_manager", "senior");
