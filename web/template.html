@@ -259,7 +259,7 @@ footer a{color:var(--ink-2)}
 
 <header class="topbar">
   <div class="wrap">
-    <a class="brand" href="#/" data-nav>
+    <a class="brand" href="#/">
       <svg width="20" height="20" viewBox="0 0 32 32" aria-hidden="true">
         <rect x="4" y="18" width="6" height="10" rx="2" fill="#0ca30c"/>
         <rect x="13" y="12" width="6" height="16" rx="2" fill="#fab219"/>
@@ -268,7 +268,7 @@ footer a{color:var(--ink-2)}
       skillich
     </a>
     <div class="topbar-spacer"></div>
-    <a class="ghost-link" href="#/browse" data-nav>Browse roles</a>
+    <a class="ghost-link" href="#/browse">Browse roles</a>
     <a class="ghost-link" href="https://github.com/salahuddinuqaili/skillich/blob/main/docs/playbook.md">Playbook</a>
     <button class="icon-btn" id="glossary-open" aria-label="Open glossary" title="Glossary">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.2 2.4c-.6.2-.7.7-.7 1.3v.4"/><circle cx="12" cy="17" r=".8" fill="currentColor" stroke="none"/></svg>
@@ -294,7 +294,7 @@ footer a{color:var(--ink-2)}
         <div class="results" id="results" role="listbox" aria-label="Matching roles"></div>
       </div>
       <p class="hint"><span id="role-count">__ROLE_COUNT__</span> roles covered. No signup, no cost, nothing stored on a server.
-        <a href="#/browse" data-nav>Browse them all</a>.</p>
+        <a href="#/browse">Browse them all</a>.</p>
       <div id="resume-slot"></div>
     </section>
   </div>
@@ -623,12 +623,12 @@ function crumbs(items) {
   const parts = items.map((it, i) =>
     i === items.length - 1
       ? "<span>" + esc(it.label) + "</span>"
-      : '<a href="' + it.href + '" data-nav>' + esc(it.label) + "</a>");
+      : '<a href="' + it.href + '">' + esc(it.label) + "</a>");
   return '<nav class="bc" aria-label="Breadcrumb">' + parts.join('<span class="sep">/</span>') + "</nav>";
 }
 function roleCard(f, r) {
   const x = exposureOf(r);
-  return '<a class="card" href="#/plan/' + f.id + "/" + r.id + '" data-nav>' +
+  return '<a class="card" href="#/plan/' + f.id + "/" + r.id + '">' +
     "<h3>" + esc(r.name) + "</h3>" +
     '<div class="c-meta">' + esc(f.name) + " · " + r.skills.length + " skills · " + pct(x) + " AI exposure</div>" +
     "<p>" + esc(r.description.slice(0, 118)) + (r.description.length > 118 ? "…" : "") + "</p></a>";
@@ -645,7 +645,7 @@ function bandLegend() {
 function viewHome() {
   const last = readLast();
   $("#resume-slot").innerHTML = last
-    ? '<a class="resume" href="' + esc(last.path) + '" data-nav>Pick up where you left off: <strong>' +
+    ? '<a class="resume" href="' + esc(last.path) + '">Pick up where you left off: <strong>' +
       esc(last.label) + "</strong> →</a>"
     : "";
   return '<div class="wrap">' +
@@ -676,7 +676,7 @@ function finding(num, text) {
 function functionCard(f) {
   const skills = f.roles.reduce((a, r) => a + r.skills.length, 0);
   const avg = f.roles.length ? f.roles.reduce((a, r) => a + exposureOf(r), 0) / f.roles.length : 0;
-  return '<a class="card" href="#/function/' + f.id + '" data-nav><h3>' + esc(f.name) + "</h3>" +
+  return '<a class="card" href="#/function/' + f.id + '"><h3>' + esc(f.name) + "</h3>" +
     '<div class="c-meta">' + f.roles.length + " roles · " + skills + " skills · " + pct(avg) + " avg exposure</div>" +
     "<p>" + esc(f.description.slice(0, 110)) + "…</p></a>";
 }
@@ -699,14 +699,14 @@ function viewSearch(r) {
   const hits = searchRoles(r.q || "", 30);
   if (!hits.length) return '<div class="wrap">' + crumbs([{ label: "Home", href: "#/" }, { label: "Search" }]) +
     '<div class="empty"><h2>Nothing matches "' + esc(r.q) + '"</h2>' +
-    "<p>We cover " + DATA.stats.roles + ' roles so far. <a href="#/browse" data-nav>Browse them</a>, or ' +
+    "<p>We cover " + DATA.stats.roles + ' roles so far. <a href="#/browse">Browse them</a>, or ' +
     '<a href="https://github.com/salahuddinuqaili/skillich/issues/new?title=Role+request:+' + encodeURIComponent(r.q) + '">ask for this one</a>.</p></div></div>';
   return '<div class="wrap">' + crumbs([{ label: "Home", href: "#/" }, { label: 'Search: "' + r.q + '"' }]) +
     '<section class="section"><h2>' + hits.length + ' role' + (hits.length === 1 ? "" : "s") + ' matching "' + esc(r.q) + '"</h2>' +
     '<div class="grid">' + hits.map((h) => roleCard(h.func, h.role)).join("") + "</div></section></div>";
 }
 function notFound(msg) {
-  return '<div class="wrap"><div class="empty"><h2>' + esc(msg) + '</h2><p><a href="#/" data-nav>Start over</a></p></div></div>';
+  return '<div class="wrap"><div class="empty"><h2>' + esc(msg) + '</h2><p><a href="#/">Start over</a></p></div></div>';
 }
 
 /* ---- the plan ---- */
@@ -754,7 +754,7 @@ function viewPlan(r) {
     '<button class="btn btn-primary btn-sm" id="copy-link">Copy link to this plan</button>' +
     '<button class="btn btn-quiet btn-sm" id="dl-md">Download as Markdown</button>' +
     '<button class="btn btn-quiet btn-sm" id="print-plan">Print / save as PDF</button>' +
-    '<a class="btn btn-quiet btn-sm" href="#/role/' + p.func.id + "/" + p.role.id + '" data-nav>Full role detail</a>' +
+    '<a class="btn btn-quiet btn-sm" href="#/role/' + p.func.id + "/" + p.role.id + '">Full role detail</a>' +
     "</div>";
   h += "</section>";
 
@@ -791,7 +791,7 @@ function viewPlan(r) {
         "<tr><td><strong>" + esc(t.role) + "</strong></td><td>" + esc(t.function) + '</td>' +
         '<td class="num">' + Math.round(t.skill_overlap_pct * 100) + "%</td>" +
         '<td class="num">' + t.skills_to_learn + "</td>" +
-        '<td class="num"><a href="#/compare/' + p.func.id + "/" + p.role.id + "/" + t.function_id + "/" + t.role_id + '" data-nav>Compare</a></td></tr>').join("") +
+        '<td class="num"><a href="#/compare/' + p.func.id + "/" + p.role.id + "/" + t.function_id + "/" + t.role_id + '">Compare</a></td></tr>').join("") +
       "</tbody></table></section>";
   }
 
@@ -874,7 +874,7 @@ function viewRole(r) {
     h += '<p style="font-size:.83rem;color:var(--muted);margin-top:.25rem">Also: ' + esc(role.also_known_as.join(", ")) + "</p>";
   h += '<p class="lede" style="margin-top:.5rem">' + esc(role.description) + "</p>";
   h += '<div class="actions no-print"><a class="btn btn-primary btn-sm" href="#/plan/' + f.id + "/" + role.id +
-    '" data-nav>Get my action plan</a></div></section>';
+    '">Get my action plan</a></div></section>';
 
   h += '<section class="section"><h2>How AI is changing this role</h2>' +
     '<p class="lede">' + esc(ai.summary) + "</p><div class=\"impact-cols\">" +
@@ -933,7 +933,7 @@ function viewCompare(r) {
       '<h4 style="font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-top:1rem">Most resilient skills</h4>' +
       "<ul style=\"margin:.4rem 0 0 1rem;font-size:.86rem;color:var(--ink-2)\">" +
       invest.map((s) => "<li>" + esc(s.name) + " <span class=\"mono-num\" style=\"color:var(--muted)\">" + pct(s.ai_impact_rating) + "</span></li>").join("") +
-      '</ul><div class="actions"><a class="btn btn-quiet btn-sm" href="#/plan/' + fid + "/" + role.id + '" data-nav>See the full plan</a></div></div>';
+      '</ul><div class="actions"><a class="btn btn-quiet btn-sm" href="#/plan/' + fid + "/" + role.id + '">See the full plan</a></div></div>';
   };
 
   let h = '<div class="wrap">' + crumbs([
