@@ -3,19 +3,24 @@
 
 ---
 
-## State: v0.2.0 ready to ship
+## State: v0.2.0 merged and live
 
-Branch `feat/plan-v2`. 270 Python tests + 80 headless browser checks passing, ruff clean.
+PR #7 squash-merged to `main` (`7e654ad`) on 2026-08-22. GitHub Pages redeployed and
+verified: the live page at https://salahuddinuqaili.github.io/skillich/ was downloaded
+and passes all 80 browser checks.
 
-**What shipped in this release:** see [CHANGELOG.md](CHANGELOG.md#020--2026-08--take-your-plan-with-you).
+270 Python tests + 80 headless browser checks passing, ruff clean.
+
+**What shipped:** see [CHANGELOG.md](CHANGELOG.md#020--2026-08--take-your-plan-with-you).
 Short version — the plan is now a thing you can keep: shareable URL, Markdown download,
 print-to-PDF, `skillich plan` in the terminal, and an `action_plan` MCP tool.
 
 ---
 
-## ONE ACTION NEEDED FROM YOU — PyPI publish
+## THE ONLY THING LEFT — PyPI publish
 
-The publish workflow is ready but needs a one-time PyPI setup:
+Everything else is shipped. The publish workflow is ready but needs a one-time
+PyPI setup that only a repo owner can do:
 
 1. Go to https://pypi.org → Your account → Publishing → **Add trusted publisher**
    - Owner: `salahuddinuqaili`
@@ -31,7 +36,7 @@ The publish workflow is ready but needs a one-time PyPI setup:
 
 After that, `pip install "skillich[cli]"` works for everyone.
 
-GitHub Pages deploys on merge to `main` — no action needed there.
+GitHub Pages already deployed — nothing to do there.
 
 ---
 
