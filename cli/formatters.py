@@ -370,3 +370,100 @@ def print_stats(data: dict) -> None:
 
 def print_error(message: str) -> None:
     console.print(f"[bold red]Error:[/bold red] {message}")
+
+
+# ---------------------------------------------------------------------------
+# Action plan
+# ---------------------------------------------------------------------------
+
+_ACTION_STYLE = {"invest": "green", "partner": "yellow", "delegate": "red"}
+_BAND_STYLE = {
+    "resilient": "green",
+    "shifting": "yellow",
+    "exposed": "dark_orange",
+    "high-exposure": "red",
+}
+
+
+def print_plan(plan, show_all: bool = False, top: int = 3) -> None:
+    """Render an ActionPlan to the terminal."""
+    band_style = _BAND_STYLE.get(plan.exposure_band, "white")
+    pct = round(plan.exposure * 100)
+
+    header = Text()
+    header.append(f"{plan.role_name}", style="bold")
+    header.append(f"  ·  {plan.level_name}\n", style="dim")
+    header.append(f"{pct}% AI exposure", style=f"bold {band_style}")
+    header.append(f"  ({plan.exposure_band})\n\n", style=band_style)
+    header.append(plan.headline)
+    console.print(Panel(header, title="Your action plan", border_style=band_style))
+
+    sections = [
+        ("invest", "INVEST HERE", plan.invest, "This is where your career value compounds."),
+        ("partner", "PARTNER WITH AI", plan.partner, "Direct the AI here; check what it gets wrong."),
+        ("delegate", "LET AI HANDLE", plan.delegate, "Automate these and reinvest the time above."),
+    ]
+
+    for key, title, skills, blurb in sections:
+        if not skills:
+            continue
+        style = _ACTION_STYLE[key]
+        shown = skills if show_all else skills[:top]
+        table = Table(
+            title=f"{title}  ({len(skills)} skill{'s' if len(skills) != 1 else ''})",
+            title_style=f"bold {style}",
+            show_lines=key == "invest",
+            caption=blurb if key == "invest" else None,
+        )
+        table.add_column("Skill", style="bold", no_wrap=False)
+        table.add_column("AI", justify="right", style=style)
+        if key == "invest":
+            table.add_column(f"Next step -> {plan.next_level_name}")
+        for s in shown:
+            row = [s.name, f"{s.percent}%"]
+            if key == "invest":
+                row.append(s.next or s.description)
+            table.add_row(*row)
+        console.print(table)
+        hidden = len(skills) - len(shown)
+        if hidden > 0:
+            console.print(f"  [dim]+{hidden} more - rerun with --all[/dim]")
+
+    if plan.stop_doing:
+        console.print("\n[bold red]Stop doing these manually:[/bold red]")
+        for item in plan.stop_doing[:5]:
+            console.print(f"  [red]x[/red] {item}")
+
+    if plan.transitions:
+        table = Table(title="Where your skills already transfer", title_style="bold cyan")
+        table.add_column("Role", style="bold")
+        table.add_column("Function")
+        table.add_column("Overlap", justify="right")
+        table.add_column("New skills", justify="right")
+        for t in plan.transitions:
+            table.add_row(
+                t["role"], t["function"], f"{t['skill_overlap_pct']:.0%}", str(t["skills_to_learn"])
+            )
+        console.print(table)
+
+    meta = []
+    if plan.confidence:
+        meta.append(f"confidence: {plan.confidence}")
+    if plan.last_reviewed:
+        meta.append(f"last reviewed: {plan.last_reviewed}")
+    if meta:
+        console.print(f"\n[dim]Ratings {', '.join(meta)}. Disagree? "
+                      "https://github.com/salahuddinuqaili/skillich/issues/new?template=feedback.yml[/dim]")
+
+
+def print_role_matches(query: str, matches: list[dict]) -> None:
+    """Show ranked role matches when a query is ambiguous."""
+    table = Table(title=f'Roles matching "{query}"', show_lines=False)
+    table.add_column("#", justify="right", style="cyan")
+    table.add_column("Role", style="bold")
+    table.add_column("Function")
+    table.add_column("Also known as", style="dim")
+    for i, m in enumerate(matches, 1):
+        aka = ", ".join(m["also_known_as"][:3])
+        table.add_row(str(i), m["role_name"], m["function_name"], aka)
+    console.print(table)

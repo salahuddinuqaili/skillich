@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>skillich — what AI is doing to your job, and what to do about it</title>
+<meta name="description" content="Find your role, see which of your skills AI is automating, and get a personalised action plan you can keep. __ROLE_COUNT__ roles, __SKILL_COUNT__ skills, each rated for AI impact. Free, open source, no signup.">
+<meta name="theme-color" content="#f9f9f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d0d0d" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://salahuddinuqaili.github.io/skillich/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="skillich">
+<meta property="og:title" content="What is AI doing to your job?">
+<meta property="og:description" content="Type your job title. Get a personalised plan: what to invest in, what to partner with AI on, what to hand over. 60 seconds, no signup.">
+<meta property="og:url" content="https://salahuddinuqaili.github.io/skillich/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="What is AI doing to your job?">
+<meta name="twitter:description" content="__ROLE_COUNT__ roles, __SKILL_COUNT__ skills, each rated for AI impact. Get your action plan in 60 seconds.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='18' width='6' height='10' rx='2' fill='%230ca30c'/%3E%3Crect x='13' y='12' width='6' height='16' rx='2' fill='%23fab219'/%3E%3Crect x='22' y='5' width='6' height='23' rx='2' fill='%23d03b3b'/%3E%3C/svg%3E">
+<style>
+/* ===========================================================================
+   Tokens. Light is the base; dark is *selected* (its own steps), declared
+   under both the OS media query and the explicit toggle so either can win.
+   Status colours (good/warning/serious/critical) are fixed in both modes —
+   they mean something, so they never get themed.
+   =========================================================================== */
+:root{
+  color-scheme:light;
+  --plane:#f9f9f7; --surface:#fcfcfb; --surface-2:#f0efec;
+  --ink:#0b0b0b; --ink-2:#52514e; --muted:#898781;
+  --grid:#e1e0d9; --rule:#c3c2b7; --border:rgba(11,11,11,.10);
+  --accent:#2a78d6; --accent-ink:#fff; --accent-wash:rgba(42,120,214,.10);
+  --good:#0ca30c; --warning:#fab219; --serious:#ec835a; --critical:#d03b3b;
+  --track:#cde2fb;
+  --radius:10px; --radius-sm:6px;
+  --shadow:0 1px 2px rgba(11,11,11,.05),0 8px 24px rgba(11,11,11,.06);
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:where(:not([data-theme="light"])){
+    color-scheme:dark;
+    --plane:#0d0d0d; --surface:#1a1a19; --surface-2:#242422;
+    --ink:#fff; --ink-2:#c3c2b7; --muted:#898781;
+    --grid:#2c2c2a; --rule:#383835; --border:rgba(255,255,255,.10);
+    --accent:#3987e5; --accent-ink:#0d0d0d; --accent-wash:rgba(57,135,229,.14);
+    --track:#184f95;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --plane:#0d0d0d; --surface:#1a1a19; --surface-2:#242422;
+  --ink:#fff; --ink-2:#c3c2b7; --muted:#898781;
+  --grid:#2c2c2a; --rule:#383835; --border:rgba(255,255,255,.10);
+  --accent:#3987e5; --accent-ink:#0d0d0d; --accent-wash:rgba(57,135,229,.14);
+  --track:#184f95;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{font-family:var(--sans);background:var(--plane);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+button{font:inherit;cursor:pointer;color:inherit;background:none;border:none}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+h1,h2,h3,h4{line-height:1.25;font-weight:650}
+.wrap{max-width:960px;margin:0 auto;padding:0 1.1rem}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:1rem;top:1rem;z-index:100;background:var(--surface);padding:.6rem 1rem;border:1px solid var(--border);border-radius:var(--radius-sm)}
+.mono-num{font-variant-numeric:tabular-nums}
+
+/* ---------- top bar ---------- */
+.topbar{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--plane) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.topbar .wrap{display:flex;align-items:center;gap:.75rem;height:56px}
+.brand{display:flex;align-items:center;gap:.5rem;font-weight:700;color:var(--ink);letter-spacing:-.01em}
+.brand:hover{text-decoration:none}
+.brand svg{display:block}
+.topbar-spacer{flex:1}
+.icon-btn{width:34px;height:34px;display:grid;place-items:center;border-radius:var(--radius-sm);border:1px solid var(--border);color:var(--ink-2)}
+.icon-btn:hover{background:var(--surface-2);color:var(--ink)}
+.topbar .ghost-link{font-size:.85rem;color:var(--ink-2)}
+.topbar .ghost-link:hover{color:var(--ink)}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:.4rem;padding:.6rem 1.05rem;border-radius:var(--radius-sm);font-weight:600;font-size:.9rem;border:1px solid transparent;transition:background .15s,border-color .15s}
+.btn-primary{background:var(--accent);color:var(--accent-ink)}
+.btn-primary:hover{filter:brightness(1.06);text-decoration:none}
+.btn-quiet{background:var(--surface);border-color:var(--border);color:var(--ink)}
+.btn-quiet:hover{background:var(--surface-2);text-decoration:none}
+.btn-sm{padding:.4rem .7rem;font-size:.82rem}
+
+/* ---------- hero ---------- */
+.hero{padding:3rem 0 1.5rem;text-align:center}
+.hero h1{font-size:clamp(1.75rem,4.4vw,2.6rem);letter-spacing:-.02em;margin-bottom:.6rem}
+.hero .sub{color:var(--ink-2);font-size:1.03rem;max-width:44ch;margin:0 auto 1.6rem}
+.searchbox{position:relative;max-width:520px;margin:0 auto}
+.searchbox input{width:100%;padding:.85rem 1rem .85rem 2.6rem;font-size:1rem;font-family:inherit;border-radius:var(--radius);border:1px solid var(--rule);background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
+.searchbox input::placeholder{color:var(--muted)}
+.searchbox input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-wash)}
+.searchbox .mag{position:absolute;left:.9rem;top:50%;transform:translateY(-50%);color:var(--muted);pointer-events:none}
+.results{position:absolute;left:0;right:0;top:calc(100% + .4rem);background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;text-align:left;z-index:30;max-height:340px;overflow-y:auto}
+.results:empty{display:none}
+.result{display:flex;align-items:center;gap:.6rem;width:100%;padding:.6rem .85rem;text-align:left;border-bottom:1px solid var(--grid)}
+.result:last-child{border-bottom:none}
+.result:hover,.result[aria-selected="true"]{background:var(--accent-wash)}
+.result .r-name{font-weight:600;font-size:.92rem}
+.result .r-meta{font-size:.78rem;color:var(--muted)}
+.result .r-grow{flex:1;min-width:0}
+.result .r-name,.result .r-meta{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hint{color:var(--muted);font-size:.82rem;margin-top:.8rem}
+.hint kbd{font:inherit;font-size:.76rem;border:1px solid var(--border);border-bottom-width:2px;border-radius:4px;padding:0 .3rem;background:var(--surface)}
+.resume{display:inline-flex;align-items:center;gap:.5rem;margin-top:1rem;padding:.45rem .8rem;border-radius:999px;background:var(--surface);border:1px solid var(--border);font-size:.85rem;color:var(--ink-2)}
+.resume:hover{border-color:var(--accent);text-decoration:none}
+
+/* ---------- KPI row (stat tiles) ---------- */
+.kpis{display:flex;justify-content:center;gap:2.4rem;flex-wrap:wrap;margin:1.9rem 0 .5rem}
+.kpi .k-val{font-size:1.5rem;font-weight:650;letter-spacing:-.02em}
+.kpi .k-lab{font-size:.76rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+
+/* ---------- generic surfaces ---------- */
+.panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.15rem}
+.section{margin:2.2rem 0}
+.section > h2{font-size:1.15rem;letter-spacing:-.01em;margin-bottom:.2rem}
+.section > .lede{color:var(--ink-2);font-size:.9rem;margin-bottom:.9rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:.75rem}
+.card{display:block;width:100%;text-align:left;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:.95rem;transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--accent);text-decoration:none}
+.card h3{font-size:.97rem;margin-bottom:.15rem;color:var(--ink)}
+.card .c-meta{color:var(--muted);font-size:.79rem}
+.card p{margin-top:.4rem;font-size:.84rem;color:var(--ink-2)}
+nav.bc{font-size:.83rem;color:var(--muted);padding:1rem 0 .2rem;display:flex;gap:.4rem;flex-wrap:wrap;align-items:center}
+nav.bc a{color:var(--ink-2)}
+nav.bc .sep{color:var(--rule)}
+
+/* ---------- status chips: colour lives in the dot, never in the text ---------- */
+.chip{display:inline-flex;align-items:center;gap:.38rem;padding:.16rem .5rem;border-radius:999px;background:var(--surface-2);border:1px solid var(--border);font-size:.75rem;font-weight:600;color:var(--ink);white-space:nowrap}
+.dot{width:8px;height:8px;border-radius:50%;flex:none}
+.dot-invest{background:var(--good)}.dot-partner{background:var(--warning)}
+.dot-delegate{background:var(--critical)}.dot-serious{background:var(--serious)}
+
+/* ---------- hero figure + meter ---------- */
+.plan-head{display:flex;gap:1.6rem;flex-wrap:wrap;align-items:flex-start;justify-content:space-between}
+.hero-fig{font-size:3.4rem;font-weight:680;letter-spacing:-.03em;line-height:1}
+.hero-fig-lab{font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-top:.25rem}
+.meter{margin-top:1rem}
+.meter-track{position:relative;height:12px;border-radius:6px;background:var(--track);overflow:hidden}
+.meter-fill{height:100%;border-radius:0 4px 4px 0}
+.meter-tick{position:absolute;top:0;bottom:0;width:1px;background:var(--surface)}
+.meter-scale{display:flex;justify-content:space-between;font-size:.72rem;color:var(--muted);margin-top:.35rem}
+.meter-zones{display:flex;font-size:.72rem;color:var(--muted);margin-top:.1rem}
+.headline{margin-top:.9rem;font-size:.95rem;color:var(--ink-2);max-width:60ch}
+
+/* ---------- level switcher ---------- */
+.levels{display:flex;gap:.3rem;flex-wrap:wrap;margin:.2rem 0 0}
+.level{padding:.4rem .75rem;border-radius:var(--radius-sm);border:1px solid var(--border);background:var(--surface);font-size:.83rem;font-weight:600;color:var(--ink-2)}
+.level:hover{border-color:var(--accent)}
+.level[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.level small{display:block;font-weight:400;font-size:.72rem;opacity:.8}
+
+/* ---------- plan sections ---------- */
+.band{margin-top:1.6rem}
+.band-head{display:flex;align-items:baseline;gap:.6rem;flex-wrap:wrap;padding-bottom:.4rem;border-bottom:1px solid var(--grid)}
+.band-head h3{font-size:1.02rem}
+.band-head .band-why{font-size:.85rem;color:var(--ink-2);flex-basis:100%;margin-top:.15rem}
+.skill-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem;margin-top:.7rem}
+.skill-card .sc-top{display:flex;justify-content:space-between;gap:.75rem;align-items:flex-start}
+.skill-card h4{font-size:.98rem}
+.skill-card .sc-desc{font-size:.87rem;color:var(--ink-2);margin-top:.35rem}
+.gap{margin-top:.8rem;border-left:2px solid var(--grid);padding-left:.85rem;display:grid;gap:.5rem}
+.gap dt{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.gap dd{font-size:.87rem;color:var(--ink-2)}
+.res-links{margin-top:.75rem;display:flex;flex-wrap:wrap;gap:.4rem}
+.res-link{font-size:.8rem;padding:.25rem .55rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--surface-2)}
+.compact{width:100%;border-collapse:collapse;margin-top:.6rem}
+.compact th{text-align:left;font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:600;padding:.4rem .5rem;border-bottom:1px solid var(--grid)}
+.compact td{padding:.55rem .5rem;border-bottom:1px solid var(--grid);font-size:.87rem;vertical-align:middle}
+.compact tr:last-child td{border-bottom:none}
+.compact .num{text-align:right;font-variant-numeric:tabular-nums;color:var(--ink-2);white-space:nowrap}
+.compact .barcell{width:96px}
+/* bar mark: 8px thin, 4px rounded data-end, square at the baseline */
+.barwrap{height:8px;background:var(--grid);border-radius:4px;overflow:hidden}
+.bar{height:100%;border-radius:0 4px 4px 0}
+.stoplist{margin-top:.6rem;display:grid;gap:.4rem}
+.stopitem{display:flex;gap:.55rem;font-size:.88rem;color:var(--ink-2);align-items:flex-start}
+.stopitem .dot{margin-top:.42rem}
+.actions{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1.2rem}
+.toast{position:fixed;left:50%;bottom:1.5rem;transform:translateX(-50%);background:var(--ink);color:var(--plane);padding:.55rem 1rem;border-radius:999px;font-size:.85rem;z-index:60;opacity:0;pointer-events:none;transition:opacity .2s}
+.toast.show{opacity:1}
+
+/* ---------- legend ---------- */
+.legend{display:flex;flex-wrap:wrap;gap:.5rem 1.2rem;padding:.7rem .9rem;background:var(--surface-2);border-radius:var(--radius-sm);font-size:.82rem;color:var(--ink-2);margin-top:.7rem}
+.legend-item{display:flex;align-items:center;gap:.4rem}
+
+/* ---------- role detail ---------- */
+.impact-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.75rem;margin-top:.7rem}
+.impact-col{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:.85rem}
+.impact-col h5{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.5rem;display:flex;align-items:center;gap:.4rem;color:var(--ink)}
+.impact-col li{font-size:.83rem;color:var(--ink-2);margin:0 0 .35rem 1rem}
+.freshness{font-size:.78rem;color:var(--muted);margin-top:.7rem}
+.skill-row{cursor:pointer}
+.skill-row:hover{background:var(--surface-2)}
+.skill-detail{background:var(--surface-2);border-radius:var(--radius-sm);padding:.9rem;margin:.3rem 0}
+.prof-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:.5rem;margin-top:.6rem}
+.prof-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:.6rem}
+.prof-card h6{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-bottom:.2rem}
+.prof-card p{font-size:.82rem;color:var(--ink-2)}
+
+/* ---------- compare ---------- */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.compare .panel h3{font-size:1rem;margin-bottom:.2rem}
+
+/* ---------- findings ---------- */
+.findings{display:grid;gap:.6rem}
+.finding{display:flex;gap:.7rem;align-items:flex-start;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:.85rem}
+.finding .f-num{font-size:1.15rem;font-weight:680;letter-spacing:-.02em;min-width:3.2rem}
+.finding .f-txt{font-size:.87rem;color:var(--ink-2)}
+.finding .f-txt strong{color:var(--ink)}
+
+/* ---------- modal ---------- */
+.overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:50;padding:1rem;overflow-y:auto}
+.overlay.open{display:grid;place-items:center}
+.modal{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.4rem;max-width:560px;width:100%;box-shadow:var(--shadow)}
+.modal h3{margin-bottom:.8rem;display:flex;justify-content:space-between;align-items:center}
+.modal dt{font-weight:650;margin-top:.75rem;font-size:.9rem;display:flex;align-items:center;gap:.4rem}
+.modal dd{color:var(--ink-2);font-size:.85rem}
+
+footer{border-top:1px solid var(--border);margin-top:3rem;padding:1.6rem 0 2.4rem;color:var(--muted);font-size:.83rem;text-align:center}
+footer a{color:var(--ink-2)}
+.empty{text-align:center;padding:2.5rem 1rem;color:var(--ink-2)}
+
+@media (max-width:640px){
+  .hero{padding:2rem 0 1rem}
+  .grid{grid-template-columns:1fr}
+  .compare{grid-template-columns:1fr}
+  .kpis{gap:1.4rem}
+  .plan-head{gap:1rem}
+  .compact .barcell{display:none}
+  .topbar .ghost-link{display:none}
+}
+
+/* ---------- print: the plan is a document you keep ---------- */
+@media print{
+  :root{--plane:#fff;--surface:#fff;--surface-2:#fff;--ink:#000;--ink-2:#222;--muted:#555;--border:#bbb;--grid:#ddd}
+  .topbar,.actions,.levels,nav.bc,footer,.toast,.overlay,.no-print{display:none!important}
+  body{background:#fff}
+  .skill-card,.panel,.finding{break-inside:avoid;box-shadow:none}
+  a[href^="http"]::after{content:" (" attr(href) ")";font-size:.7em;color:#555}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#/" data-nav>
+      <svg width="20" height="20" viewBox="0 0 32 32" aria-hidden="true">
+        <rect x="4" y="18" width="6" height="10" rx="2" fill="#0ca30c"/>
+        <rect x="13" y="12" width="6" height="16" rx="2" fill="#fab219"/>
+        <rect x="22" y="5" width="6" height="23" rx="2" fill="#d03b3b"/>
+      </svg>
+      skillich
+    </a>
+    <div class="topbar-spacer"></div>
+    <a class="ghost-link" href="#/browse" data-nav>Browse roles</a>
+    <a class="ghost-link" href="https://github.com/salahuddinuqaili/skillich/blob/main/docs/playbook.md">Playbook</a>
+    <button class="icon-btn" id="glossary-open" aria-label="Open glossary" title="Glossary">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.2 2.4c-.6.2-.7.7-.7 1.3v.4"/><circle cx="12" cy="17" r=".8" fill="currentColor" stroke="none"/></svg>
+    </button>
+    <button class="icon-btn" id="theme-toggle" aria-label="Switch theme" title="Switch light / dark">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 13a8.4 8.4 0 0 1-10-10 8.5 8.5 0 1 0 10 10z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <!-- The hero is static markup, not JS output: the browser paints the headline
+       and the search box while the taxonomy at the foot of this file is still
+       streaming in. Everything below it is rendered by the router. -->
+  <div class="wrap">
+    <section class="hero" id="home-hero">
+      <h1>What is AI doing to your job?</h1>
+      <p class="sub">Type your job title. Get a plan you can act on this week — and keep.</p>
+      <div class="searchbox">
+        <span class="mag" aria-hidden="true"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></span>
+        <input id="q" type="search" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="results" aria-autocomplete="list"
+               placeholder="e.g. product manager, electrician, paralegal, SDR" aria-label="Search for your job title">
+        <div class="results" id="results" role="listbox" aria-label="Matching roles"></div>
+      </div>
+      <p class="hint"><span id="role-count">__ROLE_COUNT__</span> roles covered. No signup, no cost, nothing stored on a server.
+        <a href="#/browse" data-nav>Browse them all</a>.</p>
+      <div id="resume-slot"></div>
+    </section>
+  </div>
+  <div id="view"></div>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<div class="overlay" id="glossary" role="dialog" aria-modal="true" aria-labelledby="glossary-title">
+  <div class="modal">
+    <h3 id="glossary-title">What the labels mean
+      <button class="icon-btn" id="glossary-close" aria-label="Close glossary">&times;</button>
+    </h3>
+    <dl>
+      <dt>AI impact rating (0–100%)</dt>
+      <dd>How much of this skill's routine work today's AI can handle. It is a snapshot of current capability, not a prediction about your job.</dd>
+      <dt><span class="dot dot-invest"></span> Invest here (0–30%)</dt>
+      <dd>AI struggles with this. It needs judgement, relationships, or physical work that models can't replicate. This is where your career value compounds.</dd>
+      <dt><span class="dot dot-partner"></span> Partner with AI (31–60%)</dt>
+      <dd>AI does parts of this well but needs steering. Your edge is directing it and catching what it gets wrong.</dd>
+      <dt><span class="dot dot-delegate"></span> Let AI handle (61–100%)</dt>
+      <dd>AI already does most of this. Automate it and move the time into your invest skills.</dd>
+      <dt>Role AI exposure</dt>
+      <dd>The average impact rating across every skill in the role. High exposure means the day-to-day changes a lot — not that the role disappears.</dd>
+      <dt>Confidence</dt>
+      <dd>How sure we are. <em>Medium</em> means supported by published research. <em>Low</em> means expert estimate. <em>High</em> means validated by practitioners — which is what your feedback unlocks.</dd>
+    </dl>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    skillich — MIT licensed, built in the open ·
+    <a href="https://github.com/salahuddinuqaili/skillich">GitHub</a> ·
+    <a href="https://github.com/salahuddinuqaili/skillich/blob/main/docs/playbook.md">Playbook</a> ·
+    <a href="https://github.com/salahuddinuqaili/skillich/issues/new?template=feedback.yml">These ratings are wrong →</a>
+    <div style="margin-top:.5rem">Ratings are expert estimates informed by published research. They are not predictions, and they get better when practitioners correct them.</div>
+  </div>
+</footer>
+
+<script type="application/json" id="taxonomy-data">__TAXONOMY_JSON__</script>
+<script>
+"use strict";
+const DATA = JSON.parse(document.getElementById("taxonomy-data").textContent);
+const RESOURCES = __RESOURCES_JSON__;
+const PLAN = __PLAN_JSON__;
+const SITE = "https://salahuddinuqaili.github.io/skillich/";
+
+/* =====================================================================
+   Utilities
+   ===================================================================== */
+const $ = (s, r) => (r || document).querySelector(s);
+const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g,
+  (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const pct = (r) => Math.round(r * 100) + "%";
+
+const ALL_ROLES = [];
+DATA.functions.forEach((f) => f.roles.forEach((r) => ALL_ROLES.push({ func: f, role: r })));
+const findFunc = (id) => DATA.functions.find((f) => f.id === id);
+const findRole = (fid, rid) => { const f = findFunc(fid); return f && f.roles.find((r) => r.id === rid); };
+
+function actionFor(rating) {
+  if (rating <= PLAN.investMax) return "invest";
+  if (rating <= PLAN.partnerMax) return "partner";
+  return "delegate";
+}
+function exposureOf(role) {
+  if (!role.skills.length) return 0;
+  return role.skills.reduce((a, s) => a + s.ai_impact_rating, 0) / role.skills.length;
+}
+function exposureBand(x) {
+  for (const b of PLAN.exposureBands) if (x < b.ceiling) return b;
+  return PLAN.exposureBands[PLAN.exposureBands.length - 1];
+}
+const BAND_COLOR = { resilient: "var(--good)", shifting: "var(--warning)", exposed: "var(--serious)", "high-exposure": "var(--critical)" };
+const ACTION_COLOR = { invest: "var(--good)", partner: "var(--warning)", delegate: "var(--critical)" };
+/* Role-level ordinal label -> the status role it maps onto. Five labels, four
+   status colours: "high" and "very-high" share critical and are told apart by
+   their text, never by hue alone. */
+const LEVEL_DOT = { low: "invest", moderate: "partner", "moderate-high": "serious", high: "delegate", "very-high": "delegate" };
+
+function levelChip(level) {
+  return '<span class="chip"><span class="dot dot-' + (LEVEL_DOT[level] || "partner") + '"></span>' + esc(level) + " AI impact</span>";
+}
+function actionChip(action) {
+  return '<span class="chip"><span class="dot dot-' + action + '"></span>' + esc(PLAN.actions[action].label) + "</span>";
+}
+function findResources(skillName) {
+  const sn = skillName.toLowerCase(), out = [];
+  for (const [kw, list] of Object.entries(RESOURCES)) {
+    if (sn.includes(kw) || kw.split(" ").every((w) => sn.includes(w))) {
+      list.forEach((r) => { if (!out.some((m) => m.url === r.url)) out.push(r); });
+    }
+  }
+  return out.slice(0, 4);
+}
+
+let toastTimer;
+function toast(msg) {
+  const t = $("#toast");
+  t.textContent = msg; t.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove("show"), 2200);
+}
+
+/* =====================================================================
+   Theme — explicit choice wins over the OS setting, and persists
+   ===================================================================== */
+const THEME_KEY = "skillich:theme";
+function applyTheme(t) {
+  if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+  else document.documentElement.removeAttribute("data-theme");
+}
+applyTheme(localStorage.getItem(THEME_KEY));
+$("#theme-toggle").addEventListener("click", () => {
+  const dark = getComputedStyle(document.body).backgroundColor === "rgb(13, 13, 13)";
+  const next = dark ? "light" : "dark";
+  localStorage.setItem(THEME_KEY, next);
+  applyTheme(next);
+});
+
+/* =====================================================================
+   Role search — same ranking rules as the Python CLI (core/plan.py)
+   ===================================================================== */
+const normalise = (s) => String(s).toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
+const tokens = (s) => normalise(s).split(" ").filter((w) => w && !PLAN.stopWords.includes(w));
+
+function scoreRole(query, role, funcName) {
+  const q0 = normalise(query);
+  if (!q0) return [0, false];
+  const queries = [q0];
+  const syn = PLAN.querySynonyms[q0];
+  if (syn && normalise(syn) !== q0) queries.push(normalise(syn));
+
+  const names = [role.name].concat(role.also_known_as || []);
+  let best = 0, primary = false;
+  const record = (score, isPrimary) => {
+    if (score > best) { best = score; primary = isPrimary; }
+    else if (score === best && isPrimary) primary = true;
+  };
+
+  queries.forEach((q, qi) => {
+    const qt = q.split(" ").filter((w) => w && !PLAN.stopWords.includes(w));
+    if (!qt.length) return;
+    const weight = qi === 0 ? 1 : 0.9;
+    for (const name of names) {
+      const n = normalise(name), isAlias = name !== role.name;
+      if (n === q) { record(weight * (isAlias ? 95 : 100), !isAlias); continue; }
+      if (n.startsWith(q)) { record(weight * (isAlias ? 80 : 85), !isAlias); continue; }
+      if (n.includes(q)) { record(weight * (isAlias ? 65 : 70), !isAlias); continue; }
+      const initials = n.split(" ").filter(Boolean).map((w) => w[0]).join("");
+      if (q.length > 1 && initials === q.replace(/\s/g, "")) { record(weight * (isAlias ? 60 : 78), !isAlias); continue; }
+      const nt = new Set(tokens(name));
+      const hit = qt.filter((t) => nt.has(t)).length;
+      if (hit) record(weight * 40 * (hit / qt.length), !isAlias);
+    }
+  });
+
+  const idNorm = role.id.replace(/_/g, " ");
+  if (idNorm === q0) record(100, true);
+  else if (idNorm.startsWith(q0)) {
+    /* Whole-word id prefix ("ml" in "ml engineering") is strong; mid-word
+       ("engineer" in "engineering manager") is not. */
+    const nextChar = idNorm.slice(q0.length, q0.length + 1);
+    record(nextChar === "" || nextChar === " " ? 88 : 72, true);
+  }
+
+  if (best === 0) {
+    if (normalise(funcName).includes(q0)) best = 20;
+    else if (role.skills.some((s) => normalise(s.name).includes(q0))) best = 15;
+    else if (normalise(role.description).includes(q0)) best = 10;
+  }
+  return [best, primary];
+}
+
+function searchRoles(query, limit) {
+  const out = [];
+  for (const { func, role } of ALL_ROLES) {
+    const [score, primary] = scoreRole(query, role, func.name);
+    if (score > 0) out.push({ func, role, score, primary });
+  }
+  out.sort((a, b) => b.score - a.score || (a.primary === b.primary ? 0 : a.primary ? -1 : 1) || a.role.name.localeCompare(b.role.name));
+  return out.slice(0, limit || 8);
+}
+
+/* =====================================================================
+   Plan building — mirrors core/plan.py::build_plan
+   ===================================================================== */
+function resolveLevel(role, levelId) {
+  const ids = role.levels.map((l) => l.id);
+  if (!ids.length) return { id: "", name: "", nextId: "", nextName: "" };
+  let i = ids.indexOf(levelId);
+  if (i < 0) i = Math.min(1, ids.length - 1);
+  const n = Math.min(i + 1, ids.length - 1);
+  return { id: ids[i], name: role.levels[i].name, nextId: ids[n], nextName: role.levels[n].name, index: i };
+}
+
+function buildPlan(fid, rid, levelId) {
+  const func = findFunc(fid), role = func && func.roles.find((r) => r.id === rid);
+  if (!role) return null;
+  const lv = resolveLevel(role, levelId);
+  const exposure = exposureOf(role);
+  const band = exposureBand(exposure);
+  const buckets = { invest: [], partner: [], delegate: [] };
+  role.skills.slice().sort((a, b) => a.ai_impact_rating - b.ai_impact_rating).forEach((s) => {
+    const action = actionFor(s.ai_impact_rating);
+    buckets[action].push({
+      id: s.id, name: s.name, category: s.category, description: s.description,
+      rating: s.ai_impact_rating, detail: s.ai_impact_detail, action,
+      now: s.proficiency[lv.id] || "", next: s.proficiency[lv.nextId] || "",
+      proof: PLAN.proofPoints[s.category] || PLAN.defaultProof,
+    });
+  });
+  return {
+    func, role, level: lv, exposure, band,
+    invest: buckets.invest, partner: buckets.partner, delegate: buckets.delegate,
+  };
+}
+
+function planMarkdown(p) {
+  const L = [];
+  L.push("# Your AI action plan — " + p.role.name, "");
+  L.push("**Level:** " + p.level.name + "  ");
+  L.push("**Function:** " + p.func.name + "  ");
+  L.push("**Role AI exposure:** " + pct(p.exposure) + " (" + p.band.key + ")", "");
+  L.push(p.band.headline, "");
+  const section = (title, why, skills, withGap) => {
+    if (!skills.length) return;
+    L.push("## " + title, "", why, "");
+    skills.forEach((s) => {
+      L.push("### " + s.name + " — " + pct(s.rating) + " AI impact", "");
+      L.push(s.description.trim(), "");
+      if (withGap && s.next) {
+        if (s.now) L.push("- **Where you are (" + p.level.name + "):** " + s.now);
+        L.push("- **Where you're going (" + p.level.nextName + "):** " + s.next);
+        L.push("- **How you'll know you got there:** " + s.proof, "");
+      }
+    });
+  };
+  section("Invest here (" + p.invest.length + ")", PLAN.actions.invest.why, p.invest, true);
+  section("Partner with AI (" + p.partner.length + ")", PLAN.actions.partner.why, p.partner, false);
+  section("Let AI handle (" + p.delegate.length + ")", PLAN.actions.delegate.why, p.delegate, false);
+  const stop = p.role.ai_impact.automating || [];
+  if (stop.length) { L.push("## Stop doing these manually", ""); stop.forEach((x) => L.push("- " + x)); L.push(""); }
+  const tr = p.role.transitions || [];
+  if (tr.length) {
+    L.push("## Where your skills already transfer", "", "Roles that reuse most of what you can already do:", "");
+    tr.forEach((t) => L.push("- **" + t.role + "** (" + t.function + ") — " + Math.round(t.skill_overlap_pct * 100) +
+      "% skill overlap, " + t.skills_to_learn + " new skills to pick up"));
+    L.push("");
+  }
+  L.push("---", "", "Your plan: " + SITE + planPath(p), "",
+    "Generated by skillich — ratings confidence: " + (p.role.ai_impact.confidence || "n/a") +
+    ", last reviewed " + (p.role.ai_impact.last_reviewed || "n/a") + ".", "",
+    "Ratings are expert estimates, not predictions. If they don't match your experience, say so:",
+    "https://github.com/salahuddinuqaili/skillich/issues/new?template=feedback.yml");
+  return L.join("\n");
+}
+const planPath = (p) => "#/plan/" + p.func.id + "/" + p.role.id + "/" + p.level.id;
+
+/* =====================================================================
+   Router
+   ===================================================================== */
+const LAST_KEY = "skillich:last";
+function go(path) { if (location.hash === path) render(); else location.hash = path; }
+
+function route() {
+  const raw = decodeURIComponent(location.hash.replace(/^#\/?/, ""));
+  const parts = raw.split("/").filter(Boolean);
+  if (!parts.length) return { name: "home" };
+  const [head, ...rest] = parts;
+  if (head === "plan" && rest.length >= 2) return { name: "plan", fid: rest[0], rid: rest[1], level: rest[2] };
+  if (head === "role" && rest.length >= 2) return { name: "role", fid: rest[0], rid: rest[1] };
+  if (head === "function" && rest.length >= 1) return { name: "function", fid: rest[0] };
+  if (head === "compare" && rest.length >= 4) return { name: "compare", a: [rest[0], rest[1]], b: [rest[2], rest[3]] };
+  if (head === "search") return { name: "search", q: rest.join("/") };
+  if (head === "browse") return { name: "browse" };
+  return { name: "home" };
+}
+
+let pageTitle = "";
+function render() {
+  const r = route();
+  pageTitle = "";
+  const views = { home: viewHome, plan: viewPlan, role: viewRole, function: viewFunction, browse: viewBrowse, search: viewSearch, compare: viewCompare };
+  const html = (views[r.name] || viewHome)(r);
+  $("#home-hero").hidden = r.name !== "home";
+  $("#view").innerHTML = html;
+  document.title = pageTitle ? pageTitle + " · skillich" : "skillich — what AI is doing to your job";
+  wireView(r);
+  window.scrollTo(0, 0);
+}
+window.addEventListener("hashchange", render);
+
+/* ---- shared fragments ---- */
+function crumbs(items) {
+  const parts = items.map((it, i) =>
+    i === items.length - 1
+      ? "<span>" + esc(it.label) + "</span>"
+      : '<a href="' + it.href + '" data-nav>' + esc(it.label) + "</a>");
+  return '<nav class="bc" aria-label="Breadcrumb">' + parts.join('<span class="sep">/</span>') + "</nav>";
+}
+function roleCard(f, r) {
+  const x = exposureOf(r);
+  return '<a class="card" href="#/plan/' + f.id + "/" + r.id + '" data-nav>' +
+    "<h3>" + esc(r.name) + "</h3>" +
+    '<div class="c-meta">' + esc(f.name) + " · " + r.skills.length + " skills · " + pct(x) + " AI exposure</div>" +
+    "<p>" + esc(r.description.slice(0, 118)) + (r.description.length > 118 ? "…" : "") + "</p></a>";
+}
+function bandLegend() {
+  return '<div class="legend">' +
+    Object.keys(PLAN.actions).map((k) =>
+      '<span class="legend-item"><span class="dot dot-' + k + '"></span><strong>' +
+      esc(PLAN.actions[k].label) + "</strong> " + esc(PLAN.actions[k].tip) + "</span>").join("") +
+    "</div>";
+}
+
+/* ---- home (the hero itself is static markup above; this is everything below it) ---- */
+function viewHome() {
+  const last = readLast();
+  $("#resume-slot").innerHTML = last
+    ? '<a class="resume" href="' + esc(last.path) + '" data-nav>Pick up where you left off: <strong>' +
+      esc(last.label) + "</strong> →</a>"
+    : "";
+  return '<div class="wrap">' +
+    '<div class="kpis">' +
+      '<div class="kpi"><div class="k-val">' + DATA.stats.roles + '</div><div class="k-lab">Roles</div></div>' +
+      '<div class="kpi"><div class="k-val">' + DATA.stats.skills.toLocaleString() + '</div><div class="k-lab">Skills rated</div></div>' +
+      '<div class="kpi"><div class="k-val">' + DATA.stats.functions + '</div><div class="k-lab">Functions</div></div>' +
+    "</div>" +
+    '<section class="section"><h2>What you get</h2>' +
+      '<p class="lede">Every skill in your role, sorted into three actions — and what "good" looks like at your next level.</p>' +
+      bandLegend() +
+    "</section>" +
+    '<section class="section"><h2>What the data says</h2>' +
+      '<div class="findings">' +
+        finding("21%", "<strong>Skilled trades are the most AI-resilient function</strong> — the lowest of all " + DATA.stats.functions + ". You can't automate pulling wire through walls.") +
+        finding("54%", "<strong>Marketing is the most exposed function.</strong> Content generation, ad optimisation and analytics are moving fastest.") +
+        finding("5%", "<strong>The most resilient skills are physical or relational</strong> — electrical installation, live performance, apprentice mentoring, conflict resolution.") +
+      "</div>" +
+    "</section>" +
+    '<section class="section"><h2>Browse by function</h2><div class="grid">' +
+      DATA.functions.map(functionCard).join("") +
+    "</div></section>" +
+    "</div>";
+}
+function finding(num, text) {
+  return '<div class="finding"><div class="f-num">' + num + '</div><div class="f-txt">' + text + "</div></div>";
+}
+function functionCard(f) {
+  const skills = f.roles.reduce((a, r) => a + r.skills.length, 0);
+  const avg = f.roles.length ? f.roles.reduce((a, r) => a + exposureOf(r), 0) / f.roles.length : 0;
+  return '<a class="card" href="#/function/' + f.id + '" data-nav><h3>' + esc(f.name) + "</h3>" +
+    '<div class="c-meta">' + f.roles.length + " roles · " + skills + " skills · " + pct(avg) + " avg exposure</div>" +
+    "<p>" + esc(f.description.slice(0, 110)) + "…</p></a>";
+}
+
+/* ---- browse / function / search ---- */
+function viewBrowse() {
+  return '<div class="wrap">' + crumbs([{ label: "Home", href: "#/" }, { label: "All roles" }]) +
+    '<section class="section"><h2>All ' + DATA.stats.roles + " roles</h2>" +
+    '<p class="lede">Pick your closest match — the plan works from the skills, not the job title.</p>' +
+    '<div class="grid">' + ALL_ROLES.map(({ func, role }) => roleCard(func, role)).join("") + "</div></section></div>";
+}
+function viewFunction(r) {
+  const f = findFunc(r.fid);
+  if (!f) return notFound("That function doesn't exist.");
+  return '<div class="wrap">' + crumbs([{ label: "Home", href: "#/" }, { label: f.name }]) +
+    '<section class="section"><h2>' + esc(f.name) + '</h2><p class="lede">' + esc(f.description) + "</p>" +
+    '<div class="grid">' + f.roles.map((role) => roleCard(f, role)).join("") + "</div></section></div>";
+}
+function viewSearch(r) {
+  const hits = searchRoles(r.q || "", 30);
+  if (!hits.length) return '<div class="wrap">' + crumbs([{ label: "Home", href: "#/" }, { label: "Search" }]) +
+    '<div class="empty"><h2>Nothing matches "' + esc(r.q) + '"</h2>' +
+    "<p>We cover " + DATA.stats.roles + ' roles so far. <a href="#/browse" data-nav>Browse them</a>, or ' +
+    '<a href="https://github.com/salahuddinuqaili/skillich/issues/new?title=Role+request:+' + encodeURIComponent(r.q) + '">ask for this one</a>.</p></div></div>';
+  return '<div class="wrap">' + crumbs([{ label: "Home", href: "#/" }, { label: 'Search: "' + r.q + '"' }]) +
+    '<section class="section"><h2>' + hits.length + ' role' + (hits.length === 1 ? "" : "s") + ' matching "' + esc(r.q) + '"</h2>' +
+    '<div class="grid">' + hits.map((h) => roleCard(h.func, h.role)).join("") + "</div></section></div>";
+}
+function notFound(msg) {
+  return '<div class="wrap"><div class="empty"><h2>' + esc(msg) + '</h2><p><a href="#/" data-nav>Start over</a></p></div></div>';
+}
+
+/* ---- the plan ---- */
+function viewPlan(r) {
+  const p = buildPlan(r.fid, r.rid, r.level);
+  if (!p) return notFound("We don't have that role.");
+  writeLast(p);
+  pageTitle = p.role.name + " — your action plan";
+
+  const bandColor = BAND_COLOR[p.band.key] || "var(--warning)";
+  const x = Math.round(p.exposure * 100);
+
+  let h = '<div class="wrap">' + crumbs([
+    { label: "Home", href: "#/" },
+    { label: p.func.name, href: "#/function/" + p.func.id },
+    { label: p.role.name },
+  ]);
+
+  h += '<section class="section" style="margin-top:.6rem">';
+  h += '<div class="plan-head"><div>';
+  h += "<h1 style=\"font-size:1.5rem;letter-spacing:-.02em\">" + esc(p.role.name) + "</h1>";
+  h += '<p class="lede" style="margin:.25rem 0 .8rem">Your plan at <strong>' + esc(p.level.name) + "</strong>. Change it any time:</p>";
+  h += '<div class="levels" role="group" aria-label="Your level">' + p.role.levels.map((l) =>
+    '<button class="level" data-level="' + l.id + '" aria-pressed="' + (l.id === p.level.id) + '">' +
+    esc(l.name) + "<small>" + esc(l.years_experience) + " yrs</small></button>").join("") + "</div>";
+  h += "</div>";
+  /* Hero figure — the one number this view leads with. */
+  h += '<div style="text-align:right;min-width:9rem">';
+  h += '<div class="hero-fig" style="color:' + bandColor + '">' + x + "%</div>";
+  h += '<div class="hero-fig-lab">AI exposure</div>';
+  h += "</div></div>";
+
+  /* Meter: same-ramp track, fill carries severity, zone ticks are recessive. */
+  h += '<div class="meter"><div class="meter-track" role="img" aria-label="Role AI exposure ' + x +
+    ' percent, band: ' + esc(p.band.key) + '">' +
+    '<div class="meter-fill" style="width:' + Math.max(x, 2) + "%;background:" + bandColor + '"></div>' +
+    '<span class="meter-tick" style="left:30%"></span><span class="meter-tick" style="left:60%"></span>' +
+    "</div>" +
+    '<div class="meter-scale"><span>0% — all human</span><span>30%</span><span>60%</span><span>100% — all AI</span></div>' +
+    "</div>";
+  h += '<p class="headline">' + esc(p.band.headline) + "</p>";
+
+  h += '<div class="actions no-print">' +
+    '<button class="btn btn-primary btn-sm" id="copy-link">Copy link to this plan</button>' +
+    '<button class="btn btn-quiet btn-sm" id="dl-md">Download as Markdown</button>' +
+    '<button class="btn btn-quiet btn-sm" id="print-plan">Print / save as PDF</button>' +
+    '<a class="btn btn-quiet btn-sm" href="#/role/' + p.func.id + "/" + p.role.id + '" data-nav>Full role detail</a>' +
+    "</div>";
+  h += "</section>";
+
+  h += bandSection(p, "invest", true);
+  h += bandSection(p, "partner", false);
+  h += bandSection(p, "delegate", false);
+
+  const stop = p.role.ai_impact.automating || [];
+  if (stop.length) {
+    h += '<section class="section"><h2>Stop doing these by hand</h2>' +
+      '<p class="lede">AI does these well enough today that doing them manually is a choice, not a requirement.</p>' +
+      '<div class="stoplist">' + stop.map((s) =>
+        '<div class="stopitem"><span class="dot dot-delegate"></span><span>' + esc(s) + "</span></div>").join("") +
+      "</div></section>";
+  }
+
+  const tr = p.role.transitions || [];
+  if (tr.length) {
+    h += '<section class="section"><h2>Where your skills already transfer</h2>' +
+      '<p class="lede">How much of the target role you likely already cover, measured by matching skill names. ' +
+      'It is a heuristic, so read it as a starting point rather than a verdict.</p>' +
+      '<table class="compact"><thead><tr><th>Role</th><th>Function</th><th class="num">Skill overlap</th><th class="num">New skills</th><th></th></tr></thead><tbody>' +
+      tr.map((t) =>
+        "<tr><td><strong>" + esc(t.role) + "</strong></td><td>" + esc(t.function) + '</td>' +
+        '<td class="num">' + Math.round(t.skill_overlap_pct * 100) + "%</td>" +
+        '<td class="num">' + t.skills_to_learn + "</td>" +
+        '<td class="num"><a href="#/compare/' + p.func.id + "/" + p.role.id + "/" + t.function_id + "/" + t.role_id + '" data-nav>Compare</a></td></tr>').join("") +
+      "</tbody></table></section>";
+  }
+
+  h += '<section class="section panel no-print"><h2 style="font-size:1rem">Does this match your experience?</h2>' +
+    '<p class="lede" style="margin:.3rem 0 .8rem">These ratings are ' + esc(p.role.ai_impact.confidence || "medium") +
+    " confidence, last reviewed " + esc(p.role.ai_impact.last_reviewed || "recently") +
+    ". They become trustworthy when people doing the job correct them.</p>" +
+    '<a class="btn btn-quiet btn-sm" href="https://github.com/salahuddinuqaili/skillich/issues/new?template=feedback.yml&title=' +
+    encodeURIComponent("Feedback: " + p.role.name) + '">Tell us what\'s wrong →</a></section>';
+
+  return h + "</div>";
+}
+
+function bandSection(p, key, detailed) {
+  const skills = p[key];
+  if (!skills.length) return "";
+  const meta = PLAN.actions[key];
+  let h = '<section class="section band"><div class="band-head">' +
+    "<h3>" + esc(meta.label) + "</h3>" +
+    '<span class="chip"><span class="dot dot-' + key + '"></span>' + skills.length + " skill" + (skills.length === 1 ? "" : "s") + "</span>" +
+    '<span class="band-why">' + esc(meta.why) + "</span></div>";
+
+  if (detailed) {
+    h += skills.map((s) => {
+      const res = findResources(s.name);
+      return '<article class="skill-card"><div class="sc-top"><div>' +
+        "<h4>" + esc(s.name) + "</h4>" +
+        '<p class="sc-desc">' + esc(s.description) + "</p></div>" +
+        '<span class="num mono-num" style="color:var(--ink-2);font-size:.85rem;white-space:nowrap">' + pct(s.rating) + " AI</span></div>" +
+        (s.next
+          ? '<dl class="gap">' +
+            (s.now ? "<div><dt>Where you are · " + esc(p.level.name) + "</dt><dd>" + esc(s.now) + "</dd></div>" : "") +
+            "<div><dt>Where you're going · " + esc(p.level.nextName) + "</dt><dd>" + esc(s.next) + "</dd></div>" +
+            "<div><dt>How you'll know you got there</dt><dd>" + esc(s.proof) + "</dd></div></dl>"
+          : "") +
+        (res.length
+          ? '<div class="res-links">' + res.map((r) =>
+              '<a class="res-link" href="' + esc(r.url) + '" target="_blank" rel="noopener">' +
+              (r.type === "free" ? "Free · " : "") + esc(r.name) + "</a>").join("") + "</div>"
+          : "") +
+        "</article>";
+    }).join("");
+  } else {
+    h += '<table class="compact"><thead><tr><th>Skill</th><th class="num">AI impact</th><th class="barcell"></th></tr></thead><tbody>' +
+      skills.map((s) =>
+        "<tr><td><strong>" + esc(s.name) + "</strong><br><span style=\"color:var(--muted);font-size:.8rem\">" +
+        esc(s.detail ? s.detail.slice(0, 110) + (s.detail.length > 110 ? "…" : "") : s.description.slice(0, 90)) + "</span></td>" +
+        '<td class="num">' + pct(s.rating) + "</td>" +
+        '<td class="barcell"><div class="barwrap"><div class="bar" style="width:' +
+        Math.max(s.rating * 100, 3) + "%;background:" + ACTION_COLOR[key] + '"></div></div></td></tr>').join("") +
+      "</tbody></table>";
+  }
+  return h + "</section>";
+}
+
+/* ---- role detail ---- */
+function viewRole(r) {
+  const f = findFunc(r.fid), role = f && f.roles.find((x) => x.id === r.rid);
+  if (!role) return notFound("We don't have that role.");
+  pageTitle = role.name;
+  const ai = role.ai_impact;
+  const sorted = role.skills.slice().sort((a, b) => a.ai_impact_rating - b.ai_impact_rating);
+
+  let h = '<div class="wrap">' + crumbs([
+    { label: "Home", href: "#/" }, { label: f.name, href: "#/function/" + f.id }, { label: role.name },
+  ]);
+  h += '<section class="section" style="margin-top:.6rem"><h1 style="font-size:1.5rem;letter-spacing:-.02em">' +
+    esc(role.name) + " " + levelChip(ai.level) + "</h1>";
+  if (role.also_known_as && role.also_known_as.length)
+    h += '<p style="font-size:.83rem;color:var(--muted);margin-top:.25rem">Also: ' + esc(role.also_known_as.join(", ")) + "</p>";
+  h += '<p class="lede" style="margin-top:.5rem">' + esc(role.description) + "</p>";
+  h += '<div class="actions no-print"><a class="btn btn-primary btn-sm" href="#/plan/' + f.id + "/" + role.id +
+    '" data-nav>Get my action plan</a></div></section>';
+
+  h += '<section class="section"><h2>How AI is changing this role</h2>' +
+    '<p class="lede">' + esc(ai.summary) + "</p><div class=\"impact-cols\">" +
+    impactCol("delegate", "Stop doing manually", ai.automating) +
+    impactCol("partner", "Use AI to go faster", ai.augmenting) +
+    impactCol("invest", "Double down here", ai.preserving) +
+    '</div><p class="freshness">Confidence: ' + esc(ai.confidence || "n/a") +
+    " · Last reviewed: " + esc(ai.last_reviewed || "n/a") + "</p></section>";
+
+  h += '<section class="section"><h2>Every skill, sorted by career value</h2>' +
+    '<p class="lede">Lowest AI impact first — that is where your time compounds. Select a row for detail.</p>' +
+    bandLegend() +
+    '<table class="compact"><thead><tr><th>Skill</th><th>Action</th><th class="num">AI impact</th><th class="barcell"></th></tr></thead><tbody>' +
+    sorted.map((s) => {
+      const a = actionFor(s.ai_impact_rating);
+      return '<tr class="skill-row" tabindex="0" role="button" aria-expanded="false" data-skill="' + esc(s.id) + '">' +
+        "<td><strong>" + esc(s.name) + "</strong><br><span style=\"color:var(--muted);font-size:.8rem\">" +
+        esc(s.description.slice(0, 78)) + (s.description.length > 78 ? "…" : "") + "</span></td>" +
+        "<td>" + actionChip(a) + "</td>" +
+        '<td class="num">' + pct(s.ai_impact_rating) + "</td>" +
+        '<td class="barcell"><div class="barwrap"><div class="bar" style="width:' +
+        Math.max(s.ai_impact_rating * 100, 3) + "%;background:" + ACTION_COLOR[a] + '"></div></div></td></tr>';
+    }).join("") + "</tbody></table></section>";
+
+  h += '<section class="section"><h2>Career levels</h2><table class="compact"><thead><tr><th>Level</th><th class="num">Years</th><th>What it looks like</th></tr></thead><tbody>' +
+    role.levels.map((l) => "<tr><td><strong>" + esc(l.name) + '</strong></td><td class="num">' +
+      esc(l.years_experience) + "</td><td>" + esc(l.summary) + "</td></tr>").join("") +
+    "</tbody></table></section>";
+
+  return h + "</div>";
+}
+function impactCol(dot, title, items) {
+  return '<div class="impact-col"><h5><span class="dot dot-' + dot + '"></span>' + esc(title) + "</h5><ul>" +
+    (items || []).map((i) => "<li>" + esc(i) + "</li>").join("") + "</ul></div>";
+}
+
+/* ---- compare ---- */
+function viewCompare(r) {
+  const a = findRole(r.a[0], r.a[1]), b = findRole(r.b[0], r.b[1]);
+  if (!a || !b) return notFound("One of those roles doesn't exist.");
+  pageTitle = a.name + " vs " + b.name;
+  const link = (a.transitions || []).find((t) => t.function_id === r.b[0] && t.role_id === r.b[1]);
+
+  const side = (fid, role) => {
+    const x = exposureOf(role), band = exposureBand(x);
+    const invest = role.skills.filter((s) => actionFor(s.ai_impact_rating) === "invest")
+      .sort((s1, s2) => s1.ai_impact_rating - s2.ai_impact_rating).slice(0, 5);
+    return '<div class="panel"><h3>' + esc(role.name) + "</h3>" +
+      '<div class="c-meta" style="color:var(--muted);font-size:.8rem">' + role.skills.length + " skills</div>" +
+      '<div class="hero-fig" style="font-size:2.2rem;margin-top:.6rem;color:' + (BAND_COLOR[band.key] || "var(--warning)") + '">' + Math.round(x * 100) + "%</div>" +
+      '<div class="hero-fig-lab">AI exposure</div>' +
+      '<div class="meter"><div class="meter-track"><div class="meter-fill" style="width:' + Math.max(Math.round(x * 100), 2) +
+      "%;background:" + (BAND_COLOR[band.key] || "var(--warning)") + '"></div>' +
+      '<span class="meter-tick" style="left:30%"></span><span class="meter-tick" style="left:60%"></span></div></div>' +
+      '<h4 style="font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-top:1rem">Most resilient skills</h4>' +
+      "<ul style=\"margin:.4rem 0 0 1rem;font-size:.86rem;color:var(--ink-2)\">" +
+      invest.map((s) => "<li>" + esc(s.name) + " <span class=\"mono-num\" style=\"color:var(--muted)\">" + pct(s.ai_impact_rating) + "</span></li>").join("") +
+      '</ul><div class="actions"><a class="btn btn-quiet btn-sm" href="#/plan/' + fid + "/" + role.id + '" data-nav>See the full plan</a></div></div>';
+  };
+
+  let h = '<div class="wrap">' + crumbs([
+    { label: "Home", href: "#/" },
+    { label: a.name, href: "#/plan/" + r.a[0] + "/" + r.a[1] },
+    { label: "vs " + b.name },
+  ]);
+  h += '<section class="section"><h2>' + esc(a.name) + " → " + esc(b.name) + "</h2>";
+  if (link) h += '<p class="lede">Your skills already cover <strong>' + Math.round(link.skill_overlap_pct * 100) +
+    "%</strong> of this role. There are <strong>" + link.skills_to_learn + "</strong> you'd need to pick up.</p>";
+  h += '<div class="compare">' + side(r.a[0], a) + side(r.b[0], b) + "</div></section>";
+
+  if (link && link.gap_skills && link.gap_skills.length) {
+    h += '<section class="section"><h2>What you\'d need to learn</h2>' +
+      '<p class="lede">Sorted by career value — the resilient ones are worth learning even if you never make the move.</p>' +
+      '<table class="compact"><thead><tr><th>Skill</th><th>Action</th><th class="num">AI impact</th></tr></thead><tbody>' +
+      link.gap_skills.map((s) => {
+        const act = actionFor(s.ai_impact_rating);
+        return "<tr><td><strong>" + esc(s.name) + "</strong></td><td>" + actionChip(act) +
+          '</td><td class="num">' + pct(s.ai_impact_rating) + "</td></tr>";
+      }).join("") + "</tbody></table></section>";
+  }
+  return h + "</div>";
+}
+
+/* =====================================================================
+   Wiring — delegated, so re-renders don't leak listeners
+   ===================================================================== */
+function wireView(r) {
+  if (r.name === "plan") wirePlan(r);
+  if (r.name === "role") wireRoleTable(r);
+}
+
+function wireSearchBox() {
+  const input = $("#q"), list = $("#results");
+  if (!input) return;
+  let hits = [], active = -1;
+
+  const paint = () => {
+    list.innerHTML = hits.map((h, i) =>
+      '<button class="result" role="option" id="opt-' + i + '" aria-selected="' + (i === active) +
+      '" data-fid="' + h.func.id + '" data-rid="' + h.role.id + '">' +
+      '<span class="dot dot-' + (LEVEL_DOT[h.role.ai_impact.level] || "partner") + '"></span>' +
+      '<span class="r-grow"><span class="r-name">' + esc(h.role.name) + "</span>" +
+      '<span class="r-meta" style="display:block">' + esc(h.func.name) + " · " + pct(exposureOf(h.role)) + " AI exposure</span></span>" +
+      "</button>").join("");
+    input.setAttribute("aria-expanded", hits.length ? "true" : "false");
+    input.setAttribute("aria-activedescendant", active >= 0 ? "opt-" + active : "");
+  };
+  const open = (h) => go("#/plan/" + h.func.id + "/" + h.role.id);
+
+  input.addEventListener("input", () => {
+    const q = input.value.trim();
+    hits = q ? searchRoles(q, 8) : [];
+    active = hits.length ? 0 : -1;
+    paint();
+  });
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+      if (!hits.length) return;
+      e.preventDefault();
+      active = (active + (e.key === "ArrowDown" ? 1 : hits.length - 1)) % hits.length;
+      paint();
+      const el = $("#opt-" + active); if (el) el.scrollIntoView({ block: "nearest" });
+    } else if (e.key === "Enter") {
+      e.preventDefault();
+      if (hits[active]) open(hits[active]);
+      else if (input.value.trim()) go("#/search/" + encodeURIComponent(input.value.trim()));
+    } else if (e.key === "Escape") { hits = []; active = -1; paint(); }
+  });
+  list.addEventListener("click", (e) => {
+    const b = e.target.closest(".result");
+    if (b) go("#/plan/" + b.dataset.fid + "/" + b.dataset.rid);
+  });
+  // Don't autofocus on touch: it throws up the keyboard and hides the page.
+  const coarse = window.matchMedia && window.matchMedia("(pointer: coarse)").matches;
+  if (route().name === "home" && !coarse) setTimeout(() => input.focus({ preventScroll: true }), 60);
+}
+
+function wirePlan(r) {
+  const p = buildPlan(r.fid, r.rid, r.level);
+  if (!p) return;
+  document.querySelectorAll(".level").forEach((b) =>
+    b.addEventListener("click", () => go("#/plan/" + p.func.id + "/" + p.role.id + "/" + b.dataset.level)));
+
+  const copy = $("#copy-link");
+  if (copy) copy.addEventListener("click", async () => {
+    const url = SITE + planPath(p);
+    try { await navigator.clipboard.writeText(url); toast("Link copied — send it to anyone."); }
+    catch (e) { window.prompt("Copy this link:", url); }
+  });
+  const dl = $("#dl-md");
+  if (dl) dl.addEventListener("click", () => {
+    const blob = new Blob([planMarkdown(p)], { type: "text/markdown;charset=utf-8" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "skillich-plan-" + p.role.id + "-" + p.level.id + ".md";
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+    toast("Downloaded. It's yours to keep.");
+  });
+  const pr = $("#print-plan");
+  if (pr) pr.addEventListener("click", () => window.print());
+}
+
+function wireRoleTable(r) {
+  const role = findRole(r.fid, r.rid);
+  if (!role) return;
+  const toggle = (tr) => {
+    const open = tr.nextElementSibling && tr.nextElementSibling.classList.contains("skill-expand");
+    document.querySelectorAll(".skill-expand").forEach((x) => x.remove());
+    document.querySelectorAll(".skill-row").forEach((x) => x.setAttribute("aria-expanded", "false"));
+    if (open) return;
+    const s = role.skills.find((x) => x.id === tr.dataset.skill);
+    if (!s) return;
+    const a = actionFor(s.ai_impact_rating), res = findResources(s.name);
+    const row = document.createElement("tr");
+    row.className = "skill-expand";
+    row.innerHTML = '<td colspan="4"><div class="skill-detail">' +
+      "<strong>" + esc(s.name) + '</strong> <span class="chip">' + esc(s.category) + "</span> " + actionChip(a) +
+      '<p style="font-size:.87rem;margin:.5rem 0;color:var(--ink-2)">' + esc(s.description) + "</p>" +
+      '<p style="font-size:.85rem;color:var(--ink-2)"><strong>AI impact today (' + pct(s.ai_impact_rating) + "):</strong> " +
+      esc(s.ai_impact_detail) + "</p>" +
+      '<p style="font-size:.85rem;color:var(--ink-2);margin-top:.4rem"><strong>' + esc(PLAN.actions[a].tip) + "</strong></p>" +
+      (res.length ? '<div class="res-links">' + res.map((x) =>
+        '<a class="res-link" href="' + esc(x.url) + '" target="_blank" rel="noopener">' +
+        (x.type === "free" ? "Free · " : "") + esc(x.name) + "</a>").join("") + "</div>" : "") +
+      '<h6 style="font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-top:.9rem">What good looks like</h6>' +
+      '<div class="prof-grid">' + Object.entries(s.proficiency).map(([k, v]) =>
+        '<div class="prof-card"><h6>' + esc(k) + "</h6><p>" + esc(v) + "</p></div>").join("") + "</div>" +
+      "</div></td>";
+    tr.after(row);
+    tr.setAttribute("aria-expanded", "true");
+  };
+  document.querySelectorAll(".skill-row").forEach((tr) => {
+    tr.addEventListener("click", () => toggle(tr));
+    tr.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(tr); }
+    });
+  });
+}
+
+/* Resume-where-you-left-off */
+function writeLast(p) {
+  try {
+    localStorage.setItem(LAST_KEY, JSON.stringify({ path: planPath(p), label: p.role.name + " · " + p.level.name }));
+  } catch (e) { /* private mode — the app still works, it just won't remember */ }
+}
+function readLast() {
+  try { return JSON.parse(localStorage.getItem(LAST_KEY) || "null"); } catch (e) { return null; }
+}
+
+/* Global: "/" focuses search, Escape closes the glossary */
+document.addEventListener("keydown", (e) => {
+  if (e.key === "/" && !/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)) {
+    e.preventDefault();
+    // The search box lives in the hero, which is hidden off the home route —
+    // go there first, or we would focus something the user cannot see.
+    if ($("#home-hero").hidden) go("#/");
+    $("#q").focus();
+  }
+  if (e.key === "Escape") $("#glossary").classList.remove("open");
+});
+$("#glossary-open").addEventListener("click", () => $("#glossary").classList.add("open"));
+$("#glossary-close").addEventListener("click", () => $("#glossary").classList.remove("open"));
+$("#glossary").addEventListener("click", (e) => { if (e.target.id === "glossary") $("#glossary").classList.remove("open"); });
+
+wireSearchBox();
+render();
+</script>
+</body>
+</html>

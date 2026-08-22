@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "skillich"
-version = "0.1.0"
+version = "0.2.0"
 description = "Know exactly which skills to invest in to become irreplaceable in the age of AI. 88 roles, 1,028 skills, each rated for AI impact. Python SDK + MCP server + CLI."
 readme = "README.md"
 license = "MIT"
@@ -49,10 +49,11 @@ langchain = ["langchain-core>=0.2"]
 all = ["skillich[cli,mcp,openai,anthropic]"]
 
 [tool.setuptools.packages.find]
-include = ["core*", "skills*", "adapters*", "agents*", "taxonomy*", "mcp_server*", "cli*"]
+include = ["core*", "skills*", "adapters*", "agents*", "taxonomy*", "mcp_server*", "cli*", "web*"]
 
 [tool.setuptools.package-data]
 taxonomy = ["**/*.yaml", "schemas/*.json"]
+web = ["template.html", "resources.json"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

@@ -45,3 +45,7 @@ htmlcov/
 
 # Generated
 web/index.html
+
+# Generated web app + its test harness deps
+web/index.html
+node_modules/

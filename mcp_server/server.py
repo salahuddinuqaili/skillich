@@ -7,6 +7,7 @@ from typing import Annotated
 
 from mcp.server.fastmcp import FastMCP
 
+from core.plan import build_plan, confident_match, find_roles
 from core.registry import SkillRegistry
 from core.taxonomy import TaxonomyLoader
 from skills.taxonomy_skills.ai_impact_analyzer import AIImpactAnalyzerSkill
@@ -53,7 +54,9 @@ def _build_instructions(loader: TaxonomyLoader) -> str:
         f"skillich is an AI career skills taxonomy covering {n_functions} functions, "
         f"{n_roles} roles, and {n_skills} skills — each rated for AI automation impact. "
         "Use these tools to explore roles, analyze AI impact on careers, assess skill gaps, "
-        "and generate learning paths. Start with explore_roles(action='list_functions') "
+        "and generate learning paths. When someone asks what AI means for their job, start with "
+        "action_plan(job_title='...') — it takes a plain job title and returns the full "
+        "invest / partner / delegate breakdown in one call. Use explore_roles(action='list_functions') "
         "to browse the taxonomy, or explore_roles(action='stats') for a full count."
     )
 
@@ -250,6 +253,90 @@ def advise_career(
     if limit != 10:
         kwargs["limit"] = limit
     return _call("career_advisor", **kwargs)
+
+
+@mcp.tool()
+def action_plan(
+    job_title: Annotated[
+        str,
+        "The person's job title in plain language, e.g. 'product manager', 'electrician', "
+        "'paralegal', 'SDR'. Matched against role names, aliases and acronyms.",
+    ] = "",
+    function_id: Annotated[
+        str, "Function ID, if you already know it. Skips the job-title lookup."
+    ] = "",
+    role_id: Annotated[str, "Role ID, if you already know it. Skips the job-title lookup."] = "",
+    level: Annotated[
+        str,
+        "Career level: 'junior', 'mid', 'senior', 'staff' (ids vary by role — the role's "
+        "levels are returned in the result). Defaults to mid-level.",
+    ] = "",
+    include_transitions: Annotated[
+        bool, "Include roles this person's skills already transfer to. Slower."
+    ] = False,
+) -> str:
+    """Build a personalised AI action plan for a job title.
+
+    Returns the role's skills split into three actions — invest here (AI can't do it),
+    partner with AI (AI helps but needs steering), and let AI handle (already automated) —
+    plus what "good" looks like at the person's next level, what to stop doing manually,
+    and a shareable link. This is the single best tool for "what does AI mean for my job?".
+    """
+    if not (function_id and role_id):
+        if not job_title:
+            return json.dumps(
+                {"ok": False, "error": "Provide job_title, or both function_id and role_id."},
+                indent=2,
+            )
+        matches = find_roles(_loader, job_title, limit=5)
+        if not matches:
+            return json.dumps(
+                {
+                    "ok": False,
+                    "error": f"No role matches '{job_title}'.",
+                    "hint": "Call explore_roles(action='list_functions') to see what is covered.",
+                },
+                indent=2,
+            )
+        # Below the confident-match bar, hand the choice back rather than guessing.
+        pick = confident_match(matches)
+        if pick is None:
+            return json.dumps(
+                {
+                    "ok": False,
+                    "error": f"'{job_title}' is ambiguous — ask which of these they mean.",
+                    "candidates": matches,
+                },
+                indent=2,
+            )
+        function_id, role_id = pick["function_id"], pick["role_id"]
+
+    transitions = None
+    if include_transitions:
+        result = _registry.call_skill(
+            "career_advisor",
+            action="find_transitions",
+            source_function_id=function_id,
+            source_role_id=role_id,
+            limit=5,
+        )
+        if result.ok:
+            transitions = result.data["transitions"]
+
+    plan = build_plan(_loader, function_id, role_id, level or None, transitions=transitions)
+    if plan is None:
+        return json.dumps(
+            {"ok": False, "error": f"Role '{role_id}' not found in function '{function_id}'."},
+            indent=2,
+        )
+
+    data = plan.to_dict()
+    data["available_levels"] = [
+        {"id": lv.id, "name": lv.name, "years_experience": lv.years_experience}
+        for lv in (_loader.get_role(function_id, role_id).levels)
+    ]
+    data["share_url"] = "https://salahuddinuqaili.github.io/skillich/" + plan.share_path
+    return json.dumps({"ok": True, "data": data}, indent=2, default=str)
 
 
 def main():
