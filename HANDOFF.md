@@ -78,6 +78,12 @@ validation. The plan page already ends with a prefilled feedback link; the next
 step is making it specific enough to answer in one click — e.g. thumbs up/down
 per skill rating rather than a free-text issue.
 
+### Option E — Modernise typing, deliberately
+Ruff's rule set is pinned to `E4, E7, E9, F` in pyproject because newer ruff
+releases enable `UP` by default and flag 128 `typing.Dict`/`List` uses across
+files nobody touched. Migrating to builtin generics (`dict[str, Any]`) and then
+widening `select` is worthwhile — as its own PR, not folded into a feature.
+
 ### Option D — Roles people ask for that don't exist
 Search returns nothing for `nurse`, `teacher` or `doctor` — healthcare covers
 informatics and coding roles, not clinical ones, and education isn't covered at
