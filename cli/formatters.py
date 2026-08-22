@@ -429,8 +429,13 @@ def print_plan(plan, show_all: bool = False, top: int = 3) -> None:
         if hidden > 0:
             console.print(f"  [dim]+{hidden} more - rerun with --all[/dim]")
 
+    if plan.stays_human:
+        console.print("\n[bold green]What stays yours:[/bold green]")
+        for item in plan.stays_human[:5]:
+            console.print(f"  [green]+[/green] {item}")
+
     if plan.stop_doing:
-        console.print("\n[bold red]Stop doing these manually:[/bold red]")
+        console.print("\n[bold red]Stop doing these by hand:[/bold red]")
         for item in plan.stop_doing[:5]:
             console.print(f"  [red]x[/red] {item}")
 

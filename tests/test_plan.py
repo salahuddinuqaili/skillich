@@ -151,6 +151,29 @@ def test_unknown_category_falls_back_without_crashing():
     assert proof_point("astrology", 99)
 
 
+def test_plan_carries_the_role_level_human_core(loader):
+    """A plan that only says what to stop doing is half a plan."""
+    plan = build_plan(loader, "marketing", "content_strategist", "mid")
+    assert plan.stays_human, "role defines preserving items"
+    assert plan.stop_doing
+    md = plan.to_markdown()
+    assert "## What stays yours" in md
+    assert "## Stop doing these by hand" in md
+    # The positive framing lands before the negative one.
+    assert md.index("## What stays yours") < md.index("## Stop doing these by hand")
+    for item in plan.stays_human:
+        assert item in md
+
+
+def test_every_role_has_something_that_stays_human(loader):
+    missing = []
+    for func in loader.list_functions():
+        for role in loader.list_roles(func.id):
+            if not build_plan(loader, func.id, role.id).stays_human:
+                missing.append(f"{func.id}/{role.id}")
+    assert not missing, f"roles with no preserving items: {missing}"
+
+
 def test_share_path_matches_the_web_route(loader):
     plan = build_plan(loader, "trades", "electrician", "journeyman")
     assert plan.share_path == "#/plan/trades/electrician/journeyman"

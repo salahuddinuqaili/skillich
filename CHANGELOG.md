@@ -16,6 +16,10 @@ to keep.
 - Each invest skill comes with a concrete way to prove you closed the gap, and
   the wording cycles so a leadership-heavy role doesn't print one sentence seven
   times.
+- **"What stays yours"** — the plan used to say what to stop doing but never the
+  role's human core. Both are there now, positive framing first. For roles where
+  almost nothing sits under 30% (Content Strategist has 1 of 12), the plan says
+  so plainly instead of leaving a one-item stub.
 - **`action_plan` MCP tool** — one call answers "what does AI mean for my job?"
   in Claude Desktop and Claude Code. Ambiguous titles return candidates to ask
   about instead of a confident guess.
@@ -63,7 +67,7 @@ to keep.
   minutes to ~4 seconds.
 
 ### Tests
-- 268 Python tests (up from 173), plus 75 headless browser checks
+- 270 Python tests (up from 173), plus 80 headless browser checks
   (`web/smoke.test.js`, jsdom) that drive the real generated page. Both run in CI.
 
 ---

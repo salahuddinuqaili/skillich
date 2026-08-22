@@ -98,6 +98,20 @@ check("hero figure is not painted a status colour",
 check("hero hidden off-home", doc.getElementById("home-hero").hidden === true);
 check("document title updated", /Product Manager/.test(doc.title), doc.title);
 
+console.log("\n--- role-level human core ---");
+check("plan names what stays human", /What stays yours/.test(v));
+check("stop-doing section present", /Stop doing these by hand/.test(v));
+nav("#/plan/marketing/content_strategist/mid");
+const thin = view();
+check("thin invest band is explained, not left as a stub",
+  /that is the finding, not a gap in the data/.test(thin));
+check("thin-band copy agrees with itself grammatically",
+  /1 of this role's \d+ skills sits below 30%/.test(thin),
+  (thin.match(/Only \d+ of this role's \d+ skills \w+/) || [""])[0]);
+nav("#/plan/product/product_manager/senior");
+check("healthy invest band has no thin-band note",
+  !/that is the finding, not a gap in the data/.test(view()));
+
 console.log("\n--- level switcher ---");
 const juniorBtn = doc.querySelector('.level[data-level="junior"]');
 check("junior button exists", !!juniorBtn);

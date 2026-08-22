@@ -187,6 +187,7 @@ class ActionPlan:
     partner: List[PlanSkill] = field(default_factory=list)
     delegate: List[PlanSkill] = field(default_factory=list)
     stop_doing: List[str] = field(default_factory=list)
+    stays_human: List[str] = field(default_factory=list)
     transitions: List[Dict[str, Any]] = field(default_factory=list)
     confidence: str = ""
     last_reviewed: str = ""
@@ -255,8 +256,28 @@ class ActionPlan:
             with_gap=False,
         )
 
+        if self.stays_human:
+            out.extend(
+                [
+                    "## What stays yours",
+                    "",
+                    "The parts of this role that still need a person, whatever the skill"
+                    " ratings say. When in doubt, spend your time here.",
+                    "",
+                ]
+            )
+            out.extend(f"- {item}" for item in self.stays_human)
+            out.append("")
+
         if self.stop_doing:
-            out.extend(["## Stop doing these manually", ""])
+            out.extend(
+                [
+                    "## Stop doing these by hand",
+                    "",
+                    "AI does these well enough today that doing them manually is a choice.",
+                    "",
+                ]
+            )
             out.extend(f"- {item}" for item in self.stop_doing)
             out.append("")
 
@@ -389,6 +410,7 @@ def build_plan(
         partner=buckets["partner"],
         delegate=buckets["delegate"],
         stop_doing=list(role.ai_impact.automating),
+        stays_human=list(role.ai_impact.preserving),
         transitions=transitions or [],
         confidence=role.ai_impact.confidence,
         last_reviewed=role.ai_impact.last_reviewed,

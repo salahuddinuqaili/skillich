@@ -553,8 +553,21 @@ function planMarkdown(p) {
   section("Invest here (" + p.invest.length + ")", PLAN.actions.invest.why, p.invest, true);
   section("Partner with AI (" + p.partner.length + ")", PLAN.actions.partner.why, p.partner, false);
   section("Let AI handle (" + p.delegate.length + ")", PLAN.actions.delegate.why, p.delegate, false);
+  const stays = p.role.ai_impact.preserving || [];
+  if (stays.length) {
+    L.push("## What stays yours", "",
+      "The parts of this role that still need a person, whatever the skill ratings say." +
+      " When in doubt, spend your time here.", "");
+    stays.forEach((x) => L.push("- " + x));
+    L.push("");
+  }
   const stop = p.role.ai_impact.automating || [];
-  if (stop.length) { L.push("## Stop doing these manually", ""); stop.forEach((x) => L.push("- " + x)); L.push(""); }
+  if (stop.length) {
+    L.push("## Stop doing these by hand", "",
+      "AI does these well enough today that doing them manually is a choice.", "");
+    stop.forEach((x) => L.push("- " + x));
+    L.push("");
+  }
   const tr = p.role.transitions || [];
   if (tr.length) {
     L.push("## Where your skills already transfer", "", "Roles that reuse most of what you can already do:", "");
@@ -749,6 +762,16 @@ function viewPlan(r) {
   h += bandSection(p, "partner", false);
   h += bandSection(p, "delegate", false);
 
+  const stays = p.role.ai_impact.preserving || [];
+  if (stays.length) {
+    h += '<section class="section"><h2>What stays yours</h2>' +
+      '<p class="lede">The parts of this role that still need a person, whatever the skill ratings say. ' +
+      'When in doubt, spend your time here.</p>' +
+      '<div class="stoplist">' + stays.map((s) =>
+        '<div class="stopitem"><span class="dot dot-invest"></span><span>' + esc(s) + "</span></div>").join("") +
+      "</div></section>";
+  }
+
   const stop = p.role.ai_impact.automating || [];
   if (stop.length) {
     h += '<section class="section"><h2>Stop doing these by hand</h2>' +
@@ -790,6 +813,16 @@ function bandSection(p, key, detailed) {
     "<h3>" + esc(meta.label) + "</h3>" +
     '<span class="chip"><span class="dot dot-' + key + '"></span>' + skills.length + " skill" + (skills.length === 1 ? "" : "s") + "</span>" +
     '<span class="band-why">' + esc(meta.why) + "</span></div>";
+
+  if (key === "invest" && skills.length <= 2) {
+    h += '<p class="lede" style="margin-top:.7rem">Only ' + skills.length + " of this role's " +
+      p.role.skills.length + " skills " + (skills.length === 1 ? "sits" : "sit") +
+      " below 30% — that is the finding, not a gap in the data. " +
+      'Your leverage here comes from the parts of the job that never showed up as a "skill": ' +
+      'judgement, trust, and the cross-functional strengths in the ' +
+      '<a href="https://github.com/salahuddinuqaili/skillich/blob/main/docs/skills.md" ' +
+      'target="_blank" rel="noopener">top 15 for every AI user</a>. Read the next two sections closely.</p>';
+  }
 
   if (detailed) {
     h += skills.map((s) => {
