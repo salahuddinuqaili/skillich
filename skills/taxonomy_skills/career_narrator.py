@@ -13,7 +13,7 @@ from core.taxonomy import TaxonomyLoader
 
 
 _DEFAULT_ENDPOINT = "http://localhost:11434"
-_DEFAULT_MODEL = "qwen2.5-coder:14b"
+_DEFAULT_MODEL = "gemma4:e4b"
 
 
 def _ollama_chat(prompt: str, endpoint: str, model: str, timeout: int = 120) -> str:

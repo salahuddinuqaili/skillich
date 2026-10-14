@@ -102,14 +102,14 @@ All `explore`, `analyze`, `assess`, `advise`, `path` CLI commands print rich ter
 **Risk:** Medium — requires Ollama running; skill must degrade gracefully without it
 
 ### Problem
-`skills/local/local_llm.py` exists as a stub (generic text summarizer). Given the Ollama stack already running locally (qwen2.5-coder:14b, gemma4:e4b), there's a more valuable skill: **personalized career summary** — take a role's taxonomy data and generate a human-readable "what this means for your career" paragraph using the local model. This aligns with the per-x governance (career data stays local).
+`skills/local/local_llm.py` exists as a stub (generic text summarizer). Given the Ollama stack already running locally (gemma4:e4b), there's a more valuable skill: **personalized career summary** — take a role's taxonomy data and generate a human-readable "what this means for your career" paragraph using the local model. This aligns with the per-x governance (career data stays local).
 
 ### Changes
 - New `skills/taxonomy_skills/career_narrator.py`: `CareerNarratorSkill`
   - `action='role_summary'`: given function+role, load taxonomy data, build a structured prompt, call Ollama `/api/chat` (streaming=False), return narrative paragraph
   - `action='skill_advice'`: given a skill name + user's current level, generate concrete next-step advice
   - Graceful degradation: if Ollama unreachable, return `SkillStatus.PARTIAL` with raw taxonomy data + error message (never hard-fail)
-- `OLLAMA_ENDPOINT` env var (default `http://localhost:11434`), `OLLAMA_MODEL` env var (default `qwen2.5-coder:14b`)
+- `OLLAMA_ENDPOINT` env var (default `http://localhost:11434`), `OLLAMA_MODEL` env var (default `gemma4:e4b`)
 - Register in CLI (`skillich narrate`) and MCP server
 - Tests: mock `requests.post`, assert prompt shape, assert graceful degradation path
 
